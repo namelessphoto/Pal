@@ -1,0 +1,14 @@
+#ifndef UE4SS_SDK_BP_SquadNPCSpawner_ForCamp_Ninja_02_01_3F_Main_HPP
+#define UE4SS_SDK_BP_SquadNPCSpawner_ForCamp_Ninja_02_01_3F_Main_HPP
+
+class ABP_SquadNPCSpawner_ForCamp_Ninja_02_01_3F_Main_C : public ABP_SquadNPCSpawner_ForCampBase_C
+{
+    class UBP_NPCSpawnPointComponent_C* BP_NPCSpawnPointComponent12;                  // 0x04F8 (size: 0x8)
+    class UBP_NPCSpawnPointComponent_C* BP_NPCSpawnPointComponent11;                  // 0x0500 (size: 0x8)
+    class UBP_NPCSpawnPointComponent_C* BP_NPCSpawnPointComponent10;                  // 0x0508 (size: 0x8)
+    class UBP_NPCSpawnPointComponent_C* BP_NPCSpawnPointComponent9;                   // 0x0510 (size: 0x8)
+    class UBP_NPCSpawnPointComponent_C* BP_NPCSpawnPointComponent8;                   // 0x0518 (size: 0x8)
+
+}; // Size: 0x520
+
+#endif
