@@ -3,9 +3,9 @@
 
 class UWBP_SimpleColorFade_C : public UWBP_PalFadeWidgetBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0410 (size: 0x8)
-    class UWidgetAnimation* Fade;                                                     // 0x0418 (size: 0x8)
-    class UImage* Image_14;                                                           // 0x0420 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Fade;
+    class UImage* Image_14;
 
     void Setup_ForOverride();
     void FadeIn();
@@ -17,6 +17,6 @@ class UWBP_SimpleColorFade_C : public UWBP_PalFadeWidgetBase_C
     void Construct();
     void ToggleVisibility(bool Visiable);
     void ExecuteUbergraph_WBP_SimpleColorFade(int32 EntryPoint);
-}; // Size: 0x428
+};
 
 #endif

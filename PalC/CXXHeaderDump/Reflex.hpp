@@ -14,6 +14,6 @@ class UReflexBlueprintLibrary : public UBlueprintFunctionLibrary
     float GetGameToRenderLatencyInMs();
     float GetGameLatencyInMs();
     bool GetFlashIndicatorEnabled();
-}; // Size: 0x28
+};
 
 #endif

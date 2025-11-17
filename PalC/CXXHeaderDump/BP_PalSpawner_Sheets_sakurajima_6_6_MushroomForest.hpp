@@ -3,6 +3,6 @@
 
 class ABP_PalSpawner_Sheets_sakurajima_6_6_MushroomForest_C : public ABP_PalSpawner_Standard_C
 {
-}; // Size: 0x489
+};
 
 #endif

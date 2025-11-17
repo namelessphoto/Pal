@@ -3,16 +3,16 @@
 
 class UWBP_CharaCre_ScrollBoxContentSet_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UCommonActivatableWidgetSwitcher* CommonActivatableWidgetSwitcher_27;       // 0x0280 (size: 0x8)
-    class UWBP_CharaCre_ScrollBoxContent_Body_C* WBP_CharaCre_ScrollBoxContent_Body;  // 0x0288 (size: 0x8)
-    class UWBP_CharaCre_ScrollBoxContent_Face_C* WBP_CharaCre_ScrollBoxContent_Face;  // 0x0290 (size: 0x8)
-    class UWBP_CharaCre_ScrollBoxContent_Hair_C* WBP_CharaCre_ScrollBoxContent_Hair;  // 0x0298 (size: 0x8)
-    class UWBP_CharaCre_ScrollBoxContent_Preset_C* WBP_CharaCre_ScrollBoxContent_Preset; // 0x02A0 (size: 0x8)
-    class UWBP_CharaCre_ScrollBoxContent_Voice_C* WBP_CharaCre_ScrollBoxContent_Voice; // 0x02A8 (size: 0x8)
-    FWBP_CharaCre_ScrollBoxContentSet_COnNotifyOpenSelectColorWindow OnNotifyOpenSelectColorWindow; // 0x02B0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCommonActivatableWidgetSwitcher* CommonActivatableWidgetSwitcher_27;
+    class UWBP_CharaCre_ScrollBoxContent_Body_C* WBP_CharaCre_ScrollBoxContent_Body;
+    class UWBP_CharaCre_ScrollBoxContent_Face_C* WBP_CharaCre_ScrollBoxContent_Face;
+    class UWBP_CharaCre_ScrollBoxContent_Hair_C* WBP_CharaCre_ScrollBoxContent_Hair;
+    class UWBP_CharaCre_ScrollBoxContent_Preset_C* WBP_CharaCre_ScrollBoxContent_Preset;
+    class UWBP_CharaCre_ScrollBoxContent_Voice_C* WBP_CharaCre_ScrollBoxContent_Voice;
+    FWBP_CharaCre_ScrollBoxContentSet_COnNotifyOpenSelectColorWindow OnNotifyOpenSelectColorWindow;
     void OnNotifyOpenSelectColorWindow();
-    FWBP_CharaCre_ScrollBoxContentSet_COnNotifyCloseColorSelectWindow OnNotifyCloseColorSelectWindow; // 0x02C0 (size: 0x10)
+    FWBP_CharaCre_ScrollBoxContentSet_COnNotifyCloseColorSelectWindow OnNotifyCloseColorSelectWindow;
     void OnNotifyCloseColorSelectWindow();
 
     void GetSelectedEyeHSV(FLinearColor& HSV);
@@ -30,6 +30,6 @@ class UWBP_CharaCre_ScrollBoxContentSet_C : public UUserWidget
     void ExecuteUbergraph_WBP_CharaCre_ScrollBoxContentSet(int32 EntryPoint);
     void OnNotifyCloseColorSelectWindow__DelegateSignature();
     void OnNotifyOpenSelectColorWindow__DelegateSignature();
-}; // Size: 0x2D0
+};
 
 #endif

@@ -3,26 +3,26 @@
 
 class ABP_PalCaptureBodyBase_C : public APalSphereBodyBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0290 (size: 0x8)
-    class UBP_PalSoundPlayerComponent_C* SoundPlayer;                                 // 0x0298 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x02A0 (size: 0x8)
-    FBP_PalCaptureBodyBase_COnSuccessedCapture OnSuccessedCapture;                    // 0x02A8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UBP_PalSoundPlayerComponent_C* SoundPlayer;
+    class USceneComponent* DefaultSceneRoot;
+    FBP_PalCaptureBodyBase_COnSuccessedCapture OnSuccessedCapture;
     void OnSuccessedCapture(class UPalIndividualCharacterHandle* targetHandle);
-    FBP_PalCaptureBodyBase_COnFailedCapture OnFailedCapture;                          // 0x02B8 (size: 0x10)
+    FBP_PalCaptureBodyBase_COnFailedCapture OnFailedCapture;
     void OnFailedCapture(class UPalIndividualCharacterHandle* targetHandle, TEnumAsByte<EPalSphereCaptureFailedReason> failedReason);
-    class UPalIndividualCharacterHandle* targetHandle;                                // 0x02C8 (size: 0x8)
-    int32 CaptureLevel;                                                               // 0x02D0 (size: 0x4)
-    FBP_PalCaptureBodyBase_COnPassingCapturePhase OnPassingCapturePhase;              // 0x02D8 (size: 0x10)
+    class UPalIndividualCharacterHandle* targetHandle;
+    int32 CaptureLevel;
+    FBP_PalCaptureBodyBase_COnPassingCapturePhase OnPassingCapturePhase;
     void OnPassingCapturePhase(int32 PhaseCount, class UPalIndividualCharacterHandle* targetHandle);
-    FBP_PalCaptureBodyBase_COnShakeBody OnShakeBody;                                  // 0x02E8 (size: 0x10)
+    FBP_PalCaptureBodyBase_COnShakeBody OnShakeBody;
     void OnShakeBody(class ABP_PalCaptureBodyBase_C* shakedBody);
-    bool isSneakBonus;                                                                // 0x02F8 (size: 0x1)
-    bool isIntoBall;                                                                  // 0x02F9 (size: 0x1)
-    FBP_PalCaptureBodyBase_COnBouncedBody OnBouncedBody;                              // 0x0300 (size: 0x10)
+    bool isSneakBonus;
+    bool isIntoBall;
+    FBP_PalCaptureBodyBase_COnBouncedBody OnBouncedBody;
     void OnBouncedBody(TEnumAsByte<E_PalCaptureSphereBouncedReason> reasonType, class UPalIndividualCharacterHandle* targetHandle);
-    bool IsRobberyBall;                                                               // 0x0310 (size: 0x1)
-    double NonTargetTimer;                                                            // 0x0318 (size: 0x8)
-    bool IsCriticalCapture;                                                           // 0x0320 (size: 0x1)
+    bool IsRobberyBall;
+    double NonTargetTimer;
+    bool IsCriticalCapture;
 
     void GetCriticalCaptureLevel(int32& NewParam);
     void SetCriticalFlag(bool bCritical);
@@ -56,6 +56,6 @@ class ABP_PalCaptureBodyBase_C : public APalSphereBodyBase
     void OnPassingCapturePhase__DelegateSignature(int32 PhaseCount, class UPalIndividualCharacterHandle* targetHandle);
     void OnFailedCapture__DelegateSignature(class UPalIndividualCharacterHandle* targetHandle, TEnumAsByte<EPalSphereCaptureFailedReason> failedReason);
     void OnSuccessedCapture__DelegateSignature(class UPalIndividualCharacterHandle* targetHandle);
-}; // Size: 0x321
+};
 
 #endif

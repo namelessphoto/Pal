@@ -3,12 +3,12 @@
 
 class UBP_AudioSetting_C : public UPalAudioSettingSystem
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x00D0 (size: 0x8)
-    TMap<EPalAudioBus, double> BusVolumes;                                            // 0x00D8 (size: 0x50)
-    TMap<EPalAudioBus, double> BusVolumes_Debug;                                      // 0x0128 (size: 0x50)
-    TMap<class EPalAudioBus, class bool> BusMute;                                     // 0x0178 (size: 0x50)
-    TMap<class EPalAudioBus, class bool> BusMute_Debug;                               // 0x01C8 (size: 0x50)
-    TMap<class EPalAudioBus, class FFloatContainer_FloatPair> BusVolumes_0;           // 0x0218 (size: 0x50)
+    FPointerToUberGraphFrame UberGraphFrame;
+    TMap<EPalAudioBus, double> BusVolumes;
+    TMap<EPalAudioBus, double> BusVolumes_Debug;
+    TMap<class EPalAudioBus, class bool> BusMute;
+    TMap<class EPalAudioBus, class bool> BusMute_Debug;
+    TMap<class EPalAudioBus, class FFloatContainer_FloatPair> BusVolumes_0;
 
     bool IsAudioBusMute(EPalAudioBus AudioBus);
     void SetAudioBusMute_Impl(EPalAudioBus AudioBus, bool IsMute);
@@ -26,6 +26,6 @@ class UBP_AudioSetting_C : public UPalAudioSettingSystem
     void SetAudioBusMute(EPalAudioBus AudioBus, bool IsMute);
     void SetAudioBusVolume(EPalAudioBus AudioBus, const FName& Key, float Volume);
     void ExecuteUbergraph_BP_AudioSetting(int32 EntryPoint);
-}; // Size: 0x268
+};
 
 #endif

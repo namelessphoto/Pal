@@ -3,6 +3,6 @@
 
 class UBP_Player_Female_ShooterAnime_RocketLauncher_C : public UPalShooterAnimeAssetBase
 {
-}; // Size: 0x328
+};
 
 #endif

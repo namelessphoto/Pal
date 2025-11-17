@@ -5,6 +5,6 @@ class ABP_RaidBossLightingVolume_C : public ABP_SkyCreatorLightingVolume_C
 {
 
     void DeleteSelfActor();
-}; // Size: 0x2F8
+};
 
 #endif

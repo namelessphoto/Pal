@@ -3,8 +3,8 @@
 
 class ABP_NPC_NewBase_C : public APalNPC
 {
-    class UPalPassiveSkillInvokerComponent* PalPassiveSkillInvoker;                   // 0x0A10 (size: 0x8)
+    class UPalPassiveSkillInvokerComponent* PalPassiveSkillInvoker;
 
-}; // Size: 0xA18
+};
 
 #endif

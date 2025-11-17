@@ -3,6 +3,6 @@
 
 class APRESET_Ivy1_WithBridges_BP_C : public APRESET_Ivy1_Var3_BP_C
 {
-}; // Size: 0x680
+};
 
 #endif

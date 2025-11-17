@@ -3,6 +3,6 @@
 
 class ABP_WeaselDragon_Fire_C : public ABP_WeaselDragon_C
 {
-}; // Size: 0xB58
+};
 
 #endif

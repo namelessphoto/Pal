@@ -3,20 +3,20 @@
 
 class UBP_PalGameInstance_C : public UPalGameInstance
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x08A8 (size: 0x8)
-    class ULoadingProcessTask* CurrentLoadingTask;                                    // 0x08B0 (size: 0x8)
-    class UPalHUDDispatchParameter_FadeWidget* LoadingFadeParameter;                  // 0x08B8 (size: 0x8)
-    TSoftObjectPtr<UWorld> LoadWorld;                                                 // 0x08C0 (size: 0x30)
-    bool ShowedCharaMake;                                                             // 0x08F0 (size: 0x1)
-    TSoftClassPtr<APalCutsceneActor> OpeningActor;                                    // 0x08F8 (size: 0x30)
-    FName CutsceneName;                                                               // 0x0928 (size: 0x8)
-    class APalCutsceneActor* OpeningCutscene;                                         // 0x0930 (size: 0x8)
-    FName flagName;                                                                   // 0x0938 (size: 0x8)
-    int32 PlayingID;                                                                  // 0x0940 (size: 0x4)
-    FDataTableRowHandle CreateSessionErrorMsgId;                                      // 0x0948 (size: 0x10)
-    FDataTableRowHandle CreateSessionErrorMsgId_Console;                              // 0x0958 (size: 0x10)
-    bool IsStartingGame;                                                              // 0x0968 (size: 0x1)
-    FName UIInputBlockFlagName;                                                       // 0x096C (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class ULoadingProcessTask* CurrentLoadingTask;
+    class UPalHUDDispatchParameter_FadeWidget* LoadingFadeParameter;
+    TSoftObjectPtr<UWorld> LoadWorld;
+    bool ShowedCharaMake;
+    TSoftClassPtr<APalCutsceneActor> OpeningActor;
+    FName CutsceneName;
+    class APalCutsceneActor* OpeningCutscene;
+    FName flagName;
+    int32 PlayingID;
+    FDataTableRowHandle CreateSessionErrorMsgId;
+    FDataTableRowHandle CreateSessionErrorMsgId_Console;
+    bool IsStartingGame;
+    FName UIInputBlockFlagName;
 
     void IsDeadInHardcore(bool& Result);
     void SetActivePlayerActor(bool Active);
@@ -38,6 +38,6 @@ class UBP_PalGameInstance_C : public UPalGameInstance
     void OverrideLoadMap(const TSoftObjectPtr<UWorld>& World);
     void OnPSNChatDisabled(bool bResult);
     void ExecuteUbergraph_BP_PalGameInstance(int32 EntryPoint);
-}; // Size: 0x974
+};
 
 #endif

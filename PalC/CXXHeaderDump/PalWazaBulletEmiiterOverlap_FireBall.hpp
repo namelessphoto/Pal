@@ -5,6 +5,6 @@ class UPalWazaBulletEmiiterOverlap_FireBall_C : public UPalWazaBulletEmiiterOver
 {
 
     void GetBulletEmiiterOverlapSphere(TArray<FPalWazaBulletEmiiterOverlapSphere>& Spheres);
-}; // Size: 0x28
+};
 
 #endif

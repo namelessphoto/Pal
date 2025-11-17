@@ -3,8 +3,8 @@
 
 class ABP_NPC_DarkTrader_C : public ABP_NPC_FatHumanDataSet_C
 {
-    class UBP_PalShopVenderDataComponent_C* BP_PalShopVenderDataComponent;            // 0x0A98 (size: 0x8)
+    class UBP_PalShopVenderDataComponent_C* BP_PalShopVenderDataComponent;
 
-}; // Size: 0xAA0
+};
 
 #endif

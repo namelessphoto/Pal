@@ -3,13 +3,13 @@
 
 class ABP_AssaultRifleBase_C : public APalWeaponBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x05E8 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x05F0 (size: 0x8)
-    FTimerHandle ShootingHandle;                                                      // 0x05F8 (size: 0x8)
-    bool IsAccurate;                                                                  // 0x0600 (size: 0x1)
-    FVector targetPosition;                                                           // 0x0608 (size: 0x18)
-    bool SendShootCompletedNotify;                                                    // 0x0620 (size: 0x1)
-    bool IsInCoolTime;                                                                // 0x0621 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class USceneComponent* DefaultSceneRoot;
+    FTimerHandle ShootingHandle;
+    bool IsAccurate;
+    FVector targetPosition;
+    bool SendShootCompletedNotify;
+    bool IsInCoolTime;
 
     void IsDecrementBullet(bool& Result);
     void OnFireStart();
@@ -47,6 +47,6 @@ class ABP_AssaultRifleBase_C : public APalWeaponBase
     void OnDetachWeapon(class AActor* detachActor);
     void ResetCoolTime();
     void ExecuteUbergraph_BP_AssaultRifleBase(int32 EntryPoint);
-}; // Size: 0x622
+};
 
 #endif

@@ -3,26 +3,26 @@
 
 class UWBP_Arena_TopMenuButton_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_NormalToFocus;                                        // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_FocusLoop;                                            // 0x0288 (size: 0x8)
-    class UCanvasPanel* Canvas_Lock;                                                  // 0x0290 (size: 0x8)
-    class UImage* Image_Add;                                                          // 0x0298 (size: 0x8)
-    class UImage* Image_Add_1;                                                        // 0x02A0 (size: 0x8)
-    class UImage* Image_Button;                                                       // 0x02A8 (size: 0x8)
-    class UImage* Image_Button_Add;                                                   // 0x02B0 (size: 0x8)
-    class UPalRetainerBox* PalRetainerBox_117;                                        // 0x02B8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_ButtonName;                                        // 0x02C0 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x02C8 (size: 0x8)
-    FWBP_Arena_TopMenuButton_COnArenaButtonClicked OnArenaButtonClicked;              // 0x02D0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_NormalToFocus;
+    class UWidgetAnimation* Anm_FocusLoop;
+    class UCanvasPanel* Canvas_Lock;
+    class UImage* Image_Add;
+    class UImage* Image_Add_1;
+    class UImage* Image_Button;
+    class UImage* Image_Button_Add;
+    class UPalRetainerBox* PalRetainerBox_117;
+    class UBP_PalTextBlock_C* Text_ButtonName;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    FWBP_Arena_TopMenuButton_COnArenaButtonClicked OnArenaButtonClicked;
     void OnArenaButtonClicked();
-    bool isFocused;                                                                   // 0x02E0 (size: 0x1)
-    FWBP_Arena_TopMenuButton_COnArenaButtonHovered OnArenaButtonHovered;              // 0x02E8 (size: 0x10)
+    bool isFocused;
+    FWBP_Arena_TopMenuButton_COnArenaButtonHovered OnArenaButtonHovered;
     void OnArenaButtonHovered();
-    FWBP_Arena_TopMenuButton_COnArenaButtonUnhovered OnArenaButtonUnhovered;          // 0x02F8 (size: 0x10)
+    FWBP_Arena_TopMenuButton_COnArenaButtonUnhovered OnArenaButtonUnhovered;
     void OnArenaButtonUnhovered();
-    double AnmTime;                                                                   // 0x0308 (size: 0x8)
-    bool Is Lock;                                                                     // 0x0310 (size: 0x1)
+    double AnmTime;
+    bool Is Lock;
 
     void Setup(int32 Type);
     void SetLock(bool IsLock);
@@ -38,6 +38,6 @@ class UWBP_Arena_TopMenuButton_C : public UUserWidget
     void OnArenaButtonUnhovered__DelegateSignature();
     void OnArenaButtonHovered__DelegateSignature();
     void OnArenaButtonClicked__DelegateSignature();
-}; // Size: 0x311
+};
 
 #endif

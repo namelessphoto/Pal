@@ -3,10 +3,10 @@
 
 class UBP_PalInvaderManager_C : public UPalInvaderManager
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0228 (size: 0x8)
-    class UBP_PalIncidentNotifyListener_C* IncidentListener;                          // 0x0230 (size: 0x8)
-    FName InvaderEnemyIncidentId;                                                     // 0x0238 (size: 0x8)
-    FName VisitorNPCIncidentId;                                                       // 0x0240 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UBP_PalIncidentNotifyListener_C* IncidentListener;
+    FName InvaderEnemyIncidentId;
+    FName VisitorNPCIncidentId;
 
     class UPalInvaderIncidentBase* RequestIncidentVisitorNPC_BP(class UObject* OccuredBaseCamp, class UPalIncidentDynamicParameterInvader* Parameter);
     class UPalInvaderIncidentBase* RequestIncidentInvaderEnemy_BP(class UObject* OccuredBaseCamp, class UPalIncidentDynamicParameterInvader* Parameter);
@@ -15,6 +15,6 @@ class UBP_PalInvaderManager_C : public UPalInvaderManager
     void RegisterIncidentListener();
     void UnregisterIncidentListener();
     void ExecuteUbergraph_BP_PalInvaderManager(int32 EntryPoint);
-}; // Size: 0x248
+};
 
 #endif

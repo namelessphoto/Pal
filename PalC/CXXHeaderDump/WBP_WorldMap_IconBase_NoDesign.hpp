@@ -3,21 +3,21 @@
 
 class UWBP_WorldMap_IconBase_NoDesign_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    FWBP_WorldMap_IconBase_NoDesign_COnHovered OnHovered;                             // 0x0410 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    FWBP_WorldMap_IconBase_NoDesign_COnHovered OnHovered;
     void OnHovered(class UWBP_WorldMap_IconBase_NoDesign_C* iconWidget);
-    FWBP_WorldMap_IconBase_NoDesign_COnUnhovered OnUnhovered;                         // 0x0420 (size: 0x10)
+    FWBP_WorldMap_IconBase_NoDesign_COnUnhovered OnUnhovered;
     void OnUnhovered(class UWBP_WorldMap_IconBase_NoDesign_C* iconWidget);
-    FWBP_WorldMap_IconBase_NoDesign_COnClicked OnClicked;                             // 0x0430 (size: 0x10)
+    FWBP_WorldMap_IconBase_NoDesign_COnClicked OnClicked;
     void OnClicked(class UWBP_WorldMap_IconBase_NoDesign_C* iconWidget);
-    FGuid LocationId;                                                                 // 0x0440 (size: 0x10)
-    bool IsCallInternalClickEvent;                                                    // 0x0450 (size: 0x1)
-    bool IgnoreMask;                                                                  // 0x0451 (size: 0x1)
-    bool IsHiding;                                                                    // 0x0452 (size: 0x1)
-    bool bEnableHideOnZoom;                                                           // 0x0453 (size: 0x1)
-    bool Is Filtered Out;                                                             // 0x0454 (size: 0x1)
-    EPalLocationType LocationType;                                                    // 0x0455 (size: 0x1)
-    bool HidingByZoom;                                                                // 0x0456 (size: 0x1)
+    FGuid LocationId;
+    bool IsCallInternalClickEvent;
+    bool IgnoreMask;
+    bool IsHiding;
+    bool bEnableHideOnZoom;
+    bool Is Filtered Out;
+    EPalLocationType LocationType;
+    bool HidingByZoom;
 
     void SetupForceVisibility(bool& bChangedVisibility);
     void GetLocationType(EPalLocationType& Type);
@@ -43,6 +43,6 @@ class UWBP_WorldMap_IconBase_NoDesign_C : public UPalUserWidget
     void OnClicked__DelegateSignature(class UWBP_WorldMap_IconBase_NoDesign_C* iconWidget);
     void OnUnhovered__DelegateSignature(class UWBP_WorldMap_IconBase_NoDesign_C* iconWidget);
     void OnHovered__DelegateSignature(class UWBP_WorldMap_IconBase_NoDesign_C* iconWidget);
-}; // Size: 0x457
+};
 
 #endif

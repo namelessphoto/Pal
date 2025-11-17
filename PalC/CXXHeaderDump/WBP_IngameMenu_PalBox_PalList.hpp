@@ -3,40 +3,40 @@
 
 class UWBP_IngameMenu_PalBox_PalList_C : public UWBP_IndividualParameterBindWidget_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0608 (size: 0x8)
-    class UWidgetAnimation* Anm_Pal_Alive;                                            // 0x0610 (size: 0x8)
-    class UWidgetAnimation* Anm_Pal_Dead;                                             // 0x0618 (size: 0x8)
-    class UWidgetAnimation* Anm_NormalToFocus;                                        // 0x0620 (size: 0x8)
-    class UWidgetAnimation* Anm_focus;                                                // 0x0628 (size: 0x8)
-    class UWidgetAnimation* Anm_normal;                                               // 0x0630 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_LvText;                                 // 0x0638 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_119;                                              // 0x0640 (size: 0x8)
-    class UImage* Empty;                                                              // 0x0648 (size: 0x8)
-    class UProgressBar* Gauge_HP;                                                     // 0x0650 (size: 0x8)
-    class UProgressBar* Gauge_Hunger;                                                 // 0x0658 (size: 0x8)
-    class UImage* Image_Check;                                                        // 0x0660 (size: 0x8)
-    class UImage* Image_HP_Bar;                                                       // 0x0668 (size: 0x8)
-    class UImage* Image_Huger_Bar;                                                    // 0x0670 (size: 0x8)
-    class UImage* Image_Icon_Locked;                                                  // 0x0678 (size: 0x8)
-    class UImage* Image_Pal_List_Bar;                                                 // 0x0680 (size: 0x8)
-    class UImage* PalIcon;                                                            // 0x0688 (size: 0x8)
-    class UCanvasPanel* PalSelect_BaseTri;                                            // 0x0690 (size: 0x8)
-    class URetainerBox* RetainerBox_0;                                                // 0x0698 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_HP;                                                // 0x06A0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_LevelValue;                                        // 0x06A8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_MaxHP;                                             // 0x06B0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_NickName;                                          // 0x06B8 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x06C0 (size: 0x8)
-    TSoftObjectPtr<UPalIndividualCharacterParameter> lastBindedIndividualParam;       // 0x06C8 (size: 0x30)
-    FWBP_IngameMenu_PalBox_PalList_COnClicked OnClicked;                              // 0x06F8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_Pal_Alive;
+    class UWidgetAnimation* Anm_Pal_Dead;
+    class UWidgetAnimation* Anm_NormalToFocus;
+    class UWidgetAnimation* Anm_Focus;
+    class UWidgetAnimation* Anm_Normal;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_LvText;
+    class UCanvasPanel* CanvasPanel_119;
+    class UImage* Empty;
+    class UProgressBar* Gauge_HP;
+    class UProgressBar* Gauge_Hunger;
+    class UImage* Image_Check;
+    class UImage* Image_HP_Bar;
+    class UImage* Image_Huger_Bar;
+    class UImage* Image_Icon_Locked;
+    class UImage* Image_Pal_List_Bar;
+    class UImage* PalIcon;
+    class UCanvasPanel* PalSelect_BaseTri;
+    class URetainerBox* RetainerBox_0;
+    class UBP_PalTextBlock_C* Text_HP;
+    class UBP_PalTextBlock_C* Text_LevelValue;
+    class UBP_PalTextBlock_C* Text_MaxHP;
+    class UBP_PalTextBlock_C* Text_NickName;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    TSoftObjectPtr<UPalIndividualCharacterParameter> lastBindedIndividualParam;
+    FWBP_IngameMenu_PalBox_PalList_COnClicked OnClicked;
     void OnClicked(class UPalIndividualCharacterSlot* TargetSlot);
-    FWBP_IngameMenu_PalBox_PalList_COnHovered OnHovered;                              // 0x0708 (size: 0x10)
+    FWBP_IngameMenu_PalBox_PalList_COnHovered OnHovered;
     void OnHovered(class UPalIndividualCharacterSlot* Slot);
-    class UPalIndividualCharacterSlot* TargetSlot;                                    // 0x0718 (size: 0x8)
-    FWBP_IngameMenu_PalBox_PalList_COnUnhovered OnUnhovered;                          // 0x0720 (size: 0x10)
+    class UPalIndividualCharacterSlot* TargetSlot;
+    FWBP_IngameMenu_PalBox_PalList_COnUnhovered OnUnhovered;
     void OnUnhovered();
-    class UMaterialInstanceDynamic* dynamicMaterial;                                  // 0x0730 (size: 0x8)
-    bool bEnableDragDrop;                                                             // 0x0738 (size: 0x1)
+    class UMaterialInstanceDynamic* dynamicMaterial;
+    bool bEnableDragDrop;
 
     void Unbind();
     void OnUpdateSkin(const FName& NewSkinName);
@@ -67,6 +67,6 @@ class UWBP_IngameMenu_PalBox_PalList_C : public UWBP_IndividualParameterBindWidg
     void OnUnhovered__DelegateSignature();
     void OnHovered__DelegateSignature(class UPalIndividualCharacterSlot* Slot);
     void OnClicked__DelegateSignature(class UPalIndividualCharacterSlot* TargetSlot);
-}; // Size: 0x739
+};
 
 #endif

@@ -3,12 +3,12 @@
 
 struct FActorInitStateChangedParams
 {
-    class AActor* OwningActor;                                                        // 0x0000 (size: 0x8)
-    FName FeatureName;                                                                // 0x0008 (size: 0x8)
-    class UObject* Implementer;                                                       // 0x0010 (size: 0x8)
-    FGameplayTag FeatureState;                                                        // 0x0018 (size: 0x8)
+    class AActor* OwningActor;
+    FName FeatureName;
+    class UObject* Implementer;
+    FGameplayTag FeatureState;
 
-}; // Size: 0x20
+};
 
 class IGameFrameworkInitStateInterface : public IInterface
 {
@@ -18,15 +18,15 @@ class IGameFrameworkInitStateInterface : public IInterface
     bool HasReachedInitState(FGameplayTag DesiredState);
     FGameplayTag GetInitState();
     FName GetFeatureName();
-}; // Size: 0x28
+};
 
 class UControllerComponent : public UGameFrameworkComponent
 {
-}; // Size: 0xA0
+};
 
 class UGameFrameworkComponent : public UActorComponent
 {
-}; // Size: 0xA0
+};
 
 class UGameFrameworkComponentManager : public UGameInstanceSubsystem
 {
@@ -38,18 +38,18 @@ class UGameFrameworkComponentManager : public UGameInstanceSubsystem
     bool RegisterAndCallForClassInitState(TSoftClassPtr<AActor> actorClass, FName FeatureName, FGameplayTag RequiredState, FRegisterAndCallForClassInitStateDelegate Delegate, bool bCallImmediately);
     bool RegisterAndCallForActorInitState(class AActor* Actor, FName FeatureName, FGameplayTag RequiredState, FRegisterAndCallForActorInitStateDelegate Delegate, bool bCallImmediately);
     void AddReceiver(class AActor* Receiver, bool bAddOnlyInGameWorlds);
-}; // Size: 0x238
+};
 
 class UGameStateComponent : public UGameFrameworkComponent
 {
-}; // Size: 0xA0
+};
 
 class UPawnComponent : public UGameFrameworkComponent
 {
-}; // Size: 0xA0
+};
 
 class UPlayerStateComponent : public UGameFrameworkComponent
 {
-}; // Size: 0xA0
+};
 
 #endif

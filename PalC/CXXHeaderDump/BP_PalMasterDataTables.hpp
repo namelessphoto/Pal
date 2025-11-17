@@ -3,6 +3,6 @@
 
 class UBP_PalMasterDataTables_C : public UPalMasterDataTables
 {
-}; // Size: 0x370
+};
 
 #endif

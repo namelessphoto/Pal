@@ -3,15 +3,15 @@
 
 class UBP_UIIndividualParameterInitializeWaiter_C : public UObject
 {
-    class APalCharacter* RegisteredCharacter;                                         // 0x0028 (size: 0x8)
-    FBP_UIIndividualParameterInitializeWaiter_COnComplete OnComplete;                 // 0x0030 (size: 0x10)
+    class APalCharacter* RegisteredCharacter;
+    FBP_UIIndividualParameterInitializeWaiter_COnComplete OnComplete;
     void OnComplete(class APalCharacter* TargetCharacter, class UBP_UIIndividualParameterInitializeWaiter_C* selfObject);
-    FTimerHandle CheckIndividualParameterTimerHandle;                                 // 0x0040 (size: 0x8)
+    FTimerHandle CheckIndividualParameterTimerHandle;
 
     void CheckIndividual();
     void OnCompleteInitiaize(class APalCharacter* Character);
     void Register(class APalCharacter* TargetCharacter);
     void OnComplete__DelegateSignature(class APalCharacter* TargetCharacter, class UBP_UIIndividualParameterInitializeWaiter_C* selfObject);
-}; // Size: 0x48
+};
 
 #endif

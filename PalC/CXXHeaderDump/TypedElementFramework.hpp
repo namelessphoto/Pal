@@ -3,46 +3,46 @@
 
 struct FScriptTypedElementHandle
 {
-}; // Size: 0x8
+};
 
 struct FScriptTypedElementListProxy
 {
-}; // Size: 0x10
+};
 
 class ITestTypedElementInterfaceA : public IInterface
 {
 
     bool SetDisplayName(const FScriptTypedElementHandle& InElementHandle, FText InNewName, bool bNotify);
     FText GetDisplayName(const FScriptTypedElementHandle& InElementHandle);
-}; // Size: 0x28
+};
 
 class ITestTypedElementInterfaceB : public IInterface
 {
 
     bool MarkAsTested(const FScriptTypedElementHandle& InElementHandle);
-}; // Size: 0x28
+};
 
 class ITestTypedElementInterfaceC : public IInterface
 {
 
     bool GetIsTested(const FScriptTypedElementHandle& InElementHandle);
-}; // Size: 0x28
+};
 
 class ITypedElementCounterInterface : public IInterface
 {
-}; // Size: 0x28
+};
 
 class UTestTypedElementInterfaceA_ImplTyped : public UObject
 {
-}; // Size: 0x30
+};
 
 class UTestTypedElementInterfaceA_ImplUntyped : public UObject
 {
-}; // Size: 0x30
+};
 
 class UTestTypedElementInterfaceBAndC_Typed : public UObject
 {
-}; // Size: 0x38
+};
 
 class UTypedElementHandleLibrary : public UObject
 {
@@ -51,7 +51,7 @@ class UTypedElementHandleLibrary : public UObject
     bool NotEqual(const FScriptTypedElementHandle& LHS, const FScriptTypedElementHandle& RHS);
     bool IsSet(const FScriptTypedElementHandle& ElementHandle);
     bool Equal(const FScriptTypedElementHandle& LHS, const FScriptTypedElementHandle& RHS);
-}; // Size: 0x28
+};
 
 class UTypedElementListLibrary : public UObject
 {
@@ -76,13 +76,13 @@ class UTypedElementListLibrary : public UObject
     void AppendList(FScriptTypedElementListProxy ElementList, const FScriptTypedElementListProxy OtherElementList);
     void Append(FScriptTypedElementListProxy ElementList, const TArray<FScriptTypedElementHandle>& ElementHandles);
     bool Add(FScriptTypedElementListProxy ElementList, const FScriptTypedElementHandle& ElementHandle);
-}; // Size: 0x28
+};
 
 class UTypedElementRegistry : public UObject
 {
 
     class UTypedElementRegistry* GetInstance();
     class UObject* GetElementInterface(const FScriptTypedElementHandle& InElementHandle, const TSubclassOf<class UInterface> InBaseInterfaceType);
-}; // Size: 0x948
+};
 
 #endif

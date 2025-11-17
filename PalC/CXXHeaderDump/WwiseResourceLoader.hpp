@@ -5,167 +5,167 @@
 
 struct FWwiseAcousticTextureCookedData
 {
-    float AbsorptionLow;                                                              // 0x0000 (size: 0x4)
-    float AbsorptionMidLow;                                                           // 0x0004 (size: 0x4)
-    float AbsorptionMidHigh;                                                          // 0x0008 (size: 0x4)
-    float AbsorptionHigh;                                                             // 0x000C (size: 0x4)
-    int32 ShortId;                                                                    // 0x0010 (size: 0x4)
-    FName DebugName;                                                                  // 0x0014 (size: 0x8)
+    float AbsorptionLow;
+    float AbsorptionMidLow;
+    float AbsorptionMidHigh;
+    float AbsorptionHigh;
+    int32 ShortId;
+    FName DebugName;
 
-}; // Size: 0x1C
+};
 
 struct FWwiseAuxBusCookedData
 {
-    int32 AuxBusId;                                                                   // 0x0000 (size: 0x4)
-    TArray<FWwiseSoundBankCookedData> SoundBanks;                                     // 0x0008 (size: 0x10)
-    TArray<FWwiseMediaCookedData> Media;                                              // 0x0018 (size: 0x10)
-    FName DebugName;                                                                  // 0x0028 (size: 0x8)
+    int32 AuxBusId;
+    TArray<FWwiseSoundBankCookedData> SoundBanks;
+    TArray<FWwiseMediaCookedData> Media;
+    FName DebugName;
 
-}; // Size: 0x30
+};
 
 struct FWwiseEventCookedData
 {
-    int32 EventId;                                                                    // 0x0000 (size: 0x4)
-    TArray<FWwiseSoundBankCookedData> SoundBanks;                                     // 0x0008 (size: 0x10)
-    TArray<FWwiseMediaCookedData> Media;                                              // 0x0018 (size: 0x10)
-    TArray<FWwiseExternalSourceCookedData> ExternalSources;                           // 0x0028 (size: 0x10)
-    TArray<FWwiseSwitchContainerLeafCookedData> SwitchContainerLeaves;                // 0x0038 (size: 0x10)
-    TSet<FWwiseGroupValueCookedData> RequiredGroupValueSet;                           // 0x0048 (size: 0x50)
-    EWwiseEventDestroyOptions DestroyOptions;                                         // 0x0098 (size: 0x1)
-    FName DebugName;                                                                  // 0x009C (size: 0x8)
+    int32 EventId;
+    TArray<FWwiseSoundBankCookedData> SoundBanks;
+    TArray<FWwiseMediaCookedData> Media;
+    TArray<FWwiseExternalSourceCookedData> ExternalSources;
+    TArray<FWwiseSwitchContainerLeafCookedData> SwitchContainerLeaves;
+    TSet<FWwiseGroupValueCookedData> RequiredGroupValueSet;
+    EWwiseEventDestroyOptions DestroyOptions;
+    FName DebugName;
 
-}; // Size: 0xA8
+};
 
 struct FWwiseEventInfo : public FWwiseObjectInfo
 {
-    EWwiseEventSwitchContainerLoading SwitchContainerLoading;                         // 0x0020 (size: 0x1)
-    EWwiseEventDestroyOptions DestroyOptions;                                         // 0x0021 (size: 0x1)
+    EWwiseEventSwitchContainerLoading SwitchContainerLoading;
+    EWwiseEventDestroyOptions DestroyOptions;
 
-}; // Size: 0x24
+};
 
 struct FWwiseGameParameterCookedData
 {
-    int32 ShortId;                                                                    // 0x0000 (size: 0x4)
-    FName DebugName;                                                                  // 0x0004 (size: 0x8)
+    int32 ShortId;
+    FName DebugName;
 
-}; // Size: 0xC
+};
 
 struct FWwiseGroupValueCookedData
 {
-    EWwiseGroupType Type;                                                             // 0x0000 (size: 0x1)
-    int32 GroupId;                                                                    // 0x0004 (size: 0x4)
-    int32 ID;                                                                         // 0x0008 (size: 0x4)
-    FName DebugName;                                                                  // 0x000C (size: 0x8)
+    EWwiseGroupType Type;
+    int32 GroupId;
+    int32 ID;
+    FName DebugName;
 
-}; // Size: 0x14
+};
 
 struct FWwiseGroupValueInfo : public FWwiseObjectInfo
 {
-    uint32 GroupShortId;                                                              // 0x0020 (size: 0x4)
+    uint32 GroupShortId;
 
-}; // Size: 0x24
+};
 
 struct FWwiseInitBankCookedData : public FWwiseSoundBankCookedData
 {
-    TArray<FWwiseSoundBankCookedData> SoundBanks;                                     // 0x0020 (size: 0x10)
-    TArray<FWwiseMediaCookedData> Media;                                              // 0x0030 (size: 0x10)
-    TArray<FWwiseLanguageCookedData> Language;                                        // 0x0040 (size: 0x10)
+    TArray<FWwiseSoundBankCookedData> SoundBanks;
+    TArray<FWwiseMediaCookedData> Media;
+    TArray<FWwiseLanguageCookedData> Language;
 
-}; // Size: 0x50
+};
 
 struct FWwiseLanguageId
 {
-    int32 LanguageId;                                                                 // 0x0000 (size: 0x4)
-    FName LanguageName;                                                               // 0x0004 (size: 0x8)
+    int32 LanguageId;
+    FName LanguageName;
 
-}; // Size: 0xC
+};
 
 struct FWwiseLocalizedAuxBusCookedData
 {
-    TMap<class FWwiseLanguageCookedData, class FWwiseAuxBusCookedData> AuxBusLanguageMap; // 0x0000 (size: 0x50)
-    FName DebugName;                                                                  // 0x0050 (size: 0x8)
-    int32 AuxBusId;                                                                   // 0x0058 (size: 0x4)
+    TMap<class FWwiseLanguageCookedData, class FWwiseAuxBusCookedData> AuxBusLanguageMap;
+    FName DebugName;
+    int32 AuxBusId;
 
-}; // Size: 0x60
+};
 
 struct FWwiseLocalizedEventCookedData
 {
-    TMap<class FWwiseLanguageCookedData, class FWwiseEventCookedData> EventLanguageMap; // 0x0000 (size: 0x50)
-    FName DebugName;                                                                  // 0x0050 (size: 0x8)
-    int32 EventId;                                                                    // 0x0058 (size: 0x4)
+    TMap<class FWwiseLanguageCookedData, class FWwiseEventCookedData> EventLanguageMap;
+    FName DebugName;
+    int32 EventId;
 
-}; // Size: 0x60
+};
 
 struct FWwiseLocalizedShareSetCookedData
 {
-    TMap<class FWwiseLanguageCookedData, class FWwiseShareSetCookedData> ShareSetLanguageMap; // 0x0000 (size: 0x50)
-    FName DebugName;                                                                  // 0x0050 (size: 0x8)
-    int32 ShareSetId;                                                                 // 0x0058 (size: 0x4)
+    TMap<class FWwiseLanguageCookedData, class FWwiseShareSetCookedData> ShareSetLanguageMap;
+    FName DebugName;
+    int32 ShareSetId;
 
-}; // Size: 0x60
+};
 
 struct FWwiseLocalizedSoundBankCookedData
 {
-    TMap<class FWwiseLanguageCookedData, class FWwiseSoundBankCookedData> SoundBankLanguageMap; // 0x0000 (size: 0x50)
-    FName DebugName;                                                                  // 0x0050 (size: 0x8)
-    int32 SoundBankId;                                                                // 0x0058 (size: 0x4)
+    TMap<class FWwiseLanguageCookedData, class FWwiseSoundBankCookedData> SoundBankLanguageMap;
+    FName DebugName;
+    int32 SoundBankId;
 
-}; // Size: 0x60
+};
 
 struct FWwiseObjectInfo
 {
-    FGuid WwiseGuid;                                                                  // 0x0000 (size: 0x10)
-    uint32 WwiseShortId;                                                              // 0x0010 (size: 0x4)
-    FName WwiseName;                                                                  // 0x0014 (size: 0x8)
-    uint32 HardCodedSoundBankShortId;                                                 // 0x001C (size: 0x4)
+    FGuid WwiseGuid;
+    uint32 WwiseShortId;
+    FName WwiseName;
+    uint32 HardCodedSoundBankShortId;
 
-}; // Size: 0x20
+};
 
 struct FWwisePlatformId
 {
-    FGuid PlatformGuid;                                                               // 0x0000 (size: 0x10)
-    FName PlatformName;                                                               // 0x0010 (size: 0x8)
+    FGuid PlatformGuid;
+    FName PlatformName;
 
-}; // Size: 0x18
+};
 
 struct FWwiseShareSetCookedData
 {
-    int32 ShareSetId;                                                                 // 0x0000 (size: 0x4)
-    TArray<FWwiseSoundBankCookedData> SoundBanks;                                     // 0x0008 (size: 0x10)
-    TArray<FWwiseMediaCookedData> Media;                                              // 0x0018 (size: 0x10)
-    FName DebugName;                                                                  // 0x0028 (size: 0x8)
+    int32 ShareSetId;
+    TArray<FWwiseSoundBankCookedData> SoundBanks;
+    TArray<FWwiseMediaCookedData> Media;
+    FName DebugName;
 
-}; // Size: 0x30
+};
 
 struct FWwiseSharedGroupValueKey
 {
-}; // Size: 0x10
+};
 
 struct FWwiseSharedLanguageId
 {
-    EWwiseLanguageRequirement LanguageRequirement;                                    // 0x0010 (size: 0x1)
+    EWwiseLanguageRequirement LanguageRequirement;
 
-}; // Size: 0x18
+};
 
 struct FWwiseSharedPlatformId
 {
-}; // Size: 0x10
+};
 
 struct FWwiseSwitchContainerLeafCookedData
 {
-    TSet<FWwiseGroupValueCookedData> GroupValueSet;                                   // 0x0000 (size: 0x50)
-    TArray<FWwiseSoundBankCookedData> SoundBanks;                                     // 0x0050 (size: 0x10)
-    TArray<FWwiseMediaCookedData> Media;                                              // 0x0060 (size: 0x10)
-    TArray<FWwiseExternalSourceCookedData> ExternalSources;                           // 0x0070 (size: 0x10)
+    TSet<FWwiseGroupValueCookedData> GroupValueSet;
+    TArray<FWwiseSoundBankCookedData> SoundBanks;
+    TArray<FWwiseMediaCookedData> Media;
+    TArray<FWwiseExternalSourceCookedData> ExternalSources;
 
-}; // Size: 0x80
+};
 
 struct FWwiseTriggerCookedData
 {
-    int32 TriggerId;                                                                  // 0x0000 (size: 0x4)
-    FName DebugName;                                                                  // 0x0004 (size: 0x8)
+    int32 TriggerId;
+    FName DebugName;
 
-}; // Size: 0xC
+};
 
 class UWwiseEventInfoLibrary : public UBlueprintFunctionLibrary
 {
@@ -184,7 +184,7 @@ class UWwiseEventInfoLibrary : public UBlueprintFunctionLibrary
     int32 GetHardCodedSoundBankShortId(const FWwiseEventInfo& Ref);
     EWwiseEventDestroyOptions GetDestroyOptions(const FWwiseEventInfo& Ref);
     void BreakStruct(FWwiseEventInfo Ref, FGuid& OutWwiseGuid, int32& OutWwiseShortId, FString& OutWwiseName, EWwiseEventSwitchContainerLoading& OutSwitchContainerLoading, EWwiseEventDestroyOptions& OutDestroyOptions, int32& OutHardCodedSoundBankShortId);
-}; // Size: 0x28
+};
 
 class UWwiseGroupValueInfoLibrary : public UBlueprintFunctionLibrary
 {
@@ -199,7 +199,7 @@ class UWwiseGroupValueInfoLibrary : public UBlueprintFunctionLibrary
     int32 GetGroupShortId(const FWwiseGroupValueInfo& Ref);
     FGuid GetAssetGuid(const FWwiseGroupValueInfo& Ref);
     void BreakStruct(FWwiseGroupValueInfo Ref, FGuid& OutAssetGuid, int32& OutGroupShortId, int32& OutWwiseShortId, FString& OutWwiseName);
-}; // Size: 0x28
+};
 
 class UWwiseObjectInfoLibrary : public UBlueprintFunctionLibrary
 {
@@ -214,6 +214,6 @@ class UWwiseObjectInfoLibrary : public UBlueprintFunctionLibrary
     FGuid GetWwiseGuid(const FWwiseObjectInfo& Ref);
     int32 GetHardCodedSoundBankShortId(const FWwiseObjectInfo& Ref);
     void BreakStruct(FWwiseObjectInfo Ref, FGuid& OutWwiseGuid, int32& OutWwiseShortId, FString& OutWwiseName, int32& OutHardCodedSoundBankShortId);
-}; // Size: 0x28
+};
 
 #endif

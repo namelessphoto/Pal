@@ -3,6 +3,6 @@
 
 class UBP_Fishing_CatchBattle_Behavior_Normal_C : public UBP_Fishing_CatchBattle_Behavior_C
 {
-}; // Size: 0x110
+};
 
 #endif

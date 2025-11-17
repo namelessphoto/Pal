@@ -3,6 +3,6 @@
 
 class UBP_BaseCampTaskChecker_C : public UPalBaseCampTaskChecker
 {
-}; // Size: 0x30
+};
 
 #endif

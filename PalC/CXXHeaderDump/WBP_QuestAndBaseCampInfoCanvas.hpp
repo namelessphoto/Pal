@@ -3,23 +3,23 @@
 
 class UWBP_QuestAndBaseCampInfoCanvas_C : public UPalUIInsideBaseCampCanvas
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0550 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_Border_Bottom;                                // 0x0558 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_Border_Top;                                   // 0x0560 (size: 0x8)
-    class UVerticalBox* VerticalBox;                                                  // 0x0568 (size: 0x8)
-    class UWBP_BattleEntry_Member_C* WBP_BattleEntry_Member;                          // 0x0570 (size: 0x8)
-    class UWBP_Ingame_QuestBoard_C* WBP_Ingame_QuestBoard;                            // 0x0578 (size: 0x8)
-    class UWBP_IngameMenu_CampLevelUp_C* WBP_IngameMenu_CampLevelUp;                  // 0x0580 (size: 0x8)
-    class UWBP_IngameMenu_Task_Simple_C* WBP_IngameMenu_Task_Simple;                  // 0x0588 (size: 0x8)
-    class UWBP_PlayerInputKeyGuideIcon_C* WBP_PlayerInputKeyGuideIcon;                // 0x0590 (size: 0x8)
-    class UWBP_WorkerSimpleDetail_C* WBP_WorkerSimpleDetail;                          // 0x0598 (size: 0x8)
-    FTimerHandle tackCheckTimerHandle;                                                // 0x05A0 (size: 0x8)
-    double TraceLength;                                                               // 0x05A8 (size: 0x8)
-    TSoftObjectPtr<APalCharacter> NowDisplayInfoCharacter;                            // 0x05B0 (size: 0x30)
-    FTimerHandle CollectWorkerDirectorModelTimer;                                     // 0x05E0 (size: 0x8)
-    FTimerHandle LoopCheckTimer;                                                      // 0x05E8 (size: 0x8)
-    FTimerHandle NewVar;                                                              // 0x05F0 (size: 0x8)
-    FTimerHandle TimerHandle_UpdateQuestDetail;                                       // 0x05F8 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UHorizontalBox* HorizontalBox_Border_Bottom;
+    class UHorizontalBox* HorizontalBox_Border_Top;
+    class UVerticalBox* VerticalBox;
+    class UWBP_BattleEntry_Member_C* WBP_BattleEntry_Member;
+    class UWBP_Ingame_QuestBoard_C* WBP_Ingame_QuestBoard;
+    class UWBP_IngameMenu_CampLevelUp_C* WBP_IngameMenu_CampLevelUp;
+    class UWBP_IngameMenu_Task_Simple_C* WBP_IngameMenu_Task_Simple;
+    class UWBP_PlayerInputKeyGuideIcon_C* WBP_PlayerInputKeyGuideIcon;
+    class UWBP_WorkerSimpleDetail_C* WBP_WorkerSimpleDetail;
+    FTimerHandle tackCheckTimerHandle;
+    double TraceLength;
+    TSoftObjectPtr<APalCharacter> NowDisplayInfoCharacter;
+    FTimerHandle CollectWorkerDirectorModelTimer;
+    FTimerHandle LoopCheckTimer;
+    FTimerHandle NewVar;
+    FTimerHandle TimerHandle_UpdateQuestDetail;
 
     void CREATEDELEGATE_PROXYFUNCTION_0(const FName& QuestId);
     void OnTimerEvent_UpdateQuestDetail();
@@ -50,6 +50,6 @@ class UWBP_QuestAndBaseCampInfoCanvas_C : public UPalUIInsideBaseCampCanvas
     void SetVerticalBoxVisible(bool IsVisible);
     void LoopCheck();
     void ExecuteUbergraph_WBP_QuestAndBaseCampInfoCanvas(int32 EntryPoint);
-}; // Size: 0x600
+};
 
 #endif

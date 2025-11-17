@@ -3,6 +3,6 @@
 
 class ABP_MeatCutterKnife_C : public ABP_MeleeWeaponBase_C
 {
-}; // Size: 0x5F8
+};
 
 #endif

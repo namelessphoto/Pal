@@ -3,9 +3,9 @@
 
 class UWBP_OtomoLoupe_C : public UWBP_LoupeBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0488 (size: 0x8)
-    class UWBP_PalLoupe_C* WBP_PalLoupe;                                              // 0x0490 (size: 0x8)
-    class UPalIndividualCharacterHandle* targetHandle;                                // 0x0498 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWBP_PalLoupe_C* WBP_PalLoupe;
+    class UPalIndividualCharacterHandle* targetHandle;
 
     void GetLoupeWidgetSize(FVector2D& widgetSize);
     void GetTranslationTarget(class UWidget*& Widget);
@@ -21,6 +21,6 @@ class UWBP_OtomoLoupe_C : public UWBP_LoupeBase_C
     void OnActivateOtomo();
     void OnInitialized();
     void ExecuteUbergraph_WBP_OtomoLoupe(int32 EntryPoint);
-}; // Size: 0x4A0
+};
 
 #endif

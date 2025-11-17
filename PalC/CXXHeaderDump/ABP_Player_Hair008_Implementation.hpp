@@ -12,10 +12,6 @@ struct FAnimBlueprintGeneratedConstantData : public FAnimBlueprintConstantData
 
 };
 
-struct FAnimBlueprintGeneratedMutableData : public FAnimBlueprintMutableData
-{
-};
-
 class UABP_Player_Hair008_Implementation_C : public UAnimInstance
 {
     FPointerToUberGraphFrame UberGraphFrame;

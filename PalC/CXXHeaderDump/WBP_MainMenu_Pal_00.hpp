@@ -3,164 +3,164 @@
 
 class UWBP_MainMenu_Pal_00_C : public UWBP_IndividualParameterBindWidget_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0608 (size: 0x8)
-    class UWidgetAnimation* Anm_NoPal;                                                // 0x0610 (size: 0x8)
-    class UWidgetAnimation* Anm_Close_Status;                                         // 0x0618 (size: 0x8)
-    class UWidgetAnimation* Anm_Open_Status;                                          // 0x0620 (size: 0x8)
-    class UWidgetAnimation* Anm_Open_List;                                            // 0x0628 (size: 0x8)
-    class UBackgroundBlur* BackgroundBlur_Lock_1;                                     // 0x0630 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_C_2;                                    // 0x0638 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_LvText;                                 // 0x0640 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_NickName;                               // 0x0648 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_SoulRank;                               // 0x0650 (size: 0x8)
-    class UCanvasPanel* Canvas_DropGuide;                                             // 0x0658 (size: 0x8)
-    class UCanvasPanel* Canvas_Locked;                                                // 0x0660 (size: 0x8)
-    class UCanvasPanel* Canvas_PalName;                                               // 0x0668 (size: 0x8)
-    class UCanvasPanel* Canvas_PalStatus;                                             // 0x0670 (size: 0x8)
-    class UCanvasPanel* Canvas_SkillInfo;                                             // 0x0678 (size: 0x8)
-    class UCanvasPanel* Canvas_Unlocked;                                              // 0x0680 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_PartnerSkill;                                     // 0x0688 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_Potencial;                                        // 0x0690 (size: 0x8)
-    class UCanvasPanel* CanvasPanelDebuff;                                            // 0x0698 (size: 0x8)
-    class UCanvasPanel* CanvasPanelLock_1;                                            // 0x06A0 (size: 0x8)
-    class UCanvasPanel* CanvasPanelLockText;                                          // 0x06A8 (size: 0x8)
-    class UCanvasPanel* CanvasPanelLockText_1;                                        // 0x06B0 (size: 0x8)
-    class UProgressBar* Gauge_Exp;                                                    // 0x06B8 (size: 0x8)
-    class UProgressBar* Gauge_Friendship;                                             // 0x06C0 (size: 0x8)
-    class UProgressBar* Gauge_HP;                                                     // 0x06C8 (size: 0x8)
-    class UProgressBar* Gauge_Hunger;                                                 // 0x06D0 (size: 0x8)
-    class UImage* Icon_Friendship;                                                    // 0x06D8 (size: 0x8)
-    class UImage* IconRankArrow_Attack;                                               // 0x06E0 (size: 0x8)
-    class UImage* IconRankArrow_Defence;                                              // 0x06E8 (size: 0x8)
-    class UImage* IconRankArrow_Work;                                                 // 0x06F0 (size: 0x8)
-    class UImage* Image_Icon_GlobalInport;                                            // 0x06F8 (size: 0x8)
-    class UImage* Image_Icon_Locked;                                                  // 0x0700 (size: 0x8)
-    class UImage* Image_PartnerSkill;                                                 // 0x0708 (size: 0x8)
-    class UImage* Image_PartnerSkill_Sq;                                              // 0x0710 (size: 0x8)
-    class UImage* Image_PartnerSkillIcon;                                             // 0x0718 (size: 0x8)
-    class UImage* Image_PartnerSkillIcon_Sq;                                          // 0x0720 (size: 0x8)
-    class UImage* Image_Rare;                                                         // 0x0728 (size: 0x8)
-    class UImage* Image_Strong;                                                       // 0x0730 (size: 0x8)
-    class UOverlay* Overlay_Circle;                                                   // 0x0738 (size: 0x8)
-    class UOverlay* Overlay_Icon_Circle;                                              // 0x0740 (size: 0x8)
-    class UOverlay* Overlay_Icon_sq;                                                  // 0x0748 (size: 0x8)
-    class UOverlay* Overlay_sq;                                                       // 0x0750 (size: 0x8)
-    class UBP_PalRichTextBlock_C* RichText_PartnerSkillDesc;                          // 0x0758 (size: 0x8)
-    class UBP_PalRichTextBlock_C* RichText_PartnerSkillDesc_1;                        // 0x0760 (size: 0x8)
-    class UBP_PalRichTextBlock_C* RichText_PartnerSkillName;                          // 0x0768 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_DefenseValue;                                      // 0x0770 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_FriendshipRank_Num;                                // 0x0778 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_LevelValue;                                        // 0x0780 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_MaxHP;                                             // 0x0788 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_MaxHunger;                                         // 0x0790 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_NextExp;                                           // 0x0798 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_NowHP;                                             // 0x07A0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_NowHunger;                                         // 0x07A8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_NowSanity;                                         // 0x07B0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_PartnerSkillLevel_Value;                           // 0x07B8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_PartnerSkillLevel_Value_1;                         // 0x07C0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_PartnerSkillLockItem;                              // 0x07C8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_PartnerSkillName_1;                                // 0x07D0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_PunishedLevel_Af;                                  // 0x07D8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_PunishedLevel_Pre;                                 // 0x07E0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_RangeAttackValue;                                  // 0x07E8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_WorkSpeedValue;                                    // 0x07F0 (size: 0x8)
-    class UUniformGridPanel* UniformGrid_Suitability;                                 // 0x07F8 (size: 0x8)
-    class UVerticalBox* VerticalBox_Pal_List;                                         // 0x0800 (size: 0x8)
-    class UVerticalBox* VerticalBox_Skill;                                            // 0x0808 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton_NameEdit;                             // 0x0810 (size: 0x8)
-    class UWBP_MainMenu_Pal_FoodAmount_C* WBP_MainMenu_Pal_FoodAmount;                // 0x0818 (size: 0x8)
-    class UWBP_MainMenu_Pal_Skill_Active_C* WBP_MainMenu_Pal_Skill_Active;            // 0x0820 (size: 0x8)
-    class UWBP_MainMenu_Pal_Skill_Active_C* WBP_MainMenu_Pal_Skill_Active_1;          // 0x0828 (size: 0x8)
-    class UWBP_MainMenu_Pal_Skill_Active_C* WBP_MainMenu_Pal_Skill_Active_2;          // 0x0830 (size: 0x8)
-    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive;          // 0x0838 (size: 0x8)
-    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive_1;        // 0x0840 (size: 0x8)
-    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive_2;        // 0x0848 (size: 0x8)
-    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive_3;        // 0x0850 (size: 0x8)
-    class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State;                          // 0x0858 (size: 0x8)
-    class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State_0;                        // 0x0860 (size: 0x8)
-    class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State_1;                        // 0x0868 (size: 0x8)
-    class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State_2;                        // 0x0870 (size: 0x8)
-    class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State_3;                        // 0x0878 (size: 0x8)
-    class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State_4;                        // 0x0880 (size: 0x8)
-    class UWBP_MainMenu_Pal_StatusElement_C* WBP_MainMenu_Pal_StatusElement_000;      // 0x0888 (size: 0x8)
-    class UWBP_MainMenu_Pal_StatusElement_C* WBP_MainMenu_Pal_StatusElement_001;      // 0x0890 (size: 0x8)
-    class UWBP_MainMenu_PalRarityStar_C* WBP_MainMenu_PalRarityStar;                  // 0x0898 (size: 0x8)
-    class UWBP_MainMenu_PalRarityStar_C* WBP_MainMenu_PalRarityStar_1;                // 0x08A0 (size: 0x8)
-    class UWBP_MainMenu_PalRarityStar_C* WBP_MainMenu_PalRarityStar_2;                // 0x08A8 (size: 0x8)
-    class UWBP_MainMenu_PalRarityStar_C* WBP_MainMenu_PalRarityStar_3;                // 0x08B0 (size: 0x8)
-    class UWBP_MainMenu_PalSkillInfo_C* WBP_MainMenu_PalSkillInfo;                    // 0x08B8 (size: 0x8)
-    class UWBP_Menu_Pal_Potencial_C* WBP_Menu_Pal_Potencial;                          // 0x08C0 (size: 0x8)
-    class UWBP_Menu_PalList_C* WBP_Menu_PalList;                                      // 0x08C8 (size: 0x8)
-    class UWBP_Menu_PalList_C* WBP_Menu_PalList_1;                                    // 0x08D0 (size: 0x8)
-    class UWBP_Menu_PalList_C* WBP_Menu_PalList_2;                                    // 0x08D8 (size: 0x8)
-    class UWBP_Menu_PalList_C* WBP_Menu_PalList_3;                                    // 0x08E0 (size: 0x8)
-    class UWBP_Menu_PalList_C* WBP_Menu_PalList_4;                                    // 0x08E8 (size: 0x8)
-    class UWBP_Menu_PalList_C* WBP_Menu_PalList_5;                                    // 0x08F0 (size: 0x8)
-    class UWBP_NoData_C* WBP_NoData;                                                  // 0x08F8 (size: 0x8)
-    class UWBP_PalCommonButton_C* WBP_PalCommonButton_Friendship;                     // 0x0900 (size: 0x8)
-    class UWBP_PalCommonButton_C* WBP_PalCommonButton_HP;                             // 0x0908 (size: 0x8)
-    class UWBP_PalCommonButton_C* WBP_PalCommonButton_Hunger;                         // 0x0910 (size: 0x8)
-    class UWBP_PalCommonButton_C* WBP_PalCommonButton_SAN;                            // 0x0918 (size: 0x8)
-    class UWBP_PalGenderIcon_C* WBP_PalGenderIcon;                                    // 0x0920 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x0928 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Atk;                      // 0x0930 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Def;                      // 0x0938 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_LevelSync;                // 0x0940 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Lock;                     // 0x0948 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Work;                     // 0x0950 (size: 0x8)
-    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;                                // 0x0958 (size: 0x8)
-    class UWBP_StatusBuffTimerContainer_C* WBP_StatusBuffTimerContainer;              // 0x0960 (size: 0x8)
-    TArray<class UWBP_Menu_PalList_C*> PalPanels;                                     // 0x0968 (size: 0x10)
-    FWBP_MainMenu_Pal_00_COnClickedAnyPalPanel OnClickedAnyPalPanel;                  // 0x0978 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_NoPal;
+    class UWidgetAnimation* Anm_Close_Status;
+    class UWidgetAnimation* Anm_Open_Status;
+    class UWidgetAnimation* Anm_Open_List;
+    class UBackgroundBlur* BackgroundBlur_Lock_1;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_C_2;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_LvText;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_NickName;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_SoulRank;
+    class UCanvasPanel* Canvas_DropGuide;
+    class UCanvasPanel* Canvas_Locked;
+    class UCanvasPanel* Canvas_PalName;
+    class UCanvasPanel* Canvas_PalStatus;
+    class UCanvasPanel* Canvas_SkillInfo;
+    class UCanvasPanel* Canvas_Unlocked;
+    class UCanvasPanel* CanvasPanel_PartnerSkill;
+    class UCanvasPanel* CanvasPanel_Potencial;
+    class UCanvasPanel* CanvasPanelDebuff;
+    class UCanvasPanel* CanvasPanelLock_1;
+    class UCanvasPanel* CanvasPanelLockText;
+    class UCanvasPanel* CanvasPanelLockText_1;
+    class UProgressBar* Gauge_Exp;
+    class UProgressBar* Gauge_Friendship;
+    class UProgressBar* Gauge_HP;
+    class UProgressBar* Gauge_Hunger;
+    class UImage* Icon_Friendship;
+    class UImage* IconRankArrow_Attack;
+    class UImage* IconRankArrow_Defence;
+    class UImage* IconRankArrow_Work;
+    class UImage* Image_Icon_GlobalInport;
+    class UImage* Image_Icon_Locked;
+    class UImage* Image_PartnerSkill;
+    class UImage* Image_PartnerSkill_Sq;
+    class UImage* Image_PartnerSkillIcon;
+    class UImage* Image_PartnerSkillIcon_Sq;
+    class UImage* Image_Rare;
+    class UImage* Image_Strong;
+    class UOverlay* Overlay_Circle;
+    class UOverlay* Overlay_Icon_Circle;
+    class UOverlay* Overlay_Icon_sq;
+    class UOverlay* Overlay_sq;
+    class UBP_PalRichTextBlock_C* RichText_PartnerSkillDesc;
+    class UBP_PalRichTextBlock_C* RichText_PartnerSkillDesc_1;
+    class UBP_PalRichTextBlock_C* RichText_PartnerSkillName;
+    class UBP_PalTextBlock_C* Text_DefenseValue;
+    class UBP_PalTextBlock_C* Text_FriendshipRank_Num;
+    class UBP_PalTextBlock_C* Text_LevelValue;
+    class UBP_PalTextBlock_C* Text_MaxHP;
+    class UBP_PalTextBlock_C* Text_MaxHunger;
+    class UBP_PalTextBlock_C* Text_NextExp;
+    class UBP_PalTextBlock_C* Text_NowHP;
+    class UBP_PalTextBlock_C* Text_NowHunger;
+    class UBP_PalTextBlock_C* Text_NowSanity;
+    class UBP_PalTextBlock_C* Text_PartnerSkillLevel_Value;
+    class UBP_PalTextBlock_C* Text_PartnerSkillLevel_Value_1;
+    class UBP_PalTextBlock_C* Text_PartnerSkillLockItem;
+    class UBP_PalTextBlock_C* Text_PartnerSkillName_1;
+    class UBP_PalTextBlock_C* Text_PunishedLevel_Af;
+    class UBP_PalTextBlock_C* Text_PunishedLevel_Pre;
+    class UBP_PalTextBlock_C* Text_RangeAttackValue;
+    class UBP_PalTextBlock_C* Text_WorkSpeedValue;
+    class UUniformGridPanel* UniformGrid_Suitability;
+    class UVerticalBox* VerticalBox_Pal_List;
+    class UVerticalBox* VerticalBox_Skill;
+    class UWBP_CommonButton_C* WBP_CommonButton_NameEdit;
+    class UWBP_MainMenu_Pal_FoodAmount_C* WBP_MainMenu_Pal_FoodAmount;
+    class UWBP_MainMenu_Pal_Skill_Active_C* WBP_MainMenu_Pal_Skill_Active;
+    class UWBP_MainMenu_Pal_Skill_Active_C* WBP_MainMenu_Pal_Skill_Active_1;
+    class UWBP_MainMenu_Pal_Skill_Active_C* WBP_MainMenu_Pal_Skill_Active_2;
+    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive;
+    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive_1;
+    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive_2;
+    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive_3;
+    class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State;
+    class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State_0;
+    class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State_1;
+    class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State_2;
+    class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State_3;
+    class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State_4;
+    class UWBP_MainMenu_Pal_StatusElement_C* WBP_MainMenu_Pal_StatusElement_000;
+    class UWBP_MainMenu_Pal_StatusElement_C* WBP_MainMenu_Pal_StatusElement_001;
+    class UWBP_MainMenu_PalRarityStar_C* WBP_MainMenu_PalRarityStar;
+    class UWBP_MainMenu_PalRarityStar_C* WBP_MainMenu_PalRarityStar_1;
+    class UWBP_MainMenu_PalRarityStar_C* WBP_MainMenu_PalRarityStar_2;
+    class UWBP_MainMenu_PalRarityStar_C* WBP_MainMenu_PalRarityStar_3;
+    class UWBP_MainMenu_PalSkillInfo_C* WBP_MainMenu_PalSkillInfo;
+    class UWBP_Menu_Pal_Potencial_C* WBP_Menu_Pal_Potencial;
+    class UWBP_Menu_PalList_C* WBP_Menu_PalList;
+    class UWBP_Menu_PalList_C* WBP_Menu_PalList_1;
+    class UWBP_Menu_PalList_C* WBP_Menu_PalList_2;
+    class UWBP_Menu_PalList_C* WBP_Menu_PalList_3;
+    class UWBP_Menu_PalList_C* WBP_Menu_PalList_4;
+    class UWBP_Menu_PalList_C* WBP_Menu_PalList_5;
+    class UWBP_NoData_C* WBP_NoData;
+    class UWBP_PalCommonButton_C* WBP_PalCommonButton_Friendship;
+    class UWBP_PalCommonButton_C* WBP_PalCommonButton_HP;
+    class UWBP_PalCommonButton_C* WBP_PalCommonButton_Hunger;
+    class UWBP_PalCommonButton_C* WBP_PalCommonButton_SAN;
+    class UWBP_PalGenderIcon_C* WBP_PalGenderIcon;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Atk;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Def;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_LevelSync;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Lock;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Work;
+    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;
+    class UWBP_StatusBuffTimerContainer_C* WBP_StatusBuffTimerContainer;
+    TArray<class UWBP_Menu_PalList_C*> PalPanels;
+    FWBP_MainMenu_Pal_00_COnClickedAnyPalPanel OnClickedAnyPalPanel;
     void OnClickedAnyPalPanel(class UPalIndividualCharacterHandle* Handle);
-    FWBP_MainMenu_Pal_00_COnHoveredAnyPalPanel OnHoveredAnyPalPanel;                  // 0x0988 (size: 0x10)
+    FWBP_MainMenu_Pal_00_COnHoveredAnyPalPanel OnHoveredAnyPalPanel;
     void OnHoveredAnyPalPanel(class UPalIndividualCharacterHandle* Handle);
-    bool isShowStatusWithList;                                                        // 0x0998 (size: 0x1)
-    TArray<class UWBP_MainMenu_Pal_Skill_Active_C*> ActiveSkillPanelArray;            // 0x09A0 (size: 0x10)
-    TArray<class UWBP_MainMenu_Pal_Skill_Passive_C*> PassiveSkillPanelArray;          // 0x09B0 (size: 0x10)
-    FWBP_MainMenu_Pal_00_COnUnhoveredAnyPalPanel OnUnhoveredAnyPalPanel;              // 0x09C0 (size: 0x10)
+    bool isShowStatusWithList;
+    TArray<class UWBP_MainMenu_Pal_Skill_Active_C*> ActiveSkillPanelArray;
+    TArray<class UWBP_MainMenu_Pal_Skill_Passive_C*> PassiveSkillPanelArray;
+    FWBP_MainMenu_Pal_00_COnUnhoveredAnyPalPanel OnUnhoveredAnyPalPanel;
     void OnUnhoveredAnyPalPanel();
-    FWBP_MainMenu_Pal_00_COnCommitedNickName OnCommitedNickName;                      // 0x09D0 (size: 0x10)
+    FWBP_MainMenu_Pal_00_COnCommitedNickName OnCommitedNickName;
     void OnCommitedNickName(FText NewNickName);
-    FWBP_MainMenu_Pal_00_COnChangedNickname OnChangedNickname;                        // 0x09E0 (size: 0x10)
+    FWBP_MainMenu_Pal_00_COnChangedNickname OnChangedNickname;
     void OnChangedNickname(FText editingNickName);
-    TArray<class UWBP_MainMenu_Pal_State_C*> ConditionWidgetArray;                    // 0x09F0 (size: 0x10)
-    FDataTableRowHandle HPParameterTitleMsgID;                                        // 0x0A00 (size: 0x10)
-    FDataTableRowHandle HPParameterDescMsgID;                                         // 0x0A10 (size: 0x10)
-    FDataTableRowHandle HungerParameterTitleMsgID;                                    // 0x0A20 (size: 0x10)
-    FDataTableRowHandle HungerParameterDescMsgID;                                     // 0x0A30 (size: 0x10)
-    FDataTableRowHandle SanityParameterTitleMsgID;                                    // 0x0A40 (size: 0x10)
-    FDataTableRowHandle SanityParameterDescMsgID;                                     // 0x0A50 (size: 0x10)
-    FDataTableRowHandle GenusCategoryDescMsgID;                                       // 0x0A60 (size: 0x10)
-    TArray<class UWBP_MainMenu_Pal_State_C*> SindeInfoConditionWidgetArray;           // 0x0A70 (size: 0x10)
-    FDataTableRowHandle NoPalMsgID;                                                   // 0x0A80 (size: 0x10)
-    FWBP_MainMenu_Pal_00_COnSelectedChangeActiveSkill OnSelectedChangeActiveSkill;    // 0x0A90 (size: 0x10)
+    TArray<class UWBP_MainMenu_Pal_State_C*> ConditionWidgetArray;
+    FDataTableRowHandle HPParameterTitleMsgID;
+    FDataTableRowHandle HPParameterDescMsgID;
+    FDataTableRowHandle HungerParameterTitleMsgID;
+    FDataTableRowHandle HungerParameterDescMsgID;
+    FDataTableRowHandle SanityParameterTitleMsgID;
+    FDataTableRowHandle SanityParameterDescMsgID;
+    FDataTableRowHandle GenusCategoryDescMsgID;
+    TArray<class UWBP_MainMenu_Pal_State_C*> SindeInfoConditionWidgetArray;
+    FDataTableRowHandle NoPalMsgID;
+    FWBP_MainMenu_Pal_00_COnSelectedChangeActiveSkill OnSelectedChangeActiveSkill;
     void OnSelectedChangeActiveSkill(class UPalIndividualCharacterHandle* targetHandle, EPalWazaID changeWazaID, EPalWazaID newWazaID);
-    FDataTableRowHandle SkillUnlockMsgID;                                             // 0x0AA0 (size: 0x10)
-    class UPalIndividualCharacterHandle* CachedIndividualHandle;                      // 0x0AB0 (size: 0x8)
-    class UWBP_MainMenu_Pal_Skill_Active_C* LastSelectedSkillPanel;                   // 0x0AB8 (size: 0x8)
-    TArray<class UWBP_MainMenu_PalRarityStar_C*> RarityWidgetArray;                   // 0x0AC0 (size: 0x10)
-    FDataTableRowHandle PartnerSkillLockMsgID;                                        // 0x0AD0 (size: 0x10)
-    FDataTableRowHandle DefTitleMsgID;                                                // 0x0AE0 (size: 0x10)
-    FDataTableRowHandle DefDescMsgID;                                                 // 0x0AF0 (size: 0x10)
-    FDataTableRowHandle AtkTitleMsgID;                                                // 0x0B00 (size: 0x10)
-    FDataTableRowHandle AtkDescMsgID;                                                 // 0x0B10 (size: 0x10)
-    FPalDataTableRowName_UIInputAction RemoveWazaInputAction;                         // 0x0B20 (size: 0x8)
-    FPalUIActionBindData RemoveWazaActionHandle;                                      // 0x0B28 (size: 0x4)
-    EPalWazaID CachedSelectedWazaID;                                                  // 0x0B2C (size: 0x2)
-    FWBP_MainMenu_Pal_00_COnRequestedRemoveWaza OnRequestedRemoveWaza;                // 0x0B30 (size: 0x10)
+    FDataTableRowHandle SkillUnlockMsgID;
+    class UPalIndividualCharacterHandle* CachedIndividualHandle;
+    class UWBP_MainMenu_Pal_Skill_Active_C* LastSelectedSkillPanel;
+    TArray<class UWBP_MainMenu_PalRarityStar_C*> RarityWidgetArray;
+    FDataTableRowHandle PartnerSkillLockMsgID;
+    FDataTableRowHandle DefTitleMsgID;
+    FDataTableRowHandle DefDescMsgID;
+    FDataTableRowHandle AtkTitleMsgID;
+    FDataTableRowHandle AtkDescMsgID;
+    FPalDataTableRowName_UIInputAction RemoveWazaInputAction;
+    FPalUIActionBindData RemoveWazaActionHandle;
+    EPalWazaID CachedSelectedWazaID;
+    FWBP_MainMenu_Pal_00_COnRequestedRemoveWaza OnRequestedRemoveWaza;
     void OnRequestedRemoveWaza(EPalWazaID WazaID, class UPalIndividualCharacterHandle* targetHandle);
-    FDataTableRowHandle WorkTitleMsgID;                                               // 0x0B40 (size: 0x10)
-    FDataTableRowHandle WorkDescMsgID;                                                // 0x0B50 (size: 0x10)
-    FDataTableRowHandle LevelSyncMsgID;                                               // 0x0B60 (size: 0x10)
-    FDataTableRowHandle LevelSyncDescMsgID;                                           // 0x0B70 (size: 0x10)
-    bool IsEditingNickName;                                                           // 0x0B80 (size: 0x1)
-    FWBP_MainMenu_Pal_00_COnToggleFavoritePal OnToggleFavoritePal;                    // 0x0B88 (size: 0x10)
+    FDataTableRowHandle WorkTitleMsgID;
+    FDataTableRowHandle WorkDescMsgID;
+    FDataTableRowHandle LevelSyncMsgID;
+    FDataTableRowHandle LevelSyncDescMsgID;
+    bool IsEditingNickName;
+    FWBP_MainMenu_Pal_00_COnToggleFavoritePal OnToggleFavoritePal;
     void OnToggleFavoritePal(class UPalIndividualCharacterHandle* CharacterHandle);
-    bool Is Lock;                                                                     // 0x0B98 (size: 0x1)
-    FDataTableRowHandle FriendShipMsgID;                                              // 0x0BA0 (size: 0x10)
-    FDataTableRowHandle FriendShipDescMsgID;                                          // 0x0BB0 (size: 0x10)
+    bool Is Lock;
+    FDataTableRowHandle FriendShipMsgID;
+    FDataTableRowHandle FriendShipDescMsgID;
 
     void UpdateFriendshipPoint_Binded(int32 NewPoint);
     void SetFriendShip(int32 FriendshipRank, int32 FriendshipPoint);
@@ -269,6 +269,6 @@ class UWBP_MainMenu_Pal_00_C : public UWBP_IndividualParameterBindWidget_C
     void OnCommitedNickName__DelegateSignature(FText NewNickName);
     void OnHoveredAnyPalPanel__DelegateSignature(class UPalIndividualCharacterHandle* Handle);
     void OnClickedAnyPalPanel__DelegateSignature(class UPalIndividualCharacterHandle* Handle);
-}; // Size: 0xBC0
+};
 
 #endif

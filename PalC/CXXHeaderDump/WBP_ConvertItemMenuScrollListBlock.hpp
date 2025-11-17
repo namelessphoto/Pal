@@ -3,12 +3,12 @@
 
 class UWBP_ConvertItemMenuScrollListBlock_C : public UPalUserWidget
 {
-    class UWrapBox* WrapBox;                                                          // 0x0408 (size: 0x8)
-    FWBP_ConvertItemMenuScrollListBlock_COnClickedAnyContent OnClickedAnyContent;     // 0x0410 (size: 0x10)
+    class UWrapBox* WrapBox;
+    FWBP_ConvertItemMenuScrollListBlock_COnClickedAnyContent OnClickedAnyContent;
     void OnClickedAnyContent(class UWBP_PalConvertItemMenu_RecipeSlotButton_C* Widget);
-    FWBP_ConvertItemMenuScrollListBlock_COnHoveredAnyContent OnHoveredAnyContent;     // 0x0420 (size: 0x10)
+    FWBP_ConvertItemMenuScrollListBlock_COnHoveredAnyContent OnHoveredAnyContent;
     void OnHoveredAnyContent(class UWBP_PalConvertItemMenu_RecipeSlotButton_C* Widget);
-    FWBP_ConvertItemMenuScrollListBlock_COnUnhoveredAnyContent OnUnhoveredAnyContent; // 0x0430 (size: 0x10)
+    FWBP_ConvertItemMenuScrollListBlock_COnUnhoveredAnyContent OnUnhoveredAnyContent;
     void OnUnhoveredAnyContent(class UWBP_PalConvertItemMenu_RecipeSlotButton_C* Widget);
 
     void GetFocusTarget(class UWidget*& Target);
@@ -21,6 +21,6 @@ class UWBP_ConvertItemMenuScrollListBlock_C : public UPalUserWidget
     void OnUnhoveredAnyContent__DelegateSignature(class UWBP_PalConvertItemMenu_RecipeSlotButton_C* Widget);
     void OnHoveredAnyContent__DelegateSignature(class UWBP_PalConvertItemMenu_RecipeSlotButton_C* Widget);
     void OnClickedAnyContent__DelegateSignature(class UWBP_PalConvertItemMenu_RecipeSlotButton_C* Widget);
-}; // Size: 0x440
+};
 
 #endif

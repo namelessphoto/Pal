@@ -1,0 +1,41 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "EPalWidgetBlueprintType.generated.h"
+
+UENUM()
+    Undefined,
+    Dialog,
+    MonsterDetail,
+    WorldMap,
+    ConvertItemDetail,
+    CharacterRankUp,
+    RecoverOtomo,
+    ItemChest,
+    WorkerRadialMenu,
+    FoodBox,
+    SelectItem_PlayerInventory,
+    PlayerStatusOperation,
+    PalStatusOperation,
+    MapObjectSecuritySetting,
+    PasswordSetting,
+    BaseCampWorkHard,
+    WorkSuitabilityPreference,
+    BaseCampWorkFixedAssignManage,
+    ItemChestPreference,
+    CutsceneOverlay,
+    MapObjectCommonCharacterContainer,
+    PickingGame,
+    ArenaPalSelect,
+    BaseCampItemDispenser,
+    ItemBoothTrade,
+    ItemBoothSale,
+    PalBoothTrade,
+    PalBoothSale,
+    Spectator,
+    OperatingTable,
+    ArenaMenu,
+    ArenaRule,
+    ArenaRanking,
+    ArenaSpectator,
+};
+

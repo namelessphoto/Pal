@@ -3,15 +3,15 @@
 
 class UWBP_CommonWarning_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UWidgetAnimation* Anm_Close;                                                // 0x0410 (size: 0x8)
-    class UWidgetAnimation* Anm_Open;                                                 // 0x0418 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock;                                        // 0x0420 (size: 0x8)
-    class UImage* Image_Icon;                                                         // 0x0428 (size: 0x8)
-    bool Displaying;                                                                  // 0x0430 (size: 0x1)
-    TArray<FName> Crime Ids;                                                          // 0x0438 (size: 0x10)
-    EPalUICommonWarningType Display Type;                                             // 0x0448 (size: 0x1)
-    FWBP_CommonWarning_COnWarningClear OnWarningClear;                                // 0x0450 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_Close;
+    class UWidgetAnimation* Anm_Open;
+    class UBP_PalTextBlock_C* BP_PalTextBlock;
+    class UImage* Image_Icon;
+    bool Displaying;
+    TArray<FName> Crime Ids;
+    EPalUICommonWarningType Display Type;
+    FWBP_CommonWarning_COnWarningClear OnWarningClear;
     void OnWarningClear(EPalUICommonWarningType WarningType);
 
     void GetDisplayType(EPalUICommonWarningType& Display Type);
@@ -20,6 +20,6 @@ class UWBP_CommonWarning_C : public UPalUserWidget
     void ClearWarning();
     void ExecuteUbergraph_WBP_CommonWarning(int32 EntryPoint);
     void OnWarningClear__DelegateSignature(EPalUICommonWarningType WarningType);
-}; // Size: 0x460
+};
 
 #endif

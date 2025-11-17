@@ -3,8 +3,8 @@
 
 class ABP_Glider_Item_Base_C : public ABP_GliderObjectBase_C
 {
-    class USkeletalMeshComponent* SkeletalMesh;                                       // 0x0348 (size: 0x8)
+    class USkeletalMeshComponent* SkeletalMesh;
 
-}; // Size: 0x350
+};
 
 #endif

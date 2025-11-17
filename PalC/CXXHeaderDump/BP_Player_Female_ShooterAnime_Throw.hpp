@@ -3,6 +3,6 @@
 
 class UBP_Player_Female_ShooterAnime_Throw_C : public UBP_ShooterAnime_ThrowBase_C
 {
-}; // Size: 0x340
+};
 
 #endif

@@ -3,13 +3,13 @@
 
 class ABP_MonsterAIController_Otomo_C : public ABP_MonsterAIControllerBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0560 (size: 0x8)
-    int32 OtomoSlotIndex;                                                             // 0x0568 (size: 0x4)
-    TMap<class EPalAIActionType, class UPalAIActionBase*> PlayingAIActionMap;         // 0x0570 (size: 0x50)
-    FTimerHandle RegeneTimer;                                                         // 0x05C0 (size: 0x8)
-    FVector FollowInterpolatedPos;                                                    // 0x05C8 (size: 0x18)
-    double FollowSpeed;                                                               // 0x05E0 (size: 0x8)
-    bool IsReturningFromFarFlag;                                                      // 0x05E8 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    int32 OtomoSlotIndex;
+    TMap<class EPalAIActionType, class UPalAIActionBase*> PlayingAIActionMap;
+    FTimerHandle RegeneTimer;
+    FVector FollowInterpolatedPos;
+    double FollowSpeed;
+    bool IsReturningFromFarFlag;
 
     bool IsReturningFromFar();
     TSubclassOf<class UPalAIControllerWorkerModule> GetWorkerModuleClass();
@@ -36,6 +36,6 @@ class ABP_MonsterAIController_Otomo_C : public ABP_MonsterAIControllerBase_C
     void OnTrainer(class APalCharacter* InCharacter);
     void SetIsReturningFromFar(bool IsReturningFromFar);
     void ExecuteUbergraph_BP_MonsterAIController_Otomo(int32 EntryPoint);
-}; // Size: 0x5E9
+};
 
 #endif

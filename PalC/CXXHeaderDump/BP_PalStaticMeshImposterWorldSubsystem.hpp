@@ -3,6 +3,6 @@
 
 class UBP_PalStaticMeshImposterWorldSubsystem_C : public UPalStaticMeshImposterSubsystem
 {
-}; // Size: 0x110
+};
 
 #endif

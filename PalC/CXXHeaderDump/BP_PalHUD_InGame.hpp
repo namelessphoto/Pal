@@ -3,13 +3,13 @@
 
 class ABP_PalHUD_InGame_C : public APalHUDInGame
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x07E8 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x07F0 (size: 0x8)
-    class UWBP_PalLiftItem_C* UMG_LiftItem;                                           // 0x07F8 (size: 0x8)
-    TMap<class TSubclassOf<UPalUserWidget>, class EPalHUDWidgetPriority> PriorityMap; // 0x0800 (size: 0x50)
-    TMap<class TSubclassOf<UPalUserWidget>, class UPalUserWidget*> CreatedWidgetMap;  // 0x0850 (size: 0x50)
-    FGuid NewVar;                                                                     // 0x08A0 (size: 0x10)
-    bool GameOverUIBinded;                                                            // 0x08B0 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class USceneComponent* DefaultSceneRoot;
+    class UWBP_PalLiftItem_C* UMG_LiftItem;
+    TMap<class TSubclassOf<UPalUserWidget>, class EPalHUDWidgetPriority> PriorityMap;
+    TMap<class TSubclassOf<UPalUserWidget>, class UPalUserWidget*> CreatedWidgetMap;
+    FGuid NewVar;
+    bool GameOverUIBinded;
 
     void CREATEDELEGATE_PROXYFUNCTION_0(class APalPlayerCharacter* PlayerCharacter, const FPalDyingEndInfo& DyingEndInfo);
     void OnEndTrialGame();
@@ -35,6 +35,6 @@ class ABP_PalHUD_InGame_C : public APalHUDInGame
     void BindGameOverUI();
     void ReceiveDrawHUD(int32 SizeX, int32 SizeY);
     void ExecuteUbergraph_BP_PalHUD_InGame(int32 EntryPoint);
-}; // Size: 0x8B1
+};
 
 #endif

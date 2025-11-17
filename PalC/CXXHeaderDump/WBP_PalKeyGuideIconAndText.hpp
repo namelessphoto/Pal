@@ -3,13 +3,13 @@
 
 class UWBP_PalKeyGuideIconAndText_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_C_75;                                   // 0x0410 (size: 0x8)
-    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;                                // 0x0418 (size: 0x8)
-    FPalDataTableRowName_UIInputAction BindingActionName;                             // 0x0420 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_C_75;
+    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;
+    FPalDataTableRowName_UIInputAction BindingActionName;
 
     void OnInitialized();
     void ExecuteUbergraph_WBP_PalKeyGuideIconAndText(int32 EntryPoint);
-}; // Size: 0x428
+};
 
 #endif

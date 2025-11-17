@@ -3,14 +3,14 @@
 
 class UBP_AnimNotify_FootStep_C : public UPalAnimNotify_FootStep
 {
-    double InWaterRate_Feet;                                                          // 0x0070 (size: 0x8)
-    double Effect_Offset_Z_Feet;                                                      // 0x0078 (size: 0x8)
-    bool Mute;                                                                        // 0x0080 (size: 0x1)
-    EPalLandingType LandingType;                                                      // 0x0081 (size: 0x1)
-    EPalFootType FootType;                                                            // 0x0082 (size: 0x1)
-    TSoftClassPtr<UPalSoundSlot> DebugSoundSlot;                                      // 0x0088 (size: 0x30)
-    TEnumAsByte<EPhysicalSurface> DebugPhysicsMaterial;                               // 0x00B8 (size: 0x1)
-    int32 StepCount;                                                                  // 0x00BC (size: 0x4)
+    double InWaterRate_Feet;
+    double Effect_Offset_Z_Feet;
+    bool Mute;
+    EPalLandingType LandingType;
+    EPalFootType FootType;
+    TSoftClassPtr<UPalSoundSlot> DebugSoundSlot;
+    TEnumAsByte<EPhysicalSurface> DebugPhysicsMaterial;
+    int32 StepCount;
 
     void Get Step Effect Transform(class UPalStaticCharacterParameterComponent* StaticParam, double& Scale, FVector& Offset, class UNiagaraSystem*& Effect);
     void IsSwimming(class AActor* Owner, bool& IsSwimming);
@@ -28,6 +28,6 @@ class UBP_AnimNotify_FootStep_C : public UPalAnimNotify_FootStep
     void ProcJumpLanding(class AActor* Owner, EPalFootType FootType);
     void ProcFootStep(class AActor* Owner, EPalFootType FootType);
     bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, const FAnimNotifyEventReference& EventReference);
-}; // Size: 0xC0
+};
 
 #endif

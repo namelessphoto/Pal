@@ -3,15 +3,15 @@
 
 class ABP_SquadNPCSpawner_C : public ABP_MonoNPCSpawner_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0480 (size: 0x8)
-    TArray<class UPalIndividualCharacterHandle*> SpawnedHandleList;                   // 0x0488 (size: 0x10)
-    TArray<FF_NPCOnePointSpawnInfo> SpawnInfoList;                                    // 0x0498 (size: 0x10)
-    bool IsLoadingFlag;                                                               // 0x04A8 (size: 0x1)
-    TArray<class UPalIndividualCharacterHandle*> SpawnedOtomoHandleList;              // 0x04B0 (size: 0x10)
-    int32 SpawnedCount;                                                               // 0x04C0 (size: 0x4)
-    FBP_SquadNPCSpawner_COnSquadSpawnedCharacter OnSquadSpawnedCharacter;             // 0x04C8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    TArray<class UPalIndividualCharacterHandle*> SpawnedHandleList;
+    TArray<FF_NPCOnePointSpawnInfo> SpawnInfoList;
+    bool IsLoadingFlag;
+    TArray<class UPalIndividualCharacterHandle*> SpawnedOtomoHandleList;
+    int32 SpawnedCount;
+    FBP_SquadNPCSpawner_COnSquadSpawnedCharacter OnSquadSpawnedCharacter;
     void OnSquadSpawnedCharacter(class UPalIndividualCharacterHandle* NewParam);
-    TArray<class UPalIndividualCharacterHandle*> Handles;                             // 0x04D8 (size: 0x10)
+    TArray<class UPalIndividualCharacterHandle*> Handles;
 
     void SetNullHandleWhenDestoryOtomoSquad(class AActor* DestroyedActor);
     void OnOtomoSpawnedSquad(class AController* HolderController, class APalCharacter* OtomoPal);
@@ -32,6 +32,6 @@ class ABP_SquadNPCSpawner_C : public ABP_MonoNPCSpawner_C
     void SetAllNPCLocation();
     void ExecuteUbergraph_BP_SquadNPCSpawner(int32 EntryPoint);
     void OnSquadSpawnedCharacter__DelegateSignature(class UPalIndividualCharacterHandle* NewParam);
-}; // Size: 0x4E8
+};
 
 #endif

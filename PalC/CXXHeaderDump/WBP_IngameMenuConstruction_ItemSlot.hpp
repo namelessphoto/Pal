@@ -3,20 +3,20 @@
 
 class UWBP_IngameMenuConstruction_ItemSlot_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_OnToOff_WithoutText;                                  // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_LtoS;                                                 // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_OnToOff;                                              // 0x0290 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_2;                                                // 0x0298 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_Lock;                                             // 0x02A0 (size: 0x8)
-    class UImage* Icon;                                                               // 0x02A8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_BuildObjectName;                                   // 0x02B0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Label;                                             // 0x02B8 (size: 0x8)
-    class UWBP_MainMenu_NewDot_C* WBP_MainMenu_NewDot;                                // 0x02C0 (size: 0x8)
-    class UWBP_PalCommonNewMark_0_C* WBP_PalCommonNewMark_0;                          // 0x02C8 (size: 0x8)
-    FPalBuildObjectData BuildObjectData;                                              // 0x02D0 (size: 0x90)
-    FDataTableRowHandle NotEnoughMaterialMsgID;                                       // 0x0360 (size: 0x10)
-    FDataTableRowHandle NoBlueprintlMsgID;                                            // 0x0370 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_OnToOff_WithoutText;
+    class UWidgetAnimation* Anm_LtoS;
+    class UWidgetAnimation* Anm_OnToOff;
+    class UCanvasPanel* CanvasPanel_2;
+    class UCanvasPanel* CanvasPanel_Lock;
+    class UImage* Icon;
+    class UBP_PalTextBlock_C* Text_BuildObjectName;
+    class UBP_PalTextBlock_C* Text_Label;
+    class UWBP_MainMenu_NewDot_C* WBP_MainMenu_NewDot;
+    class UWBP_PalCommonNewMark_0_C* WBP_PalCommonNewMark_0;
+    FPalBuildObjectData BuildObjectData;
+    FDataTableRowHandle NotEnoughMaterialMsgID;
+    FDataTableRowHandle NoBlueprintlMsgID;
 
     void SetNewIconVisibility(bool Visable);
     FVector2D GetCanvasSize();
@@ -28,6 +28,6 @@ class UWBP_IngameMenuConstruction_ItemSlot_C : public UUserWidget
     void Construct();
     void DisableTextForDeck();
     void ExecuteUbergraph_WBP_IngameMenuConstruction_ItemSlot(int32 EntryPoint);
-}; // Size: 0x380
+};
 
 #endif

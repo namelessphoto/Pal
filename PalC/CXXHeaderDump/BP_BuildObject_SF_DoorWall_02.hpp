@@ -3,24 +3,24 @@
 
 class ABP_BuildObject_SF_DoorWall_02_C : public APalBuildObjectBasicBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0688 (size: 0x8)
-    class UPalMapObjectDoorParameterComponent* DoorParameter;                         // 0x0690 (size: 0x8)
-    class UStaticMeshComponent* Architecture_SF_DoorB_L;                              // 0x0698 (size: 0x8)
-    class UStaticMeshComponent* Architecture_SF_DoorB_R;                              // 0x06A0 (size: 0x8)
-    class UBoxComponent* AffectNavigationBox;                                         // 0x06A8 (size: 0x8)
-    class UBoxComponent* FrameCollision_02;                                           // 0x06B0 (size: 0x8)
-    class UBoxComponent* FrameCollision_01;                                           // 0x06B8 (size: 0x8)
-    class USceneComponent* FrameCollision;                                            // 0x06C0 (size: 0x8)
-    class UBP_InteractableBox_C* BP_InteractableBox;                                  // 0x06C8 (size: 0x8)
-    class UBoxComponent* DoorCollision;                                               // 0x06D0 (size: 0x8)
-    class UBoxComponent* BuildWorkableBounds;                                         // 0x06D8 (size: 0x8)
-    class UStaticMeshComponent* Architecture_SF_DoorB;                                // 0x06E0 (size: 0x8)
-    class USceneComponent* Root;                                                      // 0x06E8 (size: 0x8)
-    class UBoxComponent* CheckOverlapCollision;                                       // 0x06F0 (size: 0x8)
-    float _______MoveDoor_84958E5E48A83A9B2D20A1952BB73F68;                           // 0x06F8 (size: 0x4)
-    TEnumAsByte<ETimelineDirection> ________Direction_84958E5E48A83A9B2D20A1952BB73F68; // 0x06FC (size: 0x1)
-    class UTimelineComponent* タイムライン;                                                 // 0x0700 (size: 0x8)
-    double MoveDoorDistance;                                                          // 0x0708 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalMapObjectDoorParameterComponent* DoorParameter;
+    class UStaticMeshComponent* Architecture_SF_DoorB_L;
+    class UStaticMeshComponent* Architecture_SF_DoorB_R;
+    class UBoxComponent* AffectNavigationBox;
+    class UBoxComponent* FrameCollision_02;
+    class UBoxComponent* FrameCollision_01;
+    class USceneComponent* FrameCollision;
+    class UBP_InteractableBox_C* BP_InteractableBox;
+    class UBoxComponent* DoorCollision;
+    class UBoxComponent* BuildWorkableBounds;
+    class UStaticMeshComponent* Architecture_SF_DoorB;
+    class USceneComponent* Root;
+    class UBoxComponent* CheckOverlapCollision;
+    float _______MoveDoor_84958E5E48A83A9B2D20A1952BB73F68;
+    TEnumAsByte<ETimelineDirection> ________Direction_84958E5E48A83A9B2D20A1952BB73F68;
+    class UTimelineComponent* タイムライン;
+    double MoveDoorDistance;
 
     void SetMoveDoor(class UStaticMeshComponent* Mesh, double MoveDirection, double MoveDistanceNormal);
     void OnUpdateSwitchState(class UPalMapObjectSwitchModule* Module);
@@ -31,6 +31,6 @@ class ABP_BuildObject_SF_DoorWall_02_C : public APalBuildObjectBasicBase
     void OpenDoorAnimation();
     void CloseDoorAnimation();
     void ExecuteUbergraph_BP_BuildObject_SF_DoorWall_02(int32 EntryPoint);
-}; // Size: 0x710
+};
 
 #endif

@@ -5,6 +5,6 @@ class UBP_CombatHeliRpidWeaponComponent_WingMiso_C : public UBP_CombatHeliRpidWe
 {
 
     void GetMuzzleTransform(FTransform& MzlTF);
-}; // Size: 0xF8
+};
 
 #endif

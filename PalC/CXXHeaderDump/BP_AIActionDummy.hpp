@@ -3,6 +3,6 @@
 
 class UBP_AIActionDummy_C : public UPalAIActionBase
 {
-}; // Size: 0x130
+};
 
 #endif

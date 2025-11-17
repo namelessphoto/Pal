@@ -3,14 +3,14 @@
 
 class UWBP_PlayerHPGauge_C : public UWBP_IndividualParameterBindWidget_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0608 (size: 0x8)
-    class UWBP_GuildGauge_C* WBP_GuildGauge;                                          // 0x0610 (size: 0x8)
-    float ImportedSphereRadius;                                                       // 0x0618 (size: 0x4)
-    FVector2D DrawOffset;                                                             // 0x0620 (size: 0x10)
-    FTimerHandle CheckActorTimerHandle;                                               // 0x0630 (size: 0x8)
-    FTimerHandle CheckDisplayTypeTimerHandle;                                         // 0x0638 (size: 0x8)
-    class UBP_Status_Dying_C* CachedDyingStatus;                                      // 0x0640 (size: 0x8)
-    FWBP_PlayerHPGauge_COnDelayClose OnDelayClose;                                    // 0x0648 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWBP_GuildGauge_C* WBP_GuildGauge;
+    float ImportedSphereRadius;
+    FVector2D DrawOffset;
+    FTimerHandle CheckActorTimerHandle;
+    FTimerHandle CheckDisplayTypeTimerHandle;
+    class UBP_Status_Dying_C* CachedDyingStatus;
+    FWBP_PlayerHPGauge_COnDelayClose OnDelayClose;
     void OnDelayClose(class UWidget* Widget);
 
     void OnDyingEnd();
@@ -30,6 +30,6 @@ class UWBP_PlayerHPGauge_C : public UWBP_IndividualParameterBindWidget_C
     void DelayClose();
     void ExecuteUbergraph_WBP_PlayerHPGauge(int32 EntryPoint);
     void OnDelayClose__DelegateSignature(class UWidget* Widget);
-}; // Size: 0x658
+};
 
 #endif

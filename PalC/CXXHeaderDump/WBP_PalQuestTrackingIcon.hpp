@@ -3,10 +3,10 @@
 
 class UWBP_PalQuestTrackingIcon_C : public UWBP_LoupeBase_C
 {
-    class UWBP_NPC_OverheadQuest_C* WBP_NPC_OverheadQuest;                            // 0x0488 (size: 0x8)
-    TSoftObjectPtr<UPalLocationPoint_QuestBase> SoftLocationData;                     // 0x0490 (size: 0x30)
-    double HeadOffset;                                                                // 0x04C0 (size: 0x8)
-    FName MyQuestId;                                                                  // 0x04C8 (size: 0x8)
+    class UWBP_NPC_OverheadQuest_C* WBP_NPC_OverheadQuest;
+    TSoftObjectPtr<UPalLocationPoint_QuestBase> SoftLocationData;
+    double HeadOffset;
+    FName MyQuestId;
 
     void CalcScreenPosition();
     bool IsEnableLoupe();
@@ -15,6 +15,6 @@ class UWBP_PalQuestTrackingIcon_C : public UWBP_LoupeBase_C
     void SetFinalWidgetOpacity(double calcedOpacity);
     void GetTargetWorldLocation(FVector& outVector);
     void Setup(TSoftObjectPtr<UPalLocationPoint_QuestBase> SoftQuestLocation);
-}; // Size: 0x4D0
+};
 
 #endif

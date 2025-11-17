@@ -3,33 +3,33 @@
 
 class UWBP_IngameBossHP_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_BossDefeat;                                           // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_Close;                                                // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_Open;                                                 // 0x0290 (size: 0x8)
-    class UProgressBar* BossGaugeHP;                                                  // 0x0298 (size: 0x8)
-    class UProgressBar* BossGaugeHP_Back;                                             // 0x02A0 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_Num_HP_00;                              // 0x02A8 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_Num_HP_01;                              // 0x02B0 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_Prefix;                                 // 0x02B8 (size: 0x8)
-    class UBP_PalTextBlock_C* BPPalTextBlock_ATK;                                     // 0x02C0 (size: 0x8)
-    class UBP_PalTextBlock_C* BPPalTextBlock_DEF;                                     // 0x02C8 (size: 0x8)
-    class UBP_PalTextBlock_C* BPPalTextBlock_HP;                                      // 0x02D0 (size: 0x8)
-    class UCanvasPanel* Canvas_PalCommonDetail;                                       // 0x02D8 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_Prefix;                                           // 0x02E0 (size: 0x8)
-    class UImage* NameDeco_Image_L;                                                   // 0x02E8 (size: 0x8)
-    class UImage* NameDeco_Image_R;                                                   // 0x02F0 (size: 0x8)
-    class UOverlay* Overlay_Potencial;                                                // 0x02F8 (size: 0x8)
-    class USizeBox* SizeBox_Overall;                                                  // 0x0300 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_BossName;                                          // 0x0308 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_LvTitle;                                           // 0x0310 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_LvValue;                                           // 0x0318 (size: 0x8)
-    class UWBP_PalElementIcon_C* WBP_PalElementIcon_Double_00;                        // 0x0320 (size: 0x8)
-    class UWBP_PalElementIcon_C* WBP_PalElementIcon_Double_01;                        // 0x0328 (size: 0x8)
-    class UWBP_PalElementIcon_C* WBP_PalElementIcon_Single;                           // 0x0330 (size: 0x8)
-    class UPalUIDelayGaugeCalculator* DelayGauge;                                     // 0x0338 (size: 0x8)
-    bool TalentDisplay;                                                               // 0x0340 (size: 0x1)
-    TEnumAsByte<ENum_BossGaugeDisplayMode> DisplayMode;                               // 0x0341 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_BossDefeat;
+    class UWidgetAnimation* Anm_Close;
+    class UWidgetAnimation* Anm_Open;
+    class UProgressBar* BossGaugeHP;
+    class UProgressBar* BossGaugeHP_Back;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_Num_HP_00;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_Num_HP_01;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_Prefix;
+    class UBP_PalTextBlock_C* BPPalTextBlock_ATK;
+    class UBP_PalTextBlock_C* BPPalTextBlock_DEF;
+    class UBP_PalTextBlock_C* BPPalTextBlock_HP;
+    class UCanvasPanel* Canvas_PalCommonDetail;
+    class UCanvasPanel* CanvasPanel_Prefix;
+    class UImage* NameDeco_Image_L;
+    class UImage* NameDeco_Image_R;
+    class UOverlay* Overlay_Potencial;
+    class USizeBox* SizeBox_Overall;
+    class UBP_PalTextBlock_C* Text_BossName;
+    class UBP_PalTextBlock_C* Text_LvTitle;
+    class UBP_PalTextBlock_C* Text_LvValue;
+    class UWBP_PalElementIcon_C* WBP_PalElementIcon_Double_00;
+    class UWBP_PalElementIcon_C* WBP_PalElementIcon_Double_01;
+    class UWBP_PalElementIcon_C* WBP_PalElementIcon_Single;
+    class UPalUIDelayGaugeCalculator* DelayGauge;
+    bool TalentDisplay;
+    TEnumAsByte<ENum_BossGaugeDisplayMode> DisplayMode;
 
     void SetBossGaugeDisplayMode(TEnumAsByte<ENum_BossGaugeDisplayMode> IsShortMode);
     void Set Enable Talent Detail(bool IsEnable, class UPalIndividualCharacterParameter* Parameter);
@@ -42,6 +42,6 @@ class UWBP_IngameBossHP_C : public UUserWidget
     void Tick(FGeometry MyGeometry, float InDeltaTime);
     void OnInitialized();
     void ExecuteUbergraph_WBP_IngameBossHP(int32 EntryPoint);
-}; // Size: 0x342
+};
 
 #endif

@@ -3,30 +3,30 @@
 
 class UWBP_InventoryEquipment_StatusPointButton_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UBP_PalRichTextBlock_C* BP_PalRichTextBlock_BonusPoint;                     // 0x0410 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_DecrementButton;                                  // 0x0418 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_IncrementButton;                                  // 0x0420 (size: 0x8)
-    class UImage* Icon;                                                               // 0x0428 (size: 0x8)
-    class UImage* Image_ParamArrow;                                                   // 0x0430 (size: 0x8)
-    class USizeBox* SizeBox_Arrow;                                                    // 0x0438 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Main;                                              // 0x0440 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Param;                                             // 0x0448 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x0450 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Decrement;                // 0x0458 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Increment;                // 0x0460 (size: 0x8)
-    TMap<class FName, class FDataTableRowHandle> MagIDMap;                            // 0x0468 (size: 0x50)
-    TMap<class FName, class UTexture2D*> TextureMap;                                  // 0x04B8 (size: 0x50)
-    FName BindStatusPointName;                                                        // 0x0508 (size: 0x8)
-    FWBP_InventoryEquipment_StatusPointButton_COnClickedIncrement OnClickedIncrement; // 0x0510 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UBP_PalRichTextBlock_C* BP_PalRichTextBlock_BonusPoint;
+    class UCanvasPanel* CanvasPanel_DecrementButton;
+    class UCanvasPanel* CanvasPanel_IncrementButton;
+    class UImage* Icon;
+    class UImage* Image_ParamArrow;
+    class USizeBox* SizeBox_Arrow;
+    class UBP_PalTextBlock_C* Text_Main;
+    class UBP_PalTextBlock_C* Text_Param;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Decrement;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Increment;
+    TMap<class FName, class FDataTableRowHandle> MagIDMap;
+    TMap<class FName, class UTexture2D*> TextureMap;
+    FName BindStatusPointName;
+    FWBP_InventoryEquipment_StatusPointButton_COnClickedIncrement OnClickedIncrement;
     void OnClickedIncrement(class UWBP_InventoryEquipment_StatusPointButton_C* Button);
-    int32 CachedPoint;                                                                // 0x0520 (size: 0x4)
-    int32 AdditionalPointForSimulate;                                                 // 0x0524 (size: 0x4)
-    FWBP_InventoryEquipment_StatusPointButton_COnClickedDecrement OnClickedDecrement; // 0x0528 (size: 0x10)
+    int32 CachedPoint;
+    int32 AdditionalPointForSimulate;
+    FWBP_InventoryEquipment_StatusPointButton_COnClickedDecrement OnClickedDecrement;
     void OnClickedDecrement(class UWBP_InventoryEquipment_StatusPointButton_C* Button);
-    FWBP_InventoryEquipment_StatusPointButton_COnHovered OnHovered;                   // 0x0538 (size: 0x10)
+    FWBP_InventoryEquipment_StatusPointButton_COnHovered OnHovered;
     void OnHovered(class UWBP_InventoryEquipment_StatusPointButton_C* Button);
-    FWBP_InventoryEquipment_StatusPointButton_COnUnhovered OnUnhovered;               // 0x0548 (size: 0x10)
+    FWBP_InventoryEquipment_StatusPointButton_COnUnhovered OnUnhovered;
     void OnUnhovered(class UWBP_InventoryEquipment_StatusPointButton_C* Button);
 
     void UpdateStatusBuffState();
@@ -48,6 +48,6 @@ class UWBP_InventoryEquipment_StatusPointButton_C : public UPalUserWidget
     void OnHovered__DelegateSignature(class UWBP_InventoryEquipment_StatusPointButton_C* Button);
     void OnClickedDecrement__DelegateSignature(class UWBP_InventoryEquipment_StatusPointButton_C* Button);
     void OnClickedIncrement__DelegateSignature(class UWBP_InventoryEquipment_StatusPointButton_C* Button);
-}; // Size: 0x558
+};
 
 #endif

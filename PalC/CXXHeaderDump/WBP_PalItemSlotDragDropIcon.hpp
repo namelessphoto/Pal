@@ -3,9 +3,9 @@
 
 class UWBP_PalItemSlotDragDropIcon_C : public UPalUserWidget
 {
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_PalInGameMenuItemSlotButton;        // 0x0408 (size: 0x8)
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_PalInGameMenuItemSlotButton;
 
     void Setup(FName StaticItemId, int32 DisplayNum);
-}; // Size: 0x410
+};
 
 #endif

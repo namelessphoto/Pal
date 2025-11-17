@@ -3,17 +3,17 @@
 
 class UWBP_PalMonsterInframeRender_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UImage* Image_Captured;                                                     // 0x0410 (size: 0x8)
-    class ABP_PalMonsterCaptureSet_C* CaptureCamera;                                  // 0x0418 (size: 0x8)
-    class UTextureRenderTarget2D* RenderTarget;                                       // 0x0420 (size: 0x8)
-    bool isCaptureEveryFrame;                                                         // 0x0428 (size: 0x1)
-    TSubclassOf<class ABP_PalMonsterCaptureSet_C> CaptureSetClass;                    // 0x0430 (size: 0x8)
-    double CaptureInterval;                                                           // 0x0438 (size: 0x8)
-    FTimerHandle CaptureSceneTimerHandle;                                             // 0x0440 (size: 0x8)
-    class UMaterialInstanceDynamic* RenderTargetMaterial;                             // 0x0448 (size: 0x8)
-    class ABP_PalMonsterInframeRendererSoundPlayer_C* SoundPlayerActor;               // 0x0450 (size: 0x8)
-    bool IgnoreFinalizeWhenDestruct;                                                  // 0x0458 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UImage* Image_Captured;
+    class ABP_PalMonsterCaptureSet_C* CaptureCamera;
+    class UTextureRenderTarget2D* RenderTarget;
+    bool isCaptureEveryFrame;
+    TSubclassOf<class ABP_PalMonsterCaptureSet_C> CaptureSetClass;
+    double CaptureInterval;
+    FTimerHandle CaptureSceneTimerHandle;
+    class UMaterialInstanceDynamic* RenderTargetMaterial;
+    class ABP_PalMonsterInframeRendererSoundPlayer_C* SoundPlayerActor;
+    bool IgnoreFinalizeWhenDestruct;
 
     void RequestCaptureSkin(FName CharacterID, FName SkinName);
     void Finalize();
@@ -33,6 +33,6 @@ class UWBP_PalMonsterInframeRender_C : public UPalUserWidget
     void Tick(FGeometry MyGeometry, float InDeltaTime);
     void Destruct();
     void ExecuteUbergraph_WBP_PalMonsterInframeRender(int32 EntryPoint);
-}; // Size: 0x459
+};
 
 #endif

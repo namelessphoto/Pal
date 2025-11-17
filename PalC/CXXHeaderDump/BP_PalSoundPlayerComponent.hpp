@@ -3,6 +3,6 @@
 
 class UBP_PalSoundPlayerComponent_C : public UPalSoundPlayerComponent
 {
-}; // Size: 0xE8
+};
 
 #endif

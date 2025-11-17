@@ -3,19 +3,19 @@
 
 class ABP_MonsterBase_C : public APalMonsterCharacter
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0AB0 (size: 0x8)
-    class UPalPassiveSkillInvokerComponent* PalPassiveSkillInvoker;                   // 0x0AB8 (size: 0x8)
-    class UMotionWarpingComponent* MotionWarping;                                     // 0x0AC0 (size: 0x8)
-    class UBP_PalCryComponent_C* BP_PalCryComponent;                                  // 0x0AC8 (size: 0x8)
-    class UPalPartnerSkillParameterComponent* PalPartnerSkillParameter;               // 0x0AD0 (size: 0x8)
-    class UPalNavigationInvokerComponent* PalNavigationInvoker;                       // 0x0AD8 (size: 0x8)
-    class UPalInteractableSphereComponentNative* BP_InteractableSphere;               // 0x0AE0 (size: 0x8)
-    class UPalFacialComponent* PalFacial;                                             // 0x0AE8 (size: 0x8)
-    TEnumAsByte<ECollisionChannel> CapsuleCollisionChannel;                           // 0x0AF0 (size: 0x1)
-    FName CollisionProfileNameCache;                                                  // 0x0AF4 (size: 0x8)
-    class UNiagaraComponent* FlyEffect;                                               // 0x0B00 (size: 0x8)
-    double EffectiveAttackLogTimer;                                                   // 0x0B08 (size: 0x8)
-    FBP_MonsterBase_COnInflictDamageEvent OnInflictDamageEvent;                       // 0x0B10 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalPassiveSkillInvokerComponent* PalPassiveSkillInvoker;
+    class UMotionWarpingComponent* MotionWarping;
+    class UBP_PalCryComponent_C* BP_PalCryComponent;
+    class UPalPartnerSkillParameterComponent* PalPartnerSkillParameter;
+    class UPalNavigationInvokerComponent* PalNavigationInvoker;
+    class UPalInteractableSphereComponentNative* BP_InteractableSphere;
+    class UPalFacialComponent* PalFacial;
+    TEnumAsByte<ECollisionChannel> CapsuleCollisionChannel;
+    FName CollisionProfileNameCache;
+    class UNiagaraComponent* FlyEffect;
+    double EffectiveAttackLogTimer;
+    FBP_MonsterBase_COnInflictDamageEvent OnInflictDamageEvent;
     void OnInflictDamageEvent(FPalDamageResult DamageResult);
 
     void OnLanded_Proc(class UPalCharacterMovementComponent* Component, FHitResult Hit);
@@ -52,6 +52,6 @@ class ABP_MonsterBase_C : public APalMonsterCharacter
     void OnUpdateAboveWater(bool IsAboveWater);
     void ExecuteUbergraph_BP_MonsterBase(int32 EntryPoint);
     void OnInflictDamageEvent__DelegateSignature(FPalDamageResult DamageResult);
-}; // Size: 0xB20
+};
 
 #endif

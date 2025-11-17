@@ -3,6 +3,6 @@
 
 class UBP_PalQuestDataBase_C : public UPalQuestData
 {
-}; // Size: 0x210
+};
 
 #endif

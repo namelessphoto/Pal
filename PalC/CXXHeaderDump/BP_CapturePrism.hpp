@@ -3,8 +3,8 @@
 
 class ABP_CapturePrism_C : public ABP_ThrowWeaponBase_C
 {
-    class USkeletalMeshComponent* SK_Weapon_PalSphere_001;                            // 0x0608 (size: 0x8)
-    EPalCaptureSphereLevelType CaptureSphereType;                                     // 0x0610 (size: 0x1)
+    class USkeletalMeshComponent* SK_Weapon_PalSphere_001;
+    EPalCaptureSphereLevelType CaptureSphereType;
 
     void OnThrowInternal(class AActor* Bullet);
     void GetCaptureLevel(int32& Level);
@@ -13,6 +13,6 @@ class ABP_CapturePrism_C : public ABP_ThrowWeaponBase_C
     bool DecrementBullet();
     void GetThrowObjectClass(TSubclassOf<class AActor>& ThrowObject);
     FName GetEquipSocketName();
-}; // Size: 0x611
+};
 
 #endif

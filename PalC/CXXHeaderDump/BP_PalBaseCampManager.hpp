@@ -3,6 +3,6 @@
 
 class UBP_PalBaseCampManager_C : public UPalBaseCampManager
 {
-}; // Size: 0x280
+};
 
 #endif

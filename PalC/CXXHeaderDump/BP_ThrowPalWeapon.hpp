@@ -3,10 +3,10 @@
 
 class ABP_ThrowPalWeapon_C : public ABP_ThrowWeaponBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0608 (size: 0x8)
-    class USkeletalMeshComponent* SK_Weapon_PalSphere_001;                            // 0x0610 (size: 0x8)
-    bool IsPlayedThrowMotion;                                                         // 0x0618 (size: 0x1)
-    double Const_WalkSpeedRate;                                                       // 0x0620 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class USkeletalMeshComponent* SK_Weapon_PalSphere_001;
+    bool IsPlayedThrowMotion;
+    double Const_WalkSpeedRate;
 
     bool IsEmptyMagazine();
     void Set Flags(bool Disable, double Speed);
@@ -17,6 +17,6 @@ class ABP_ThrowPalWeapon_C : public ABP_ThrowWeaponBase_C
     void OnAttachWeapon(class AActor* attachActor);
     void OnDetachWeapon(class AActor* detachActor);
     void ExecuteUbergraph_BP_ThrowPalWeapon(int32 EntryPoint);
-}; // Size: 0x628
+};
 
 #endif

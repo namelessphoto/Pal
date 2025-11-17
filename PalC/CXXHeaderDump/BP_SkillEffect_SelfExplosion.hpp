@@ -3,6 +3,6 @@
 
 class ABP_SkillEffect_SelfExplosion_C : public ABP_SkillEffect_SelfDestruct_C
 {
-}; // Size: 0x3D8
+};
 
 #endif

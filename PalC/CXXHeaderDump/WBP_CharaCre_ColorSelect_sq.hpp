@@ -3,17 +3,17 @@
 
 class UWBP_CharaCre_ColorSelect_sq_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_NormalToFocus;                                        // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_push;                                                 // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_focus;                                                // 0x0290 (size: 0x8)
-    class UWidgetAnimation* Anm_normal;                                               // 0x0298 (size: 0x8)
-    class UCanvasPanel* Canvas_Select;                                                // 0x02A0 (size: 0x8)
-    class UImage* ColorSelect_Square;                                                 // 0x02A8 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x02B0 (size: 0x8)
-    FWBP_CharaCre_ColorSelect_sq_COnClicked OnClicked;                                // 0x02B8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_NormalToFocus;
+    class UWidgetAnimation* Anm_push;
+    class UWidgetAnimation* Anm_Focus;
+    class UWidgetAnimation* Anm_Normal;
+    class UCanvasPanel* Canvas_Select;
+    class UImage* ColorSelect_Square;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    FWBP_CharaCre_ColorSelect_sq_COnClicked OnClicked;
     void OnClicked(class UWBP_CharaCre_ColorSelect_sq_C* Widget);
-    FLinearColor BindedColor;                                                         // 0x02C8 (size: 0x10)
+    FLinearColor BindedColor;
 
     void GetBindedColor(FLinearColor& Color);
     void SetColor(FLinearColor NewColor);
@@ -26,6 +26,6 @@ class UWBP_CharaCre_ColorSelect_sq_C : public UUserWidget
     void BndEvt__WBP_CharaCre_ColorSelect_sq_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
     void ExecuteUbergraph_WBP_CharaCre_ColorSelect_sq(int32 EntryPoint);
     void OnClicked__DelegateSignature(class UWBP_CharaCre_ColorSelect_sq_C* Widget);
-}; // Size: 0x2D8
+};
 
 #endif

@@ -3,10 +3,10 @@
 
 class UBP_NPCEmoteDetectionComponent_C : public UPalNPCEmoteDetectionComponent
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x00E8 (size: 0x8)
-    UClass* TargetEmoteClass;                                                         // 0x00F0 (size: 0x8)
-    FTimerHandle ActStopTimer;                                                        // 0x00F8 (size: 0x8)
-    class APalPlayerCharacter* DetectedLocalPlayer;                                   // 0x0100 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    UClass* TargetEmoteClass;
+    FTimerHandle ActStopTimer;
+    class APalPlayerCharacter* DetectedLocalPlayer;
 
     void CanEmote(bool& bCanEmote);
     void OnActionBegin(const class UPalActionBase* action);
@@ -19,6 +19,6 @@ class UBP_NPCEmoteDetectionComponent_C : public UPalNPCEmoteDetectionComponent
     void StopEmoteAction();
     void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);
     void ExecuteUbergraph_BP_NPCEmoteDetectionComponent(int32 EntryPoint);
-}; // Size: 0x108
+};
 
 #endif

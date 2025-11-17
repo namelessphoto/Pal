@@ -6,6 +6,6 @@ class UBP_PalRichTextDecorator_ActiveSkillName_C : public UPalRichTextDecorator_
 
     FString GetTextStringInternal(const class UObject* WorldContextObject, FName ID);
     FString GetTagName();
-}; // Size: 0x28
+};
 
 #endif

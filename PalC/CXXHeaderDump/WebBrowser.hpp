@@ -3,14 +3,14 @@
 
 struct FWebJSCallbackBase
 {
-}; // Size: 0x20
+};
 
 struct FWebJSFunction : public FWebJSCallbackBase
 {
-}; // Size: 0x20
+};
 
 struct FWebJSResponse : public FWebJSCallbackBase
 {
-}; // Size: 0x20
+};
 
 #endif

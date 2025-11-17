@@ -3,56 +3,56 @@
 
 class UWBP_IngameMenu_PalBox_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_Close;                                                // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_Open;                                                 // 0x0288 (size: 0x8)
-    class UCanvasPanel* Canvas_PalBox;                                                // 0x0290 (size: 0x8)
-    class UCanvasPanel* Canvas_PalCamp;                                               // 0x0298 (size: 0x8)
-    class UButton* CloseButton;                                                       // 0x02A0 (size: 0x8)
-    class USizeBox* SizeBox_PresetButton;                                             // 0x02A8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_BaseCampName;                                      // 0x02B0 (size: 0x8)
-    class UWBP_PalCharacterScrollList_C* WBP_BaseCampPalList;                         // 0x02B8 (size: 0x8)
-    class UWBP_BoxPalList_C* WBP_BoxPalList;                                          // 0x02C0 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton_Preset;                               // 0x02C8 (size: 0x8)
-    class UWBP_IngameMenu_PalBox_PalDetail_C* WBP_IngameMenu_PalBox_PalDetail;        // 0x02D0 (size: 0x8)
-    class UWBP_IngameMenu_PalBox_PalList_C* WBP_IngameMenu_PalBox_PalList_0;          // 0x02D8 (size: 0x8)
-    class UWBP_IngameMenu_PalBox_PalList_C* WBP_IngameMenu_PalBox_PalList_1;          // 0x02E0 (size: 0x8)
-    class UWBP_IngameMenu_PalBox_PalList_C* WBP_IngameMenu_PalBox_PalList_2;          // 0x02E8 (size: 0x8)
-    class UWBP_IngameMenu_PalBox_PalList_C* WBP_IngameMenu_PalBox_PalList_3;          // 0x02F0 (size: 0x8)
-    class UWBP_IngameMenu_PalBox_PalList_C* WBP_IngameMenu_PalBox_PalList_4;          // 0x02F8 (size: 0x8)
-    class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x0300 (size: 0x8)
-    TArray<class UWBP_IngameMenu_PalBox_PalList_C*> PartyPalDetails;                  // 0x0308 (size: 0x10)
-    FWBP_IngameMenu_PalBox_COnClickedPartySlot OnClickedPartySlot;                    // 0x0318 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_Close;
+    class UWidgetAnimation* Anm_Open;
+    class UCanvasPanel* Canvas_PalBox;
+    class UCanvasPanel* Canvas_PalCamp;
+    class UButton* CloseButton;
+    class USizeBox* SizeBox_PresetButton;
+    class UBP_PalTextBlock_C* Text_BaseCampName;
+    class UWBP_PalCharacterScrollList_C* WBP_BaseCampPalList;
+    class UWBP_BoxPalList_C* WBP_BoxPalList;
+    class UWBP_CommonButton_C* WBP_CommonButton_Preset;
+    class UWBP_IngameMenu_PalBox_PalDetail_C* WBP_IngameMenu_PalBox_PalDetail;
+    class UWBP_IngameMenu_PalBox_PalList_C* WBP_IngameMenu_PalBox_PalList_0;
+    class UWBP_IngameMenu_PalBox_PalList_C* WBP_IngameMenu_PalBox_PalList_1;
+    class UWBP_IngameMenu_PalBox_PalList_C* WBP_IngameMenu_PalBox_PalList_2;
+    class UWBP_IngameMenu_PalBox_PalList_C* WBP_IngameMenu_PalBox_PalList_3;
+    class UWBP_IngameMenu_PalBox_PalList_C* WBP_IngameMenu_PalBox_PalList_4;
+    class UWBP_Menu_btn_C* WBP_Menu_btn;
+    TArray<class UWBP_IngameMenu_PalBox_PalList_C*> PartyPalDetails;
+    FWBP_IngameMenu_PalBox_COnClickedPartySlot OnClickedPartySlot;
     void OnClickedPartySlot(class UPalIndividualCharacterSlot* TargetSlot);
-    FWBP_IngameMenu_PalBox_COnClickedPalBoxPal OnClickedPalBoxPal;                    // 0x0328 (size: 0x10)
+    FWBP_IngameMenu_PalBox_COnClickedPalBoxPal OnClickedPalBoxPal;
     void OnClickedPalBoxPal(class UPalIndividualCharacterSlot* Slot, EPalItemSlotPressType PressType);
-    FWBP_IngameMenu_PalBox_COnClickedBaseCampPal OnClickedBaseCampPal;                // 0x0338 (size: 0x10)
+    FWBP_IngameMenu_PalBox_COnClickedBaseCampPal OnClickedBaseCampPal;
     void OnClickedBaseCampPal(class UPalIndividualCharacterSlot* Slot, EPalItemSlotPressType PressType);
-    FWBP_IngameMenu_PalBox_COnClickedPalBoxNextPage OnClickedPalBoxNextPage;          // 0x0348 (size: 0x10)
+    FWBP_IngameMenu_PalBox_COnClickedPalBoxNextPage OnClickedPalBoxNextPage;
     void OnClickedPalBoxNextPage();
-    FWBP_IngameMenu_PalBox_COnClickedPalBoxPrevPage OnClickedPalBoxPrevPage;          // 0x0358 (size: 0x10)
+    FWBP_IngameMenu_PalBox_COnClickedPalBoxPrevPage OnClickedPalBoxPrevPage;
     void OnClickedPalBoxPrevPage();
-    FWBP_IngameMenu_PalBox_COnClickedCloseButton OnClickedCloseButton;                // 0x0368 (size: 0x10)
+    FWBP_IngameMenu_PalBox_COnClickedCloseButton OnClickedCloseButton;
     void OnClickedCloseButton();
-    FWBP_IngameMenu_PalBox_COnAnySlotHovered OnAnySlotHovered;                        // 0x0378 (size: 0x10)
+    FWBP_IngameMenu_PalBox_COnAnySlotHovered OnAnySlotHovered;
     void OnAnySlotHovered(class UPalIndividualCharacterSlot* Slot);
-    FWBP_IngameMenu_PalBox_COnAnySlotUnhovered OnAnySlotUnhovered;                    // 0x0388 (size: 0x10)
+    FWBP_IngameMenu_PalBox_COnAnySlotUnhovered OnAnySlotUnhovered;
     void OnAnySlotUnhovered();
-    FWBP_IngameMenu_PalBox_COnHoveredPartySlot OnHoveredPartySlot;                    // 0x0398 (size: 0x10)
+    FWBP_IngameMenu_PalBox_COnHoveredPartySlot OnHoveredPartySlot;
     void OnHoveredPartySlot(class UPalIndividualCharacterSlot* Slot);
-    FWBP_IngameMenu_PalBox_COnHoveredBoxSlot OnHoveredBoxSlot;                        // 0x03A8 (size: 0x10)
+    FWBP_IngameMenu_PalBox_COnHoveredBoxSlot OnHoveredBoxSlot;
     void OnHoveredBoxSlot(class UPalIndividualCharacterSlot* Slot);
-    FWBP_IngameMenu_PalBox_COnHoveredWorkerSlot OnHoveredWorkerSlot;                  // 0x03B8 (size: 0x10)
+    FWBP_IngameMenu_PalBox_COnHoveredWorkerSlot OnHoveredWorkerSlot;
     void OnHoveredWorkerSlot(class UPalIndividualCharacterSlot* Slot);
-    FDataTableRowHandle BoxNameMsgID;                                                 // 0x03C8 (size: 0x10)
-    FWBP_IngameMenu_PalBox_COnRightClickedBoxSlot OnRightClickedBoxSlot;              // 0x03D8 (size: 0x10)
+    FDataTableRowHandle BoxNameMsgID;
+    FWBP_IngameMenu_PalBox_COnRightClickedBoxSlot OnRightClickedBoxSlot;
     void OnRightClickedBoxSlot(class UPalIndividualCharacterSlot* Slot);
-    FWBP_IngameMenu_PalBox_COnRightClickedWorkerSlot OnRightClickedWorkerSlot;        // 0x03E8 (size: 0x10)
+    FWBP_IngameMenu_PalBox_COnRightClickedWorkerSlot OnRightClickedWorkerSlot;
     void OnRightClickedWorkerSlot(class UPalIndividualCharacterSlot* Slot);
-    bool bIsEnableDragDropControl;                                                    // 0x03F8 (size: 0x1)
-    FWBP_IngameMenu_PalBox_COnSelectPalBoxPage OnSelectPalBoxPage;                    // 0x0400 (size: 0x10)
+    bool bIsEnableDragDropControl;
+    FWBP_IngameMenu_PalBox_COnSelectPalBoxPage OnSelectPalBoxPage;
     void OnSelectPalBoxPage(int32 Page);
-    FWBP_IngameMenu_PalBox_COnSlotCreated OnSlotCreated;                              // 0x0410 (size: 0x10)
+    FWBP_IngameMenu_PalBox_COnSlotCreated OnSlotCreated;
     void OnSlotCreated(class UWBP_PalCharacterSlotButtonBase_C* Slot);
 
     class UWidget* Custom Navigation to Party First(EUINavigation Navigation);
@@ -102,6 +102,6 @@ class UWBP_IngameMenu_PalBox_C : public UUserWidget
     void OnClickedBaseCampPal__DelegateSignature(class UPalIndividualCharacterSlot* Slot, EPalItemSlotPressType PressType);
     void OnClickedPalBoxPal__DelegateSignature(class UPalIndividualCharacterSlot* Slot, EPalItemSlotPressType PressType);
     void OnClickedPartySlot__DelegateSignature(class UPalIndividualCharacterSlot* TargetSlot);
-}; // Size: 0x420
+};
 
 #endif

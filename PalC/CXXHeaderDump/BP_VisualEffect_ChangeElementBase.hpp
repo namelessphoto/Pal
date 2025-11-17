@@ -3,10 +3,10 @@
 
 class UBP_VisualEffect_ChangeElementBase_C : public UPalVisualEffectBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0070 (size: 0x8)
-    class UNiagaraSystem* EffectAsset;                                                // 0x0078 (size: 0x8)
-    class UNiagaraComponent* EffectInstance;                                          // 0x0080 (size: 0x8)
-    class UNiagaraSystem* ChangeEffectAsset;                                          // 0x0088 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UNiagaraSystem* EffectAsset;
+    class UNiagaraComponent* EffectInstance;
+    class UNiagaraSystem* ChangeEffectAsset;
 
     void DeleteEffect();
     void SpawnhEffect();
@@ -15,6 +15,6 @@ class UBP_VisualEffect_ChangeElementBase_C : public UPalVisualEffectBase
     void OnEndVisualEffect();
     void TickVisualEffect(float DeltaTime);
     void ExecuteUbergraph_BP_VisualEffect_ChangeElementBase(int32 EntryPoint);
-}; // Size: 0x90
+};
 
 #endif

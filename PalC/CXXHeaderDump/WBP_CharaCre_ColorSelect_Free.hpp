@@ -3,14 +3,14 @@
 
 class UWBP_CharaCre_ColorSelect_Free_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWBP_CharaCre_ColorSelect_sq_C* WBP_CharaCre_ColorSelect_sq_Custom;         // 0x0280 (size: 0x8)
-    class UWBP_ColorSlider_C* WBP_ColorSlider;                                        // 0x0288 (size: 0x8)
-    class UMaterialInstanceDynamic* SGradientMaterial;                                // 0x0290 (size: 0x8)
-    class UMaterialInstanceDynamic* VGradientMaterial;                                // 0x0298 (size: 0x8)
-    FWBP_CharaCre_ColorSelect_Free_COnColorChanged OnColorChanged;                    // 0x02A0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWBP_CharaCre_ColorSelect_sq_C* WBP_CharaCre_ColorSelect_sq_Custom;
+    class UWBP_ColorSlider_C* WBP_ColorSlider;
+    class UMaterialInstanceDynamic* SGradientMaterial;
+    class UMaterialInstanceDynamic* VGradientMaterial;
+    FWBP_CharaCre_ColorSelect_Free_COnColorChanged OnColorChanged;
     void OnColorChanged(FLinearColor HSV);
-    FWBP_CharaCre_ColorSelect_Free_COnNotifyCustomColorClicked OnNotifyCustomColorClicked; // 0x02B0 (size: 0x10)
+    FWBP_CharaCre_ColorSelect_Free_COnNotifyCustomColorClicked OnNotifyCustomColorClicked;
     void OnNotifyCustomColorClicked();
 
     void Set Enable Slider(bool IsEnable);
@@ -24,6 +24,6 @@ class UWBP_CharaCre_ColorSelect_Free_C : public UUserWidget
     void ExecuteUbergraph_WBP_CharaCre_ColorSelect_Free(int32 EntryPoint);
     void OnNotifyCustomColorClicked__DelegateSignature();
     void OnColorChanged__DelegateSignature(FLinearColor HSV);
-}; // Size: 0x2C0
+};
 
 #endif

@@ -3,17 +3,17 @@
 
 class UWBP_DebugItemSearchWindow_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UImage* Image;                                                              // 0x0438 (size: 0x8)
-    class UImage* Image_27;                                                           // 0x0440 (size: 0x8)
-    class UImage* Image_56;                                                           // 0x0448 (size: 0x8)
-    class UPalCheckBox* PalCheckBox_119;                                              // 0x0450 (size: 0x8)
-    class USpinBox* SpinBox_37;                                                       // 0x0458 (size: 0x8)
-    class UWBP_IngameMenu_ItemSearchList_C* WBP_IngameMenu_ItemSearchList;            // 0x0460 (size: 0x8)
-    class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x0468 (size: 0x8)
-    TArray<FPalItemAndNum> LegalItemInfos;                                            // 0x0470 (size: 0x10)
-    TArray<FName> LegalItemIds;                                                       // 0x0480 (size: 0x10)
-    FPalDataTableRowName_UIInputAction EscAction;                                     // 0x0490 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UImage* Image;
+    class UImage* Image_27;
+    class UImage* Image_56;
+    class UPalCheckBox* PalCheckBox_119;
+    class USpinBox* SpinBox_37;
+    class UWBP_IngameMenu_ItemSearchList_C* WBP_IngameMenu_ItemSearchList;
+    class UWBP_Menu_btn_C* WBP_Menu_btn;
+    TArray<FPalItemAndNum> LegalItemInfos;
+    TArray<FName> LegalItemIds;
+    FPalDataTableRowName_UIInputAction EscAction;
 
     void CreateItemMap();
     void OnClickedSlotInternal(class UWBP_PalItemSlotButtonBase_C* Slot);
@@ -22,6 +22,6 @@ class UWBP_DebugItemSearchWindow_C : public UPalUserWidgetOverlayUI
     void OnSetup();
     void BndEvt__WBP_DebugItemSearchWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature();
     void ExecuteUbergraph_WBP_DebugItemSearchWindow(int32 EntryPoint);
-}; // Size: 0x498
+};
 
 #endif

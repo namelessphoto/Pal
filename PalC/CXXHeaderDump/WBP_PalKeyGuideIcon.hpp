@@ -3,12 +3,12 @@
 
 class UWBP_PalKeyGuideIcon_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UPalUIActionWidgetBase* PalUIActionWidgetBase_24;                           // 0x0410 (size: 0x8)
-    class USizeBox* SizeBox_0;                                                        // 0x0418 (size: 0x8)
-    FPalDataTableRowName_UIInputAction bindActionName;                                // 0x0420 (size: 0x8)
-    TMap<class ECommonInputType, class FSlateBrush> OverrideImageMap;                 // 0x0428 (size: 0x50)
-    bool EnableOverrideImage;                                                         // 0x0478 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalUIActionWidgetBase* PalUIActionWidgetBase_24;
+    class USizeBox* SizeBox_0;
+    FPalDataTableRowName_UIInputAction bindActionName;
+    TMap<class ECommonInputType, class FSlateBrush> OverrideImageMap;
+    bool EnableOverrideImage;
 
     void OnUISettingChanged(const FPalOptionUISettings& PrevSettings, const FPalOptionUISettings& NewSettings);
     void OverrideInputType(ECommonInputType InputType);
@@ -21,6 +21,6 @@ class UWBP_PalKeyGuideIcon_C : public UPalUserWidget
     void UpdateOverrideImage(const FPalKeyConfigSettings& PrevSettings, const FPalKeyConfigSettings& NewSettings);
     void PreConstruct(bool IsDesignTime);
     void ExecuteUbergraph_WBP_PalKeyGuideIcon(int32 EntryPoint);
-}; // Size: 0x479
+};
 
 #endif

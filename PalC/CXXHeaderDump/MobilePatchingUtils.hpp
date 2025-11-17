@@ -7,7 +7,7 @@ class UMobileInstalledContent : public UObject
     bool Mount(int32 PakOrder, FString MountPoint);
     float GetInstalledContentSize();
     float GetDiskFreeSpace();
-}; // Size: 0x48
+};
 
 class UMobilePatchingLibrary : public UBlueprintFunctionLibrary
 {
@@ -17,7 +17,7 @@ class UMobilePatchingLibrary : public UBlueprintFunctionLibrary
     TArray<FString> GetSupportedPlatformNames();
     class UMobileInstalledContent* GetInstalledContent(FString InstallDirectory);
     FString GetActiveDeviceProfileName();
-}; // Size: 0x28
+};
 
 class UMobilePendingContent : public UMobileInstalledContent
 {
@@ -29,6 +29,6 @@ class UMobilePendingContent : public UMobileInstalledContent
     FText GetDownloadStatusText();
     float GetDownloadSpeed();
     float GetDownloadSize();
-}; // Size: 0x88
+};
 
 #endif

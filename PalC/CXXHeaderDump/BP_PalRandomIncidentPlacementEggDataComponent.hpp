@@ -3,6 +3,6 @@
 
 class UBP_PalRandomIncidentPlacementEggDataComponent_C : public UPalRandomIncidentPlacementEggDataComponent
 {
-}; // Size: 0x600
+};
 
 #endif

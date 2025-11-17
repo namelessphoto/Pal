@@ -3,10 +3,10 @@
 
 class UWBP_Ingame_Chat_Wrapper_C : public UPalUserWidget
 {
-    class UWBP_Ingame_Chat_C* WBP_Ingame_Chat;                                        // 0x0408 (size: 0x8)
+    class UWBP_Ingame_Chat_C* WBP_Ingame_Chat;
 
     void CanOpenAnyUI(bool& bCanOpenAnyUI);
     void ShowChat();
-}; // Size: 0x410
+};
 
 #endif

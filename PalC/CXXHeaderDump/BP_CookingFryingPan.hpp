@@ -3,19 +3,19 @@
 
 class ABP_CookingFryingPan_C : public AActor
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0290 (size: 0x8)
-    class UStaticMeshComponent* Food_Veg_Carrot_01_Slice_03;                          // 0x0298 (size: 0x8)
-    class UStaticMeshComponent* Food_Veg_Carrot_01_Slice_02;                          // 0x02A0 (size: 0x8)
-    class UStaticMeshComponent* Food_Veg_Carrot_01_Slice_01;                          // 0x02A8 (size: 0x8)
-    class UStaticMeshComponent* SM_Chickenleg;                                        // 0x02B0 (size: 0x8)
-    class UStaticMeshComponent* SM_FriedEggs;                                         // 0x02B8 (size: 0x8)
-    class USkeletalMeshComponent* SkeletalMesh;                                       // 0x02C0 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x02C8 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UStaticMeshComponent* Food_Veg_Carrot_01_Slice_03;
+    class UStaticMeshComponent* Food_Veg_Carrot_01_Slice_02;
+    class UStaticMeshComponent* Food_Veg_Carrot_01_Slice_01;
+    class UStaticMeshComponent* SM_Chickenleg;
+    class UStaticMeshComponent* SM_FriedEggs;
+    class USkeletalMeshComponent* SkeletalMesh;
+    class USceneComponent* DefaultSceneRoot;
 
     void ReceiveBeginPlay();
     void EndAnim();
     void DelayDestroy(double Delay);
     void ExecuteUbergraph_BP_CookingFryingPan(int32 EntryPoint);
-}; // Size: 0x2D0
+};
 
 #endif

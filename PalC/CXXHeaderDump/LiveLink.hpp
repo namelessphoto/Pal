@@ -5,60 +5,60 @@
 
 struct FLiveLinkRetargetAssetReference
 {
-}; // Size: 0x1
+};
 
 struct FLiveLinkRoleProjectSetting
 {
-    TSubclassOf<class ULiveLinkRole> Role;                                            // 0x0000 (size: 0x8)
-    TSubclassOf<class ULiveLinkSubjectSettings> SettingClass;                         // 0x0008 (size: 0x8)
-    TSubclassOf<class ULiveLinkFrameInterpolationProcessor> FrameInterpolationProcessor; // 0x0010 (size: 0x8)
-    TArray<class TSubclassOf<ULiveLinkFramePreProcessor>> FramePreProcessors;         // 0x0018 (size: 0x10)
+    TSubclassOf<class ULiveLinkRole> Role;
+    TSubclassOf<class ULiveLinkSubjectSettings> SettingClass;
+    TSubclassOf<class ULiveLinkFrameInterpolationProcessor> FrameInterpolationProcessor;
+    TArray<class TSubclassOf<ULiveLinkFramePreProcessor>> FramePreProcessors;
 
-}; // Size: 0x28
+};
 
 struct FProviderPollResult
 {
-    FString Name;                                                                     // 0x0010 (size: 0x10)
-    FString MachineName;                                                              // 0x0020 (size: 0x10)
-    double MachineTimeOffset;                                                         // 0x0030 (size: 0x8)
-    bool bIsValidProvider;                                                            // 0x0038 (size: 0x1)
+    FString Name;
+    FString MachineName;
+    double MachineTimeOffset;
+    bool bIsValidProvider;
 
-}; // Size: 0x40
+};
 
 class UDEPRECATED_LiveLinkDrivenComponent : public UActorComponent
 {
-    FLiveLinkSubjectName SubjectName;                                                 // 0x00A0 (size: 0x8)
-    FName ActorTransformBone;                                                         // 0x00A8 (size: 0x8)
-    bool bModifyActorTransform;                                                       // 0x00B0 (size: 0x1)
-    bool bSetRelativeLocation;                                                        // 0x00B1 (size: 0x1)
+    FLiveLinkSubjectName SubjectName;
+    FName ActorTransformBone;
+    bool bModifyActorTransform;
+    bool bSetRelativeLocation;
 
-}; // Size: 0xB8
+};
 
 class ULiveLinkAnimationAxisSwitchPreProcessor : public ULiveLinkTransformAxisSwitchPreProcessor
 {
-}; // Size: 0x70
+};
 
 class ULiveLinkAnimationFrameInterpolationProcessor : public ULiveLinkBasicFrameInterpolationProcessor
 {
-}; // Size: 0x50
+};
 
 class ULiveLinkAnimationRoleToTransform : public ULiveLinkFrameTranslator
 {
-    FName BoneName;                                                                   // 0x0028 (size: 0x8)
+    FName BoneName;
 
-}; // Size: 0x40
+};
 
 class ULiveLinkAnimationVirtualSubject : public ULiveLinkVirtualSubject
 {
-    bool bAppendSubjectNameToBones;                                                   // 0x0161 (size: 0x1)
+    bool bAppendSubjectNameToBones;
 
-}; // Size: 0x168
+};
 
 class ULiveLinkBasicFrameInterpolationProcessor : public ULiveLinkFrameInterpolationProcessor
 {
-    bool bInterpolatePropertyValues;                                                  // 0x0028 (size: 0x1)
+    bool bInterpolatePropertyValues;
 
-}; // Size: 0x40
+};
 
 class ULiveLinkBlueprintLibrary : public UBlueprintFunctionLibrary
 {
@@ -98,7 +98,7 @@ class ULiveLinkBlueprintLibrary : public UBlueprintFunctionLibrary
     bool EvaluateLiveLinkFrame(FLiveLinkSubjectRepresentation SubjectRepresentation, FLiveLinkBaseBlueprintData& OutBlueprintData);
     void ComponentSpaceTransform(FLiveLinkTransform& LiveLinkTransform, FTransform& Transform);
     int32 ChildCount(FLiveLinkTransform& LiveLinkTransform);
-}; // Size: 0x28
+};
 
 class ULiveLinkBlueprintVirtualSubject : public ULiveLinkVirtualSubject
 {
@@ -107,18 +107,18 @@ class ULiveLinkBlueprintVirtualSubject : public ULiveLinkVirtualSubject
     bool UpdateVirtualSubjectFrameData_Internal(const FLiveLinkBaseFrameData& InStruct, bool bInShouldStampCurrentTime);
     void OnUpdate();
     void OnInitialize();
-}; // Size: 0x188
+};
 
 class ULiveLinkComponent : public UActorComponent
 {
-    FLiveLinkComponentOnLiveLinkUpdated OnLiveLinkUpdated;                            // 0x00A0 (size: 0x10)
+    FLiveLinkComponentOnLiveLinkUpdated OnLiveLinkUpdated;
     void LiveLinkTickSignature(float DeltaTime);
 
     void GetSubjectDataAtWorldTime(const FName SubjectName, const float WorldTime, bool& bSuccess, FSubjectFrameHandle& SubjectFrameHandle);
     void GetSubjectDataAtSceneTime(const FName SubjectName, const FTimecode& SceneTime, bool& bSuccess, FSubjectFrameHandle& SubjectFrameHandle);
     void GetSubjectData(const FName SubjectName, bool& bSuccess, FSubjectFrameHandle& SubjectFrameHandle);
     void GetAvailableSubjectNames(TArray<FName>& SubjectNames);
-}; // Size: 0xC0
+};
 
 class ULiveLinkMessageBusFinder : public UObject
 {
@@ -126,84 +126,84 @@ class ULiveLinkMessageBusFinder : public UObject
     void GetAvailableProviders(class UObject* WorldContextObject, FLatentActionInfo LatentInfo, float Duration, TArray<FProviderPollResult>& AvailableProviders);
     class ULiveLinkMessageBusFinder* ConstructMessageBusFinder();
     void ConnectToProvider(FProviderPollResult& Provider, FLiveLinkSourceHandle& SourceHandle);
-}; // Size: 0x80
+};
 
 class ULiveLinkMessageBusSourceFactory : public ULiveLinkSourceFactory
 {
-}; // Size: 0x28
+};
 
 class ULiveLinkMessageBusSourceSettings : public ULiveLinkSourceSettings
 {
-}; // Size: 0xA8
+};
 
 class ULiveLinkPreset : public UObject
 {
-    TArray<FLiveLinkSourcePreset> Sources;                                            // 0x0028 (size: 0x10)
-    TArray<FLiveLinkSubjectPreset> Subjects;                                          // 0x0038 (size: 0x10)
+    TArray<FLiveLinkSourcePreset> Sources;
+    TArray<FLiveLinkSubjectPreset> Subjects;
 
     void BuildFromClient();
     void ApplyToClientLatent(class UObject* WorldContextObject, FLatentActionInfo LatentInfo);
     bool ApplyToClient();
     bool AddToClient(const bool bRecreatePresets);
-}; // Size: 0x50
+};
 
 class ULiveLinkSettings : public UObject
 {
-    TArray<FLiveLinkRoleProjectSetting> DefaultRoleSettings;                          // 0x0028 (size: 0x10)
-    TSubclassOf<class ULiveLinkFrameInterpolationProcessor> FrameInterpolationProcessor; // 0x0038 (size: 0x8)
-    TSoftObjectPtr<ULiveLinkPreset> DefaultLiveLinkPreset;                            // 0x0040 (size: 0x30)
-    float ClockOffsetCorrectionStep;                                                  // 0x0070 (size: 0x4)
-    ELiveLinkSourceMode DefaultMessageBusSourceMode;                                  // 0x0074 (size: 0x1)
-    double MessageBusPingRequestFrequency;                                            // 0x0078 (size: 0x8)
-    double MessageBusHeartbeatFrequency;                                              // 0x0080 (size: 0x8)
-    double MessageBusHeartbeatTimeout;                                                // 0x0088 (size: 0x8)
-    double MessageBusTimeBeforeRemovingInactiveSource;                                // 0x0090 (size: 0x8)
-    double TimeWithoutFrameToBeConsiderAsInvalid;                                     // 0x0098 (size: 0x8)
-    FLinearColor ValidColor;                                                          // 0x00A0 (size: 0x10)
-    FLinearColor InvalidColor;                                                        // 0x00B0 (size: 0x10)
-    uint8 TextSizeSource;                                                             // 0x00C0 (size: 0x1)
-    uint8 TextSizeSubject;                                                            // 0x00C1 (size: 0x1)
+    TArray<FLiveLinkRoleProjectSetting> DefaultRoleSettings;
+    TSubclassOf<class ULiveLinkFrameInterpolationProcessor> FrameInterpolationProcessor;
+    TSoftObjectPtr<ULiveLinkPreset> DefaultLiveLinkPreset;
+    float ClockOffsetCorrectionStep;
+    ELiveLinkSourceMode DefaultMessageBusSourceMode;
+    double MessageBusPingRequestFrequency;
+    double MessageBusHeartbeatFrequency;
+    double MessageBusHeartbeatTimeout;
+    double MessageBusTimeBeforeRemovingInactiveSource;
+    double TimeWithoutFrameToBeConsiderAsInvalid;
+    FLinearColor ValidColor;
+    FLinearColor InvalidColor;
+    uint8 TextSizeSource;
+    uint8 TextSizeSubject;
 
-}; // Size: 0xC8
+};
 
 class ULiveLinkTimeSynchronizationSource : public UTimeSynchronizationSource
 {
-    FLiveLinkSubjectName SubjectName;                                                 // 0x0030 (size: 0x8)
+    FLiveLinkSubjectName SubjectName;
 
-}; // Size: 0x80
+};
 
 class ULiveLinkTimecodeProvider : public UTimecodeProvider
 {
-    FLiveLinkSubjectKey SubjectKey;                                                   // 0x0030 (size: 0x18)
-    ELiveLinkTimecodeProviderEvaluationType Evaluation;                               // 0x0048 (size: 0x4)
-    bool bOverrideFrameRate;                                                          // 0x004C (size: 0x1)
-    FFrameRate OverrideFrameRate;                                                     // 0x0050 (size: 0x8)
-    int32 BufferSize;                                                                 // 0x0058 (size: 0x4)
+    FLiveLinkSubjectKey SubjectKey;
+    ELiveLinkTimecodeProviderEvaluationType Evaluation;
+    bool bOverrideFrameRate;
+    FFrameRate OverrideFrameRate;
+    int32 BufferSize;
 
-}; // Size: 0xC0
+};
 
 class ULiveLinkTransformAxisSwitchPreProcessor : public ULiveLinkFramePreProcessor
 {
-    ELiveLinkAxis FrontAxis;                                                          // 0x0028 (size: 0x1)
-    ELiveLinkAxis RightAxis;                                                          // 0x0029 (size: 0x1)
-    ELiveLinkAxis UpAxis;                                                             // 0x002A (size: 0x1)
-    bool bUseOffsetPosition;                                                          // 0x002B (size: 0x1)
-    bool bUseOffsetOrientation;                                                       // 0x002C (size: 0x1)
-    FVector OffsetPosition;                                                           // 0x0030 (size: 0x18)
-    FRotator OffsetOrientation;                                                       // 0x0048 (size: 0x18)
+    ELiveLinkAxis FrontAxis;
+    ELiveLinkAxis RightAxis;
+    ELiveLinkAxis UpAxis;
+    bool bUseOffsetPosition;
+    bool bUseOffsetOrientation;
+    FVector OffsetPosition;
+    FRotator OffsetOrientation;
 
-}; // Size: 0x70
+};
 
 class ULiveLinkUserSettings : public UObject
 {
-    FDirectoryPath PresetSaveDir;                                                     // 0x0028 (size: 0x10)
+    FDirectoryPath PresetSaveDir;
 
-}; // Size: 0x38
+};
 
 class ULiveLinkVirtualSubjectSourceSettings : public ULiveLinkSourceSettings
 {
-    FName SourceName;                                                                 // 0x00A8 (size: 0x8)
+    FName SourceName;
 
-}; // Size: 0xB0
+};
 
 #endif

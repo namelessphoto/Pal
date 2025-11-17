@@ -5,6 +5,6 @@ class ABP_MonsterAIController_Wild_Mimicdog_C : public ABP_MonsterAIController_W
 {
 
     void PlayDefaultAction();
-}; // Size: 0x580
+};
 
 #endif

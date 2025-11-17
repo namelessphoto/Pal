@@ -3,17 +3,17 @@
 
 class UBP_CoopParam_Shield_C : public UActorComponent
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x00A0 (size: 0x8)
-    class APalCharacter* ProtectTarget;                                               // 0x00A8 (size: 0x8)
-    FName AttachSocketName;                                                           // 0x00B0 (size: 0x8)
-    FTransform StandAttachTransform;                                                  // 0x00C0 (size: 0x60)
-    class UAnimMontage* StandMontage;                                                 // 0x0120 (size: 0x8)
-    FTransform ReadyAttachTransform;                                                  // 0x0130 (size: 0x60)
-    class UAnimMontage* ReadyMontage;                                                 // 0x0190 (size: 0x8)
-    class UAnimMontage* AttachStartMontage;                                           // 0x0198 (size: 0x8)
-    class UAnimMontage* DetachStartMontage;                                           // 0x01A0 (size: 0x8)
-    FName ShieldCollisionComponentTag;                                                // 0x01A8 (size: 0x8)
-    bool IsGrabed;                                                                    // 0x01B0 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class APalCharacter* ProtectTarget;
+    FName AttachSocketName;
+    FTransform StandAttachTransform;
+    class UAnimMontage* StandMontage;
+    FTransform ReadyAttachTransform;
+    class UAnimMontage* ReadyMontage;
+    class UAnimMontage* AttachStartMontage;
+    class UAnimMontage* DetachStartMontage;
+    FName ShieldCollisionComponentTag;
+    bool IsGrabed;
 
     void OnCompleteCharacterInitialize(class APalCharacter* InCharacter);
     void ChangeFacial(bool IsCoopActionFace);
@@ -45,6 +45,6 @@ class UBP_CoopParam_Shield_C : public UActorComponent
     void ReceiveBeginPlay();
     void DoDetach_ToAll(bool IsThrow);
     void ExecuteUbergraph_BP_CoopParam_Shield(int32 EntryPoint);
-}; // Size: 0x1B1
+};
 
 #endif

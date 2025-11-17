@@ -3,12 +3,12 @@
 
 class ABP_MapObject_TreasureBox_EnemyCampGoal_C : public APalMapObjectTreasureBox
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0448 (size: 0x8)
-    class UPalPickingGameDataComponent* PalPickingGameData;                           // 0x0450 (size: 0x8)
-    class UChildActorComponent* VisualActor;                                          // 0x0458 (size: 0x8)
-    class UPalInteractableSphereComponentNative* BP_InteractableSphere;               // 0x0460 (size: 0x8)
-    class USceneComponent* IndicatorOrigin;                                           // 0x0468 (size: 0x8)
-    TMap<class EPalMapObjectTreasureGradeType, class TSubclassOf<AActor>> VisualMap;  // 0x0470 (size: 0x50)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalPickingGameDataComponent* PalPickingGameData;
+    class UChildActorComponent* VisualActor;
+    class UPalInteractableSphereComponentNative* BP_InteractableSphere;
+    class USceneComponent* IndicatorOrigin;
+    TMap<class EPalMapObjectTreasureGradeType, class TSubclassOf<AActor>> VisualMap;
 
     void SetupVisual(class UPalMapObjectConcreteModelBase* ConcreteModel);
     void TriggerOpen();
@@ -17,6 +17,6 @@ class ABP_MapObject_TreasureBox_EnemyCampGoal_C : public APalMapObjectTreasureBo
     void OnNotifiedStartOpen();
     void ReceiveBeginPlay();
     void ExecuteUbergraph_BP_MapObject_TreasureBox_EnemyCampGoal(int32 EntryPoint);
-}; // Size: 0x4C0
+};
 
 #endif

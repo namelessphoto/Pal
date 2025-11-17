@@ -3,8 +3,8 @@
 
 class UWBP_PalHud_PossessItem_C : public UPalUserWidgetWorldHUD
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UWBP_PalPossessItemIcon_C* WBP_PalPossessItemIcon;                          // 0x0410 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWBP_PalPossessItemIcon_C* WBP_PalPossessItemIcon;
 
     void SetupUI();
     void RemoveSelf_In();
@@ -12,6 +12,6 @@ class UWBP_PalHud_PossessItem_C : public UPalUserWidgetWorldHUD
     void OnInitialized();
     void OnSetup();
     void ExecuteUbergraph_WBP_PalHud_PossessItem(int32 EntryPoint);
-}; // Size: 0x418
+};
 
 #endif

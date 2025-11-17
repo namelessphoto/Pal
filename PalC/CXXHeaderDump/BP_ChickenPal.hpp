@@ -3,9 +3,9 @@
 
 class ABP_ChickenPal_C : public ABP_MonsterBase_C
 {
-    class UPalBodyPartsSphereComponent* PalBodyPartsSphere1;                          // 0x0B20 (size: 0x8)
-    class UPalBodyPartsSphereComponent* PalBodyPartsSphere;                           // 0x0B28 (size: 0x8)
+    class UPalBodyPartsSphereComponent* PalBodyPartsSphere1;
+    class UPalBodyPartsSphereComponent* PalBodyPartsSphere;
 
-}; // Size: 0xB30
+};
 
 #endif

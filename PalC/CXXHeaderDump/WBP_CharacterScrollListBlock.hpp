@@ -3,8 +3,8 @@
 
 class UWBP_CharacterScrollListBlock_C : public UPalUserWidget
 {
-    class UWrapBox* WrapBox_92;                                                       // 0x0408 (size: 0x8)
+    class UWrapBox* WrapBox_92;
 
-}; // Size: 0x410
+};
 
 #endif

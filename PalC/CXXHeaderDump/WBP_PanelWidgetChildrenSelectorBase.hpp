@@ -3,16 +3,16 @@
 
 class UWBP_PanelWidgetChildrenSelectorBase_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    int32 NowFocusChildIndex;                                                         // 0x0410 (size: 0x4)
-    FWBP_PanelWidgetChildrenSelectorBase_COnChangedFocusIndex OnChangedFocusIndex;    // 0x0418 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    int32 NowFocusChildIndex;
+    FWBP_PanelWidgetChildrenSelectorBase_COnChangedFocusIndex OnChangedFocusIndex;
     void OnChangedFocusIndex(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
-    FWBP_PanelWidgetChildrenSelectorBase_COnNext OnNext;                              // 0x0428 (size: 0x10)
+    FWBP_PanelWidgetChildrenSelectorBase_COnNext OnNext;
     void OnNext(int32 OldIndex, int32 NewIndex);
-    FWBP_PanelWidgetChildrenSelectorBase_COnPrev OnPrev;                              // 0x0438 (size: 0x10)
+    FWBP_PanelWidgetChildrenSelectorBase_COnPrev OnPrev;
     void OnPrev(int32 OldIndex, int32 NewIndex);
-    class UPanelWidget* MyPanelWidget;                                                // 0x0448 (size: 0x8)
-    FWBP_PanelWidgetChildrenSelectorBase_COnChangeEnableChild OnChangeEnableChild;    // 0x0450 (size: 0x10)
+    class UPanelWidget* MyPanelWidget;
+    FWBP_PanelWidgetChildrenSelectorBase_COnChangeEnableChild OnChangeEnableChild;
     void OnChangeEnableChild(int32 Index, class UWidget* ChildWidget, bool IsEnable);
 
     void GetChildrenNum(int32& ChildrenNum);
@@ -33,6 +33,6 @@ class UWBP_PanelWidgetChildrenSelectorBase_C : public UPalUserWidget
     void OnPrev__DelegateSignature(int32 OldIndex, int32 NewIndex);
     void OnNext__DelegateSignature(int32 OldIndex, int32 NewIndex);
     void OnChangedFocusIndex__DelegateSignature(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
-}; // Size: 0x460
+};
 
 #endif

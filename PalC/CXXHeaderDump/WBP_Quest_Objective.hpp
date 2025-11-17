@@ -3,11 +3,11 @@
 
 class UWBP_Quest_Objective_C : public UUserWidget
 {
-    class UBP_PalTextBlock_C* BP_PalTextBlock_C_2;                                    // 0x0278 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_C_3;                                    // 0x0280 (size: 0x8)
-    class UBP_PalRichTextBlock_C* RichText_Objective;                                 // 0x0288 (size: 0x8)
+    class UBP_PalTextBlock_C* BP_PalTextBlock_C_2;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_C_3;
+    class UBP_PalRichTextBlock_C* RichText_Objective;
 
     void Setup(FText ProgressDesc, FText Progress);
-}; // Size: 0x290
+};
 
 #endif

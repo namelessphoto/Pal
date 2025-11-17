@@ -3,9 +3,9 @@
 
 class UWBP_PaldexScrollList_C : public UWBP_PalCommonScrollList_C
 {
-    FWBP_PaldexScrollList_COnHoveredAnyPanel OnHoveredAnyPanel;                       // 0x0440 (size: 0x10)
+    FWBP_PaldexScrollList_COnHoveredAnyPanel OnHoveredAnyPanel;
     void OnHoveredAnyPanel(FName CharacterID, class UWBP_Paldex_List_C* SelfWidget);
-    FWBP_PaldexScrollList_COnClickedAnyPanel OnClickedAnyPanel;                       // 0x0450 (size: 0x10)
+    FWBP_PaldexScrollList_COnClickedAnyPanel OnClickedAnyPanel;
     void OnClickedAnyPanel(FName CharacterID, class UWBP_Paldex_List_C* Widget);
 
     void ClickByCharacterID(FName CharacterID);
@@ -21,6 +21,6 @@ class UWBP_PaldexScrollList_C : public UWBP_PalCommonScrollList_C
     void AddDisplayInfo(TArray<FPalUIPaldex_DisplayInfo>& infoArray);
     void OnClickedAnyPanel__DelegateSignature(FName CharacterID, class UWBP_Paldex_List_C* Widget);
     void OnHoveredAnyPanel__DelegateSignature(FName CharacterID, class UWBP_Paldex_List_C* SelfWidget);
-}; // Size: 0x460
+};
 
 #endif

@@ -3,39 +3,39 @@
 
 class UWBP_WorlSuitabilityPreference_PalList_C : public UWBP_IndividualParameterBindWidget_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0608 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_FixedAssign;                                      // 0x0610 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_FreeAssign;                                       // 0x0618 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_PalInfo_Simple;                                   // 0x0620 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_PalInfo_TaskDetail;                               // 0x0628 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_CheckBox;                                     // 0x0630 (size: 0x8)
-    class UImage* Image;                                                              // 0x0638 (size: 0x8)
-    class UImage* Image_PalIcon;                                                      // 0x0640 (size: 0x8)
-    class UOverlay* Overlay_Night;                                                    // 0x0648 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_CurrentTask;                                       // 0x0650 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Pal_LevelValue;                                    // 0x0658 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Pal_name;                                          // 0x0660 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Task_Fix;                                          // 0x0668 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Task_Free;                                         // 0x0670 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Task_Free_1;                                       // 0x0678 (size: 0x8)
-    class UWBP_EnemyGauge_SAN_C* WBP_EnemyGauge_SAN;                                  // 0x0680 (size: 0x8)
-    class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State_0;                        // 0x0688 (size: 0x8)
-    class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State_1;                        // 0x0690 (size: 0x8)
-    class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State_2;                        // 0x0698 (size: 0x8)
-    TArray<class UWBP_MainMenu_Pal_State_C*> ConditionWidgets;                        // 0x06A0 (size: 0x10)
-    FTimerHandle UpdateWorkDetailTimerHandle;                                         // 0x06B0 (size: 0x8)
-    TSoftObjectPtr<UPalIndividualCharacterSlot> bindedSlot;                           // 0x06B8 (size: 0x30)
-    FDataTableRowHandle FixedAssignMsgID;                                             // 0x06E8 (size: 0x10)
-    FDataTableRowHandle FreeAssignMsgID;                                              // 0x06F8 (size: 0x10)
-    TMap<class EPalWorkSuitability, class UWBP_WorkSuitabilityPreference_CheckBox_0_C*> SuitabilityCheckBoxMap; // 0x0708 (size: 0x50)
-    FWBP_WorlSuitabilityPreference_PalList_COnChangedSuitabilityCheck OnChangedSuitabilityCheck; // 0x0758 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCanvasPanel* CanvasPanel_FixedAssign;
+    class UCanvasPanel* CanvasPanel_FreeAssign;
+    class UCanvasPanel* CanvasPanel_PalInfo_Simple;
+    class UCanvasPanel* CanvasPanel_PalInfo_TaskDetail;
+    class UHorizontalBox* HorizontalBox_CheckBox;
+    class UImage* Image;
+    class UImage* Image_PalIcon;
+    class UOverlay* Overlay_Night;
+    class UBP_PalTextBlock_C* Text_CurrentTask;
+    class UBP_PalTextBlock_C* Text_Pal_LevelValue;
+    class UBP_PalTextBlock_C* Text_Pal_name;
+    class UBP_PalTextBlock_C* Text_Task_Fix;
+    class UBP_PalTextBlock_C* Text_Task_Free;
+    class UBP_PalTextBlock_C* Text_Task_Free_1;
+    class UWBP_EnemyGauge_SAN_C* WBP_EnemyGauge_SAN;
+    class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State_0;
+    class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State_1;
+    class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State_2;
+    TArray<class UWBP_MainMenu_Pal_State_C*> ConditionWidgets;
+    FTimerHandle UpdateWorkDetailTimerHandle;
+    TSoftObjectPtr<UPalIndividualCharacterSlot> bindedSlot;
+    FDataTableRowHandle FixedAssignMsgID;
+    FDataTableRowHandle FreeAssignMsgID;
+    TMap<class EPalWorkSuitability, class UWBP_WorkSuitabilityPreference_CheckBox_0_C*> SuitabilityCheckBoxMap;
+    FWBP_WorlSuitabilityPreference_PalList_COnChangedSuitabilityCheck OnChangedSuitabilityCheck;
     void OnChangedSuitabilityCheck(bool IsChecked, EPalWorkSuitability Suitability, class UPalIndividualCharacterSlot* TargetSlot);
-    class UWBP_WorkSuitabilityPreference_CheckBox_0_C* BattleModeCheckBox;            // 0x0768 (size: 0x8)
-    FWBP_WorlSuitabilityPreference_PalList_COnChangedBattleModeCheck OnChangedBattleModeCheck; // 0x0770 (size: 0x10)
+    class UWBP_WorkSuitabilityPreference_CheckBox_0_C* BattleModeCheckBox;
+    FWBP_WorlSuitabilityPreference_PalList_COnChangedBattleModeCheck OnChangedBattleModeCheck;
     void OnChangedBattleModeCheck(bool IsChecked, class UPalIndividualCharacterSlot* TargetSlot);
-    FWBP_WorlSuitabilityPreference_PalList_COnHoveredCheckBox OnHoveredCheckBox;      // 0x0780 (size: 0x10)
+    FWBP_WorlSuitabilityPreference_PalList_COnHoveredCheckBox OnHoveredCheckBox;
     void OnHoveredCheckBox(class UWBP_WorlSuitabilityPreference_PalList_C* SelfWidget);
-    int32 LastHoveredCheckBoxIndex;                                                   // 0x0790 (size: 0x4)
+    int32 LastHoveredCheckBoxIndex;
 
     void GetLastHoveredCheckBoxIndex(int32& Index);
     void GetFocusTargetByCheckBoxIndex(int32 Index, class UWidget*& TargetWidget);
@@ -64,6 +64,6 @@ class UWBP_WorlSuitabilityPreference_PalList_C : public UWBP_IndividualParameter
     void OnHoveredCheckBox__DelegateSignature(class UWBP_WorlSuitabilityPreference_PalList_C* SelfWidget);
     void OnChangedBattleModeCheck__DelegateSignature(bool IsChecked, class UPalIndividualCharacterSlot* TargetSlot);
     void OnChangedSuitabilityCheck__DelegateSignature(bool IsChecked, EPalWorkSuitability Suitability, class UPalIndividualCharacterSlot* TargetSlot);
-}; // Size: 0x794
+};
 
 #endif

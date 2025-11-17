@@ -1,0 +1,33 @@
+#pragma once
+#include "CoreMinimal.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=EGameplayContainerMatchType -FallbackName=EGameplayContainerMatchType
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagQuery -FallbackName=GameplayTagQuery
+#include "EnvQueryTest.h"
+#include "EnvQueryTest_GameplayTags.generated.h"
+
+UCLASS(MinimalAPI)
+class UEnvQueryTest_GameplayTags : public UEnvQueryTest {
+    GENERATED_BODY()
+public:
+protected:
+    UPROPERTY(EditAnywhere)
+    FGameplayTagQuery TagQueryToMatch;
+    
+    UPROPERTY(EditAnywhere)
+    bool bRejectIncompatibleItems;
+    
+    UPROPERTY()
+    bool bUpdatedToUseQuery;
+    
+    UPROPERTY()
+    EGameplayContainerMatchType TagsToMatch;
+    
+    UPROPERTY()
+    FGameplayTagContainer GameplayTags;
+    
+public:
+    UEnvQueryTest_GameplayTags();
+
+};
+

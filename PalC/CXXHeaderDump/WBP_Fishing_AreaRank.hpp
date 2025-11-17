@@ -3,26 +3,26 @@
 
 class UWBP_Fishing_AreaRank_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_Out;                                                  // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_In;                                                   // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_Rank_1to4;                                            // 0x0290 (size: 0x8)
-    class UImage* BaseLineC;                                                          // 0x0298 (size: 0x8)
-    class UImage* BaseLineC_Bloom;                                                    // 0x02A0 (size: 0x8)
-    class UImage* BaseLineL;                                                          // 0x02A8 (size: 0x8)
-    class UImage* BaseLineL_Bloom;                                                    // 0x02B0 (size: 0x8)
-    class UImage* BaseLineR;                                                          // 0x02B8 (size: 0x8)
-    class UImage* BaseLineR_Bloom;                                                    // 0x02C0 (size: 0x8)
-    class UImage* Image_Base;                                                         // 0x02C8 (size: 0x8)
-    class UImage* Image_Base_Add;                                                     // 0x02D0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Rank;                                              // 0x02D8 (size: 0x8)
-    bool IsShow;                                                                      // 0x02E0 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_Out;
+    class UWidgetAnimation* Anm_In;
+    class UWidgetAnimation* Anm_Rank_1to4;
+    class UImage* BaseLineC;
+    class UImage* BaseLineC_Bloom;
+    class UImage* BaseLineL;
+    class UImage* BaseLineL_Bloom;
+    class UImage* BaseLineR;
+    class UImage* BaseLineR_Bloom;
+    class UImage* Image_Base;
+    class UImage* Image_Base_Add;
+    class UBP_PalTextBlock_C* Text_Rank;
+    bool IsShow;
 
     void SetDifficulty(EPalFishingSpotDifficultyType DifficultyType);
     void AnmEvent_In();
     void AnmEvent_Out();
     void AnmEvent_Rank(EPalFishingSpotDifficultyType Difficulty);
     void ExecuteUbergraph_WBP_Fishing_AreaRank(int32 EntryPoint);
-}; // Size: 0x2E1
+};
 
 #endif

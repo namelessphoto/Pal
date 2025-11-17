@@ -3,8 +3,8 @@
 
 class UImgMediaPlaybackComponent : public UActorComponent
 {
-    float LODBias;                                                                    // 0x00A0 (size: 0x4)
+    float LODBias;
 
-}; // Size: 0xC8
+};
 
 #endif

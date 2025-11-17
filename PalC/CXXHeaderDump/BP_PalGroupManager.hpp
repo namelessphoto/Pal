@@ -3,6 +3,6 @@
 
 class UBP_PalGroupManager_C : public UPalGroupManager
 {
-}; // Size: 0x290
+};
 
 #endif

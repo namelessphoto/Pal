@@ -3,6 +3,6 @@
 
 class UBP_PalServerListTextScrollStyle_C : public UCommonTextScrollStyle
 {
-}; // Size: 0x40
+};
 
 #endif

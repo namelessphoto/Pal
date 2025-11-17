@@ -3,41 +3,41 @@
 
 class UWBP_OptionSettings_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UWidgetAnimation* Anm_List_OutToIn;                                         // 0x0438 (size: 0x8)
-    class UWidgetAnimation* Anm_CloseToOpen;                                          // 0x0440 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_Default;                                // 0x0448 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_Settings;                                         // 0x0450 (size: 0x8)
-    class UWBP_OptionSettings_MenuButton_C* WBP_OptionSettings_MenuButton_Game;       // 0x0458 (size: 0x8)
-    class UWBP_OptionSettings_MenuButton_C* WBP_OptionSettings_MenuButton_Graphic;    // 0x0460 (size: 0x8)
-    class UWBP_OptionSettings_MenuButton_C* WBP_OptionSettings_MenuButton_Key;        // 0x0468 (size: 0x8)
-    class UWBP_OptionSettings_MenuButton_C* WBP_OptionSettings_MenuButton_Other;      // 0x0470 (size: 0x8)
-    class UWBP_OptionSettings_MenuButton_C* WBP_OptionSettings_MenuButton_Other_1;    // 0x0478 (size: 0x8)
-    class UWBP_OptionSettings_MenuButton_C* WBP_OptionSettings_MenuButton_Other_2;    // 0x0480 (size: 0x8)
-    class UWBP_OptionSettings_MenuButton_C* WBP_OptionSettings_MenuButton_Sound;      // 0x0488 (size: 0x8)
-    class UWBP_OptionSettings_Tab_C* WBP_OptionSettings_Tab;                          // 0x0490 (size: 0x8)
-    class UWBP_PalCommonScrollList_C* WBP_PalCommonScrollList;                        // 0x0498 (size: 0x8)
-    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon_Back;                           // 0x04A0 (size: 0x8)
-    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon_Default;                        // 0x04A8 (size: 0x8)
-    bool Switching;                                                                   // 0x04B0 (size: 0x1)
-    FName DefaultActionName;                                                          // 0x04B4 (size: 0x8)
-    FName PreTabActionName;                                                           // 0x04BC (size: 0x8)
-    FName NextTabActionName;                                                          // 0x04C4 (size: 0x8)
-    class UWBP_Graphic_Settings_C* GraphicSettings;                                   // 0x04D0 (size: 0x8)
-    class UWBP_Sound_Settings_C* AudioSettings;                                       // 0x04D8 (size: 0x8)
-    class UWBP_Key_Settings_C* KeySettings;                                           // 0x04E0 (size: 0x8)
-    class UWBP_Control_Settings_C* GameSettings;                                      // 0x04E8 (size: 0x8)
-    class UWBP_Other_Settings_C* OtherSettings;                                       // 0x04F0 (size: 0x8)
-    FDataTableRowHandle SetDefaultMsgID;                                              // 0x04F8 (size: 0x10)
-    FDataTableRowHandle CloseMsgID;                                                   // 0x0508 (size: 0x10)
-    TArray<FDataTableRowHandle> ControlTabMsgIDs;                                     // 0x0518 (size: 0x10)
-    FPalUIActionBindData BackActionBinding;                                           // 0x0528 (size: 0x4)
-    FPalUIActionBindData DefaultActionBinding;                                        // 0x052C (size: 0x4)
-    FPalUIActionBindData PreTabActionBinding;                                         // 0x0530 (size: 0x4)
-    FPalUIActionBindData NextTabActionBinding;                                        // 0x0534 (size: 0x4)
-    class UWidget* LastFocus;                                                         // 0x0538 (size: 0x8)
-    FDataTableRowHandle ConflictMsgId;                                                // 0x0540 (size: 0x10)
-    FDataTableRowHandle ConflictMsgIdPS5;                                             // 0x0550 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_List_OutToIn;
+    class UWidgetAnimation* Anm_CloseToOpen;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_Default;
+    class UCanvasPanel* CanvasPanel_Settings;
+    class UWBP_OptionSettings_MenuButton_C* WBP_OptionSettings_MenuButton_Game;
+    class UWBP_OptionSettings_MenuButton_C* WBP_OptionSettings_MenuButton_Graphic;
+    class UWBP_OptionSettings_MenuButton_C* WBP_OptionSettings_MenuButton_Key;
+    class UWBP_OptionSettings_MenuButton_C* WBP_OptionSettings_MenuButton_Other;
+    class UWBP_OptionSettings_MenuButton_C* WBP_OptionSettings_MenuButton_Other_1;
+    class UWBP_OptionSettings_MenuButton_C* WBP_OptionSettings_MenuButton_Other_2;
+    class UWBP_OptionSettings_MenuButton_C* WBP_OptionSettings_MenuButton_Sound;
+    class UWBP_OptionSettings_Tab_C* WBP_OptionSettings_Tab;
+    class UWBP_PalCommonScrollList_C* WBP_PalCommonScrollList;
+    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon_Back;
+    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon_Default;
+    bool Switching;
+    FName DefaultActionName;
+    FName PreTabActionName;
+    FName NextTabActionName;
+    class UWBP_Graphic_Settings_C* GraphicSettings;
+    class UWBP_Sound_Settings_C* AudioSettings;
+    class UWBP_Key_Settings_C* KeySettings;
+    class UWBP_Control_Settings_C* GameSettings;
+    class UWBP_Other_Settings_C* OtherSettings;
+    FDataTableRowHandle SetDefaultMsgID;
+    FDataTableRowHandle CloseMsgID;
+    TArray<FDataTableRowHandle> ControlTabMsgIDs;
+    FPalUIActionBindData BackActionBinding;
+    FPalUIActionBindData DefaultActionBinding;
+    FPalUIActionBindData PreTabActionBinding;
+    FPalUIActionBindData NextTabActionBinding;
+    class UWidget* LastFocus;
+    FDataTableRowHandle ConflictMsgId;
+    FDataTableRowHandle ConflictMsgIdPS5;
 
     void Set Tab Action(bool Bind);
     class UWidget* BP_GetDesiredFocusTarget();
@@ -71,6 +71,6 @@ class UWBP_OptionSettings_C : public UPalUserWidgetOverlayUI
     void OpenPanel();
     void BndEvt__WBP_OptionSettings_WBP_OptionSettings_MenuButton_Other_2_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature();
     void ExecuteUbergraph_WBP_OptionSettings(int32 EntryPoint);
-}; // Size: 0x560
+};
 
 #endif

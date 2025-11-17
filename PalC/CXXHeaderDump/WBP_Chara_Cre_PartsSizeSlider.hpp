@@ -3,16 +3,16 @@
 
 class UWBP_Chara_Cre_PartsSizeSlider_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UAnalogSlider* AnalogSlider_Main;                                           // 0x0280 (size: 0x8)
-    class UProgressBar* ProgressBar_305;                                              // 0x0288 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Slider;                                            // 0x0290 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_SliderNum;                                         // 0x0298 (size: 0x8)
-    FWBP_Chara_Cre_PartsSizeSlider_COnChangedValue OnChangedValue;                    // 0x02A0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UAnalogSlider* AnalogSlider_Main;
+    class UProgressBar* ProgressBar_305;
+    class UBP_PalTextBlock_C* Text_Slider;
+    class UBP_PalTextBlock_C* Text_SliderNum;
+    FWBP_Chara_Cre_PartsSizeSlider_COnChangedValue OnChangedValue;
     void OnChangedValue(double Value);
-    double MinValue;                                                                  // 0x02B0 (size: 0x8)
-    double MaxValue;                                                                  // 0x02B8 (size: 0x8)
-    FDataTableRowHandle titleMsgId;                                                   // 0x02C0 (size: 0x10)
+    double MinValue;
+    double MaxValue;
+    FDataTableRowHandle titleMsgId;
 
     void SetValueForce(double Size);
     void Construct();
@@ -22,6 +22,6 @@ class UWBP_Chara_Cre_PartsSizeSlider_C : public UUserWidget
     void BndEvt__WBP_Chara_Cre_PartsSizeSlider_AnalogSlider_Main_K2Node_ComponentBoundEvent_2_OnMouseCaptureEndEvent__DelegateSignature();
     void ExecuteUbergraph_WBP_Chara_Cre_PartsSizeSlider(int32 EntryPoint);
     void OnChangedValue__DelegateSignature(double Value);
-}; // Size: 0x2D0
+};
 
 #endif

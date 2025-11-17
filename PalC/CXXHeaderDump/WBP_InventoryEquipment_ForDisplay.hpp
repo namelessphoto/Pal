@@ -3,13 +3,13 @@
 
 class UWBP_InventoryEquipment_ForDisplay_C : public UPalUIInventoryEquipment
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0458 (size: 0x8)
-    class UWBP_InventoryEquipment_C* WBP_InventoryEquipment;                          // 0x0460 (size: 0x8)
-    class UBP_InGameMenuInventoryModel_C* Model;                                      // 0x0468 (size: 0x8)
-    FPalDataTableRowName_UIInputAction SimulateStatusPointInput;                      // 0x0470 (size: 0x8)
-    FPalDataTableRowName_UIInputAction ConfirmStatusPointInput;                       // 0x0478 (size: 0x8)
-    FPalDataTableRowName_UIInputAction ToggleQuickStackInput;                         // 0x0480 (size: 0x8)
-    FPalDataTableRowName_UIInputAction ToQuickStackButtonInput;                       // 0x0488 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWBP_InventoryEquipment_C* WBP_InventoryEquipment;
+    class UBP_InGameMenuInventoryModel_C* Model;
+    FPalDataTableRowName_UIInputAction SimulateStatusPointInput;
+    FPalDataTableRowName_UIInputAction ConfirmStatusPointInput;
+    FPalDataTableRowName_UIInputAction ToggleQuickStackInput;
+    FPalDataTableRowName_UIInputAction ToQuickStackButtonInput;
 
     void ToggleQuickStack();
     void OnCloseChangePlayerNameWindow(class UPalHUDDispatchParameterBase* Param);
@@ -37,6 +37,6 @@ class UWBP_InventoryEquipment_ForDisplay_C : public UPalUIInventoryEquipment
     void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_10_OnClickedToggleGliderDressing__DelegateSignature();
     void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_6_OnClickQuickStackButton__DelegateSignature(TArray<FPalItemSlotId>& SlotIds);
     void ExecuteUbergraph_WBP_InventoryEquipment_ForDisplay(int32 EntryPoint);
-}; // Size: 0x490
+};
 
 #endif

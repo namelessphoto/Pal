@@ -3,16 +3,16 @@
 
 class UWBP_Reticle_KeyGuide_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Cancel;                                            // 0x0280 (size: 0x8)
-    class UWBP_PlayerInputKeyGuideIcon_C* WBP_PlayerInputKeyGuideIcon;                // 0x0288 (size: 0x8)
-    bool CurrentIsCancel;                                                             // 0x0290 (size: 0x1)
-    FDataTableRowHandle MsgID;                                                        // 0x0298 (size: 0x10)
-    FName PlayerInputActionName;                                                      // 0x02A8 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UBP_PalTextBlock_C* Text_Cancel;
+    class UWBP_PlayerInputKeyGuideIcon_C* WBP_PlayerInputKeyGuideIcon;
+    bool CurrentIsCancel;
+    FDataTableRowHandle MsgID;
+    FName PlayerInputActionName;
 
     void SetKeyGuideInfo(TEnumAsByte<Enum_ReticleCancel_DisplayType> DisplayType);
     void Construct();
     void ExecuteUbergraph_WBP_Reticle_KeyGuide(int32 EntryPoint);
-}; // Size: 0x2B0
+};
 
 #endif

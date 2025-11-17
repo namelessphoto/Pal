@@ -3,31 +3,31 @@
 
 class UWBP_PalCharacterSlotButtonBase_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UCommonButtonBase* My Button;                                               // 0x0410 (size: 0x8)
-    class UWBP_PalCharacterSlotBase_C* MyCharacterSlotWidget;                         // 0x0418 (size: 0x8)
-    FWBP_PalCharacterSlotButtonBase_COnClickedButton OnClickedButton;                 // 0x0420 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCommonButtonBase* My Button;
+    class UWBP_PalCharacterSlotBase_C* MyCharacterSlotWidget;
+    FWBP_PalCharacterSlotButtonBase_COnClickedButton OnClickedButton;
     void OnClickedButton(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
-    FWBP_PalCharacterSlotButtonBase_COnRightClickedButton OnRightClickedButton;       // 0x0430 (size: 0x10)
+    FWBP_PalCharacterSlotButtonBase_COnRightClickedButton OnRightClickedButton;
     void OnRightClickedButton(class UWBP_PalCharacterSlotButtonBase_C* ButtonBase);
-    FWBP_PalCharacterSlotButtonBase_COnHoveredButton OnHoveredButton;                 // 0x0440 (size: 0x10)
+    FWBP_PalCharacterSlotButtonBase_COnHoveredButton OnHoveredButton;
     void OnHoveredButton(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-    FWBP_PalCharacterSlotButtonBase_COnUnhoveredButton OnUnhoveredButton;             // 0x0450 (size: 0x10)
+    FWBP_PalCharacterSlotButtonBase_COnUnhoveredButton OnUnhoveredButton;
     void OnUnhoveredButton(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-    FWBP_PalCharacterSlotButtonBase_COnFocusedWidget OnFocusedWidget;                 // 0x0460 (size: 0x10)
+    FWBP_PalCharacterSlotButtonBase_COnFocusedWidget OnFocusedWidget;
     void OnFocusedWidget(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-    FWBP_PalCharacterSlotButtonBase_COnUnFocusedWidget OnUnFocusedWidget;             // 0x0470 (size: 0x10)
+    FWBP_PalCharacterSlotButtonBase_COnUnFocusedWidget OnUnFocusedWidget;
     void OnUnFocusedWidget(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-    FWBP_PalCharacterSlotButtonBase_COnDragged OnDragged;                             // 0x0480 (size: 0x10)
+    FWBP_PalCharacterSlotButtonBase_COnDragged OnDragged;
     void OnDragged(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-    FWBP_PalCharacterSlotButtonBase_COnDropped OnDropped;                             // 0x0490 (size: 0x10)
+    FWBP_PalCharacterSlotButtonBase_COnDropped OnDropped;
     void OnDropped(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-    bool isDragging;                                                                  // 0x04A0 (size: 0x1)
-    bool IsEnableDragDrop;                                                            // 0x04A1 (size: 0x1)
-    bool IsEnableClick;                                                               // 0x04A2 (size: 0x1)
-    FWBP_PalCharacterSlotButtonBase_COnSlotSync OnSlotSync;                           // 0x04A8 (size: 0x10)
+    bool isDragging;
+    bool IsEnableDragDrop;
+    bool IsEnableClick;
+    FWBP_PalCharacterSlotButtonBase_COnSlotSync OnSlotSync;
     void OnSlotSync(class UWBP_PalCharacterSlotButtonBase_C* SelfButton);
-    FWBP_PalCharacterSlotButtonBase_COnUpdateSlot OnUpdateSlot;                       // 0x04B8 (size: 0x10)
+    FWBP_PalCharacterSlotButtonBase_COnUpdateSlot OnUpdateSlot;
     void OnUpdateSlot(class UWBP_PalCharacterSlotButtonBase_C* SlotButton);
 
     void SetupBySaveParameter(FPalIndividualCharacterSaveParameter SaveParam);
@@ -66,6 +66,6 @@ class UWBP_PalCharacterSlotButtonBase_C : public UPalUserWidget
     void OnFocusedWidget__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);
     void OnHoveredButton__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);
     void OnClickedButton__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
-}; // Size: 0x4C8
+};
 
 #endif

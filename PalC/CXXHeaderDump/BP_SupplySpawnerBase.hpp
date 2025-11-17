@@ -3,9 +3,9 @@
 
 class ABP_SupplySpawnerBase_C : public APalSupplySpawner
 {
-    class UStaticMeshComponent* Cylinder;                                             // 0x0300 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x0308 (size: 0x8)
+    class UStaticMeshComponent* Cylinder;
+    class USceneComponent* DefaultSceneRoot;
 
-}; // Size: 0x310
+};
 
 #endif

@@ -3,6 +3,6 @@
 
 class ABP_PalRandomIncidentSpawner_DarkIsland_DarkArea_C : public ABP_PalRandomIncidentSpawnerTemplate_C
 {
-}; // Size: 0x451
+};
 
 #endif

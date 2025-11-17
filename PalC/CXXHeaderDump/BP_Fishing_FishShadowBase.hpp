@@ -3,30 +3,30 @@
 
 class ABP_Fishing_FishShadowBase_C : public APalFishShadow
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0608 (size: 0x8)
-    class USkeletalMeshComponent* Mesh;                                               // 0x0610 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x0618 (size: 0x8)
-    FVector RootPoint;                                                                // 0x0620 (size: 0x18)
-    FVector NextPoint;                                                                // 0x0638 (size: 0x18)
-    double RotZSpeed;                                                                 // 0x0650 (size: 0x8)
-    double MoveRadius;                                                                // 0x0658 (size: 0x8)
-    double DelayTimer;                                                                // 0x0660 (size: 0x8)
-    double DelayTime;                                                                 // 0x0668 (size: 0x8)
-    FVector PickLocation;                                                             // 0x0670 (size: 0x18)
-    FVector PrevLocation;                                                             // 0x0688 (size: 0x18)
-    bool IsEscape;                                                                    // 0x06A0 (size: 0x1)
-    bool IsHit;                                                                       // 0x06A1 (size: 0x1)
-    bool IsReached;                                                                   // 0x06A2 (size: 0x1)
-    bool IsPick;                                                                      // 0x06A3 (size: 0x1)
-    FRotator EscapeRotation;                                                          // 0x06A8 (size: 0x18)
-    double EscapeSpeed;                                                               // 0x06C0 (size: 0x8)
-    class UNiagaraComponent* SpawnedEffect;                                           // 0x06C8 (size: 0x8)
-    double EffectScale;                                                               // 0x06D0 (size: 0x8)
-    class UAnimSequence* IdleAnim;                                                    // 0x06D8 (size: 0x8)
-    class UAnimSequence* WalkAnim;                                                    // 0x06E0 (size: 0x8)
-    class UAnimSequence* BattleAnim;                                                  // 0x06E8 (size: 0x8)
-    double HeightOffset;                                                              // 0x06F0 (size: 0x8)
-    double HitSinkOffset;                                                             // 0x06F8 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class USkeletalMeshComponent* Mesh;
+    class USceneComponent* DefaultSceneRoot;
+    FVector RootPoint;
+    FVector NextPoint;
+    double RotZSpeed;
+    double MoveRadius;
+    double DelayTimer;
+    double DelayTime;
+    FVector PickLocation;
+    FVector PrevLocation;
+    bool IsEscape;
+    bool IsHit;
+    bool IsReached;
+    bool IsPick;
+    FRotator EscapeRotation;
+    double EscapeSpeed;
+    class UNiagaraComponent* SpawnedEffect;
+    double EffectScale;
+    class UAnimSequence* IdleAnim;
+    class UAnimSequence* WalkAnim;
+    class UAnimSequence* BattleAnim;
+    double HeightOffset;
+    double HitSinkOffset;
 
     void GetSocketMouthLocation(FVector& MouthLocation);
     void FishingHit();
@@ -47,6 +47,6 @@ class ABP_Fishing_FishShadowBase_C : public APalFishShadow
     void OnSpawnedRareEffect(class UNiagaraSystem* Effect);
     void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);
     void ExecuteUbergraph_BP_Fishing_FishShadowBase(int32 EntryPoint);
-}; // Size: 0x700
+};
 
 #endif

@@ -5,6 +5,6 @@ class ABP_RaidBossLightingVolume_YakushimaBoss002_C : public ABP_SkyCreatorLight
 {
 
     void DeleteSelfActor();
-}; // Size: 0x2F8
+};
 
 #endif

@@ -3,6 +3,6 @@
 
 class ABP_LevelInstance_WorldTree_C : public APalLevelInstance
 {
-}; // Size: 0x330
+};
 
 #endif

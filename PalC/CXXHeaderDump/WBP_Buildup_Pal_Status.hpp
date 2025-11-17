@@ -3,46 +3,46 @@
 
 class UWBP_Buildup_Pal_Status_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UCanvasPanel* Canvas_ResetInfo;                                             // 0x0280 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_Overall;                                          // 0x0288 (size: 0x8)
-    class UImage* Image_44;                                                           // 0x0290 (size: 0x8)
-    class UOverlay* Overlay_BlockReset;                                               // 0x0298 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Info;                                              // 0x02A0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_PossessedMoney_Num;                                // 0x02A8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_RequireMoney_Num;                                  // 0x02B0 (size: 0x8)
-    class UWBP_Buildup_Pal_Item_C* WBP_Buildup_Pal_Item;                              // 0x02B8 (size: 0x8)
-    class UWBP_Buildup_Pal_Item_C* WBP_Buildup_Pal_Item_1;                            // 0x02C0 (size: 0x8)
-    class UWBP_Buildup_Pal_Item_C* WBP_Buildup_Pal_Item_2;                            // 0x02C8 (size: 0x8)
-    class UWBP_Buildup_Pal_Item_C* WBP_Buildup_Pal_Item_3;                            // 0x02D0 (size: 0x8)
-    class UWBP_Buildup_Pal_StatusContent_C* WBP_Buildup_Pal_StatusContent;            // 0x02D8 (size: 0x8)
-    class UWBP_Buildup_Pal_StatusContent_C* WBP_Buildup_Pal_StatusContent_1;          // 0x02E0 (size: 0x8)
-    class UWBP_Buildup_Pal_StatusContent_C* WBP_Buildup_Pal_StatusContent_2;          // 0x02E8 (size: 0x8)
-    class UWBP_Buildup_Pal_StatusContent_C* WBP_Buildup_Pal_StatusContent_3;          // 0x02F0 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton;                                      // 0x02F8 (size: 0x8)
-    TArray<class UWBP_Buildup_Pal_StatusContent_C*> StatusContents;                   // 0x0300 (size: 0x10)
-    TMap<EPalCharacterStatusOperationName, int32> TargetStatusRankMap;                // 0x0310 (size: 0x50)
-    FDataTableRowHandle RankupMsgId;                                                  // 0x0360 (size: 0x10)
-    FDataTableRowHandle ResetMsgId;                                                   // 0x0370 (size: 0x10)
-    FDataTableRowHandle RankupButtonMsgID;                                            // 0x0380 (size: 0x10)
-    FDataTableRowHandle ResetButtonMsgID;                                             // 0x0390 (size: 0x10)
-    FDataTableRowHandle ResetResultMsgId;                                             // 0x03A0 (size: 0x10)
-    FWBP_Buildup_Pal_Status_CInvokeRankUp InvokeRankUp;                               // 0x03B0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCanvasPanel* Canvas_ResetInfo;
+    class UCanvasPanel* CanvasPanel_Overall;
+    class UImage* Image_44;
+    class UOverlay* Overlay_BlockReset;
+    class UBP_PalTextBlock_C* Text_Info;
+    class UBP_PalTextBlock_C* Text_PossessedMoney_Num;
+    class UBP_PalTextBlock_C* Text_RequireMoney_Num;
+    class UWBP_Buildup_Pal_Item_C* WBP_Buildup_Pal_Item;
+    class UWBP_Buildup_Pal_Item_C* WBP_Buildup_Pal_Item_1;
+    class UWBP_Buildup_Pal_Item_C* WBP_Buildup_Pal_Item_2;
+    class UWBP_Buildup_Pal_Item_C* WBP_Buildup_Pal_Item_3;
+    class UWBP_Buildup_Pal_StatusContent_C* WBP_Buildup_Pal_StatusContent;
+    class UWBP_Buildup_Pal_StatusContent_C* WBP_Buildup_Pal_StatusContent_1;
+    class UWBP_Buildup_Pal_StatusContent_C* WBP_Buildup_Pal_StatusContent_2;
+    class UWBP_Buildup_Pal_StatusContent_C* WBP_Buildup_Pal_StatusContent_3;
+    class UWBP_CommonButton_C* WBP_CommonButton;
+    TArray<class UWBP_Buildup_Pal_StatusContent_C*> StatusContents;
+    TMap<EPalCharacterStatusOperationName, int32> TargetStatusRankMap;
+    FDataTableRowHandle RankupMsgId;
+    FDataTableRowHandle ResetMsgId;
+    FDataTableRowHandle RankupButtonMsgID;
+    FDataTableRowHandle ResetButtonMsgID;
+    FDataTableRowHandle ResetResultMsgId;
+    FWBP_Buildup_Pal_Status_CInvokeRankUp InvokeRankUp;
     void InvokeRankup(TMap<EPalCharacterStatusOperationName, int32> Status);
-    bool BlockInvoke;                                                                 // 0x03C0 (size: 0x1)
-    bool Is Upgrade;                                                                  // 0x03C1 (size: 0x1)
-    TArray<class UWBP_Buildup_Pal_Item_C*> Upgrade Items;                             // 0x03C8 (size: 0x10)
-    int32 RequiredMoney;                                                              // 0x03D8 (size: 0x4)
-    FWBP_Buildup_Pal_Status_CInvokeReset InvokeReset;                                 // 0x03E0 (size: 0x10)
+    bool BlockInvoke;
+    bool Is Upgrade;
+    TArray<class UWBP_Buildup_Pal_Item_C*> Upgrade Items;
+    int32 RequiredMoney;
+    FWBP_Buildup_Pal_Status_CInvokeReset InvokeReset;
     void InvokeReset();
-    TArray<FName> Item Ids;                                                           // 0x03F0 (size: 0x10)
-    class UPalIndividualCharacterParameter* CurrentIndividualParam;                   // 0x0400 (size: 0x8)
-    TArray<EPalCharacterStatusOperationName> Status;                                  // 0x0408 (size: 0x10)
-    TMap<EPalCharacterStatusOperationName, int32> CurrentRankMap;                     // 0x0418 (size: 0x50)
-    FDataTableRowHandle ReturnPalSoulMsgId;                                           // 0x0468 (size: 0x10)
-    FDataTableRowHandle ConsumePalSoulMsgId;                                          // 0x0478 (size: 0x10)
-    TMap<FName, int32> ReturnItems;                                                   // 0x0488 (size: 0x50)
-    FDataTableRowHandle RankupMsgId_ImportedPal;                                      // 0x04D8 (size: 0x10)
+    TArray<FName> Item Ids;
+    class UPalIndividualCharacterParameter* CurrentIndividualParam;
+    TArray<EPalCharacterStatusOperationName> Status;
+    TMap<EPalCharacterStatusOperationName, int32> CurrentRankMap;
+    FDataTableRowHandle ReturnPalSoulMsgId;
+    FDataTableRowHandle ConsumePalSoulMsgId;
+    TMap<FName, int32> ReturnItems;
+    FDataTableRowHandle RankupMsgId_ImportedPal;
 
     class UWidget* DoCustomNavigation(EUINavigation Navigation);
     void UpdateRequiredItemSufficiency();
@@ -62,6 +62,6 @@ class UWBP_Buildup_Pal_Status_C : public UUserWidget
     void ExecuteUbergraph_WBP_Buildup_Pal_Status(int32 EntryPoint);
     void InvokeReset__DelegateSignature();
     void InvokeRankup__DelegateSignature(TMap<EPalCharacterStatusOperationName, int32> Status);
-}; // Size: 0x4E8
+};
 
 #endif

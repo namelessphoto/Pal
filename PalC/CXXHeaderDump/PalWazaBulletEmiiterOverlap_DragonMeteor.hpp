@@ -5,6 +5,6 @@ class UPalWazaBulletEmiiterOverlap_DragonMeteor_C : public UPalWazaBulletEmiiter
 {
 
     void GetBulletEmiiterOverlapSphere(TArray<FPalWazaBulletEmiiterOverlapSphere>& Spheres);
-}; // Size: 0x28
+};
 
 #endif

@@ -3,16 +3,16 @@
 
 class UBP_PalFishingComponent_C : public UPalFishingComponent
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x02F8 (size: 0x8)
-    class APalCutsceneActor* CutsceneActor;                                           // 0x0300 (size: 0x8)
-    TSubclassOf<class APalCutsceneActor> TargetCutsceneActor;                         // 0x0308 (size: 0x8)
-    class UPalCutsceneComponent* CutsceneComponent;                                   // 0x0310 (size: 0x8)
-    FVector CutsceneOffsetLocation;                                                   // 0x0318 (size: 0x18)
-    FPalFishingCutsceneInfo FishingCutsceneInfo;                                      // 0x0330 (size: 0x98)
-    bool IsHideWeapon;                                                                // 0x03C8 (size: 0x1)
-    FName flagName;                                                                   // 0x03CC (size: 0x8)
-    class UPalShooterComponent* ShooterComponent;                                     // 0x03D8 (size: 0x8)
-    bool IsStartCutscene;                                                             // 0x03E0 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class APalCutsceneActor* CutsceneActor;
+    TSubclassOf<class APalCutsceneActor> TargetCutsceneActor;
+    class UPalCutsceneComponent* CutsceneComponent;
+    FVector CutsceneOffsetLocation;
+    FPalFishingCutsceneInfo FishingCutsceneInfo;
+    bool IsHideWeapon;
+    FName flagName;
+    class UPalShooterComponent* ShooterComponent;
+    bool IsStartCutscene;
 
     void GetPlayerFootLocation(FVector SocketLocation, FVector& FloorLocation);
     void SetDisableChangeWeapon(bool isDisable);
@@ -30,6 +30,6 @@ class UBP_PalFishingComponent_C : public UPalFishingComponent
     void OnAttachedFloorLargePal(FVector SocketLocation, FRotator SocketRotation);
     void OnStartAim(const TArray<FPalStaticItemIdAndNum>& BaitItemInfoList, int32 SelectedIndex);
     void ExecuteUbergraph_BP_PalFishingComponent(int32 EntryPoint);
-}; // Size: 0x3E1
+};
 
 #endif

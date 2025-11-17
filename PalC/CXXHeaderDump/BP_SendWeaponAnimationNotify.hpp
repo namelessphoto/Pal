@@ -3,9 +3,9 @@
 
 class UBP_SendWeaponAnimationNotify_C : public UAnimNotify
 {
-    TEnumAsByte<E_PalWeaponAnimationNotify> Notify;                                   // 0x0038 (size: 0x1)
+    TEnumAsByte<E_PalWeaponAnimationNotify> Notify;
 
     bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, const FAnimNotifyEventReference& EventReference);
-}; // Size: 0x39
+};
 
 #endif

@@ -3,52 +3,52 @@
 
 class UWBP_Trading_Item_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UCanvasPanel* Canvas_Caution;                                               // 0x0438 (size: 0x8)
-    class UCanvasPanel* Canvas_InventoryStorage;                                      // 0x0440 (size: 0x8)
-    class UCanvasPanel* Canvas_Sell;                                                  // 0x0448 (size: 0x8)
-    class UCanvasPanel* Canvas_SellList;                                              // 0x0450 (size: 0x8)
-    class UCanvasPanel* Canvas_SellSetting;                                           // 0x0458 (size: 0x8)
-    class UCheckBox* CheckBox;                                                        // 0x0460 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_ItemStocknum;                                 // 0x0468 (size: 0x8)
-    class UImage* Image_ItemSlot_Add_Cost;                                            // 0x0470 (size: 0x8)
-    class UImage* Image_ItemSlot_Add_Product;                                         // 0x0478 (size: 0x8)
-    class UImage* Image_StoreHover;                                                   // 0x0480 (size: 0x8)
-    class UPalEditableTextBox* PalEditableTextBox_CostNum;                            // 0x0488 (size: 0x8)
-    class UPalEditableTextBox* PalEditableTextBox_ProductNum;                         // 0x0490 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_ItemStockNum;                                      // 0x0498 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_StoreManage;                                       // 0x04A0 (size: 0x8)
-    class UWBP_CommonButton_1_C* WBP_CommonButton_Cancel;                             // 0x04A8 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton_Confirm;                              // 0x04B0 (size: 0x8)
-    class UWBP_IngameMenu_Chest_C* WBP_IngameMenu_Chest;                              // 0x04B8 (size: 0x8)
-    class UWBP_ItemInfo_ForItemBooth_C* WBP_ItemInfo_ForItemBooth;                    // 0x04C0 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlot_Cost;                      // 0x04C8 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlot_Product;                   // 0x04D0 (size: 0x8)
-    class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x04D8 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Lock_CheckBox;            // 0x04E0 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Minus;                    // 0x04E8 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Minus_1;                  // 0x04F0 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Plus;                     // 0x04F8 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Plus_1;                   // 0x0500 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Sort_TargetContainer;     // 0x0508 (size: 0x8)
-    class UWBP_PalItemScrollList_C* WBP_PalItemScrollList;                            // 0x0510 (size: 0x8)
-    class UWBP_Trading_Item_List_C* WBP_Trading_Item_List;                            // 0x0518 (size: 0x8)
-    class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_1;                          // 0x0520 (size: 0x8)
-    class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_2;                          // 0x0528 (size: 0x8)
-    class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_3;                          // 0x0530 (size: 0x8)
-    class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_4;                          // 0x0538 (size: 0x8)
-    class UPalMapObjectItemBoothModel* ItemBoothModel;                                // 0x0540 (size: 0x8)
-    class UBP_PalInventoryModel_C* InventoryModel;                                    // 0x0548 (size: 0x8)
-    TArray<class UWBP_Trading_Item_List_C*> TradingList;                              // 0x0550 (size: 0x10)
-    bool Confirmable;                                                                 // 0x0560 (size: 0x1)
-    FPalItemBoothTradeInfo CurrentTradeInfo;                                          // 0x0564 (size: 0x68)
-    FText LastProductNum;                                                             // 0x05D0 (size: 0x18)
-    FText LastCostNum;                                                                // 0x05E8 (size: 0x18)
-    TArray<FPalUIActionBindData> StoreContainerActionBindings;                        // 0x0600 (size: 0x10)
-    bool LastFocusInInventory;                                                        // 0x0610 (size: 0x1)
-    int32 EditingIndex;                                                               // 0x0614 (size: 0x4)
-    bool SelectingProduct;                                                            // 0x0618 (size: 0x1)
-    FTimerHandle DelayUnhoverTimer;                                                   // 0x0620 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCanvasPanel* Canvas_Caution;
+    class UCanvasPanel* Canvas_InventoryStorage;
+    class UCanvasPanel* Canvas_Sell;
+    class UCanvasPanel* Canvas_SellList;
+    class UCanvasPanel* Canvas_SellSetting;
+    class UCheckBox* CheckBox;
+    class UHorizontalBox* HorizontalBox_ItemStocknum;
+    class UImage* Image_ItemSlot_Add_Cost;
+    class UImage* Image_ItemSlot_Add_Product;
+    class UImage* Image_StoreHover;
+    class UPalEditableTextBox* PalEditableTextBox_CostNum;
+    class UPalEditableTextBox* PalEditableTextBox_ProductNum;
+    class UBP_PalTextBlock_C* Text_ItemStockNum;
+    class UBP_PalTextBlock_C* Text_StoreManage;
+    class UWBP_CommonButton_1_C* WBP_CommonButton_Cancel;
+    class UWBP_CommonButton_C* WBP_CommonButton_Confirm;
+    class UWBP_IngameMenu_Chest_C* WBP_IngameMenu_Chest;
+    class UWBP_ItemInfo_ForItemBooth_C* WBP_ItemInfo_ForItemBooth;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlot_Cost;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlot_Product;
+    class UWBP_Menu_btn_C* WBP_Menu_btn;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Lock_CheckBox;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Minus;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Minus_1;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Plus;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Plus_1;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Sort_TargetContainer;
+    class UWBP_PalItemScrollList_C* WBP_PalItemScrollList;
+    class UWBP_Trading_Item_List_C* WBP_Trading_Item_List;
+    class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_1;
+    class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_2;
+    class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_3;
+    class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_4;
+    class UPalMapObjectItemBoothModel* ItemBoothModel;
+    class UBP_PalInventoryModel_C* InventoryModel;
+    TArray<class UWBP_Trading_Item_List_C*> TradingList;
+    bool Confirmable;
+    FPalItemBoothTradeInfo CurrentTradeInfo;
+    FText LastProductNum;
+    FText LastCostNum;
+    TArray<FPalUIActionBindData> StoreContainerActionBindings;
+    bool LastFocusInInventory;
+    int32 EditingIndex;
+    bool SelectingProduct;
+    FTimerHandle DelayUnhoverTimer;
 
     void OnStoreSlotUnhovered(class UWBP_PalItemSlotButtonBase_C* Widget);
     void SwitchSlotPanelHoverDisplay(bool IsHover);
@@ -108,6 +108,6 @@ class UWBP_Trading_Item_C : public UPalUserWidgetOverlayUI
     void DelayUnhoverStorePanel();
     void Destruct();
     void ExecuteUbergraph_WBP_Trading_Item(int32 EntryPoint);
-}; // Size: 0x628
+};
 
 #endif

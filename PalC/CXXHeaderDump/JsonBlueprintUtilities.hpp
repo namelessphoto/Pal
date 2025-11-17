@@ -13,6 +13,6 @@ class UJsonBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
     bool GetField(const FJsonObjectWrapper& JsonObject, FString FieldName, int32& OutValue);
     bool FromString(class UObject* WorldContextObject, FString JsonString, FJsonObjectWrapper& OutJsonObject);
     bool FromFile(class UObject* WorldContextObject, const FFilePath& File, FJsonObjectWrapper& OutJsonObject);
-}; // Size: 0x28
+};
 
 #endif

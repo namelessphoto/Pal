@@ -3,6 +3,6 @@
 
 class UBP_PalOptionSubsystem_C : public UPalOptionSubsystem
 {
-}; // Size: 0xAA0
+};
 
 #endif

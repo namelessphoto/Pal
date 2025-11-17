@@ -3,31 +3,31 @@
 
 class UWBP_PalInfo_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_TextToBonus;                                          // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_BonusToText;                                          // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_Close;                                                // 0x0290 (size: 0x8)
-    class UWidgetAnimation* Anm_Open;                                                 // 0x0298 (size: 0x8)
-    class UCanvasPanel* Canvas_Passive;                                               // 0x02A0 (size: 0x8)
-    class UBP_PalRichTextBlock_C* RichText_Info;                                      // 0x02A8 (size: 0x8)
-    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive;          // 0x02B0 (size: 0x8)
-    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive_1;        // 0x02B8 (size: 0x8)
-    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive_2;        // 0x02C0 (size: 0x8)
-    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive_3;        // 0x02C8 (size: 0x8)
-    class UWBP_Paldex_Task_C* WBP_Paldex_Task;                                        // 0x02D0 (size: 0x8)
-    class UWBP_PalGet_s_C* WBP_PalGet_s;                                              // 0x02D8 (size: 0x8)
-    bool isDisplaying;                                                                // 0x02E0 (size: 0x1)
-    TArray<FName> stackedCharacterId;                                                 // 0x02E8 (size: 0x10)
-    TArray<class UWBP_MainMenu_Pal_Skill_Passive_C*> PassiveSkillWidgetArray;         // 0x02F8 (size: 0x10)
-    TArray<FFPalUIPalInfoDisplayData> stackedGetInfo;                                 // 0x0308 (size: 0x10)
-    TMap<TEnumAsByte<EPalUIPalInfoType>, double> displayTimeMap;                      // 0x0318 (size: 0x50)
-    FTimerHandle CloseTimerHandle;                                                    // 0x0368 (size: 0x8)
-    FDataTableRowHandle captureTitleMagId;                                            // 0x0370 (size: 0x10)
-    FDataTableRowHandle firstCaptureTitleMagId;                                       // 0x0380 (size: 0x10)
-    FDataTableRowHandle firstActivatedTitleMagId;                                     // 0x0390 (size: 0x10)
-    FTimerHandle DetailChangeTimer;                                                   // 0x03A0 (size: 0x8)
-    bool IsAfterOpenedBonusActivate;                                                  // 0x03A8 (size: 0x1)
-    FFPalUIPalInfoDisplayData DisplayingGetInfo;                                      // 0x03B0 (size: 0x40)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_TextToBonus;
+    class UWidgetAnimation* Anm_BonusToText;
+    class UWidgetAnimation* Anm_Close;
+    class UWidgetAnimation* Anm_Open;
+    class UCanvasPanel* Canvas_Passive;
+    class UBP_PalRichTextBlock_C* RichText_Info;
+    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive;
+    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive_1;
+    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive_2;
+    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive_3;
+    class UWBP_Paldex_Task_C* WBP_Paldex_Task;
+    class UWBP_PalGet_s_C* WBP_PalGet_s;
+    bool isDisplaying;
+    TArray<FName> stackedCharacterId;
+    TArray<class UWBP_MainMenu_Pal_Skill_Passive_C*> PassiveSkillWidgetArray;
+    TArray<FFPalUIPalInfoDisplayData> stackedGetInfo;
+    TMap<TEnumAsByte<EPalUIPalInfoType>, double> displayTimeMap;
+    FTimerHandle CloseTimerHandle;
+    FDataTableRowHandle captureTitleMagId;
+    FDataTableRowHandle firstCaptureTitleMagId;
+    FDataTableRowHandle firstActivatedTitleMagId;
+    FTimerHandle DetailChangeTimer;
+    bool IsAfterOpenedBonusActivate;
+    FFPalUIPalInfoDisplayData DisplayingGetInfo;
 
     void OnDescToBonus();
     void DisplayFirstActivatedInfo(class APalCharacter* Character);
@@ -50,6 +50,6 @@ class UWBP_PalInfo_C : public UUserWidget
     void SetupCapturePalInfo(FPalUIPalCaptureInfo CaptureInfo);
     void SetupFirstActivatedPalInfo(class UPalIndividualCharacterHandle* Handle);
     void ExecuteUbergraph_WBP_PalInfo(int32 EntryPoint);
-}; // Size: 0x3F0
+};
 
 #endif

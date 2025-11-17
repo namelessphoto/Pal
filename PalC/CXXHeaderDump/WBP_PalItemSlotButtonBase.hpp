@@ -3,61 +3,61 @@
 
 class UWBP_PalItemSlotButtonBase_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UCommonButtonBase* My Button;                                               // 0x0410 (size: 0x8)
-    class UWBP_PalItemSlotBase_C* MyItemSlotWidget;                                   // 0x0418 (size: 0x8)
-    FWBP_PalItemSlotButtonBase_COnClickedButton OnClickedButton;                      // 0x0420 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCommonButtonBase* My Button;
+    class UWBP_PalItemSlotBase_C* MyItemSlotWidget;
+    FWBP_PalItemSlotButtonBase_COnClickedButton OnClickedButton;
     void OnClickedButton(class UWBP_PalItemSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
-    FWBP_PalItemSlotButtonBase_COnMiddleClickedButton OnMiddleClickedButton;          // 0x0430 (size: 0x10)
+    FWBP_PalItemSlotButtonBase_COnMiddleClickedButton OnMiddleClickedButton;
     void OnMiddleClickedButton(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-    FWBP_PalItemSlotButtonBase_COnRightClickedButton OnRightClickedButton;            // 0x0440 (size: 0x10)
+    FWBP_PalItemSlotButtonBase_COnRightClickedButton OnRightClickedButton;
     void OnRightClickedButton(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
-    FWBP_PalItemSlotButtonBase_COnHoveredButton OnHoveredButton;                      // 0x0450 (size: 0x10)
+    FWBP_PalItemSlotButtonBase_COnHoveredButton OnHoveredButton;
     void OnHoveredButton(class UWBP_PalItemSlotButtonBase_C* Widget);
-    FWBP_PalItemSlotButtonBase_COnUnhoveredButton OnUnhoveredButton;                  // 0x0460 (size: 0x10)
+    FWBP_PalItemSlotButtonBase_COnUnhoveredButton OnUnhoveredButton;
     void OnUnhoveredButton(class UWBP_PalItemSlotButtonBase_C* Widget);
-    FWBP_PalItemSlotButtonBase_COnFocusedWidget OnFocusedWidget;                      // 0x0470 (size: 0x10)
+    FWBP_PalItemSlotButtonBase_COnFocusedWidget OnFocusedWidget;
     void OnFocusedWidget(class UWBP_PalItemSlotButtonBase_C* Widget);
-    FWBP_PalItemSlotButtonBase_COnUnFocusedWidget OnUnFocusedWidget;                  // 0x0480 (size: 0x10)
+    FWBP_PalItemSlotButtonBase_COnUnFocusedWidget OnUnFocusedWidget;
     void OnUnFocusedWidget(class UWBP_PalItemSlotButtonBase_C* Widget);
-    FWBP_PalItemSlotButtonBase_COnDragged OnDragged;                                  // 0x0490 (size: 0x10)
+    FWBP_PalItemSlotButtonBase_COnDragged OnDragged;
     void OnDragged(class UWBP_PalItemSlotButtonBase_C* Widget);
-    FWBP_PalItemSlotButtonBase_COnDropped OnDropped;                                  // 0x04A0 (size: 0x10)
+    FWBP_PalItemSlotButtonBase_COnDropped OnDropped;
     void OnDropped(class UWBP_PalItemSlotButtonBase_C* Widget);
-    FWBP_PalItemSlotButtonBase_COnDropCanceled OnDropCanceled;                        // 0x04B0 (size: 0x10)
+    FWBP_PalItemSlotButtonBase_COnDropCanceled OnDropCanceled;
     void OnDropCanceled(class UWBP_PalItemSlotButtonBase_C* Widget);
-    bool IsEnableDragDrop;                                                            // 0x04C0 (size: 0x1)
-    FWBP_PalItemSlotButtonBase_COnLiftedButton OnLiftedButton;                        // 0x04C8 (size: 0x10)
+    bool IsEnableDragDrop;
+    FWBP_PalItemSlotButtonBase_COnLiftedButton OnLiftedButton;
     void OnLiftedButton(int32 LiftNum, class UWBP_PalItemSlotButtonBase_C* Widget);
-    FWBP_PalItemSlotButtonBase_COnFinishLiftedButton OnFinishLiftedButton;            // 0x04D8 (size: 0x10)
+    FWBP_PalItemSlotButtonBase_COnFinishLiftedButton OnFinishLiftedButton;
     void OnFinishLiftedButton(class UWBP_PalItemSlotButtonBase_C* Widget);
-    bool IsDisplayingItemInfo;                                                        // 0x04E8 (size: 0x1)
-    bool IsDisplayCommonItemInfoWindow;                                               // 0x04E9 (size: 0x1)
-    FWBP_PalItemSlotButtonBase_COnSetEmptySlot OnSetEmptySlot;                        // 0x04F0 (size: 0x10)
+    bool IsDisplayingItemInfo;
+    bool IsDisplayCommonItemInfoWindow;
+    FWBP_PalItemSlotButtonBase_COnSetEmptySlot OnSetEmptySlot;
     void OnSetEmptySlot();
-    FWBP_PalItemSlotButtonBase_COnSetValidSlot OnSetValidSlot;                        // 0x0500 (size: 0x10)
+    FWBP_PalItemSlotButtonBase_COnSetValidSlot OnSetValidSlot;
     void OnSetValidSlot();
-    bool IsEnableSpreadLift;                                                          // 0x0510 (size: 0x1)
-    bool IsUsableSlot;                                                                // 0x0511 (size: 0x1)
-    FPalDataTableRowName_UIInputAction HalfLiftAction_ForPad;                         // 0x0514 (size: 0x8)
-    FPalDataTableRowName_UIInputAction UseAction_ForPad;                              // 0x051C (size: 0x8)
-    FPalUIActionBindData HalfLiftActionHandle_ForPad;                                 // 0x0524 (size: 0x4)
-    FPalUIActionBindData UseActionHandle_ForPad;                                      // 0x0528 (size: 0x4)
-    bool IsSupportedQuickMove;                                                        // 0x052C (size: 0x1)
-    bool IsEnableQuickEquip;                                                          // 0x052D (size: 0x1)
-    FWBP_PalItemSlotButtonBase_COnNotifyDurability OnNotifyDurability;                // 0x0530 (size: 0x10)
+    bool IsEnableSpreadLift;
+    bool IsUsableSlot;
+    FPalDataTableRowName_UIInputAction HalfLiftAction_ForPad;
+    FPalDataTableRowName_UIInputAction UseAction_ForPad;
+    FPalUIActionBindData HalfLiftActionHandle_ForPad;
+    FPalUIActionBindData UseActionHandle_ForPad;
+    bool IsSupportedQuickMove;
+    bool IsEnableQuickEquip;
+    FWBP_PalItemSlotButtonBase_COnNotifyDurability OnNotifyDurability;
     void OnNotifyDurability(double MaxDurability, double NowDurability, class UWBP_PalItemSlotButtonBase_C* SelfWidget);
-    FWBP_PalItemSlotButtonBase_COnCorruptionUpdate OnCorruptionUpdate;                // 0x0540 (size: 0x10)
+    FWBP_PalItemSlotButtonBase_COnCorruptionUpdate OnCorruptionUpdate;
     void OnCorruptionUpdate();
-    FWBP_PalItemSlotButtonBase_COnRequestUseItem OnRequestUseItem;                    // 0x0550 (size: 0x10)
+    FWBP_PalItemSlotButtonBase_COnRequestUseItem OnRequestUseItem;
     void OnRequestUseItem(class UWBP_PalItemSlotButtonBase_C* Button);
-    bool IsShowPrice;                                                                 // 0x0560 (size: 0x1)
-    FWBP_PalItemSlotButtonBase_COnTriedEquipSlot OnTriedEquipSlot;                    // 0x0568 (size: 0x10)
+    bool IsShowPrice;
+    FWBP_PalItemSlotButtonBase_COnTriedEquipSlot OnTriedEquipSlot;
     void OnTriedEquipSlot(class UWBP_PalItemSlotButtonBase_C* Widget);
-    FWBP_PalItemSlotButtonBase_COnUpdateSlot OnUpdateSlot;                            // 0x0578 (size: 0x10)
+    FWBP_PalItemSlotButtonBase_COnUpdateSlot OnUpdateSlot;
     void OnUpdateSlot(class UPalItemSlot* Slot);
-    FText Override Num Count Text;                                                    // 0x0588 (size: 0x18)
-    bool bShouldDisplayItemInfo;                                                      // 0x05A0 (size: 0x1)
+    FText Override Num Count Text;
+    bool bShouldDisplayItemInfo;
 
     void GetItemAndNum(FPalItemAndNum& ItemAndNum);
     void GetDisplayDragItemNum(int32& DisplayNum);
@@ -118,6 +118,6 @@ class UWBP_PalItemSlotButtonBase_C : public UPalUserWidget
     void OnFocusedWidget__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Widget);
     void OnHoveredButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Widget);
     void OnClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
-}; // Size: 0x5A1
+};
 
 #endif

@@ -3,21 +3,21 @@
 
 class UWBP_GuildMemberMenu_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UImage* Base;                                                               // 0x0280 (size: 0x8)
-    class UImage* BaseShadow;                                                         // 0x0288 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_C_122;                                  // 0x0290 (size: 0x8)
-    class UImage* HeadBase;                                                           // 0x0298 (size: 0x8)
-    class UWBP_GuildMemberMenuList_C* WBP_GuildMemberMenuList;                        // 0x02A0 (size: 0x8)
-    class UWBP_GuildMemberMenuList_C* WBP_GuildMemberMenuList_1;                      // 0x02A8 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x02B0 (size: 0x8)
-    FDataTableRowHandle ChangeAdminMsgID;                                             // 0x02B8 (size: 0x10)
-    FDataTableRowHandle BanPlayerMsgID;                                               // 0x02C8 (size: 0x10)
-    FWBP_GuildMemberMenu_COnClickedChangeAdmin OnClickedChangeAdmin;                  // 0x02D8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UImage* Base;
+    class UImage* BaseShadow;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_C_122;
+    class UImage* HeadBase;
+    class UWBP_GuildMemberMenuList_C* WBP_GuildMemberMenuList;
+    class UWBP_GuildMemberMenuList_C* WBP_GuildMemberMenuList_1;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    FDataTableRowHandle ChangeAdminMsgID;
+    FDataTableRowHandle BanPlayerMsgID;
+    FWBP_GuildMemberMenu_COnClickedChangeAdmin OnClickedChangeAdmin;
     void OnClickedChangeAdmin();
-    FWBP_GuildMemberMenu_COnClickedBanPlayer OnClickedBanPlayer;                      // 0x02E8 (size: 0x10)
+    FWBP_GuildMemberMenu_COnClickedBanPlayer OnClickedBanPlayer;
     void OnClickedBanPlayer();
-    FWBP_GuildMemberMenu_COnClickedMenuCancel OnClickedMenuCancel;                    // 0x02F8 (size: 0x10)
+    FWBP_GuildMemberMenu_COnClickedMenuCancel OnClickedMenuCancel;
     void OnClickedMenuCancel();
 
     void GetTopFocusTarget(class UWidget*& TargetWidget);
@@ -30,6 +30,6 @@ class UWBP_GuildMemberMenu_C : public UUserWidget
     void OnClickedMenuCancel__DelegateSignature();
     void OnClickedBanPlayer__DelegateSignature();
     void OnClickedChangeAdmin__DelegateSignature();
-}; // Size: 0x308
+};
 
 #endif

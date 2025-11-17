@@ -3,14 +3,14 @@
 
 class UBP_AIActionProtecting_C : public UPalAIActionBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0130 (size: 0x8)
-    class APalCharacter* ProtectCharacter;                                            // 0x0138 (size: 0x8)
-    FName RidingSpeedUpFlagName;                                                      // 0x0140 (size: 0x8)
-    class APalCharacter* OwnerPawn;                                                   // 0x0148 (size: 0x8)
-    class UPalPartnerSkillParameterComponent* PartnerSkillParam;                      // 0x0150 (size: 0x8)
-    bool IsAborted;                                                                   // 0x0158 (size: 0x1)
-    bool IsGliding;                                                                   // 0x0159 (size: 0x1)
-    bool IsReleased;                                                                  // 0x015A (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class APalCharacter* ProtectCharacter;
+    FName RidingSpeedUpFlagName;
+    class APalCharacter* OwnerPawn;
+    class UPalPartnerSkillParameterComponent* PartnerSkillParam;
+    bool IsAborted;
+    bool IsGliding;
+    bool IsReleased;
 
     void CancelCheck();
     void onCoopEnd();
@@ -31,6 +31,6 @@ class UBP_AIActionProtecting_C : public UPalAIActionBase
     void CoopRelease();
     void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
     void ExecuteUbergraph_BP_AIActionProtecting(int32 EntryPoint);
-}; // Size: 0x15B
+};
 
 #endif

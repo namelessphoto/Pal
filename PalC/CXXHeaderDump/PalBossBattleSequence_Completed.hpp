@@ -3,11 +3,11 @@
 
 class UPalBossBattleSequence_Completed_C : public UPalBossBattleSequenceBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0040 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
 
     void WarpTowerTop();
     void OnBeginSequence();
     void ExecuteUbergraph_PalBossBattleSequence_Completed(int32 EntryPoint);
-}; // Size: 0x48
+};
 
 #endif

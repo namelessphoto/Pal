@@ -3,8 +3,8 @@
 
 class ABP_ArenaWorldRankingInfo_C : public APalArenaWorldRankingInfo
 {
-    class USceneComponent* DefaultSceneRoot;                                          // 0x0448 (size: 0x8)
+    class USceneComponent* DefaultSceneRoot;
 
-}; // Size: 0x450
+};
 
 #endif

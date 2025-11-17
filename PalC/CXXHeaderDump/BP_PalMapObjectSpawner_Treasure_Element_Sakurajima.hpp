@@ -1,8 +1,0 @@
-#ifndef UE4SS_SDK_BP_PalMapObjectSpawner_Treasure_Element_Sakurajima_HPP
-#define UE4SS_SDK_BP_PalMapObjectSpawner_Treasure_Element_Sakurajima_HPP
-
-class ABP_PalMapObjectSpawner_Treasure_Element_Sakurajima_C : public ABP_PalMapObjectSpawner_Treasure_Grass_Grade_01_C
-{
-}; // Size: 0x330
-
-#endif

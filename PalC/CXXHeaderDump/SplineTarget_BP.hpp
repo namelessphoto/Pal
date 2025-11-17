@@ -3,8 +3,8 @@
 
 class ASplineTarget_BP_C : public AActor
 {
-    class UBillboardComponent* Billboard;                                             // 0x0290 (size: 0x8)
+    class UBillboardComponent* Billboard;
 
-}; // Size: 0x298
+};
 
 #endif

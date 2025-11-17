@@ -3,36 +3,36 @@
 
 class UWBP_Menu_PalList_C : public UWBP_IndividualParameterBindWidget_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0608 (size: 0x8)
-    class UWidgetAnimation* Anm_Pal_Alive;                                            // 0x0610 (size: 0x8)
-    class UWidgetAnimation* Anm_Pal_Dead;                                             // 0x0618 (size: 0x8)
-    class UWidgetAnimation* Anm_EmptyNormalToFocus;                                   // 0x0620 (size: 0x8)
-    class UWidgetAnimation* Anm_NormalToFocus;                                        // 0x0628 (size: 0x8)
-    class UWidgetAnimation* Anm_Open_normal;                                          // 0x0630 (size: 0x8)
-    class UWidgetAnimation* Anm_normal;                                               // 0x0638 (size: 0x8)
-    class UWidgetAnimation* Anm_focus;                                                // 0x0640 (size: 0x8)
-    class UWidgetAnimation* Anm_push;                                                 // 0x0648 (size: 0x8)
-    class UWidgetAnimation* Anm_Open_focus;                                           // 0x0650 (size: 0x8)
-    class UImage* Empty;                                                              // 0x0658 (size: 0x8)
-    class UImage* Image_Icon;                                                         // 0x0660 (size: 0x8)
-    class UImage* Image_Icon_Locked;                                                  // 0x0668 (size: 0x8)
-    class UProgressBar* ProgressBar_219;                                              // 0x0670 (size: 0x8)
-    class UProgressBar* ProgressBar_Hunger;                                           // 0x0678 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Pal_hp_L;                                          // 0x0680 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Pal_hp_R;                                          // 0x0688 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Pal_Level;                                         // 0x0690 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Pal_LvText;                                        // 0x0698 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Pal_name;                                          // 0x06A0 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x06A8 (size: 0x8)
-    FWBP_Menu_PalList_COnClickedPanel OnClickedPanel;                                 // 0x06B0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_Pal_Alive;
+    class UWidgetAnimation* Anm_Pal_Dead;
+    class UWidgetAnimation* Anm_EmptyNormalToFocus;
+    class UWidgetAnimation* Anm_NormalToFocus;
+    class UWidgetAnimation* Anm_Open_normal;
+    class UWidgetAnimation* Anm_Normal;
+    class UWidgetAnimation* Anm_Focus;
+    class UWidgetAnimation* Anm_push;
+    class UWidgetAnimation* Anm_Open_focus;
+    class UImage* Empty;
+    class UImage* Image_Icon;
+    class UImage* Image_Icon_Locked;
+    class UProgressBar* ProgressBar_219;
+    class UProgressBar* ProgressBar_Hunger;
+    class UBP_PalTextBlock_C* Text_Pal_hp_L;
+    class UBP_PalTextBlock_C* Text_Pal_hp_R;
+    class UBP_PalTextBlock_C* Text_Pal_Level;
+    class UBP_PalTextBlock_C* Text_Pal_LvText;
+    class UBP_PalTextBlock_C* Text_Pal_name;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    FWBP_Menu_PalList_COnClickedPanel OnClickedPanel;
     void OnClickedPanel(class UPalIndividualCharacterHandle* Handle);
-    FWBP_Menu_PalList_COnHoveredPanel OnHoveredPanel;                                 // 0x06C0 (size: 0x10)
+    FWBP_Menu_PalList_COnHoveredPanel OnHoveredPanel;
     void OnHoveredPanel(class UPalIndividualCharacterHandle* Handle);
-    EPalWazaID CurrentWazaIdToUse;                                                    // 0x06D0 (size: 0x2)
-    FWBP_Menu_PalList_COnUnhoveredPanel OnUnhoveredPanel;                             // 0x06D8 (size: 0x10)
+    EPalWazaID CurrentWazaIdToUse;
+    FWBP_Menu_PalList_COnUnhoveredPanel OnUnhoveredPanel;
     void OnUnhoveredPanel();
-    bool Interactable;                                                                // 0x06E8 (size: 0x1)
-    class UAkAudioEvent* ClickEventTmp;                                               // 0x06F0 (size: 0x8)
+    bool Interactable;
+    class UAkAudioEvent* ClickEventTmp;
 
     void OnUpdateSkin(const FName& NewSkinName);
     void SetMuteClickEvent(bool IsMute);
@@ -61,6 +61,6 @@ class UWBP_Menu_PalList_C : public UWBP_IndividualParameterBindWidget_C
     void OnUnhoveredPanel__DelegateSignature();
     void OnHoveredPanel__DelegateSignature(class UPalIndividualCharacterHandle* Handle);
     void OnClickedPanel__DelegateSignature(class UPalIndividualCharacterHandle* Handle);
-}; // Size: 0x6F8
+};
 
 #endif

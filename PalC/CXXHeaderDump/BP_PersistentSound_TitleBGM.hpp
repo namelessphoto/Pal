@@ -3,6 +3,6 @@
 
 class UBP_PersistentSound_TitleBGM_C : public UPalPersistentSoundPlayer
 {
-}; // Size: 0x40
+};
 
 #endif

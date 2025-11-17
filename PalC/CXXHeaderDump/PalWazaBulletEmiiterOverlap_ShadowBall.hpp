@@ -5,6 +5,6 @@ class UPalWazaBulletEmiiterOverlap_ShadowBall_C : public UPalWazaBulletEmiiterOv
 {
 
     void GetBulletEmiiterOverlapSphere(TArray<FPalWazaBulletEmiiterOverlapSphere>& Spheres);
-}; // Size: 0x28
+};
 
 #endif

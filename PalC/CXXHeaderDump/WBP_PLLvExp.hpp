@@ -3,21 +3,21 @@
 
 class UWBP_PLLvExp_C : public UWBP_IndividualParameterBindWidget_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0608 (size: 0x8)
-    class UWidgetAnimation* Anm_Close;                                                // 0x0610 (size: 0x8)
-    class UWidgetAnimation* Anm_Open;                                                 // 0x0618 (size: 0x8)
-    class UProgressBar* Gage_Exp_Back;                                                // 0x0620 (size: 0x8)
-    class UProgressBar* Gauge_Exp;                                                    // 0x0628 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Exp;                                               // 0x0630 (size: 0x8)
-    class UWBP_LvNum_C* WBP_LvNum;                                                    // 0x0638 (size: 0x8)
-    double closeAnimeDelay;                                                           // 0x0640 (size: 0x8)
-    bool IsOpened;                                                                    // 0x0648 (size: 0x1)
-    double delayGaugeTimer;                                                           // 0x0650 (size: 0x8)
-    double delayGaugeTime;                                                            // 0x0658 (size: 0x8)
-    double delayGaugeProgressPerSecond;                                               // 0x0660 (size: 0x8)
-    double targetPercent;                                                             // 0x0668 (size: 0x8)
-    int64 totalDIsplayExp;                                                            // 0x0670 (size: 0x8)
-    double CloseTimer;                                                                // 0x0678 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_Close;
+    class UWidgetAnimation* Anm_Open;
+    class UProgressBar* Gage_Exp_Back;
+    class UProgressBar* Gauge_Exp;
+    class UBP_PalTextBlock_C* Text_Exp;
+    class UWBP_LvNum_C* WBP_LvNum;
+    double closeAnimeDelay;
+    bool IsOpened;
+    double delayGaugeTimer;
+    double delayGaugeTime;
+    double delayGaugeProgressPerSecond;
+    double targetPercent;
+    int64 totalDIsplayExp;
+    double CloseTimer;
 
     void UpdateLevel(int32 NewLevel);
     void UpdateExp(int64 addExp, int64 oldExp, double nowExpRate);
@@ -30,6 +30,6 @@ class UWBP_PLLvExp_C : public UWBP_IndividualParameterBindWidget_C
     void OnInitialized();
     void Tick(FGeometry MyGeometry, float InDeltaTime);
     void ExecuteUbergraph_WBP_PLLvExp(int32 EntryPoint);
-}; // Size: 0x680
+};
 
 #endif

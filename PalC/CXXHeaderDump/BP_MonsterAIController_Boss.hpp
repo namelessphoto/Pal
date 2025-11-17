@@ -3,9 +3,9 @@
 
 class ABP_MonsterAIController_Boss_C : public ABP_MonsterAIControllerBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0560 (size: 0x8)
-    class UPalAISensorComponent* PalAISensor;                                         // 0x0568 (size: 0x8)
-    bool IsNotFreeAIMode;                                                             // 0x0570 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalAISensorComponent* PalAISensor;
+    bool IsNotFreeAIMode;
 
     void GetMyBB(class UBP_PalAIBlackboard_Common_C*& PalBrackboard);
     void GetLeaderBB(class UBP_PalAIBlackboard_Common_C*& LeaderPalBrackboard);
@@ -13,6 +13,6 @@ class ABP_MonsterAIController_Boss_C : public ABP_MonsterAIControllerBase_C
     void ReceivePossess(class APawn* PossessedPawn);
     void カスタムイベント_1(class APalCharacter* InCharacter);
     void ExecuteUbergraph_BP_MonsterAIController_Boss(int32 EntryPoint);
-}; // Size: 0x571
+};
 
 #endif

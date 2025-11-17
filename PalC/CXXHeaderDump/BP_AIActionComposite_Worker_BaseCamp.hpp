@@ -3,6 +3,6 @@
 
 class UBP_AIActionComposite_Worker_BaseCamp_C : public UPalAIActionCompositeWorkerBaseCamp
 {
-}; // Size: 0xA0
+};
 
 #endif

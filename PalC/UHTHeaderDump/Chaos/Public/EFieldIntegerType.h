@@ -1,0 +1,13 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "EFieldIntegerType.generated.h"
+
+UENUM()
+    Integer_DynamicState,
+    Integer_ActivateDisabled,
+    Integer_CollisionGroup,
+    Integer_PositionAnimated,
+    Integer_PositionStatic,
+    Integer_TargetMax,
+};
+

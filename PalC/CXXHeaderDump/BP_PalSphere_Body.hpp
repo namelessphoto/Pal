@@ -3,36 +3,36 @@
 
 class ABP_PalSphere_Body_C : public ABP_PalCaptureBodyBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0328 (size: 0x8)
-    class USkeletalMeshComponent* SkeletalMesh;                                       // 0x0330 (size: 0x8)
-    FVector HitedBallGoalLocation;                                                    // 0x0338 (size: 0x18)
-    double HitedBallMoveTime;                                                         // 0x0350 (size: 0x8)
-    double HitedBallMoveTimer;                                                        // 0x0358 (size: 0x8)
-    class UParticleSystemComponent* CureEffect;                                       // 0x0360 (size: 0x8)
-    TEnumAsByte<EPalCaptureSphereState> PalSphereState;                               // 0x0368 (size: 0x1)
-    TArray<bool> JudgedFlagArray;                                                     // 0x0370 (size: 0x10)
-    double JudgeInterval;                                                             // 0x0380 (size: 0x8)
-    double JudgeTimer;                                                                // 0x0388 (size: 0x8)
-    int32 nowJudgePhaseCount;                                                         // 0x0390 (size: 0x4)
-    class UCurveVector* BallShakeCurve;                                               // 0x0398 (size: 0x8)
-    double BallShakeTime;                                                             // 0x03A0 (size: 0x8)
-    double BallShakeTimer;                                                            // 0x03A8 (size: 0x8)
-    double BouncePower;                                                               // 0x03B0 (size: 0x8)
-    double ShakePower;                                                                // 0x03B8 (size: 0x8)
-    double afterShakePassingPhaseEventDelay;                                          // 0x03C0 (size: 0x8)
-    double afterHitedBallPassingPhaseDelay;                                           // 0x03C8 (size: 0x8)
-    double flyToSkyDelay;                                                             // 0x03D0 (size: 0x8)
-    class UNiagaraSystem* passingPhaseEffect;                                         // 0x03D8 (size: 0x8)
-    TArray<double> OriginalRateArray;                                                 // 0x03E0 (size: 0x10)
-    class UNiagaraSystem* AbsorbToBallEffect;                                         // 0x03F0 (size: 0x8)
-    class UNiagaraSystem* AbsorbToBallCenterEffect;                                   // 0x03F8 (size: 0x8)
-    class UNiagaraSystem* OpenSphereEffect;                                           // 0x0400 (size: 0x8)
-    FPalDataTableRowName_SoundID SoundId_Shake;                                       // 0x0408 (size: 0x8)
-    class UAnimSequence* OpenSphereAnim;                                              // 0x0410 (size: 0x8)
-    TMap<TEnumAsByte<E_PalCaptureSphereBouncedReason>, UNiagaraSystem*> BounceEffectMap; // 0x0418 (size: 0x50)
-    class UPalCaptureBallEffectSettingDataAsset* EffectSettingDataAsset;              // 0x0468 (size: 0x8)
-    TArray<double> CriticalRateArray;                                                 // 0x0470 (size: 0x10)
-    class UNiagaraSystem* CriticalEffect;                                             // 0x0480 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class USkeletalMeshComponent* SkeletalMesh;
+    FVector HitedBallGoalLocation;
+    double HitedBallMoveTime;
+    double HitedBallMoveTimer;
+    class UParticleSystemComponent* CureEffect;
+    TEnumAsByte<EPalCaptureSphereState> PalSphereState;
+    TArray<bool> JudgedFlagArray;
+    double JudgeInterval;
+    double JudgeTimer;
+    int32 nowJudgePhaseCount;
+    class UCurveVector* BallShakeCurve;
+    double BallShakeTime;
+    double BallShakeTimer;
+    double BouncePower;
+    double ShakePower;
+    double afterShakePassingPhaseEventDelay;
+    double afterHitedBallPassingPhaseDelay;
+    double flyToSkyDelay;
+    class UNiagaraSystem* passingPhaseEffect;
+    TArray<double> OriginalRateArray;
+    class UNiagaraSystem* AbsorbToBallEffect;
+    class UNiagaraSystem* AbsorbToBallCenterEffect;
+    class UNiagaraSystem* OpenSphereEffect;
+    FPalDataTableRowName_SoundID SoundId_Shake;
+    class UAnimSequence* OpenSphereAnim;
+    TMap<TEnumAsByte<E_PalCaptureSphereBouncedReason>, UNiagaraSystem*> BounceEffectMap;
+    class UPalCaptureBallEffectSettingDataAsset* EffectSettingDataAsset;
+    TArray<double> CriticalRateArray;
+    class UNiagaraSystem* CriticalEffect;
 
     void CalculateCaptureRate(int32 CaptureLevel, TArray<double>& rateArray);
     void FindOwnerPlayer(class APalPlayerCharacter*& Player);
@@ -68,6 +68,6 @@ class ABP_PalSphere_Body_C : public ABP_PalCaptureBodyBase_C
     void IntoBall(FVector GoolLocation);
     void IntoBallEvent();
     void ExecuteUbergraph_BP_PalSphere_Body(int32 EntryPoint);
-}; // Size: 0x488
+};
 
 #endif

@@ -3,6 +3,6 @@
 
 class UBP_PalRichTextBlock_C : public UPalRichTextBlockBase
 {
-}; // Size: 0xCA0
+};
 
 #endif

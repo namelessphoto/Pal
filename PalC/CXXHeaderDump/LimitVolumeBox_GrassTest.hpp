@@ -3,6 +3,6 @@
 
 class ALimitVolumeBox_GrassTest_C : public ALimitVolumeBox_C
 {
-}; // Size: 0x2A0
+};
 
 #endif

@@ -3,45 +3,45 @@
 
 class UWBP_Trading_Pal_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UCanvasPanel* Canvas_Caution;                                               // 0x0438 (size: 0x8)
-    class UCanvasPanel* Canvas_SellList;                                              // 0x0440 (size: 0x8)
-    class UCanvasPanel* Canvas_SellSetting;                                           // 0x0448 (size: 0x8)
-    class UCheckBox* CheckBox_PrivateLock;                                            // 0x0450 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_Lock_1;                                       // 0x0458 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_SellSetting_Head;                             // 0x0460 (size: 0x8)
-    class UHorizontalBox* HorizontalBoxSellListHead_;                                 // 0x0468 (size: 0x8)
-    class UImage* Image_ItemSlot_Add;                                                 // 0x0470 (size: 0x8)
-    class UImage* Image_PalSlot_Add;                                                  // 0x0478 (size: 0x8)
-    class UPalEditableTextBox* PalEditableTextBox_CostNum;                            // 0x0480 (size: 0x8)
-    class UWBP_BoxPalList_Party_C* WBP_BoxPalList_Party;                              // 0x0488 (size: 0x8)
-    class UWBP_CommonButton_1_C* WBP_CommonButton_Cancel;                             // 0x0490 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton_Confirm;                              // 0x0498 (size: 0x8)
-    class UWBP_IngameMenu_PalBox_PalDetail_C* WBP_IngameMenu_PalBox_PalDetail;        // 0x04A0 (size: 0x8)
-    class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x04A8 (size: 0x8)
-    class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton_Edit; // 0x04B0 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_PalInGameMenuItemSlotButton_Cost;   // 0x04B8 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Lock;                     // 0x04C0 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Minus;                    // 0x04C8 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Plus;                     // 0x04D0 (size: 0x8)
-    class UWBP_Trading_Item_List_C* WBP_Trading_Item_List;                            // 0x04D8 (size: 0x8)
-    class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_1;                          // 0x04E0 (size: 0x8)
-    class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_2;                          // 0x04E8 (size: 0x8)
-    class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_3;                          // 0x04F0 (size: 0x8)
-    class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_4;                          // 0x04F8 (size: 0x8)
-    class UPalMapObjectPalBoothModel* PalBoothModel;                                  // 0x0500 (size: 0x8)
-    TArray<class UWBP_PalCommonCharacterSlotButton_C*> PartyPalSlots;                 // 0x0508 (size: 0x10)
-    class UPalIndividualCharacterSlot* CachedLastHoveredSlot;                         // 0x0518 (size: 0x8)
-    FPalUIActionBindData ViewDetailInputHandle;                                       // 0x0520 (size: 0x4)
-    TArray<class UWBP_Trading_Item_List_C*> TradingList;                              // 0x0528 (size: 0x10)
-    FPalPalBoothTradeInfo CurrentTradeInfo;                                           // 0x0538 (size: 0x70)
-    FText LastCostNum;                                                                // 0x05A8 (size: 0x18)
-    bool Confirmable;                                                                 // 0x05C0 (size: 0x1)
-    int32 EditingIndex;                                                               // 0x05C4 (size: 0x4)
-    bool SelectingProduct;                                                            // 0x05C8 (size: 0x1)
-    TEnumAsByte<EPalBoxHoveredSlotType> hoverdSlotType;                               // 0x05C9 (size: 0x1)
-    class UPalIndividualCharacterHandle* LastHoveredTradePalHandle;                   // 0x05D0 (size: 0x8)
-    bool EnableEdit;                                                                  // 0x05D8 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCanvasPanel* Canvas_Caution;
+    class UCanvasPanel* Canvas_SellList;
+    class UCanvasPanel* Canvas_SellSetting;
+    class UCheckBox* CheckBox_PrivateLock;
+    class UHorizontalBox* HorizontalBox_Lock_1;
+    class UHorizontalBox* HorizontalBox_SellSetting_Head;
+    class UHorizontalBox* HorizontalBoxSellListHead_;
+    class UImage* Image_ItemSlot_Add;
+    class UImage* Image_PalSlot_Add;
+    class UPalEditableTextBox* PalEditableTextBox_CostNum;
+    class UWBP_BoxPalList_Party_C* WBP_BoxPalList_Party;
+    class UWBP_CommonButton_1_C* WBP_CommonButton_Cancel;
+    class UWBP_CommonButton_C* WBP_CommonButton_Confirm;
+    class UWBP_IngameMenu_PalBox_PalDetail_C* WBP_IngameMenu_PalBox_PalDetail;
+    class UWBP_Menu_btn_C* WBP_Menu_btn;
+    class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton_Edit;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_PalInGameMenuItemSlotButton_Cost;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Lock;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Minus;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Plus;
+    class UWBP_Trading_Item_List_C* WBP_Trading_Item_List;
+    class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_1;
+    class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_2;
+    class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_3;
+    class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_4;
+    class UPalMapObjectPalBoothModel* PalBoothModel;
+    TArray<class UWBP_PalCommonCharacterSlotButton_C*> PartyPalSlots;
+    class UPalIndividualCharacterSlot* CachedLastHoveredSlot;
+    FPalUIActionBindData ViewDetailInputHandle;
+    TArray<class UWBP_Trading_Item_List_C*> TradingList;
+    FPalPalBoothTradeInfo CurrentTradeInfo;
+    FText LastCostNum;
+    bool Confirmable;
+    int32 EditingIndex;
+    bool SelectingProduct;
+    TEnumAsByte<EPalBoxHoveredSlotType> hoverdSlotType;
+    class UPalIndividualCharacterHandle* LastHoveredTradePalHandle;
+    bool EnableEdit;
 
     void OnStoreSlotUpdate(class UPalIndividualCharacterSlot* Slot, class UPalIndividualCharacterHandle* LastHandle);
     void Update Sell List();
@@ -91,6 +91,6 @@ class UWBP_Trading_Pal_C : public UPalUserWidgetOverlayUI
     void BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Lock_K2Node_ComponentBoundEvent_15_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
     void PreConstruct(bool IsDesignTime);
     void ExecuteUbergraph_WBP_Trading_Pal(int32 EntryPoint);
-}; // Size: 0x5D9
+};
 
 #endif

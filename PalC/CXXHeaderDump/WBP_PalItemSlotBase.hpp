@@ -3,24 +3,24 @@
 
 class UWBP_PalItemSlotBase_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UWBP_PalItemIconBase_C* myIconWidget;                                       // 0x0410 (size: 0x8)
-    class UPalItemSlot* TargetSlot;                                                   // 0x0418 (size: 0x8)
-    FWBP_PalItemSlotBase_COnUpdateSlot OnUpdateSlot;                                  // 0x0420 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWBP_PalItemIconBase_C* myIconWidget;
+    class UPalItemSlot* TargetSlot;
+    FWBP_PalItemSlotBase_COnUpdateSlot OnUpdateSlot;
     void OnUpdateSlot(class UPalItemSlot* TargetSlot);
-    FWBP_PalItemSlotBase_COnSetEmpty OnSetEmpty;                                      // 0x0430 (size: 0x10)
+    FWBP_PalItemSlotBase_COnSetEmpty OnSetEmpty;
     void OnSetEmpty();
-    FWBP_PalItemSlotBase_COnSetValidSlot OnSetValidSlot;                              // 0x0440 (size: 0x10)
+    FWBP_PalItemSlotBase_COnSetValidSlot OnSetValidSlot;
     void OnSetValidSlot();
-    bool IsDisplayEmpty;                                                              // 0x0450 (size: 0x1)
-    FWBP_PalItemSlotBase_COnLiftedSlot OnLiftedSlot;                                  // 0x0458 (size: 0x10)
+    bool IsDisplayEmpty;
+    FWBP_PalItemSlotBase_COnLiftedSlot OnLiftedSlot;
     void OnLiftedSlot(int32 LiftedItemNum);
-    FWBP_PalItemSlotBase_COnFinishedLiftSlot OnFinishedLiftSlot;                      // 0x0468 (size: 0x10)
+    FWBP_PalItemSlotBase_COnFinishedLiftSlot OnFinishedLiftSlot;
     void OnFinishedLiftSlot();
-    FTimerHandle CheckDurabilityTimerHandle;                                          // 0x0478 (size: 0x8)
-    FWBP_PalItemSlotBase_COnNotifyDurability OnNotifyDurability;                      // 0x0480 (size: 0x10)
+    FTimerHandle CheckDurabilityTimerHandle;
+    FWBP_PalItemSlotBase_COnNotifyDurability OnNotifyDurability;
     void OnNotifyDurability(double MaxDurability, double NowDurability);
-    FWBP_PalItemSlotBase_COnCorruptionUpdate OnCorruptionUpdate;                      // 0x0490 (size: 0x10)
+    FWBP_PalItemSlotBase_COnCorruptionUpdate OnCorruptionUpdate;
     void OnCorruptionUpdate();
 
     void OnUpdateDurability_Internal(float OldDurability, float NewDurability);
@@ -43,6 +43,6 @@ class UWBP_PalItemSlotBase_C : public UPalUserWidget
     void OnSetValidSlot__DelegateSignature();
     void OnSetEmpty__DelegateSignature();
     void OnUpdateSlot__DelegateSignature(class UPalItemSlot* TargetSlot);
-}; // Size: 0x4A0
+};
 
 #endif

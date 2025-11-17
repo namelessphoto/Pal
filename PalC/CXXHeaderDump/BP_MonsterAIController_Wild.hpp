@@ -3,9 +3,9 @@
 
 class ABP_MonsterAIController_Wild_C : public ABP_MonsterAIControllerBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0560 (size: 0x8)
-    class UPalAISensorComponent* PalAISensor;                                         // 0x0568 (size: 0x8)
-    FBP_MonsterAIController_Wild_CBattleStartEvent BattleStartEvent;                  // 0x0570 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalAISensorComponent* PalAISensor;
+    FBP_MonsterAIController_Wild_CBattleStartEvent BattleStartEvent;
     void BattleStartEvent(class AActor* StartPalActor);
 
     void GetMyBB(class UBP_PalAIBlackboard_Common_C*& PalBrackboard);
@@ -34,6 +34,6 @@ class ABP_MonsterAIController_Wild_C : public ABP_MonsterAIControllerBase_C
     void SetupBySpawner();
     void ExecuteUbergraph_BP_MonsterAIController_Wild(int32 EntryPoint);
     void BattleStartEvent__DelegateSignature(class AActor* StartPalActor);
-}; // Size: 0x580
+};
 
 #endif

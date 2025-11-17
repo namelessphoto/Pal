@@ -3,13 +3,13 @@
 
 class ABP_YakushimaBoss002_PartBase_C : public ABP_MonsterBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0B20 (size: 0x8)
-    class UPalUVEyeComponent* PalUVEye;                                               // 0x0B28 (size: 0x8)
-    class UPalBodyPartsCapsuleComponent* PalBodyPartsCapsule;                         // 0x0B30 (size: 0x8)
-    class UPalIndividualCharacterHandle* EyeHandle;                                   // 0x0B38 (size: 0x8)
-    bool IsBreak;                                                                     // 0x0B40 (size: 0x1)
-    FName CharacterID_Green;                                                          // 0x0B44 (size: 0x8)
-    TSubclassOf<class AController> Controller_Green;                                  // 0x0B50 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalUVEyeComponent* PalUVEye;
+    class UPalBodyPartsCapsuleComponent* PalBodyPartsCapsule;
+    class UPalIndividualCharacterHandle* EyeHandle;
+    bool IsBreak;
+    FName CharacterID_Green;
+    TSubclassOf<class AController> Controller_Green;
 
     FVector GetHPGaugeLocation();
     void IsRight(bool& IsHead);
@@ -25,6 +25,6 @@ class ABP_YakushimaBoss002_PartBase_C : public ABP_MonsterBase_C
     void UpdateLocation();
     void ReceiveTick(float DeltaSeconds);
     void ExecuteUbergraph_BP_YakushimaBoss002_PartBase(int32 EntryPoint);
-}; // Size: 0xB58
+};
 
 #endif

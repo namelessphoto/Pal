@@ -3,6 +3,6 @@
 
 class UBP_PalQuestManager_C : public UPalQuestManager
 {
-}; // Size: 0x1E0
+};
 
 #endif

@@ -3,8 +3,8 @@
 
 class ABP_DungeonFixedEntrance_forest_4_C : public ABP_DungeonFixedEntrance_C
 {
-    class UNiagaraComponent* Niagara;                                                 // 0x0360 (size: 0x8)
+    class UNiagaraComponent* Niagara;
 
-}; // Size: 0x368
+};
 
 #endif

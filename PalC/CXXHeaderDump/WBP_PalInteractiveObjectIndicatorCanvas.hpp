@@ -3,19 +3,19 @@
 
 class UWBP_PalInteractiveObjectIndicatorCanvas_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UWidgetAnimation* Default_In;                                               // 0x0410 (size: 0x8)
-    class UVerticalBox* AdditionalWidgetBOx;                                          // 0x0418 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_1;                                                // 0x0420 (size: 0x8)
-    class UVerticalBox* IndicatorVerticalBox;                                         // 0x0428 (size: 0x8)
-    TMap<class EPalInteractiveObjectActionType, class UWBP_PalInteractiveObjectIndicatorUI_C*> IndicatorUIs; // 0x0430 (size: 0x50)
-    int32 ZOrder;                                                                     // 0x0480 (size: 0x4)
-    bool bInteracting;                                                                // 0x0484 (size: 0x1)
-    TScriptInterface<class IPalInteractiveObjectComponentInterface> Interactive Object; // 0x0488 (size: 0x10)
-    FVector IndicatorBoxOffset;                                                       // 0x0498 (size: 0x18)
-    FPalInteractiveObjectActionInfoData OtomoIndicatorActionInfo;                     // 0x04B0 (size: 0x10)
-    bool bOtomoIndicatorDisplaying;                                                   // 0x04C0 (size: 0x1)
-    double otomoInteractDistance;                                                     // 0x04C8 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Default_In;
+    class UVerticalBox* AdditionalWidgetBOx;
+    class UCanvasPanel* CanvasPanel_1;
+    class UVerticalBox* IndicatorVerticalBox;
+    TMap<class EPalInteractiveObjectActionType, class UWBP_PalInteractiveObjectIndicatorUI_C*> IndicatorUIs;
+    int32 ZOrder;
+    bool bInteracting;
+    TScriptInterface<class IPalInteractiveObjectComponentInterface> Interactive Object;
+    FVector IndicatorBoxOffset;
+    FPalInteractiveObjectActionInfoData OtomoIndicatorActionInfo;
+    bool bOtomoIndicatorDisplaying;
+    double otomoInteractDistance;
 
     void CREATEDELEGATE_PROXYFUNCTION_0(const FPalKeyConfigSettings& PrevSettings, const FPalKeyConfigSettings& NewSettings);
     void OnKeyConfigChanged(FPalKeyConfigSettings PreSetting, FPalKeyConfigSettings NewSetting);
@@ -44,6 +44,6 @@ class UWBP_PalInteractiveObjectIndicatorCanvas_C : public UPalUserWidget
     void OnInitialized();
     void OnApplicationActivationStateChanged(bool bIsFocused);
     void ExecuteUbergraph_WBP_PalInteractiveObjectIndicatorCanvas(int32 EntryPoint);
-}; // Size: 0x4D0
+};
 
 #endif

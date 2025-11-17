@@ -16,10 +16,6 @@ struct FAnimBlueprintGeneratedConstantData : public FAnimBlueprintConstantData
 
 };
 
-struct FAnimBlueprintGeneratedMutableData : public FAnimBlueprintMutableData
-{
-};
-
 class UABP_SheepBall_Implementation_C : public UAnimInstance
 {
     FPointerToUberGraphFrame UberGraphFrame;

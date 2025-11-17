@@ -3,9 +3,9 @@
 
 class ABP_ThrowWeaponBase_C : public APalWeaponBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x05E8 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x05F0 (size: 0x8)
-    FBP_ThrowWeaponBase_CThrowEventDispatcher ThrowEventDispatcher;                   // 0x05F8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class USceneComponent* DefaultSceneRoot;
+    FBP_ThrowWeaponBase_CThrowEventDispatcher ThrowEventDispatcher;
     void ThrowEventDispatcher(class AActor* Bullet);
 
     bool IsEnableAutoAim();
@@ -20,6 +20,6 @@ class ABP_ThrowWeaponBase_C : public APalWeaponBase
     void OnPullTrigger();
     void ExecuteUbergraph_BP_ThrowWeaponBase(int32 EntryPoint);
     void ThrowEventDispatcher__DelegateSignature(class AActor* Bullet);
-}; // Size: 0x608
+};
 
 #endif

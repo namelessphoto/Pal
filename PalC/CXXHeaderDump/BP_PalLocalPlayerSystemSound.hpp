@@ -6,6 +6,6 @@ class UBP_PalLocalPlayerSystemSound_C : public UPalGetWorldUObject
 
     void OnChangeHunger(EPalStatusHungerType Current, EPalStatusHungerType Last);
     void SetupLocalPlayer(class APalPlayerCharacter* Player);
-}; // Size: 0x28
+};
 
 #endif

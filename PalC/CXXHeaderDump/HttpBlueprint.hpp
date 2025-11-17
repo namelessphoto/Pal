@@ -5,9 +5,9 @@
 
 struct FHttpHeader
 {
-    TMap<class FString, class FString> Headers;                                       // 0x0000 (size: 0x50)
+    TMap<class FString, class FString> Headers;
 
-}; // Size: 0x50
+};
 
 class UHttpBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
 {
@@ -18,6 +18,6 @@ class UHttpBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
     TMap<class FString, class FString> GetAllHeaders_Map(const FHttpHeader& HeaderObject);
     TArray<FString> GetAllHeaders(const FHttpHeader& HeaderObject);
     void AddHeader(FHttpHeader& HeaderObject, FString NewHeader, FString NewHeaderValue);
-}; // Size: 0x28
+};
 
 #endif

@@ -3,10 +3,10 @@
 
 class ABP_MonsterAIController_CapturedCage_C : public APalAIController
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0538 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
 
     void ReceivePossess(class APawn* PossessedPawn);
     void ExecuteUbergraph_BP_MonsterAIController_CapturedCage(int32 EntryPoint);
-}; // Size: 0x540
+};
 
 #endif

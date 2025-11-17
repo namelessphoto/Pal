@@ -3,37 +3,37 @@
 
 class UWBP_Guild_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_Log_NormalToFocus;                                    // 0x0280 (size: 0x8)
-    class UPalEditableTextBox* EditableTextBox_GuildName;                             // 0x0288 (size: 0x8)
-    class UCanvasPanel* GuildMember;                                                  // 0x0290 (size: 0x8)
-    class UImage* Image_2;                                                            // 0x0298 (size: 0x8)
-    class UImage* Image_3;                                                            // 0x02A0 (size: 0x8)
-    class UImage* Image_60;                                                           // 0x02A8 (size: 0x8)
-    class UImage* Image_NameBase;                                                     // 0x02B0 (size: 0x8)
-    class UImage* Image_NameBase_1;                                                   // 0x02B8 (size: 0x8)
-    class UImage* Image_Symbol;                                                       // 0x02C0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_GuildMemberNum;                                    // 0x02C8 (size: 0x8)
-    class UWBP_GuildButton_C* WBP_GuildButton_Leave;                                  // 0x02D0 (size: 0x8)
-    class UWBP_GuildButton_C* WBP_GuildButton_Rename;                                 // 0x02D8 (size: 0x8)
-    class UWBP_GuildHeadButton_C* WBP_GuildHeadButton;                                // 0x02E0 (size: 0x8)
-    class UWBP_PalCommonScrollList_C* WBP_PalCommonScrollList_Members;                // 0x02E8 (size: 0x8)
-    FWBP_Guild_COnClickedEditGuildNameButton OnClickedEditGuildNameButton;            // 0x02F0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_Log_NormalToFocus;
+    class UPalEditableTextBox* EditableTextBox_GuildName;
+    class UCanvasPanel* GuildMember;
+    class UImage* Image_2;
+    class UImage* Image_3;
+    class UImage* Image_60;
+    class UImage* Image_NameBase;
+    class UImage* Image_NameBase_1;
+    class UImage* Image_Symbol;
+    class UBP_PalTextBlock_C* Text_GuildMemberNum;
+    class UWBP_GuildButton_C* WBP_GuildButton_Leave;
+    class UWBP_GuildButton_C* WBP_GuildButton_Rename;
+    class UWBP_GuildHeadButton_C* WBP_GuildHeadButton;
+    class UWBP_PalCommonScrollList_C* WBP_PalCommonScrollList_Members;
+    FWBP_Guild_COnClickedEditGuildNameButton OnClickedEditGuildNameButton;
     void OnClickedEditGuildNameButton();
-    FWBP_Guild_COnChangedGuildLogCategory OnChangedGuildLogCategory;                  // 0x0300 (size: 0x10)
+    FWBP_Guild_COnChangedGuildLogCategory OnChangedGuildLogCategory;
     void OnChangedGuildLogCategory(FString SelectedCategoryName);
-    FWBP_Guild_COnClickedGuildMemberButton OnClickedGuildMemberButton;                // 0x0310 (size: 0x10)
+    FWBP_Guild_COnClickedGuildMemberButton OnClickedGuildMemberButton;
     void OnClickedGuildMemberButton(class UWBP_Guild_MemberList_C* Widget);
-    TSoftObjectPtr<UWBP_Guild_MemberList_C> LastHoveredSoftGuildButton;               // 0x0320 (size: 0x30)
-    FWBP_Guild_COnClickedLeaveButton OnClickedLeaveButton;                            // 0x0350 (size: 0x10)
+    TSoftObjectPtr<UWBP_Guild_MemberList_C> LastHoveredSoftGuildButton;
+    FWBP_Guild_COnClickedLeaveButton OnClickedLeaveButton;
     void OnClickedLeaveButton();
-    FWBP_Guild_COnClickedGuildSettingButton OnClickedGuildSettingButton;              // 0x0360 (size: 0x10)
+    FWBP_Guild_COnClickedGuildSettingButton OnClickedGuildSettingButton;
     void OnClickedGuildSettingButton();
-    FWBP_Guild_COnCommiedGuildName OnCommiedGuildName;                                // 0x0370 (size: 0x10)
+    FWBP_Guild_COnCommiedGuildName OnCommiedGuildName;
     void OnCommiedGuildName(FString NewName);
-    TMap<class FGuid, class UWBP_Guild_MemberList_C*> DisplayWidgetMap;               // 0x0380 (size: 0x50)
-    FString OriginalGuildName;                                                        // 0x03D0 (size: 0x10)
-    FText TempEditableTextBox_GuildNameText;                                          // 0x03E0 (size: 0x18)
+    TMap<class FGuid, class UWBP_Guild_MemberList_C*> DisplayWidgetMap;
+    FString OriginalGuildName;
+    FText TempEditableTextBox_GuildNameText;
 
     void SetEnableGuildNameEditButton(bool IsEnableFlag);
     class UWidget* CustomNavi_ToGuildLeaveOrNameEdit(EUINavigation Navigation);
@@ -67,6 +67,6 @@ class UWBP_Guild_C : public UUserWidget
     void OnClickedGuildMemberButton__DelegateSignature(class UWBP_Guild_MemberList_C* Widget);
     void OnChangedGuildLogCategory__DelegateSignature(FString SelectedCategoryName);
     void OnClickedEditGuildNameButton__DelegateSignature();
-}; // Size: 0x3F8
+};
 
 #endif

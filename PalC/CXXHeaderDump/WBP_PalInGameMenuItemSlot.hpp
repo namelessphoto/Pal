@@ -3,9 +3,9 @@
 
 class UWBP_PalInGameMenuItemSlot_C : public UWBP_PalItemSlotBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x04A0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_ItemNum;                                           // 0x04A8 (size: 0x8)
-    class UWBP_PalInGameMenuItemIcon_C* WBP_PalInGameMenuItemIcon;                    // 0x04B0 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UBP_PalTextBlock_C* Text_ItemNum;
+    class UWBP_PalInGameMenuItemIcon_C* WBP_PalInGameMenuItemIcon;
 
     void RegisterItemIconWidget(class UWBP_PalItemIconBase_C*& iconWidget);
     void OnInitialized();
@@ -13,6 +13,6 @@ class UWBP_PalInGameMenuItemSlot_C : public UWBP_PalItemSlotBase_C
     void EmptySlotEvent();
     void ValidSlotEvent();
     void ExecuteUbergraph_WBP_PalInGameMenuItemSlot(int32 EntryPoint);
-}; // Size: 0x4B8
+};
 
 #endif

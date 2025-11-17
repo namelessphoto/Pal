@@ -3,14 +3,14 @@
 
 class ABP_MonsterAIController_Visitor_Guardman_C : public ABP_MonsterAIControllerBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0560 (size: 0x8)
-    class UPalAISensorComponent* PalAISensor;                                         // 0x0568 (size: 0x8)
-    FVector GoalLocation;                                                             // 0x0570 (size: 0x18)
-    int32 ReturnTimeMinutes;                                                          // 0x0588 (size: 0x4)
-    int32 WalkAreaSplitNum;                                                           // 0x058C (size: 0x4)
-    EPalIVisitorNPCAction ActionTimeLimit;                                            // 0x0590 (size: 0x1)
-    FVector Formation Offset;                                                         // 0x0598 (size: 0x18)
-    class APalCharacter* VisitorLeader;                                               // 0x05B0 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalAISensorComponent* PalAISensor;
+    FVector GoalLocation;
+    int32 ReturnTimeMinutes;
+    int32 WalkAreaSplitNum;
+    EPalIVisitorNPCAction ActionTimeLimit;
+    FVector Formation Offset;
+    class APalCharacter* VisitorLeader;
 
     void GetMyBB(class UBP_PalAIBlackboard_Common_C*& PalBrackboard);
     void GetLeaderBB(class UBP_PalAIBlackboard_Common_C*& LeaderPalBrackboard);
@@ -35,6 +35,6 @@ class ABP_MonsterAIController_Visitor_Guardman_C : public ABP_MonsterAIControlle
     void OnStuck();
     void SetupVisitorParameter(const FPalVisitorInitParameter& InitParam);
     void ExecuteUbergraph_BP_MonsterAIController_Visitor_Guardman(int32 EntryPoint);
-}; // Size: 0x5B8
+};
 
 #endif

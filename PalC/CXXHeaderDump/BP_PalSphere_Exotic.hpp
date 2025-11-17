@@ -5,6 +5,6 @@ class ABP_PalSphere_Exotic_C : public ABP_PalSphere_C
 {
 
     void GetThrowObjectClass(TSubclassOf<class AActor>& ThrowObject);
-}; // Size: 0x620
+};
 
 #endif

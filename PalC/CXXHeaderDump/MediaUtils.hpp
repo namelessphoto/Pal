@@ -5,23 +5,23 @@
 
 struct FMediaPlayerOptions
 {
-    FMediaPlayerTrackOptions Tracks;                                                  // 0x0000 (size: 0x1C)
-    FTimespan SeekTime;                                                               // 0x0020 (size: 0x8)
-    EMediaPlayerOptionBooleanOverride PlayOnOpen;                                     // 0x0028 (size: 0x1)
-    EMediaPlayerOptionBooleanOverride Loop;                                           // 0x0029 (size: 0x1)
+    FMediaPlayerTrackOptions Tracks;
+    FTimespan SeekTime;
+    EMediaPlayerOptionBooleanOverride PlayOnOpen;
+    EMediaPlayerOptionBooleanOverride Loop;
 
-}; // Size: 0x30
+};
 
 struct FMediaPlayerTrackOptions
 {
-    int32 Audio;                                                                      // 0x0000 (size: 0x4)
-    int32 Caption;                                                                    // 0x0004 (size: 0x4)
-    int32 MetaData;                                                                   // 0x0008 (size: 0x4)
-    int32 Script;                                                                     // 0x000C (size: 0x4)
-    int32 Subtitle;                                                                   // 0x0010 (size: 0x4)
-    int32 Text;                                                                       // 0x0014 (size: 0x4)
-    int32 Video;                                                                      // 0x0018 (size: 0x4)
+    int32 Audio;
+    int32 Caption;
+    int32 MetaData;
+    int32 Script;
+    int32 Subtitle;
+    int32 Text;
+    int32 Video;
 
-}; // Size: 0x1C
+};
 
 #endif

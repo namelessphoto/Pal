@@ -3,11 +3,11 @@
 
 class UBP_PalItemIDManager_C : public UPalItemIDManager
 {
-    TMap<class EPalElementType, class FPalItemPalEggDataHandle> PalEggStaticItemIdMap; // 0x0110 (size: 0x50)
-    FDataTableRowHandle DefaultPalEggStaticItemId;                                    // 0x0160 (size: 0x10)
+    TMap<class EPalElementType, class FPalItemPalEggDataHandle> PalEggStaticItemIdMap;
+    FDataTableRowHandle DefaultPalEggStaticItemId;
 
     void GetPalEggRank(int32 PalRarity, class UObject* WorldContextObject, int32& PalEggRank);
     FName GetStaticItemIdPalEgg(const class UObject* WorldContextObject, const FName CharacterID);
-}; // Size: 0x170
+};
 
 #endif

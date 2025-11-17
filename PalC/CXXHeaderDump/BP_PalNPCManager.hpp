@@ -3,6 +3,6 @@
 
 class UBP_PalNPCManager_C : public UPalNPCManager
 {
-}; // Size: 0x270
+};
 
 #endif

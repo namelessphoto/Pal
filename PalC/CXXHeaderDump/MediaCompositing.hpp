@@ -3,60 +3,60 @@
 
 struct FMovieSceneMediaPlayerPropertySectionTemplate : public FMovieScenePropertySectionTemplate
 {
-    class UMediaSource* MediaSource;                                                  // 0x0038 (size: 0x8)
-    FFrameNumber SectionStartFrame;                                                   // 0x0040 (size: 0x4)
-    bool bLoop;                                                                       // 0x0044 (size: 0x1)
+    class UMediaSource* MediaSource;
+    FFrameNumber SectionStartFrame;
+    bool bLoop;
 
-}; // Size: 0x48
+};
 
 struct FMovieSceneMediaSectionParams
 {
-    class UMediaSoundComponent* MediaSoundComponent;                                  // 0x0000 (size: 0x8)
-    class UMediaSource* MediaSource;                                                  // 0x0008 (size: 0x8)
-    class UMediaTexture* MediaTexture;                                                // 0x0010 (size: 0x8)
-    class UMediaPlayer* MediaPlayer;                                                  // 0x0018 (size: 0x8)
-    FFrameNumber SectionStartFrame;                                                   // 0x0020 (size: 0x4)
-    FFrameNumber SectionEndFrame;                                                     // 0x0024 (size: 0x4)
-    bool bLooping;                                                                    // 0x0028 (size: 0x1)
-    FFrameNumber StartFrameOffset;                                                    // 0x002C (size: 0x4)
+    class UMediaSoundComponent* MediaSoundComponent;
+    class UMediaSource* MediaSource;
+    class UMediaTexture* MediaTexture;
+    class UMediaPlayer* MediaPlayer;
+    FFrameNumber SectionStartFrame;
+    FFrameNumber SectionEndFrame;
+    bool bLooping;
+    FFrameNumber StartFrameOffset;
 
-}; // Size: 0x30
+};
 
 struct FMovieSceneMediaSectionTemplate : public FMovieSceneEvalTemplate
 {
-    FMovieSceneMediaSectionParams Params;                                             // 0x0020 (size: 0x30)
+    FMovieSceneMediaSectionParams Params;
 
-}; // Size: 0x50
+};
 
 class UMovieSceneMediaPlayerPropertySection : public UMovieSceneSection
 {
-    class UMediaSource* MediaSource;                                                  // 0x00F0 (size: 0x8)
-    bool bLoop;                                                                       // 0x00F8 (size: 0x1)
+    class UMediaSource* MediaSource;
+    bool bLoop;
 
-}; // Size: 0x100
+};
 
 class UMovieSceneMediaPlayerPropertyTrack : public UMovieScenePropertyTrack
 {
-}; // Size: 0xD0
+};
 
 class UMovieSceneMediaSection : public UMovieSceneSection
 {
-    class UMediaSource* MediaSource;                                                  // 0x00F0 (size: 0x8)
-    bool bLooping;                                                                    // 0x00F8 (size: 0x1)
-    FFrameNumber StartFrameOffset;                                                    // 0x00FC (size: 0x4)
-    class UMediaTexture* MediaTexture;                                                // 0x0100 (size: 0x8)
-    class UMediaSoundComponent* MediaSoundComponent;                                  // 0x0108 (size: 0x8)
-    bool bUseExternalMediaPlayer;                                                     // 0x0110 (size: 0x1)
-    class UMediaPlayer* ExternalMediaPlayer;                                          // 0x0118 (size: 0x8)
-    FMediaSourceCacheSettings CacheSettings;                                          // 0x0120 (size: 0x8)
-    bool bHasMediaPlayerProxy;                                                        // 0x0128 (size: 0x1)
+    class UMediaSource* MediaSource;
+    bool bLooping;
+    FFrameNumber StartFrameOffset;
+    class UMediaTexture* MediaTexture;
+    class UMediaSoundComponent* MediaSoundComponent;
+    bool bUseExternalMediaPlayer;
+    class UMediaPlayer* ExternalMediaPlayer;
+    FMediaSourceCacheSettings CacheSettings;
+    bool bHasMediaPlayerProxy;
 
-}; // Size: 0x130
+};
 
 class UMovieSceneMediaTrack : public UMovieSceneNameableTrack
 {
-    TArray<class UMovieSceneSection*> MediaSections;                                  // 0x00A0 (size: 0x10)
+    TArray<class UMovieSceneSection*> MediaSections;
 
-}; // Size: 0xB0
+};
 
 #endif

@@ -3,12 +3,12 @@
 
 class UWBP_CommonSelectList_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UVerticalBox* VerticalBox_0;                                                // 0x0280 (size: 0x8)
-    class UWBP_GuildMemberMenuList_C* WBP_GuildMemberMenuList_2;                      // 0x0288 (size: 0x8)
-    class UWBP_GuildMemberMenuList_C* WBP_GuildMemberMenuList_3;                      // 0x0290 (size: 0x8)
-    TMap<class FName, class FName> SelectListMap;                                     // 0x0298 (size: 0x50)
-    FWBP_CommonSelectList_COnSelect OnSelect;                                         // 0x02E8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UVerticalBox* VerticalBox_0;
+    class UWBP_GuildMemberMenuList_C* WBP_GuildMemberMenuList_2;
+    class UWBP_GuildMemberMenuList_C* WBP_GuildMemberMenuList_3;
+    TMap<class FName, class FName> SelectListMap;
+    FWBP_CommonSelectList_COnSelect OnSelect;
     void OnSelect(FName SelectId);
 
     void GetFirstFocusTarget(class UWidget*& Widget);
@@ -17,6 +17,6 @@ class UWBP_CommonSelectList_C : public UUserWidget
     void Construct();
     void ExecuteUbergraph_WBP_CommonSelectList(int32 EntryPoint);
     void OnSelect__DelegateSignature(FName SelectId);
-}; // Size: 0x2F8
+};
 
 #endif

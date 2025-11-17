@@ -3,12 +3,12 @@
 
 class UWBP_Ingame_InteractMultiplayModifier_C : public UPalUIBuildMultiplayModifierHUD
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UTextBlock* UserNameTextBlock;                                              // 0x0438 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UTextBlock* UserNameTextBlock;
 
     void OnSetup();
     void OnUpdateLastModifiedUserName();
     void ExecuteUbergraph_WBP_Ingame_InteractMultiplayModifier(int32 EntryPoint);
-}; // Size: 0x440
+};
 
 #endif

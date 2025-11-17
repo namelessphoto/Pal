@@ -3,10 +3,10 @@
 
 class UWBP_Menu_PlayerGauge_HP_C : public UWBP_Menu_CharacterHPGauge_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0630 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
 
     void Construct();
     void ExecuteUbergraph_WBP_Menu_PlayerGauge_HP(int32 EntryPoint);
-}; // Size: 0x638
+};
 
 #endif

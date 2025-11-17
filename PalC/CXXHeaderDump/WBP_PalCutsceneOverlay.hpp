@@ -3,11 +3,11 @@
 
 class UWBP_PalCutsceneOverlay_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    FPalDataTableRowName_UIInputAction SkipInput;                                     // 0x0438 (size: 0x8)
-    FTimerHandle HideTimerHandle;                                                     // 0x0440 (size: 0x8)
-    FPalUIActionBindData InputActionHandle;                                           // 0x0448 (size: 0x4)
-    bool isDisplaying;                                                                // 0x044C (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    FPalDataTableRowName_UIInputAction SkipInput;
+    FTimerHandle HideTimerHandle;
+    FPalUIActionBindData InputActionHandle;
+    bool isDisplaying;
 
     class UWidget* BP_GetDesiredFocusTarget();
     FEventReply OnAnalogValueChanged(FGeometry MyGeometry, FAnalogInputEvent InAnalogInputEvent);
@@ -20,6 +20,6 @@ class UWBP_PalCutsceneOverlay_C : public UPalUserWidgetOverlayUI
     void Destruct();
     void Tick(FGeometry MyGeometry, float InDeltaTime);
     void ExecuteUbergraph_WBP_PalCutsceneOverlay(int32 EntryPoint);
-}; // Size: 0x44D
+};
 
 #endif

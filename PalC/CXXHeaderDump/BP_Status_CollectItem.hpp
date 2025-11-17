@@ -3,22 +3,22 @@
 
 class UBP_Status_CollectItem_C : public UPalStatusCollectItem
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0058 (size: 0x8)
-    int32 CollectItemTimeMinuteMin;                                                   // 0x0060 (size: 0x4)
-    int32 CollectItemTimeMinuteMax;                                                   // 0x0064 (size: 0x4)
-    double CollectItemTimeSec;                                                        // 0x0068 (size: 0x8)
-    double ElapsedTimeSec;                                                            // 0x0070 (size: 0x8)
-    TArray<FFPassiveSkillCollectItemLotteryData> LotteryTable;                        // 0x0078 (size: 0x10)
-    TArray<int32> RankTable;                                                          // 0x0088 (size: 0x10)
-    TMap<FName, int32> DebugLotteryCounter;                                           // 0x0098 (size: 0x50)
-    bool IsDebugLottery;                                                              // 0x00E8 (size: 0x1)
-    FName DebugLotteryItemName;                                                       // 0x00EC (size: 0x8)
-    FPalStaticItemIdAndNum AddItemInfo;                                               // 0x00F4 (size: 0xC)
-    bool IsPaused;                                                                    // 0x0100 (size: 0x1)
-    TSubclassOf<class UBP_AIAction_SpawnItemBase_C> BaseCampActionClass;              // 0x0108 (size: 0x8)
-    class UPalAIActionBase* AIAction;                                                 // 0x0110 (size: 0x8)
-    TArray<class UDataTable*> LotteryTables;                                          // 0x0118 (size: 0x10)
-    bool IsActionPlaying;                                                             // 0x0128 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    int32 CollectItemTimeMinuteMin;
+    int32 CollectItemTimeMinuteMax;
+    double CollectItemTimeSec;
+    double ElapsedTimeSec;
+    TArray<FFPassiveSkillCollectItemLotteryData> LotteryTable;
+    TArray<int32> RankTable;
+    TMap<FName, int32> DebugLotteryCounter;
+    bool IsDebugLottery;
+    FName DebugLotteryItemName;
+    FPalStaticItemIdAndNum AddItemInfo;
+    bool IsPaused;
+    TSubclassOf<class UBP_AIAction_SpawnItemBase_C> BaseCampActionClass;
+    class UPalAIActionBase* AIAction;
+    TArray<class UDataTable*> LotteryTables;
+    bool IsActionPlaying;
 
     void AddLog_UseSkillInBaseCamp();
     void AddLog_UseSkill();
@@ -45,6 +45,6 @@ class UBP_Status_CollectItem_C : public UPalStatusCollectItem
     void TickStatus(float DeltaTime);
     void PlayAction_SpawnItem(FPalStaticItemIdAndNum AddItemInfo);
     void ExecuteUbergraph_BP_Status_CollectItem(int32 EntryPoint);
-}; // Size: 0x129
+};
 
 #endif

@@ -3,8 +3,8 @@
 
 class UBP_ItemSlotEntryData_C : public UObject
 {
-    FPalItemAndNum ItemAndNum;                                                        // 0x0028 (size: 0x2C)
+    FPalItemAndNum ItemAndNum;
 
-}; // Size: 0x54
+};
 
 #endif

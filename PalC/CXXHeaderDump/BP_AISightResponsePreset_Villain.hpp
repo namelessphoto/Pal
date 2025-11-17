@@ -3,6 +3,6 @@
 
 class UBP_AISightResponsePreset_Villain_C : public UPalAISightResponsePreset
 {
-}; // Size: 0xD8
+};
 
 #endif

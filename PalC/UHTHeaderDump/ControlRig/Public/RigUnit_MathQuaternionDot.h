@@ -1,0 +1,22 @@
+#pragma once
+#include "CoreMinimal.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Quat -FallbackName=Quat
+#include "RigUnit_MathQuaternionBase.h"
+#include "RigUnit_MathQuaternionDot.generated.h"
+
+USTRUCT(BlueprintType)
+struct CONTROLRIG_API FRigUnit_MathQuaternionDot : public FRigUnit_MathQuaternionBase {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
+    FQuat A;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
+    FQuat B;
+    
+    UPROPERTY(BlueprintReadOnly)
+    float Result;
+    
+    FRigUnit_MathQuaternionDot();
+};
+

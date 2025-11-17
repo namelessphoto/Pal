@@ -3,9 +3,9 @@
 
 class ABP_PalMonsterInframeRendererSoundPlayer_C : public AActor
 {
-    class UPalSoundPlayerComponent* PalSoundPlayer;                                   // 0x0290 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x0298 (size: 0x8)
+    class UPalSoundPlayerComponent* PalSoundPlayer;
+    class USceneComponent* DefaultSceneRoot;
 
-}; // Size: 0x2A0
+};
 
 #endif

@@ -3,6 +3,6 @@
 
 class UBP_MapObjectTreasureBoxModel_C : public UPalMapObjectTreasureBoxModel
 {
-}; // Size: 0x280
+};
 
 #endif

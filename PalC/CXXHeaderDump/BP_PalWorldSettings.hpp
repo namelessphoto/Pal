@@ -3,8 +3,8 @@
 
 class ABP_PalWorldSettings_C : public APalWorldSettings
 {
-    class USceneComponent* DefaultSceneRoot;                                          // 0x0538 (size: 0x8)
+    class USceneComponent* DefaultSceneRoot;
 
-}; // Size: 0x540
+};
 
 #endif

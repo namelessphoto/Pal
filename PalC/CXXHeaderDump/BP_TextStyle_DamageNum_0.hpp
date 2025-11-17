@@ -3,6 +3,6 @@
 
 class UBP_TextStyle_DamageNum_0_C : public UCommonTextStyle
 {
-}; // Size: 0x1B0
+};
 
 #endif

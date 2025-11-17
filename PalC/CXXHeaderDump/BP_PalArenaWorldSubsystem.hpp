@@ -3,6 +3,6 @@
 
 class UBP_PalArenaWorldSubsystem_C : public UPalArenaWorldSubsystem
 {
-}; // Size: 0x138
+};
 
 #endif

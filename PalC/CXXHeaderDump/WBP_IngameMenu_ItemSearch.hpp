@@ -3,11 +3,11 @@
 
 class UWBP_IngameMenu_ItemSearch_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UWBP_IngameMenu_ItemSearchList_C* WBP_IngameMenu_ItemSearchList;            // 0x0438 (size: 0x8)
-    class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x0440 (size: 0x8)
-    TArray<FPalItemAndNum> LegalItemInfos;                                            // 0x0448 (size: 0x10)
-    TArray<FName> LegalItemIds;                                                       // 0x0458 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWBP_IngameMenu_ItemSearchList_C* WBP_IngameMenu_ItemSearchList;
+    class UWBP_Menu_btn_C* WBP_Menu_btn;
+    TArray<FPalItemAndNum> LegalItemInfos;
+    TArray<FName> LegalItemIds;
 
     void CreateItemMap();
     void OnCancelAction();
@@ -18,6 +18,6 @@ class UWBP_IngameMenu_ItemSearch_C : public UPalUserWidgetOverlayUI
     void OnInitialized();
     void BndEvt__WBP_IngameMenu_ItemSearch_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_1_OnRightClickSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Slot, EPalItemSlotPressType PressType);
     void ExecuteUbergraph_WBP_IngameMenu_ItemSearch(int32 EntryPoint);
-}; // Size: 0x468
+};
 
 #endif

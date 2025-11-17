@@ -3,23 +3,23 @@
 
 class UWBP_Arena_RuleListContent_0_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_NormalToFocus;                                        // 0x0280 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_Name;                                   // 0x0288 (size: 0x8)
-    class UImage* Image_ChangeMark;                                                   // 0x0290 (size: 0x8)
-    class USizeBox* SizeBox_Button;                                                   // 0x0298 (size: 0x8)
-    class USizeBox* SizeBox_Slider;                                                   // 0x02A0 (size: 0x8)
-    class USizeBox* SizeBox_Switch;                                                   // 0x02A8 (size: 0x8)
-    class UWBP_OptionSettings_ListContentSlider_C* WBP_OptionSettings_ListContentSlider; // 0x02B0 (size: 0x8)
-    class UWBP_OptionSettings_ListContentSwitch_C* WBP_OptionSettings_ListContentSwitch; // 0x02B8 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x02C0 (size: 0x8)
-    class UWBP_Title_WorldSettings_ListButton_C* WBP_Title_WorldSettings_ListButton;  // 0x02C8 (size: 0x8)
-    FDataTableRowHandle SettingName;                                                  // 0x02D0 (size: 0x10)
-    bool Is Changeable;                                                               // 0x02E0 (size: 0x1)
-    FWBP_Arena_RuleListContent_0_COnContentHovered OnContentHovered;                  // 0x02E8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_NormalToFocus;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_Name;
+    class UImage* Image_ChangeMark;
+    class USizeBox* SizeBox_Button;
+    class USizeBox* SizeBox_Slider;
+    class USizeBox* SizeBox_Switch;
+    class UWBP_OptionSettings_ListContentSlider_C* WBP_OptionSettings_ListContentSlider;
+    class UWBP_OptionSettings_ListContentSwitch_C* WBP_OptionSettings_ListContentSwitch;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    class UWBP_Title_WorldSettings_ListButton_C* WBP_Title_WorldSettings_ListButton;
+    FDataTableRowHandle SettingName;
+    bool Is Changeable;
+    FWBP_Arena_RuleListContent_0_COnContentHovered OnContentHovered;
     void OnContentHovered(class UWidget* Button);
-    double Change Value;                                                              // 0x02F8 (size: 0x8)
-    FWBP_Arena_RuleListContent_0_COnContentUnhovered OnContentUnhovered;              // 0x0300 (size: 0x10)
+    double Change Value;
+    FWBP_Arena_RuleListContent_0_COnContentUnhovered OnContentUnhovered;
     void OnContentUnhovered();
 
     class UWidget* Custom Navigation ToRight(EUINavigation Navigation);
@@ -39,6 +39,6 @@ class UWBP_Arena_RuleListContent_0_C : public UUserWidget
     void ExecuteUbergraph_WBP_Arena_RuleListContent_0(int32 EntryPoint);
     void OnContentUnhovered__DelegateSignature();
     void OnContentHovered__DelegateSignature(class UWidget* Button);
-}; // Size: 0x310
+};
 
 #endif

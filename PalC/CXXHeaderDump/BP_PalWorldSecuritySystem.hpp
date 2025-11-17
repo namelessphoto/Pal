@@ -3,6 +3,6 @@
 
 class UBP_PalWorldSecuritySystem_C : public UPalWorldSecuritySystem
 {
-}; // Size: 0x260
+};
 
 #endif

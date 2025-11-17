@@ -3,6 +3,6 @@
 
 class ABP_MapObject_TreasureBox_VisibleContent_SkillFruits_C : public ABP_MapObject_TreasureBox_VisibleContent_C
 {
-}; // Size: 0x420
+};
 
 #endif

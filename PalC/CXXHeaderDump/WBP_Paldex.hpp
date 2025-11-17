@@ -3,40 +3,40 @@
 
 class UWBP_Paldex_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_NoData_Encounted;                                     // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_NoData_NotEncounted;                                  // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_MapToPalinfo;                                         // 0x0290 (size: 0x8)
-    class UWidgetAnimation* Anm_PalinfoToMap;                                         // 0x0298 (size: 0x8)
-    class UWidgetAnimation* Anm_Map;                                                  // 0x02A0 (size: 0x8)
-    class UWidgetAnimation* Anm_PalInfo;                                              // 0x02A8 (size: 0x8)
-    class UCanvasPanel* Canvas_LongDesc;                                              // 0x02B0 (size: 0x8)
-    class UCircularThrobber* CircularThrobber_49;                                     // 0x02B8 (size: 0x8)
-    class UBP_PalRichTextBlock_C* RichText_LongDesc;                                  // 0x02C0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_EncountPalNumValue;                                // 0x02C8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_RegisterPalNumValue;                               // 0x02D0 (size: 0x8)
-    class UWBP_NoData_C* WBP_NoData;                                                  // 0x02D8 (size: 0x8)
-    class UWBP_Paldex_Map_C* WBP_Paldex_Map;                                          // 0x02E0 (size: 0x8)
-    class UWBP_Paldex_PalInfo_00_C* WBP_Paldex_PalInfo_00;                            // 0x02E8 (size: 0x8)
-    class UWBP_Paldex_tabset_C* WBP_Paldex_tabset;                                    // 0x02F0 (size: 0x8)
-    class UWBP_PaldexScrollList_C* WBP_PaldexScrollList;                              // 0x02F8 (size: 0x8)
-    class UWBP_PalMonsterInframeRender_C* WBP_PalInframeRender;                       // 0x0300 (size: 0x8)
-    FName nowRenderCharacterID;                                                       // 0x0308 (size: 0x8)
-    FWBP_Paldex_COnHoveredAnyPalPanel OnHoveredAnyPalPanel;                           // 0x0310 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_NoData_Encounted;
+    class UWidgetAnimation* Anm_NoData_NotEncounted;
+    class UWidgetAnimation* Anm_MapToPalinfo;
+    class UWidgetAnimation* Anm_PalinfoToMap;
+    class UWidgetAnimation* Anm_Map;
+    class UWidgetAnimation* Anm_PalInfo;
+    class UCanvasPanel* Canvas_LongDesc;
+    class UCircularThrobber* CircularThrobber_49;
+    class UBP_PalRichTextBlock_C* RichText_LongDesc;
+    class UBP_PalTextBlock_C* Text_EncountPalNumValue;
+    class UBP_PalTextBlock_C* Text_RegisterPalNumValue;
+    class UWBP_NoData_C* WBP_NoData;
+    class UWBP_Paldex_Map_C* WBP_Paldex_Map;
+    class UWBP_Paldex_PalInfo_00_C* WBP_Paldex_PalInfo_00;
+    class UWBP_Paldex_tabset_C* WBP_Paldex_tabset;
+    class UWBP_PaldexScrollList_C* WBP_PaldexScrollList;
+    class UWBP_PalMonsterInframeRender_C* WBP_PalInframeRender;
+    FName nowRenderCharacterID;
+    FWBP_Paldex_COnHoveredAnyPalPanel OnHoveredAnyPalPanel;
     void OnHoveredAnyPalPanel(FName CharacterID);
-    FDataTableRowHandle NoDataNoticeMsgID;                                            // 0x0320 (size: 0x10)
-    FDataTableRowHandle NoDistributionNoticeMsgID;                                    // 0x0330 (size: 0x10)
-    FWBP_Paldex_COnClickedModelTab OnClickedModelTab;                                 // 0x0340 (size: 0x10)
+    FDataTableRowHandle NoDataNoticeMsgID;
+    FDataTableRowHandle NoDistributionNoticeMsgID;
+    FWBP_Paldex_COnClickedModelTab OnClickedModelTab;
     void OnClickedModelTab();
-    FWBP_Paldex_COnClickedDistributionTab OnClickedDistributionTab;                   // 0x0350 (size: 0x10)
+    FWBP_Paldex_COnClickedDistributionTab OnClickedDistributionTab;
     void OnClickedDistributionTab();
-    FDataTableRowHandle NoDistributionThisTimeNoticeMsgID;                            // 0x0360 (size: 0x10)
-    class UWBP_Paldex_List_C* lastHoveredPanel;                                       // 0x0370 (size: 0x8)
-    bool IsFirstSetup;                                                                // 0x0378 (size: 0x1)
-    bool isDIsplayDisrtibution;                                                       // 0x0379 (size: 0x1)
-    FWBP_Paldex_COnClickedAnyPalPanel OnClickedAnyPalPanel;                           // 0x0380 (size: 0x10)
+    FDataTableRowHandle NoDistributionThisTimeNoticeMsgID;
+    class UWBP_Paldex_List_C* lastHoveredPanel;
+    bool IsFirstSetup;
+    bool isDIsplayDisrtibution;
+    FWBP_Paldex_COnClickedAnyPalPanel OnClickedAnyPalPanel;
     void OnClickedAnyPalPanel(FName CharacterID);
-    class UWBP_Paldex_List_C* LastClickedPalPanel;                                    // 0x0390 (size: 0x8)
+    class UWBP_Paldex_List_C* LastClickedPalPanel;
 
     void ScrollByCharacterID(FName CharacterID);
     void ClickByCharacterID(FName CharacterID);
@@ -82,6 +82,6 @@ class UWBP_Paldex_C : public UUserWidget
     void OnClickedDistributionTab__DelegateSignature();
     void OnClickedModelTab__DelegateSignature();
     void OnHoveredAnyPalPanel__DelegateSignature(FName CharacterID);
-}; // Size: 0x398
+};
 
 #endif

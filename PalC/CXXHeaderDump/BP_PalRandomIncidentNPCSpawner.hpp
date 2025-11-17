@@ -3,20 +3,20 @@
 
 class ABP_PalRandomIncidentNPCSpawner_C : public APalRandomIncidentNPCSpawner
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x04B0 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x04B8 (size: 0x8)
-    double ReturnRadius;                                                              // 0x04C0 (size: 0x8)
-    double WalkRadius;                                                                // 0x04C8 (size: 0x8)
-    TMap<class FName, class FF_NPC_PathWalkArray> WalkPathLists;                      // 0x04D0 (size: 0x50)
-    TArray<class UPalIndividualCharacterHandle*> IndividualHandleList;                // 0x0520 (size: 0x10)
-    TMap<class UPalIndividualCharacterHandle*, class FPalRandomIncidentSpawnMonsterData> MonsterSpawnData; // 0x0530 (size: 0x50)
-    TMap<class UPalIndividualCharacterHandle*, class FPalRandomIncidentSpawnNPCData> NPCSpawnData; // 0x0580 (size: 0x50)
-    TMap<class UPalIndividualCharacterHandle*, class FName> PathNames;                // 0x05D0 (size: 0x50)
-    TMap<class UPalIndividualCharacterHandle*, class FName> RowNames;                 // 0x0620 (size: 0x50)
-    FBP_PalRandomIncidentNPCSpawner_CGetWalkPathDelegate GetWalkPathDelegate;         // 0x0670 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class USceneComponent* DefaultSceneRoot;
+    double ReturnRadius;
+    double WalkRadius;
+    TMap<class FName, class FF_NPC_PathWalkArray> WalkPathLists;
+    TArray<class UPalIndividualCharacterHandle*> IndividualHandleList;
+    TMap<class UPalIndividualCharacterHandle*, class FPalRandomIncidentSpawnMonsterData> MonsterSpawnData;
+    TMap<class UPalIndividualCharacterHandle*, class FPalRandomIncidentSpawnNPCData> NPCSpawnData;
+    TMap<class UPalIndividualCharacterHandle*, class FName> PathNames;
+    TMap<class UPalIndividualCharacterHandle*, class FName> RowNames;
+    FBP_PalRandomIncidentNPCSpawner_CGetWalkPathDelegate GetWalkPathDelegate;
     void GetWalkPathDelegate(FName NewParam);
-    TMap<class UPalIndividualCharacterHandle*, class FVector> SpawnedLocation;        // 0x0680 (size: 0x50)
-    TMap<class UPalIndividualCharacterHandle*, class FName> OtomoNames;               // 0x06D0 (size: 0x50)
+    TMap<class UPalIndividualCharacterHandle*, class FVector> SpawnedLocation;
+    TMap<class UPalIndividualCharacterHandle*, class FName> OtomoNames;
 
     void OnOtomoSpawned(class AController* HolderController, class APalCharacter* OtomoPal);
     void GetGroupNo(class UPalIndividualCharacterHandle* IndividualHandle, int32& GroupNo);
@@ -50,6 +50,6 @@ class ABP_PalRandomIncidentNPCSpawner_C : public APalRandomIncidentNPCSpawner
     void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);
     void ExecuteUbergraph_BP_PalRandomIncidentNPCSpawner(int32 EntryPoint);
     void GetWalkPathDelegate__DelegateSignature(FName NewParam);
-}; // Size: 0x720
+};
 
 #endif

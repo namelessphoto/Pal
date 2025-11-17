@@ -5,6 +5,6 @@ class ABP_HomingMissile_MissileLauncher_NPC_C : public ABP_HomingMissile_Missile
 {
 
     void Find Target Actor(class APalCharacter*& PalCharacter);
-}; // Size: 0x464
+};
 
 #endif

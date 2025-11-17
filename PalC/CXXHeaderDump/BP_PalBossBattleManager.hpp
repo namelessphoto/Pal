@@ -3,11 +3,11 @@
 
 class UBP_PalBossBattleManager_C : public UPalBossBattleManager
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0230 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
 
     void DisableSky(bool Activce, class APPSkyCreator* Sky);
     void DisableSkyCreator(bool Disable);
     void ExecuteUbergraph_BP_PalBossBattleManager(int32 EntryPoint);
-}; // Size: 0x238
+};
 
 #endif

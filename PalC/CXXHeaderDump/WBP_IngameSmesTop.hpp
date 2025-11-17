@@ -3,21 +3,21 @@
 
 class UWBP_IngameSmesTop_C : public UWBP_IndividualParameterBindWidget_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0608 (size: 0x8)
-    class UWidgetAnimation* Anm_Close_Lower;                                          // 0x0610 (size: 0x8)
-    class UWidgetAnimation* Anm_Open_Lower;                                           // 0x0618 (size: 0x8)
-    class UWidgetAnimation* Anm_Close_Upper;                                          // 0x0620 (size: 0x8)
-    class UWidgetAnimation* Anm_Open_Upper;                                           // 0x0628 (size: 0x8)
-    class UBP_PalTextBlock_C* BPPalTextBlock_Smes_01;                                 // 0x0630 (size: 0x8)
-    class UCanvasPanel* Canvas_Lower;                                                 // 0x0638 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_Upper;                                            // 0x0640 (size: 0x8)
-    class UCanvasPanel* PlayerLVUP;                                                   // 0x0648 (size: 0x8)
-    class UWBP_LvNum_C* WBP_LvNum;                                                    // 0x0650 (size: 0x8)
-    double levelUpDisplayTime;                                                        // 0x0658 (size: 0x8)
-    double openDelayTime;                                                             // 0x0660 (size: 0x8)
-    FDataTableRowHandle TechnologyTextHandle;                                         // 0x0668 (size: 0x10)
-    bool IsLevelUpAnimePlaying;                                                       // 0x0678 (size: 0x1)
-    bool IsOpened;                                                                    // 0x0679 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_Close_Lower;
+    class UWidgetAnimation* Anm_Open_Lower;
+    class UWidgetAnimation* Anm_Close_Upper;
+    class UWidgetAnimation* Anm_Open_Upper;
+    class UBP_PalTextBlock_C* BPPalTextBlock_Smes_01;
+    class UCanvasPanel* Canvas_Lower;
+    class UCanvasPanel* CanvasPanel_Upper;
+    class UCanvasPanel* PlayerLVUP;
+    class UWBP_LvNum_C* WBP_LvNum;
+    double levelUpDisplayTime;
+    double openDelayTime;
+    FDataTableRowHandle TechnologyTextHandle;
+    bool IsLevelUpAnimePlaying;
+    bool IsOpened;
 
     void On Player Level Up(int32 DisplayLevel);
     void OnUpdateTechnologyPoint(int32 TechnologyPoint);
@@ -31,6 +31,6 @@ class UWBP_IngameSmesTop_C : public UWBP_IndividualParameterBindWidget_C
     void AnmEvent_UpdateTechnologyPoint();
     void OnInitialized();
     void ExecuteUbergraph_WBP_IngameSmesTop(int32 EntryPoint);
-}; // Size: 0x67A
+};
 
 #endif

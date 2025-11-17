@@ -3,6 +3,6 @@
 
 class UBP_PalSaveGameManager_C : public UPalSaveGameManager
 {
-}; // Size: 0x350
+};
 
 #endif

@@ -3,22 +3,22 @@
 
 class UDualShockExternalEndpointSettings : public UAudioEndpointSettingsBase
 {
-    int32 ControllerIndex;                                                            // 0x0028 (size: 0x4)
+    int32 ControllerIndex;
 
-}; // Size: 0x30
+};
 
 class UDualShockSoundfieldEndpointSettings : public USoundfieldEndpointSettingsBase
 {
-    int32 ControllerIndex;                                                            // 0x0028 (size: 0x4)
+    int32 ControllerIndex;
 
-}; // Size: 0x30
+};
 
 class UDualShockSpatializationSettings : public USoundfieldEncodingSettingsBase
 {
-    float Spread;                                                                     // 0x0028 (size: 0x4)
-    int32 Priority;                                                                   // 0x002C (size: 0x4)
-    bool Passthrough;                                                                 // 0x0030 (size: 0x1)
+    float Spread;
+    int32 Priority;
+    bool Passthrough;
 
-}; // Size: 0x38
+};
 
 #endif

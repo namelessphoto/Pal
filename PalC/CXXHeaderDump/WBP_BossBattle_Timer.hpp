@@ -3,12 +3,12 @@
 
 class UWBP_BossBattle_Timer_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_CountDown;                              // 0x0280 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_CountDown;
 
     void SetRemainSecond(int32 RemainSecond);
     void SetText(FText Text);
     void ExecuteUbergraph_WBP_BossBattle_Timer(int32 EntryPoint);
-}; // Size: 0x288
+};
 
 #endif

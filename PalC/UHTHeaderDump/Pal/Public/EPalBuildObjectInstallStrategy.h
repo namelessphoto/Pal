@@ -1,0 +1,26 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "EPalBuildObjectInstallStrategy.generated.h"
+
+UENUM()
+    Normal,
+    WallV2,
+    SinkableNormal,
+    Foundation,
+    Roof,
+    Stairs,
+    GroundWall,
+    GroundWallV2,
+    BaseCampPoint,
+    AttachToWall,
+    AttachToCeil,
+    PlaceOnItemProvider,
+    Pillar,
+    StandVerticalNotOverlap,
+    Fence,
+    PalStorage,
+    Floor,
+    Wall,
+    Undefined,
+};
+

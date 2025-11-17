@@ -3,8 +3,8 @@
 
 class ABP_PalMapObjectSpawner_RockCoal_C : public APalMapObjectSpawnerSimple
 {
-    class UStaticMeshComponent* Mesh;                                                 // 0x0308 (size: 0x8)
+    class UStaticMeshComponent* Mesh;
 
-}; // Size: 0x310
+};
 
 #endif

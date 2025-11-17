@@ -3,10 +3,10 @@
 
 class UBP_SubQuestBlock_BossDefeatReward_C : public UPalQuestBlock
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x00C0 (size: 0x8)
-    FTimerHandle NewVar;                                                              // 0x00C8 (size: 0x8)
-    int32 OldDefeatCount;                                                             // 0x00D0 (size: 0x4)
-    FName OldRequestid;                                                               // 0x00D4 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    FTimerHandle NewVar;
+    int32 OldDefeatCount;
+    FName OldRequestid;
 
     void GetRecordData(class UPalPlayerRecordData*& RecordData);
     void GetProgressText(FText& OutText);
@@ -17,6 +17,6 @@ class UBP_SubQuestBlock_BossDefeatReward_C : public UPalQuestBlock
     void OnSetup_ServerInternal_ForBP();
     void OnComplete_ServerInternal_ForBP();
     void ExecuteUbergraph_BP_SubQuestBlock_BossDefeatReward(int32 EntryPoint);
-}; // Size: 0xDC
+};
 
 #endif

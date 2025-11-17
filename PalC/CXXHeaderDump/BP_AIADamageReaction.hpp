@@ -3,15 +3,15 @@
 
 class UBP_AIADamageReaction_C : public UPalAIDamageReactionComponent
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x00A8 (size: 0x8)
-    TSoftObjectPtr<UPalAIActionComponent> PalAIActionComponent;                       // 0x00B0 (size: 0x30)
-    TSoftObjectPtr<UPalDamageReactionComponent> DamageReactionComponent;              // 0x00E0 (size: 0x30)
-    class UPalDamageReactionComponent* LocalDamageReactionComponent;                  // 0x0110 (size: 0x8)
-    TArray<class TSubclassOf<UPalAIActionBase>> OnDamageIgnoreAIActionArray;          // 0x0118 (size: 0x10)
-    double StepPercentage;                                                            // 0x0128 (size: 0x8)
-    class APalCharacter* DefaultPawn;                                                 // 0x0130 (size: 0x8)
-    bool IsWaitStepCoolTime;                                                          // 0x0138 (size: 0x1)
-    TSubclassOf<class UPalAIActionBase> DefaultAIActionDeathClass;                    // 0x0140 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    TSoftObjectPtr<UPalAIActionComponent> PalAIActionComponent;
+    TSoftObjectPtr<UPalDamageReactionComponent> DamageReactionComponent;
+    class UPalDamageReactionComponent* LocalDamageReactionComponent;
+    TArray<class TSubclassOf<UPalAIActionBase>> OnDamageIgnoreAIActionArray;
+    double StepPercentage;
+    class APalCharacter* DefaultPawn;
+    bool IsWaitStepCoolTime;
+    TSubclassOf<class UPalAIActionBase> DefaultAIActionDeathClass;
 
     void IsNooseTrapAction(bool& IsNoose);
     void OnHitNooseTrap(class AActor* TrapActor, FVector FixPos);
@@ -31,6 +31,6 @@ class UBP_AIADamageReaction_C : public UPalAIDamageReactionComponent
     void Reset_AIDamageReaction();
     void StartStepCoolTime();
     void ExecuteUbergraph_BP_AIADamageReaction(int32 EntryPoint);
-}; // Size: 0x148
+};
 
 #endif

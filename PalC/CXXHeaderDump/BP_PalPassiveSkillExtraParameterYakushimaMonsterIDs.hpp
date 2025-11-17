@@ -3,6 +3,6 @@
 
 class UBP_PalPassiveSkillExtraParameterYakushimaMonsterIDs_C : public UPalPassiveSkillExtraParameterTribeIDList
 {
-}; // Size: 0x38
+};
 
 #endif

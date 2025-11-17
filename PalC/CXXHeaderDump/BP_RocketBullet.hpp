@@ -3,11 +3,11 @@
 
 class ABP_RocketBullet_C : public ABP_AttackBulletBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0410 (size: 0x8)
-    class UNiagaraComponent* Niagara;                                                 // 0x0418 (size: 0x8)
-    class UStaticMeshComponent* StaticMesh;                                           // 0x0420 (size: 0x8)
-    class UPalHitFilter* HitFilter;                                                   // 0x0428 (size: 0x8)
-    bool IsExploded;                                                                  // 0x0430 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UNiagaraComponent* Niagara;
+    class UStaticMeshComponent* StaticMesh;
+    class UPalHitFilter* HitFilter;
+    bool IsExploded;
 
     void GetExplosionClass(TSubclassOf<class ABP_ExplosionAttackBase_C>& ExplosionClass);
     void OnHitToActor(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const FHitResult& Hit);
@@ -15,6 +15,6 @@ class ABP_RocketBullet_C : public ABP_AttackBulletBase_C
     void ReceiveTick(float DeltaSeconds);
     void OnDestroy(class UPrimitiveComponent* HitComp, class AActor* OtherCharacter, class UPrimitiveComponent* OtherComp, const FHitResult& Hit);
     void ExecuteUbergraph_BP_RocketBullet(int32 EntryPoint);
-}; // Size: 0x431
+};
 
 #endif

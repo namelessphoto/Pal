@@ -3,6 +3,6 @@
 
 class UBP_RagdollPreset_Liftup_C : public UPalRagdollPreset
 {
-}; // Size: 0x40
+};
 
 #endif

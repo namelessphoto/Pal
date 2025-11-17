@@ -5,69 +5,69 @@
 
 struct FXRDeviceId
 {
-    FName SystemName;                                                                 // 0x0000 (size: 0x8)
-    int32 DeviceID;                                                                   // 0x0008 (size: 0x4)
+    FName SystemName;
+    int32 DeviceID;
 
-}; // Size: 0xC
+};
 
 struct FXRGestureConfig
 {
-    bool bTap;                                                                        // 0x0000 (size: 0x1)
-    bool bHold;                                                                       // 0x0001 (size: 0x1)
-    ESpatialInputGestureAxis AxisGesture;                                             // 0x0002 (size: 0x1)
-    bool bNavigationAxisX;                                                            // 0x0003 (size: 0x1)
-    bool bNavigationAxisY;                                                            // 0x0004 (size: 0x1)
-    bool bNavigationAxisZ;                                                            // 0x0005 (size: 0x1)
+    bool bTap;
+    bool bHold;
+    ESpatialInputGestureAxis AxisGesture;
+    bool bNavigationAxisX;
+    bool bNavigationAxisY;
+    bool bNavigationAxisZ;
 
-}; // Size: 0x6
+};
 
 struct FXRHMDData
 {
-    bool bValid;                                                                      // 0x0000 (size: 0x1)
-    FName DeviceName;                                                                 // 0x0004 (size: 0x8)
-    FGuid ApplicationInstanceID;                                                      // 0x000C (size: 0x10)
-    ETrackingStatus TrackingStatus;                                                   // 0x001C (size: 0x1)
-    FVector Position;                                                                 // 0x0020 (size: 0x18)
-    FQuat Rotation;                                                                   // 0x0040 (size: 0x20)
+    bool bValid;
+    FName DeviceName;
+    FGuid ApplicationInstanceID;
+    ETrackingStatus TrackingStatus;
+    FVector Position;
+    FQuat Rotation;
 
-}; // Size: 0x60
+};
 
 struct FXRMotionControllerData
 {
-    bool bValid;                                                                      // 0x0000 (size: 0x1)
-    FName DeviceName;                                                                 // 0x0004 (size: 0x8)
-    FGuid ApplicationInstanceID;                                                      // 0x000C (size: 0x10)
-    EXRVisualType DeviceVisualType;                                                   // 0x001C (size: 0x1)
-    EControllerHand HandIndex;                                                        // 0x001D (size: 0x1)
-    ETrackingStatus TrackingStatus;                                                   // 0x001E (size: 0x1)
-    FVector GripPosition;                                                             // 0x0020 (size: 0x18)
-    FQuat GripRotation;                                                               // 0x0040 (size: 0x20)
-    FVector AimPosition;                                                              // 0x0060 (size: 0x18)
-    FQuat AimRotation;                                                                // 0x0080 (size: 0x20)
-    TArray<FVector> HandKeyPositions;                                                 // 0x00A0 (size: 0x10)
-    TArray<FQuat> HandKeyRotations;                                                   // 0x00B0 (size: 0x10)
-    TArray<float> HandKeyRadii;                                                       // 0x00C0 (size: 0x10)
-    bool bIsGrasped;                                                                  // 0x00D0 (size: 0x1)
+    bool bValid;
+    FName DeviceName;
+    FGuid ApplicationInstanceID;
+    EXRVisualType DeviceVisualType;
+    EControllerHand HandIndex;
+    ETrackingStatus TrackingStatus;
+    FVector GripPosition;
+    FQuat GripRotation;
+    FVector AimPosition;
+    FQuat AimRotation;
+    TArray<FVector> HandKeyPositions;
+    TArray<FQuat> HandKeyRotations;
+    TArray<float> HandKeyRadii;
+    bool bIsGrasped;
 
-}; // Size: 0xE0
+};
 
 class UAsyncTask_LoadXRDeviceVisComponent : public UBlueprintAsyncActionBase
 {
-    FAsyncTask_LoadXRDeviceVisComponentOnModelLoaded OnModelLoaded;                   // 0x0030 (size: 0x10)
+    FAsyncTask_LoadXRDeviceVisComponentOnModelLoaded OnModelLoaded;
     void DeviceModelLoadedDelegate(const class UPrimitiveComponent* LoadedComponent);
-    FAsyncTask_LoadXRDeviceVisComponentOnLoadFailure OnLoadFailure;                   // 0x0040 (size: 0x10)
+    FAsyncTask_LoadXRDeviceVisComponentOnLoadFailure OnLoadFailure;
     void DeviceModelLoadedDelegate(const class UPrimitiveComponent* LoadedComponent);
-    class UPrimitiveComponent* SpawnedComponent;                                      // 0x0058 (size: 0x8)
+    class UPrimitiveComponent* SpawnedComponent;
 
     class UAsyncTask_LoadXRDeviceVisComponent* AddNamedDeviceVisualizationComponentAsync(class AActor* Target, const FName SystemName, const FName DeviceName, bool bManualAttachment, const FTransform& RelativeTransform, FXRDeviceId& XRDeviceId, class UPrimitiveComponent*& NewComponent);
     class UAsyncTask_LoadXRDeviceVisComponent* AddDeviceVisualizationComponentAsync(class AActor* Target, const FXRDeviceId& XRDeviceId, bool bManualAttachment, const FTransform& RelativeTransform, class UPrimitiveComponent*& NewComponent);
-}; // Size: 0x60
+};
 
 class UHandKeypointConversion : public UBlueprintFunctionLibrary
 {
 
     int32 Conv_HandKeypointToInt32(EHandKeypoint Input);
-}; // Size: 0x28
+};
 
 class UHeadMountedDisplayFunctionLibrary : public UBlueprintFunctionLibrary
 {
@@ -119,20 +119,20 @@ class UHeadMountedDisplayFunctionLibrary : public UBlueprintFunctionLibrary
     void ClearXRTimedInputActionDelegate(const FName& ActionPath);
     void CalibrateExternalTrackingToHMD(const FTransform& ExternalTrackingTransform);
     void BreakKey(FKey InKey, FString& InteractionProfile, EControllerHand& Hand, FName& MotionSource, FString& Indentifier, FString& Component);
-}; // Size: 0x28
+};
 
 class UMotionControllerComponent : public UPrimitiveComponent
 {
-    int32 PlayerIndex;                                                                // 0x0538 (size: 0x4)
-    EControllerHand Hand;                                                             // 0x053C (size: 0x1)
-    FName MotionSource;                                                               // 0x0540 (size: 0x8)
-    uint8 bDisableLowLatencyUpdate;                                                   // 0x0548 (size: 0x1)
-    ETrackingStatus CurrentTrackingStatus;                                            // 0x054C (size: 0x1)
-    bool bDisplayDeviceModel;                                                         // 0x054D (size: 0x1)
-    FName DisplayModelSource;                                                         // 0x0550 (size: 0x8)
-    class UStaticMesh* CustomDisplayMesh;                                             // 0x0558 (size: 0x8)
-    TArray<class UMaterialInterface*> DisplayMeshMaterialOverrides;                   // 0x0560 (size: 0x10)
-    class UPrimitiveComponent* DisplayComponent;                                      // 0x0648 (size: 0x8)
+    int32 PlayerIndex;
+    EControllerHand Hand;
+    FName MotionSource;
+    uint8 bDisableLowLatencyUpdate;
+    ETrackingStatus CurrentTrackingStatus;
+    bool bDisplayDeviceModel;
+    FName DisplayModelSource;
+    class UStaticMesh* CustomDisplayMesh;
+    TArray<class UMaterialInterface*> DisplayMeshMaterialOverrides;
+    class UPrimitiveComponent* DisplayComponent;
 
     void SetTrackingSource(const EControllerHand NewSource);
     void SetTrackingMotionSource(const FName NewSource);
@@ -145,7 +145,7 @@ class UMotionControllerComponent : public UPrimitiveComponent
     EControllerHand GetTrackingSource();
     float GetParameterValue(FName InName, bool& bValueFound);
     FVector GetHandJointPosition(int32 jointIndex, bool& bValueFound);
-}; // Size: 0x660
+};
 
 class UMotionTrackedDeviceFunctionLibrary : public UBlueprintFunctionLibrary
 {
@@ -168,41 +168,41 @@ class UMotionTrackedDeviceFunctionLibrary : public UBlueprintFunctionLibrary
     void DisableMotionTrackingOfControllersForPlayer(int32 PlayerIndex);
     void DisableMotionTrackingOfAllControllers();
     void DisableMotionTrackingForComponent(const class UMotionControllerComponent* MotionControllerComponent);
-}; // Size: 0x28
+};
 
 class UVRNotificationsComponent : public UActorComponent
 {
-    FVRNotificationsComponentHMDTrackingInitializingAndNeedsHMDToBeTrackedDelegate HMDTrackingInitializingAndNeedsHMDToBeTrackedDelegate; // 0x00A0 (size: 0x10)
+    FVRNotificationsComponentHMDTrackingInitializingAndNeedsHMDToBeTrackedDelegate HMDTrackingInitializingAndNeedsHMDToBeTrackedDelegate;
     void VRNotificationsDelegate();
-    FVRNotificationsComponentHMDTrackingInitializedDelegate HMDTrackingInitializedDelegate; // 0x00B0 (size: 0x10)
+    FVRNotificationsComponentHMDTrackingInitializedDelegate HMDTrackingInitializedDelegate;
     void VRNotificationsDelegate();
-    FVRNotificationsComponentHMDRecenteredDelegate HMDRecenteredDelegate;             // 0x00C0 (size: 0x10)
+    FVRNotificationsComponentHMDRecenteredDelegate HMDRecenteredDelegate;
     void VRNotificationsDelegate();
-    FVRNotificationsComponentHMDLostDelegate HMDLostDelegate;                         // 0x00D0 (size: 0x10)
+    FVRNotificationsComponentHMDLostDelegate HMDLostDelegate;
     void VRNotificationsDelegate();
-    FVRNotificationsComponentHMDReconnectedDelegate HMDReconnectedDelegate;           // 0x00E0 (size: 0x10)
+    FVRNotificationsComponentHMDReconnectedDelegate HMDReconnectedDelegate;
     void VRNotificationsDelegate();
-    FVRNotificationsComponentHMDConnectCanceledDelegate HMDConnectCanceledDelegate;   // 0x00F0 (size: 0x10)
+    FVRNotificationsComponentHMDConnectCanceledDelegate HMDConnectCanceledDelegate;
     void VRNotificationsDelegate();
-    FVRNotificationsComponentHMDPutOnHeadDelegate HMDPutOnHeadDelegate;               // 0x0100 (size: 0x10)
+    FVRNotificationsComponentHMDPutOnHeadDelegate HMDPutOnHeadDelegate;
     void VRNotificationsDelegate();
-    FVRNotificationsComponentHMDRemovedFromHeadDelegate HMDRemovedFromHeadDelegate;   // 0x0110 (size: 0x10)
+    FVRNotificationsComponentHMDRemovedFromHeadDelegate HMDRemovedFromHeadDelegate;
     void VRNotificationsDelegate();
-    FVRNotificationsComponentVRControllerRecenteredDelegate VRControllerRecenteredDelegate; // 0x0120 (size: 0x10)
+    FVRNotificationsComponentVRControllerRecenteredDelegate VRControllerRecenteredDelegate;
     void VRNotificationsDelegate();
-    FVRNotificationsComponentXRTrackingOriginChangedDelegate XRTrackingOriginChangedDelegate; // 0x0130 (size: 0x10)
+    FVRNotificationsComponentXRTrackingOriginChangedDelegate XRTrackingOriginChangedDelegate;
     void VRNotificationsDelegate();
-    FVRNotificationsComponentXRPlayAreaChangedDelegate XRPlayAreaChangedDelegate;     // 0x0140 (size: 0x10)
+    FVRNotificationsComponentXRPlayAreaChangedDelegate XRPlayAreaChangedDelegate;
     void VRNotificationsDelegate();
 
-}; // Size: 0x150
+};
 
 class UXRAssetFunctionLibrary : public UBlueprintFunctionLibrary
 {
 
     class UPrimitiveComponent* AddNamedDeviceVisualizationComponentBlocking(class AActor* Target, const FName SystemName, const FName DeviceName, bool bManualAttachment, const FTransform& RelativeTransform, FXRDeviceId& XRDeviceId);
     class UPrimitiveComponent* AddDeviceVisualizationComponentBlocking(class AActor* Target, const FXRDeviceId& XRDeviceId, bool bManualAttachment, const FTransform& RelativeTransform);
-}; // Size: 0x28
+};
 
 class UXRLoadingScreenFunctionLibrary : public UBlueprintFunctionLibrary
 {
@@ -212,6 +212,6 @@ class UXRLoadingScreenFunctionLibrary : public UBlueprintFunctionLibrary
     void HideLoadingScreen();
     void ClearLoadingScreenSplashes();
     void AddLoadingScreenSplash(class UTexture* Texture, FVector Translation, FRotator Rotation, FVector2D Size, FRotator DeltaRotation, bool bClearBeforeAdd);
-}; // Size: 0x28
+};
 
 #endif

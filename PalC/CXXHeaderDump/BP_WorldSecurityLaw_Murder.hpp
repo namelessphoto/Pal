@@ -7,6 +7,6 @@ class UBP_WorldSecurityLaw_Murder_C : public UPalWorldSecurityLawTrigger_Charact
     bool Condition(const FPalDeadInfo& DeadInfo, class UPalIndividualCharacterHandle*& CriminalHandle);
     void IsValidCharacterActor(class AActor* Actor, bool& bValid, class UPalCharacterParameterComponent*& CharacterParameter);
     void IsNPC(EPalOrganizationType OrganizationType, bool& bCitizen);
-}; // Size: 0x40
+};
 
 #endif

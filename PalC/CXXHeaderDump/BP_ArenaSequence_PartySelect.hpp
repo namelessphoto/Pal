@@ -3,16 +3,16 @@
 
 class UBP_ArenaSequence_PartySelect_C : public UPalArenaSequencePartySelect
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0050 (size: 0x8)
-    double PartySelectTime;                                                           // 0x0058 (size: 0x8)
-    double PartySelectTime_Solo;                                                      // 0x0060 (size: 0x8)
-    double Timer;                                                                     // 0x0068 (size: 0x8)
-    FPalArenaPlayerParty SelectParty;                                                 // 0x0070 (size: 0x20)
-    FBP_ArenaSequence_PartySelect_COnTimerUpdated OnTimerUpdated;                     // 0x0090 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    double PartySelectTime;
+    double PartySelectTime_Solo;
+    double Timer;
+    FPalArenaPlayerParty SelectParty;
+    FBP_ArenaSequence_PartySelect_COnTimerUpdated OnTimerUpdated;
     void OnTimerUpdated(double Time);
-    FBP_ArenaSequence_PartySelect_COnPartySelectBreak OnPartySelectBreak;             // 0x00A0 (size: 0x10)
+    FBP_ArenaSequence_PartySelect_COnPartySelectBreak OnPartySelectBreak;
     void OnPartySelectBreak();
-    bool Breaked;                                                                     // 0x00B0 (size: 0x1)
+    bool Breaked;
 
     void SetupTimer();
     void EndProcess();
@@ -30,6 +30,6 @@ class UBP_ArenaSequence_PartySelect_C : public UPalArenaSequencePartySelect
     void ExecuteUbergraph_BP_ArenaSequence_PartySelect(int32 EntryPoint);
     void OnPartySelectBreak__DelegateSignature();
     void OnTimerUpdated__DelegateSignature(double Time);
-}; // Size: 0xB1
+};
 
 #endif

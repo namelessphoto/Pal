@@ -3,13 +3,13 @@
 
 class UBP_PalActionTransportItem_C : public UPalActionTransportItem
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0180 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
 
     void SetupItemActor();
     void FindMontage(class UAnimMontage*& Montage, bool& Exist);
     void OnBeginAction();
     void TickAction(float DeltaTime);
     void ExecuteUbergraph_BP_PalActionTransportItem(int32 EntryPoint);
-}; // Size: 0x188
+};
 
 #endif

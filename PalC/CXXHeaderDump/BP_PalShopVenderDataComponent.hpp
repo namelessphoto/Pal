@@ -3,6 +3,6 @@
 
 class UBP_PalShopVenderDataComponent_C : public UPalVenderDataComponent
 {
-}; // Size: 0x1A0
+};
 
 #endif

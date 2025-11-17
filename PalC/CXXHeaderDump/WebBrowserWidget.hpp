@@ -3,14 +3,14 @@
 
 class UWebBrowser : public UWidget
 {
-    FWebBrowserOnUrlChanged OnUrlChanged;                                             // 0x0150 (size: 0x10)
+    FWebBrowserOnUrlChanged OnUrlChanged;
     void OnUrlChanged(const FText& Text);
-    FWebBrowserOnBeforePopup OnBeforePopup;                                           // 0x0160 (size: 0x10)
+    FWebBrowserOnBeforePopup OnBeforePopup;
     void OnBeforePopup(FString URL, FString Frame);
-    FWebBrowserOnConsoleMessage OnConsoleMessage;                                     // 0x0170 (size: 0x10)
+    FWebBrowserOnConsoleMessage OnConsoleMessage;
     void OnConsoleMessage(FString Message, FString Source, int32 Line);
-    FString InitialURL;                                                               // 0x0180 (size: 0x10)
-    bool bSupportsTransparency;                                                       // 0x0190 (size: 0x1)
+    FString InitialURL;
+    bool bSupportsTransparency;
 
     void OnUrlChanged__DelegateSignature(const FText& Text);
     void OnConsoleMessage__DelegateSignature(FString Message, FString Source, int32 Line);
@@ -20,12 +20,12 @@ class UWebBrowser : public UWidget
     FString GetUrl();
     FText GetTitleText();
     void ExecuteJavascript(FString ScriptText);
-}; // Size: 0x1A8
+};
 
 class UWebBrowserAssetManager : public UObject
 {
-    TSoftObjectPtr<UMaterial> DefaultMaterial;                                        // 0x0028 (size: 0x30)
+    TSoftObjectPtr<UMaterial> DefaultMaterial;
 
-}; // Size: 0x88
+};
 
 #endif

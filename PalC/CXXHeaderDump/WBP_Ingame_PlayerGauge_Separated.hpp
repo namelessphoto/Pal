@@ -3,80 +3,80 @@
 
 class UWBP_Ingame_PlayerGauge_Separated_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_HP_Gauge_Default;                                     // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_HP_Gauge_Low;                                         // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_Weapon_Broken;                                        // 0x0290 (size: 0x8)
-    class UWidgetAnimation* Anm_Weapon_Default;                                       // 0x0298 (size: 0x8)
-    class UWidgetAnimation* Anm_ShowHideRight;                                        // 0x02A0 (size: 0x8)
-    class UWidgetAnimation* Anm_ShowHideLeft;                                         // 0x02A8 (size: 0x8)
-    class UWidgetAnimation* Anm_UseBullet;                                            // 0x02B0 (size: 0x8)
-    class UWidgetAnimation* Anm_Damage;                                               // 0x02B8 (size: 0x8)
-    class UWidgetAnimation* Anm_HPGaugeFlare_Yellow;                                  // 0x02C0 (size: 0x8)
-    class UWidgetAnimation* Anm_HPGaugeFlare_Blue;                                    // 0x02C8 (size: 0x8)
-    class UWidgetAnimation* Anm_ShieldGaugeFlare_Color_Yellow;                        // 0x02D0 (size: 0x8)
-    class UWidgetAnimation* Anm_ShieldGaugeFlare_Color_Blue;                          // 0x02D8 (size: 0x8)
-    class UCanvasPanel* Canvas_GrapplingGun_Cool;                                     // 0x02E0 (size: 0x8)
-    class UCanvasPanel* Canvas_Shield;                                                // 0x02E8 (size: 0x8)
-    class UCanvasPanel* Canvas_Weapon_Disabled;                                       // 0x02F0 (size: 0x8)
-    class UCanvasPanel* Canvas_WeaponInfo;                                            // 0x02F8 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_BallChangeKeyGuide;                           // 0x0300 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_BallChangeKeyGuide_1;                         // 0x0308 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_NowBulletNum;                                 // 0x0310 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_SphereNum;                                    // 0x0318 (size: 0x8)
-    class UImage* Icon_Weapon;                                                        // 0x0320 (size: 0x8)
-    class UImage* Image_Infinity;                                                     // 0x0328 (size: 0x8)
-    class UImage* Image_Sphere;                                                       // 0x0330 (size: 0x8)
-    class UProgressBar* ProgressBar_CoolProgress;                                     // 0x0338 (size: 0x8)
-    class UProgressBar* ProgressBar_HPGauge;                                          // 0x0340 (size: 0x8)
-    class UProgressBar* ProgressBar_HPGauge_Back;                                     // 0x0348 (size: 0x8)
-    class UProgressBar* ProgressBar_ShieldGauge;                                      // 0x0350 (size: 0x8)
-    class UProgressBar* ProgressBar_ShieldGauge_Back;                                 // 0x0358 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_CoolTimerNum;                                      // 0x0360 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_MaxBulletNum;                                      // 0x0368 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_MaxHP;                                             // 0x0370 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_NowBulletNum;                                      // 0x0378 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_NowBulletNum_Plus;                                 // 0x0380 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_NowHP;                                             // 0x0388 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_SphereName;                                        // 0x0390 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_SphereNum_1;                                       // 0x0398 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_SphereNum_10;                                      // 0x03A0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_SphereNum_100;                                     // 0x03A8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_SphereNum_Plus;                                    // 0x03B0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_WeaponName;                                        // 0x03B8 (size: 0x8)
-    class UVerticalBox* VerticalBox_BulletNum;                                        // 0x03C0 (size: 0x8)
-    class UWBP_Ingame_PalHPGauge_C* WBP_Ingame_PalHPGauge;                            // 0x03C8 (size: 0x8)
-    class UWBP_Ingame_PlayerGauge_KeyGuide_C* WBP_Ingame_PlayerGauge_KeyGuide_PalInstruct; // 0x03D0 (size: 0x8)
-    class UWBP_Ingame_PlayerGauge_KeyGuide_C* WBP_Ingame_PlayerGauge_KeyGuide_SummonPal; // 0x03D8 (size: 0x8)
-    class UWBP_Ingame_PlayerGauge_KeyGuide_C* WBP_Ingame_PlayerGauge_KeyGuide_ThrowSphere; // 0x03E0 (size: 0x8)
-    class UWBP_Ingame_PlayerGauge_ThworObjectNone_C* WBP_Ingame_PlayerGauge_PalSphereNone; // 0x03E8 (size: 0x8)
-    class UWBP_Ingame_Thermometer_C* WBP_Ingame_Thermometer;                          // 0x03F0 (size: 0x8)
-    class UWBP_Ingame_TimeZone_C* WBP_Ingame_TimeZone;                                // 0x03F8 (size: 0x8)
-    class UWBP_IngameHungerGauge_C* WBP_IngameHungerGauge;                            // 0x0400 (size: 0x8)
-    class UWBP_IngameStatusPoint_C* WBP_IngameStatusPoint;                            // 0x0408 (size: 0x8)
-    class UWBP_PlayerInputKeyGuideIcon_C* WBP_PlayerInputKeyGuideIcon_ChangeBallAiming; // 0x0410 (size: 0x8)
-    class UWBP_PlayerInputKeyGuideIcon_C* WBP_PlayerInputKeyGuideIcon_ChangeBallAiming_1; // 0x0418 (size: 0x8)
-    class UWBP_PlayerInputKeyGuideIcon_C* WBP_PlayerInputKeyGuideIcon_ChangeBallStatic; // 0x0420 (size: 0x8)
-    class UWBP_StatusBuffTimerContainer_C* WBP_StatusBuffTimerContainer;              // 0x0428 (size: 0x8)
-    class UPalUIDelayGaugeCalculator* HpDelayGauge;                                   // 0x0430 (size: 0x8)
-    class UPalUIDelayGaugeCalculator* ShieldDelayGauge;                               // 0x0438 (size: 0x8)
-    TSoftObjectPtr<APalWeaponBase> nowHasWeapon;                                      // 0x0440 (size: 0x30)
-    int32 lasMaxBulletNum;                                                            // 0x0470 (size: 0x4)
-    int32 lastNowBulletNum;                                                           // 0x0474 (size: 0x4)
-    int32 SavedMagazineSize;                                                          // 0x0478 (size: 0x4)
-    class UMaterialInstanceDynamic* bulletGaugeMaterial;                              // 0x0480 (size: 0x8)
-    FFixedPoint64 lastShield;                                                         // 0x0488 (size: 0x8)
-    bool IsRiding;                                                                    // 0x0490 (size: 0x1)
-    FName CachedLastEquipBallID;                                                      // 0x0494 (size: 0x8)
-    TMap<class FPalDataTableRowName_ItemData, class TSoftObjectPtr<UTexture2D>> BallIconMap; // 0x04A0 (size: 0x50)
-    FTimerHandle HideBallnameTimerHandle;                                             // 0x04F0 (size: 0x8)
-    bool IsOverBallNameHideTimer;                                                     // 0x04F8 (size: 0x1)
-    bool IsAiming;                                                                    // 0x04F9 (size: 0x1)
-    bool HasSpecialWeapon;                                                            // 0x04FA (size: 0x1)
-    bool IsNothingBall;                                                               // 0x04FB (size: 0x1)
-    bool IsFirstUpdateHP;                                                             // 0x04FC (size: 0x1)
-    class UPalItemSlot* CurrentGrenadeSlot;                                           // 0x0500 (size: 0x8)
-    double NoPalSphereNoticeDIsplayTime;                                              // 0x0508 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_HP_Gauge_Default;
+    class UWidgetAnimation* Anm_HP_Gauge_Low;
+    class UWidgetAnimation* Anm_Weapon_Broken;
+    class UWidgetAnimation* Anm_Weapon_Default;
+    class UWidgetAnimation* Anm_ShowHideRight;
+    class UWidgetAnimation* Anm_ShowHideLeft;
+    class UWidgetAnimation* Anm_UseBullet;
+    class UWidgetAnimation* Anm_Damage;
+    class UWidgetAnimation* Anm_HPGaugeFlare_Yellow;
+    class UWidgetAnimation* Anm_HPGaugeFlare_Blue;
+    class UWidgetAnimation* Anm_ShieldGaugeFlare_Color_Yellow;
+    class UWidgetAnimation* Anm_ShieldGaugeFlare_Color_Blue;
+    class UCanvasPanel* Canvas_GrapplingGun_Cool;
+    class UCanvasPanel* Canvas_Shield;
+    class UCanvasPanel* Canvas_Weapon_Disabled;
+    class UCanvasPanel* Canvas_WeaponInfo;
+    class UHorizontalBox* HorizontalBox_BallChangeKeyGuide;
+    class UHorizontalBox* HorizontalBox_BallChangeKeyGuide_1;
+    class UHorizontalBox* HorizontalBox_NowBulletNum;
+    class UHorizontalBox* HorizontalBox_SphereNum;
+    class UImage* Icon_Weapon;
+    class UImage* Image_Infinity;
+    class UImage* Image_Sphere;
+    class UProgressBar* ProgressBar_CoolProgress;
+    class UProgressBar* ProgressBar_HPGauge;
+    class UProgressBar* ProgressBar_HPGauge_Back;
+    class UProgressBar* ProgressBar_ShieldGauge;
+    class UProgressBar* ProgressBar_ShieldGauge_Back;
+    class UBP_PalTextBlock_C* Text_CoolTimerNum;
+    class UBP_PalTextBlock_C* Text_MaxBulletNum;
+    class UBP_PalTextBlock_C* Text_MaxHP;
+    class UBP_PalTextBlock_C* Text_NowBulletNum;
+    class UBP_PalTextBlock_C* Text_NowBulletNum_Plus;
+    class UBP_PalTextBlock_C* Text_NowHP;
+    class UBP_PalTextBlock_C* Text_SphereName;
+    class UBP_PalTextBlock_C* Text_SphereNum_1;
+    class UBP_PalTextBlock_C* Text_SphereNum_10;
+    class UBP_PalTextBlock_C* Text_SphereNum_100;
+    class UBP_PalTextBlock_C* Text_SphereNum_Plus;
+    class UBP_PalTextBlock_C* Text_WeaponName;
+    class UVerticalBox* VerticalBox_BulletNum;
+    class UWBP_Ingame_PalHPGauge_C* WBP_Ingame_PalHPGauge;
+    class UWBP_Ingame_PlayerGauge_KeyGuide_C* WBP_Ingame_PlayerGauge_KeyGuide_PalInstruct;
+    class UWBP_Ingame_PlayerGauge_KeyGuide_C* WBP_Ingame_PlayerGauge_KeyGuide_SummonPal;
+    class UWBP_Ingame_PlayerGauge_KeyGuide_C* WBP_Ingame_PlayerGauge_KeyGuide_ThrowSphere;
+    class UWBP_Ingame_PlayerGauge_ThworObjectNone_C* WBP_Ingame_PlayerGauge_PalSphereNone;
+    class UWBP_Ingame_Thermometer_C* WBP_Ingame_Thermometer;
+    class UWBP_Ingame_TimeZone_C* WBP_Ingame_TimeZone;
+    class UWBP_IngameHungerGauge_C* WBP_IngameHungerGauge;
+    class UWBP_IngameStatusPoint_C* WBP_IngameStatusPoint;
+    class UWBP_PlayerInputKeyGuideIcon_C* WBP_PlayerInputKeyGuideIcon_ChangeBallAiming;
+    class UWBP_PlayerInputKeyGuideIcon_C* WBP_PlayerInputKeyGuideIcon_ChangeBallAiming_1;
+    class UWBP_PlayerInputKeyGuideIcon_C* WBP_PlayerInputKeyGuideIcon_ChangeBallStatic;
+    class UWBP_StatusBuffTimerContainer_C* WBP_StatusBuffTimerContainer;
+    class UPalUIDelayGaugeCalculator* HpDelayGauge;
+    class UPalUIDelayGaugeCalculator* ShieldDelayGauge;
+    TSoftObjectPtr<APalWeaponBase> nowHasWeapon;
+    int32 lasMaxBulletNum;
+    int32 lastNowBulletNum;
+    int32 SavedMagazineSize;
+    class UMaterialInstanceDynamic* bulletGaugeMaterial;
+    FFixedPoint64 lastShield;
+    bool IsRiding;
+    FName CachedLastEquipBallID;
+    TMap<class FPalDataTableRowName_ItemData, class TSoftObjectPtr<UTexture2D>> BallIconMap;
+    FTimerHandle HideBallnameTimerHandle;
+    bool IsOverBallNameHideTimer;
+    bool IsAiming;
+    bool HasSpecialWeapon;
+    bool IsNothingBall;
+    bool IsFirstUpdateHP;
+    class UPalItemSlot* CurrentGrenadeSlot;
+    double NoPalSphereNoticeDIsplayTime;
 
     void CREATEDELEGATE_PROXYFUNCTION_1(float RemainingTime, float CoolDownTime);
     void CREATEDELEGATE_PROXYFUNCTION_0(float RemainingTime, float CoolDownTime);
@@ -136,6 +136,6 @@ class UWBP_Ingame_PlayerGauge_Separated_C : public UUserWidget
     void OnInitialized();
     void AnmEvent_TriggerDamage();
     void ExecuteUbergraph_WBP_Ingame_PlayerGauge_Separated(int32 EntryPoint);
-}; // Size: 0x510
+};
 
 #endif

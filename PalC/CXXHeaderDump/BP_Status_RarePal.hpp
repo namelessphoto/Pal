@@ -3,10 +3,10 @@
 
 class UBP_Status_RarePal_C : public UPalStatusBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0048 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
 
     void OnBeginStatus();
     void ExecuteUbergraph_BP_Status_RarePal(int32 EntryPoint);
-}; // Size: 0x50
+};
 
 #endif

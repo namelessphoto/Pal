@@ -5,6 +5,6 @@ class ABP_NPCAIController_BossBattle_C : public ABP_NPCAIController_C
 {
 
     void ForceBattleStartToTarget Boss(class APalPlayerCharacter* Player, TArray<class APalPlayerCharacter*>& AllPlayer);
-}; // Size: 0x5A1
+};
 
 #endif

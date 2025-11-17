@@ -3,18 +3,18 @@
 
 class UWBP_PalStorageSortTypeButton_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_Select;                                               // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_Unselect;                                             // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_UnfocusToFocus;                                       // 0x0290 (size: 0x8)
-    class UImage* Base;                                                               // 0x0298 (size: 0x8)
-    class UImage* Frame;                                                              // 0x02A0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_SortType;                                          // 0x02A8 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x02B0 (size: 0x8)
-    EPalCharacterContainerSortType BindSortType;                                      // 0x02B8 (size: 0x1)
-    FWBP_PalStorageSortTypeButton_COnClicked OnClicked;                               // 0x02C0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_Select;
+    class UWidgetAnimation* Anm_Unselect;
+    class UWidgetAnimation* Anm_UnfocusToFocus;
+    class UImage* Base;
+    class UImage* Frame;
+    class UBP_PalTextBlock_C* Text_SortType;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    EPalCharacterContainerSortType BindSortType;
+    FWBP_PalStorageSortTypeButton_COnClicked OnClicked;
     void OnClicked(class UWBP_PalStorageSortTypeButton_C* Widget);
-    TMap<class EPalCharacterContainerSortType, class FDataTableRowHandle> BoxSortTypeMsgIDMap; // 0x02D0 (size: 0x50)
+    TMap<class EPalCharacterContainerSortType, class FDataTableRowHandle> BoxSortTypeMsgIDMap;
 
     void GetBindedSortType(EPalCharacterContainerSortType& SortType);
     void AnmEvent_Focus();
@@ -30,6 +30,6 @@ class UWBP_PalStorageSortTypeButton_C : public UUserWidget
     void BndEvt__WBP_PalStorageSortTypeButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
     void ExecuteUbergraph_WBP_PalStorageSortTypeButton(int32 EntryPoint);
     void OnClicked__DelegateSignature(class UWBP_PalStorageSortTypeButton_C* Widget);
-}; // Size: 0x320
+};
 
 #endif

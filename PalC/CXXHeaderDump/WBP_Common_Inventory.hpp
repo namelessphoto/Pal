@@ -3,21 +3,21 @@
 
 class UWBP_Common_Inventory_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UCanvasPanel* Canvas_Inventory;                                             // 0x0280 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Sort_Inventory;           // 0x0288 (size: 0x8)
-    class UWBP_PalPlayerInventoryScrollList_C* WBP_PalPlayerInventoryScrollList;      // 0x0290 (size: 0x8)
-    class UWBP_PlayerInventoryWeightInfo_C* WBP_PlayerInventoryWeightInfo;            // 0x0298 (size: 0x8)
-    class UBP_PalInventoryModel_C* Model;                                             // 0x02A0 (size: 0x8)
-    FWBP_Common_Inventory_COnClickedInventorySortButton OnClickedInventorySortButton; // 0x02A8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCanvasPanel* Canvas_Inventory;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Sort_Inventory;
+    class UWBP_PalPlayerInventoryScrollList_C* WBP_PalPlayerInventoryScrollList;
+    class UWBP_PlayerInventoryWeightInfo_C* WBP_PlayerInventoryWeightInfo;
+    class UBP_PalInventoryModel_C* Model;
+    FWBP_Common_Inventory_COnClickedInventorySortButton OnClickedInventorySortButton;
     void OnClickedInventorySortButton();
-    FWBP_Common_Inventory_COnHoveredInventorySlot OnHoveredInventorySlot;             // 0x02B8 (size: 0x10)
+    FWBP_Common_Inventory_COnHoveredInventorySlot OnHoveredInventorySlot;
     void OnHoveredInventorySlot(class UWBP_PalItemSlotButtonBase_C* SlotButton);
-    FWBP_Common_Inventory_COnUnhoveredInventorySlot OnUnhoveredInventorySlot;         // 0x02C8 (size: 0x10)
+    FWBP_Common_Inventory_COnUnhoveredInventorySlot OnUnhoveredInventorySlot;
     void OnUnhoveredInventorySlot();
-    FWBP_Common_Inventory_COnLeftClickSlot OnLeftClickSlot;                           // 0x02D8 (size: 0x10)
+    FWBP_Common_Inventory_COnLeftClickSlot OnLeftClickSlot;
     void OnLeftClickSlot(class UWBP_PalItemSlotButtonBase_C* Slot, EPalItemSlotPressType PressType);
-    FWBP_Common_Inventory_COnRightClickSlot OnRightClickSlot;                         // 0x02E8 (size: 0x10)
+    FWBP_Common_Inventory_COnRightClickSlot OnRightClickSlot;
     void OnRightClickSlot(class UWBP_PalItemSlotButtonBase_C* Slot, EPalItemSlotPressType PressType);
 
     void GetInventoryLastHoveredFocusTarget(class UWidget*& Widget);
@@ -39,6 +39,6 @@ class UWBP_Common_Inventory_C : public UUserWidget
     void OnUnhoveredInventorySlot__DelegateSignature();
     void OnHoveredInventorySlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* SlotButton);
     void OnClickedInventorySortButton__DelegateSignature();
-}; // Size: 0x2F8
+};
 
 #endif

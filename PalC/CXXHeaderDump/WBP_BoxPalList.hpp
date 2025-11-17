@@ -3,30 +3,30 @@
 
 class UWBP_BoxPalList_C : public UPalUIPalBoxBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0458 (size: 0x8)
-    class UWBP_BoxPalListBase_C* WBP_BoxPalListBase;                                  // 0x0460 (size: 0x8)
-    FWBP_BoxPalList_COnLeftClickedSlot OnLeftClickedSlot;                             // 0x0468 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWBP_BoxPalListBase_C* WBP_BoxPalListBase;
+    FWBP_BoxPalList_COnLeftClickedSlot OnLeftClickedSlot;
     void OnLeftClickedSlot(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
-    FWBP_BoxPalList_COnRightClickedSlot OnRightClickedSlot;                           // 0x0478 (size: 0x10)
+    FWBP_BoxPalList_COnRightClickedSlot OnRightClickedSlot;
     void OnRightClickedSlot(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-    FWBP_BoxPalList_COnHoveredSlot OnHoveredSlot;                                     // 0x0488 (size: 0x10)
+    FWBP_BoxPalList_COnHoveredSlot OnHoveredSlot;
     void OnHoveredSlot(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-    FWBP_BoxPalList_COnUnhoveredSlot OnUnhoveredSlot;                                 // 0x0498 (size: 0x10)
+    FWBP_BoxPalList_COnUnhoveredSlot OnUnhoveredSlot;
     void OnUnhoveredSlot(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-    FWBP_BoxPalList_COnUpdatedPage OnUpdatedPage;                                     // 0x04A8 (size: 0x10)
+    FWBP_BoxPalList_COnUpdatedPage OnUpdatedPage;
     void OnUpdatedPage(int32 NowPage);
-    bool CanDragDrop;                                                                 // 0x04B8 (size: 0x1)
-    FPalDataTableRowName_UIInputAction NextPageInputAction;                           // 0x04BC (size: 0x8)
-    FPalDataTableRowName_UIInputAction PrevPageInputAction;                           // 0x04C4 (size: 0x8)
-    FWBP_BoxPalList_COnCreatedNewSlot OnCreatedNewSlot;                               // 0x04D0 (size: 0x10)
+    bool CanDragDrop;
+    FPalDataTableRowName_UIInputAction NextPageInputAction;
+    FPalDataTableRowName_UIInputAction PrevPageInputAction;
+    FWBP_BoxPalList_COnCreatedNewSlot OnCreatedNewSlot;
     void OnCreatedNewSlot(class UWBP_PalCharacterSlotButtonBase_C* NewSlot);
-    FWBP_BoxPalList_COnSelectPalBoxPage OnSelectPalBoxPage;                           // 0x04E0 (size: 0x10)
+    FWBP_BoxPalList_COnSelectPalBoxPage OnSelectPalBoxPage;
     void OnSelectPalBoxPage(int32 Page);
-    FWBP_BoxPalList_COnSorted OnSorted;                                               // 0x04F0 (size: 0x10)
+    FWBP_BoxPalList_COnSorted OnSorted;
     void OnSorted();
-    FWBP_BoxPalList_COnUpdateSlot OnUpdateSlot;                                       // 0x0500 (size: 0x10)
+    FWBP_BoxPalList_COnUpdateSlot OnUpdateSlot;
     void OnUpdateSlot(class UWBP_PalCharacterSlotButtonBase_C* SlotButton);
-    TSoftObjectPtr<UWBP_PalCharacterSlotButtonBase_C> LastHoveredSlot;                // 0x0510 (size: 0x30)
+    TSoftObjectPtr<UWBP_PalCharacterSlotButtonBase_C> LastHoveredSlot;
 
     void GetLastHoveredFocusTarget(class UWidget*& TargetWidget);
     void OnClosedSortWindow(class UPalHUDDispatchParameterBase* Param);
@@ -55,6 +55,6 @@ class UWBP_BoxPalList_C : public UPalUIPalBoxBase
     void OnHoveredSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);
     void OnRightClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);
     void OnLeftClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
-}; // Size: 0x540
+};
 
 #endif

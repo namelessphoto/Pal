@@ -3,54 +3,54 @@
 
 class UWBP_PalLvExp_C : public UWBP_IndividualParameterBindWidget_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0608 (size: 0x8)
-    class UWidgetAnimation* Anm_Friendship_Favorite;                                  // 0x0610 (size: 0x8)
-    class UWidgetAnimation* Anm_Friendship_RankUp;                                    // 0x0618 (size: 0x8)
-    class UWidgetAnimation* Anm_GetSkill;                                             // 0x0620 (size: 0x8)
-    class UWidgetAnimation* Anm_LVUP;                                                 // 0x0628 (size: 0x8)
-    class UWidgetAnimation* Anm_Close;                                                // 0x0630 (size: 0x8)
-    class UWidgetAnimation* Anm_Open;                                                 // 0x0638 (size: 0x8)
-    class UCanvasPanel* Canvas_FriendshipRank;                                        // 0x0640 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_0;                                                // 0x0648 (size: 0x8)
-    class UImage* Image_2;                                                            // 0x0650 (size: 0x8)
-    class UImage* Image_3;                                                            // 0x0658 (size: 0x8)
-    class UImage* Image_4;                                                            // 0x0660 (size: 0x8)
-    class UImage* Image_40;                                                           // 0x0668 (size: 0x8)
-    class UImage* Image_Base_Friendship;                                              // 0x0670 (size: 0x8)
-    class UImage* Image_Icon_FavoriteLock;                                            // 0x0678 (size: 0x8)
-    class UImage* Image_SkillEffBase;                                                 // 0x0680 (size: 0x8)
-    class UProgressBar* ProgressBar_Exp;                                              // 0x0688 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_AddExp;                                            // 0x0690 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Favorite;                                          // 0x0698 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_FriendshipRankNum;                                 // 0x06A0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_LvUP;                                              // 0x06A8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_RankUp;                                            // 0x06B0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Skill;                                             // 0x06B8 (size: 0x8)
-    class UWBP_LvNum_C* WBP_LvNum;                                                    // 0x06C0 (size: 0x8)
-    class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton;      // 0x06C8 (size: 0x8)
-    double LevelUpAnimeDelay;                                                         // 0x06D0 (size: 0x8)
-    double NewMoveAnimeDelay;                                                         // 0x06D8 (size: 0x8)
-    double closeAnimeDelay;                                                           // 0x06E0 (size: 0x8)
-    double FavoriteAnimeDelay;                                                        // 0x06E8 (size: 0x8)
-    double FriendshipRankupAnimeDelay;                                                // 0x06F0 (size: 0x8)
-    FTimerHandle LevelUpAnimeTimerHandle;                                             // 0x06F8 (size: 0x8)
-    FTimerHandle NewMoveAnimeTimerHandle;                                             // 0x0700 (size: 0x8)
-    FTimerHandle FriendshipRankupAnimeTimerHandle;                                    // 0x0708 (size: 0x8)
-    FTimerHandle FavoriteAnimeTimerHandle;                                            // 0x0710 (size: 0x8)
-    FTimerHandle CloseAnimeTimerHandle;                                               // 0x0718 (size: 0x8)
-    bool IsLevelUp;                                                                   // 0x0720 (size: 0x1)
-    bool IsNewMove;                                                                   // 0x0721 (size: 0x1)
-    bool isDisplaying;                                                                // 0x0722 (size: 0x1)
-    int32 LastLevel;                                                                  // 0x0724 (size: 0x4)
-    FDataTableRowHandle LevelUpMsgID;                                                 // 0x0728 (size: 0x10)
-    FDataTableRowHandle NewMoveMsgID;                                                 // 0x0738 (size: 0x10)
-    FName CachedCharacterID;                                                          // 0x0748 (size: 0x8)
-    int64 StackExp;                                                                   // 0x0750 (size: 0x8)
-    TArray<EPalWazaID> NewWazaIDArray;                                                // 0x0758 (size: 0x10)
-    int32 ReservedDisplayFriendshipRank;                                              // 0x0768 (size: 0x4)
-    bool bChangedFavoriteByFriendshipRank;                                            // 0x076C (size: 0x1)
-    bool bReservedRankupAnime;                                                        // 0x076D (size: 0x1)
-    double CloseDelay_FriendshipRankup;                                               // 0x0770 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_Friendship_Favorite;
+    class UWidgetAnimation* Anm_Friendship_RankUp;
+    class UWidgetAnimation* Anm_GetSkill;
+    class UWidgetAnimation* Anm_LVUP;
+    class UWidgetAnimation* Anm_Close;
+    class UWidgetAnimation* Anm_Open;
+    class UCanvasPanel* Canvas_FriendshipRank;
+    class UCanvasPanel* CanvasPanel_0;
+    class UImage* Image_2;
+    class UImage* Image_3;
+    class UImage* Image_4;
+    class UImage* Image_40;
+    class UImage* Image_Base_Friendship;
+    class UImage* Image_Icon_FavoriteLock;
+    class UImage* Image_SkillEffBase;
+    class UProgressBar* ProgressBar_Exp;
+    class UBP_PalTextBlock_C* Text_AddExp;
+    class UBP_PalTextBlock_C* Text_Favorite;
+    class UBP_PalTextBlock_C* Text_FriendshipRankNum;
+    class UBP_PalTextBlock_C* Text_LvUP;
+    class UBP_PalTextBlock_C* Text_RankUp;
+    class UBP_PalTextBlock_C* Text_Skill;
+    class UWBP_LvNum_C* WBP_LvNum;
+    class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton;
+    double LevelUpAnimeDelay;
+    double NewMoveAnimeDelay;
+    double closeAnimeDelay;
+    double FavoriteAnimeDelay;
+    double FriendshipRankupAnimeDelay;
+    FTimerHandle LevelUpAnimeTimerHandle;
+    FTimerHandle NewMoveAnimeTimerHandle;
+    FTimerHandle FriendshipRankupAnimeTimerHandle;
+    FTimerHandle FavoriteAnimeTimerHandle;
+    FTimerHandle CloseAnimeTimerHandle;
+    bool IsLevelUp;
+    bool IsNewMove;
+    bool isDisplaying;
+    int32 LastLevel;
+    FDataTableRowHandle LevelUpMsgID;
+    FDataTableRowHandle NewMoveMsgID;
+    FName CachedCharacterID;
+    int64 StackExp;
+    TArray<EPalWazaID> NewWazaIDArray;
+    int32 ReservedDisplayFriendshipRank;
+    bool bChangedFavoriteByFriendshipRank;
+    bool bReservedRankupAnime;
+    double CloseDelay_FriendshipRankup;
 
     void Reset();
     void Unbind();
@@ -82,6 +82,6 @@ class UWBP_PalLvExp_C : public UWBP_IndividualParameterBindWidget_C
     void AnmEvent_Favorite();
     void OnInitialized();
     void ExecuteUbergraph_WBP_PalLvExp(int32 EntryPoint);
-}; // Size: 0x778
+};
 
 #endif

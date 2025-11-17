@@ -3,6 +3,6 @@
 
 class UBP_PalAssetStreamableManager_C : public UPalAssetStreamableManager
 {
-}; // Size: 0x60
+};
 
 #endif

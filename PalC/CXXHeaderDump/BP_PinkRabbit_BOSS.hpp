@@ -3,6 +3,6 @@
 
 class ABP_PinkRabbit_BOSS_C : public ABP_PinkRabbit_C
 {
-}; // Size: 0xB30
+};
 
 #endif

@@ -3,19 +3,19 @@
 
 class ABP_ChargeLaserRifle_C : public APalWeaponBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x05E8 (size: 0x8)
-    class UStaticMeshComponent* StaticMesh;                                           // 0x05F0 (size: 0x8)
-    class UNiagaraComponent* ChargeEffect;                                            // 0x05F8 (size: 0x8)
-    class USkeletalMeshComponent* WeaponMesh;                                         // 0x0600 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x0608 (size: 0x8)
-    bool IsPull;                                                                      // 0x0610 (size: 0x1)
-    double ChargeValue;                                                               // 0x0618 (size: 0x8)
-    double Const_IncrementSpeed;                                                      // 0x0620 (size: 0x8)
-    double Const_DecrementSpeed;                                                      // 0x0628 (size: 0x8)
-    double tempDeltaTime;                                                             // 0x0630 (size: 0x8)
-    FBP_ChargeLaserRifle_COnChangedChargeValue OnChangedChargeValue;                  // 0x0638 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UStaticMeshComponent* StaticMesh;
+    class UNiagaraComponent* ChargeEffect;
+    class USkeletalMeshComponent* WeaponMesh;
+    class USceneComponent* DefaultSceneRoot;
+    bool IsPull;
+    double ChargeValue;
+    double Const_IncrementSpeed;
+    double Const_DecrementSpeed;
+    double tempDeltaTime;
+    FBP_ChargeLaserRifle_COnChangedChargeValue OnChangedChargeValue;
     void OnChangedChargeValue(double CurretnChargeValue);
-    double ReloadSpeedPlayRate;                                                       // 0x0648 (size: 0x8)
+    double ReloadSpeedPlayRate;
 
     void GetCurrentChargeValue(double& ChargeValue);
     FTransform GetLeftHandTransform();
@@ -60,6 +60,6 @@ class ABP_ChargeLaserRifle_C : public APalWeaponBase
     void OnAttachWeapon(class AActor* attachActor);
     void ExecuteUbergraph_BP_ChargeLaserRifle(int32 EntryPoint);
     void OnChangedChargeValue__DelegateSignature(double CurretnChargeValue);
-}; // Size: 0x650
+};
 
 #endif

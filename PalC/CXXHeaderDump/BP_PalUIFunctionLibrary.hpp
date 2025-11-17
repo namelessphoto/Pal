@@ -43,6 +43,6 @@ class UBP_PalUIFunctionLibrary_C : public UBlueprintFunctionLibrary
     void Setup Pal Characteristic Widget(TArray<class UWBP_MainMenu_Pal_Skill_Passive_C*>& characteristicWidget, TArray<FName>& passiveList, class UObject* __WorldContext);
     void SetupPalConditionWidget(TArray<class UWBP_MainMenu_Pal_State_C*>& conditionWidget, TArray<EPalUIConditionType>& Conditions, class UObject* __WorldContext);
     void SetSanityToTextBox(class UPalTextBlockBase* targetText, int32 nowSanity, int32 maxSanity, class UMaterial* normalMaterial, class UMaterial* middleSanityMaterial, class UMaterial* lowSanityMaterial, class UObject* __WorldContext);
-}; // Size: 0x28
+};
 
 #endif

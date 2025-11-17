@@ -3,37 +3,37 @@
 
 class ABP_FishingRodBase_C : public APalWeaponBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x05E8 (size: 0x8)
-    class UCableComponent* Cable;                                                     // 0x05F0 (size: 0x8)
-    class USkeletalMeshComponent* SK_FishingFloat001;                                 // 0x05F8 (size: 0x8)
-    class USkeletalMeshComponent* SkeletalMesh_Rod;                                   // 0x0600 (size: 0x8)
-    class UPalFishingComponent* FishingComponent;                                     // 0x0608 (size: 0x8)
-    bool IsEquip;                                                                     // 0x0610 (size: 0x1)
-    bool IsVisibleReticle;                                                            // 0x0611 (size: 0x1)
-    bool CanFishingFlag;                                                              // 0x0612 (size: 0x1)
-    class ABP_Fishing_Lure_C* ControlFloat;                                           // 0x0618 (size: 0x8)
-    class UPalFishingRodModule* FishingRodModule;                                     // 0x0620 (size: 0x8)
-    FVector PreFloatLocation;                                                         // 0x0628 (size: 0x18)
-    FName RodEndSocketName;                                                           // 0x0640 (size: 0x8)
-    FName RodCableBoneName;                                                           // 0x0648 (size: 0x8)
-    class UAnimMontage* ThrowingMontage;                                              // 0x0650 (size: 0x8)
-    class UAnimMontage* BattleLoopMontage;                                            // 0x0658 (size: 0x8)
-    class UAnimMontage* ShowSmallLoopMontage;                                         // 0x0660 (size: 0x8)
-    bool IsLandingFloat;                                                              // 0x0668 (size: 0x1)
-    bool IsShotCable;                                                                 // 0x0669 (size: 0x1)
-    double ThrowingAlpha;                                                             // 0x0670 (size: 0x8)
-    double ThrowingSpeed;                                                             // 0x0678 (size: 0x8)
-    double ThrowingTimer;                                                             // 0x0680 (size: 0x8)
-    double ThrowingHeight;                                                            // 0x0688 (size: 0x8)
-    double ThrowingSink;                                                              // 0x0690 (size: 0x8)
-    FVector ThrowStartLocation;                                                       // 0x0698 (size: 0x18)
-    FPalFishingRodInitParameter FishingRodParameter;                                  // 0x06B0 (size: 0x10)
-    class UAnimMontage* BattleLoopMontageAdditive;                                    // 0x06C0 (size: 0x8)
-    class UAnimMontage* WaitMontage;                                                  // 0x06C8 (size: 0x8)
-    EPalFishingRodState SalvageRodState;                                              // 0x06D0 (size: 0x1)
-    bool IsSalvage;                                                                   // 0x06D1 (size: 0x1)
-    FVector SalvageFloatLocation;                                                     // 0x06D8 (size: 0x18)
-    class UAnimMontage* IdleMontage;                                                  // 0x06F0 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCableComponent* Cable;
+    class USkeletalMeshComponent* SK_FishingFloat001;
+    class USkeletalMeshComponent* SkeletalMesh_Rod;
+    class UPalFishingComponent* FishingComponent;
+    bool IsEquip;
+    bool IsVisibleReticle;
+    bool CanFishingFlag;
+    class ABP_Fishing_Lure_C* ControlFloat;
+    class UPalFishingRodModule* FishingRodModule;
+    FVector PreFloatLocation;
+    FName RodEndSocketName;
+    FName RodCableBoneName;
+    class UAnimMontage* ThrowingMontage;
+    class UAnimMontage* BattleLoopMontage;
+    class UAnimMontage* ShowSmallLoopMontage;
+    bool IsLandingFloat;
+    bool IsShotCable;
+    double ThrowingAlpha;
+    double ThrowingSpeed;
+    double ThrowingTimer;
+    double ThrowingHeight;
+    double ThrowingSink;
+    FVector ThrowStartLocation;
+    FPalFishingRodInitParameter FishingRodParameter;
+    class UAnimMontage* BattleLoopMontageAdditive;
+    class UAnimMontage* WaitMontage;
+    EPalFishingRodState SalvageRodState;
+    bool IsSalvage;
+    FVector SalvageFloatLocation;
+    class UAnimMontage* IdleMontage;
 
     void IsShowReticle(bool& IsShow);
     void CanFishing(bool& CanFishing);
@@ -108,6 +108,6 @@ class ABP_FishingRodBase_C : public APalWeaponBase
     void OnSalvageSuccess();
     void OnFishingActionShowFish();
     void ExecuteUbergraph_BP_FishingRodBase(int32 EntryPoint);
-}; // Size: 0x6F8
+};
 
 #endif

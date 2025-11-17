@@ -3,17 +3,17 @@
 
 class ABP_ThrowObjectBase_C : public APalBullet
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x03B0 (size: 0x8)
-    class UBP_PalSoundPlayerComponent_C* SoundPlayer;                                 // 0x03B8 (size: 0x8)
-    int32 BoundCount;                                                                 // 0x03C0 (size: 0x4)
-    double EnableGravityInterval;                                                     // 0x03C8 (size: 0x8)
-    double DefaultGravityScale;                                                       // 0x03D0 (size: 0x8)
-    class UNiagaraSystem* ThrowEffect;                                                // 0x03D8 (size: 0x8)
-    bool IsCachedGravityScale;                                                        // 0x03E0 (size: 0x1)
-    float Const_Effect_Scale;                                                         // 0x03E4 (size: 0x4)
-    FLinearColor Const_Effect_ColorShock;                                             // 0x03E8 (size: 0x10)
-    FLinearColor Const_Effect_ColorThrow;                                             // 0x03F8 (size: 0x10)
-    FLinearColor Const_Effect_ColorThrow2;                                            // 0x0408 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UBP_PalSoundPlayerComponent_C* SoundPlayer;
+    int32 BoundCount;
+    double EnableGravityInterval;
+    double DefaultGravityScale;
+    class UNiagaraSystem* ThrowEffect;
+    bool IsCachedGravityScale;
+    float Const_Effect_Scale;
+    FLinearColor Const_Effect_ColorShock;
+    FLinearColor Const_Effect_ColorThrow;
+    FLinearColor Const_Effect_ColorThrow2;
 
     void SetEffectParam(class UNiagaraComponent* Niagara);
     void CacheDefaultGravity();
@@ -31,6 +31,6 @@ class ABP_ThrowObjectBase_C : public APalBullet
     void OnEnableGravity();
     void OnHit(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const FHitResult& Hit);
     void ExecuteUbergraph_BP_ThrowObjectBase(int32 EntryPoint);
-}; // Size: 0x418
+};
 
 #endif

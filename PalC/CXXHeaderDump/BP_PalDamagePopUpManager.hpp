@@ -3,6 +3,6 @@
 
 class UBP_PalDamagePopUpManager_C : public UPalDamagePopUpManager
 {
-}; // Size: 0x38
+};
 
 #endif

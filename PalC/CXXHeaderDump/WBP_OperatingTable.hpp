@@ -3,38 +3,38 @@
 
 class UWBP_OperatingTable_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UCanvasPanel* Canvas_ItemList;                                              // 0x0438 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_1;                                                // 0x0440 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_Tab;                                          // 0x0448 (size: 0x8)
-    class UImage* Select;                                                             // 0x0450 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_GuildMenberHead;                                   // 0x0458 (size: 0x8)
-    class UWBP_Buildup_TabButton_C* WBP_Buildup_TabButton_Gender;                     // 0x0460 (size: 0x8)
-    class UWBP_Buildup_TabButton_C* WBP_Buildup_TabButton_Passive;                    // 0x0468 (size: 0x8)
-    class UWBP_IngameMenu_PalBox_PalDetail_C* WBP_IngameMenu_PalBox_PalDetail;        // 0x0470 (size: 0x8)
-    class UWBP_MainMenu_PalSkillInfo_C* WBP_MainMenu_PalSkillInfo;                    // 0x0478 (size: 0x8)
-    class UWBP_Menu_btn_C* WBP_Menu_btn_Close;                                        // 0x0480 (size: 0x8)
-    class UWBP_Menu_btn_C* WBP_Menu_btn_ListClose;                                    // 0x0488 (size: 0x8)
-    class UWBP_Menu_PalList_C* WBP_Menu_PalList;                                      // 0x0490 (size: 0x8)
-    class UWBP_Menu_PalList_C* WBP_Menu_PalList_1;                                    // 0x0498 (size: 0x8)
-    class UWBP_Menu_PalList_C* WBP_Menu_PalList_2;                                    // 0x04A0 (size: 0x8)
-    class UWBP_Menu_PalList_C* WBP_Menu_PalList_3;                                    // 0x04A8 (size: 0x8)
-    class UWBP_Menu_PalList_C* WBP_Menu_PalList_4;                                    // 0x04B0 (size: 0x8)
-    class UWBP_OperatingTable_TabPage_C* WBP_OperatingTable_TabPage;                  // 0x04B8 (size: 0x8)
-    class UWBP_PalCommonScrollList_C* WBP_PalCommonScrollList_Item;                   // 0x04C0 (size: 0x8)
-    class UWBP_PalCommonWindow_C* WBP_PalCommonWindow;                                // 0x04C8 (size: 0x8)
-    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon_1;                              // 0x04D0 (size: 0x8)
-    TArray<class UWBP_Menu_PalList_C*> PalList;                                       // 0x04D8 (size: 0x10)
-    class UPalMapObjectOperatingTableModel* OperatingTableModel;                      // 0x04E8 (size: 0x8)
-    bool Hovering;                                                                    // 0x04F0 (size: 0x1)
-    class UPalIndividualCharacterHandle* CurrentHandle;                               // 0x04F8 (size: 0x8)
-    bool PinDetail;                                                                   // 0x0500 (size: 0x1)
-    bool Requested;                                                                   // 0x0501 (size: 0x1)
-    int32 CurrentTab;                                                                 // 0x0504 (size: 0x4)
-    bool ParamUpdated;                                                                // 0x0508 (size: 0x1)
-    bool Notified;                                                                    // 0x0509 (size: 0x1)
-    class UPalIndividualCharacterParameter* BindedCharacterParam;                     // 0x0510 (size: 0x8)
-    bool Updated;                                                                     // 0x0518 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCanvasPanel* Canvas_ItemList;
+    class UCanvasPanel* CanvasPanel_1;
+    class UHorizontalBox* HorizontalBox_Tab;
+    class UImage* Select;
+    class UBP_PalTextBlock_C* Text_GuildMenberHead;
+    class UWBP_Buildup_TabButton_C* WBP_Buildup_TabButton_Gender;
+    class UWBP_Buildup_TabButton_C* WBP_Buildup_TabButton_Passive;
+    class UWBP_IngameMenu_PalBox_PalDetail_C* WBP_IngameMenu_PalBox_PalDetail;
+    class UWBP_MainMenu_PalSkillInfo_C* WBP_MainMenu_PalSkillInfo;
+    class UWBP_Menu_btn_C* WBP_Menu_btn_Close;
+    class UWBP_Menu_btn_C* WBP_Menu_btn_ListClose;
+    class UWBP_Menu_PalList_C* WBP_Menu_PalList;
+    class UWBP_Menu_PalList_C* WBP_Menu_PalList_1;
+    class UWBP_Menu_PalList_C* WBP_Menu_PalList_2;
+    class UWBP_Menu_PalList_C* WBP_Menu_PalList_3;
+    class UWBP_Menu_PalList_C* WBP_Menu_PalList_4;
+    class UWBP_OperatingTable_TabPage_C* WBP_OperatingTable_TabPage;
+    class UWBP_PalCommonScrollList_C* WBP_PalCommonScrollList_Item;
+    class UWBP_PalCommonWindow_C* WBP_PalCommonWindow;
+    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon_1;
+    TArray<class UWBP_Menu_PalList_C*> PalList;
+    class UPalMapObjectOperatingTableModel* OperatingTableModel;
+    bool Hovering;
+    class UPalIndividualCharacterHandle* CurrentHandle;
+    bool PinDetail;
+    bool Requested;
+    int32 CurrentTab;
+    bool ParamUpdated;
+    bool Notified;
+    class UPalIndividualCharacterParameter* BindedCharacterParam;
+    bool Updated;
 
     void OnInventoryUpdate(class UPalItemContainer* Container);
     void OnHoveredPalPassiveSlot(class UWBP_MainMenu_Pal_Skill_Passive_C* Widget);
@@ -66,6 +66,6 @@ class UWBP_OperatingTable_C : public UPalUserWidgetOverlayUI
     void OnPassiveUpdate(const TArray<FName>& PassiveIds);
     void OnGenderUpdate(EPalGenderType NewGender);
     void ExecuteUbergraph_WBP_OperatingTable(int32 EntryPoint);
-}; // Size: 0x519
+};
 
 #endif

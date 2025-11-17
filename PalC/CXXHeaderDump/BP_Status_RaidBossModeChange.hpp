@@ -3,12 +3,12 @@
 
 class UBP_Status_RaidBossModeChange_C : public UPalStatusBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0048 (size: 0x8)
-    double ReGeneTime;                                                                // 0x0050 (size: 0x8)
-    double ReGeneRate;                                                                // 0x0058 (size: 0x8)
-    double Timer;                                                                     // 0x0060 (size: 0x8)
-    TArray<EPalStatusID> IgnoreStatusID;                                              // 0x0068 (size: 0x10)
-    FPalRaidBossSpawnInfo Boss Info;                                                  // 0x0078 (size: 0x60)
+    FPointerToUberGraphFrame UberGraphFrame;
+    double ReGeneTime;
+    double ReGeneRate;
+    double Timer;
+    TArray<EPalStatusID> IgnoreStatusID;
+    FPalRaidBossSpawnInfo Boss Info;
 
     void FindModeChangeVisualEffectType(EPalElementType Element, EPalVisualEffectID& VisualEffect);
     void FindRaidBossData(FPalRaidBossSpawnInfo& BossInfo);
@@ -18,6 +18,6 @@ class UBP_Status_RaidBossModeChange_C : public UPalStatusBase
     void SetupStatus();
     void CompEvent(class APalCharacter* InCharacter);
     void ExecuteUbergraph_BP_Status_RaidBossModeChange(int32 EntryPoint);
-}; // Size: 0xD8
+};
 
 #endif

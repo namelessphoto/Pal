@@ -5,6 +5,6 @@ class UBP_PalBaseCampWorkerEvent_TurnFoodBox_C : public UPalBaseCampWorkerEvent_
 {
 
     FText CreateNotifyMessageText(const FText& LocalizedFormatText, class APalCharacter* Character);
-}; // Size: 0x90
+};
 
 #endif

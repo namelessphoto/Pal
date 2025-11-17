@@ -6,6 +6,6 @@ class ABP_HomingMissile_CombatHeli_C : public ABP_HomingMissile_MissileLauncher_
 
     void GetExplosionClass(TSubclassOf<class ABP_ExplosionAttackBase_C>& ExplosionClass);
     void Find Target Actor(class APalCharacter*& PalCharacter);
-}; // Size: 0x464
+};
 
 #endif

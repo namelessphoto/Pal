@@ -3,15 +3,15 @@
 
 class ABP_SupplyDropActor_Meteor_C : public APalSupplyDropActor
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0308 (size: 0x8)
-    class UStaticMeshComponent* Sphere;                                               // 0x0310 (size: 0x8)
-    class UNiagaraComponent* Niagara;                                                 // 0x0318 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x0320 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UStaticMeshComponent* Sphere;
+    class UNiagaraComponent* Niagara;
+    class USceneComponent* DefaultSceneRoot;
 
     void ReceiveBeginPlay();
     void OnLanded_BP();
     void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);
     void ExecuteUbergraph_BP_SupplyDropActor_Meteor(int32 EntryPoint);
-}; // Size: 0x328
+};
 
 #endif

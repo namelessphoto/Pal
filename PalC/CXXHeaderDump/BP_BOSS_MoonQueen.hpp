@@ -3,6 +3,6 @@
 
 class ABP_BOSS_MoonQueen_C : public ABP_MoonQueen_C
 {
-}; // Size: 0xB98
+};
 
 #endif

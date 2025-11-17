@@ -3,48 +3,48 @@
 
 class UWBP_PalCharacterSlotBase_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UWBP_PalCharacterIconBase_C* myIconWidget;                                  // 0x0410 (size: 0x8)
-    class UPalIndividualCharacterSlot* TargetSlot;                                    // 0x0418 (size: 0x8)
-    FWBP_PalCharacterSlotBase_COnUpdateSlot OnUpdateSlot;                             // 0x0420 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWBP_PalCharacterIconBase_C* myIconWidget;
+    class UPalIndividualCharacterSlot* TargetSlot;
+    FWBP_PalCharacterSlotBase_COnUpdateSlot OnUpdateSlot;
     void OnUpdateSlot(class UPalIndividualCharacterSlot* TargetSlot);
-    FWBP_PalCharacterSlotBase_COnSetEmpty OnSetEmpty;                                 // 0x0430 (size: 0x10)
+    FWBP_PalCharacterSlotBase_COnSetEmpty OnSetEmpty;
     void OnSetEmpty();
-    FWBP_PalCharacterSlotBase_COnSetValidSlot OnSetValidSlot;                         // 0x0440 (size: 0x10)
+    FWBP_PalCharacterSlotBase_COnSetValidSlot OnSetValidSlot;
     void OnSetValidSlot();
-    FWBP_PalCharacterSlotBase_COnTargetCharacterUpdateHP OnTargetCharacterUpdateHP;   // 0x0450 (size: 0x10)
+    FWBP_PalCharacterSlotBase_COnTargetCharacterUpdateHP OnTargetCharacterUpdateHP;
     void OnTargetCharacterUpdateHP(int64 nowHP, int64 nowMaxHP);
-    FTimerHandle checkTargetConditionTimerHandle;                                     // 0x0460 (size: 0x8)
-    bool lastCombatState;                                                             // 0x0468 (size: 0x1)
-    FWBP_PalCharacterSlotBase_COnNotifyWorkDetail OnNotifyWorkDetail;                 // 0x0470 (size: 0x10)
+    FTimerHandle checkTargetConditionTimerHandle;
+    bool lastCombatState;
+    FWBP_PalCharacterSlotBase_COnNotifyWorkDetail OnNotifyWorkDetail;
     void OnNotifyWorkDetail(bool IsWorking);
-    FWBP_PalCharacterSlotBase_COnNotifyBattleModeChanged OnNotifyBattleModeChanged;   // 0x0480 (size: 0x10)
+    FWBP_PalCharacterSlotBase_COnNotifyBattleModeChanged OnNotifyBattleModeChanged;
     void OnNotifyBattleModeChanged(bool IsBattleMode);
-    FWBP_PalCharacterSlotBase_COnBeginTargetCharacterSleep OnBeginTargetCharacterSleep; // 0x0490 (size: 0x10)
+    FWBP_PalCharacterSlotBase_COnBeginTargetCharacterSleep OnBeginTargetCharacterSleep;
     void OnBeginTargetCharacterSleep();
-    FWBP_PalCharacterSlotBase_COnEndTargetCharacterSleep OnEndTargetCharacterSleep;   // 0x04A0 (size: 0x10)
+    FWBP_PalCharacterSlotBase_COnEndTargetCharacterSleep OnEndTargetCharacterSleep;
     void OnEndTargetCharacterSleep();
-    FWBP_PalCharacterSlotBase_COnBeginTargetCharacterEat OnBeginTargetCharacterEat;   // 0x04B0 (size: 0x10)
+    FWBP_PalCharacterSlotBase_COnBeginTargetCharacterEat OnBeginTargetCharacterEat;
     void OnBeginTargetCharacterEat();
-    FWBP_PalCharacterSlotBase_COnEndTargetCharacterEat OnEndTargetCharacterEat;       // 0x04C0 (size: 0x10)
+    FWBP_PalCharacterSlotBase_COnEndTargetCharacterEat OnEndTargetCharacterEat;
     void OnEndTargetCharacterEat();
-    FPalInstanceID SyncId;                                                            // 0x04D0 (size: 0x30)
-    FWBP_PalCharacterSlotBase_COnSetRarity OnSetRarity;                               // 0x0500 (size: 0x10)
+    FPalInstanceID SyncId;
+    FWBP_PalCharacterSlotBase_COnSetRarity OnSetRarity;
     void OnSetRarity(bool IsBoss, bool IsRare);
-    FWBP_PalCharacterSlotBase_COnUpdateReviveTimer OnUpdateReviveTimer;               // 0x0510 (size: 0x10)
+    FWBP_PalCharacterSlotBase_COnUpdateReviveTimer OnUpdateReviveTimer;
     void OnUpdateReviveTimer(double NowTimer);
-    FWBP_PalCharacterSlotBase_COnUpdateWorkId OnUpdateWorkId;                         // 0x0520 (size: 0x10)
+    FWBP_PalCharacterSlotBase_COnUpdateWorkId OnUpdateWorkId;
     void OnUpdateWorkId(FGuid WorkId, bool IsFixedAssign);
-    FWBP_PalCharacterSlotBase_COnFavoriteUpdated OnFavoriteUpdated;                   // 0x0530 (size: 0x10)
+    FWBP_PalCharacterSlotBase_COnFavoriteUpdated OnFavoriteUpdated;
     void OnFavoriteUpdated(int32 NewIndex);
-    bool WaitingSync;                                                                 // 0x0540 (size: 0x1)
-    FWBP_PalCharacterSlotBase_COnChangedAssignToExpedition OnChangedAssignToExpedition; // 0x0548 (size: 0x10)
+    bool WaitingSync;
+    FWBP_PalCharacterSlotBase_COnChangedAssignToExpedition OnChangedAssignToExpedition;
     void OnChangedAssignToExpedition(bool bIsAssigned);
-    FWBP_PalCharacterSlotBase_COnAddStatus OnAddStatus;                               // 0x0558 (size: 0x10)
+    FWBP_PalCharacterSlotBase_COnAddStatus OnAddStatus;
     void OnAddStatus(class UPalStatusComponent* StatusComponent, EPalStatusID statusID, class UPalStatusBase* StatusBase);
-    FWBP_PalCharacterSlotBase_COnRemoveStatus OnRemoveStatus;                         // 0x0568 (size: 0x10)
+    FWBP_PalCharacterSlotBase_COnRemoveStatus OnRemoveStatus;
     void OnRemoveStatus(class UPalStatusComponent* StatusComponent, EPalStatusID statusID);
-    FPalIndividualCharacterSaveParameter TargetSaveParam;                             // 0x0578 (size: 0x328)
+    FPalIndividualCharacterSaveParameter TargetSaveParam;
 
     void SetupBySaveParameter(FPalIndividualCharacterSaveParameter SaveParam);
     void OnRemovStatus_Internal(const class UPalStatusComponent* StatusComponent, EPalStatusID statusID);
@@ -92,6 +92,6 @@ class UWBP_PalCharacterSlotBase_C : public UPalUserWidget
     void OnSetValidSlot__DelegateSignature();
     void OnSetEmpty__DelegateSignature();
     void OnUpdateSlot__DelegateSignature(class UPalIndividualCharacterSlot* TargetSlot);
-}; // Size: 0x8A0
+};
 
 #endif

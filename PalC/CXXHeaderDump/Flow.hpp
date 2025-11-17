@@ -5,126 +5,126 @@
 
 struct FConnectedPin
 {
-    FGuid NodeGuid;                                                                   // 0x0000 (size: 0x10)
-    FName PinName;                                                                    // 0x0010 (size: 0x8)
+    FGuid NodeGuid;
+    FName PinName;
 
-}; // Size: 0x18
+};
 
 struct FFlowAssetSaveData
 {
-    FString WorldName;                                                                // 0x0000 (size: 0x10)
-    FString InstanceName;                                                             // 0x0010 (size: 0x10)
-    TArray<uint8> AssetData;                                                          // 0x0020 (size: 0x10)
-    TArray<FFlowNodeSaveData> NodeRecords;                                            // 0x0030 (size: 0x10)
+    FString WorldName;
+    FString InstanceName;
+    TArray<uint8> AssetData;
+    TArray<FFlowNodeSaveData> NodeRecords;
 
-}; // Size: 0x40
+};
 
 struct FFlowComponentSaveData
 {
-    FString WorldName;                                                                // 0x0000 (size: 0x10)
-    FString ActorInstanceName;                                                        // 0x0010 (size: 0x10)
-    TArray<uint8> ComponentData;                                                      // 0x0020 (size: 0x10)
+    FString WorldName;
+    FString ActorInstanceName;
+    TArray<uint8> ComponentData;
 
-}; // Size: 0x30
+};
 
 struct FFlowInputPinHandle : public FFlowPinHandle
 {
-}; // Size: 0x8
+};
 
 struct FFlowNodeSaveData
 {
-    FGuid NodeGuid;                                                                   // 0x0000 (size: 0x10)
-    TArray<uint8> NodeData;                                                           // 0x0010 (size: 0x10)
+    FGuid NodeGuid;
+    TArray<uint8> NodeData;
 
-}; // Size: 0x20
+};
 
 struct FFlowOutputPinHandle : public FFlowPinHandle
 {
-}; // Size: 0x8
+};
 
 struct FFlowOwnerFunctionRef
 {
-    FName FunctionName;                                                               // 0x0000 (size: 0x8)
-    class UFunction* Function;                                                        // 0x0008 (size: 0x8)
+    FName FunctionName;
+    class UFunction* Function;
 
-}; // Size: 0x10
+};
 
 struct FFlowPin
 {
-    FName PinName;                                                                    // 0x0000 (size: 0x8)
-    FText PinFriendlyName;                                                            // 0x0008 (size: 0x18)
-    FString PinToolTip;                                                               // 0x0020 (size: 0x10)
+    FName PinName;
+    FText PinFriendlyName;
+    FString PinToolTip;
 
-}; // Size: 0x30
+};
 
 struct FFlowPinHandle
 {
-    FName PinName;                                                                    // 0x0000 (size: 0x8)
+    FName PinName;
 
-}; // Size: 0x8
+};
 
 struct FFlowPinTrait
 {
-    uint8 bTraitAllowed;                                                              // 0x0000 (size: 0x1)
+    uint8 bTraitAllowed;
 
-}; // Size: 0x1
+};
 
 struct FMovieSceneFlowRepeaterTemplate : public FMovieSceneFlowTemplateBase
 {
-    FString EventName;                                                                // 0x0028 (size: 0x10)
+    FString EventName;
 
-}; // Size: 0x38
+};
 
 struct FMovieSceneFlowTemplateBase : public FMovieSceneEvalTemplate
 {
-    uint8 bFireEventsWhenForwards;                                                    // 0x0020 (size: 0x1)
-    uint8 bFireEventsWhenBackwards;                                                   // 0x0020 (size: 0x1)
+    uint8 bFireEventsWhenForwards;
+    uint8 bFireEventsWhenBackwards;
 
-}; // Size: 0x28
+};
 
 struct FMovieSceneFlowTriggerTemplate : public FMovieSceneFlowTemplateBase
 {
-    TArray<FFrameNumber> EventTimes;                                                  // 0x0028 (size: 0x10)
-    TArray<FString> EventNames;                                                       // 0x0038 (size: 0x10)
+    TArray<FFrameNumber> EventTimes;
+    TArray<FString> EventNames;
 
-}; // Size: 0x48
+};
 
 struct FNotifyTagReplication
 {
-    FGameplayTag ActorTag;                                                            // 0x0000 (size: 0x8)
-    FGameplayTag NotifyTag;                                                           // 0x0008 (size: 0x8)
+    FGameplayTag ActorTag;
+    FGameplayTag NotifyTag;
 
-}; // Size: 0x10
+};
 
 class AFlowLevelSequenceActor : public ALevelSequenceActor
 {
-    class ULevelSequence* ReplicatedLevelSequenceAsset;                               // 0x0308 (size: 0x8)
+    class ULevelSequence* ReplicatedLevelSequenceAsset;
 
     void OnRep_ReplicatedLevelSequenceAsset();
-}; // Size: 0x310
+};
 
 class AFlowWorldSettings : public AWorldSettings
 {
-    class UFlowComponent* FlowComponent;                                              // 0x04B8 (size: 0x8)
+    class UFlowComponent* FlowComponent;
 
-}; // Size: 0x4C0
+};
 
 class IFlowOwnerInterface : public IInterface
 {
-}; // Size: 0x28
+};
 
 class UFlowAsset : public UObject
 {
-    FGuid AssetGuid;                                                                  // 0x0028 (size: 0x10)
-    bool bWorldBound;                                                                 // 0x0038 (size: 0x1)
-    TMap<class FGuid, class UFlowNode*> Nodes;                                        // 0x0088 (size: 0x50)
-    TArray<class UFlowAsset*> ActiveInstances;                                        // 0x00D8 (size: 0x10)
-    class UFlowAsset* TemplateAsset;                                                  // 0x00E8 (size: 0x8)
-    TSet<UFlowNode_CustomInput*> CustomInputNodes;                                    // 0x0150 (size: 0x50)
-    TSet<UFlowNode*> PreloadedNodes;                                                  // 0x01A0 (size: 0x50)
-    TArray<class UFlowNode*> ActiveNodes;                                             // 0x01F0 (size: 0x10)
-    TArray<class UFlowNode*> RecordedNodes;                                           // 0x0200 (size: 0x10)
-    UClass* ExpectedOwnerClass;                                                       // 0x0218 (size: 0x8)
+    FGuid AssetGuid;
+    bool bWorldBound;
+    TMap<class FGuid, class UFlowNode*> Nodes;
+    TArray<class UFlowAsset*> ActiveInstances;
+    class UFlowAsset* TemplateAsset;
+    TSet<UFlowNode_CustomInput*> CustomInputNodes;
+    TSet<UFlowNode*> PreloadedNodes;
+    TArray<class UFlowNode*> ActiveNodes;
+    TArray<class UFlowNode*> RecordedNodes;
+    UClass* ExpectedOwnerClass;
 
     class AActor* TryFindActorOwner();
     FFlowAssetSaveData SaveInstance(TArray<FFlowAssetSaveData>& SavedFlowInstances);
@@ -138,27 +138,27 @@ class UFlowAsset : public UObject
     TArray<class UFlowNode*> GetNodesInExecutionOrder(class UFlowNode* FirstIteratedNode, const TSubclassOf<class UFlowNode> FlowNodeClass);
     class UFlowNode* GetDefaultEntryNode();
     TArray<class UFlowNode*> GetActiveNodes();
-}; // Size: 0x220
+};
 
 class UFlowComponent : public UActorComponent
 {
-    FGameplayTagContainer IdentityTags;                                               // 0x00A8 (size: 0x20)
-    FGameplayTagContainer AddedIdentityTags;                                          // 0x00C8 (size: 0x20)
-    FGameplayTagContainer RemovedIdentityTags;                                        // 0x00E8 (size: 0x20)
-    FFlowComponentOnIdentityTagsAdded OnIdentityTagsAdded;                            // 0x0108 (size: 0x10)
+    FGameplayTagContainer IdentityTags;
+    FGameplayTagContainer AddedIdentityTags;
+    FGameplayTagContainer RemovedIdentityTags;
+    FFlowComponentOnIdentityTagsAdded OnIdentityTagsAdded;
     void FlowComponentTagsReplicated(class UFlowComponent* FlowComponent, const FGameplayTagContainer& CurrentTags);
-    FFlowComponentOnIdentityTagsRemoved OnIdentityTagsRemoved;                        // 0x0118 (size: 0x10)
+    FFlowComponentOnIdentityTagsRemoved OnIdentityTagsRemoved;
     void FlowComponentTagsReplicated(class UFlowComponent* FlowComponent, const FGameplayTagContainer& CurrentTags);
-    FGameplayTagContainer RecentlySentNotifyTags;                                     // 0x0128 (size: 0x20)
-    FGameplayTagContainer NotifyTagsFromGraph;                                        // 0x0160 (size: 0x20)
-    FFlowComponentReceiveNotify ReceiveNotify;                                        // 0x0180 (size: 0x10)
+    FGameplayTagContainer RecentlySentNotifyTags;
+    FGameplayTagContainer NotifyTagsFromGraph;
+    FFlowComponentReceiveNotify ReceiveNotify;
     void FlowComponentDynamicNotify(class UFlowComponent* FlowComponent, const FGameplayTag& NotifyTag);
-    TArray<FNotifyTagReplication> NotifyTagsFromAnotherComponent;                     // 0x0190 (size: 0x10)
-    class UFlowAsset* RootFlow;                                                       // 0x01A0 (size: 0x8)
-    bool bAutoStartRootFlow;                                                          // 0x01A8 (size: 0x1)
-    EFlowNetMode RootFlowMode;                                                        // 0x01A9 (size: 0x1)
-    bool bAllowMultipleInstances;                                                     // 0x01AA (size: 0x1)
-    FString SavedAssetInstanceName;                                                   // 0x01B0 (size: 0x10)
+    TArray<FNotifyTagReplication> NotifyTagsFromAnotherComponent;
+    class UFlowAsset* RootFlow;
+    bool bAutoStartRootFlow;
+    EFlowNetMode RootFlowMode;
+    bool bAllowMultipleInstances;
+    FString SavedAssetInstanceName;
 
     void StartRootFlow();
     void SaveRootFlow(TArray<FFlowAssetSaveData>& SavedFlowInstances);
@@ -184,24 +184,24 @@ class UFlowComponent : public UActorComponent
     void BP_OnTriggerRootFlowOutputEvent(class UFlowAsset* RootFlowInstance, const FName& EventName);
     void AddIdentityTags(FGameplayTagContainer Tags, const EFlowNetMode NetMode);
     void AddIdentityTag(const FGameplayTag Tag, const EFlowNetMode NetMode);
-}; // Size: 0x1C0
+};
 
 class UFlowLevelSequencePlayer : public ULevelSequencePlayer
 {
-    class UFlowNode* FlowEventReceiver;                                               // 0x05B8 (size: 0x8)
+    class UFlowNode* FlowEventReceiver;
 
-}; // Size: 0x5C0
+};
 
 class UFlowNode : public UObject
 {
-    class UEdGraphNode* GraphNode;                                                    // 0x0030 (size: 0x8)
-    FGuid NodeGuid;                                                                   // 0x0038 (size: 0x10)
-    TArray<EFlowSignalMode> AllowedSignalModes;                                       // 0x0048 (size: 0x10)
-    EFlowSignalMode SignalMode;                                                       // 0x0058 (size: 0x1)
-    TArray<FFlowPin> InputPins;                                                       // 0x0060 (size: 0x10)
-    TArray<FFlowPin> OutputPins;                                                      // 0x0070 (size: 0x10)
-    TMap<class FName, class FConnectedPin> Connections;                               // 0x0080 (size: 0x50)
-    EFlowNodeState ActivationState;                                                   // 0x00D1 (size: 0x1)
+    class UEdGraphNode* GraphNode;
+    FGuid NodeGuid;
+    TArray<EFlowSignalMode> AllowedSignalModes;
+    EFlowSignalMode SignalMode;
+    TArray<FFlowPin> InputPins;
+    TArray<FFlowPin> OutputPins;
+    TMap<class FName, class FConnectedPin> Connections;
+    EFlowNodeState ActivationState;
 
     void TriggerOutputPin(const FFlowOutputPinHandle Pin, const bool bFinish, const EFlowPinActivationType ActivationType);
     void TriggerOutput(const FName& PinName, const bool bFinish, const EFlowPinActivationType ActivationType);
@@ -245,221 +245,221 @@ class UFlowNode : public UObject
     TSet<UFlowNode*> GetConnectedNodes();
     FString GetClassDescription(const UClass* Class);
     void Finish();
-}; // Size: 0xD8
+};
 
 class UFlowNodeBlueprint : public UBlueprint
 {
-}; // Size: 0xA8
+};
 
 class UFlowNode_CallOwnerFunction : public UFlowNode
 {
-    FFlowOwnerFunctionRef FunctionRef;                                                // 0x00D8 (size: 0x10)
-    class UFlowOwnerFunctionParams* Params;                                           // 0x00E8 (size: 0x8)
+    FFlowOwnerFunctionRef FunctionRef;
+    class UFlowOwnerFunctionParams* Params;
 
-}; // Size: 0xF0
+};
 
 class UFlowNode_Checkpoint : public UFlowNode
 {
-}; // Size: 0xD8
+};
 
 class UFlowNode_ComponentObserver : public UFlowNode
 {
-    FGameplayTagContainer IdentityTags;                                               // 0x00D8 (size: 0x20)
-    EFlowTagContainerMatchType IdentityMatchType;                                     // 0x00F8 (size: 0x1)
-    int32 SuccessLimit;                                                               // 0x00FC (size: 0x4)
-    int32 SuccessCount;                                                               // 0x0100 (size: 0x4)
+    FGameplayTagContainer IdentityTags;
+    EFlowTagContainerMatchType IdentityMatchType;
+    int32 SuccessLimit;
+    int32 SuccessCount;
 
     void OnEventReceived();
     void OnComponentUnregistered(class UFlowComponent* Component);
     void OnComponentTagRemoved(class UFlowComponent* Component, const FGameplayTagContainer& RemovedTags);
     void OnComponentTagAdded(class UFlowComponent* Component, const FGameplayTagContainer& AddedTags);
     void OnComponentRegistered(class UFlowComponent* Component);
-}; // Size: 0x158
+};
 
 class UFlowNode_Counter : public UFlowNode
 {
-    int32 Goal;                                                                       // 0x00D8 (size: 0x4)
-    int32 CurrentSum;                                                                 // 0x00DC (size: 0x4)
+    int32 Goal;
+    int32 CurrentSum;
 
-}; // Size: 0xE0
+};
 
 class UFlowNode_CustomEventBase : public UFlowNode
 {
-    FName EventName;                                                                  // 0x00D8 (size: 0x8)
+    FName EventName;
 
-}; // Size: 0xE0
+};
 
 class UFlowNode_CustomInput : public UFlowNode_CustomEventBase
 {
-}; // Size: 0xE0
+};
 
 class UFlowNode_CustomOutput : public UFlowNode_CustomEventBase
 {
-}; // Size: 0xE0
+};
 
 class UFlowNode_ExecutionMultiGate : public UFlowNode
 {
-    bool bRandom;                                                                     // 0x00D8 (size: 0x1)
-    bool bLoop;                                                                       // 0x00D9 (size: 0x1)
-    int32 StartIndex;                                                                 // 0x00DC (size: 0x4)
-    int32 NextOutput;                                                                 // 0x00E0 (size: 0x4)
-    TArray<bool> Completed;                                                           // 0x00E8 (size: 0x10)
+    bool bRandom;
+    bool bLoop;
+    int32 StartIndex;
+    int32 NextOutput;
+    TArray<bool> Completed;
 
-}; // Size: 0xF8
+};
 
 class UFlowNode_ExecutionSequence : public UFlowNode
 {
-    bool bSavePinExecutionState;                                                      // 0x00D8 (size: 0x1)
-    TSet<FGuid> ExecutedConnections;                                                  // 0x00E0 (size: 0x50)
+    bool bSavePinExecutionState;
+    TSet<FGuid> ExecutedConnections;
 
-}; // Size: 0x130
+};
 
 class UFlowNode_Finish : public UFlowNode
 {
-}; // Size: 0xD8
+};
 
 class UFlowNode_Log : public UFlowNode
 {
-    FString Message;                                                                  // 0x00D8 (size: 0x10)
-    EFlowLogVerbosity Verbosity;                                                      // 0x00E8 (size: 0x1)
-    bool bPrintToScreen;                                                              // 0x00E9 (size: 0x1)
-    float Duration;                                                                   // 0x00EC (size: 0x4)
-    FColor TextColor;                                                                 // 0x00F0 (size: 0x4)
+    FString Message;
+    EFlowLogVerbosity Verbosity;
+    bool bPrintToScreen;
+    float Duration;
+    FColor TextColor;
 
-}; // Size: 0xF8
+};
 
 class UFlowNode_LogicalAND : public UFlowNode
 {
-    TSet<FName> ExecutedInputNames;                                                   // 0x00D8 (size: 0x50)
+    TSet<FName> ExecutedInputNames;
 
-}; // Size: 0x128
+};
 
 class UFlowNode_LogicalOR : public UFlowNode
 {
-    bool bEnabled;                                                                    // 0x00D8 (size: 0x1)
-    int32 ExecutionLimit;                                                             // 0x00DC (size: 0x4)
-    int32 ExecutionCount;                                                             // 0x00E0 (size: 0x4)
+    bool bEnabled;
+    int32 ExecutionLimit;
+    int32 ExecutionCount;
 
-}; // Size: 0xE8
+};
 
 class UFlowNode_NotifyActor : public UFlowNode
 {
-    FGameplayTagContainer IdentityTags;                                               // 0x00D8 (size: 0x20)
-    EGameplayContainerMatchType MatchType;                                            // 0x00F8 (size: 0x1)
-    bool bExactMatch;                                                                 // 0x00F9 (size: 0x1)
-    FGameplayTagContainer NotifyTags;                                                 // 0x0100 (size: 0x20)
-    EFlowNetMode NetMode;                                                             // 0x0120 (size: 0x1)
+    FGameplayTagContainer IdentityTags;
+    EGameplayContainerMatchType MatchType;
+    bool bExactMatch;
+    FGameplayTagContainer NotifyTags;
+    EFlowNetMode NetMode;
 
-}; // Size: 0x128
+};
 
 class UFlowNode_OnActorRegistered : public UFlowNode_ComponentObserver
 {
-}; // Size: 0x158
+};
 
 class UFlowNode_OnActorUnregistered : public UFlowNode_ComponentObserver
 {
-}; // Size: 0x158
+};
 
 class UFlowNode_OnNotifyFromActor : public UFlowNode_ComponentObserver
 {
-    FGameplayTagContainer NotifyTags;                                                 // 0x0158 (size: 0x20)
-    bool bRetroactive;                                                                // 0x0178 (size: 0x1)
+    FGameplayTagContainer NotifyTags;
+    bool bRetroactive;
 
-}; // Size: 0x180
+};
 
 class UFlowNode_PlayLevelSequence : public UFlowNode
 {
-    TSoftObjectPtr<ULevelSequence> Sequence;                                          // 0x00D8 (size: 0x30)
-    FMovieSceneSequencePlaybackSettings PlaybackSettings;                             // 0x0108 (size: 0x20)
-    bool bPlayReverse;                                                                // 0x0128 (size: 0x1)
-    FLevelSequenceCameraSettings CameraSettings;                                      // 0x0129 (size: 0x2)
-    bool bUseGraphOwnerAsTransformOrigin;                                             // 0x012B (size: 0x1)
-    bool bReplicates;                                                                 // 0x012C (size: 0x1)
-    bool bAlwaysRelevant;                                                             // 0x012D (size: 0x1)
-    bool bApplyOwnerTimeDilation;                                                     // 0x012E (size: 0x1)
-    class ULevelSequence* LoadedSequence;                                             // 0x0130 (size: 0x8)
-    class UFlowLevelSequencePlayer* SequencePlayer;                                   // 0x0138 (size: 0x8)
-    float StartTime;                                                                  // 0x0144 (size: 0x4)
-    float ElapsedTime;                                                                // 0x0148 (size: 0x4)
-    float TimeDilation;                                                               // 0x014C (size: 0x4)
+    TSoftObjectPtr<ULevelSequence> Sequence;
+    FMovieSceneSequencePlaybackSettings PlaybackSettings;
+    bool bPlayReverse;
+    FLevelSequenceCameraSettings CameraSettings;
+    bool bUseGraphOwnerAsTransformOrigin;
+    bool bReplicates;
+    bool bAlwaysRelevant;
+    bool bApplyOwnerTimeDilation;
+    class ULevelSequence* LoadedSequence;
+    class UFlowLevelSequencePlayer* SequencePlayer;
+    float StartTime;
+    float ElapsedTime;
+    float TimeDilation;
 
     void OnPlaybackFinished();
-}; // Size: 0x238
+};
 
 class UFlowNode_Reroute : public UFlowNode
 {
-}; // Size: 0xD8
+};
 
 class UFlowNode_Start : public UFlowNode
 {
-}; // Size: 0xD8
+};
 
 class UFlowNode_SubGraph : public UFlowNode
 {
-    TSoftObjectPtr<UFlowAsset> Asset;                                                 // 0x00D8 (size: 0x30)
-    bool bCanInstanceIdenticalAsset;                                                  // 0x0108 (size: 0x1)
-    FString SavedAssetInstanceName;                                                   // 0x0110 (size: 0x10)
+    TSoftObjectPtr<UFlowAsset> Asset;
+    bool bCanInstanceIdenticalAsset;
+    FString SavedAssetInstanceName;
 
-}; // Size: 0x120
+};
 
 class UFlowNode_Timer : public UFlowNode
 {
-    float CompletionTime;                                                             // 0x00D8 (size: 0x4)
-    float StepTime;                                                                   // 0x00DC (size: 0x4)
-    float SumOfSteps;                                                                 // 0x00F0 (size: 0x4)
-    float RemainingCompletionTime;                                                    // 0x00F4 (size: 0x4)
-    float RemainingStepTime;                                                          // 0x00F8 (size: 0x4)
+    float CompletionTime;
+    float StepTime;
+    float SumOfSteps;
+    float RemainingCompletionTime;
+    float RemainingStepTime;
 
     void OnStep();
     void OnCompletion();
-}; // Size: 0x100
+};
 
 class UFlowOwnerFunctionParams : public UObject
 {
-    class UFlowNode_CallOwnerFunction* SourceNode;                                    // 0x0028 (size: 0x8)
-    FName ExecutedInputPinName;                                                       // 0x0030 (size: 0x8)
+    class UFlowNode_CallOwnerFunction* SourceNode;
+    FName ExecutedInputPinName;
 
     bool ShouldFinishForOutputName(const FName& OutputName);
     void BP_PreExecute();
     void BP_PostExecute();
     TArray<FName> BP_GetOutputNames();
     TArray<FName> BP_GetInputNames();
-}; // Size: 0x38
+};
 
 class UFlowSaveGame : public USaveGame
 {
-    FString SaveSlotName;                                                             // 0x0028 (size: 0x10)
-    TArray<FFlowComponentSaveData> FlowComponents;                                    // 0x0038 (size: 0x10)
-    TArray<FFlowAssetSaveData> FlowInstances;                                         // 0x0048 (size: 0x10)
+    FString SaveSlotName;
+    TArray<FFlowComponentSaveData> FlowComponents;
+    TArray<FFlowAssetSaveData> FlowInstances;
 
-}; // Size: 0x58
+};
 
 class UFlowSettings : public UDeveloperSettings
 {
-    bool bCreateFlowSubsystemOnClients;                                               // 0x0038 (size: 0x1)
-    bool bWarnAboutMissingIdentityTags;                                               // 0x0039 (size: 0x1)
-    bool bLogOnSignalDisabled;                                                        // 0x003A (size: 0x1)
-    bool bLogOnSignalPassthrough;                                                     // 0x003B (size: 0x1)
-    bool bUseAdaptiveNodeTitles;                                                      // 0x003C (size: 0x1)
-    FSoftClassPath DefaultExpectedOwnerClass;                                         // 0x0040 (size: 0x20)
+    bool bCreateFlowSubsystemOnClients;
+    bool bWarnAboutMissingIdentityTags;
+    bool bLogOnSignalDisabled;
+    bool bLogOnSignalPassthrough;
+    bool bUseAdaptiveNodeTitles;
+    FSoftClassPath DefaultExpectedOwnerClass;
 
-}; // Size: 0x60
+};
 
 class UFlowSubsystem : public UGameInstanceSubsystem
 {
-    TArray<class UFlowAsset*> InstancedTemplates;                                     // 0x0030 (size: 0x10)
-    TMap<class UFlowAsset*, class TWeakObjectPtr<UObject>> RootInstances;             // 0x0040 (size: 0x50)
-    TMap<class UFlowNode_SubGraph*, class UFlowAsset*> InstancedSubFlows;             // 0x0090 (size: 0x50)
-    class UFlowSaveGame* LoadedSaveGame;                                              // 0x00E0 (size: 0x8)
-    FFlowSubsystemOnSaveGame OnSaveGame;                                              // 0x00E8 (size: 0x10)
+    TArray<class UFlowAsset*> InstancedTemplates;
+    TMap<class UFlowAsset*, class TWeakObjectPtr<UObject>> RootInstances;
+    TMap<class UFlowNode_SubGraph*, class UFlowAsset*> InstancedSubFlows;
+    class UFlowSaveGame* LoadedSaveGame;
+    FFlowSubsystemOnSaveGame OnSaveGame;
     void SimpleFlowEvent();
-    FFlowSubsystemOnComponentRegistered OnComponentRegistered;                        // 0x0148 (size: 0x10)
+    FFlowSubsystemOnComponentRegistered OnComponentRegistered;
     void SimpleFlowComponentEvent(class UFlowComponent* Component);
-    FFlowSubsystemOnComponentTagAdded OnComponentTagAdded;                            // 0x0158 (size: 0x10)
+    FFlowSubsystemOnComponentTagAdded OnComponentTagAdded;
     void TaggedFlowComponentEvent(class UFlowComponent* Component, const FGameplayTagContainer& Tags);
-    FFlowSubsystemOnComponentUnregistered OnComponentUnregistered;                    // 0x0168 (size: 0x10)
+    FFlowSubsystemOnComponentUnregistered OnComponentUnregistered;
     void SimpleFlowComponentEvent(class UFlowComponent* Component);
-    FFlowSubsystemOnComponentTagRemoved OnComponentTagRemoved;                        // 0x0178 (size: 0x10)
+    FFlowSubsystemOnComponentTagRemoved OnComponentTagRemoved;
     void TaggedFlowComponentEvent(class UFlowComponent* Component, const FGameplayTagContainer& Tags);
 
     void StartRootFlow(class UObject* Owner, class UFlowAsset* FlowAsset, const bool bAllowMultipleInstances);
@@ -481,31 +481,31 @@ class UFlowSubsystem : public UGameInstanceSubsystem
     void FinishRootFlow(class UObject* Owner, class UFlowAsset* TemplateAsset, const EFlowFinishPolicy FinishPolicy);
     void FinishAllRootFlows(class UObject* Owner, const EFlowFinishPolicy FinishPolicy);
     void AbortActiveFlows();
-}; // Size: 0x188
+};
 
 class UMovieSceneFlowRepeaterSection : public UMovieSceneFlowSectionBase
 {
-    FString EventName;                                                                // 0x00F0 (size: 0x10)
+    FString EventName;
 
-}; // Size: 0x100
+};
 
 class UMovieSceneFlowSectionBase : public UMovieSceneSection
 {
-}; // Size: 0xF0
+};
 
 class UMovieSceneFlowTrack : public UMovieSceneNameableTrack
 {
-    uint8 bFireEventsWhenForwards;                                                    // 0x00A0 (size: 0x1)
-    uint8 bFireEventsWhenBackwards;                                                   // 0x00A0 (size: 0x1)
-    EFireEventsAtPosition EventPosition;                                              // 0x00A4 (size: 0x1)
-    TArray<class UMovieSceneSection*> Sections;                                       // 0x00A8 (size: 0x10)
+    uint8 bFireEventsWhenForwards;
+    uint8 bFireEventsWhenBackwards;
+    EFireEventsAtPosition EventPosition;
+    TArray<class UMovieSceneSection*> Sections;
 
-}; // Size: 0xB8
+};
 
 class UMovieSceneFlowTriggerSection : public UMovieSceneFlowSectionBase
 {
-    FMovieSceneStringChannel StringChannel;                                           // 0x00F0 (size: 0x110)
+    FMovieSceneStringChannel StringChannel;
 
-}; // Size: 0x200
+};
 
 #endif

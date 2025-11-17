@@ -3,15 +3,15 @@
 
 class UWBP_BaseCampWorkFixedAssignManage_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UWidgetAnimation* Default_In;                                               // 0x0438 (size: 0x8)
-    class UWBP_AssignBoard_C* WBP_AssignBoard;                                        // 0x0440 (size: 0x8)
-    TSoftObjectPtr<UWBP_AssignBoard_WorkListBase_C> LastSelectedWorkListContentWidget; // 0x0448 (size: 0x30)
-    TSoftObjectPtr<UWBP_AssignBoard_WorkListBase_C> LastHoveredWorkListContentWidget; // 0x0478 (size: 0x30)
-    EPalUIFixedAssignManageListSortType NowSortType;                                  // 0x04A8 (size: 0x1)
-    TArray<EPalUIFixedAssignManageListSortType> SortTypeOrder;                        // 0x04B0 (size: 0x10)
-    TMap<class EPalUIFixedAssignManageListSortType, class FDataTableRowHandle> SortTypeNameMap; // 0x04C0 (size: 0x50)
-    FPalDataTableRowName_UIInputAction SortInputAction;                               // 0x0510 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Default_In;
+    class UWBP_AssignBoard_C* WBP_AssignBoard;
+    TSoftObjectPtr<UWBP_AssignBoard_WorkListBase_C> LastSelectedWorkListContentWidget;
+    TSoftObjectPtr<UWBP_AssignBoard_WorkListBase_C> LastHoveredWorkListContentWidget;
+    EPalUIFixedAssignManageListSortType NowSortType;
+    TArray<EPalUIFixedAssignManageListSortType> SortTypeOrder;
+    TMap<class EPalUIFixedAssignManageListSortType, class FDataTableRowHandle> SortTypeNameMap;
+    FPalDataTableRowName_UIInputAction SortInputAction;
 
     void UpdateWidgetList(bool ForceReferesh);
     void OnTriggerSort();
@@ -35,6 +35,6 @@ class UWBP_BaseCampWorkFixedAssignManage_C : public UPalUserWidgetOverlayUI
     void BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_6_OnClickedSortButton__DelegateSignature();
     void BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_5_OnClickedCloseButton__DelegateSignature();
     void ExecuteUbergraph_WBP_BaseCampWorkFixedAssignManage(int32 EntryPoint);
-}; // Size: 0x518
+};
 
 #endif

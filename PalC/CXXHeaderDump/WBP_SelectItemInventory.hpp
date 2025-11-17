@@ -3,13 +3,13 @@
 
 class UWBP_SelectItemInventory_C : public UPalUISelectItemInventoryBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UWBP_Common_Inventory_C* WBP_Common_Inventory;                              // 0x0438 (size: 0x8)
-    class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x0440 (size: 0x8)
-    bool isRequireSelectNum;                                                          // 0x0448 (size: 0x1)
-    class UWBP_PalItemSlotButtonBase_C* selectedButton;                               // 0x0450 (size: 0x8)
-    class UBP_PalInventoryModel_C* InventoryModel;                                    // 0x0458 (size: 0x8)
-    FDataTableRowHandle BgMsgID;                                                      // 0x0460 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWBP_Common_Inventory_C* WBP_Common_Inventory;
+    class UWBP_Menu_btn_C* WBP_Menu_btn;
+    bool isRequireSelectNum;
+    class UWBP_PalItemSlotButtonBase_C* selectedButton;
+    class UBP_PalInventoryModel_C* InventoryModel;
+    FDataTableRowHandle BgMsgID;
 
     class UWidget* BP_GetDesiredFocusTarget();
     void OnFocusedSlot(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
@@ -22,6 +22,6 @@ class UWBP_SelectItemInventory_C : public UPalUISelectItemInventoryBase
     void BndEvt__WBP_SelectItemInventory_WBP_Common_Inventory_K2Node_ComponentBoundEvent_1_OnLeftClickSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Slot, EPalItemSlotPressType PressType);
     void Destruct();
     void ExecuteUbergraph_WBP_SelectItemInventory(int32 EntryPoint);
-}; // Size: 0x470
+};
 
 #endif

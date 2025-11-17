@@ -3,9 +3,9 @@
 
 class UBP_DownWidgetParameter_C : public UPalHUDDispatchParameterBase
 {
-    class UBP_Status_Dying_C* DysingStatus;                                           // 0x0038 (size: 0x8)
-    bool IsPartnerSkillRevive;                                                        // 0x0040 (size: 0x1)
+    class UBP_Status_Dying_C* DysingStatus;
+    bool IsPartnerSkillRevive;
 
-}; // Size: 0x41
+};
 
 #endif

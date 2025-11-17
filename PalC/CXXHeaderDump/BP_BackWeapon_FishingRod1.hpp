@@ -3,8 +3,8 @@
 
 class ABP_BackWeapon_FishingRod1_C : public ABP_BackWeaponBase_C
 {
-    class UPalSkeletalMeshComponent* PalSkeletalMesh;                                 // 0x0328 (size: 0x8)
+    class UPalSkeletalMeshComponent* PalSkeletalMesh;
 
-}; // Size: 0x330
+};
 
 #endif

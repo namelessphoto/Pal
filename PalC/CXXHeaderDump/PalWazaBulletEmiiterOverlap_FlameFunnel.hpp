@@ -5,6 +5,6 @@ class UPalWazaBulletEmiiterOverlap_FlameFunnel_C : public UPalWazaBulletEmiiterO
 {
 
     void GetBulletEmiiterOverlapSphere(TArray<FPalWazaBulletEmiiterOverlapSphere>& Spheres);
-}; // Size: 0x28
+};
 
 #endif

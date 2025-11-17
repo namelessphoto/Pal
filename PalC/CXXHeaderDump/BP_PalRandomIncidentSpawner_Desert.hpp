@@ -3,6 +3,6 @@
 
 class ABP_PalRandomIncidentSpawner_Desert_C : public ABP_PalRandomIncidentSpawnerTemplate_C
 {
-}; // Size: 0x451
+};
 
 #endif

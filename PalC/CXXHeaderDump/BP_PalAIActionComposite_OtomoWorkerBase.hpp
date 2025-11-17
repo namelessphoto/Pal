@@ -5,6 +5,6 @@ class UBP_PalAIActionComposite_OtomoWorkerBase_C : public UPalAIActionCompositeW
 {
 
     void OnTickInWaitAction(float DeltaTime);
-}; // Size: 0x88
+};
 
 #endif

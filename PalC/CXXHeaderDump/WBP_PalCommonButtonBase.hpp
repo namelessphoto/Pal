@@ -3,14 +3,14 @@
 
 class UWBP_PalCommonButtonBase_C : public UCommonButtonBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x14F0 (size: 0x8)
-    bool HideFocusCursor;                                                             // 0x14F8 (size: 0x1)
-    class UAkAudioEvent* HoverAKAudioEvent;                                           // 0x1500 (size: 0x8)
-    class UAkAudioEvent* UnhoverAKAudioEvent;                                         // 0x1508 (size: 0x8)
-    class UAkAudioEvent* ClickAKAudioEvent;                                           // 0x1510 (size: 0x8)
-    FWBP_PalCommonButtonBase_COnButtonPressed OnButtonPressed;                        // 0x1518 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    bool HideFocusCursor;
+    class UAkAudioEvent* HoverAKAudioEvent;
+    class UAkAudioEvent* UnhoverAKAudioEvent;
+    class UAkAudioEvent* ClickAKAudioEvent;
+    FWBP_PalCommonButtonBase_COnButtonPressed OnButtonPressed;
     void OnButtonPressed(class UCommonButtonBase* Button);
-    FWBP_PalCommonButtonBase_COnButtonReleased OnButtonReleased;                      // 0x1528 (size: 0x10)
+    FWBP_PalCommonButtonBase_COnButtonReleased OnButtonReleased;
     void OnButtonReleased(class UCommonButtonBase* Button);
 
     void PlayAkSound(class UAkAudioEvent* AudioEvent);
@@ -23,6 +23,6 @@ class UWBP_PalCommonButtonBase_C : public UCommonButtonBase
     void ExecuteUbergraph_WBP_PalCommonButtonBase(int32 EntryPoint);
     void OnButtonReleased__DelegateSignature(class UCommonButtonBase* Button);
     void OnButtonPressed__DelegateSignature(class UCommonButtonBase* Button);
-}; // Size: 0x1538
+};
 
 #endif

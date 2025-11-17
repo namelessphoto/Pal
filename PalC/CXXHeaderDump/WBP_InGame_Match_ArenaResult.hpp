@@ -3,27 +3,27 @@
 
 class UWBP_InGame_Match_ArenaResult_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_RankDown;                                             // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_RankUp_1;                                             // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_RankUp_0;                                             // 0x0290 (size: 0x8)
-    class UWidgetAnimation* Anm_PointCount;                                           // 0x0298 (size: 0x8)
-    class UWidgetAnimation* Anm_In;                                                   // 0x02A0 (size: 0x8)
-    class UImage* Image_RankIcon;                                                     // 0x02A8 (size: 0x8)
-    class UImage* Image_RankIcon_Flash;                                               // 0x02B0 (size: 0x8)
-    class UImage* Image_RankIcon_Next;                                                // 0x02B8 (size: 0x8)
-    class UImage* Image_RankIcon_Now;                                                 // 0x02C0 (size: 0x8)
-    class UPalProgressBar* PalProgressBar_Now;                                        // 0x02C8 (size: 0x8)
-    class UProgressBar* ProgressBar_Add;                                              // 0x02D0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Rank;                                              // 0x02D8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_RankChange;                                        // 0x02E0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_RankPoint_Change;                                  // 0x02E8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_RankPoint_Now;                                     // 0x02F0 (size: 0x8)
-    FPalArenaRankPointChangeResult Result Info;                                       // 0x02F8 (size: 0x1C)
-    bool EnableGaugeUpdate;                                                           // 0x0314 (size: 0x1)
-    double targetPercent;                                                             // 0x0318 (size: 0x8)
-    double PrePercent;                                                                // 0x0320 (size: 0x8)
-    double CurrentProgressUpdateRate;                                                 // 0x0328 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_RankDown;
+    class UWidgetAnimation* Anm_RankUp_1;
+    class UWidgetAnimation* Anm_RankUp_0;
+    class UWidgetAnimation* Anm_PointCount;
+    class UWidgetAnimation* Anm_In;
+    class UImage* Image_RankIcon;
+    class UImage* Image_RankIcon_Flash;
+    class UImage* Image_RankIcon_Next;
+    class UImage* Image_RankIcon_Now;
+    class UPalProgressBar* PalProgressBar_Now;
+    class UProgressBar* ProgressBar_Add;
+    class UBP_PalTextBlock_C* Text_Rank;
+    class UBP_PalTextBlock_C* Text_RankChange;
+    class UBP_PalTextBlock_C* Text_RankPoint_Change;
+    class UBP_PalTextBlock_C* Text_RankPoint_Now;
+    FPalArenaRankPointChangeResult Result Info;
+    bool EnableGaugeUpdate;
+    double targetPercent;
+    double PrePercent;
+    double CurrentProgressUpdateRate;
 
     void GetRankPointRange(int32& Min, int32& Max);
     void SetEndRank();
@@ -43,6 +43,6 @@ class UWBP_InGame_Match_ArenaResult_C : public UUserWidget
     void RankDownSequence();
     void Tick(FGeometry MyGeometry, float InDeltaTime);
     void ExecuteUbergraph_WBP_InGame_Match_ArenaResult(int32 EntryPoint);
-}; // Size: 0x330
+};
 
 #endif

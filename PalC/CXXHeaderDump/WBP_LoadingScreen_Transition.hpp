@@ -3,12 +3,12 @@
 
 class UWBP_LoadingScreen_Transition_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UWidgetAnimation* FadeIn;                                                   // 0x0410 (size: 0x8)
-    class UWidgetAnimation* FadeOut;                                                  // 0x0418 (size: 0x8)
-    class UWidgetAnimation* Default_In;                                               // 0x0420 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_0;                                                // 0x0428 (size: 0x8)
-    class UWBP_LoadingScreen_C* WBP_LoadingScreen;                                    // 0x0430 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* FadeIn;
+    class UWidgetAnimation* FadeOut;
+    class UWidgetAnimation* Default_In;
+    class UCanvasPanel* CanvasPanel_0;
+    class UWBP_LoadingScreen_C* WBP_LoadingScreen;
 
     void SetBgColor(FLinearColor Color);
     void Finished_65AD92BC4646C00F05936392250F90EA();
@@ -18,6 +18,6 @@ class UWBP_LoadingScreen_Transition_C : public UPalUserWidget
     void StartFadeIn();
     void ToggleVisibility(bool Visiable);
     void ExecuteUbergraph_WBP_LoadingScreen_Transition(int32 EntryPoint);
-}; // Size: 0x438
+};
 
 #endif

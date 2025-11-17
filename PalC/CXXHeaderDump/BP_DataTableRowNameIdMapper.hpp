@@ -3,6 +3,6 @@
 
 class UBP_DataTableRowNameIdMapper_C : public UPalDataTableRowIdMapper
 {
-}; // Size: 0x88
+};
 
 #endif

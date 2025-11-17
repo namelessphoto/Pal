@@ -3,6 +3,6 @@
 
 class UBP_PalIncidentNotifyListener_C : public UPalIncidentNotifyListener
 {
-}; // Size: 0x68
+};
 
 #endif

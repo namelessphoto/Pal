@@ -3,10 +3,10 @@
 
 class UWBP_OptionSettings_ListContentButton_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_Warning;                                          // 0x0280 (size: 0x8)
-    class UImage* Image_Key;                                                          // 0x0288 (size: 0x8)
-    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;                                // 0x0290 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCanvasPanel* CanvasPanel_Warning;
+    class UImage* Image_Key;
+    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;
 
     void OnUISettingChanged(const FPalOptionUISettings& PrevSettings, const FPalOptionUISettings& NewSettings);
     void GetCurrentIcon(FSlateBrush& Brush);
@@ -15,6 +15,6 @@ class UWBP_OptionSettings_ListContentButton_C : public UUserWidget
     void SetUIIcon(const FSlateBrush& InBrush, FName ActionName, ECommonInputType InputType);
     void OnInitialized();
     void ExecuteUbergraph_WBP_OptionSettings_ListContentButton(int32 EntryPoint);
-}; // Size: 0x298
+};
 
 #endif

@@ -3,8 +3,8 @@
 
 class USignificanceManager : public UObject
 {
-    FSoftClassPath SignificanceManagerClassName;                                      // 0x0120 (size: 0x20)
+    FSoftClassPath SignificanceManagerClassName;
 
-}; // Size: 0x140
+};
 
 #endif

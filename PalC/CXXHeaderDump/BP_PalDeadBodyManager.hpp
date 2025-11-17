@@ -3,6 +3,6 @@
 
 class UBP_PalDeadBodyManager_C : public UPalDeadBodyManager
 {
-}; // Size: 0x38
+};
 
 #endif

@@ -5,6 +5,6 @@ class UPalWazaBulletEmiiterOverlap_Unique_JetDragon_JumpBeam_C : public UPalWaza
 {
 
     void GetBulletEmiiterOverlapSphere(TArray<FPalWazaBulletEmiiterOverlapSphere>& Spheres);
-}; // Size: 0x28
+};
 
 #endif

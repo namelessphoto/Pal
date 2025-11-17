@@ -3,14 +3,14 @@
 
 class UWBP_BossEnemyHPGauge_C : public UPalUICharacterHPGaugeBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UWidgetAnimation* Close;                                                    // 0x0410 (size: 0x8)
-    class UWBP_IngameBossHP_C* WBP_IngameBossHP;                                      // 0x0418 (size: 0x8)
-    class APalCharacter* TargetCharacter;                                             // 0x0420 (size: 0x8)
-    class UPalIndividualCharacterParameter* TargetIndividualParameter;                // 0x0428 (size: 0x8)
-    FWBP_BossEnemyHPGauge_COnDead OnDead;                                             // 0x0430 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Close;
+    class UWBP_IngameBossHP_C* WBP_IngameBossHP;
+    class APalCharacter* TargetCharacter;
+    class UPalIndividualCharacterParameter* TargetIndividualParameter;
+    FWBP_BossEnemyHPGauge_COnDead OnDead;
     void OnDead(class APalCharacter* TargetCharacter);
-    bool isAlreadyDead;                                                               // 0x0440 (size: 0x1)
+    bool isAlreadyDead;
 
     void OnUpdateElement(EPalElementType type1, EPalElementType type2);
     void On Update Level(int32 addLevel, int32 nowLevel);
@@ -26,6 +26,6 @@ class UWBP_BossEnemyHPGauge_C : public UPalUICharacterHPGaugeBase
     void Destruct();
     void ExecuteUbergraph_WBP_BossEnemyHPGauge(int32 EntryPoint);
     void OnDead__DelegateSignature(class APalCharacter* TargetCharacter);
-}; // Size: 0x441
+};
 
 #endif

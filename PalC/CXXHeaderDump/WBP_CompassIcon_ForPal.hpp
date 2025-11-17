@@ -3,11 +3,11 @@
 
 class UWBP_CompassIcon_ForPal_C : public UWBP_IngameCompass_arrow_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0468 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
 
     void SetupTexture(TSoftObjectPtr<UTexture2D> SoftTexture);
     void OnInitialized();
     void ExecuteUbergraph_WBP_CompassIcon_ForPal(int32 EntryPoint);
-}; // Size: 0x470
+};
 
 #endif

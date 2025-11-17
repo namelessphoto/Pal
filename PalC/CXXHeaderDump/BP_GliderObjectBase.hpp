@@ -3,13 +3,13 @@
 
 class ABP_GliderObjectBase_C : public APalGliderObject
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0338 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x0340 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class USceneComponent* DefaultSceneRoot;
 
     void ReceiveBeginPlay();
     void OnStartGliding();
     void OnEndGliding();
     void ExecuteUbergraph_BP_GliderObjectBase(int32 EntryPoint);
-}; // Size: 0x348
+};
 
 #endif

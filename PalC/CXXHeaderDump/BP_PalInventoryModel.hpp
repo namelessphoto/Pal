@@ -3,6 +3,6 @@
 
 class UBP_PalInventoryModel_C : public UPalUIInventoryModel
 {
-}; // Size: 0xA0
+};
 
 #endif

@@ -3,14 +3,14 @@
 
 class UBP_AIActionEscape_C : public UBP_AIAction_CanCombatBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0160 (size: 0x8)
-    FVector GoalLocation;                                                             // 0x0168 (size: 0x18)
-    class AActor* TargetActor;                                                        // 0x0180 (size: 0x8)
-    double Timer;                                                                     // 0x0188 (size: 0x8)
-    double AcceptanceRadius;                                                          // 0x0190 (size: 0x8)
-    bool IsMoveing;                                                                   // 0x0198 (size: 0x1)
-    bool IsLockLogic;                                                                 // 0x0199 (size: 0x1)
-    double EndDistance;                                                               // 0x01A0 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    FVector GoalLocation;
+    class AActor* TargetActor;
+    double Timer;
+    double AcceptanceRadius;
+    bool IsMoveing;
+    bool IsLockLogic;
+    double EndDistance;
 
     void Is Far Spawn Point(bool& IsFar);
     void OnSquadMemberDeadEvent(FPalDeadInfo DeadInbfo);
@@ -27,6 +27,6 @@ class UBP_AIActionEscape_C : public UBP_AIAction_CanCombatBase_C
     void ActionAbort(class APawn* ControlledPawn);
     void ActionPause(class APawn* ControlledPawn);
     void ExecuteUbergraph_BP_AIActionEscape(int32 EntryPoint);
-}; // Size: 0x1A8
+};
 
 #endif

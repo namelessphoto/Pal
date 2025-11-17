@@ -3,11 +3,11 @@
 
 class UBP_AINPC_CombatMeleeState_StepAttack_C : public UBP_AINPC_CombatState_Base_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0038 (size: 0x8)
-    TSubclassOf<class UPalActionBase> Action Class;                                   // 0x0040 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    TSubclassOf<class UPalActionBase> Action Class;
 
     void StateEnter();
     void ExecuteUbergraph_BP_AINPC_CombatMeleeState_StepAttack(int32 EntryPoint);
-}; // Size: 0x48
+};
 
 #endif

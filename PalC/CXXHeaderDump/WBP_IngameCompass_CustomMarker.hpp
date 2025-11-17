@@ -3,14 +3,14 @@
 
 class UWBP_IngameCompass_CustomMarker_C : public UWBP_CompassIconBase_C
 {
-    class UImage* Image_Icon;                                                         // 0x0450 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Length;                                            // 0x0458 (size: 0x8)
-    TArray<class UTexture2D*> Textures;                                               // 0x0460 (size: 0x10)
+    class UImage* Image_Icon;
+    class UBP_PalTextBlock_C* Text_Length;
+    TArray<class UTexture2D*> Textures;
 
     void UpdateDistance();
     void UpdateVisibility(bool& InDistance);
     void SetCustomMarkerTexture(int32 IconType);
     void SetDistanceText(double Length);
-}; // Size: 0x470
+};
 
 #endif

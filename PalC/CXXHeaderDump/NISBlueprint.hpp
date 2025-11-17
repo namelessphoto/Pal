@@ -15,6 +15,6 @@ class UNISLibrary : public UBlueprintFunctionLibrary
     void GetNISScreenPercentageRange(float& MinScreenPercentage, float& MaxScreenPercentage);
     float GetNISRecommendedScreenPercentage(UNISMode NISMode);
     UNISMode GetDefaultNISMode();
-}; // Size: 0x28
+};
 
 #endif

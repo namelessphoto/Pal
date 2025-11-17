@@ -3,8 +3,8 @@
 
 class UBP_OilrigMachineSpawnerComponent_C : public UPalOilrigMachineSpawnerComponent
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x00F8 (size: 0x8)
-    class UPalIndividualCharacterHandle* Handle;                                      // 0x0100 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalIndividualCharacterHandle* Handle;
 
     void Destroy by Dead();
     void On Dead(FPalDeadInfo DeadInfo);
@@ -15,6 +15,6 @@ class UBP_OilrigMachineSpawnerComponent_C : public UPalOilrigMachineSpawnerCompo
     void SpawnMachine(FVector Location, FRotator Rotate);
     void DespawnMachine();
     void ExecuteUbergraph_BP_OilrigMachineSpawnerComponent(int32 EntryPoint);
-}; // Size: 0x108
+};
 
 #endif

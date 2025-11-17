@@ -3,8 +3,8 @@
 
 class UBP_PalSupplyIncidentAction_C : public UBP_PalIncidentRandomActionBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0050 (size: 0x8)
-    bool IsAllNpcSpawned;                                                             // 0x0058 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    bool IsAllNpcSpawned;
 
     void GetNPCSpawner(bool bIsPalSpawner, class APalRandomIncidentNPCSpawner*& Result);
     void CollectChangeHateTargets(TArray<class APalCharacter*>& SourceCharacters, TArray<class APalCharacter*>& TargetCharacters);
@@ -24,6 +24,6 @@ class UBP_PalSupplyIncidentAction_C : public UBP_PalIncidentRandomActionBase_C
     void OnTerminate();
     void OnTick(float DeltaTime);
     void ExecuteUbergraph_BP_PalSupplyIncidentAction(int32 EntryPoint);
-}; // Size: 0x59
+};
 
 #endif

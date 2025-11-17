@@ -3,17 +3,17 @@
 
 class ABP_PalRandomIncidentObjectPlacement_PalNest_GrassPanda_C : public APalRandomIncidentObjectPlacement
 {
-    class UBP_PalRandomIncidentPlacementEggDataComponent_C* BP_PalRandomIncidentPlacementEggDataComponent1; // 0x02B0 (size: 0x8)
-    class UBP_PalRandomIncidentPlacementEggDataComponent_C* BP_PalRandomIncidentPlacementEggDataComponent2; // 0x02B8 (size: 0x8)
-    class UBP_PalRandomIncidentPlacementDropItemDataComponent_C* BP_PalRandomIncidentPlacementDropItemDataComponent3; // 0x02C0 (size: 0x8)
-    class UBP_PalRandomIncidentPlacementDropItemDataComponent_C* BP_PalRandomIncidentPlacementDropItemDataComponent4; // 0x02C8 (size: 0x8)
-    class UBP_PalRandomIncidentPlacementDropItemDataComponent_C* BP_PalRandomIncidentPlacementDropItemDataComponent2; // 0x02D0 (size: 0x8)
-    class UBP_PalRandomIncidentPlacementDropItemDataComponent_C* BP_PalRandomIncidentPlacementDropItemDataComponent1; // 0x02D8 (size: 0x8)
-    class UBP_PalRandomIncidentPlacementEggDataComponent_C* BP_PalRandomIncidentPlacementEggDataComponent; // 0x02E0 (size: 0x8)
-    class UBP_PalRandomIncidentPlacementDropItemDataComponent_C* BP_PalRandomIncidentPlacementDropItemDataComponent; // 0x02E8 (size: 0x8)
-    class UStaticMeshComponent* StaticMesh;                                           // 0x02F0 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x02F8 (size: 0x8)
+    class UBP_PalRandomIncidentPlacementEggDataComponent_C* BP_PalRandomIncidentPlacementEggDataComponent1;
+    class UBP_PalRandomIncidentPlacementEggDataComponent_C* BP_PalRandomIncidentPlacementEggDataComponent2;
+    class UBP_PalRandomIncidentPlacementDropItemDataComponent_C* BP_PalRandomIncidentPlacementDropItemDataComponent3;
+    class UBP_PalRandomIncidentPlacementDropItemDataComponent_C* BP_PalRandomIncidentPlacementDropItemDataComponent4;
+    class UBP_PalRandomIncidentPlacementDropItemDataComponent_C* BP_PalRandomIncidentPlacementDropItemDataComponent2;
+    class UBP_PalRandomIncidentPlacementDropItemDataComponent_C* BP_PalRandomIncidentPlacementDropItemDataComponent1;
+    class UBP_PalRandomIncidentPlacementEggDataComponent_C* BP_PalRandomIncidentPlacementEggDataComponent;
+    class UBP_PalRandomIncidentPlacementDropItemDataComponent_C* BP_PalRandomIncidentPlacementDropItemDataComponent;
+    class UStaticMeshComponent* StaticMesh;
+    class USceneComponent* DefaultSceneRoot;
 
-}; // Size: 0x300
+};
 
 #endif

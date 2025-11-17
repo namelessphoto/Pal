@@ -3,6 +3,6 @@
 
 class UBP_PalItemContainerManager_C : public UPalItemContainerManager
 {
-}; // Size: 0x1F0
+};
 
 #endif

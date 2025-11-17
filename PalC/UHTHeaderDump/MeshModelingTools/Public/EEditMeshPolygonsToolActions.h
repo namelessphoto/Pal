@@ -1,0 +1,42 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "EEditMeshPolygonsToolActions.generated.h"
+
+UENUM()
+    NoAction,
+    AcceptCurrent,
+    CancelCurrent,
+    Extrude,
+    PushPull,
+    Offset,
+    Inset,
+    Outset,
+    BevelFaces,
+    InsertEdge,
+    InsertEdgeLoop,
+    Complete,
+    PlaneCut,
+    Merge,
+    Delete,
+    CutFaces,
+    RecalculateNormals,
+    FlipNormals,
+    Retriangulate,
+    Decompose,
+    Disconnect,
+    Duplicate,
+    CollapseEdge,
+    WeldEdges,
+    StraightenEdge,
+    FillHole,
+    BridgeEdges,
+    BevelEdges,
+    PlanarProjectionUV,
+    SimplifyByGroups,
+    RegenerateExtraCorners,
+    PokeSingleFace,
+    SplitSingleEdge,
+    FlipSingleEdge,
+    CollapseSingleEdge,
+};
+

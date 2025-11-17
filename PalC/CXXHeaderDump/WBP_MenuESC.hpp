@@ -3,118 +3,118 @@
 
 class UWBP_MenuESC_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UWidgetAnimation* Anm_Clipboard_InToOut;                                    // 0x0438 (size: 0x8)
-    class UWidgetAnimation* Anm_Copy_NormalToFocus;                                   // 0x0440 (size: 0x8)
-    class UCheckBox* AimAssistKeyboard_CheckBox;                                      // 0x0448 (size: 0x8)
-    class UCheckBox* AimAssistPad_CheckBox;                                           // 0x0450 (size: 0x8)
-    class UCheckBox* bActiveUNKO_CheckBox;                                            // 0x0458 (size: 0x8)
-    class UCheckBox* bEnableFriendlyFire_CheckBox;                                    // 0x0460 (size: 0x8)
-    class UCheckBox* bEnableInvaderEnemy_CheckBox;                                    // 0x0468 (size: 0x8)
-    class UBP_PalRichTextBlock_C* BP_PalRichTextBlock_MultiTips;                      // 0x0470 (size: 0x8)
-    class UBP_PalTextBlock_C* BPPalTextBlock_JitterNum;                               // 0x0478 (size: 0x8)
-    class UBP_PalTextBlock_C* BPPalTextBlock_JoinNum;                                 // 0x0480 (size: 0x8)
-    class UBP_PalTextBlock_C* BPPalTextBlock_PacketlossNum;                           // 0x0488 (size: 0x8)
-    class UBP_PalTextBlock_C* BPPalTextBlock_RTTNum;                                  // 0x0490 (size: 0x8)
-    class UBP_PalTextBlock_C* BPPalTextBlock_ServerFPSNum;                            // 0x0498 (size: 0x8)
-    class UBP_PalTextBlock_C* BPPalTextBlock_WorldExplain;                            // 0x04A0 (size: 0x8)
-    class UBP_PalTextBlock_C* BPPalTextBlock_WorldName;                               // 0x04A8 (size: 0x8)
-    class USpinBox* BuildObjectDamageRate_SpinBox;                                    // 0x04B0 (size: 0x8)
-    class UCanvasPanel* Canvas_Buttons;                                               // 0x04B8 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_MultiTips;                                        // 0x04C0 (size: 0x8)
-    class UCanvasPanel* CanvasPanelPlayerList;                                        // 0x04C8 (size: 0x8)
-    class UCanvasPanel* CanvasPanelServerInfo;                                        // 0x04D0 (size: 0x8)
-    class USpinBox* CollectionDropRate_SpinBox;                                       // 0x04D8 (size: 0x8)
-    class USpinBox* CollectionObjectHpRate_SpinBox;                                   // 0x04E0 (size: 0x8)
-    class USpinBox* CollectionObjectRespawnSpeedRate;                                 // 0x04E8 (size: 0x8)
-    class UOverlay* CopyCode;                                                         // 0x04F0 (size: 0x8)
-    class USpinBox* DayTimeSpeedRateValue_SpinBox;                                    // 0x04F8 (size: 0x8)
-    class UComboBoxString* DeathPenalty_ComboBox;                                     // 0x0500 (size: 0x8)
-    class UComboBoxString* Difficulty_ComboBox;                                       // 0x0508 (size: 0x8)
-    class USpinBox* DropItemMaxNum_SpinBox;                                           // 0x0510 (size: 0x8)
-    class USpinBox* DropItemMaxNum_UNKO_SpinBox;                                      // 0x0518 (size: 0x8)
-    class USpinBox* EnemyDropItemRate_SpinBox;                                        // 0x0520 (size: 0x8)
-    class USpinBox* ExpRate_SpinBox;                                                  // 0x0528 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_Jitter;                                       // 0x0530 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_JoinNum;                                      // 0x0538 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_PacketLoss;                                   // 0x0540 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_RTT;                                          // 0x0548 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_ServerFPS;                                    // 0x0550 (size: 0x8)
-    class UImage* IconShowHide;                                                       // 0x0558 (size: 0x8)
-    class UImage* Image_4;                                                            // 0x0560 (size: 0x8)
-    class UImage* Image_5;                                                            // 0x0568 (size: 0x8)
-    class UImage* Image_6;                                                            // 0x0570 (size: 0x8)
-    class UImage* Image_59;                                                           // 0x0578 (size: 0x8)
-    class UImage* Image_115;                                                          // 0x0580 (size: 0x8)
-    class UImage* Image_CautionBase;                                                  // 0x0588 (size: 0x8)
-    class UHorizontalBox* InviteCode_HorizontalBox;                                   // 0x0590 (size: 0x8)
-    class USpinBox* NightTimeSpeedRate_SpinBox;                                       // 0x0598 (size: 0x8)
-    class UOverlay* Overlay_WorldExplain;                                             // 0x05A0 (size: 0x8)
-    class USpinBox* PalAutoHPRegeneRate_SpinBox;                                      // 0x05A8 (size: 0x8)
-    class USpinBox* PalAutoHpRegeneRateInSleep_SpinBOx;                               // 0x05B0 (size: 0x8)
-    class USpinBox* PalCaptureRateAdd_SpinBox;                                        // 0x05B8 (size: 0x8)
-    class USpinBox* PalDamageRateAttack_SpinBox;                                      // 0x05C0 (size: 0x8)
-    class USpinBox* PalDamageRateDefense_SpinBox;                                     // 0x05C8 (size: 0x8)
-    class UPalRichTextBlockBase* PalRichTextBlockBase_370;                            // 0x05D0 (size: 0x8)
-    class USpinBox* PalSpawnNumRate_SpinBox;                                          // 0x05D8 (size: 0x8)
-    class USpinBox* PalStaminaDecreaceRate;                                           // 0x05E0 (size: 0x8)
-    class USpinBox* PalStomachDecreaceRate_SpinBox;                                   // 0x05E8 (size: 0x8)
-    class USpinBox* PlayerAutoHPRegeneRate_SpinBox;                                   // 0x05F0 (size: 0x8)
-    class USpinBox* PlayerAutoHpRegeneRateInSleep_SpinBox;                            // 0x05F8 (size: 0x8)
-    class USpinBox* PlayerDamageRateAttack_SpinBox;                                   // 0x0600 (size: 0x8)
-    class USpinBox* PlayerDamageRateDefense_SpinBox;                                  // 0x0608 (size: 0x8)
-    class USpinBox* PlayerStaminaDecreaceRate;                                        // 0x0610 (size: 0x8)
-    class USpinBox* PlayerStomachDecreaceRate_SpinBox;                                // 0x0618 (size: 0x8)
-    class UScrollBox* ScrollBox_Text;                                                 // 0x0620 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_InviteCode;                                        // 0x0628 (size: 0x8)
-    class UVerticalBox* VerticalBox_PlayerList;                                       // 0x0630 (size: 0x8)
-    class UVerticalBox* VerticalBox_ServerInfo;                                       // 0x0638 (size: 0x8)
-    class UVerticalBox* VerticalBoxWorld;                                             // 0x0640 (size: 0x8)
-    class UWBP_CommonButton_1_C* WBP_CommonButton_BlockList;                          // 0x0648 (size: 0x8)
-    class UWBP_MenuESC_Button_C* WBP_MenuESC_Button;                                  // 0x0650 (size: 0x8)
-    class UWBP_MenuESC_Button_C* WBP_MenuESC_Button_1;                                // 0x0658 (size: 0x8)
-    class UWBP_MenuESC_Button_C* WBP_MenuESC_Button_2;                                // 0x0660 (size: 0x8)
-    class UWBP_MenuESC_Button_C* WBP_MenuESC_Button_3;                                // 0x0668 (size: 0x8)
-    class UWBP_MenuESC_Button_C* WBP_MenuESC_Button_4;                                // 0x0670 (size: 0x8)
-    class UWBP_MenuESC_Button_C* WBP_MenuESC_Button_5;                                // 0x0678 (size: 0x8)
-    class UWBP_MenuESC_Button_C* WBP_MenuESC_Button_6;                                // 0x0680 (size: 0x8)
-    class UWBP_MenuESC_Button_C* WBP_MenuESC_Button_7;                                // 0x0688 (size: 0x8)
-    class UWBP_MenuESC_PlayerMenu_C* WBP_MenuESC_PlayerMenu;                          // 0x0690 (size: 0x8)
-    class UWBP_MenuESC_tabset_C* WBP_MenuESC_tabset1;                                 // 0x0698 (size: 0x8)
-    class UWBP_PalCommonScrollList_C* WBP_PalCommonScrollList_Members;                // 0x06A0 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_CopyCode;                 // 0x06A8 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_ShoiwHideInviteCode;      // 0x06B0 (size: 0x8)
-    class UCanvasPanel* WorldOptionCanvas;                                            // 0x06B8 (size: 0x8)
-    FPalOptionWorldSettings OptionWorldSettingsCache;                                 // 0x06C0 (size: 0x1A0)
-    FPalOptionAudioSettings AudioSettingsCache;                                       // 0x0860 (size: 0x1C)
-    FPalOptionKeyboardSettings KeyboardSettingsCache;                                 // 0x087C (size: 0x14)
-    FPalOptionPadSettings PadSettingsCache;                                           // 0x0890 (size: 0x1C)
-    FPalOptionGraphicsSettings GraphicsSettingsCache;                                 // 0x08AC (size: 0x60)
-    FDataTableRowHandle KillDialogMsgId;                                              // 0x0910 (size: 0x10)
-    FDataTableRowHandle ToTitleDialogMsgId;                                           // 0x0920 (size: 0x10)
-    bool bShowInviteCode;                                                             // 0x0930 (size: 0x1)
-    bool Close All;                                                                   // 0x0931 (size: 0x1)
-    FWBP_MenuESC_COnCloseEscMenu OnCloseEscMenu;                                      // 0x0938 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_Clipboard_InToOut;
+    class UWidgetAnimation* Anm_Copy_NormalToFocus;
+    class UCheckBox* AimAssistKeyboard_CheckBox;
+    class UCheckBox* AimAssistPad_CheckBox;
+    class UCheckBox* bActiveUNKO_CheckBox;
+    class UCheckBox* bEnableFriendlyFire_CheckBox;
+    class UCheckBox* bEnableInvaderEnemy_CheckBox;
+    class UBP_PalRichTextBlock_C* BP_PalRichTextBlock_MultiTips;
+    class UBP_PalTextBlock_C* BPPalTextBlock_JitterNum;
+    class UBP_PalTextBlock_C* BPPalTextBlock_JoinNum;
+    class UBP_PalTextBlock_C* BPPalTextBlock_PacketlossNum;
+    class UBP_PalTextBlock_C* BPPalTextBlock_RTTNum;
+    class UBP_PalTextBlock_C* BPPalTextBlock_ServerFPSNum;
+    class UBP_PalTextBlock_C* BPPalTextBlock_WorldExplain;
+    class UBP_PalTextBlock_C* BPPalTextBlock_WorldName;
+    class USpinBox* BuildObjectDamageRate_SpinBox;
+    class UCanvasPanel* Canvas_Buttons;
+    class UCanvasPanel* CanvasPanel_MultiTips;
+    class UCanvasPanel* CanvasPanelPlayerList;
+    class UCanvasPanel* CanvasPanelServerInfo;
+    class USpinBox* CollectionDropRate_SpinBox;
+    class USpinBox* CollectionObjectHpRate_SpinBox;
+    class USpinBox* CollectionObjectRespawnSpeedRate;
+    class UOverlay* CopyCode;
+    class USpinBox* DayTimeSpeedRateValue_SpinBox;
+    class UComboBoxString* DeathPenalty_ComboBox;
+    class UComboBoxString* Difficulty_ComboBox;
+    class USpinBox* DropItemMaxNum_SpinBox;
+    class USpinBox* DropItemMaxNum_UNKO_SpinBox;
+    class USpinBox* EnemyDropItemRate_SpinBox;
+    class USpinBox* ExpRate_SpinBox;
+    class UHorizontalBox* HorizontalBox_Jitter;
+    class UHorizontalBox* HorizontalBox_JoinNum;
+    class UHorizontalBox* HorizontalBox_PacketLoss;
+    class UHorizontalBox* HorizontalBox_RTT;
+    class UHorizontalBox* HorizontalBox_ServerFPS;
+    class UImage* IconShowHide;
+    class UImage* Image_4;
+    class UImage* Image_5;
+    class UImage* Image_6;
+    class UImage* Image_59;
+    class UImage* Image_115;
+    class UImage* Image_CautionBase;
+    class UHorizontalBox* InviteCode_HorizontalBox;
+    class USpinBox* NightTimeSpeedRate_SpinBox;
+    class UOverlay* Overlay_WorldExplain;
+    class USpinBox* PalAutoHPRegeneRate_SpinBox;
+    class USpinBox* PalAutoHpRegeneRateInSleep_SpinBOx;
+    class USpinBox* PalCaptureRateAdd_SpinBox;
+    class USpinBox* PalDamageRateAttack_SpinBox;
+    class USpinBox* PalDamageRateDefense_SpinBox;
+    class UPalRichTextBlockBase* PalRichTextBlockBase_370;
+    class USpinBox* PalSpawnNumRate_SpinBox;
+    class USpinBox* PalStaminaDecreaceRate;
+    class USpinBox* PalStomachDecreaceRate_SpinBox;
+    class USpinBox* PlayerAutoHPRegeneRate_SpinBox;
+    class USpinBox* PlayerAutoHpRegeneRateInSleep_SpinBox;
+    class USpinBox* PlayerDamageRateAttack_SpinBox;
+    class USpinBox* PlayerDamageRateDefense_SpinBox;
+    class USpinBox* PlayerStaminaDecreaceRate;
+    class USpinBox* PlayerStomachDecreaceRate_SpinBox;
+    class UScrollBox* ScrollBox_Text;
+    class UBP_PalTextBlock_C* Text_InviteCode;
+    class UVerticalBox* VerticalBox_PlayerList;
+    class UVerticalBox* VerticalBox_ServerInfo;
+    class UVerticalBox* VerticalBoxWorld;
+    class UWBP_CommonButton_1_C* WBP_CommonButton_BlockList;
+    class UWBP_MenuESC_Button_C* WBP_MenuESC_Button;
+    class UWBP_MenuESC_Button_C* WBP_MenuESC_Button_1;
+    class UWBP_MenuESC_Button_C* WBP_MenuESC_Button_2;
+    class UWBP_MenuESC_Button_C* WBP_MenuESC_Button_3;
+    class UWBP_MenuESC_Button_C* WBP_MenuESC_Button_4;
+    class UWBP_MenuESC_Button_C* WBP_MenuESC_Button_5;
+    class UWBP_MenuESC_Button_C* WBP_MenuESC_Button_6;
+    class UWBP_MenuESC_Button_C* WBP_MenuESC_Button_7;
+    class UWBP_MenuESC_PlayerMenu_C* WBP_MenuESC_PlayerMenu;
+    class UWBP_MenuESC_tabset_C* WBP_MenuESC_tabset1;
+    class UWBP_PalCommonScrollList_C* WBP_PalCommonScrollList_Members;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_CopyCode;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_ShoiwHideInviteCode;
+    class UCanvasPanel* WorldOptionCanvas;
+    FPalOptionWorldSettings OptionWorldSettingsCache;
+    FPalOptionAudioSettings AudioSettingsCache;
+    FPalOptionKeyboardSettings KeyboardSettingsCache;
+    FPalOptionPadSettings PadSettingsCache;
+    FPalOptionGraphicsSettings GraphicsSettingsCache;
+    FDataTableRowHandle KillDialogMsgId;
+    FDataTableRowHandle ToTitleDialogMsgId;
+    bool bShowInviteCode;
+    bool Close All;
+    FWBP_MenuESC_COnCloseEscMenu OnCloseEscMenu;
     void OnCloseEscMenu();
-    bool IsSelectingMemberMenu;                                                       // 0x0948 (size: 0x1)
-    TSoftObjectPtr<UWBP_MenuESCPlayerListItem_C> SelectionPlayerWidget;               // 0x0950 (size: 0x30)
-    FDataTableRowHandle MutePlayerDialogMsgID;                                        // 0x0980 (size: 0x10)
-    FGuid MutePlayerUId;                                                              // 0x0990 (size: 0x10)
-    FText Ban Reason;                                                                 // 0x09A0 (size: 0x18)
-    FDataTableRowHandle UnMutePlayerDialogMsgID;                                      // 0x09B8 (size: 0x10)
-    FDataTableRowHandle BlockPlayerDialogMsgID;                                       // 0x09C8 (size: 0x10)
-    FDataTableRowHandle UnBlockPlayerDialogMsgID;                                     // 0x09D8 (size: 0x10)
-    int32 TabIndex;                                                                   // 0x09E8 (size: 0x4)
-    bool IsFirstSetup;                                                                // 0x09EC (size: 0x1)
-    class UWidgetAnimation* Anm_PalInfo;                                              // 0x09F0 (size: 0x8)
-    class UWidgetAnimation* Anm_PalinfoToMap;                                         // 0x09F8 (size: 0x8)
-    class UWidgetAnimation* Anm_MapToPalinfo;                                         // 0x0A00 (size: 0x8)
-    FPalDataTableRowName_UIInputAction ToPlayerlistInputAction;                       // 0x0A08 (size: 0x8)
-    FPalDataTableRowName_UIInputAction ToServerinfoInputAction;                       // 0x0A10 (size: 0x8)
-    FPalUIActionBindData ToPlayerlistInputHandle;                                     // 0x0A18 (size: 0x4)
-    FPalUIActionBindData ToServerinfoInputHandle;                                     // 0x0A1C (size: 0x4)
-    double ScrollPerSecond;                                                           // 0x0A20 (size: 0x8)
-    double RightStickAxisY;                                                           // 0x0A28 (size: 0x8)
+    bool IsSelectingMemberMenu;
+    TSoftObjectPtr<UWBP_MenuESCPlayerListItem_C> SelectionPlayerWidget;
+    FDataTableRowHandle MutePlayerDialogMsgID;
+    FGuid MutePlayerUId;
+    FText Ban Reason;
+    FDataTableRowHandle UnMutePlayerDialogMsgID;
+    FDataTableRowHandle BlockPlayerDialogMsgID;
+    FDataTableRowHandle UnBlockPlayerDialogMsgID;
+    int32 TabIndex;
+    bool IsFirstSetup;
+    class UWidgetAnimation* Anm_PalInfo;
+    class UWidgetAnimation* Anm_PalinfoToMap;
+    class UWidgetAnimation* Anm_MapToPalinfo;
+    FPalDataTableRowName_UIInputAction ToPlayerlistInputAction;
+    FPalDataTableRowName_UIInputAction ToServerinfoInputAction;
+    FPalUIActionBindData ToPlayerlistInputHandle;
+    FPalUIActionBindData ToServerinfoInputHandle;
+    double ScrollPerSecond;
+    double RightStickAxisY;
 
     void OnClickedButton(TEnumAsByte<E_PalEscMenuType> MenuType);
     FEventReply OnAnalogValueChanged(FGeometry MyGeometry, FAnalogInputEvent InAnalogInputEvent);
@@ -210,6 +210,6 @@ class UWBP_MenuESC_C : public UPalUserWidgetOverlayUI
     void Construct();
     void ExecuteUbergraph_WBP_MenuESC(int32 EntryPoint);
     void OnCloseEscMenu__DelegateSignature();
-}; // Size: 0xA30
+};
 
 #endif

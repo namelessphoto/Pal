@@ -3,6 +3,6 @@
 
 class UWBP_BuildingReticle_C : public UPalUserWidget
 {
-}; // Size: 0x408
+};
 
 #endif

@@ -3,6 +3,6 @@
 
 class UBP_PalInputData_DualSense_C : public UBP_PalInputData_PS5_C
 {
-}; // Size: 0x110
+};
 
 #endif

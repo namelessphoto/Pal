@@ -3,19 +3,19 @@
 
 class UWBP_Fishing_ProgressGauge_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_Loop;                                                 // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_Fail;                                                 // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_In;                                                   // 0x0290 (size: 0x8)
-    class UImage* Image_Base;                                                         // 0x0298 (size: 0x8)
-    class UImage* Image_Gauge;                                                        // 0x02A0 (size: 0x8)
-    class UImage* Image_gauge_Bloom;                                                  // 0x02A8 (size: 0x8)
-    class UImage* Image_gauge_Eff_Fail;                                               // 0x02B0 (size: 0x8)
-    class UImage* Image_Icon;                                                         // 0x02B8 (size: 0x8)
-    class UImage* Image_Shadow;                                                       // 0x02C0 (size: 0x8)
-    TArray<class UMaterialInstanceDynamic*> GaugeMaterials;                           // 0x02C8 (size: 0x10)
-    double ProgressRate;                                                              // 0x02D8 (size: 0x8)
-    class UCurveLinearColor* ColorCurve;                                              // 0x02E0 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_Loop;
+    class UWidgetAnimation* Anm_Fail;
+    class UWidgetAnimation* Anm_In;
+    class UImage* Image_Base;
+    class UImage* Image_Gauge;
+    class UImage* Image_gauge_Bloom;
+    class UImage* Image_gauge_Eff_Fail;
+    class UImage* Image_Icon;
+    class UImage* Image_Shadow;
+    TArray<class UMaterialInstanceDynamic*> GaugeMaterials;
+    double ProgressRate;
+    class UCurveLinearColor* ColorCurve;
 
     void SetProgressRate(double CurrentRate);
     void UpdateDisplayRate(double DeltaTime);
@@ -28,6 +28,6 @@ class UWBP_Fishing_ProgressGauge_C : public UUserWidget
     void Tick(FGeometry MyGeometry, float InDeltaTime);
     void OnInitialized();
     void ExecuteUbergraph_WBP_Fishing_ProgressGauge(int32 EntryPoint);
-}; // Size: 0x2E8
+};
 
 #endif

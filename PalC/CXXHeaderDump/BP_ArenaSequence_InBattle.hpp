@@ -3,11 +3,11 @@
 
 class UBP_ArenaSequence_InBattle_C : public UPalArenaSequenceInBattle
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0058 (size: 0x8)
-    bool Timeup;                                                                      // 0x0060 (size: 0x1)
-    FTimerHandle BattleTimerHandle;                                                   // 0x0068 (size: 0x8)
-    FName flagName;                                                                   // 0x0070 (size: 0x8)
-    FBP_ArenaSequence_InBattle_COnTimerTick OnTimerTick;                              // 0x0078 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    bool Timeup;
+    FTimerHandle BattleTimerHandle;
+    FName flagName;
+    FBP_ArenaSequence_InBattle_COnTimerTick OnTimerTick;
     void OnTimerTick(int32 Time);
 
     void SetOtomoCollision(bool IsOtomo);
@@ -23,6 +23,6 @@ class UBP_ArenaSequence_InBattle_C : public UPalArenaSequenceInBattle
     void OnBreakSequence();
     void ExecuteUbergraph_BP_ArenaSequence_InBattle(int32 EntryPoint);
     void OnTimerTick__DelegateSignature(int32 Time);
-}; // Size: 0x88
+};
 
 #endif

@@ -3,6 +3,6 @@
 
 class UBP_PalWorldMapUIData_C : public UPalWorldMapUIData
 {
-}; // Size: 0xD0
+};
 
 #endif

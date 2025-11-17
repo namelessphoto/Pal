@@ -3,6 +3,6 @@
 
 class UBP_SubQuest_BossDefeatReward_C : public UBP_PalQuestDataBase_C
 {
-}; // Size: 0x210
+};
 
 #endif

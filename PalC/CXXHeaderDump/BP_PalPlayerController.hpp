@@ -3,24 +3,24 @@
 
 class ABP_PalPlayerController_C : public APalPlayerController
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0E90 (size: 0x8)
-    class UPalItemSelectorComponent* LoadoutItemSelector;                             // 0x0E98 (size: 0x8)
-    class UBP_OtomoPalHolderComponent_C* BP_OtomoPalHolderComponent;                  // 0x0EA0 (size: 0x8)
-    class UBP_AIADamageReaction_C* BP_AIADamageReaction;                              // 0x0EA8 (size: 0x8)
-    class AActor* Original Player;                                                    // 0x0EB0 (size: 0x8)
-    TMap<UPalIndividualCharacterHandle*, int32> HoldOtomoIndividualHandle;            // 0x0EB8 (size: 0x50)
-    TArray<FName> DebugHoldOtomoName;                                                 // 0x0F08 (size: 0x10)
-    FTimerHandle RegeneTimerHandle;                                                   // 0x0F18 (size: 0x8)
-    class UPalIndividualCharacterHandle* SupportPalHandle;                            // 0x0F20 (size: 0x8)
-    TArray<TSoftObjectPtr<UNiagaraSystem>> AsyncLoadAsset;                            // 0x0F28 (size: 0x10)
-    FBP_PalPlayerController_COnIncrementedOtomo OnIncrementedOtomo;                   // 0x0F38 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalItemSelectorComponent* LoadoutItemSelector;
+    class UBP_OtomoPalHolderComponent_C* BP_OtomoPalHolderComponent;
+    class UBP_AIADamageReaction_C* BP_AIADamageReaction;
+    class AActor* Original Player;
+    TMap<UPalIndividualCharacterHandle*, int32> HoldOtomoIndividualHandle;
+    TArray<FName> DebugHoldOtomoName;
+    FTimerHandle RegeneTimerHandle;
+    class UPalIndividualCharacterHandle* SupportPalHandle;
+    TArray<TSoftObjectPtr<UNiagaraSystem>> AsyncLoadAsset;
+    FBP_PalPlayerController_COnIncrementedOtomo OnIncrementedOtomo;
     void OnIncrementedOtomo();
-    FBP_PalPlayerController_COnDecrementedOtomo OnDecrementedOtomo;                   // 0x0F48 (size: 0x10)
+    FBP_PalPlayerController_COnDecrementedOtomo OnDecrementedOtomo;
     void OnDecrementedOtomo();
-    double SpectatorSpeedRate;                                                        // 0x0F58 (size: 0x8)
-    double MaxSpectatorSpeedRate;                                                     // 0x0F60 (size: 0x8)
-    int32 TargetWatchPlayer Index;                                                    // 0x0F68 (size: 0x4)
-    bool bSpectatorTracking;                                                          // 0x0F6C (size: 0x1)
+    double SpectatorSpeedRate;
+    double MaxSpectatorSpeedRate;
+    int32 TargetWatchPlayer Index;
+    bool bSpectatorTracking;
 
     void PlayAirDashAction(EPalStepAxisType Axis, FVector2D Direction);
     void GetSpectator(bool& bSpectatorMode);
@@ -94,6 +94,6 @@ class ABP_PalPlayerController_C : public APalPlayerController
     void ExecuteUbergraph_BP_PalPlayerController(int32 EntryPoint);
     void OnDecrementedOtomo__DelegateSignature();
     void OnIncrementedOtomo__DelegateSignature();
-}; // Size: 0xF6D
+};
 
 #endif

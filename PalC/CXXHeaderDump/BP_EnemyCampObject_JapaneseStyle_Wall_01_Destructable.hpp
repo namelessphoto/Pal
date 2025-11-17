@@ -3,13 +3,13 @@
 
 class ABP_EnemyCampObject_JapaneseStyle_Wall_01_Destructable_C : public APalBuildObjectBasicBase
 {
-    class UPalEnemyCampObjectSpawnMapObjectComponent* EnemyCampObjectSpawnMapObject;  // 0x0688 (size: 0x8)
-    class UBoxComponent* AffectNavigationBox;                                         // 0x0690 (size: 0x8)
-    class UBoxComponent* BuildWorkableBounds;                                         // 0x0698 (size: 0x8)
-    class UStaticMeshComponent* SM_Wall_Wood;                                         // 0x06A0 (size: 0x8)
-    class USceneComponent* Root;                                                      // 0x06A8 (size: 0x8)
-    class UBoxComponent* CheckOverlapCollision;                                       // 0x06B0 (size: 0x8)
+    class UPalEnemyCampObjectSpawnMapObjectComponent* EnemyCampObjectSpawnMapObject;
+    class UBoxComponent* AffectNavigationBox;
+    class UBoxComponent* BuildWorkableBounds;
+    class UStaticMeshComponent* SM_Wall_Wood;
+    class USceneComponent* Root;
+    class UBoxComponent* CheckOverlapCollision;
 
-}; // Size: 0x6B8
+};
 
 #endif

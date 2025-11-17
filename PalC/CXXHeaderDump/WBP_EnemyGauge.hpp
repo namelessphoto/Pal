@@ -3,71 +3,71 @@
 
 class UWBP_EnemyGauge_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_WorkIcon_2;                                           // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_WorkIcon_1;                                           // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_WorkIcon;                                             // 0x0290 (size: 0x8)
-    class UWidgetAnimation* Anm_BattleIN;                                             // 0x0298 (size: 0x8)
-    class UWidgetAnimation* Anm_Hunger;                                               // 0x02A0 (size: 0x8)
-    class UWidgetAnimation* Anm_Party;                                                // 0x02A8 (size: 0x8)
-    class UWidgetAnimation* Anm_Pinch;                                                // 0x02B0 (size: 0x8)
-    class UWidgetAnimation* Anm_Damage;                                               // 0x02B8 (size: 0x8)
-    class UWidgetAnimation* Anm_normal;                                               // 0x02C0 (size: 0x8)
-    class UWidgetAnimation* Anm_BattleFlare;                                          // 0x02C8 (size: 0x8)
-    class UVerticalBox* BattleVerticalBox;                                            // 0x02D0 (size: 0x8)
-    class UBP_PalTextBlock_C* BPPalTextBlock_ATK;                                     // 0x02D8 (size: 0x8)
-    class UBP_PalTextBlock_C* BPPalTextBlock_DEF;                                     // 0x02E0 (size: 0x8)
-    class UBP_PalTextBlock_C* BPPalTextBlock_HP;                                      // 0x02E8 (size: 0x8)
-    class UCanvasPanel* Canvas_PalCommonDetail;                                       // 0x02F0 (size: 0x8)
-    class UCanvasPanel* Canvas_Pinch;                                                 // 0x02F8 (size: 0x8)
-    class UCanvasPanel* CanvasPanelBattleIcon;                                        // 0x0300 (size: 0x8)
-    class UCanvasPanel* CanvasPanelWork;                                              // 0x0308 (size: 0x8)
-    class UCanvasPanel* IconGroupWork_1;                                              // 0x0310 (size: 0x8)
-    class UImage* IconPalWork;                                                        // 0x0318 (size: 0x8)
-    class UImage* IconPalWork_2;                                                      // 0x0320 (size: 0x8)
-    class UImage* IconSleeping;                                                       // 0x0328 (size: 0x8)
-    class UImage* Image;                                                              // 0x0330 (size: 0x8)
-    class UImage* Image_1;                                                            // 0x0338 (size: 0x8)
-    class UImage* Image_145;                                                          // 0x0340 (size: 0x8)
-    class UImage* Image_Base;                                                         // 0x0348 (size: 0x8)
-    class UImage* Image_Frame;                                                        // 0x0350 (size: 0x8)
-    class UImage* Image_Rank;                                                         // 0x0358 (size: 0x8)
-    class UImage* Image_Strong_Rare;                                                  // 0x0360 (size: 0x8)
-    class UOverlay* Overlay_Potencial;                                                // 0x0368 (size: 0x8)
-    class UImage* PalEnemyBase_Hunger;                                                // 0x0370 (size: 0x8)
-    class UProgressBar* ProgressBar_HP;                                               // 0x0378 (size: 0x8)
-    class UProgressBar* ProgressBar_HPBack;                                           // 0x0380 (size: 0x8)
-    class URetainerBox* RetainerBox_CommonDetail;                                     // 0x0388 (size: 0x8)
-    class USizeBox* SizeBox_Gender;                                                   // 0x0390 (size: 0x8)
-    class USizeBox* SizeBox_Lv;                                                       // 0x0398 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_GuildName;                                         // 0x03A0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_LevelNum;                                          // 0x03A8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Name;                                              // 0x03B0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_WorkName;                                          // 0x03B8 (size: 0x8)
-    class UWBP_EnemyGauge_SAN_C* WBP_EnemyGauge_SAN;                                  // 0x03C0 (size: 0x8)
-    class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State;                          // 0x03C8 (size: 0x8)
-    class UWBP_PalElementIcon_C* WBP_PalElementIcon_Double_00;                        // 0x03D0 (size: 0x8)
-    class UWBP_PalElementIcon_C* WBP_PalElementIcon_Double_01;                        // 0x03D8 (size: 0x8)
-    class UWBP_PalElementIcon_C* WBP_PalElementIcon_Single;                           // 0x03E0 (size: 0x8)
-    class UWBP_PalGenderIcon_C* WBP_PalGenderIcon;                                    // 0x03E8 (size: 0x8)
-    TMap<int32, UTexture2D*> RankIconMap;                                             // 0x03F0 (size: 0x50)
-    FColor enemyColor;                                                                // 0x0440 (size: 0x4)
-    FColor friendColor;                                                               // 0x0444 (size: 0x4)
-    FColor NeutralColor;                                                              // 0x0448 (size: 0x4)
-    FColor NormalBackColor;                                                           // 0x044C (size: 0x4)
-    FColor BackNeutralColor;                                                          // 0x0450 (size: 0x4)
-    class UPalUIDelayGaugeCalculator* delayGaugeCalculator;                           // 0x0458 (size: 0x8)
-    class UMaterial* savedDefaultFontMat;                                             // 0x0460 (size: 0x8)
-    double lowHealthPercent;                                                          // 0x0468 (size: 0x8)
-    bool IsLowHealthNoticeDisplay;                                                    // 0x0470 (size: 0x1)
-    double cachedHPPercent;                                                           // 0x0478 (size: 0x8)
-    bool isFriendBg;                                                                  // 0x0480 (size: 0x1)
-    bool CachedBattleMode;                                                            // 0x0481 (size: 0x1)
-    bool CachedIsWork;                                                                // 0x0482 (size: 0x1)
-    EPalBaseCampWorkerEventType CachedCampEvent;                                      // 0x0483 (size: 0x1)
-    class UWidgetAnimation* CurrentIconAnm;                                           // 0x0488 (size: 0x8)
-    FDataTableRowHandle SleepMsgId;                                                   // 0x0490 (size: 0x10)
-    bool IsParts;                                                                     // 0x04A0 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_WorkIcon_2;
+    class UWidgetAnimation* Anm_WorkIcon_1;
+    class UWidgetAnimation* Anm_WorkIcon;
+    class UWidgetAnimation* Anm_BattleIN;
+    class UWidgetAnimation* Anm_Hunger;
+    class UWidgetAnimation* Anm_Party;
+    class UWidgetAnimation* Anm_Pinch;
+    class UWidgetAnimation* Anm_Damage;
+    class UWidgetAnimation* Anm_Normal;
+    class UWidgetAnimation* Anm_BattleFlare;
+    class UVerticalBox* BattleVerticalBox;
+    class UBP_PalTextBlock_C* BPPalTextBlock_ATK;
+    class UBP_PalTextBlock_C* BPPalTextBlock_DEF;
+    class UBP_PalTextBlock_C* BPPalTextBlock_HP;
+    class UCanvasPanel* Canvas_PalCommonDetail;
+    class UCanvasPanel* Canvas_Pinch;
+    class UCanvasPanel* CanvasPanelBattleIcon;
+    class UCanvasPanel* CanvasPanelWork;
+    class UCanvasPanel* IconGroupWork_1;
+    class UImage* IconPalWork;
+    class UImage* IconPalWork_2;
+    class UImage* IconSleeping;
+    class UImage* Image;
+    class UImage* Image_1;
+    class UImage* Image_145;
+    class UImage* Image_Base;
+    class UImage* Image_Frame;
+    class UImage* Image_Rank;
+    class UImage* Image_Strong_Rare;
+    class UOverlay* Overlay_Potencial;
+    class UImage* PalEnemyBase_Hunger;
+    class UProgressBar* ProgressBar_HP;
+    class UProgressBar* ProgressBar_HPBack;
+    class URetainerBox* RetainerBox_CommonDetail;
+    class USizeBox* SizeBox_Gender;
+    class USizeBox* SizeBox_Lv;
+    class UBP_PalTextBlock_C* Text_GuildName;
+    class UBP_PalTextBlock_C* Text_LevelNum;
+    class UBP_PalTextBlock_C* Text_Name;
+    class UBP_PalTextBlock_C* Text_WorkName;
+    class UWBP_EnemyGauge_SAN_C* WBP_EnemyGauge_SAN;
+    class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State;
+    class UWBP_PalElementIcon_C* WBP_PalElementIcon_Double_00;
+    class UWBP_PalElementIcon_C* WBP_PalElementIcon_Double_01;
+    class UWBP_PalElementIcon_C* WBP_PalElementIcon_Single;
+    class UWBP_PalGenderIcon_C* WBP_PalGenderIcon;
+    TMap<int32, UTexture2D*> RankIconMap;
+    FColor enemyColor;
+    FColor friendColor;
+    FColor NeutralColor;
+    FColor NormalBackColor;
+    FColor BackNeutralColor;
+    class UPalUIDelayGaugeCalculator* delayGaugeCalculator;
+    class UMaterial* savedDefaultFontMat;
+    double lowHealthPercent;
+    bool IsLowHealthNoticeDisplay;
+    double cachedHPPercent;
+    bool isFriendBg;
+    bool CachedBattleMode;
+    bool CachedIsWork;
+    EPalBaseCampWorkerEventType CachedCampEvent;
+    class UWidgetAnimation* CurrentIconAnm;
+    FDataTableRowHandle SleepMsgId;
+    bool IsParts;
 
     void SetForParts(bool IsParts);
     void Set Enable Talent Detail(bool IsEnable, class UPalIndividualCharacterParameter* Parameter);
@@ -110,6 +110,6 @@ class UWBP_EnemyGauge_C : public UUserWidget
     void AnmEvent_StopStarvation();
     void OnInitialized();
     void ExecuteUbergraph_WBP_EnemyGauge(int32 EntryPoint);
-}; // Size: 0x4A1
+};
 
 #endif

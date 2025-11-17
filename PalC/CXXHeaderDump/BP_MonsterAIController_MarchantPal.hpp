@@ -3,10 +3,10 @@
 
 class ABP_MonsterAIController_MarchantPal_C : public ABP_MonsterAIControllerBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0560 (size: 0x8)
-    FVector Spawned Position;                                                         // 0x0568 (size: 0x18)
-    bool EscapeMode;                                                                  // 0x0580 (size: 0x1)
-    bool DespawnDelay;                                                                // 0x0581 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    FVector Spawned Position;
+    bool EscapeMode;
+    bool DespawnDelay;
 
     void SetupSpawnedPosition();
     void IsEscapeEnd(bool& IsEscapeEnd);
@@ -17,6 +17,6 @@ class ABP_MonsterAIController_MarchantPal_C : public ABP_MonsterAIControllerBase
     void カスタムイベント_1(FPalDeadInfo DeadInfo);
     void カスタムイベント_2(class UPalVisualEffectBase* VisualEffect);
     void ExecuteUbergraph_BP_MonsterAIController_MarchantPal(int32 EntryPoint);
-}; // Size: 0x582
+};
 
 #endif

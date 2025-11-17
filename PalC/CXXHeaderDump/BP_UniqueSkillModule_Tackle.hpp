@@ -3,35 +3,35 @@
 
 class UBP_UniqueSkillModule_Tackle_C : public UPalUniqueSkillModule
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0038 (size: 0x8)
-    class UAnimMontage* StartAnimMontage;                                             // 0x0040 (size: 0x8)
-    class UAnimMontage* LoopAnimMontage;                                              // 0x0048 (size: 0x8)
-    class UAnimMontage* EndAnimMontage;                                               // 0x0050 (size: 0x8)
-    double AttackTime;                                                                // 0x0058 (size: 0x8)
-    double YawMultiply;                                                               // 0x0060 (size: 0x8)
-    double EndBrakeTime;                                                              // 0x0068 (size: 0x8)
-    double EndBrakeTimer;                                                             // 0x0070 (size: 0x8)
-    double MaxSpeedMultiply;                                                          // 0x0078 (size: 0x8)
-    double MinSpeedMultiply;                                                          // 0x0080 (size: 0x8)
-    double TackleHomingRate;                                                          // 0x0088 (size: 0x8)
-    bool StopUpdateYaw;                                                               // 0x0090 (size: 0x1)
-    FTimerHandle AttackTimerHandle;                                                   // 0x0098 (size: 0x8)
-    FName flagName;                                                                   // 0x00A0 (size: 0x8)
-    TSubclassOf<class ABP_SkillEffectBase_C> StartSkillEffectClass;                   // 0x00A8 (size: 0x8)
-    TSubclassOf<class ABP_SkillEffectBase_C> LoopSkillEffectClass;                    // 0x00B0 (size: 0x8)
-    class ABP_SkillEffectBase_C* LoopSkillEffect;                                     // 0x00B8 (size: 0x8)
-    FBP_UniqueSkillModule_Tackle_COnSpawnedLoopEffect OnSpawnedLoopEffect;            // 0x00C0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UAnimMontage* StartAnimMontage;
+    class UAnimMontage* LoopAnimMontage;
+    class UAnimMontage* EndAnimMontage;
+    double AttackTime;
+    double YawMultiply;
+    double EndBrakeTime;
+    double EndBrakeTimer;
+    double MaxSpeedMultiply;
+    double MinSpeedMultiply;
+    double TackleHomingRate;
+    bool StopUpdateYaw;
+    FTimerHandle AttackTimerHandle;
+    FName flagName;
+    TSubclassOf<class ABP_SkillEffectBase_C> StartSkillEffectClass;
+    TSubclassOf<class ABP_SkillEffectBase_C> LoopSkillEffectClass;
+    class ABP_SkillEffectBase_C* LoopSkillEffect;
+    FBP_UniqueSkillModule_Tackle_COnSpawnedLoopEffect OnSpawnedLoopEffect;
     void OnSpawnedLoopEffect(class ABP_SkillEffectBase_C* LoopEffect);
-    TEnumAsByte<EAction_Unique_Tackle> State;                                         // 0x00D0 (size: 0x1)
-    FBP_UniqueSkillModule_Tackle_COnEndAttackDelegate OnEndAttackDelegate;            // 0x00D8 (size: 0x10)
+    TEnumAsByte<EAction_Unique_Tackle> State;
+    FBP_UniqueSkillModule_Tackle_COnEndAttackDelegate OnEndAttackDelegate;
     void OnEndAttackDelegate();
-    FBP_UniqueSkillModule_Tackle_COnMontageNotifyDelegate OnMontageNotifyDelegate;    // 0x00E8 (size: 0x10)
+    FBP_UniqueSkillModule_Tackle_COnMontageNotifyDelegate OnMontageNotifyDelegate;
     void OnMontageNotifyDelegate(class UAnimMontage* Montage, FName NotifyName);
-    FBP_UniqueSkillModule_Tackle_COnCompletedEndMontageDelegate OnCompletedEndMontageDelegate; // 0x00F8 (size: 0x10)
+    FBP_UniqueSkillModule_Tackle_COnCompletedEndMontageDelegate OnCompletedEndMontageDelegate;
     void OnCompletedEndMontageDelegate();
-    double StartHomingRate;                                                           // 0x0108 (size: 0x8)
-    bool IsTackleHoming;                                                              // 0x0110 (size: 0x1)
-    bool IsEffectSpawnOnGround;                                                       // 0x0111 (size: 0x1)
+    double StartHomingRate;
+    bool IsTackleHoming;
+    bool IsEffectSpawnOnGround;
 
     void IsPlayingAnyMontage(TArray<class UAnimMontage*>& Montages, bool& Result);
     void IsPlayingEndMontage(bool& Result);
@@ -58,6 +58,6 @@ class UBP_UniqueSkillModule_Tackle_C : public UPalUniqueSkillModule
     void OnMontageNotifyDelegate__DelegateSignature(class UAnimMontage* Montage, FName NotifyName);
     void OnEndAttackDelegate__DelegateSignature();
     void OnSpawnedLoopEffect__DelegateSignature(class ABP_SkillEffectBase_C* LoopEffect);
-}; // Size: 0x112
+};
 
 #endif

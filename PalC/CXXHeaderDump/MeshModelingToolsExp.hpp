@@ -5,517 +5,517 @@
 
 struct FBakeMultiMeshDetailProperties
 {
-    class UStaticMesh* SourceMesh;                                                    // 0x0000 (size: 0x8)
-    class UTexture2D* SourceTexture;                                                  // 0x0008 (size: 0x8)
-    int32 SourceTextureUVLayer;                                                       // 0x0010 (size: 0x4)
+    class UStaticMesh* SourceMesh;
+    class UTexture2D* SourceTexture;
+    int32 SourceTextureUVLayer;
 
-}; // Size: 0x18
+};
 
 struct FBrushToolRadius
 {
-    EBrushToolSizeType SizeType;                                                      // 0x0000 (size: 0x1)
-    float AdaptiveSize;                                                               // 0x0004 (size: 0x4)
-    float WorldRadius;                                                                // 0x0008 (size: 0x4)
+    EBrushToolSizeType SizeType;
+    float AdaptiveSize;
+    float WorldRadius;
 
-}; // Size: 0x14
+};
 
 struct FEditPivotTarget
 {
-    class UTransformProxy* TransformProxy;                                            // 0x0000 (size: 0x8)
-    class UCombinedTransformGizmo* TransformGizmo;                                    // 0x0008 (size: 0x8)
+    class UTransformProxy* TransformProxy;
+    class UCombinedTransformGizmo* TransformGizmo;
 
-}; // Size: 0x10
+};
 
 struct FPerlinLayerProperties
 {
-    float Frequency;                                                                  // 0x0000 (size: 0x4)
-    float Intensity;                                                                  // 0x0004 (size: 0x4)
+    float Frequency;
+    float Intensity;
 
-}; // Size: 0x8
+};
 
 struct FPhysicsBoxData
 {
-    FVector Dimensions;                                                               // 0x0000 (size: 0x18)
-    FTransform Transform;                                                             // 0x0020 (size: 0x60)
-    FKShapeElem Element;                                                              // 0x0080 (size: 0x30)
+    FVector Dimensions;
+    FTransform Transform;
+    FKShapeElem Element;
 
-}; // Size: 0xB0
+};
 
 struct FPhysicsCapsuleData
 {
-    float Radius;                                                                     // 0x0000 (size: 0x4)
-    float Length;                                                                     // 0x0004 (size: 0x4)
-    FTransform Transform;                                                             // 0x0010 (size: 0x60)
-    FKShapeElem Element;                                                              // 0x0070 (size: 0x30)
+    float Radius;
+    float Length;
+    FTransform Transform;
+    FKShapeElem Element;
 
-}; // Size: 0xA0
+};
 
 struct FPhysicsConvexData
 {
-    int32 NumVertices;                                                                // 0x0000 (size: 0x4)
-    int32 NumFaces;                                                                   // 0x0004 (size: 0x4)
-    FKShapeElem Element;                                                              // 0x0008 (size: 0x30)
+    int32 NumVertices;
+    int32 NumFaces;
+    FKShapeElem Element;
 
-}; // Size: 0x38
+};
 
 struct FPhysicsLevelSetData
 {
-    FKShapeElem Element;                                                              // 0x0000 (size: 0x30)
+    FKShapeElem Element;
 
-}; // Size: 0x30
+};
 
 struct FPhysicsSphereData
 {
-    float Radius;                                                                     // 0x0000 (size: 0x4)
-    FTransform Transform;                                                             // 0x0010 (size: 0x60)
-    FKShapeElem Element;                                                              // 0x0070 (size: 0x30)
+    float Radius;
+    FTransform Transform;
+    FKShapeElem Element;
 
-}; // Size: 0xA0
+};
 
 struct FTransformMeshesTarget
 {
-    class UTransformProxy* TransformProxy;                                            // 0x0000 (size: 0x8)
-    class UCombinedTransformGizmo* TransformGizmo;                                    // 0x0008 (size: 0x8)
+    class UTransformProxy* TransformProxy;
+    class UCombinedTransformGizmo* TransformGizmo;
 
-}; // Size: 0x10
+};
 
 class UAcceptOutputProperties : public UInteractiveToolPropertySet
 {
-    bool bExportSeparatedPiecesAsNewMeshAssets;                                       // 0x00A8 (size: 0x1)
+    bool bExportSeparatedPiecesAsNewMeshAssets;
 
-}; // Size: 0xB0
+};
 
 class UAddPatchTool : public USingleClickTool
 {
-    class UAddPatchToolProperties* ShapeSettings;                                     // 0x00A8 (size: 0x8)
-    class UNewMeshMaterialProperties* MaterialProperties;                             // 0x00B0 (size: 0x8)
-    class UPreviewMesh* PreviewMesh;                                                  // 0x00B8 (size: 0x8)
+    class UAddPatchToolProperties* ShapeSettings;
+    class UNewMeshMaterialProperties* MaterialProperties;
+    class UPreviewMesh* PreviewMesh;
 
-}; // Size: 0x128
+};
 
 class UAddPatchToolBuilder : public UInteractiveToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UAddPatchToolProperties : public UInteractiveToolPropertySet
 {
-    float Width;                                                                      // 0x00A8 (size: 0x4)
-    float Rotation;                                                                   // 0x00AC (size: 0x4)
-    int32 Subdivisions;                                                               // 0x00B0 (size: 0x4)
-    float Shift;                                                                      // 0x00B4 (size: 0x4)
+    float Width;
+    float Rotation;
+    int32 Subdivisions;
+    float Shift;
 
-}; // Size: 0xB8
+};
 
 class UAlignObjectsTool : public UMultiSelectionMeshEditingTool
 {
-    class UAlignObjectsToolProperties* AlignProps;                                    // 0x00C0 (size: 0x8)
+    class UAlignObjectsToolProperties* AlignProps;
 
-}; // Size: 0x158
+};
 
 class UAlignObjectsToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UAlignObjectsToolProperties : public UInteractiveToolPropertySet
 {
-    EAlignObjectsAlignTypes AlignType;                                                // 0x00A8 (size: 0x4)
-    EAlignObjectsAlignToOptions AlignTo;                                              // 0x00AC (size: 0x4)
-    EAlignObjectsBoxPoint BoxPosition;                                                // 0x00B0 (size: 0x4)
-    bool bAlignX;                                                                     // 0x00B4 (size: 0x1)
-    bool bAlignY;                                                                     // 0x00B5 (size: 0x1)
-    bool bAlignZ;                                                                     // 0x00B6 (size: 0x1)
+    EAlignObjectsAlignTypes AlignType;
+    EAlignObjectsAlignToOptions AlignTo;
+    EAlignObjectsBoxPoint BoxPosition;
+    bool bAlignX;
+    bool bAlignY;
+    bool bAlignZ;
 
-}; // Size: 0xB8
+};
 
 class UBakeCurvatureMapToolProperties : public UInteractiveToolPropertySet
 {
-    EBakeCurvatureTypeMode CurvatureType;                                             // 0x00A8 (size: 0x4)
-    EBakeCurvatureColorMode ColorMapping;                                             // 0x00AC (size: 0x4)
-    float ColorRangeMultiplier;                                                       // 0x00B0 (size: 0x4)
-    float MinRangeMultiplier;                                                         // 0x00B4 (size: 0x4)
-    EBakeCurvatureClampMode Clamping;                                                 // 0x00B8 (size: 0x4)
+    EBakeCurvatureTypeMode CurvatureType;
+    EBakeCurvatureColorMode ColorMapping;
+    float ColorRangeMultiplier;
+    float MinRangeMultiplier;
+    EBakeCurvatureClampMode Clamping;
 
-}; // Size: 0xC0
+};
 
 class UBakeInputMeshProperties : public UInteractiveToolPropertySet
 {
-    class UStaticMesh* TargetStaticMesh;                                              // 0x00A8 (size: 0x8)
-    class USkeletalMesh* TargetSkeletalMesh;                                          // 0x00B0 (size: 0x8)
-    class AActor* TargetDynamicMesh;                                                  // 0x00B8 (size: 0x8)
-    FString TargetUVLayer;                                                            // 0x00C0 (size: 0x10)
-    bool bHasTargetUVLayer;                                                           // 0x00D0 (size: 0x1)
-    class UStaticMesh* SourceStaticMesh;                                              // 0x00D8 (size: 0x8)
-    class USkeletalMesh* SourceSkeletalMesh;                                          // 0x00E0 (size: 0x8)
-    class AActor* SourceDynamicMesh;                                                  // 0x00E8 (size: 0x8)
-    bool bHideSourceMesh;                                                             // 0x00F0 (size: 0x1)
-    class UTexture2D* SourceNormalMap;                                                // 0x00F8 (size: 0x8)
-    FString SourceNormalMapUVLayer;                                                   // 0x0100 (size: 0x10)
-    EBakeNormalSpace SourceNormalSpace;                                               // 0x0110 (size: 0x4)
-    bool bHasSourceNormalMap;                                                         // 0x0114 (size: 0x1)
-    float ProjectionDistance;                                                         // 0x0118 (size: 0x4)
-    bool bProjectionInWorldSpace;                                                     // 0x011C (size: 0x1)
-    TArray<FString> TargetUVLayerNamesList;                                           // 0x0120 (size: 0x10)
-    TArray<FString> SourceUVLayerNamesList;                                           // 0x0130 (size: 0x10)
+    class UStaticMesh* TargetStaticMesh;
+    class USkeletalMesh* TargetSkeletalMesh;
+    class AActor* TargetDynamicMesh;
+    FString TargetUVLayer;
+    bool bHasTargetUVLayer;
+    class UStaticMesh* SourceStaticMesh;
+    class USkeletalMesh* SourceSkeletalMesh;
+    class AActor* SourceDynamicMesh;
+    bool bHideSourceMesh;
+    class UTexture2D* SourceNormalMap;
+    FString SourceNormalMapUVLayer;
+    EBakeNormalSpace SourceNormalSpace;
+    bool bHasSourceNormalMap;
+    float ProjectionDistance;
+    bool bProjectionInWorldSpace;
+    TArray<FString> TargetUVLayerNamesList;
+    TArray<FString> SourceUVLayerNamesList;
 
     TArray<FString> GetTargetUVLayerNamesFunc();
     TArray<FString> GetSourceUVLayerNamesFunc();
-}; // Size: 0x140
+};
 
 class UBakeMeshAttributeMapsResultToolProperties : public UInteractiveToolPropertySet
 {
-    TMap<class EBakeMapType, class UTexture2D*> Result;                               // 0x00A8 (size: 0x50)
+    TMap<class EBakeMapType, class UTexture2D*> Result;
 
-}; // Size: 0xF8
+};
 
 class UBakeMeshAttributeMapsTool : public UBakeMeshAttributeMapsToolBase
 {
-    class UBakeInputMeshProperties* InputMeshSettings;                                // 0x0600 (size: 0x8)
-    class UBakeMeshAttributeMapsToolProperties* Settings;                             // 0x0608 (size: 0x8)
-    class UBakeMeshAttributeMapsResultToolProperties* ResultSettings;                 // 0x0610 (size: 0x8)
+    class UBakeInputMeshProperties* InputMeshSettings;
+    class UBakeMeshAttributeMapsToolProperties* Settings;
+    class UBakeMeshAttributeMapsResultToolProperties* ResultSettings;
 
-}; // Size: 0x670
+};
 
 class UBakeMeshAttributeMapsToolBase : public UBakeMeshAttributeTool
 {
-    class UBakeVisualizationProperties* VisualizationProps;                           // 0x0490 (size: 0x8)
-    class UPreviewMesh* PreviewMesh;                                                  // 0x0498 (size: 0x8)
-    class UMaterialInstanceDynamic* PreviewMaterial;                                  // 0x04A0 (size: 0x8)
-    class UMaterialInstanceDynamic* BentNormalPreviewMaterial;                        // 0x04A8 (size: 0x8)
-    TMap<class EBakeMapType, class UTexture2D*> CachedMaps;                           // 0x0500 (size: 0x50)
-    class UTexture2D* EmptyNormalMap;                                                 // 0x05E8 (size: 0x8)
-    class UTexture2D* EmptyColorMapBlack;                                             // 0x05F0 (size: 0x8)
-    class UTexture2D* EmptyColorMapWhite;                                             // 0x05F8 (size: 0x8)
+    class UBakeVisualizationProperties* VisualizationProps;
+    class UPreviewMesh* PreviewMesh;
+    class UMaterialInstanceDynamic* PreviewMaterial;
+    class UMaterialInstanceDynamic* BentNormalPreviewMaterial;
+    TMap<class EBakeMapType, class UTexture2D*> CachedMaps;
+    class UTexture2D* EmptyNormalMap;
+    class UTexture2D* EmptyColorMapBlack;
+    class UTexture2D* EmptyColorMapWhite;
 
-}; // Size: 0x600
+};
 
 class UBakeMeshAttributeMapsToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UBakeMeshAttributeMapsToolProperties : public UInteractiveToolPropertySet
 {
-    int32 MapTypes;                                                                   // 0x00A8 (size: 0x4)
-    FString MapPreview;                                                               // 0x00B0 (size: 0x10)
-    EBakeTextureResolution Resolution;                                                // 0x00C0 (size: 0x4)
-    EBakeTextureBitDepth BitDepth;                                                    // 0x00C4 (size: 0x4)
-    EBakeTextureSamplesPerPixel SamplesPerPixel;                                      // 0x00C8 (size: 0x4)
-    class UTexture2D* SampleFilterMask;                                               // 0x00D0 (size: 0x8)
-    TArray<FString> MapPreviewNamesList;                                              // 0x00D8 (size: 0x10)
+    int32 MapTypes;
+    FString MapPreview;
+    EBakeTextureResolution Resolution;
+    EBakeTextureBitDepth BitDepth;
+    EBakeTextureSamplesPerPixel SamplesPerPixel;
+    class UTexture2D* SampleFilterMask;
+    TArray<FString> MapPreviewNamesList;
 
     TArray<FString> GetMapPreviewNamesFunc();
-}; // Size: 0x138
+};
 
 class UBakeMeshAttributeTool : public UMultiSelectionMeshEditingTool
 {
-    class UBakeOcclusionMapToolProperties* OcclusionSettings;                         // 0x00C0 (size: 0x8)
-    class UBakeCurvatureMapToolProperties* CurvatureSettings;                         // 0x00C8 (size: 0x8)
-    class UBakeTexture2DProperties* TextureSettings;                                  // 0x00D0 (size: 0x8)
-    class UBakeMultiTexture2DProperties* MultiTextureSettings;                        // 0x00D8 (size: 0x8)
-    class UMaterialInstanceDynamic* WorkingPreviewMaterial;                           // 0x00E0 (size: 0x8)
-    class UMaterialInstanceDynamic* ErrorPreviewMaterial;                             // 0x00E8 (size: 0x8)
+    class UBakeOcclusionMapToolProperties* OcclusionSettings;
+    class UBakeCurvatureMapToolProperties* CurvatureSettings;
+    class UBakeTexture2DProperties* TextureSettings;
+    class UBakeMultiTexture2DProperties* MultiTextureSettings;
+    class UMaterialInstanceDynamic* WorkingPreviewMaterial;
+    class UMaterialInstanceDynamic* ErrorPreviewMaterial;
 
-}; // Size: 0x490
+};
 
 class UBakeMeshAttributeVertexTool : public UBakeMeshAttributeTool
 {
-    class UBakeInputMeshProperties* InputMeshSettings;                                // 0x0490 (size: 0x8)
-    class UBakeMeshAttributeVertexToolProperties* Settings;                           // 0x0498 (size: 0x8)
-    class UPreviewMesh* PreviewMesh;                                                  // 0x04A0 (size: 0x8)
-    class UMaterialInstanceDynamic* PreviewMaterial;                                  // 0x04A8 (size: 0x8)
-    class UMaterialInstanceDynamic* PreviewAlphaMaterial;                             // 0x04B0 (size: 0x8)
+    class UBakeInputMeshProperties* InputMeshSettings;
+    class UBakeMeshAttributeVertexToolProperties* Settings;
+    class UPreviewMesh* PreviewMesh;
+    class UMaterialInstanceDynamic* PreviewMaterial;
+    class UMaterialInstanceDynamic* PreviewAlphaMaterial;
 
-}; // Size: 0x590
+};
 
 class UBakeMeshAttributeVertexToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UBakeMeshAttributeVertexToolProperties : public UInteractiveToolPropertySet
 {
-    EBakeVertexOutput OutputMode;                                                     // 0x00A8 (size: 0x4)
-    int32 OutputType;                                                                 // 0x00AC (size: 0x4)
-    int32 OutputTypeR;                                                                // 0x00B0 (size: 0x4)
-    int32 OutputTypeG;                                                                // 0x00B4 (size: 0x4)
-    int32 OutputTypeB;                                                                // 0x00B8 (size: 0x4)
-    int32 OutputTypeA;                                                                // 0x00BC (size: 0x4)
-    EBakeVertexChannel PreviewMode;                                                   // 0x00C0 (size: 0x4)
-    bool bSplitAtNormalSeams;                                                         // 0x00C4 (size: 0x1)
-    bool bSplitAtUVSeams;                                                             // 0x00C5 (size: 0x1)
+    EBakeVertexOutput OutputMode;
+    int32 OutputType;
+    int32 OutputTypeR;
+    int32 OutputTypeG;
+    int32 OutputTypeB;
+    int32 OutputTypeA;
+    EBakeVertexChannel PreviewMode;
+    bool bSplitAtNormalSeams;
+    bool bSplitAtUVSeams;
 
-}; // Size: 0xC8
+};
 
 class UBakeMultiMeshAttributeMapsTool : public UBakeMeshAttributeMapsToolBase
 {
-    class UBakeMultiMeshAttributeMapsToolProperties* Settings;                        // 0x0600 (size: 0x8)
-    class UBakeMultiMeshInputToolProperties* InputMeshSettings;                       // 0x0608 (size: 0x8)
-    class UBakeMeshAttributeMapsResultToolProperties* ResultSettings;                 // 0x0610 (size: 0x8)
+    class UBakeMultiMeshAttributeMapsToolProperties* Settings;
+    class UBakeMultiMeshInputToolProperties* InputMeshSettings;
+    class UBakeMeshAttributeMapsResultToolProperties* ResultSettings;
 
-}; // Size: 0x6B0
+};
 
 class UBakeMultiMeshAttributeMapsToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UBakeMultiMeshAttributeMapsToolProperties : public UInteractiveToolPropertySet
 {
-    int32 MapTypes;                                                                   // 0x00A8 (size: 0x4)
-    FString MapPreview;                                                               // 0x00B0 (size: 0x10)
-    EBakeTextureResolution Resolution;                                                // 0x00C0 (size: 0x4)
-    EBakeTextureBitDepth BitDepth;                                                    // 0x00C4 (size: 0x4)
-    EBakeTextureSamplesPerPixel SamplesPerPixel;                                      // 0x00C8 (size: 0x4)
-    class UTexture2D* SampleFilterMask;                                               // 0x00D0 (size: 0x8)
-    TArray<FString> MapPreviewNamesList;                                              // 0x00D8 (size: 0x10)
+    int32 MapTypes;
+    FString MapPreview;
+    EBakeTextureResolution Resolution;
+    EBakeTextureBitDepth BitDepth;
+    EBakeTextureSamplesPerPixel SamplesPerPixel;
+    class UTexture2D* SampleFilterMask;
+    TArray<FString> MapPreviewNamesList;
 
     TArray<FString> GetMapPreviewNamesFunc();
-}; // Size: 0x138
+};
 
 class UBakeMultiMeshInputToolProperties : public UInteractiveToolPropertySet
 {
-    class UStaticMesh* TargetStaticMesh;                                              // 0x00A8 (size: 0x8)
-    class USkeletalMesh* TargetSkeletalMesh;                                          // 0x00B0 (size: 0x8)
-    class AActor* TargetDynamicMesh;                                                  // 0x00B8 (size: 0x8)
-    FString TargetUVLayer;                                                            // 0x00C0 (size: 0x10)
-    TArray<FBakeMultiMeshDetailProperties> SourceMeshes;                              // 0x00D0 (size: 0x10)
-    float ProjectionDistance;                                                         // 0x00E0 (size: 0x4)
-    TArray<FString> TargetUVLayerNamesList;                                           // 0x00E8 (size: 0x10)
+    class UStaticMesh* TargetStaticMesh;
+    class USkeletalMesh* TargetSkeletalMesh;
+    class AActor* TargetDynamicMesh;
+    FString TargetUVLayer;
+    TArray<FBakeMultiMeshDetailProperties> SourceMeshes;
+    float ProjectionDistance;
+    TArray<FString> TargetUVLayerNamesList;
 
     TArray<FString> GetTargetUVLayerNamesFunc();
-}; // Size: 0xF8
+};
 
 class UBakeMultiTexture2DProperties : public UInteractiveToolPropertySet
 {
-    TArray<class UTexture2D*> MaterialIDSourceTextures;                               // 0x00A8 (size: 0x10)
-    FString UVLayer;                                                                  // 0x00B8 (size: 0x10)
-    TArray<FString> UVLayerNamesList;                                                 // 0x00C8 (size: 0x10)
-    TArray<class UTexture2D*> AllSourceTextures;                                      // 0x00D8 (size: 0x10)
+    TArray<class UTexture2D*> MaterialIDSourceTextures;
+    FString UVLayer;
+    TArray<FString> UVLayerNamesList;
+    TArray<class UTexture2D*> AllSourceTextures;
 
     TArray<FString> GetUVLayerNamesFunc();
-}; // Size: 0xE8
+};
 
 class UBakeNormalMapToolProperties : public UInteractiveToolPropertySet
 {
-}; // Size: 0xA8
+};
 
 class UBakeOcclusionMapToolProperties : public UInteractiveToolPropertySet
 {
-    int32 OcclusionRays;                                                              // 0x00A8 (size: 0x4)
-    float MaxDistance;                                                                // 0x00AC (size: 0x4)
-    float SpreadAngle;                                                                // 0x00B0 (size: 0x4)
-    float BiasAngle;                                                                  // 0x00B4 (size: 0x4)
+    int32 OcclusionRays;
+    float MaxDistance;
+    float SpreadAngle;
+    float BiasAngle;
 
-}; // Size: 0xB8
+};
 
 class UBakeRenderCaptureInputToolProperties : public UInteractiveToolPropertySet
 {
-    class UStaticMesh* TargetStaticMesh;                                              // 0x00A8 (size: 0x8)
-    FString TargetUVLayer;                                                            // 0x00B0 (size: 0x10)
-    TArray<FString> TargetUVLayerNamesList;                                           // 0x00C0 (size: 0x10)
+    class UStaticMesh* TargetStaticMesh;
+    FString TargetUVLayer;
+    TArray<FString> TargetUVLayerNamesList;
 
     TArray<FString> GetTargetUVLayerNamesFunc();
     int32 GetTargetUVLayerIndex();
-}; // Size: 0xD0
+};
 
 class UBakeRenderCaptureResults : public UInteractiveToolPropertySet
 {
-    class UTexture2D* BaseColorMap;                                                   // 0x00A8 (size: 0x8)
-    class UTexture2D* NormalMap;                                                      // 0x00B0 (size: 0x8)
-    class UTexture2D* PackedMRSMap;                                                   // 0x00B8 (size: 0x8)
-    class UTexture2D* MetallicMap;                                                    // 0x00C0 (size: 0x8)
-    class UTexture2D* RoughnessMap;                                                   // 0x00C8 (size: 0x8)
-    class UTexture2D* SpecularMap;                                                    // 0x00D0 (size: 0x8)
-    class UTexture2D* EmissiveMap;                                                    // 0x00D8 (size: 0x8)
+    class UTexture2D* BaseColorMap;
+    class UTexture2D* NormalMap;
+    class UTexture2D* PackedMRSMap;
+    class UTexture2D* MetallicMap;
+    class UTexture2D* RoughnessMap;
+    class UTexture2D* SpecularMap;
+    class UTexture2D* EmissiveMap;
 
-}; // Size: 0xE0
+};
 
 class UBakeRenderCaptureTool : public UBakeMeshAttributeMapsToolBase
 {
-    TArray<class AActor*> Actors;                                                     // 0x0600 (size: 0x10)
-    class UBakeRenderCaptureToolProperties* Settings;                                 // 0x0610 (size: 0x8)
-    class URenderCaptureProperties* RenderCaptureProperties;                          // 0x0618 (size: 0x8)
-    class UBakeRenderCaptureInputToolProperties* InputMeshSettings;                   // 0x0620 (size: 0x8)
-    class UBakeRenderCaptureResults* ResultSettings;                                  // 0x0628 (size: 0x8)
-    class UTexture2D* EmptyEmissiveMap;                                               // 0x0630 (size: 0x8)
-    class UTexture2D* EmptyPackedMRSMap;                                              // 0x0638 (size: 0x8)
-    class UTexture2D* EmptyRoughnessMap;                                              // 0x0640 (size: 0x8)
-    class UTexture2D* EmptyMetallicMap;                                               // 0x0648 (size: 0x8)
-    class UTexture2D* EmptySpecularMap;                                               // 0x0650 (size: 0x8)
-    class UMaterialInstanceDynamic* PreviewMaterialRC;                                // 0x0658 (size: 0x8)
-    class UMaterialInstanceDynamic* PreviewMaterialPackedRC;                          // 0x0660 (size: 0x8)
-    class URenderCaptureProperties* ComputedRenderCaptureProperties;                  // 0x0678 (size: 0x8)
+    TArray<class AActor*> Actors;
+    class UBakeRenderCaptureToolProperties* Settings;
+    class URenderCaptureProperties* RenderCaptureProperties;
+    class UBakeRenderCaptureInputToolProperties* InputMeshSettings;
+    class UBakeRenderCaptureResults* ResultSettings;
+    class UTexture2D* EmptyEmissiveMap;
+    class UTexture2D* EmptyPackedMRSMap;
+    class UTexture2D* EmptyRoughnessMap;
+    class UTexture2D* EmptyMetallicMap;
+    class UTexture2D* EmptySpecularMap;
+    class UMaterialInstanceDynamic* PreviewMaterialRC;
+    class UMaterialInstanceDynamic* PreviewMaterialPackedRC;
+    class URenderCaptureProperties* ComputedRenderCaptureProperties;
 
-}; // Size: 0x6E0
+};
 
 class UBakeRenderCaptureToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UBakeRenderCaptureToolProperties : public UInteractiveToolPropertySet
 {
-    FString MapPreview;                                                               // 0x00A8 (size: 0x10)
-    TArray<FString> MapPreviewNamesList;                                              // 0x00B8 (size: 0x10)
-    EBakeTextureSamplesPerPixel SamplesPerPixel;                                      // 0x00C8 (size: 0x4)
-    EBakeTextureResolution TextureSize;                                               // 0x00CC (size: 0x4)
-    float ValidSampleDepthThreshold;                                                  // 0x00D0 (size: 0x4)
+    FString MapPreview;
+    TArray<FString> MapPreviewNamesList;
+    EBakeTextureSamplesPerPixel SamplesPerPixel;
+    EBakeTextureResolution TextureSize;
+    float ValidSampleDepthThreshold;
 
     TArray<FString> GetMapPreviewNamesFunc();
-}; // Size: 0xD8
+};
 
 class UBakeTexture2DProperties : public UInteractiveToolPropertySet
 {
-    class UTexture2D* SourceTexture;                                                  // 0x00A8 (size: 0x8)
-    FString UVLayer;                                                                  // 0x00B0 (size: 0x10)
-    TArray<FString> UVLayerNamesList;                                                 // 0x00C0 (size: 0x10)
+    class UTexture2D* SourceTexture;
+    FString UVLayer;
+    TArray<FString> UVLayerNamesList;
 
     TArray<FString> GetUVLayerNamesFunc();
-}; // Size: 0xD0
+};
 
 class UBakeTransformTool : public UMultiSelectionMeshEditingTool
 {
-    class UBakeTransformToolProperties* BasicProperties;                              // 0x00B8 (size: 0x8)
+    class UBakeTransformToolProperties* BasicProperties;
 
-}; // Size: 0xD0
+};
 
 class UBakeTransformToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UBakeTransformToolProperties : public UInteractiveToolPropertySet
 {
-    bool bBakeRotation;                                                               // 0x00A8 (size: 0x1)
-    EBakeScaleMethod BakeScale;                                                       // 0x00A9 (size: 0x1)
-    bool bRecenterPivot;                                                              // 0x00AA (size: 0x1)
-    bool bAllowNoScale;                                                               // 0x00AB (size: 0x1)
+    bool bBakeRotation;
+    EBakeScaleMethod BakeScale;
+    bool bRecenterPivot;
+    bool bAllowNoScale;
 
-}; // Size: 0xB0
+};
 
 class UBakeVisualizationProperties : public UInteractiveToolPropertySet
 {
-    bool bPreviewAsMaterial;                                                          // 0x00A8 (size: 0x1)
-    float Brightness;                                                                 // 0x00AC (size: 0x4)
-    float AOMultiplier;                                                               // 0x00B0 (size: 0x4)
+    bool bPreviewAsMaterial;
+    float Brightness;
+    float AOMultiplier;
 
-}; // Size: 0xB8
+};
 
 class UBaseKelvinletBrushOpProps : public UMeshSculptBrushOpProps
 {
-    float Stiffness;                                                                  // 0x00A8 (size: 0x4)
-    float Incompressiblity;                                                           // 0x00AC (size: 0x4)
-    int32 BrushSteps;                                                                 // 0x00B0 (size: 0x4)
+    float Stiffness;
+    float Incompressiblity;
+    int32 BrushSteps;
 
-}; // Size: 0xB8
+};
 
 class UBasePlaneBrushOpProps : public UMeshSculptBrushOpProps
 {
-}; // Size: 0xA8
+};
 
 class UBaseSmoothBrushOpProps : public UMeshSculptBrushOpProps
 {
-}; // Size: 0xA8
+};
 
 class UBrushRemeshProperties : public URemeshProperties
 {
-    bool bEnableRemeshing;                                                            // 0x00B8 (size: 0x1)
-    int32 TriangleSize;                                                               // 0x00BC (size: 0x4)
-    int32 PreserveDetail;                                                             // 0x00C0 (size: 0x4)
-    int32 Iterations;                                                                 // 0x00C4 (size: 0x4)
+    bool bEnableRemeshing;
+    int32 TriangleSize;
+    int32 PreserveDetail;
+    int32 Iterations;
 
-}; // Size: 0xC8
+};
 
 class UCollisionGeometryVisualizationProperties : public UInteractiveToolPropertySet
 {
-    float LineThickness;                                                              // 0x00A8 (size: 0x4)
-    bool bShowHidden;                                                                 // 0x00AC (size: 0x1)
-    bool bRandomColors;                                                               // 0x00AD (size: 0x1)
-    FColor Color;                                                                     // 0x00B0 (size: 0x4)
+    float LineThickness;
+    bool bShowHidden;
+    bool bRandomColors;
+    FColor Color;
 
-}; // Size: 0xB8
+};
 
 class UConvertMeshesTool : public UMultiSelectionMeshEditingTool
 {
-    class UConvertMeshesToolProperties* BasicProperties;                              // 0x00C0 (size: 0x8)
-    class UCreateMeshObjectTypeProperties* OutputTypeProperties;                      // 0x00C8 (size: 0x8)
+    class UConvertMeshesToolProperties* BasicProperties;
+    class UCreateMeshObjectTypeProperties* OutputTypeProperties;
 
-}; // Size: 0xD0
+};
 
 class UConvertMeshesToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UConvertMeshesToolProperties : public UInteractiveToolPropertySet
 {
-    bool bTransferMaterials;                                                          // 0x00A8 (size: 0x1)
+    bool bTransferMaterials;
 
-}; // Size: 0xB0
+};
 
 class UConvertToPolygonsOperatorFactory : public UObject
 {
-    class UConvertToPolygonsTool* ConvertToPolygonsTool;                              // 0x0030 (size: 0x8)
+    class UConvertToPolygonsTool* ConvertToPolygonsTool;
 
-}; // Size: 0x38
+};
 
 class UConvertToPolygonsTool : public USingleSelectionMeshEditingTool
 {
-    class UConvertToPolygonsToolProperties* Settings;                                 // 0x00B8 (size: 0x8)
-    class UPolygroupLayersProperties* CopyFromLayerProperties;                        // 0x00C0 (size: 0x8)
-    class UOutputPolygroupLayerProperties* OutputProperties;                          // 0x00C8 (size: 0x8)
-    class UMeshOpPreviewWithBackgroundCompute* PreviewCompute;                        // 0x00D0 (size: 0x8)
-    class UPreviewGeometry* PreviewGeometry;                                          // 0x00D8 (size: 0x8)
+    class UConvertToPolygonsToolProperties* Settings;
+    class UPolygroupLayersProperties* CopyFromLayerProperties;
+    class UOutputPolygroupLayerProperties* OutputProperties;
+    class UMeshOpPreviewWithBackgroundCompute* PreviewCompute;
+    class UPreviewGeometry* PreviewGeometry;
 
-}; // Size: 0x110
+};
 
 class UConvertToPolygonsToolBuilder : public USingleSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UConvertToPolygonsToolProperties : public UInteractiveToolPropertySet
 {
-    EConvertToPolygonsMode ConversionMode;                                            // 0x00A8 (size: 0x4)
-    float AngleTolerance;                                                             // 0x00AC (size: 0x4)
-    int32 NumPoints;                                                                  // 0x00B0 (size: 0x4)
-    bool bSplitExisting;                                                              // 0x00B4 (size: 0x1)
-    bool bNormalWeighted;                                                             // 0x00B5 (size: 0x1)
-    float NormalWeighting;                                                            // 0x00B8 (size: 0x4)
-    float QuadAdjacencyWeight;                                                        // 0x00BC (size: 0x4)
-    float QuadMetricClamp;                                                            // 0x00C0 (size: 0x4)
-    int32 QuadSearchRounds;                                                           // 0x00C4 (size: 0x4)
-    bool bRespectUVSeams;                                                             // 0x00C8 (size: 0x1)
-    bool bRespectHardNormals;                                                         // 0x00C9 (size: 0x1)
-    int32 MinGroupSize;                                                               // 0x00CC (size: 0x4)
-    bool bCalculateNormals;                                                           // 0x00D0 (size: 0x1)
-    bool bShowGroupColors;                                                            // 0x00D1 (size: 0x1)
+    EConvertToPolygonsMode ConversionMode;
+    float AngleTolerance;
+    int32 NumPoints;
+    bool bSplitExisting;
+    bool bNormalWeighted;
+    float NormalWeighting;
+    float QuadAdjacencyWeight;
+    float QuadMetricClamp;
+    int32 QuadSearchRounds;
+    bool bRespectUVSeams;
+    bool bRespectHardNormals;
+    int32 MinGroupSize;
+    bool bCalculateNormals;
+    bool bShowGroupColors;
 
-}; // Size: 0xD8
+};
 
 class UCubeGridDuringActivityActions : public UInteractiveToolPropertySet
 {
 
     void Done();
     void Cancel();
-}; // Size: 0xB0
+};
 
 class UCubeGridTool : public UInteractiveTool
 {
-    class UCombinedTransformGizmo* GridGizmo;                                         // 0x00C0 (size: 0x8)
-    class UDragAlignmentMechanic* GridGizmoAlignmentMechanic;                         // 0x00C8 (size: 0x8)
-    class UTransformProxy* GridGizmoTransformProxy;                                   // 0x00D0 (size: 0x8)
-    class UPreviewGeometry* LineSets;                                                 // 0x00D8 (size: 0x8)
-    class UClickDragInputBehavior* ClickDragBehavior;                                 // 0x00E0 (size: 0x8)
-    class UMouseHoverBehavior* HoverBehavior;                                         // 0x00E8 (size: 0x8)
-    class ULocalSingleClickInputBehavior* CtrlMiddleClickBehavior;                    // 0x00F0 (size: 0x8)
-    class ULocalClickDragInputBehavior* MiddleClickDragBehavior;                      // 0x00F8 (size: 0x8)
-    class UCubeGridToolProperties* Settings;                                          // 0x0100 (size: 0x8)
-    class UCubeGridToolActions* ToolActions;                                          // 0x0108 (size: 0x8)
-    class UCubeGridDuringActivityActions* DuringActivityActions;                      // 0x0110 (size: 0x8)
-    class UNewMeshMaterialProperties* MaterialProperties;                             // 0x0118 (size: 0x8)
-    class UCreateMeshObjectTypeProperties* OutputTypeProperties;                      // 0x0120 (size: 0x8)
-    class UToolTarget* Target;                                                        // 0x0128 (size: 0x8)
-    class UMeshOpPreviewWithBackgroundCompute* Preview;                               // 0x02B0 (size: 0x8)
+    class UCombinedTransformGizmo* GridGizmo;
+    class UDragAlignmentMechanic* GridGizmoAlignmentMechanic;
+    class UTransformProxy* GridGizmoTransformProxy;
+    class UPreviewGeometry* LineSets;
+    class UClickDragInputBehavior* ClickDragBehavior;
+    class UMouseHoverBehavior* HoverBehavior;
+    class ULocalSingleClickInputBehavior* CtrlMiddleClickBehavior;
+    class ULocalClickDragInputBehavior* MiddleClickDragBehavior;
+    class UCubeGridToolProperties* Settings;
+    class UCubeGridToolActions* ToolActions;
+    class UCubeGridDuringActivityActions* DuringActivityActions;
+    class UNewMeshMaterialProperties* MaterialProperties;
+    class UCreateMeshObjectTypeProperties* OutputTypeProperties;
+    class UToolTarget* Target;
+    class UMeshOpPreviewWithBackgroundCompute* Preview;
 
-}; // Size: 0x620
+};
 
 class UCubeGridToolActions : public UInteractiveToolPropertySet
 {
-    class AActor* GridSourceActor;                                                    // 0x00B0 (size: 0x8)
+    class AActor* GridSourceActor;
 
     void SlideForward();
     void SlideBack();
@@ -524,287 +524,287 @@ class UCubeGridToolActions : public UInteractiveToolPropertySet
     void Pull();
     void Flip();
     void CornerMode();
-}; // Size: 0xB8
+};
 
 class UCubeGridToolBuilder : public UInteractiveToolWithToolTargetsBuilder
 {
-}; // Size: 0x30
+};
 
 class UCubeGridToolProperties : public UInteractiveToolPropertySet
 {
-    FVector GridFrameOrigin;                                                          // 0x00A8 (size: 0x18)
-    FRotator GridFrameOrientation;                                                    // 0x00C0 (size: 0x18)
-    bool bShowGizmo;                                                                  // 0x00D8 (size: 0x1)
-    uint8 GridPower;                                                                  // 0x00E8 (size: 0x1)
-    double CurrentBlockSize;                                                          // 0x00F0 (size: 0x8)
-    int32 BlocksPerStep;                                                              // 0x00F8 (size: 0x4)
-    bool bPowerOfTwoBlockSizes;                                                       // 0x00FC (size: 0x1)
-    double BlockBaseSize;                                                             // 0x0100 (size: 0x8)
-    bool bCrosswiseDiagonal;                                                          // 0x0108 (size: 0x1)
-    bool bKeepSideGroups;                                                             // 0x0109 (size: 0x1)
-    double PlaneTolerance;                                                            // 0x0110 (size: 0x8)
-    bool bHitUnrelatedGeometry;                                                       // 0x0118 (size: 0x1)
-    bool bHitGridGroundPlaneIfCloser;                                                 // 0x0119 (size: 0x1)
-    ECubeGridToolFaceSelectionMode FaceSelectionMode;                                 // 0x011C (size: 0x4)
-    FString ToggleCornerMode;                                                         // 0x0120 (size: 0x10)
-    FString PushPull;                                                                 // 0x0130 (size: 0x10)
-    FString ResizeGrid;                                                               // 0x0140 (size: 0x10)
-    FString SlideSelection;                                                           // 0x0150 (size: 0x10)
-    FString FlipSelection;                                                            // 0x0160 (size: 0x10)
-    FString GridGizmo;                                                                // 0x0170 (size: 0x10)
-    FString QuickShiftGizmo;                                                          // 0x0180 (size: 0x10)
-    FString AlignGizmo;                                                               // 0x0190 (size: 0x10)
-    bool bInCornerMode;                                                               // 0x01A0 (size: 0x1)
-    bool bAllowedToEditGrid;                                                          // 0x01A1 (size: 0x1)
+    FVector GridFrameOrigin;
+    FRotator GridFrameOrientation;
+    bool bShowGizmo;
+    uint8 GridPower;
+    double CurrentBlockSize;
+    int32 BlocksPerStep;
+    bool bPowerOfTwoBlockSizes;
+    double BlockBaseSize;
+    bool bCrosswiseDiagonal;
+    bool bKeepSideGroups;
+    double PlaneTolerance;
+    bool bHitUnrelatedGeometry;
+    bool bHitGridGroundPlaneIfCloser;
+    ECubeGridToolFaceSelectionMode FaceSelectionMode;
+    FString ToggleCornerMode;
+    FString PushPull;
+    FString ResizeGrid;
+    FString SlideSelection;
+    FString FlipSelection;
+    FString GridGizmo;
+    FString QuickShiftGizmo;
+    FString AlignGizmo;
+    bool bInCornerMode;
+    bool bAllowedToEditGrid;
 
-}; // Size: 0x1A8
+};
 
 class UDeformMeshPolygonsTool : public UMeshSurfacePointTool
 {
-    class AInternalToolFrameworkActor* PreviewMeshActor;                              // 0x0108 (size: 0x8)
-    class UDynamicMeshComponent* DynamicMeshComponent;                                // 0x0110 (size: 0x8)
-    class UDeformMeshPolygonsTransformProperties* TransformProps;                     // 0x0118 (size: 0x8)
+    class AInternalToolFrameworkActor* PreviewMeshActor;
+    class UDynamicMeshComponent* DynamicMeshComponent;
+    class UDeformMeshPolygonsTransformProperties* TransformProps;
 
-}; // Size: 0x17F0
+};
 
 class UDeformMeshPolygonsToolBuilder : public UMeshSurfacePointMeshEditingToolBuilder
 {
-}; // Size: 0x30
+};
 
 class UDeformMeshPolygonsTransformProperties : public UInteractiveToolPropertySet
 {
-    EGroupTopologyDeformationStrategy DeformationStrategy;                            // 0x00A8 (size: 0x1)
-    EQuickTransformerMode TransformMode;                                              // 0x00A9 (size: 0x1)
-    bool bSelectFaces;                                                                // 0x00AA (size: 0x1)
-    bool bSelectEdges;                                                                // 0x00AB (size: 0x1)
-    bool bSelectVertices;                                                             // 0x00AC (size: 0x1)
-    bool bShowWireframe;                                                              // 0x00AD (size: 0x1)
-    EWeightScheme SelectedWeightScheme;                                               // 0x00B0 (size: 0x4)
-    double HandleWeight;                                                              // 0x00B8 (size: 0x8)
-    bool bPostFixHandles;                                                             // 0x00C0 (size: 0x1)
+    EGroupTopologyDeformationStrategy DeformationStrategy;
+    EQuickTransformerMode TransformMode;
+    bool bSelectFaces;
+    bool bSelectEdges;
+    bool bSelectVertices;
+    bool bShowWireframe;
+    EWeightScheme SelectedWeightScheme;
+    double HandleWeight;
+    bool bPostFixHandles;
 
-}; // Size: 0xC8
+};
 
 class UDiffusionSmoothProperties : public UInteractiveToolPropertySet
 {
-    float SmoothingPerStep;                                                           // 0x00A8 (size: 0x4)
-    int32 Steps;                                                                      // 0x00AC (size: 0x4)
-    bool bPreserveUVs;                                                                // 0x00B0 (size: 0x1)
+    float SmoothingPerStep;
+    int32 Steps;
+    bool bPreserveUVs;
 
-}; // Size: 0xB8
+};
 
 class UDisplaceMeshCommonProperties : public UInteractiveToolPropertySet
 {
-    EDisplaceMeshToolDisplaceType DisplacementType;                                   // 0x00A8 (size: 0x1)
-    float DisplaceIntensity;                                                          // 0x00AC (size: 0x4)
-    int32 RandomSeed;                                                                 // 0x00B0 (size: 0x4)
-    EDisplaceMeshToolSubdivisionType SubdivisionType;                                 // 0x00B4 (size: 0x1)
-    int32 Subdivisions;                                                               // 0x00B8 (size: 0x4)
-    FName WeightMap;                                                                  // 0x00BC (size: 0x8)
-    TArray<FString> WeightMapsList;                                                   // 0x00C8 (size: 0x10)
-    bool bInvertWeightMap;                                                            // 0x00D8 (size: 0x1)
-    bool bShowWireframe;                                                              // 0x00D9 (size: 0x1)
-    bool bDisableSizeWarning;                                                         // 0x00DA (size: 0x1)
+    EDisplaceMeshToolDisplaceType DisplacementType;
+    float DisplaceIntensity;
+    int32 RandomSeed;
+    EDisplaceMeshToolSubdivisionType SubdivisionType;
+    int32 Subdivisions;
+    FName WeightMap;
+    TArray<FString> WeightMapsList;
+    bool bInvertWeightMap;
+    bool bShowWireframe;
+    bool bDisableSizeWarning;
 
     TArray<FString> GetWeightMapsFunc();
-}; // Size: 0xE0
+};
 
 class UDisplaceMeshDirectionalFilterProperties : public UInteractiveToolPropertySet
 {
-    bool bEnableFilter;                                                               // 0x00A8 (size: 0x1)
-    FVector FilterDirection;                                                          // 0x00B0 (size: 0x18)
-    float FilterWidth;                                                                // 0x00C8 (size: 0x4)
+    bool bEnableFilter;
+    FVector FilterDirection;
+    float FilterWidth;
 
-}; // Size: 0xD0
+};
 
 class UDisplaceMeshPerlinNoiseProperties : public UInteractiveToolPropertySet
 {
-    TArray<FPerlinLayerProperties> PerlinLayerProperties;                             // 0x00A8 (size: 0x10)
+    TArray<FPerlinLayerProperties> PerlinLayerProperties;
 
-}; // Size: 0xB8
+};
 
 class UDisplaceMeshSineWaveProperties : public UInteractiveToolPropertySet
 {
-    float SineWaveFrequency;                                                          // 0x00A8 (size: 0x4)
-    float SineWavePhaseShift;                                                         // 0x00AC (size: 0x4)
-    FVector SineWaveDirection;                                                        // 0x00B0 (size: 0x18)
+    float SineWaveFrequency;
+    float SineWavePhaseShift;
+    FVector SineWaveDirection;
 
-}; // Size: 0xC8
+};
 
 class UDisplaceMeshTextureMapProperties : public UInteractiveToolPropertySet
 {
-    class UTexture2D* DisplacementMap;                                                // 0x00A8 (size: 0x8)
-    EDisplaceMeshToolChannelType Channel;                                             // 0x00B0 (size: 0x1)
-    float DisplacementMapBaseValue;                                                   // 0x00B4 (size: 0x4)
-    FVector2D UVScale;                                                                // 0x00B8 (size: 0x10)
-    FVector2D UVOffset;                                                               // 0x00C8 (size: 0x10)
-    bool bApplyAdjustmentCurve;                                                       // 0x00D8 (size: 0x1)
-    class UCurveFloat* AdjustmentCurve;                                               // 0x00E0 (size: 0x8)
-    bool bRecalcNormals;                                                              // 0x00E8 (size: 0x1)
+    class UTexture2D* DisplacementMap;
+    EDisplaceMeshToolChannelType Channel;
+    float DisplacementMapBaseValue;
+    FVector2D UVScale;
+    FVector2D UVOffset;
+    bool bApplyAdjustmentCurve;
+    class UCurveFloat* AdjustmentCurve;
+    bool bRecalcNormals;
 
-}; // Size: 0xF0
+};
 
 class UDisplaceMeshTool : public USingleSelectionMeshEditingTool
 {
-    class UDisplaceMeshCommonProperties* CommonProperties;                            // 0x00B8 (size: 0x8)
-    class UDisplaceMeshDirectionalFilterProperties* DirectionalFilterProperties;      // 0x00C0 (size: 0x8)
-    class UDisplaceMeshTextureMapProperties* TextureMapProperties;                    // 0x00C8 (size: 0x8)
-    class UDisplaceMeshPerlinNoiseProperties* NoiseProperties;                        // 0x00D0 (size: 0x8)
-    class UDisplaceMeshSineWaveProperties* SineWaveProperties;                        // 0x00D8 (size: 0x8)
-    class USelectiveTessellationProperties* SelectiveTessellationProperties;          // 0x00E0 (size: 0x8)
-    class UCurveFloat* ActiveContrastCurveTarget;                                     // 0x00E8 (size: 0x8)
-    class AInternalToolFrameworkActor* PreviewMeshActor;                              // 0x0430 (size: 0x8)
-    class UDynamicMeshComponent* DynamicMeshComponent;                                // 0x0438 (size: 0x8)
+    class UDisplaceMeshCommonProperties* CommonProperties;
+    class UDisplaceMeshDirectionalFilterProperties* DirectionalFilterProperties;
+    class UDisplaceMeshTextureMapProperties* TextureMapProperties;
+    class UDisplaceMeshPerlinNoiseProperties* NoiseProperties;
+    class UDisplaceMeshSineWaveProperties* SineWaveProperties;
+    class USelectiveTessellationProperties* SelectiveTessellationProperties;
+    class UCurveFloat* ActiveContrastCurveTarget;
+    class AInternalToolFrameworkActor* PreviewMeshActor;
+    class UDynamicMeshComponent* DynamicMeshComponent;
 
-}; // Size: 0x460
+};
 
 class UDisplaceMeshToolBuilder : public USingleSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UDrawPolyPathExtrudeProperties : public UInteractiveToolPropertySet
 {
-    EDrawPolyPathExtrudeDirection Direction;                                          // 0x00A8 (size: 0x4)
+    EDrawPolyPathExtrudeDirection Direction;
 
-}; // Size: 0xB0
+};
 
 class UDrawPolyPathProperties : public UInteractiveToolPropertySet
 {
-    EDrawPolyPathWidthMode WidthMode;                                                 // 0x00A8 (size: 0x4)
-    float Width;                                                                      // 0x00AC (size: 0x4)
-    bool bRoundedCorners;                                                             // 0x00B0 (size: 0x1)
-    EDrawPolyPathRadiusMode RadiusMode;                                               // 0x00B4 (size: 0x4)
-    float CornerRadius;                                                               // 0x00B8 (size: 0x4)
-    int32 RadialSlices;                                                               // 0x00BC (size: 0x4)
-    bool bSinglePolyGroup;                                                            // 0x00C0 (size: 0x1)
-    EDrawPolyPathExtrudeMode ExtrudeMode;                                             // 0x00C4 (size: 0x4)
-    float ExtrudeHeight;                                                              // 0x00C8 (size: 0x4)
-    float RampStartRatio;                                                             // 0x00CC (size: 0x4)
+    EDrawPolyPathWidthMode WidthMode;
+    float Width;
+    bool bRoundedCorners;
+    EDrawPolyPathRadiusMode RadiusMode;
+    float CornerRadius;
+    int32 RadialSlices;
+    bool bSinglePolyGroup;
+    EDrawPolyPathExtrudeMode ExtrudeMode;
+    float ExtrudeHeight;
+    float RampStartRatio;
 
-}; // Size: 0xD0
+};
 
 class UDrawPolyPathTool : public UInteractiveTool
 {
-    class UCreateMeshObjectTypeProperties* OutputTypeProperties;                      // 0x00B0 (size: 0x8)
-    class UDrawPolyPathProperties* TransformProps;                                    // 0x00B8 (size: 0x8)
-    class UDrawPolyPathExtrudeProperties* ExtrudeProperties;                          // 0x00C0 (size: 0x8)
-    class UNewMeshMaterialProperties* MaterialProperties;                             // 0x00C8 (size: 0x8)
-    class UConstructionPlaneMechanic* PlaneMechanic;                                  // 0x0190 (size: 0x8)
-    class UPolyEditPreviewMesh* EditPreview;                                          // 0x0258 (size: 0x8)
-    class UPlaneDistanceFromHitMechanic* ExtrudeHeightMechanic;                       // 0x0260 (size: 0x8)
-    class USpatialCurveDistanceMechanic* CurveDistMechanic;                           // 0x0268 (size: 0x8)
-    class UCollectSurfacePathMechanic* SurfacePathMechanic;                           // 0x0270 (size: 0x8)
+    class UCreateMeshObjectTypeProperties* OutputTypeProperties;
+    class UDrawPolyPathProperties* TransformProps;
+    class UDrawPolyPathExtrudeProperties* ExtrudeProperties;
+    class UNewMeshMaterialProperties* MaterialProperties;
+    class UConstructionPlaneMechanic* PlaneMechanic;
+    class UPolyEditPreviewMesh* EditPreview;
+    class UPlaneDistanceFromHitMechanic* ExtrudeHeightMechanic;
+    class USpatialCurveDistanceMechanic* CurveDistMechanic;
+    class UCollectSurfacePathMechanic* SurfacePathMechanic;
 
-}; // Size: 0x280
+};
 
 class UDrawPolyPathToolBuilder : public UMeshSurfacePointToolBuilder
 {
-}; // Size: 0x30
+};
 
 class UDynamicMeshBrushProperties : public UInteractiveToolPropertySet
 {
-    FBrushToolRadius BrushSize;                                                       // 0x00A8 (size: 0x14)
-    float BrushFalloffAmount;                                                         // 0x00BC (size: 0x4)
-    float Depth;                                                                      // 0x00C0 (size: 0x4)
-    bool bHitBackFaces;                                                               // 0x00C4 (size: 0x1)
+    FBrushToolRadius BrushSize;
+    float BrushFalloffAmount;
+    float Depth;
+    bool bHitBackFaces;
 
-}; // Size: 0xC8
+};
 
 class UDynamicMeshBrushSculptProperties : public UInteractiveToolPropertySet
 {
-    bool bIsRemeshingEnabled;                                                         // 0x00A8 (size: 0x1)
-    EDynamicMeshSculptBrushType PrimaryBrushType;                                     // 0x00A9 (size: 0x1)
-    float PrimaryBrushSpeed;                                                          // 0x00AC (size: 0x4)
-    bool bPreserveUVFlow;                                                             // 0x00B0 (size: 0x1)
-    bool bFreezeTarget;                                                               // 0x00B1 (size: 0x1)
-    float SmoothBrushSpeed;                                                           // 0x00B4 (size: 0x4)
-    bool bDetailPreservingSmooth;                                                     // 0x00B8 (size: 0x1)
+    bool bIsRemeshingEnabled;
+    EDynamicMeshSculptBrushType PrimaryBrushType;
+    float PrimaryBrushSpeed;
+    bool bPreserveUVFlow;
+    bool bFreezeTarget;
+    float SmoothBrushSpeed;
+    bool bDetailPreservingSmooth;
 
-}; // Size: 0xC0
+};
 
 class UDynamicMeshBrushTool : public UBaseBrushTool
 {
-    class UPreviewMesh* PreviewMesh;                                                  // 0x0280 (size: 0x8)
+    class UPreviewMesh* PreviewMesh;
 
-}; // Size: 0x2C0
+};
 
 class UDynamicMeshSculptTool : public UMeshSurfacePointTool
 {
-    class UDynamicMeshBrushProperties* BrushProperties;                               // 0x0100 (size: 0x8)
-    class UDynamicMeshBrushSculptProperties* SculptProperties;                        // 0x0108 (size: 0x8)
-    class USculptMaxBrushProperties* SculptMaxBrushProperties;                        // 0x0110 (size: 0x8)
-    class UKelvinBrushProperties* KelvinBrushProperties;                              // 0x0118 (size: 0x8)
-    class UBrushRemeshProperties* RemeshProperties;                                   // 0x0120 (size: 0x8)
-    class UFixedPlaneBrushProperties* GizmoProperties;                                // 0x0128 (size: 0x8)
-    class UMeshEditingViewProperties* ViewProperties;                                 // 0x0130 (size: 0x8)
-    class UDynamicSculptToolActions* SculptToolActions;                               // 0x0138 (size: 0x8)
-    class UBrushStampIndicator* BrushIndicator;                                       // 0x01A0 (size: 0x8)
-    class UMaterialInstanceDynamic* BrushIndicatorMaterial;                           // 0x01A8 (size: 0x8)
-    class UPreviewMesh* BrushIndicatorMesh;                                           // 0x01B0 (size: 0x8)
-    class UOctreeDynamicMeshComponent* DynamicMeshComponent;                          // 0x01B8 (size: 0x8)
-    class UMaterialInstanceDynamic* ActiveOverrideMaterial;                           // 0x01C0 (size: 0x8)
-    class UCombinedTransformGizmo* PlaneTransformGizmo;                               // 0x0FF0 (size: 0x8)
-    class UTransformProxy* PlaneTransformProxy;                                       // 0x0FF8 (size: 0x8)
+    class UDynamicMeshBrushProperties* BrushProperties;
+    class UDynamicMeshBrushSculptProperties* SculptProperties;
+    class USculptMaxBrushProperties* SculptMaxBrushProperties;
+    class UKelvinBrushProperties* KelvinBrushProperties;
+    class UBrushRemeshProperties* RemeshProperties;
+    class UFixedPlaneBrushProperties* GizmoProperties;
+    class UMeshEditingViewProperties* ViewProperties;
+    class UDynamicSculptToolActions* SculptToolActions;
+    class UBrushStampIndicator* BrushIndicator;
+    class UMaterialInstanceDynamic* BrushIndicatorMaterial;
+    class UPreviewMesh* BrushIndicatorMesh;
+    class UOctreeDynamicMeshComponent* DynamicMeshComponent;
+    class UMaterialInstanceDynamic* ActiveOverrideMaterial;
+    class UCombinedTransformGizmo* PlaneTransformGizmo;
+    class UTransformProxy* PlaneTransformProxy;
 
-}; // Size: 0x1010
+};
 
 class UDynamicMeshSculptToolBuilder : public UMeshSurfacePointMeshEditingToolBuilder
 {
-}; // Size: 0x38
+};
 
 class UDynamicSculptToolActions : public UInteractiveToolPropertySet
 {
 
     void DiscardAttributes();
-}; // Size: 0xB0
+};
 
 class UEditNormalsAdvancedProperties : public UInteractiveToolPropertySet
 {
-}; // Size: 0xA8
+};
 
 class UEditNormalsOperatorFactory : public UObject
 {
-    class UEditNormalsTool* Tool;                                                     // 0x0030 (size: 0x8)
+    class UEditNormalsTool* Tool;
 
-}; // Size: 0x40
+};
 
 class UEditNormalsTool : public UMultiSelectionMeshEditingTool
 {
-    class UEditNormalsToolProperties* BasicProperties;                                // 0x00B8 (size: 0x8)
-    class UEditNormalsAdvancedProperties* AdvancedProperties;                         // 0x00C0 (size: 0x8)
-    class UPolygroupLayersProperties* PolygroupLayerProperties;                       // 0x00C8 (size: 0x8)
-    TArray<class UMeshOpPreviewWithBackgroundCompute*> Previews;                      // 0x00D0 (size: 0x10)
+    class UEditNormalsToolProperties* BasicProperties;
+    class UEditNormalsAdvancedProperties* AdvancedProperties;
+    class UPolygroupLayersProperties* PolygroupLayerProperties;
+    TArray<class UMeshOpPreviewWithBackgroundCompute*> Previews;
 
-}; // Size: 0x150
+};
 
 class UEditNormalsToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UEditNormalsToolProperties : public UInteractiveToolPropertySet
 {
-    bool bRecomputeNormals;                                                           // 0x00A8 (size: 0x1)
-    ENormalCalculationMethod NormalCalculationMethod;                                 // 0x00A9 (size: 0x1)
-    bool bFixInconsistentNormals;                                                     // 0x00AA (size: 0x1)
-    bool bInvertNormals;                                                              // 0x00AB (size: 0x1)
-    ESplitNormalMethod SplitNormalMethod;                                             // 0x00AC (size: 0x1)
-    float SharpEdgeAngleThreshold;                                                    // 0x00B0 (size: 0x4)
-    bool bAllowSharpVertices;                                                         // 0x00B4 (size: 0x1)
+    bool bRecomputeNormals;
+    ENormalCalculationMethod NormalCalculationMethod;
+    bool bFixInconsistentNormals;
+    bool bInvertNormals;
+    ESplitNormalMethod SplitNormalMethod;
+    float SharpEdgeAngleThreshold;
+    bool bAllowSharpVertices;
 
-}; // Size: 0xB8
+};
 
 class UEditPivotTool : public UMultiSelectionMeshEditingTool
 {
-    class UEditPivotToolProperties* TransformProps;                                   // 0x00C0 (size: 0x8)
-    class UEditPivotToolActionPropertySet* EditPivotActions;                          // 0x00C8 (size: 0x8)
-    TArray<FEditPivotTarget> ActiveGizmos;                                            // 0x01A0 (size: 0x10)
-    class UDragAlignmentMechanic* DragAlignmentMechanic;                              // 0x01B0 (size: 0x8)
+    class UEditPivotToolProperties* TransformProps;
+    class UEditPivotToolActionPropertySet* EditPivotActions;
+    TArray<FEditPivotTarget> ActiveGizmos;
+    class UDragAlignmentMechanic* DragAlignmentMechanic;
 
-}; // Size: 0x230
+};
 
 class UEditPivotToolActionPropertySet : public UInteractiveToolPropertySet
 {
-    bool bUseWorldBox;                                                                // 0x00B0 (size: 0x1)
+    bool bUseWorldBox;
 
     void WorldOrigin();
     void Top();
@@ -814,330 +814,330 @@ class UEditPivotToolActionPropertySet : public UInteractiveToolPropertySet
     void Center();
     void Bottom();
     void Back();
-}; // Size: 0xB8
+};
 
 class UEditPivotToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UEditPivotToolProperties : public UInteractiveToolPropertySet
 {
-    bool bEnableSnapDragging;                                                         // 0x00A8 (size: 0x1)
-    EEditPivotSnapDragRotationMode RotationMode;                                      // 0x00A9 (size: 0x1)
+    bool bEnableSnapDragging;
+    EEditPivotSnapDragRotationMode RotationMode;
 
-}; // Size: 0xB0
+};
 
 class UEditUVIslandsTool : public UMeshSurfacePointTool
 {
-    class UExistingMeshMaterialProperties* MaterialSettings;                          // 0x0100 (size: 0x8)
-    class UMaterialInstanceDynamic* CheckerMaterial;                                  // 0x0108 (size: 0x8)
-    class AInternalToolFrameworkActor* PreviewMeshActor;                              // 0x0110 (size: 0x8)
-    class UDynamicMeshComponent* DynamicMeshComponent;                                // 0x0118 (size: 0x8)
-    class UPolygonSelectionMechanic* SelectionMechanic;                               // 0x0120 (size: 0x8)
-    class UMultiTransformer* MultiTransformer;                                        // 0x0130 (size: 0x8)
+    class UExistingMeshMaterialProperties* MaterialSettings;
+    class UMaterialInstanceDynamic* CheckerMaterial;
+    class AInternalToolFrameworkActor* PreviewMeshActor;
+    class UDynamicMeshComponent* DynamicMeshComponent;
+    class UPolygonSelectionMechanic* SelectionMechanic;
+    class UMultiTransformer* MultiTransformer;
 
-}; // Size: 0x4D0
+};
 
 class UEditUVIslandsToolBuilder : public UMeshSurfacePointMeshEditingToolBuilder
 {
-}; // Size: 0x30
+};
 
 class UEraseBrushOpProps : public UMeshSculptBrushOpProps
 {
-    float Strength;                                                                   // 0x00A8 (size: 0x4)
-    float Falloff;                                                                    // 0x00AC (size: 0x4)
+    float Strength;
+    float Falloff;
 
-}; // Size: 0xB0
+};
 
 class UExtractCollisionGeometryTool : public USingleSelectionMeshEditingTool
 {
-    class UCreateMeshObjectTypeProperties* OutputTypeProperties;                      // 0x00B8 (size: 0x8)
-    class UExtractCollisionToolProperties* Settings;                                  // 0x00C0 (size: 0x8)
-    class UCollisionGeometryVisualizationProperties* VizSettings;                     // 0x00C8 (size: 0x8)
-    class UPhysicsObjectToolPropertySet* ObjectProps;                                 // 0x00D0 (size: 0x8)
-    class UPreviewGeometry* PreviewElements;                                          // 0x00D8 (size: 0x8)
-    class UPreviewMesh* PreviewMesh;                                                  // 0x00E0 (size: 0x8)
+    class UCreateMeshObjectTypeProperties* OutputTypeProperties;
+    class UExtractCollisionToolProperties* Settings;
+    class UCollisionGeometryVisualizationProperties* VizSettings;
+    class UPhysicsObjectToolPropertySet* ObjectProps;
+    class UPreviewGeometry* PreviewElements;
+    class UPreviewMesh* PreviewMesh;
 
-}; // Size: 0x330
+};
 
 class UExtractCollisionGeometryToolBuilder : public USingleSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UExtractCollisionToolProperties : public UInteractiveToolPropertySet
 {
-    EExtractCollisionOutputType CollisionType;                                        // 0x00A8 (size: 0x1)
-    bool bWeldEdges;                                                                  // 0x00A9 (size: 0x1)
-    bool bOutputSeparateMeshes;                                                       // 0x00AA (size: 0x1)
-    bool bShowPreview;                                                                // 0x00AB (size: 0x1)
-    bool bShowInputMesh;                                                              // 0x00AC (size: 0x1)
+    EExtractCollisionOutputType CollisionType;
+    bool bWeldEdges;
+    bool bOutputSeparateMeshes;
+    bool bShowPreview;
+    bool bShowInputMesh;
 
-}; // Size: 0xB0
+};
 
 class UFixedPlaneBrushOpProps : public UBasePlaneBrushOpProps
 {
-    float Strength;                                                                   // 0x00A8 (size: 0x4)
-    float Falloff;                                                                    // 0x00AC (size: 0x4)
-    float Depth;                                                                      // 0x00B0 (size: 0x4)
-    EPlaneBrushSideMode WhichSide;                                                    // 0x00B4 (size: 0x1)
+    float Strength;
+    float Falloff;
+    float Depth;
+    EPlaneBrushSideMode WhichSide;
 
-}; // Size: 0xB8
+};
 
 class UFixedPlaneBrushProperties : public UInteractiveToolPropertySet
 {
-    bool bPropertySetEnabled;                                                         // 0x00A8 (size: 0x1)
-    bool bShowGizmo;                                                                  // 0x00A9 (size: 0x1)
-    FVector Position;                                                                 // 0x00B0 (size: 0x18)
-    FQuat Rotation;                                                                   // 0x00D0 (size: 0x20)
+    bool bPropertySetEnabled;
+    bool bShowGizmo;
+    FVector Position;
+    FQuat Rotation;
 
-}; // Size: 0xF0
+};
 
 class UFlattenBrushOpProps : public UMeshSculptBrushOpProps
 {
-    float Strength;                                                                   // 0x00A8 (size: 0x4)
-    float Falloff;                                                                    // 0x00AC (size: 0x4)
-    float Depth;                                                                      // 0x00B0 (size: 0x4)
-    EPlaneBrushSideMode WhichSide;                                                    // 0x00B4 (size: 0x1)
+    float Strength;
+    float Falloff;
+    float Depth;
+    EPlaneBrushSideMode WhichSide;
 
-}; // Size: 0xB8
+};
 
 class UGroupEraseBrushOpProps : public UMeshSculptBrushOpProps
 {
-    int32 Group;                                                                      // 0x00A8 (size: 0x4)
-    bool bOnlyEraseCurrent;                                                           // 0x00AC (size: 0x1)
+    int32 Group;
+    bool bOnlyEraseCurrent;
 
-}; // Size: 0xF0
+};
 
 class UGroupPaintBrushFilterProperties : public UInteractiveToolPropertySet
 {
-    EMeshGroupPaintBrushType PrimaryBrushType;                                        // 0x00A8 (size: 0x1)
-    EMeshGroupPaintInteractionType SubToolType;                                       // 0x00A9 (size: 0x1)
-    float BrushSize;                                                                  // 0x00AC (size: 0x4)
-    EMeshGroupPaintBrushAreaType BrushAreaMode;                                       // 0x00B0 (size: 0x1)
-    bool bHitBackFaces;                                                               // 0x00B1 (size: 0x1)
-    int32 SetGroup;                                                                   // 0x00B4 (size: 0x4)
-    bool bOnlySetUngrouped;                                                           // 0x00B8 (size: 0x1)
-    int32 EraseGroup;                                                                 // 0x00BC (size: 0x4)
-    bool bOnlyEraseCurrent;                                                           // 0x00C0 (size: 0x1)
-    float AngleThreshold;                                                             // 0x00C4 (size: 0x4)
-    bool bUVSeams;                                                                    // 0x00C8 (size: 0x1)
-    bool bNormalSeams;                                                                // 0x00C9 (size: 0x1)
-    EMeshGroupPaintVisibilityType VisibilityFilter;                                   // 0x00CA (size: 0x1)
-    int32 MinTriVertCount;                                                            // 0x00CC (size: 0x4)
+    EMeshGroupPaintBrushType PrimaryBrushType;
+    EMeshGroupPaintInteractionType SubToolType;
+    float BrushSize;
+    EMeshGroupPaintBrushAreaType BrushAreaMode;
+    bool bHitBackFaces;
+    int32 SetGroup;
+    bool bOnlySetUngrouped;
+    int32 EraseGroup;
+    bool bOnlyEraseCurrent;
+    float AngleThreshold;
+    bool bUVSeams;
+    bool bNormalSeams;
+    EMeshGroupPaintVisibilityType VisibilityFilter;
+    int32 MinTriVertCount;
 
-}; // Size: 0xD0
+};
 
 class UGroupPaintBrushOpProps : public UMeshSculptBrushOpProps
 {
-    int32 Group;                                                                      // 0x00A8 (size: 0x4)
-    bool bOnlyPaintUngrouped;                                                         // 0x00AC (size: 0x1)
+    int32 Group;
+    bool bOnlyPaintUngrouped;
 
-}; // Size: 0xB0
+};
 
 class UHoleFillOperatorFactory : public UObject
 {
-    class UHoleFillTool* FillTool;                                                    // 0x0030 (size: 0x8)
+    class UHoleFillTool* FillTool;
 
-}; // Size: 0x38
+};
 
 class UHoleFillStatisticsProperties : public UInteractiveToolPropertySet
 {
-    FString InitialHoles;                                                             // 0x00A8 (size: 0x10)
-    FString SelectedHoles;                                                            // 0x00B8 (size: 0x10)
-    FString SuccessfulFills;                                                          // 0x00C8 (size: 0x10)
-    FString FailedFills;                                                              // 0x00D8 (size: 0x10)
-    FString RemainingHoles;                                                           // 0x00E8 (size: 0x10)
+    FString InitialHoles;
+    FString SelectedHoles;
+    FString SuccessfulFills;
+    FString FailedFills;
+    FString RemainingHoles;
 
-}; // Size: 0xF8
+};
 
 class UHoleFillTool : public USingleSelectionMeshEditingTool
 {
-    class USmoothHoleFillProperties* SmoothHoleFillProperties;                        // 0x00B8 (size: 0x8)
-    class UHoleFillToolProperties* Properties;                                        // 0x00C0 (size: 0x8)
-    class UHoleFillToolActions* Actions;                                              // 0x00C8 (size: 0x8)
-    class UHoleFillStatisticsProperties* Statistics;                                  // 0x00D0 (size: 0x8)
-    class UMeshOpPreviewWithBackgroundCompute* Preview;                               // 0x00D8 (size: 0x8)
-    class UPolygonSelectionMechanic* SelectionMechanic;                               // 0x00E0 (size: 0x8)
+    class USmoothHoleFillProperties* SmoothHoleFillProperties;
+    class UHoleFillToolProperties* Properties;
+    class UHoleFillToolActions* Actions;
+    class UHoleFillStatisticsProperties* Statistics;
+    class UMeshOpPreviewWithBackgroundCompute* Preview;
+    class UPolygonSelectionMechanic* SelectionMechanic;
 
-}; // Size: 0x240
+};
 
 class UHoleFillToolActions : public UInteractiveToolPropertySet
 {
 
     void SelectAll();
     void Clear();
-}; // Size: 0xB0
+};
 
 class UHoleFillToolBuilder : public USingleSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UHoleFillToolProperties : public UInteractiveToolPropertySet
 {
-    EHoleFillOpFillType FillType;                                                     // 0x00A8 (size: 0x1)
-    bool bRemoveIsolatedTriangles;                                                    // 0x00A9 (size: 0x1)
-    bool bQuickFillSmallHoles;                                                        // 0x00AA (size: 0x1)
+    EHoleFillOpFillType FillType;
+    bool bRemoveIsolatedTriangles;
+    bool bQuickFillSmallHoles;
 
-}; // Size: 0xB0
+};
 
 class UImplicitOffsetProperties : public UInteractiveToolPropertySet
 {
-    float Smoothness;                                                                 // 0x00A8 (size: 0x4)
-    bool bPreserveUVs;                                                                // 0x00AC (size: 0x1)
+    float Smoothness;
+    bool bPreserveUVs;
 
-}; // Size: 0xB0
+};
 
 class UImplicitSmoothProperties : public UInteractiveToolPropertySet
 {
-    float SmoothSpeed;                                                                // 0x00A8 (size: 0x4)
-    float Smoothness;                                                                 // 0x00AC (size: 0x4)
-    bool bPreserveUVs;                                                                // 0x00B0 (size: 0x1)
-    float VolumeCorrection;                                                           // 0x00B4 (size: 0x4)
+    float SmoothSpeed;
+    float Smoothness;
+    bool bPreserveUVs;
+    float VolumeCorrection;
 
-}; // Size: 0xB8
+};
 
 class UInflateBrushOpProps : public UMeshSculptBrushOpProps
 {
-    float Strength;                                                                   // 0x00A8 (size: 0x4)
-    float Falloff;                                                                    // 0x00AC (size: 0x4)
+    float Strength;
+    float Falloff;
 
-}; // Size: 0xB0
+};
 
 class UIterativeOffsetProperties : public UInteractiveToolPropertySet
 {
-    int32 Steps;                                                                      // 0x00A8 (size: 0x4)
-    bool bOffsetBoundaries;                                                           // 0x00AC (size: 0x1)
-    float SmoothingPerStep;                                                           // 0x00B0 (size: 0x4)
-    bool bReprojectSmooth;                                                            // 0x00B4 (size: 0x1)
+    int32 Steps;
+    bool bOffsetBoundaries;
+    float SmoothingPerStep;
+    bool bReprojectSmooth;
 
-}; // Size: 0xB8
+};
 
 class UIterativeSmoothProperties : public UInteractiveToolPropertySet
 {
-    float SmoothingPerStep;                                                           // 0x00A8 (size: 0x4)
-    int32 Steps;                                                                      // 0x00AC (size: 0x4)
-    bool bSmoothBoundary;                                                             // 0x00B0 (size: 0x1)
+    float SmoothingPerStep;
+    int32 Steps;
+    bool bSmoothBoundary;
 
-}; // Size: 0xB8
+};
 
 class UKelvinBrushProperties : public UInteractiveToolPropertySet
 {
-    float FalloffDistance;                                                            // 0x00A8 (size: 0x4)
-    float Stiffness;                                                                  // 0x00AC (size: 0x4)
-    float Incompressiblity;                                                           // 0x00B0 (size: 0x4)
-    int32 BrushSteps;                                                                 // 0x00B4 (size: 0x4)
+    float FalloffDistance;
+    float Stiffness;
+    float Incompressiblity;
+    int32 BrushSteps;
 
-}; // Size: 0xB8
+};
 
 class ULatticeDeformerOperatorFactory : public UObject
 {
-    class ULatticeDeformerTool* LatticeDeformerTool;                                  // 0x0030 (size: 0x8)
+    class ULatticeDeformerTool* LatticeDeformerTool;
 
-}; // Size: 0x38
+};
 
 class ULatticeDeformerTool : public USingleSelectionMeshEditingTool
 {
-    class ULatticeControlPointsMechanic* ControlPointsMechanic;                       // 0x00D8 (size: 0x8)
-    class ULatticeDeformerToolProperties* Settings;                                   // 0x00E0 (size: 0x8)
-    class UMeshOpPreviewWithBackgroundCompute* Preview;                               // 0x00E8 (size: 0x8)
-    bool bLatticeDeformed;                                                            // 0x00F0 (size: 0x1)
+    class ULatticeControlPointsMechanic* ControlPointsMechanic;
+    class ULatticeDeformerToolProperties* Settings;
+    class UMeshOpPreviewWithBackgroundCompute* Preview;
+    bool bLatticeDeformed;
 
-}; // Size: 0x160
+};
 
 class ULatticeDeformerToolBuilder : public USingleSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class ULatticeDeformerToolProperties : public UInteractiveToolPropertySet
 {
-    int32 XAxisResolution;                                                            // 0x00B0 (size: 0x4)
-    int32 YAxisResolution;                                                            // 0x00B4 (size: 0x4)
-    int32 ZAxisResolution;                                                            // 0x00B8 (size: 0x4)
-    float Padding;                                                                    // 0x00BC (size: 0x4)
-    ELatticeInterpolationType InterpolationType;                                      // 0x00C0 (size: 0x1)
-    bool bDeformNormals;                                                              // 0x00C1 (size: 0x1)
-    bool bCanChangeResolution;                                                        // 0x00C2 (size: 0x1)
-    EToolContextCoordinateSystem GizmoCoordinateSystem;                               // 0x00C4 (size: 0x4)
-    bool bSetPivotMode;                                                               // 0x00C8 (size: 0x1)
-    bool bSoftDeformation;                                                            // 0x00C9 (size: 0x1)
+    int32 XAxisResolution;
+    int32 YAxisResolution;
+    int32 ZAxisResolution;
+    float Padding;
+    ELatticeInterpolationType InterpolationType;
+    bool bDeformNormals;
+    bool bCanChangeResolution;
+    EToolContextCoordinateSystem GizmoCoordinateSystem;
+    bool bSetPivotMode;
+    bool bSoftDeformation;
 
     void Constrain();
     void ClearConstraints();
-}; // Size: 0xD0
+};
 
 class UMeshAnalysisProperties : public UInteractiveToolPropertySet
 {
-    FString SurfaceArea;                                                              // 0x00A8 (size: 0x10)
-    FString Volume;                                                                   // 0x00B8 (size: 0x10)
+    FString SurfaceArea;
+    FString Volume;
 
-}; // Size: 0xC8
+};
 
 class UMeshAttributePaintBrushOperationProperties : public UInteractiveToolPropertySet
 {
-    EBrushActionMode BrushAction;                                                     // 0x00A8 (size: 0x4)
+    EBrushActionMode BrushAction;
 
-}; // Size: 0xB0
+};
 
 class UMeshAttributePaintEditActions : public UInteractiveToolPropertySet
 {
-}; // Size: 0xB0
+};
 
 class UMeshAttributePaintTool : public UDynamicMeshBrushTool
 {
-    class UMeshAttributePaintBrushOperationProperties* BrushActionProps;              // 0x02C0 (size: 0x8)
-    class UMeshAttributePaintToolProperties* AttribProps;                             // 0x02C8 (size: 0x8)
+    class UMeshAttributePaintBrushOperationProperties* BrushActionProps;
+    class UMeshAttributePaintToolProperties* AttribProps;
 
-}; // Size: 0x7E0
+};
 
 class UMeshAttributePaintToolBuilder : public UMeshSurfacePointMeshEditingToolBuilder
 {
-}; // Size: 0x70
+};
 
 class UMeshAttributePaintToolProperties : public UInteractiveToolPropertySet
 {
-    FString Attribute;                                                                // 0x00A8 (size: 0x10)
+    FString Attribute;
 
     TArray<FString> GetAttributeNames();
-}; // Size: 0xC8
+};
 
 class UMeshBoundaryToolBase : public USingleSelectionMeshEditingTool
 {
-    class UPolygonSelectionMechanic* SelectionMechanic;                               // 0x01A0 (size: 0x8)
+    class UPolygonSelectionMechanic* SelectionMechanic;
 
-}; // Size: 0x1B0
+};
 
 class UMeshConstraintProperties : public UInteractiveToolPropertySet
 {
-    bool bPreserveSharpEdges;                                                         // 0x00A8 (size: 0x1)
-    EMeshBoundaryConstraint MeshBoundaryConstraint;                                   // 0x00A9 (size: 0x1)
-    EGroupBoundaryConstraint GroupBoundaryConstraint;                                 // 0x00AA (size: 0x1)
-    EMaterialBoundaryConstraint MaterialBoundaryConstraint;                           // 0x00AB (size: 0x1)
-    bool bPreventNormalFlips;                                                         // 0x00AC (size: 0x1)
-    bool bPreventTinyTriangles;                                                       // 0x00AD (size: 0x1)
+    bool bPreserveSharpEdges;
+    EMeshBoundaryConstraint MeshBoundaryConstraint;
+    EGroupBoundaryConstraint GroupBoundaryConstraint;
+    EMaterialBoundaryConstraint MaterialBoundaryConstraint;
+    bool bPreventNormalFlips;
+    bool bPreventTinyTriangles;
 
-}; // Size: 0xB0
+};
 
 class UMeshGroupPaintTool : public UMeshSculptToolBase
 {
-    class UPolygroupLayersProperties* PolygroupLayerProperties;                       // 0x0B98 (size: 0x8)
-    class UGroupPaintBrushFilterProperties* FilterProperties;                         // 0x0BA0 (size: 0x8)
-    class UGroupPaintBrushOpProps* PaintBrushOpProperties;                            // 0x0BA8 (size: 0x8)
-    class UGroupEraseBrushOpProps* EraseBrushOpProperties;                            // 0x0BB0 (size: 0x8)
-    class UMeshGroupPaintToolFreezeActions* FreezeActions;                            // 0x0BB8 (size: 0x8)
-    class UPolyLassoMarqueeMechanic* PolyLassoMechanic;                               // 0x0BC8 (size: 0x8)
-    class AInternalToolFrameworkActor* PreviewMeshActor;                              // 0x0BD0 (size: 0x8)
-    class UDynamicMeshComponent* DynamicMeshComponent;                                // 0x0BD8 (size: 0x8)
-    class UMeshElementsVisualizer* MeshElementsDisplay;                               // 0x0BE0 (size: 0x8)
+    class UPolygroupLayersProperties* PolygroupLayerProperties;
+    class UGroupPaintBrushFilterProperties* FilterProperties;
+    class UGroupPaintBrushOpProps* PaintBrushOpProperties;
+    class UGroupEraseBrushOpProps* EraseBrushOpProperties;
+    class UMeshGroupPaintToolFreezeActions* FreezeActions;
+    class UPolyLassoMarqueeMechanic* PolyLassoMechanic;
+    class AInternalToolFrameworkActor* PreviewMeshActor;
+    class UDynamicMeshComponent* DynamicMeshComponent;
+    class UMeshElementsVisualizer* MeshElementsDisplay;
 
-}; // Size: 0xFB0
+};
 
 class UMeshGroupPaintToolActionPropertySet : public UInteractiveToolPropertySet
 {
-}; // Size: 0xB0
+};
 
 class UMeshGroupPaintToolBuilder : public UMeshSurfacePointMeshEditingToolBuilder
 {
-}; // Size: 0x30
+};
 
 class UMeshGroupPaintToolFreezeActions : public UMeshGroupPaintToolActionPropertySet
 {
@@ -1150,59 +1150,59 @@ class UMeshGroupPaintToolFreezeActions : public UMeshGroupPaintToolActionPropert
     void FloodFillCurrent();
     void ClearCurrent();
     void ClearAll();
-}; // Size: 0xB0
+};
 
 class UMeshInspectorProperties : public UInteractiveToolPropertySet
 {
-    bool bWireframe;                                                                  // 0x00A8 (size: 0x1)
-    bool bBoundaryEdges;                                                              // 0x00A9 (size: 0x1)
-    bool bBowtieVertices;                                                             // 0x00AA (size: 0x1)
-    bool bPolygonBorders;                                                             // 0x00AB (size: 0x1)
-    bool bUVSeams;                                                                    // 0x00AC (size: 0x1)
-    bool bUVBowties;                                                                  // 0x00AD (size: 0x1)
-    bool bMissingUVs;                                                                 // 0x00AE (size: 0x1)
-    bool bNormalSeams;                                                                // 0x00AF (size: 0x1)
-    bool bNormalVectors;                                                              // 0x00B0 (size: 0x1)
-    bool bTangentVectors;                                                             // 0x00B1 (size: 0x1)
-    float NormalLength;                                                               // 0x00B4 (size: 0x4)
-    float TangentLength;                                                              // 0x00B8 (size: 0x4)
+    bool bWireframe;
+    bool bBoundaryEdges;
+    bool bBowtieVertices;
+    bool bPolygonBorders;
+    bool bUVSeams;
+    bool bUVBowties;
+    bool bMissingUVs;
+    bool bNormalSeams;
+    bool bNormalVectors;
+    bool bTangentVectors;
+    float NormalLength;
+    float TangentLength;
 
-}; // Size: 0xC0
+};
 
 class UMeshInspectorTool : public USingleSelectionMeshEditingTool
 {
-    class UMeshInspectorProperties* Settings;                                         // 0x00B8 (size: 0x8)
-    class UExistingMeshMaterialProperties* MaterialSettings;                          // 0x00C0 (size: 0x8)
-    class UPreviewMesh* PreviewMesh;                                                  // 0x00D0 (size: 0x8)
-    class ULineSetComponent* DrawnLineSet;                                            // 0x00D8 (size: 0x8)
-    class UMaterialInterface* DefaultMaterial;                                        // 0x00E0 (size: 0x8)
+    class UMeshInspectorProperties* Settings;
+    class UExistingMeshMaterialProperties* MaterialSettings;
+    class UPreviewMesh* PreviewMesh;
+    class ULineSetComponent* DrawnLineSet;
+    class UMaterialInterface* DefaultMaterial;
 
-}; // Size: 0x158
+};
 
 class UMeshInspectorToolBuilder : public USingleSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UMeshSculptBrushOpProps : public UInteractiveToolPropertySet
 {
-}; // Size: 0xA8
+};
 
 class UMeshSculptToolBase : public UMeshSurfacePointTool
 {
-    class USculptBrushProperties* BrushProperties;                                    // 0x0100 (size: 0x8)
-    class UWorkPlaneProperties* GizmoProperties;                                      // 0x0108 (size: 0x8)
-    TMap<int32, UMeshSculptBrushOpProps*> BrushOpPropSets;                            // 0x0230 (size: 0x50)
-    TMap<int32, UMeshSculptBrushOpProps*> SecondaryBrushOpPropSets;                   // 0x02D0 (size: 0x50)
-    class UMeshEditingViewProperties* ViewProperties;                                 // 0x0A10 (size: 0x8)
-    class UMaterialInstanceDynamic* ActiveOverrideMaterial;                           // 0x0A18 (size: 0x8)
-    class UBrushStampIndicator* BrushIndicator;                                       // 0x0A20 (size: 0x8)
-    bool bIsVolumetricIndicator;                                                      // 0x0A28 (size: 0x1)
-    class UMaterialInstanceDynamic* BrushIndicatorMaterial;                           // 0x0A30 (size: 0x8)
-    class UPreviewMesh* BrushIndicatorMesh;                                           // 0x0A38 (size: 0x8)
-    class UCombinedTransformGizmo* PlaneTransformGizmo;                               // 0x0A40 (size: 0x8)
-    class UTransformProxy* PlaneTransformProxy;                                       // 0x0A48 (size: 0x8)
+    class USculptBrushProperties* BrushProperties;
+    class UWorkPlaneProperties* GizmoProperties;
+    TMap<int32, UMeshSculptBrushOpProps*> BrushOpPropSets;
+    TMap<int32, UMeshSculptBrushOpProps*> SecondaryBrushOpPropSets;
+    class UMeshEditingViewProperties* ViewProperties;
+    class UMaterialInstanceDynamic* ActiveOverrideMaterial;
+    class UBrushStampIndicator* BrushIndicator;
+    bool bIsVolumetricIndicator;
+    class UMaterialInstanceDynamic* BrushIndicatorMaterial;
+    class UPreviewMesh* BrushIndicatorMesh;
+    class UCombinedTransformGizmo* PlaneTransformGizmo;
+    class UTransformProxy* PlaneTransformProxy;
 
-}; // Size: 0xBA0
+};
 
 class UMeshSelectionEditActions : public UMeshSelectionToolActionPropertySet
 {
@@ -1216,7 +1216,7 @@ class UMeshSelectionEditActions : public UMeshSelectionToolActionPropertySet
     void Grow();
     void FloodFill();
     void Clear();
-}; // Size: 0xB0
+};
 
 class UMeshSelectionMeshEditActions : public UMeshSelectionToolActionPropertySet
 {
@@ -1228,130 +1228,130 @@ class UMeshSelectionMeshEditActions : public UMeshSelectionToolActionPropertySet
     void Disconnect();
     void Delete();
     void CreatePolygroup();
-}; // Size: 0xB0
+};
 
 class UMeshSelectionTool : public UDynamicMeshBrushTool
 {
-    class UMeshSelectionToolProperties* SelectionProps;                               // 0x02C8 (size: 0x8)
-    class UMeshSelectionEditActions* SelectionActions;                                // 0x02D0 (size: 0x8)
-    class UMeshSelectionToolActionPropertySet* EditActions;                           // 0x02D8 (size: 0x8)
-    class UMeshStatisticsProperties* MeshStatisticsProperties;                        // 0x02E0 (size: 0x8)
-    class UMeshElementsVisualizer* MeshElementsDisplay;                               // 0x02E8 (size: 0x8)
-    class UMeshUVChannelProperties* UVChannelProperties;                              // 0x02F0 (size: 0x8)
-    class UPolygroupLayersProperties* PolygroupLayerProperties;                       // 0x02F8 (size: 0x8)
-    class UMeshSelectionSet* Selection;                                               // 0x0300 (size: 0x8)
-    TArray<class AActor*> SpawnedActors;                                              // 0x0308 (size: 0x10)
+    class UMeshSelectionToolProperties* SelectionProps;
+    class UMeshSelectionEditActions* SelectionActions;
+    class UMeshSelectionToolActionPropertySet* EditActions;
+    class UMeshStatisticsProperties* MeshStatisticsProperties;
+    class UMeshElementsVisualizer* MeshElementsDisplay;
+    class UMeshUVChannelProperties* UVChannelProperties;
+    class UPolygroupLayersProperties* PolygroupLayerProperties;
+    class UMeshSelectionSet* Selection;
+    TArray<class AActor*> SpawnedActors;
 
-}; // Size: 0x690
+};
 
 class UMeshSelectionToolActionPropertySet : public UInteractiveToolPropertySet
 {
-}; // Size: 0xB0
+};
 
 class UMeshSelectionToolBuilder : public UMeshSurfacePointMeshEditingToolBuilder
 {
-}; // Size: 0x30
+};
 
 class UMeshSelectionToolProperties : public UInteractiveToolPropertySet
 {
-    EMeshSelectionToolPrimaryMode SelectionMode;                                      // 0x00A8 (size: 0x4)
-    float AngleTolerance;                                                             // 0x00AC (size: 0x4)
-    bool bHitBackFaces;                                                               // 0x00B0 (size: 0x1)
-    bool bShowPoints;                                                                 // 0x00B1 (size: 0x1)
-    EMeshFacesColorMode FaceColorMode;                                                // 0x00B4 (size: 0x4)
+    EMeshSelectionToolPrimaryMode SelectionMode;
+    float AngleTolerance;
+    bool bHitBackFaces;
+    bool bShowPoints;
+    EMeshFacesColorMode FaceColorMode;
 
-}; // Size: 0xB8
+};
 
 class UMeshSpaceDeformerTool : public USingleSelectionMeshEditingTool
 {
-    class UMeshSpaceDeformerToolProperties* Settings;                                 // 0x00B8 (size: 0x8)
-    class UMeshSpaceDeformerToolActionPropertySet* ToolActions;                       // 0x00C0 (size: 0x8)
-    class UGizmoTransformChangeStateTarget* StateTarget;                              // 0x00C8 (size: 0x8)
-    class UDragAlignmentMechanic* DragAlignmentMechanic;                              // 0x00D0 (size: 0x8)
-    class UMeshOpPreviewWithBackgroundCompute* Preview;                               // 0x00D8 (size: 0x8)
-    class UPreviewMesh* OriginalMeshPreview;                                          // 0x00F0 (size: 0x8)
-    class UIntervalGizmo* IntervalGizmo;                                              // 0x00F8 (size: 0x8)
-    class UCombinedTransformGizmo* TransformGizmo;                                    // 0x0100 (size: 0x8)
-    class UTransformProxy* TransformProxy;                                            // 0x0108 (size: 0x8)
-    class UGizmoLocalFloatParameterSource* UpIntervalSource;                          // 0x0110 (size: 0x8)
-    class UGizmoLocalFloatParameterSource* DownIntervalSource;                        // 0x0118 (size: 0x8)
-    class UGizmoLocalFloatParameterSource* ForwardIntervalSource;                     // 0x0120 (size: 0x8)
+    class UMeshSpaceDeformerToolProperties* Settings;
+    class UMeshSpaceDeformerToolActionPropertySet* ToolActions;
+    class UGizmoTransformChangeStateTarget* StateTarget;
+    class UDragAlignmentMechanic* DragAlignmentMechanic;
+    class UMeshOpPreviewWithBackgroundCompute* Preview;
+    class UPreviewMesh* OriginalMeshPreview;
+    class UIntervalGizmo* IntervalGizmo;
+    class UCombinedTransformGizmo* TransformGizmo;
+    class UTransformProxy* TransformProxy;
+    class UGizmoLocalFloatParameterSource* UpIntervalSource;
+    class UGizmoLocalFloatParameterSource* DownIntervalSource;
+    class UGizmoLocalFloatParameterSource* ForwardIntervalSource;
 
-}; // Size: 0x2C0
+};
 
 class UMeshSpaceDeformerToolActionPropertySet : public UInteractiveToolPropertySet
 {
 
     void ShiftToCenter();
-}; // Size: 0xB0
+};
 
 class UMeshSpaceDeformerToolBuilder : public USingleSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UMeshSpaceDeformerToolProperties : public UInteractiveToolPropertySet
 {
-    ENonlinearOperationType SelectedOperationType;                                    // 0x00A8 (size: 0x1)
-    float UpperBoundsInterval;                                                        // 0x00AC (size: 0x4)
-    float LowerBoundsInterval;                                                        // 0x00B0 (size: 0x4)
-    float BendDegrees;                                                                // 0x00B4 (size: 0x4)
-    float TwistDegrees;                                                               // 0x00B8 (size: 0x4)
-    EFlareProfileType FlareProfileType;                                               // 0x00BC (size: 0x1)
-    float FlarePercentY;                                                              // 0x00C0 (size: 0x4)
-    bool bLockXAndYFlaring;                                                           // 0x00C4 (size: 0x1)
-    float FlarePercentX;                                                              // 0x00C8 (size: 0x4)
-    bool bLockBottom;                                                                 // 0x00CC (size: 0x1)
-    bool bShowOriginalMesh;                                                           // 0x00CD (size: 0x1)
-    bool bDrawVisualization;                                                          // 0x00CE (size: 0x1)
-    bool bAlignToNormalOnCtrlClick;                                                   // 0x00CF (size: 0x1)
+    ENonlinearOperationType SelectedOperationType;
+    float UpperBoundsInterval;
+    float LowerBoundsInterval;
+    float BendDegrees;
+    float TwistDegrees;
+    EFlareProfileType FlareProfileType;
+    float FlarePercentY;
+    bool bLockXAndYFlaring;
+    float FlarePercentX;
+    bool bLockBottom;
+    bool bShowOriginalMesh;
+    bool bDrawVisualization;
+    bool bAlignToNormalOnCtrlClick;
 
-}; // Size: 0xD0
+};
 
 class UMeshStatisticsProperties : public UInteractiveToolPropertySet
 {
-    FString Mesh;                                                                     // 0x00A8 (size: 0x10)
-    FString UV;                                                                       // 0x00B8 (size: 0x10)
-    FString Attributes;                                                               // 0x00C8 (size: 0x10)
+    FString Mesh;
+    FString UV;
+    FString Attributes;
 
-}; // Size: 0xD8
+};
 
 class UMeshSymmetryProperties : public UInteractiveToolPropertySet
 {
-    bool bEnableSymmetry;                                                             // 0x00A8 (size: 0x1)
-    bool bSymmetryCanBeEnabled;                                                       // 0x00A9 (size: 0x1)
+    bool bEnableSymmetry;
+    bool bSymmetryCanBeEnabled;
 
-}; // Size: 0xB0
+};
 
 class UMeshVertexSculptTool : public UMeshSculptToolBase
 {
-    class UVertexBrushSculptProperties* SculptProperties;                             // 0x0B98 (size: 0x8)
-    class UVertexBrushAlphaProperties* AlphaProperties;                               // 0x0BA0 (size: 0x8)
-    class UTexture2D* BrushAlpha;                                                     // 0x0BA8 (size: 0x8)
-    class UMeshSymmetryProperties* SymmetryProperties;                                // 0x0BB0 (size: 0x8)
-    class AInternalToolFrameworkActor* PreviewMeshActor;                              // 0x0BB8 (size: 0x8)
-    class UDynamicMeshComponent* DynamicMeshComponent;                                // 0x0BC0 (size: 0x8)
+    class UVertexBrushSculptProperties* SculptProperties;
+    class UVertexBrushAlphaProperties* AlphaProperties;
+    class UTexture2D* BrushAlpha;
+    class UMeshSymmetryProperties* SymmetryProperties;
+    class AInternalToolFrameworkActor* PreviewMeshActor;
+    class UDynamicMeshComponent* DynamicMeshComponent;
 
-}; // Size: 0x14E0
+};
 
 class UMeshVertexSculptToolBuilder : public UMeshSurfacePointMeshEditingToolBuilder
 {
-}; // Size: 0x30
+};
 
 class UMirrorOperatorFactory : public UObject
 {
-    class UMirrorTool* MirrorTool;                                                    // 0x0030 (size: 0x8)
+    class UMirrorTool* MirrorTool;
 
-}; // Size: 0x40
+};
 
 class UMirrorTool : public UMultiSelectionMeshEditingTool
 {
-    class UMirrorToolProperties* Settings;                                            // 0x00C0 (size: 0x8)
-    class UMirrorToolActionPropertySet* ToolActions;                                  // 0x00C8 (size: 0x8)
-    TArray<class UDynamicMeshReplacementChangeTarget*> MeshesToMirror;                // 0x00D0 (size: 0x10)
-    TArray<class UMeshOpPreviewWithBackgroundCompute*> Previews;                      // 0x00E0 (size: 0x10)
-    class UConstructionPlaneMechanic* PlaneMechanic;                                  // 0x0120 (size: 0x8)
+    class UMirrorToolProperties* Settings;
+    class UMirrorToolActionPropertySet* ToolActions;
+    TArray<class UDynamicMeshReplacementChangeTarget*> MeshesToMirror;
+    TArray<class UMeshOpPreviewWithBackgroundCompute*> Previews;
+    class UConstructionPlaneMechanic* PlaneMechanic;
 
-}; // Size: 0x168
+};
 
 class UMirrorToolActionPropertySet : public UInteractiveToolPropertySet
 {
@@ -1363,891 +1363,891 @@ class UMirrorToolActionPropertySet : public UInteractiveToolPropertySet
     void Forward();
     void Down();
     void Backward();
-}; // Size: 0xB0
+};
 
 class UMirrorToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UMirrorToolProperties : public UInteractiveToolPropertySet
 {
-    EMirrorOperationMode OperationMode;                                               // 0x00A8 (size: 0x1)
-    bool bCropAlongMirrorPlaneFirst;                                                  // 0x00A9 (size: 0x1)
-    bool bWeldVerticesOnMirrorPlane;                                                  // 0x00AA (size: 0x1)
-    double PlaneTolerance;                                                            // 0x00B0 (size: 0x8)
-    bool bAllowBowtieVertexCreation;                                                  // 0x00B8 (size: 0x1)
-    EMirrorCtrlClickBehavior CtrlClickBehavior;                                       // 0x00B9 (size: 0x1)
-    bool bButtonsOnlyChangeOrientation;                                               // 0x00BA (size: 0x1)
-    bool bShowPreview;                                                                // 0x00BB (size: 0x1)
-    EMirrorSaveMode SaveMode;                                                         // 0x00BC (size: 0x1)
+    EMirrorOperationMode OperationMode;
+    bool bCropAlongMirrorPlaneFirst;
+    bool bWeldVerticesOnMirrorPlane;
+    double PlaneTolerance;
+    bool bAllowBowtieVertexCreation;
+    EMirrorCtrlClickBehavior CtrlClickBehavior;
+    bool bButtonsOnlyChangeOrientation;
+    bool bShowPreview;
+    EMirrorSaveMode SaveMode;
 
-}; // Size: 0xC0
+};
 
 class UMoveBrushOpProps : public UMeshSculptBrushOpProps
 {
-    float Strength;                                                                   // 0x00A8 (size: 0x4)
-    float Falloff;                                                                    // 0x00AC (size: 0x4)
-    float Depth;                                                                      // 0x00B0 (size: 0x4)
-    FModelingToolsAxisFilter AxisFilters;                                             // 0x00B4 (size: 0x3)
+    float Strength;
+    float Falloff;
+    float Depth;
+    FModelingToolsAxisFilter AxisFilters;
 
-}; // Size: 0xB8
+};
 
 class UOffsetMeshTool : public UBaseMeshProcessingTool
 {
-    class UOffsetMeshToolProperties* OffsetProperties;                                // 0x0400 (size: 0x8)
-    class UIterativeOffsetProperties* IterativeProperties;                            // 0x0408 (size: 0x8)
-    class UImplicitOffsetProperties* ImplicitProperties;                              // 0x0410 (size: 0x8)
-    class UOffsetWeightMapSetProperties* WeightMapProperties;                         // 0x0418 (size: 0x8)
+    class UOffsetMeshToolProperties* OffsetProperties;
+    class UIterativeOffsetProperties* IterativeProperties;
+    class UImplicitOffsetProperties* ImplicitProperties;
+    class UOffsetWeightMapSetProperties* WeightMapProperties;
 
-}; // Size: 0x420
+};
 
 class UOffsetMeshToolBuilder : public UBaseMeshProcessingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UOffsetMeshToolProperties : public UInteractiveToolPropertySet
 {
-    EOffsetMeshToolOffsetType OffsetType;                                             // 0x00A8 (size: 0x1)
-    float Distance;                                                                   // 0x00AC (size: 0x4)
-    bool bCreateShell;                                                                // 0x00B0 (size: 0x1)
+    EOffsetMeshToolOffsetType OffsetType;
+    float Distance;
+    bool bCreateShell;
 
-}; // Size: 0xB8
+};
 
 class UOffsetWeightMapSetProperties : public UWeightMapSetProperties
 {
-    float minDistance;                                                                // 0x00C8 (size: 0x4)
+    float minDistance;
 
-}; // Size: 0xD0
+};
 
 class UOutputPolygroupLayerProperties : public UInteractiveToolPropertySet
 {
-    FName GroupLayer;                                                                 // 0x00A8 (size: 0x8)
-    TArray<FString> OptionsList;                                                      // 0x00B0 (size: 0x10)
-    bool bShowNewLayerName;                                                           // 0x00C0 (size: 0x1)
-    FString NewLayerName;                                                             // 0x00C8 (size: 0x10)
+    FName GroupLayer;
+    TArray<FString> OptionsList;
+    bool bShowNewLayerName;
+    FString NewLayerName;
 
     TArray<FString> GetGroupOptionsList();
-}; // Size: 0xD8
+};
 
 class UPatternTool : public UMultiSelectionMeshEditingTool
 {
-    class UPatternToolSettings* Settings;                                             // 0x00B8 (size: 0x8)
-    class UPatternTool_LinearSettings* LinearSettings;                                // 0x00C0 (size: 0x8)
-    class UPatternTool_GridSettings* GridSettings;                                    // 0x00C8 (size: 0x8)
-    class UPatternTool_RadialSettings* RadialSettings;                                // 0x00D0 (size: 0x8)
-    class UPatternTool_RotationSettings* RotationSettings;                            // 0x00D8 (size: 0x8)
-    class UPatternTool_TranslationSettings* TranslationSettings;                      // 0x00E0 (size: 0x8)
-    class UPatternTool_ScaleSettings* ScaleSettings;                                  // 0x00E8 (size: 0x8)
-    class UPatternTool_OutputSettings* OutputSettings;                                // 0x0128 (size: 0x8)
-    class UTransformProxy* TransformProxy_End;                                        // 0x0130 (size: 0x8)
-    class UCombinedTransformGizmo* TransformGizmo_End;                                // 0x0138 (size: 0x8)
-    class UDragAlignmentMechanic* DragAlignmentMechanic;                              // 0x0140 (size: 0x8)
-    class UConstructionPlaneMechanic* PlaneMechanic;                                  // 0x0148 (size: 0x8)
-    TSet<UPrimitiveComponent*> AllComponents;                                         // 0x01D0 (size: 0x50)
-    class UPreviewGeometry* PreviewGeometry;                                          // 0x02C0 (size: 0x8)
+    class UPatternToolSettings* Settings;
+    class UPatternTool_LinearSettings* LinearSettings;
+    class UPatternTool_GridSettings* GridSettings;
+    class UPatternTool_RadialSettings* RadialSettings;
+    class UPatternTool_RotationSettings* RotationSettings;
+    class UPatternTool_TranslationSettings* TranslationSettings;
+    class UPatternTool_ScaleSettings* ScaleSettings;
+    class UPatternTool_OutputSettings* OutputSettings;
+    class UTransformProxy* TransformProxy_End;
+    class UCombinedTransformGizmo* TransformGizmo_End;
+    class UDragAlignmentMechanic* DragAlignmentMechanic;
+    class UConstructionPlaneMechanic* PlaneMechanic;
+    TSet<UPrimitiveComponent*> AllComponents;
+    class UPreviewGeometry* PreviewGeometry;
 
-}; // Size: 0x2C8
+};
 
 class UPatternToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UPatternToolSettings : public UInteractiveToolPropertySet
 {
-    EPatternToolShape Shape;                                                          // 0x00A8 (size: 0x1)
-    EPatternToolSingleAxis SingleAxis;                                                // 0x00A9 (size: 0x1)
-    EPatternToolSinglePlane SinglePlane;                                              // 0x00AA (size: 0x1)
-    bool bHideSources;                                                                // 0x00AB (size: 0x1)
-    int32 Seed;                                                                       // 0x00AC (size: 0x4)
+    EPatternToolShape Shape;
+    EPatternToolSingleAxis SingleAxis;
+    EPatternToolSinglePlane SinglePlane;
+    bool bHideSources;
+    int32 Seed;
 
-}; // Size: 0xB0
+};
 
 class UPatternTool_GridSettings : public UInteractiveToolPropertySet
 {
-    EPatternToolAxisSpacingMode SpacingX;                                             // 0x00A8 (size: 0x1)
-    int32 CountX;                                                                     // 0x00AC (size: 0x4)
-    double StepSizeX;                                                                 // 0x00B0 (size: 0x8)
-    double ExtentX;                                                                   // 0x00B8 (size: 0x8)
-    bool bCenteredX;                                                                  // 0x00C0 (size: 0x1)
-    EPatternToolAxisSpacingMode SpacingY;                                             // 0x00C1 (size: 0x1)
-    int32 CountY;                                                                     // 0x00C4 (size: 0x4)
-    double StepSizeY;                                                                 // 0x00C8 (size: 0x8)
-    double ExtentY;                                                                   // 0x00D0 (size: 0x8)
-    bool bCenteredY;                                                                  // 0x00D8 (size: 0x1)
+    EPatternToolAxisSpacingMode SpacingX;
+    int32 CountX;
+    double StepSizeX;
+    double ExtentX;
+    bool bCenteredX;
+    EPatternToolAxisSpacingMode SpacingY;
+    int32 CountY;
+    double StepSizeY;
+    double ExtentY;
+    bool bCenteredY;
 
-}; // Size: 0xE0
+};
 
 class UPatternTool_LinearSettings : public UInteractiveToolPropertySet
 {
-    EPatternToolAxisSpacingMode SpacingMode;                                          // 0x00A8 (size: 0x1)
-    int32 Count;                                                                      // 0x00AC (size: 0x4)
-    double StepSize;                                                                  // 0x00B0 (size: 0x8)
-    double Extent;                                                                    // 0x00B8 (size: 0x8)
-    bool bCentered;                                                                   // 0x00C0 (size: 0x1)
+    EPatternToolAxisSpacingMode SpacingMode;
+    int32 Count;
+    double StepSize;
+    double Extent;
+    bool bCentered;
 
-}; // Size: 0xC8
+};
 
 class UPatternTool_OutputSettings : public UInteractiveToolPropertySet
 {
-    bool bSeparateActors;                                                             // 0x00A8 (size: 0x1)
-    bool bConvertToDynamic;                                                           // 0x00A9 (size: 0x1)
-    bool bCreateISMCs;                                                                // 0x00AA (size: 0x1)
-    bool bHaveStaticMeshes;                                                           // 0x00AB (size: 0x1)
+    bool bSeparateActors;
+    bool bConvertToDynamic;
+    bool bCreateISMCs;
+    bool bHaveStaticMeshes;
 
-}; // Size: 0xB0
+};
 
 class UPatternTool_RadialSettings : public UInteractiveToolPropertySet
 {
-    EPatternToolAxisSpacingMode SpacingMode;                                          // 0x00A8 (size: 0x1)
-    int32 Count;                                                                      // 0x00AC (size: 0x4)
-    double StepSize;                                                                  // 0x00B0 (size: 0x8)
-    double Radius;                                                                    // 0x00B8 (size: 0x8)
-    double StartAngle;                                                                // 0x00C0 (size: 0x8)
-    double EndAngle;                                                                  // 0x00C8 (size: 0x8)
-    double AngleShift;                                                                // 0x00D0 (size: 0x8)
-    bool bOriented;                                                                   // 0x00D8 (size: 0x1)
+    EPatternToolAxisSpacingMode SpacingMode;
+    int32 Count;
+    double StepSize;
+    double Radius;
+    double StartAngle;
+    double EndAngle;
+    double AngleShift;
+    bool bOriented;
 
-}; // Size: 0xE0
+};
 
 class UPatternTool_RotationSettings : public UInteractiveToolPropertySet
 {
-    bool bInterpolate;                                                                // 0x00A8 (size: 0x1)
-    bool bJitter;                                                                     // 0x00A9 (size: 0x1)
-    FRotator StartRotation;                                                           // 0x00B0 (size: 0x18)
-    FRotator EndRotation;                                                             // 0x00C8 (size: 0x18)
-    FRotator RotationJitterRange;                                                     // 0x00E0 (size: 0x18)
+    bool bInterpolate;
+    bool bJitter;
+    FRotator StartRotation;
+    FRotator EndRotation;
+    FRotator RotationJitterRange;
 
-}; // Size: 0xF8
+};
 
 class UPatternTool_ScaleSettings : public UInteractiveToolPropertySet
 {
-    bool bUniform;                                                                    // 0x00A8 (size: 0x1)
-    bool bInterpolate;                                                                // 0x00A9 (size: 0x1)
-    bool bJitter;                                                                     // 0x00AA (size: 0x1)
-    FVector StartScale;                                                               // 0x00B0 (size: 0x18)
-    FVector EndScale;                                                                 // 0x00C8 (size: 0x18)
-    float ScaleJitterRange;                                                           // 0x00E0 (size: 0x4)
-    FVector ScaleJitterRangeNonUniform;                                               // 0x00E8 (size: 0x18)
+    bool bUniform;
+    bool bInterpolate;
+    bool bJitter;
+    FVector StartScale;
+    FVector EndScale;
+    float ScaleJitterRange;
+    FVector ScaleJitterRangeNonUniform;
 
-}; // Size: 0x100
+};
 
 class UPatternTool_TranslationSettings : public UInteractiveToolPropertySet
 {
-    bool bInterpolate;                                                                // 0x00A8 (size: 0x1)
-    bool bJitter;                                                                     // 0x00A9 (size: 0x1)
-    FVector StartTranslation;                                                         // 0x00B0 (size: 0x18)
-    FVector EndTranslation;                                                           // 0x00C8 (size: 0x18)
-    FVector TranslationJitterRange;                                                   // 0x00E0 (size: 0x18)
+    bool bInterpolate;
+    bool bJitter;
+    FVector StartTranslation;
+    FVector EndTranslation;
+    FVector TranslationJitterRange;
 
-}; // Size: 0xF8
+};
 
 class UPhysicsInspectorTool : public UMultiSelectionMeshEditingTool
 {
-    class UCollisionGeometryVisualizationProperties* VizSettings;                     // 0x00B8 (size: 0x8)
-    TArray<class UPhysicsObjectToolPropertySet*> ObjectData;                          // 0x00C0 (size: 0x10)
-    class UMaterialInterface* LineMaterial;                                           // 0x00D0 (size: 0x8)
-    TArray<class UPreviewGeometry*> PreviewElements;                                  // 0x00D8 (size: 0x10)
+    class UCollisionGeometryVisualizationProperties* VizSettings;
+    TArray<class UPhysicsObjectToolPropertySet*> ObjectData;
+    class UMaterialInterface* LineMaterial;
+    TArray<class UPreviewGeometry*> PreviewElements;
 
-}; // Size: 0x100
+};
 
 class UPhysicsInspectorToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UPhysicsObjectToolPropertySet : public UInteractiveToolPropertySet
 {
-    FString ObjectName;                                                               // 0x00A8 (size: 0x10)
-    ECollisionGeometryMode CollisionType;                                             // 0x00B8 (size: 0x4)
-    TArray<FPhysicsSphereData> Spheres;                                               // 0x00C0 (size: 0x10)
-    TArray<FPhysicsBoxData> Boxes;                                                    // 0x00D0 (size: 0x10)
-    TArray<FPhysicsCapsuleData> Capsules;                                             // 0x00E0 (size: 0x10)
-    TArray<FPhysicsConvexData> Convexes;                                              // 0x00F0 (size: 0x10)
-    TArray<FPhysicsLevelSetData> LevelSets;                                           // 0x0100 (size: 0x10)
+    FString ObjectName;
+    ECollisionGeometryMode CollisionType;
+    TArray<FPhysicsSphereData> Spheres;
+    TArray<FPhysicsBoxData> Boxes;
+    TArray<FPhysicsCapsuleData> Capsules;
+    TArray<FPhysicsConvexData> Convexes;
+    TArray<FPhysicsLevelSetData> LevelSets;
 
-}; // Size: 0x110
+};
 
 class UPinchBrushOpProps : public UMeshSculptBrushOpProps
 {
-    float Strength;                                                                   // 0x00A8 (size: 0x4)
-    float Falloff;                                                                    // 0x00AC (size: 0x4)
-    float Depth;                                                                      // 0x00B0 (size: 0x4)
-    bool bPerpDamping;                                                                // 0x00B4 (size: 0x1)
+    float Strength;
+    float Falloff;
+    float Depth;
+    bool bPerpDamping;
 
-}; // Size: 0xB8
+};
 
 class UPlaneBrushOpProps : public UBasePlaneBrushOpProps
 {
-    float Strength;                                                                   // 0x00A8 (size: 0x4)
-    float Falloff;                                                                    // 0x00AC (size: 0x4)
-    float Depth;                                                                      // 0x00B0 (size: 0x4)
-    EPlaneBrushSideMode WhichSide;                                                    // 0x00B4 (size: 0x1)
+    float Strength;
+    float Falloff;
+    float Depth;
+    EPlaneBrushSideMode WhichSide;
 
-}; // Size: 0xB8
+};
 
 class UPlaneCutOperatorFactory : public UObject
 {
-    class UPlaneCutTool* CutTool;                                                     // 0x0030 (size: 0x8)
+    class UPlaneCutTool* CutTool;
 
-}; // Size: 0x40
+};
 
 class UPlaneCutTool : public UMultiSelectionMeshEditingTool
 {
-    class UPlaneCutToolProperties* BasicProperties;                                   // 0x00B8 (size: 0x8)
-    class UAcceptOutputProperties* AcceptProperties;                                  // 0x00C0 (size: 0x8)
-    TArray<class UMeshOpPreviewWithBackgroundCompute*> Previews;                      // 0x00C8 (size: 0x10)
-    TArray<class UDynamicMeshReplacementChangeTarget*> MeshesToCut;                   // 0x00D8 (size: 0x10)
-    class UConstructionPlaneMechanic* PlaneMechanic;                                  // 0x00E8 (size: 0x8)
+    class UPlaneCutToolProperties* BasicProperties;
+    class UAcceptOutputProperties* AcceptProperties;
+    TArray<class UMeshOpPreviewWithBackgroundCompute*> Previews;
+    TArray<class UDynamicMeshReplacementChangeTarget*> MeshesToCut;
+    class UConstructionPlaneMechanic* PlaneMechanic;
 
     void FlipPlane();
     void Cut();
-}; // Size: 0x1A0
+};
 
 class UPlaneCutToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UPlaneCutToolProperties : public UInteractiveToolPropertySet
 {
-    bool bKeepBothHalves;                                                             // 0x00A8 (size: 0x1)
-    float SpacingBetweenHalves;                                                       // 0x00AC (size: 0x4)
-    bool bShowPreview;                                                                // 0x00B0 (size: 0x1)
-    bool bFillCutHole;                                                                // 0x00B1 (size: 0x1)
-    bool bFillSpans;                                                                  // 0x00B2 (size: 0x1)
+    bool bKeepBothHalves;
+    float SpacingBetweenHalves;
+    bool bShowPreview;
+    bool bFillCutHole;
+    bool bFillSpans;
 
-}; // Size: 0xB8
+};
 
 class UProjectToTargetTool : public URemeshMeshTool
 {
-}; // Size: 0x118
+};
 
 class UProjectToTargetToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UProjectToTargetToolProperties : public URemeshMeshToolProperties
 {
-    bool bWorldSpace;                                                                 // 0x00E0 (size: 0x1)
-    bool bParallel;                                                                   // 0x00E1 (size: 0x1)
-    int32 FaceProjectionPassesPerRemeshIteration;                                     // 0x00E4 (size: 0x4)
-    float SurfaceProjectionSpeed;                                                     // 0x00E8 (size: 0x4)
-    float NormalAlignmentSpeed;                                                       // 0x00EC (size: 0x4)
-    bool bSmoothInFillAreas;                                                          // 0x00F0 (size: 0x1)
-    float FillAreaDistanceMultiplier;                                                 // 0x00F4 (size: 0x4)
-    float FillAreaSmoothMultiplier;                                                   // 0x00F8 (size: 0x4)
+    bool bWorldSpace;
+    bool bParallel;
+    int32 FaceProjectionPassesPerRemeshIteration;
+    float SurfaceProjectionSpeed;
+    float NormalAlignmentSpeed;
+    bool bSmoothInFillAreas;
+    float FillAreaDistanceMultiplier;
+    float FillAreaSmoothMultiplier;
 
-}; // Size: 0x100
+};
 
 class UPullKelvinletBrushOpProps : public UBaseKelvinletBrushOpProps
 {
-    float Falloff;                                                                    // 0x00B8 (size: 0x4)
-    float Depth;                                                                      // 0x00BC (size: 0x4)
+    float Falloff;
+    float Depth;
 
-}; // Size: 0xC0
+};
 
 class URemeshMeshTool : public UMultiSelectionMeshEditingTool
 {
-    class URemeshMeshToolProperties* BasicProperties;                                 // 0x00C0 (size: 0x8)
-    class UMeshStatisticsProperties* MeshStatisticsProperties;                        // 0x00C8 (size: 0x8)
-    class UMeshOpPreviewWithBackgroundCompute* Preview;                               // 0x00D0 (size: 0x8)
-    class UMeshElementsVisualizer* MeshElementsDisplay;                               // 0x00D8 (size: 0x8)
+    class URemeshMeshToolProperties* BasicProperties;
+    class UMeshStatisticsProperties* MeshStatisticsProperties;
+    class UMeshOpPreviewWithBackgroundCompute* Preview;
+    class UMeshElementsVisualizer* MeshElementsDisplay;
 
-}; // Size: 0x108
+};
 
 class URemeshMeshToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class URemeshMeshToolProperties : public URemeshProperties
 {
-    int32 TargetTriangleCount;                                                        // 0x00B8 (size: 0x4)
-    ERemeshSmoothingType SmoothingType;                                               // 0x00BC (size: 0x1)
-    bool bDiscardAttributes;                                                          // 0x00BD (size: 0x1)
-    bool bShowGroupColors;                                                            // 0x00BE (size: 0x1)
-    ERemeshType RemeshType;                                                           // 0x00BF (size: 0x1)
-    int32 RemeshIterations;                                                           // 0x00C0 (size: 0x4)
-    int32 MaxRemeshIterations;                                                        // 0x00C4 (size: 0x4)
-    int32 ExtraProjectionIterations;                                                  // 0x00C8 (size: 0x4)
-    bool bUseTargetEdgeLength;                                                        // 0x00CC (size: 0x1)
-    float TargetEdgeLength;                                                           // 0x00D0 (size: 0x4)
-    bool bReproject;                                                                  // 0x00D4 (size: 0x1)
-    bool bReprojectConstraints;                                                       // 0x00D5 (size: 0x1)
-    float BoundaryCornerAngleThreshold;                                               // 0x00D8 (size: 0x4)
+    int32 TargetTriangleCount;
+    ERemeshSmoothingType SmoothingType;
+    bool bDiscardAttributes;
+    bool bShowGroupColors;
+    ERemeshType RemeshType;
+    int32 RemeshIterations;
+    int32 MaxRemeshIterations;
+    int32 ExtraProjectionIterations;
+    bool bUseTargetEdgeLength;
+    float TargetEdgeLength;
+    bool bReproject;
+    bool bReprojectConstraints;
+    float BoundaryCornerAngleThreshold;
 
-}; // Size: 0xE0
+};
 
 class URemeshProperties : public UMeshConstraintProperties
 {
-    float SmoothingStrength;                                                          // 0x00B0 (size: 0x4)
-    bool bFlips;                                                                      // 0x00B4 (size: 0x1)
-    bool bSplits;                                                                     // 0x00B5 (size: 0x1)
-    bool bCollapses;                                                                  // 0x00B6 (size: 0x1)
+    float SmoothingStrength;
+    bool bFlips;
+    bool bSplits;
+    bool bCollapses;
 
-}; // Size: 0xB8
+};
 
 class URemoveOccludedTrianglesAdvancedProperties : public UInteractiveToolPropertySet
 {
-}; // Size: 0xB0
+};
 
 class URemoveOccludedTrianglesOperatorFactory : public UObject
 {
-    class URemoveOccludedTrianglesTool* Tool;                                         // 0x0030 (size: 0x8)
+    class URemoveOccludedTrianglesTool* Tool;
 
-}; // Size: 0x40
+};
 
 class URemoveOccludedTrianglesTool : public UMultiSelectionMeshEditingTool
 {
-    class URemoveOccludedTrianglesToolProperties* BasicProperties;                    // 0x00B8 (size: 0x8)
-    class UPolygroupLayersProperties* PolygroupLayersProperties;                      // 0x00C0 (size: 0x8)
-    class URemoveOccludedTrianglesAdvancedProperties* AdvancedProperties;             // 0x00C8 (size: 0x8)
-    TArray<class UMeshOpPreviewWithBackgroundCompute*> Previews;                      // 0x00D0 (size: 0x10)
-    TArray<class UPreviewMesh*> PreviewCopies;                                        // 0x00E0 (size: 0x10)
+    class URemoveOccludedTrianglesToolProperties* BasicProperties;
+    class UPolygroupLayersProperties* PolygroupLayersProperties;
+    class URemoveOccludedTrianglesAdvancedProperties* AdvancedProperties;
+    TArray<class UMeshOpPreviewWithBackgroundCompute*> Previews;
+    TArray<class UPreviewMesh*> PreviewCopies;
 
-}; // Size: 0x1D0
+};
 
 class URemoveOccludedTrianglesToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class URemoveOccludedTrianglesToolProperties : public UInteractiveToolPropertySet
 {
-    EOcclusionCalculationUIMode OcclusionTestMethod;                                  // 0x00A8 (size: 0x1)
-    EOcclusionTriangleSamplingUIMode TriangleSampling;                                // 0x00A9 (size: 0x1)
-    double WindingIsoValue;                                                           // 0x00B0 (size: 0x8)
-    int32 AddRandomRays;                                                              // 0x00B8 (size: 0x4)
-    int32 AddTriangleSamples;                                                         // 0x00BC (size: 0x4)
-    bool bOnlySelfOcclude;                                                            // 0x00C0 (size: 0x1)
-    int32 ShrinkRemoval;                                                              // 0x00C4 (size: 0x4)
-    double MinAreaIsland;                                                             // 0x00C8 (size: 0x8)
-    int32 MinTriCountIsland;                                                          // 0x00D0 (size: 0x4)
-    EOccludedAction action;                                                           // 0x00D4 (size: 0x1)
+    EOcclusionCalculationUIMode OcclusionTestMethod;
+    EOcclusionTriangleSamplingUIMode TriangleSampling;
+    double WindingIsoValue;
+    int32 AddRandomRays;
+    int32 AddTriangleSamples;
+    bool bOnlySelfOcclude;
+    int32 ShrinkRemoval;
+    double MinAreaIsland;
+    int32 MinTriCountIsland;
+    EOccludedAction action;
 
-}; // Size: 0xD8
+};
 
 class URenderCaptureProperties : public UInteractiveToolPropertySet
 {
-    EBakeTextureResolution Resolution;                                                // 0x00A8 (size: 0x4)
-    bool bBaseColorMap;                                                               // 0x00AC (size: 0x1)
-    bool bNormalMap;                                                                  // 0x00AD (size: 0x1)
-    bool bPackedMRSMap;                                                               // 0x00AE (size: 0x1)
-    bool bMetallicMap;                                                                // 0x00AF (size: 0x1)
-    bool bRoughnessMap;                                                               // 0x00B0 (size: 0x1)
-    bool bSpecularMap;                                                                // 0x00B1 (size: 0x1)
-    bool bEmissiveMap;                                                                // 0x00B2 (size: 0x1)
-    bool bAntiAliasing;                                                               // 0x00B3 (size: 0x1)
-    float CaptureFieldOfView;                                                         // 0x00B4 (size: 0x4)
-    float NearPlaneDist;                                                              // 0x00B8 (size: 0x4)
-    bool bDeviceDepthMap;                                                             // 0x00BC (size: 0x1)
+    EBakeTextureResolution Resolution;
+    bool bBaseColorMap;
+    bool bNormalMap;
+    bool bPackedMRSMap;
+    bool bMetallicMap;
+    bool bRoughnessMap;
+    bool bSpecularMap;
+    bool bEmissiveMap;
+    bool bAntiAliasing;
+    float CaptureFieldOfView;
+    float NearPlaneDist;
+    bool bDeviceDepthMap;
 
-}; // Size: 0xC0
+};
 
 class URevolveBoundaryOperatorFactory : public UObject
 {
-    class URevolveBoundaryTool* RevolveBoundaryTool;                                  // 0x0030 (size: 0x8)
+    class URevolveBoundaryTool* RevolveBoundaryTool;
 
-}; // Size: 0x38
+};
 
 class URevolveBoundaryTool : public UMeshBoundaryToolBase
 {
-    class UCreateMeshObjectTypeProperties* OutputTypeProperties;                      // 0x01C8 (size: 0x8)
-    class URevolveBoundaryToolProperties* Settings;                                   // 0x01D0 (size: 0x8)
-    class UNewMeshMaterialProperties* MaterialProperties;                             // 0x01D8 (size: 0x8)
-    class UConstructionPlaneMechanic* PlaneMechanic;                                  // 0x01E0 (size: 0x8)
-    class UMeshOpPreviewWithBackgroundCompute* Preview;                               // 0x01E8 (size: 0x8)
+    class UCreateMeshObjectTypeProperties* OutputTypeProperties;
+    class URevolveBoundaryToolProperties* Settings;
+    class UNewMeshMaterialProperties* MaterialProperties;
+    class UConstructionPlaneMechanic* PlaneMechanic;
+    class UMeshOpPreviewWithBackgroundCompute* Preview;
 
-}; // Size: 0x220
+};
 
 class URevolveBoundaryToolBuilder : public USingleSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class URevolveBoundaryToolProperties : public URevolveProperties
 {
-    ERevolvePropertiesCapFillMode CapFillMode;                                        // 0x0118 (size: 0x1)
-    bool bDisplayInputMesh;                                                           // 0x0119 (size: 0x1)
-    FVector AxisOrigin;                                                               // 0x0120 (size: 0x18)
-    FVector2D AxisOrientation;                                                        // 0x0138 (size: 0x10)
+    ERevolvePropertiesCapFillMode CapFillMode;
+    bool bDisplayInputMesh;
+    FVector AxisOrigin;
+    FVector2D AxisOrientation;
 
-}; // Size: 0x148
+};
 
 class UScaleKelvinletBrushOpProps : public UBaseKelvinletBrushOpProps
 {
-    float Strength;                                                                   // 0x00B8 (size: 0x4)
-    float Falloff;                                                                    // 0x00BC (size: 0x4)
+    float Strength;
+    float Falloff;
 
-}; // Size: 0xC0
+};
 
 class USculptBrushProperties : public UInteractiveToolPropertySet
 {
-    FBrushToolRadius BrushSize;                                                       // 0x00A8 (size: 0x14)
-    float BrushFalloffAmount;                                                         // 0x00BC (size: 0x4)
-    bool bShowFalloff;                                                                // 0x00C0 (size: 0x1)
-    float Depth;                                                                      // 0x00C4 (size: 0x4)
-    bool bHitBackFaces;                                                               // 0x00C8 (size: 0x1)
-    float FlowRate;                                                                   // 0x00CC (size: 0x4)
-    float Spacing;                                                                    // 0x00D0 (size: 0x4)
-    float Lazyness;                                                                   // 0x00D4 (size: 0x4)
-    bool bShowPerBrushProps;                                                          // 0x00D8 (size: 0x1)
-    bool bShowLazyness;                                                               // 0x00D9 (size: 0x1)
-    bool bShowFlowRate;                                                               // 0x00DA (size: 0x1)
-    bool bShowSpacing;                                                                // 0x00DB (size: 0x1)
+    FBrushToolRadius BrushSize;
+    float BrushFalloffAmount;
+    bool bShowFalloff;
+    float Depth;
+    bool bHitBackFaces;
+    float FlowRate;
+    float Spacing;
+    float Lazyness;
+    bool bShowPerBrushProps;
+    bool bShowLazyness;
+    bool bShowFlowRate;
+    bool bShowSpacing;
 
-}; // Size: 0xE0
+};
 
 class USculptMaxBrushOpProps : public UMeshSculptBrushOpProps
 {
-    float Strength;                                                                   // 0x00A8 (size: 0x4)
-    float Falloff;                                                                    // 0x00AC (size: 0x4)
-    float maxHeight;                                                                  // 0x00B0 (size: 0x4)
-    bool bUseFixedHeight;                                                             // 0x00B4 (size: 0x1)
-    float FixedHeight;                                                                // 0x00B8 (size: 0x4)
+    float Strength;
+    float Falloff;
+    float maxHeight;
+    bool bUseFixedHeight;
+    float FixedHeight;
 
-}; // Size: 0xC0
+};
 
 class USculptMaxBrushProperties : public UInteractiveToolPropertySet
 {
-    float maxHeight;                                                                  // 0x00A8 (size: 0x4)
-    bool bFreezeCurrentHeight;                                                        // 0x00AC (size: 0x1)
+    float maxHeight;
+    bool bFreezeCurrentHeight;
 
-}; // Size: 0xB0
+};
 
 class USeamSculptTool : public UDynamicMeshBrushTool
 {
-    class USeamSculptToolProperties* Settings;                                        // 0x02C0 (size: 0x8)
-    class UPreviewGeometry* PreviewGeom;                                              // 0x02C8 (size: 0x8)
+    class USeamSculptToolProperties* Settings;
+    class UPreviewGeometry* PreviewGeom;
 
-}; // Size: 0x3B0
+};
 
 class USeamSculptToolBuilder : public UMeshSurfacePointMeshEditingToolBuilder
 {
-}; // Size: 0x30
+};
 
 class USeamSculptToolProperties : public UInteractiveToolPropertySet
 {
-    bool bShowWireframe;                                                              // 0x00A8 (size: 0x1)
-    bool bHitBackFaces;                                                               // 0x00A9 (size: 0x1)
+    bool bShowWireframe;
+    bool bHitBackFaces;
 
-}; // Size: 0xB0
+};
 
 class USecondarySmoothBrushOpProps : public UBaseSmoothBrushOpProps
 {
-    float Strength;                                                                   // 0x00A8 (size: 0x4)
-    float Falloff;                                                                    // 0x00AC (size: 0x4)
-    bool bPreserveUVFlow;                                                             // 0x00B0 (size: 0x1)
+    float Strength;
+    float Falloff;
+    bool bPreserveUVFlow;
 
-}; // Size: 0xB8
+};
 
 class USelectiveTessellationProperties : public UInteractiveToolPropertySet
 {
-    EDisplaceMeshToolTriangleSelectionType SelectionType;                             // 0x00A8 (size: 0x1)
-    FName ActiveMaterial;                                                             // 0x00AC (size: 0x8)
-    TArray<FString> MaterialIDList;                                                   // 0x00B8 (size: 0x10)
+    EDisplaceMeshToolTriangleSelectionType SelectionType;
+    FName ActiveMaterial;
+    TArray<FString> MaterialIDList;
 
     TArray<FString> GetMaterialIDsFunc();
-}; // Size: 0xC8
+};
 
 class USelfUnionMeshesTool : public UBaseCreateFromSelectedTool
 {
-    class USelfUnionMeshesToolProperties* Properties;                                 // 0x0100 (size: 0x8)
-    class ULineSetComponent* DrawnLineSet;                                            // 0x0108 (size: 0x8)
+    class USelfUnionMeshesToolProperties* Properties;
+    class ULineSetComponent* DrawnLineSet;
 
-}; // Size: 0x148
+};
 
 class USelfUnionMeshesToolBuilder : public UBaseCreateFromSelectedToolBuilder
 {
-}; // Size: 0x28
+};
 
 class USelfUnionMeshesToolProperties : public UInteractiveToolPropertySet
 {
-    bool bTrimFlaps;                                                                  // 0x00A8 (size: 0x1)
-    bool bTryFixHoles;                                                                // 0x00A9 (size: 0x1)
-    bool bTryCollapseEdges;                                                           // 0x00AA (size: 0x1)
-    float WindingThreshold;                                                           // 0x00AC (size: 0x4)
-    bool bShowNewBoundaryEdges;                                                       // 0x00B0 (size: 0x1)
-    bool bOnlyUseFirstMeshMaterials;                                                  // 0x00B1 (size: 0x1)
+    bool bTrimFlaps;
+    bool bTryFixHoles;
+    bool bTryCollapseEdges;
+    float WindingThreshold;
+    bool bShowNewBoundaryEdges;
+    bool bOnlyUseFirstMeshMaterials;
 
-}; // Size: 0xB8
+};
 
 class USetCollisionGeometryTool : public UMultiSelectionMeshEditingTool
 {
-    class USetCollisionGeometryToolProperties* Settings;                              // 0x00C0 (size: 0x8)
-    class UPolygroupLayersProperties* PolygroupLayerProperties;                       // 0x00C8 (size: 0x8)
-    class UCollisionGeometryVisualizationProperties* VizSettings;                     // 0x00D0 (size: 0x8)
-    class UPhysicsObjectToolPropertySet* CollisionProps;                              // 0x00D8 (size: 0x8)
-    class UMaterialInterface* LineMaterial;                                           // 0x00E0 (size: 0x8)
-    class UPreviewGeometry* PreviewGeom;                                              // 0x00F0 (size: 0x8)
+    class USetCollisionGeometryToolProperties* Settings;
+    class UPolygroupLayersProperties* PolygroupLayerProperties;
+    class UCollisionGeometryVisualizationProperties* VizSettings;
+    class UPhysicsObjectToolPropertySet* CollisionProps;
+    class UMaterialInterface* LineMaterial;
+    class UPreviewGeometry* PreviewGeom;
 
-}; // Size: 0x250
+};
 
 class USetCollisionGeometryToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class USetCollisionGeometryToolProperties : public UInteractiveToolPropertySet
 {
-    ECollisionGeometryType GeometryType;                                              // 0x00A8 (size: 0x4)
-    ESetCollisionGeometryInputMode InputMode;                                         // 0x00AC (size: 0x4)
-    bool bUseWorldSpace;                                                              // 0x00B0 (size: 0x1)
-    bool bRemoveContained;                                                            // 0x00B1 (size: 0x1)
-    bool bEnableMaxCount;                                                             // 0x00B2 (size: 0x1)
-    int32 MaxCount;                                                                   // 0x00B4 (size: 0x4)
-    float MinThickness;                                                               // 0x00B8 (size: 0x4)
-    bool bDetectBoxes;                                                                // 0x00BC (size: 0x1)
-    bool bDetectSpheres;                                                              // 0x00BD (size: 0x1)
-    bool bDetectCapsules;                                                             // 0x00BE (size: 0x1)
-    bool bSimplifyHulls;                                                              // 0x00BF (size: 0x1)
-    int32 HullTargetFaceCount;                                                        // 0x00C0 (size: 0x4)
-    int32 MaxHullsPerMesh;                                                            // 0x00C4 (size: 0x4)
-    float ConvexDecompositionSearchFactor;                                            // 0x00C8 (size: 0x4)
-    float AddHullsErrorTolerance;                                                     // 0x00CC (size: 0x4)
-    float MinPartThickness;                                                           // 0x00D0 (size: 0x4)
-    bool bSimplifyPolygons;                                                           // 0x00D4 (size: 0x1)
-    float HullTolerance;                                                              // 0x00D8 (size: 0x4)
-    EProjectedHullAxis SweepAxis;                                                     // 0x00DC (size: 0x4)
-    int32 LevelSetResolution;                                                         // 0x00E0 (size: 0x4)
-    bool bAppendToExisting;                                                           // 0x00E4 (size: 0x1)
-    ECollisionGeometryMode SetCollisionType;                                          // 0x00E8 (size: 0x4)
+    ECollisionGeometryType GeometryType;
+    ESetCollisionGeometryInputMode InputMode;
+    bool bUseWorldSpace;
+    bool bRemoveContained;
+    bool bEnableMaxCount;
+    int32 MaxCount;
+    float MinThickness;
+    bool bDetectBoxes;
+    bool bDetectSpheres;
+    bool bDetectCapsules;
+    bool bSimplifyHulls;
+    int32 HullTargetFaceCount;
+    int32 MaxHullsPerMesh;
+    float ConvexDecompositionSearchFactor;
+    float AddHullsErrorTolerance;
+    float MinPartThickness;
+    bool bSimplifyPolygons;
+    float HullTolerance;
+    EProjectedHullAxis SweepAxis;
+    int32 LevelSetResolution;
+    bool bAppendToExisting;
+    ECollisionGeometryMode SetCollisionType;
 
-}; // Size: 0xF0
+};
 
 class USharpPullKelvinletBrushOpProps : public UBaseKelvinletBrushOpProps
 {
-    float Falloff;                                                                    // 0x00B8 (size: 0x4)
-    float Depth;                                                                      // 0x00BC (size: 0x4)
+    float Falloff;
+    float Depth;
 
-}; // Size: 0xC0
+};
 
 class USkinWeightsBindingTool : public UMultiSelectionMeshEditingTool
 {
-    class USkinWeightsBindingToolProperties* Properties;                              // 0x00C0 (size: 0x8)
-    class UMeshOpPreviewWithBackgroundCompute* Preview;                               // 0x00C8 (size: 0x8)
+    class USkinWeightsBindingToolProperties* Properties;
+    class UMeshOpPreviewWithBackgroundCompute* Preview;
 
-}; // Size: 0x2E0
+};
 
 class USkinWeightsBindingToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class USkinWeightsBindingToolProperties : public UInteractiveToolPropertySet
 {
-    FBoneReference CurrentBone;                                                       // 0x00B0 (size: 0x10)
-    ESkinWeightsBindType BindingType;                                                 // 0x00C0 (size: 0x1)
-    float Stiffness;                                                                  // 0x00C4 (size: 0x4)
-    int32 MaxInfluences;                                                              // 0x00C8 (size: 0x4)
-    int32 VoxelResolution;                                                            // 0x00CC (size: 0x4)
+    FBoneReference CurrentBone;
+    ESkinWeightsBindType BindingType;
+    float Stiffness;
+    int32 MaxInfluences;
+    int32 VoxelResolution;
 
-}; // Size: 0xE0
+};
 
 class USkinWeightsPaintTool : public UDynamicMeshBrushTool
 {
-    class USkinWeightsPaintToolProperties* ToolProps;                                 // 0x02C0 (size: 0x8)
+    class USkinWeightsPaintToolProperties* ToolProps;
 
-}; // Size: 0x9B0
+};
 
 class USkinWeightsPaintToolBuilder : public UMeshSurfacePointMeshEditingToolBuilder
 {
-}; // Size: 0x30
+};
 
 class USkinWeightsPaintToolProperties : public UInteractiveToolPropertySet
 {
-    FBoneReference CurrentBone;                                                       // 0x00B0 (size: 0x10)
+    FBoneReference CurrentBone;
 
-}; // Size: 0xC8
+};
 
 class USmoothBrushOpProps : public UBaseSmoothBrushOpProps
 {
-    float Strength;                                                                   // 0x00A8 (size: 0x4)
-    float Falloff;                                                                    // 0x00AC (size: 0x4)
-    bool bPreserveUVFlow;                                                             // 0x00B0 (size: 0x1)
+    float Strength;
+    float Falloff;
+    bool bPreserveUVFlow;
 
-}; // Size: 0xB8
+};
 
 class USmoothFillBrushOpProps : public UBaseSmoothBrushOpProps
 {
-    float Strength;                                                                   // 0x00A8 (size: 0x4)
-    float Falloff;                                                                    // 0x00AC (size: 0x4)
-    bool bPreserveUVFlow;                                                             // 0x00B0 (size: 0x1)
+    float Strength;
+    float Falloff;
+    bool bPreserveUVFlow;
 
-}; // Size: 0xB8
+};
 
 class USmoothHoleFillProperties : public UInteractiveToolPropertySet
 {
-    bool bConstrainToHoleInterior;                                                    // 0x00A8 (size: 0x1)
-    int32 RemeshingExteriorRegionWidth;                                               // 0x00AC (size: 0x4)
-    int32 SmoothingExteriorRegionWidth;                                               // 0x00B0 (size: 0x4)
-    int32 SmoothingInteriorRegionWidth;                                               // 0x00B4 (size: 0x4)
-    float InteriorSmoothness;                                                         // 0x00B8 (size: 0x4)
-    double FillDensityScalar;                                                         // 0x00C0 (size: 0x8)
-    bool bProjectDuringRemesh;                                                        // 0x00C8 (size: 0x1)
+    bool bConstrainToHoleInterior;
+    int32 RemeshingExteriorRegionWidth;
+    int32 SmoothingExteriorRegionWidth;
+    int32 SmoothingInteriorRegionWidth;
+    float InteriorSmoothness;
+    double FillDensityScalar;
+    bool bProjectDuringRemesh;
 
-}; // Size: 0xD0
+};
 
 class USmoothMeshTool : public UBaseMeshProcessingTool
 {
-    class USmoothMeshToolProperties* SmoothProperties;                                // 0x0400 (size: 0x8)
-    class UIterativeSmoothProperties* IterativeProperties;                            // 0x0408 (size: 0x8)
-    class UDiffusionSmoothProperties* DiffusionProperties;                            // 0x0410 (size: 0x8)
-    class UImplicitSmoothProperties* ImplicitProperties;                              // 0x0418 (size: 0x8)
-    class USmoothWeightMapSetProperties* WeightMapProperties;                         // 0x0420 (size: 0x8)
+    class USmoothMeshToolProperties* SmoothProperties;
+    class UIterativeSmoothProperties* IterativeProperties;
+    class UDiffusionSmoothProperties* DiffusionProperties;
+    class UImplicitSmoothProperties* ImplicitProperties;
+    class USmoothWeightMapSetProperties* WeightMapProperties;
 
-}; // Size: 0x430
+};
 
 class USmoothMeshToolBuilder : public UBaseMeshProcessingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class USmoothMeshToolProperties : public UInteractiveToolPropertySet
 {
-    ESmoothMeshToolSmoothType SmoothingType;                                          // 0x00A8 (size: 0x1)
+    ESmoothMeshToolSmoothType SmoothingType;
 
-}; // Size: 0xB0
+};
 
 class USmoothWeightMapSetProperties : public UWeightMapSetProperties
 {
-    float MinSmoothMultiplier;                                                        // 0x00C8 (size: 0x4)
+    float MinSmoothMultiplier;
 
-}; // Size: 0xD0
+};
 
 class USpaceDeformerOperatorFactory : public UObject
 {
-    class UMeshSpaceDeformerTool* SpaceDeformerTool;                                  // 0x0030 (size: 0x8)
+    class UMeshSpaceDeformerTool* SpaceDeformerTool;
 
-}; // Size: 0x38
+};
 
 class USplitMeshesTool : public UMultiSelectionMeshEditingTool
 {
-    class USplitMeshesToolProperties* BasicProperties;                                // 0x00B8 (size: 0x8)
-    class UCreateMeshObjectTypeProperties* OutputTypeProperties;                      // 0x00C0 (size: 0x8)
+    class USplitMeshesToolProperties* BasicProperties;
+    class UCreateMeshObjectTypeProperties* OutputTypeProperties;
 
-}; // Size: 0xF0
+};
 
 class USplitMeshesToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class USplitMeshesToolProperties : public UInteractiveToolPropertySet
 {
-    bool bTransferMaterials;                                                          // 0x00A8 (size: 0x1)
+    bool bTransferMaterials;
 
-}; // Size: 0xB0
+};
 
 class UStandardSculptBrushOpProps : public UMeshSculptBrushOpProps
 {
-    float Strength;                                                                   // 0x00A8 (size: 0x4)
-    float Falloff;                                                                    // 0x00AC (size: 0x4)
+    float Strength;
+    float Falloff;
 
-}; // Size: 0xB0
+};
 
 class UTransferMeshTool : public UMultiSelectionMeshEditingTool
 {
-    class UTransferMeshToolProperties* BasicProperties;                               // 0x00C0 (size: 0x8)
+    class UTransferMeshToolProperties* BasicProperties;
 
-}; // Size: 0xC8
+};
 
 class UTransferMeshToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UTransferMeshToolProperties : public UInteractiveToolPropertySet
 {
-    bool bTransferMaterials;                                                          // 0x00A8 (size: 0x1)
-    FString SourceLOD;                                                                // 0x00B0 (size: 0x10)
-    FString TargetLod;                                                                // 0x00C0 (size: 0x10)
-    bool bIsStaticMeshSource;                                                         // 0x00D0 (size: 0x1)
-    TArray<FString> SourceLODNamesList;                                               // 0x00D8 (size: 0x10)
-    TArray<FString> TargetLODNamesList;                                               // 0x00F8 (size: 0x10)
-    bool bIsStaticMeshTarget;                                                         // 0x0118 (size: 0x1)
+    bool bTransferMaterials;
+    FString SourceLOD;
+    FString TargetLod;
+    bool bIsStaticMeshSource;
+    TArray<FString> SourceLODNamesList;
+    TArray<FString> TargetLODNamesList;
+    bool bIsStaticMeshTarget;
 
     TArray<FString> GetTargetLODNamesFunc();
     TArray<FString> GetSourceLODNamesFunc();
-}; // Size: 0x120
+};
 
 class UTransformMeshesTool : public UMultiSelectionMeshEditingTool
 {
-    class UTransformMeshesToolProperties* TransformProps;                             // 0x00C0 (size: 0x8)
-    TArray<FTransformMeshesTarget> ActiveGizmos;                                      // 0x00C8 (size: 0x10)
-    class UDragAlignmentMechanic* DragAlignmentMechanic;                              // 0x00D8 (size: 0x8)
+    class UTransformMeshesToolProperties* TransformProps;
+    TArray<FTransformMeshesTarget> ActiveGizmos;
+    class UDragAlignmentMechanic* DragAlignmentMechanic;
 
-}; // Size: 0x190
+};
 
 class UTransformMeshesToolBuilder : public UMultiSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UTransformMeshesToolProperties : public UInteractiveToolPropertySet
 {
-    ETransformMeshesTransformMode TransformMode;                                      // 0x00A8 (size: 0x1)
-    bool bApplyToInstances;                                                           // 0x00A9 (size: 0x1)
-    bool bSetPivotMode;                                                               // 0x00AA (size: 0x1)
-    bool bEnableSnapDragging;                                                         // 0x00AB (size: 0x1)
-    ETransformMeshesSnapDragSource SnapDragSource;                                    // 0x00AC (size: 0x1)
-    ETransformMeshesSnapDragRotationMode RotationMode;                                // 0x00AD (size: 0x1)
-    bool bHaveInstances;                                                              // 0x00AE (size: 0x1)
+    ETransformMeshesTransformMode TransformMode;
+    bool bApplyToInstances;
+    bool bSetPivotMode;
+    bool bEnableSnapDragging;
+    ETransformMeshesSnapDragSource SnapDragSource;
+    ETransformMeshesSnapDragRotationMode RotationMode;
+    bool bHaveInstances;
 
-}; // Size: 0xB0
+};
 
 class UTwistKelvinletBrushOpProps : public UBaseKelvinletBrushOpProps
 {
-    float Strength;                                                                   // 0x00B8 (size: 0x4)
-    float Falloff;                                                                    // 0x00BC (size: 0x4)
+    float Strength;
+    float Falloff;
 
-}; // Size: 0xC0
+};
 
 class UVertexBrushAlphaProperties : public UInteractiveToolPropertySet
 {
-    class UTexture2D* Alpha;                                                          // 0x00A8 (size: 0x8)
-    float RotationAngle;                                                              // 0x00B0 (size: 0x4)
-    bool bRandomize;                                                                  // 0x00B4 (size: 0x1)
-    float RandomRange;                                                                // 0x00B8 (size: 0x4)
+    class UTexture2D* Alpha;
+    float RotationAngle;
+    bool bRandomize;
+    float RandomRange;
 
-}; // Size: 0xC0
+};
 
 class UVertexBrushSculptProperties : public UInteractiveToolPropertySet
 {
-    EMeshVertexSculptBrushType PrimaryBrushType;                                      // 0x00A8 (size: 0x1)
-    EMeshSculptFalloffType PrimaryFalloffType;                                        // 0x00A9 (size: 0x1)
-    EMeshVertexSculptBrushFilterType BrushFilter;                                     // 0x00AA (size: 0x1)
-    bool bFreezeTarget;                                                               // 0x00AB (size: 0x1)
-    TWeakObjectPtr<class UMeshVertexSculptTool> Tool;                                 // 0x00AC (size: 0x8)
+    EMeshVertexSculptBrushType PrimaryBrushType;
+    EMeshSculptFalloffType PrimaryFalloffType;
+    EMeshVertexSculptBrushFilterType BrushFilter;
+    bool bFreezeTarget;
+    TWeakObjectPtr<class UMeshVertexSculptTool> Tool;
 
-}; // Size: 0xB8
+};
 
 class UViewAlignedPlaneBrushOpProps : public UBasePlaneBrushOpProps
 {
-    float Strength;                                                                   // 0x00A8 (size: 0x4)
-    float Falloff;                                                                    // 0x00AC (size: 0x4)
-    float Depth;                                                                      // 0x00B0 (size: 0x4)
-    EPlaneBrushSideMode WhichSide;                                                    // 0x00B4 (size: 0x1)
+    float Strength;
+    float Falloff;
+    float Depth;
+    EPlaneBrushSideMode WhichSide;
 
-}; // Size: 0xB8
+};
 
 class UViewAlignedSculptBrushOpProps : public UMeshSculptBrushOpProps
 {
-    float Strength;                                                                   // 0x00A8 (size: 0x4)
-    float Falloff;                                                                    // 0x00AC (size: 0x4)
+    float Strength;
+    float Falloff;
 
-}; // Size: 0xB0
+};
 
 class UVolumeToMeshTool : public UInteractiveTool
 {
-    class UVolumeToMeshToolProperties* Settings;                                      // 0x0098 (size: 0x8)
-    class UCreateMeshObjectTypeProperties* OutputTypeProperties;                      // 0x00A0 (size: 0x8)
-    class UPreviewMesh* PreviewMesh;                                                  // 0x00A8 (size: 0x8)
-    TLazyObjectPtr<class AVolume> TargetVolume;                                       // 0x00B0 (size: 0x1C)
-    class ULineSetComponent* VolumeEdgesSet;                                          // 0x00D0 (size: 0x8)
+    class UVolumeToMeshToolProperties* Settings;
+    class UCreateMeshObjectTypeProperties* OutputTypeProperties;
+    class UPreviewMesh* PreviewMesh;
+    TLazyObjectPtr<class AVolume> TargetVolume;
+    class ULineSetComponent* VolumeEdgesSet;
 
-}; // Size: 0x308
+};
 
 class UVolumeToMeshToolBuilder : public UInteractiveToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UVolumeToMeshToolProperties : public UInteractiveToolPropertySet
 {
-    bool bWeldEdges;                                                                  // 0x00A8 (size: 0x1)
-    bool bAutoRepair;                                                                 // 0x00A9 (size: 0x1)
-    bool bOptimizeMesh;                                                               // 0x00AA (size: 0x1)
-    bool bShowWireframe;                                                              // 0x00AB (size: 0x1)
+    bool bWeldEdges;
+    bool bAutoRepair;
+    bool bOptimizeMesh;
+    bool bShowWireframe;
 
-}; // Size: 0xB0
+};
 
 class UVoxelBlendMeshesTool : public UBaseVoxelTool
 {
-    class UVoxelBlendMeshesToolProperties* BlendProperties;                           // 0x0118 (size: 0x8)
+    class UVoxelBlendMeshesToolProperties* BlendProperties;
 
-}; // Size: 0x120
+};
 
 class UVoxelBlendMeshesToolBuilder : public UBaseCreateFromSelectedToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UVoxelBlendMeshesToolProperties : public UInteractiveToolPropertySet
 {
-    double BlendPower;                                                                // 0x00A8 (size: 0x8)
-    double BlendFalloff;                                                              // 0x00B0 (size: 0x8)
-    EVoxelBlendOperation Operation;                                                   // 0x00B8 (size: 0x1)
-    bool bVoxWrap;                                                                    // 0x00B9 (size: 0x1)
-    bool bRemoveInternalsAfterVoxWrap;                                                // 0x00BA (size: 0x1)
-    double ThickenShells;                                                             // 0x00C0 (size: 0x8)
+    double BlendPower;
+    double BlendFalloff;
+    EVoxelBlendOperation Operation;
+    bool bVoxWrap;
+    bool bRemoveInternalsAfterVoxWrap;
+    double ThickenShells;
 
-}; // Size: 0xC8
+};
 
 class UVoxelMorphologyMeshesTool : public UBaseVoxelTool
 {
-    class UVoxelMorphologyMeshesToolProperties* MorphologyProperties;                 // 0x0118 (size: 0x8)
+    class UVoxelMorphologyMeshesToolProperties* MorphologyProperties;
 
-}; // Size: 0x120
+};
 
 class UVoxelMorphologyMeshesToolBuilder : public UBaseCreateFromSelectedToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UVoxelMorphologyMeshesToolProperties : public UInteractiveToolPropertySet
 {
-    EMorphologyOperation Operation;                                                   // 0x00A8 (size: 0x1)
-    double Distance;                                                                  // 0x00B0 (size: 0x8)
-    bool bVoxWrap;                                                                    // 0x00B8 (size: 0x1)
-    bool bRemoveInternalsAfterVoxWrap;                                                // 0x00B9 (size: 0x1)
-    double ThickenShells;                                                             // 0x00C0 (size: 0x8)
+    EMorphologyOperation Operation;
+    double Distance;
+    bool bVoxWrap;
+    bool bRemoveInternalsAfterVoxWrap;
+    double ThickenShells;
 
-}; // Size: 0xC8
+};
 
 class UVoxelSolidifyMeshesTool : public UBaseVoxelTool
 {
-    class UVoxelSolidifyMeshesToolProperties* SolidifyProperties;                     // 0x0118 (size: 0x8)
+    class UVoxelSolidifyMeshesToolProperties* SolidifyProperties;
 
-}; // Size: 0x120
+};
 
 class UVoxelSolidifyMeshesToolBuilder : public UBaseCreateFromSelectedToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UVoxelSolidifyMeshesToolProperties : public UInteractiveToolPropertySet
 {
-    double WindingThreshold;                                                          // 0x00A8 (size: 0x8)
-    double ExtendBounds;                                                              // 0x00B0 (size: 0x8)
-    int32 SurfaceSearchSteps;                                                         // 0x00B8 (size: 0x4)
-    bool bSolidAtBoundaries;                                                          // 0x00BC (size: 0x1)
-    bool bApplyThickenShells;                                                         // 0x00BD (size: 0x1)
-    double ThickenShells;                                                             // 0x00C0 (size: 0x8)
+    double WindingThreshold;
+    double ExtendBounds;
+    int32 SurfaceSearchSteps;
+    bool bSolidAtBoundaries;
+    bool bApplyThickenShells;
+    double ThickenShells;
 
-}; // Size: 0xC8
+};
 
 class UWeldMeshEdgesOperatorFactory : public UObject
 {
-    class UWeldMeshEdgesTool* WeldMeshEdgesTool;                                      // 0x0030 (size: 0x8)
+    class UWeldMeshEdgesTool* WeldMeshEdgesTool;
 
-}; // Size: 0x38
+};
 
 class UWeldMeshEdgesTool : public USingleSelectionMeshEditingTool
 {
-    class UWeldMeshEdgesToolProperties* Settings;                                     // 0x00B8 (size: 0x8)
-    class UMeshOpPreviewWithBackgroundCompute* PreviewCompute;                        // 0x00C0 (size: 0x8)
-    class UMeshElementsVisualizer* MeshElementsDisplay;                               // 0x00C8 (size: 0x8)
-    class UWeldMeshEdgesOperatorFactory* OperatorFactory;                             // 0x00D0 (size: 0x8)
+    class UWeldMeshEdgesToolProperties* Settings;
+    class UMeshOpPreviewWithBackgroundCompute* PreviewCompute;
+    class UMeshElementsVisualizer* MeshElementsDisplay;
+    class UWeldMeshEdgesOperatorFactory* OperatorFactory;
 
-}; // Size: 0xE8
+};
 
 class UWeldMeshEdgesToolBuilder : public USingleSelectionMeshEditingToolBuilder
 {
-}; // Size: 0x28
+};
 
 class UWeldMeshEdgesToolProperties : public UInteractiveToolPropertySet
 {
-    float Tolerance;                                                                  // 0x00A8 (size: 0x4)
-    bool bOnlyUnique;                                                                 // 0x00AC (size: 0x1)
-    bool bResolveTJunctions;                                                          // 0x00AD (size: 0x1)
-    int32 InitialEdges;                                                               // 0x00B0 (size: 0x4)
-    int32 RemainingEdges;                                                             // 0x00B4 (size: 0x4)
+    float Tolerance;
+    bool bOnlyUnique;
+    bool bResolveTJunctions;
+    int32 InitialEdges;
+    int32 RemainingEdges;
 
-}; // Size: 0xB8
+};
 
 class UWorkPlaneProperties : public UInteractiveToolPropertySet
 {
-    bool bPropertySetEnabled;                                                         // 0x00A8 (size: 0x1)
-    bool bShowGizmo;                                                                  // 0x00A9 (size: 0x1)
-    FVector Position;                                                                 // 0x00B0 (size: 0x18)
-    FQuat Rotation;                                                                   // 0x00D0 (size: 0x20)
+    bool bPropertySetEnabled;
+    bool bShowGizmo;
+    FVector Position;
+    FQuat Rotation;
 
-}; // Size: 0xF0
+};
 
 #endif

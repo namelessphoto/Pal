@@ -3,8 +3,8 @@
 
 class UBP_PalCheatManager_C : public UPalCheatManager
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x00D0 (size: 0x8)
-    class AActor* tempPlayer;                                                         // 0x00D8 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class AActor* tempPlayer;
 
     void DebugItemWindow();
     void ToggleAllDebugInfo();
@@ -16,6 +16,6 @@ class UBP_PalCheatManager_C : public UPalCheatManager
     void ToggleRevision_BP();
     void HideTutorialQuest_BP();
     void ExecuteUbergraph_BP_PalCheatManager(int32 EntryPoint);
-}; // Size: 0xE0
+};
 
 #endif

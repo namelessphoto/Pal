@@ -6,6 +6,6 @@ class IBP_AIController_Interface_Invader_C : public IInterface
 
     void BindOnInvaderArrivedDelegate(FBindOnInvaderArrivedDelegateEvent Event);
     void OnInvaderArrived();
-}; // Size: 0x28
+};
 
 #endif

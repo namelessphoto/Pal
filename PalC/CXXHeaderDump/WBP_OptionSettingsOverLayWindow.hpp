@@ -3,21 +3,21 @@
 
 class UWBP_OptionSettingsOverLayWindow_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UWidgetAnimation* Anm_Open;                                                 // 0x0438 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_Command;                                // 0x0440 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_Title;                                  // 0x0448 (size: 0x8)
-    FDataTableRowHandle titleMsgId;                                                   // 0x0450 (size: 0x10)
-    FDataTableRowHandle TitleMsgIdPS5;                                                // 0x0460 (size: 0x10)
-    FDataTableRowHandle CommandMsgId;                                                 // 0x0470 (size: 0x10)
-    FDataTableRowHandle CommandMsgIdPS5;                                              // 0x0480 (size: 0x10)
-    FDataTableRowHandle ErrorMsgId;                                                   // 0x0490 (size: 0x10)
-    FDataTableRowHandle ErrorMsgIdPS5;                                                // 0x04A0 (size: 0x10)
-    FTimerHandle ResetTextTimer;                                                      // 0x04B0 (size: 0x8)
-    class UBP_HUDDispatchParameter_KeyConfig_C* KeyConfigParam;                       // 0x04B8 (size: 0x8)
-    TArray<FName> FilterActionKeys;                                                   // 0x04C0 (size: 0x10)
-    TMap<class FPalKeyAction, class FName> ReverseAxisMap;                            // 0x04D0 (size: 0x50)
-    FName BackActionName;                                                             // 0x0520 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_Open;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_Command;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_Title;
+    FDataTableRowHandle titleMsgId;
+    FDataTableRowHandle TitleMsgIdPS5;
+    FDataTableRowHandle CommandMsgId;
+    FDataTableRowHandle CommandMsgIdPS5;
+    FDataTableRowHandle ErrorMsgId;
+    FDataTableRowHandle ErrorMsgIdPS5;
+    FTimerHandle ResetTextTimer;
+    class UBP_HUDDispatchParameter_KeyConfig_C* KeyConfigParam;
+    TArray<FName> FilterActionKeys;
+    TMap<class FPalKeyAction, class FName> ReverseAxisMap;
+    FName BackActionName;
 
     FEventReply OnMouseButtonDown(FGeometry MyGeometry, const FPointerEvent& MouseEvent);
     void OnKeySetting(FKey NewKey);
@@ -27,6 +27,6 @@ class UWBP_OptionSettingsOverLayWindow_C : public UPalUserWidgetOverlayUI
     void ResetCommandText();
     void SetPadKeyA();
     void ExecuteUbergraph_WBP_OptionSettingsOverLayWindow(int32 EntryPoint);
-}; // Size: 0x528
+};
 
 #endif

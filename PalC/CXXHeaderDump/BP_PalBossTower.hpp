@@ -3,26 +3,26 @@
 
 class ABP_PalBossTower_C : public APalBossTower
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x02F8 (size: 0x8)
-    class UNiagaraComponent* Niagara_QuestGlowEffect;                                 // 0x0300 (size: 0x8)
-    class UPalInteractLockSettingComponent* PalInteractLockSetting;                   // 0x0308 (size: 0x8)
-    class UBoxComponent* EntryWaitInfoTrigger;                                        // 0x0310 (size: 0x8)
-    class USceneComponent* DeadItemDropPoint;                                         // 0x0318 (size: 0x8)
-    class UBP_InteractableBox_C* BP_InteractableBox;                                  // 0x0320 (size: 0x8)
-    class USphereComponent* EntryCancel_Trigger;                                      // 0x0328 (size: 0x8)
-    class USceneComponent* TopWarpPoint;                                              // 0x0330 (size: 0x8)
-    class USceneComponent* FrontWarpPoint;                                            // 0x0338 (size: 0x8)
-    class USphereComponent* InsidePlayerCheck_Trigger;                                // 0x0340 (size: 0x8)
-    class UStaticMeshComponent* SM_TowerSphere_tower_sphere_geo;                      // 0x0348 (size: 0x8)
-    class UStaticMeshComponent* SM_TowerSphere_tower_sphereCube_geo;                  // 0x0350 (size: 0x8)
-    class UStaticMeshComponent* SM_Tower;                                             // 0x0358 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x0360 (size: 0x8)
-    bool IsOpen;                                                                      // 0x0368 (size: 0x1)
-    FDataTableRowHandle DialogMsgID;                                                  // 0x0370 (size: 0x10)
-    TSoftObjectPtr<APalPlayerCharacter> CachedRequestStartBattlePlayer;               // 0x0380 (size: 0x30)
-    FGuid DialogUId;                                                                  // 0x03B0 (size: 0x10)
-    TMap<class EPalBossType, class FDataTableRowHandle> BossTypeAndQuestIdMap;        // 0x03C0 (size: 0x50)
-    FTimerHandle QuestManagerInitializeTimerHandle;                                   // 0x0410 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UNiagaraComponent* Niagara_QuestGlowEffect;
+    class UPalInteractLockSettingComponent* PalInteractLockSetting;
+    class UBoxComponent* EntryWaitInfoTrigger;
+    class USceneComponent* DeadItemDropPoint;
+    class UBP_InteractableBox_C* BP_InteractableBox;
+    class USphereComponent* EntryCancel_Trigger;
+    class USceneComponent* TopWarpPoint;
+    class USceneComponent* FrontWarpPoint;
+    class USphereComponent* InsidePlayerCheck_Trigger;
+    class UStaticMeshComponent* SM_TowerSphere_tower_sphere_geo;
+    class UStaticMeshComponent* SM_TowerSphere_tower_sphereCube_geo;
+    class UStaticMeshComponent* SM_Tower;
+    class USceneComponent* DefaultSceneRoot;
+    bool IsOpen;
+    FDataTableRowHandle DialogMsgID;
+    TSoftObjectPtr<APalPlayerCharacter> CachedRequestStartBattlePlayer;
+    FGuid DialogUId;
+    TMap<class EPalBossType, class FDataTableRowHandle> BossTypeAndQuestIdMap;
+    FTimerHandle QuestManagerInitializeTimerHandle;
 
     void OnCompleteQuestLocal(const FName& QuestId);
     void OnOrderedQuestLocal(const FName& QuestId);
@@ -47,6 +47,6 @@ class ABP_PalBossTower_C : public APalBossTower
     void BndEvt__BP_PalBossTower_Box_K2Node_ComponentBoundEvent_10_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
     void IntializeQuestManagerEvent();
     void ExecuteUbergraph_BP_PalBossTower(int32 EntryPoint);
-}; // Size: 0x418
+};
 
 #endif

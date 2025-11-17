@@ -3,9 +3,9 @@
 
 class UBP_MainMenuSkillSwapParameter_C : public UPalHUDDispatchParameterBase
 {
-    class UPalIndividualCharacterParameter* Individual;                               // 0x0038 (size: 0x8)
-    class UWBP_MainMenu_Pal_00_C* PalMenu;                                            // 0x0040 (size: 0x8)
+    class UPalIndividualCharacterParameter* Individual;
+    class UWBP_MainMenu_Pal_00_C* PalMenu;
 
-}; // Size: 0x48
+};
 
 #endif

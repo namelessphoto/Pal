@@ -3,6 +3,6 @@
 
 class UBP_Status_PalEnhancement_V2_C : public UBP_Status_PalEnhancement_C
 {
-}; // Size: 0x50
+};
 
 #endif

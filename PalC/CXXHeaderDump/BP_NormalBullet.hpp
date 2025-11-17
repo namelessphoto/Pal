@@ -3,14 +3,14 @@
 
 class ABP_NormalBullet_C : public ABP_AttackBulletBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0410 (size: 0x8)
-    class UStaticMeshComponent* 14_5_x_114_mm_Bullet;                                 // 0x0418 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UStaticMeshComponent* 14_5_x_114_mm_Bullet;
 
     void GetHitEffect(class UNiagaraSystem*& NiagaraEffect);
     void SpawnHitEffectsInStun(FVector ImpactPoint);
     void SpawnHitEffects(FVector ImpactPoint, FVector ImpactNormal);
     void OnDestroy(class UPrimitiveComponent* HitComp, class AActor* OtherCharacter, class UPrimitiveComponent* OtherComp, const FHitResult& Hit);
     void ExecuteUbergraph_BP_NormalBullet(int32 EntryPoint);
-}; // Size: 0x420
+};
 
 #endif

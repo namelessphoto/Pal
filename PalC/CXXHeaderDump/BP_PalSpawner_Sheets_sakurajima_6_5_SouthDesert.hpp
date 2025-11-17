@@ -3,6 +3,6 @@
 
 class ABP_PalSpawner_Sheets_sakurajima_6_5_SouthDesert_C : public ABP_PalSpawner_Standard_C
 {
-}; // Size: 0x489
+};
 
 #endif

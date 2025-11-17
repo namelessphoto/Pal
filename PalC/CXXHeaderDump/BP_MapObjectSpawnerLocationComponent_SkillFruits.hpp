@@ -3,6 +3,6 @@
 
 class UBP_MapObjectSpawnerLocationComponent_SkillFruits_C : public UPalMapObjectSpawnerMultiItemLocationComponent
 {
-}; // Size: 0x5F0
+};
 
 #endif

@@ -3,15 +3,15 @@
 
 class ABP_MonsterAIController_YakushimaBoss002_C : public ABP_MonsterAIController_RaidBoss_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0590 (size: 0x8)
-    class ABP_MonsterAIController_YakushimaBoss002_Hand_C* LeftHand_Controller;       // 0x0598 (size: 0x8)
-    class ABP_MonsterAIController_YakushimaBoss002_Hand_C* RightHand_Controller;      // 0x05A0 (size: 0x8)
-    class ABP_MonsterAIController_YakushimaBoss002_Head_C* Head_Controller;           // 0x05A8 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class ABP_MonsterAIController_YakushimaBoss002_Hand_C* LeftHand_Controller;
+    class ABP_MonsterAIController_YakushimaBoss002_Hand_C* RightHand_Controller;
+    class ABP_MonsterAIController_YakushimaBoss002_Head_C* Head_Controller;
 
     void IsReadyBosses(bool& IsReady);
     void SetHandController(bool bIsLeft, class ABP_MonsterAIController_YakushimaBoss002_Hand_C* Controller);
     void SetHeadController(class ABP_MonsterAIController_YakushimaBoss002_Head_C* Head_Controller);
     void ExecuteUbergraph_BP_MonsterAIController_YakushimaBoss002(int32 EntryPoint);
-}; // Size: 0x5B0
+};
 
 #endif

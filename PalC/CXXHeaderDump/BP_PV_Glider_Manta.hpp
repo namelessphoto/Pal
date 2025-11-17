@@ -3,8 +3,8 @@
 
 class ABP_PV_Glider_Manta_C : public ABP_Glider_Item_Base_C
 {
-    class USkeletalMeshComponent* SkeletalMesh_0;                                     // 0x0350 (size: 0x8)
+    class USkeletalMeshComponent* SkeletalMesh_0;
 
-}; // Size: 0x358
+};
 
 #endif

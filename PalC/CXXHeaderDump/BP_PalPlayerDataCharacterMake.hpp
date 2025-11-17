@@ -20,6 +20,6 @@ class UBP_PalPlayerDataCharacterMake_C : public UPalPlayerDataCharacterMake
     void RGBToHSV(FLinearColor InRGB, FLinearColor& OutHSV);
     void GetOriginalPresetMakeInfo(FName PresetName, FPalPlayerDataCharacterMakeInfo& OutMakeInfo);
     void GetPresetMakeInfo(class UObject* WorldContextObject, const FName& PresetName, FPalPlayerDataCharacterMakeInfo& OutMakeInfo);
-}; // Size: 0x238
+};
 
 #endif

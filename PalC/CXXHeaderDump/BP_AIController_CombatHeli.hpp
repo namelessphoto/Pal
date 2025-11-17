@@ -3,12 +3,12 @@
 
 class ABP_AIController_CombatHeli_C : public APalAIController
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0538 (size: 0x8)
-    FVector SpawnedLocation;                                                          // 0x0540 (size: 0x18)
+    FPointerToUberGraphFrame UberGraphFrame;
+    FVector SpawnedLocation;
 
     void On Dead(FPalDeadInfo DeadInfo);
     void ReceivePossess(class APawn* PossessedPawn);
     void ExecuteUbergraph_BP_AIController_CombatHeli(int32 EntryPoint);
-}; // Size: 0x558
+};
 
 #endif

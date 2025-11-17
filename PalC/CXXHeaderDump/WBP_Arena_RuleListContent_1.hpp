@@ -3,27 +3,27 @@
 
 class UWBP_Arena_RuleListContent_1_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_NormalToFocus;                                        // 0x0280 (size: 0x8)
-    class UImage* Image_ChangeMark;                                                   // 0x0288 (size: 0x8)
-    class UWBP_Arena_RuleButton_Element_C* WBP_Arena_RuleButton_Element;              // 0x0290 (size: 0x8)
-    class UWBP_Arena_RuleButton_Element_C* WBP_Arena_RuleButton_Element_1;            // 0x0298 (size: 0x8)
-    class UWBP_Arena_RuleButton_Element_C* WBP_Arena_RuleButton_Element_2;            // 0x02A0 (size: 0x8)
-    class UWBP_Arena_RuleButton_Element_C* WBP_Arena_RuleButton_Element_3;            // 0x02A8 (size: 0x8)
-    class UWBP_Arena_RuleButton_Element_C* WBP_Arena_RuleButton_Element_4;            // 0x02B0 (size: 0x8)
-    class UWBP_Arena_RuleButton_Element_C* WBP_Arena_RuleButton_Element_5;            // 0x02B8 (size: 0x8)
-    class UWBP_Arena_RuleButton_Element_C* WBP_Arena_RuleButton_Element_6;            // 0x02C0 (size: 0x8)
-    class UWBP_Arena_RuleButton_Element_C* WBP_Arena_RuleButton_Element_7;            // 0x02C8 (size: 0x8)
-    class UWBP_Arena_RuleButton_Element_C* WBP_Arena_RuleButton_Element_8;            // 0x02D0 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x02D8 (size: 0x8)
-    TArray<class UWBP_Arena_RuleButton_Element_C*> ElementButtons;                    // 0x02E0 (size: 0x10)
-    TArray<EPalElementType> CurrentRestriction;                                       // 0x02F0 (size: 0x10)
-    FWBP_Arena_RuleListContent_1_COnElementRestrictionUpdate OnElementRestrictionUpdate; // 0x0300 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_NormalToFocus;
+    class UImage* Image_ChangeMark;
+    class UWBP_Arena_RuleButton_Element_C* WBP_Arena_RuleButton_Element;
+    class UWBP_Arena_RuleButton_Element_C* WBP_Arena_RuleButton_Element_1;
+    class UWBP_Arena_RuleButton_Element_C* WBP_Arena_RuleButton_Element_2;
+    class UWBP_Arena_RuleButton_Element_C* WBP_Arena_RuleButton_Element_3;
+    class UWBP_Arena_RuleButton_Element_C* WBP_Arena_RuleButton_Element_4;
+    class UWBP_Arena_RuleButton_Element_C* WBP_Arena_RuleButton_Element_5;
+    class UWBP_Arena_RuleButton_Element_C* WBP_Arena_RuleButton_Element_6;
+    class UWBP_Arena_RuleButton_Element_C* WBP_Arena_RuleButton_Element_7;
+    class UWBP_Arena_RuleButton_Element_C* WBP_Arena_RuleButton_Element_8;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    TArray<class UWBP_Arena_RuleButton_Element_C*> ElementButtons;
+    TArray<EPalElementType> CurrentRestriction;
+    FWBP_Arena_RuleListContent_1_COnElementRestrictionUpdate OnElementRestrictionUpdate;
     void OnElementRestrictionUpdate(TArray<EPalElementType>& RestrictElements);
-    bool Is Changeable;                                                               // 0x0310 (size: 0x1)
-    FWBP_Arena_RuleListContent_1_COnContentHovered OnContentHovered;                  // 0x0318 (size: 0x10)
+    bool Is Changeable;
+    FWBP_Arena_RuleListContent_1_COnContentHovered OnContentHovered;
     void OnContentHovered(class UWidget* Button);
-    FWBP_Arena_RuleListContent_1_COnContentUnhovered OnContentUnhovered;              // 0x0328 (size: 0x10)
+    FWBP_Arena_RuleListContent_1_COnContentUnhovered OnContentUnhovered;
     void OnContentUnhovered();
 
     class UWidget* CustomNavigation_ToContent(EUINavigation Navigation);
@@ -42,6 +42,6 @@ class UWBP_Arena_RuleListContent_1_C : public UUserWidget
     void OnContentUnhovered__DelegateSignature();
     void OnContentHovered__DelegateSignature(class UWidget* Button);
     void OnElementRestrictionUpdate__DelegateSignature(TArray<EPalElementType>& RestrictElements);
-}; // Size: 0x338
+};
 
 #endif

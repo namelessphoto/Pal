@@ -3,47 +3,47 @@
 
 class UWBP_Graphic_Settings_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UOverlay* CautionText;                                                      // 0x0280 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_UpscalingName;                                     // 0x0288 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_AA;                   // 0x0290 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_Arachnophobia;        // 0x0298 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_AutoContrast;         // 0x02A0 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_Brightness;           // 0x02A8 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_CameraRecoil;         // 0x02B0 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_CameraShake;          // 0x02B8 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_DrawDistance;         // 0x02C0 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_DrawDIstance_MapObject; // 0x02C8 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_DrawGrass;            // 0x02D0 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_EffectQuality;        // 0x02D8 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_FOV;                  // 0x02E0 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_LODBias;              // 0x02E8 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_MaxFPS;               // 0x02F0 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_MotionBlur;           // 0x02F8 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_Preset;               // 0x0300 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_Resolution;           // 0x0308 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_RideCameraLength;     // 0x0310 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_Screen;               // 0x0318 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_Shadow;               // 0x0320 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_TextureQuality;       // 0x0328 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_Upscaling;            // 0x0330 (size: 0x8)
-    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_VSync;                // 0x0338 (size: 0x8)
-    FPalOptionGraphicsSettings Graphics Settings Cache;                               // 0x0340 (size: 0x60)
-    FPalOptionLocalStaticSettings LocalStaticSettingCache;                            // 0x03A0 (size: 0xA8)
-    TArray<FDataTableRowHandle> ScreenSettingMsgIds;                                  // 0x0448 (size: 0x10)
-    TArray<FDataTableRowHandle> LevelMsgIds;                                          // 0x0458 (size: 0x10)
-    TArray<FDataTableRowHandle> LevelMsgIds_Graphic;                                  // 0x0468 (size: 0x10)
-    bool SomethingChanged;                                                            // 0x0478 (size: 0x1)
-    TMap<int32, TEnumAsByte<EAntiAliasingMethod>> AAMap;                              // 0x0480 (size: 0x50)
-    TArray<FString> AASettings;                                                       // 0x04D0 (size: 0x10)
-    TMap<int32, FString> FPSSelection;                                                // 0x04E0 (size: 0x50)
-    FDataTableRowHandle NoLimitlMsgId;                                                // 0x0530 (size: 0x10)
-    TArray<FIntPoint> SupportResolutions;                                             // 0x0540 (size: 0x10)
-    TArray<FDataTableRowHandle> UpscalingLevelMsgIds_DLSS;                            // 0x0550 (size: 0x10)
-    TArray<FDataTableRowHandle> UpscalingLevelMsgIds_MetalFX;                         // 0x0560 (size: 0x10)
-    TMap<int32, UDLSSMode> UpscalingMap;                                              // 0x0570 (size: 0x50)
-    TMap<int32, EPalOptionMapObjectDrawDistanceType> MapObjectDrawDistanceMap;        // 0x05C0 (size: 0x50)
-    TArray<FString> DrawDistanceStrings;                                              // 0x0610 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UOverlay* CautionText;
+    class UBP_PalTextBlock_C* Text_UpscalingName;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_AA;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_Arachnophobia;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_AutoContrast;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_Brightness;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_CameraRecoil;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_CameraShake;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_DrawDistance;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_DrawDIstance_MapObject;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_DrawGrass;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_EffectQuality;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_FOV;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_LODBias;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_MaxFPS;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_MotionBlur;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_Preset;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_Resolution;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_RideCameraLength;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_Screen;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_Shadow;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_TextureQuality;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_Upscaling;
+    class UWBP_OptionSettings_ListContent_C* WBP_OptionSettings_VSync;
+    FPalOptionGraphicsSettings Graphics Settings Cache;
+    FPalOptionLocalStaticSettings LocalStaticSettingCache;
+    TArray<FDataTableRowHandle> ScreenSettingMsgIds;
+    TArray<FDataTableRowHandle> LevelMsgIds;
+    TArray<FDataTableRowHandle> LevelMsgIds_Graphic;
+    bool SomethingChanged;
+    TMap<int32, TEnumAsByte<EAntiAliasingMethod>> AAMap;
+    TArray<FString> AASettings;
+    TMap<int32, FString> FPSSelection;
+    FDataTableRowHandle NoLimitlMsgId;
+    TArray<FIntPoint> SupportResolutions;
+    TArray<FDataTableRowHandle> UpscalingLevelMsgIds_DLSS;
+    TArray<FDataTableRowHandle> UpscalingLevelMsgIds_MetalFX;
+    TMap<int32, UDLSSMode> UpscalingMap;
+    TMap<int32, EPalOptionMapObjectDrawDistanceType> MapObjectDrawDistanceMap;
+    TArray<FString> DrawDistanceStrings;
 
     void GetUpscalingMsgIdArray(TArray<FDataTableRowHandle>& MsgIdArray);
     void SetupUpscalingName();
@@ -76,6 +76,6 @@ class UWBP_Graphic_Settings_C : public UUserWidget
     void OnChangedMapObjectDrawDistanceType(int32 Selection);
     void OnChangedArachnophobiaMode(bool IsOn);
     void ExecuteUbergraph_WBP_Graphic_Settings(int32 EntryPoint);
-}; // Size: 0x620
+};
 
 #endif

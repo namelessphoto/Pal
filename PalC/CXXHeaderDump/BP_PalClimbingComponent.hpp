@@ -3,25 +3,25 @@
 
 class UBP_PalClimbingComponent_C : public UPalClimbingComponent
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x00A8 (size: 0x8)
-    bool IsClimbing;                                                                  // 0x00B0 (size: 0x1)
-    FVector PrevClimbDirection;                                                       // 0x00B8 (size: 0x18)
-    bool CanClimbing;                                                                 // 0x00D0 (size: 0x1)
-    TEnumAsByte<ETraceTypeQuery> Const_RayChannel;                                    // 0x00D1 (size: 0x1)
-    FName flagName;                                                                   // 0x00D4 (size: 0x8)
-    double DownRayCancelTimer;                                                        // 0x00E0 (size: 0x8)
-    TEnumAsByte<EDrawDebugTrace> DebugType;                                           // 0x00E8 (size: 0x1)
-    bool TraceComplex;                                                                // 0x00E9 (size: 0x1)
-    double Const_ForwardRayLength;                                                    // 0x00F0 (size: 0x8)
-    double Const_UpRayLength;                                                         // 0x00F8 (size: 0x8)
-    double Const_RightRayLength;                                                      // 0x0100 (size: 0x8)
-    double Const_OffsetBack;                                                          // 0x0108 (size: 0x8)
-    bool UpAtTopMode;                                                                 // 0x0110 (size: 0x1)
-    class UCurveVector* UpToTopMoveCurve;                                             // 0x0118 (size: 0x8)
-    double UpToTopTimer;                                                              // 0x0120 (size: 0x8)
-    FVector UpToTopFromPlayer;                                                        // 0x0128 (size: 0x18)
-    FVector UpToTopStartPos;                                                          // 0x0140 (size: 0x18)
-    bool IsEnding;                                                                    // 0x0158 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    bool IsClimbing;
+    FVector PrevClimbDirection;
+    bool CanClimbing;
+    TEnumAsByte<ETraceTypeQuery> Const_RayChannel;
+    FName flagName;
+    double DownRayCancelTimer;
+    TEnumAsByte<EDrawDebugTrace> DebugType;
+    bool TraceComplex;
+    double Const_ForwardRayLength;
+    double Const_UpRayLength;
+    double Const_RightRayLength;
+    double Const_OffsetBack;
+    bool UpAtTopMode;
+    class UCurveVector* UpToTopMoveCurve;
+    double UpToTopTimer;
+    FVector UpToTopFromPlayer;
+    FVector UpToTopStartPos;
+    bool IsEnding;
 
     void IsDisableClimbingArea(bool& Disable);
     void UpdateClimbBuff();
@@ -65,6 +65,6 @@ class UBP_PalClimbingComponent_C : public UPalClimbingComponent
     void ClimbUpAtTopEvent();
     void StartClimb(const FHitResult& Result);
     void ExecuteUbergraph_BP_PalClimbingComponent(int32 EntryPoint);
-}; // Size: 0x159
+};
 
 #endif

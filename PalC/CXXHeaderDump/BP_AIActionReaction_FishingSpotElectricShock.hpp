@@ -3,10 +3,10 @@
 
 class UBP_AIActionReaction_FishingSpotElectricShock_C : public UBP_AIActionReaction_ElectricShock_C
 {
-    double EnemyFindRange;                                                            // 0x0150 (size: 0x8)
+    double EnemyFindRange;
 
     void FindEnemy(class APalCharacter*& Enemy);
     void OnFinishElectricShock();
-}; // Size: 0x158
+};
 
 #endif

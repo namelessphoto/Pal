@@ -3,6 +3,6 @@
 
 class UBP_AINPC_CombatMeleeState_GiantClubAttack_C : public UBP_AINPC_CombatMeleeState_StepAttack_C
 {
-}; // Size: 0x48
+};
 
 #endif

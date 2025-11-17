@@ -3,14 +3,14 @@
 
 struct FMyPluginStruct
 {
-    FString TestString;                                                               // 0x0000 (size: 0x10)
+    FString TestString;
 
-}; // Size: 0x10
+};
 
 class UMyPluginObject : public UObject
 {
-    FMyPluginStruct MyStruct;                                                         // 0x0028 (size: 0x10)
+    FMyPluginStruct MyStruct;
 
-}; // Size: 0x38
+};
 
 #endif

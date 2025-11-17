@@ -3,12 +3,12 @@
 
 class UWBP_PalActionBar_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UWidgetAnimation* Close;                                                    // 0x0410 (size: 0x8)
-    class UWidgetAnimation* Open;                                                     // 0x0418 (size: 0x8)
-    class UCommonBoundActionBar* CommonBoundActionBar_33;                             // 0x0420 (size: 0x8)
-    class UInvalidationBox* InvalidationBox_0;                                        // 0x0428 (size: 0x8)
-    int32 lastEntryNum;                                                               // 0x0430 (size: 0x4)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Close;
+    class UWidgetAnimation* Open;
+    class UCommonBoundActionBar* CommonBoundActionBar_33;
+    class UInvalidationBox* InvalidationBox_0;
+    int32 lastEntryNum;
 
     void OnAddedAction();
     void OnRemovedAllAction();
@@ -17,6 +17,6 @@ class UWBP_PalActionBar_C : public UPalUserWidget
     void Tick(FGeometry MyGeometry, float InDeltaTime);
     void OnInitialized();
     void ExecuteUbergraph_WBP_PalActionBar(int32 EntryPoint);
-}; // Size: 0x434
+};
 
 #endif

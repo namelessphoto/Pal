@@ -5,6 +5,6 @@ class IBPI_PalWeaponAnimatioNotify_C : public IInterface
 {
 
     void OnNotify(TEnumAsByte<E_PalWeaponAnimationNotify> Notify);
-}; // Size: 0x28
+};
 
 #endif

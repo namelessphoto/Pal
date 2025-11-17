@@ -3,6 +3,6 @@
 
 class UBP_ObjectPoolManager_C : public UPalObjectPoolManager
 {
-}; // Size: 0x1B8
+};
 
 #endif

@@ -3,22 +3,22 @@
 
 class UWBP_MainMenu_Technology_List_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_LockToUnlock;                                         // 0x0280 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_TechnologyButton;                             // 0x0288 (size: 0x8)
-    class UImage* Image_Line;                                                         // 0x0290 (size: 0x8)
-    class USizeBox* SizeBox_BossTech;                                                 // 0x0298 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_TechnologyLevel;                                   // 0x02A0 (size: 0x8)
-    FWBP_MainMenu_Technology_List_COnClickedTechnology OnClickedTechnology;           // 0x02A8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_LockToUnlock;
+    class UHorizontalBox* HorizontalBox_TechnologyButton;
+    class UImage* Image_Line;
+    class USizeBox* SizeBox_BossTech;
+    class UBP_PalTextBlock_C* Text_TechnologyLevel;
+    FWBP_MainMenu_Technology_List_COnClickedTechnology OnClickedTechnology;
     void OnClickedTechnology(class UWBP_MainMenu_Technology_Content_C* Widget);
-    FWBP_MainMenu_Technology_List_COnHoveredTechnoogy OnHoveredTechnoogy;             // 0x02B8 (size: 0x10)
+    FWBP_MainMenu_Technology_List_COnHoveredTechnoogy OnHoveredTechnoogy;
     void OnHoveredTechnoogy(class UWBP_MainMenu_Technology_Content_C* Widget, class UWBP_MainMenu_Technology_List_C* ListWidget);
-    FWBP_MainMenu_Technology_List_COnUnhoveredTechnology OnUnhoveredTechnology;       // 0x02C8 (size: 0x10)
+    FWBP_MainMenu_Technology_List_COnUnhoveredTechnology OnUnhoveredTechnology;
     void OnUnhoveredTechnology(class UWBP_MainMenu_Technology_Content_C* Widget);
-    int32 CachedPlayerLevel;                                                          // 0x02D8 (size: 0x4)
-    int32 CachedTechnologyLevel;                                                      // 0x02DC (size: 0x4)
-    TArray<class UWBP_MainMenu_Technology_Content_C*> TechnologyContents;             // 0x02E0 (size: 0x10)
-    class UWBP_MainMenu_Technology_Content_C* BossTech;                               // 0x02F0 (size: 0x8)
+    int32 CachedPlayerLevel;
+    int32 CachedTechnologyLevel;
+    TArray<class UWBP_MainMenu_Technology_Content_C*> TechnologyContents;
+    class UWBP_MainMenu_Technology_Content_C* BossTech;
 
     void UpdateAllButtonDetail();
     void Update List Active();
@@ -48,6 +48,6 @@ class UWBP_MainMenu_Technology_List_C : public UUserWidget
     void OnUnhoveredTechnology__DelegateSignature(class UWBP_MainMenu_Technology_Content_C* Widget);
     void OnHoveredTechnoogy__DelegateSignature(class UWBP_MainMenu_Technology_Content_C* Widget, class UWBP_MainMenu_Technology_List_C* ListWidget);
     void OnClickedTechnology__DelegateSignature(class UWBP_MainMenu_Technology_Content_C* Widget);
-}; // Size: 0x2F8
+};
 
 #endif

@@ -3,7 +3,7 @@
 
 class UWBP_PalFadeWidgetBase_C : public UPalFadeWidgetBase
 {
-    class UPalHUDDispatchParameter_FadeWidget* FadeParameter;                         // 0x0408 (size: 0x8)
+    class UPalHUDDispatchParameter_FadeWidget* FadeParameter;
 
     void NotifyEndFadeIn();
     void NotifyStartFadeIn();
@@ -13,6 +13,6 @@ class UWBP_PalFadeWidgetBase_C : public UPalFadeWidgetBase
     void Setup(class UPalHUDDispatchParameter_FadeWidget* FadeParameter);
     void FadeIn();
     void FadeOut();
-}; // Size: 0x410
+};
 
 #endif

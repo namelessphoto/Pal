@@ -3,6 +3,6 @@
 
 class UBP_PalWazaDatabase_C : public UPalWazaDatabase
 {
-}; // Size: 0xE0
+};
 
 #endif

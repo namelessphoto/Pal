@@ -3,26 +3,26 @@
 
 class UWBP_IngameMenu_ChestManage_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UCanvasPanel* Canvas_TargetContainer;                                       // 0x0438 (size: 0x8)
-    class UWBP_Common_Inventory_C* WBP_Common_Inventory;                              // 0x0440 (size: 0x8)
-    class UWBP_IngameMenu_ChestManage_TakeOut_C* WBP_IngameMenu_ChestManage_TakeOut;  // 0x0448 (size: 0x8)
-    class UWBP_IngameMenu_ItemSearchList_C* WBP_IngameMenu_ItemSearchList;            // 0x0450 (size: 0x8)
-    class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x0458 (size: 0x8)
-    class UBP_PalInventoryModel_C* InventoryModel;                                    // 0x0460 (size: 0x8)
-    FWBP_IngameMenu_ChestManage_COnClickedQuickMoveButton OnClickedQuickMoveButton;   // 0x0468 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCanvasPanel* Canvas_TargetContainer;
+    class UWBP_Common_Inventory_C* WBP_Common_Inventory;
+    class UWBP_IngameMenu_ChestManage_TakeOut_C* WBP_IngameMenu_ChestManage_TakeOut;
+    class UWBP_IngameMenu_ItemSearchList_C* WBP_IngameMenu_ItemSearchList;
+    class UWBP_Menu_btn_C* WBP_Menu_btn;
+    class UBP_PalInventoryModel_C* InventoryModel;
+    FWBP_IngameMenu_ChestManage_COnClickedQuickMoveButton OnClickedQuickMoveButton;
     void OnClickedQuickMoveButton();
-    FWBP_IngameMenu_ChestManage_COnClickedPreferenceButton OnClickedPreferenceButton; // 0x0478 (size: 0x10)
+    FWBP_IngameMenu_ChestManage_COnClickedPreferenceButton OnClickedPreferenceButton;
     void OnClickedPreferenceButton();
-    class UPalUIBaseCampItemDispenserModel* DispenserModel;                           // 0x0488 (size: 0x8)
-    bool TakeOutPanelEnabled;                                                         // 0x0490 (size: 0x1)
-    TArray<FPalUIActionBindData> TakeOutBindedActions;                                // 0x0498 (size: 0x10)
-    bool LastFocusListSlot;                                                           // 0x04A8 (size: 0x1)
-    bool Updateable;                                                                  // 0x04A9 (size: 0x1)
-    FTimerHandle UpdateableTimer;                                                     // 0x04B0 (size: 0x8)
-    bool CurrentInFocusPath;                                                          // 0x04B8 (size: 0x1)
-    bool ForceReset;                                                                  // 0x04B9 (size: 0x1)
-    TArray<FPalItemSlotId> FillableSlotIds;                                           // 0x04C0 (size: 0x10)
+    class UPalUIBaseCampItemDispenserModel* DispenserModel;
+    bool TakeOutPanelEnabled;
+    TArray<FPalUIActionBindData> TakeOutBindedActions;
+    bool LastFocusListSlot;
+    bool Updateable;
+    FTimerHandle UpdateableTimer;
+    bool CurrentInFocusPath;
+    bool ForceReset;
+    TArray<FPalItemSlotId> FillableSlotIds;
 
     void UpdateInventorySlot(class UWBP_PalItemSlotButtonBase_C* Slot, const TArray<FName>& ItemList);
     void Refill();
@@ -58,6 +58,6 @@ class UWBP_IngameMenu_ChestManage_C : public UPalUserWidgetOverlayUI
     void ExecuteUbergraph_WBP_IngameMenu_ChestManage(int32 EntryPoint);
     void OnClickedPreferenceButton__DelegateSignature();
     void OnClickedQuickMoveButton__DelegateSignature();
-}; // Size: 0x4D0
+};
 
 #endif

@@ -3,6 +3,6 @@
 
 class ABP_PalSupplyIncidentSpawner_NPC_Sakura01_C : public ABP_PalSupplyIncidentSpawnerBase_C
 {
-}; // Size: 0x462
+};
 
 #endif

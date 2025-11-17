@@ -3,6 +3,6 @@
 
 class UBP_NPCAIWeaponHandle_C : public UPalNPCAIWeaponHandle
 {
-}; // Size: 0xE0
+};
 
 #endif

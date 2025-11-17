@@ -3,6 +3,6 @@
 
 class UBP_PalInputData_XInput_C : public UCommonInputBaseControllerData
 {
-}; // Size: 0x110
+};
 
 #endif

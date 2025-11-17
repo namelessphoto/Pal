@@ -3,15 +3,15 @@
 
 class UWBP_Paldex_tabset_C : public UWBP_PanelWidgetChildrenSelectorBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0460 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_Tab;                                          // 0x0468 (size: 0x8)
-    class UWBP_Main_Menu_Tab_Key_C* WBP_Main_Menu_Tab_Key_L;                          // 0x0470 (size: 0x8)
-    class UWBP_Main_Menu_Tab_Key_C* WBP_Main_Menu_Tab_Key_R;                          // 0x0478 (size: 0x8)
-    class UWBP_Paldex_tab_C* WBP_Paldex_tab_Distribution;                             // 0x0480 (size: 0x8)
-    class UWBP_Paldex_tab_C* WBP_Paldex_tab_Model;                                    // 0x0488 (size: 0x8)
-    FWBP_Paldex_tabset_COnSelectedModelTab OnSelectedModelTab;                        // 0x0490 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UHorizontalBox* HorizontalBox_Tab;
+    class UWBP_Main_Menu_Tab_Key_C* WBP_Main_Menu_Tab_Key_L;
+    class UWBP_Main_Menu_Tab_Key_C* WBP_Main_Menu_Tab_Key_R;
+    class UWBP_Paldex_tab_C* WBP_Paldex_tab_Distribution;
+    class UWBP_Paldex_tab_C* WBP_Paldex_tab_Model;
+    FWBP_Paldex_tabset_COnSelectedModelTab OnSelectedModelTab;
     void OnSelectedModelTab();
-    FWBP_Paldex_tabset_COnSelectedDistributionTab OnSelectedDistributionTab;          // 0x04A0 (size: 0x10)
+    FWBP_Paldex_tabset_COnSelectedDistributionTab OnSelectedDistributionTab;
     void OnSelectedDistributionTab();
 
     void OnPrevEvent(int32 OldIndex, int32 NewIndex);
@@ -26,6 +26,6 @@ class UWBP_Paldex_tabset_C : public UWBP_PanelWidgetChildrenSelectorBase_C
     void ExecuteUbergraph_WBP_Paldex_tabset(int32 EntryPoint);
     void OnSelectedDistributionTab__DelegateSignature();
     void OnSelectedModelTab__DelegateSignature();
-}; // Size: 0x4B0
+};
 
 #endif

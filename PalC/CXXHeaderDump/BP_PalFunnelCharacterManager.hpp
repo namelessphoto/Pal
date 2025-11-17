@@ -5,6 +5,6 @@ class UBP_PalFunnelCharacterManager_C : public UPalFunnelCharacterManager
 {
 
     void SetFunnelCharacterActive(class APalFunnelCharacter* FunnelCharacter, bool IsActive, bool bNoEffect);
-}; // Size: 0x118
+};
 
 #endif

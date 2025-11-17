@@ -3,6 +3,6 @@
 
 class UBP_UniqueRideAnime_GrassPanda_C : public UPalUniqueRideAnimeAssetBase
 {
-}; // Size: 0x180
+};
 
 #endif

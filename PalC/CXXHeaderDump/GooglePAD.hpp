@@ -21,6 +21,6 @@ class UGooglePADFunctionLibrary : public UBlueprintFunctionLibrary
     FString GetAssetsPath(const int32 Location);
     EGooglePADErrorCode GetAssetPackLocation(FString Name, int32& Location);
     EGooglePADErrorCode CancelDownload(const TArray<FString> AssetPacks);
-}; // Size: 0x28
+};
 
 #endif

@@ -3,8 +3,8 @@
 
 class UWBP_PalSaveParameterDisplayWidget_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    FPalIndividualCharacterSaveParameter CachedSaveParameter;                         // 0x0410 (size: 0x328)
+    FPointerToUberGraphFrame UberGraphFrame;
+    FPalIndividualCharacterSaveParameter CachedSaveParameter;
 
     void SetFriendShip(int32 FriendshipRank, int32 FriendshipPoint);
     void CalcBuffedWorkSuitabilityRank(TMap<EPalWorkSuitability, int32>& RankMap);
@@ -36,6 +36,6 @@ class UWBP_PalSaveParameterDisplayWidget_C : public UPalUserWidget
     void Construct();
     void Destruct();
     void ExecuteUbergraph_WBP_PalSaveParameterDisplayWidget(int32 EntryPoint);
-}; // Size: 0x738
+};
 
 #endif

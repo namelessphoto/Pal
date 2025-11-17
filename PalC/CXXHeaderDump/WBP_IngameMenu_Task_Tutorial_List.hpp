@@ -3,19 +3,19 @@
 
 class UWBP_IngameMenu_Task_Tutorial_List_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UWidgetAnimation* Anm_Updated;                                              // 0x0410 (size: 0x8)
-    class UWidgetAnimation* Anm_Out;                                                  // 0x0418 (size: 0x8)
-    class UWidgetAnimation* Anm_Cleared;                                              // 0x0420 (size: 0x8)
-    class UWidgetAnimation* Anm_In;                                                   // 0x0428 (size: 0x8)
-    class UCheckBox* CheckBox;                                                        // 0x0430 (size: 0x8)
-    class UImage* Image_ClearEff;                                                     // 0x0438 (size: 0x8)
-    class UImage* Image_ClearEff_1;                                                   // 0x0440 (size: 0x8)
-    class UBP_PalRichTextBlock_C* RichText_QuestDescription;                          // 0x0448 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_TaskDetail_Progress;                               // 0x0450 (size: 0x8)
-    FWBP_IngameMenu_Task_Tutorial_List_COnEndCloseAnim OnEndCloseAnim;                // 0x0458 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_Updated;
+    class UWidgetAnimation* Anm_Out;
+    class UWidgetAnimation* Anm_Cleared;
+    class UWidgetAnimation* Anm_In;
+    class UCheckBox* CheckBox;
+    class UImage* Image_ClearEff;
+    class UImage* Image_ClearEff_1;
+    class UBP_PalRichTextBlock_C* RichText_QuestDescription;
+    class UBP_PalTextBlock_C* Text_TaskDetail_Progress;
+    FWBP_IngameMenu_Task_Tutorial_List_COnEndCloseAnim OnEndCloseAnim;
     void OnEndCloseAnim(class UWBP_IngameMenu_Task_Tutorial_List_C* Widget);
-    class UPalQuestData* MyQuest;                                                     // 0x0468 (size: 0x8)
+    class UPalQuestData* MyQuest;
 
     void OnCompleteQuest(class UPalQuestData* CompletedQuest);
     void OnUpdateQuest(class UPalQuestData* UpdatedQuest);
@@ -28,6 +28,6 @@ class UWBP_IngameMenu_Task_Tutorial_List_C : public UPalUserWidget
     void Destruct();
     void ExecuteUbergraph_WBP_IngameMenu_Task_Tutorial_List(int32 EntryPoint);
     void OnEndCloseAnim__DelegateSignature(class UWBP_IngameMenu_Task_Tutorial_List_C* Widget);
-}; // Size: 0x470
+};
 
 #endif

@@ -3,10 +3,10 @@
 
 class ABP_RaidBossSummonGeneratorBase_C : public APalRaidBossSummonGeneratorBase
 {
-    class USceneComponent* DefaultSceneRoot;                                          // 0x0290 (size: 0x8)
+    class USceneComponent* DefaultSceneRoot;
 
     void CalcSpawnTransform(int32 Index, int32 MaxNum, FVector CenterPos, double Height, FTransform& SpawnTF);
     void SpawnSpawner(class AActor* BossActor, FGuid CampID, int32 GeneralIndex);
-}; // Size: 0x298
+};
 
 #endif

@@ -3,10 +3,10 @@
 
 class UBP_Status_FallDamage_C : public UPalStatusBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0048 (size: 0x8)
-    double Const_DamageStartHeight;                                                   // 0x0050 (size: 0x8)
-    double Const_DeathHeight;                                                         // 0x0058 (size: 0x8)
-    bool IsGlider;                                                                    // 0x0060 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    double Const_DamageStartHeight;
+    double Const_DeathHeight;
+    bool IsGlider;
 
     void IsFloating(bool& IsFloating);
     void IsIgnoreCharacter(bool& Ignore);
@@ -21,6 +21,6 @@ class UBP_Status_FallDamage_C : public UPalStatusBase
     void SetUp_FallDamage(class APalCharacter* InCharacter);
     void OnJumped(class UPalCharacterMovementComponent* Component);
     void ExecuteUbergraph_BP_Status_FallDamage(int32 EntryPoint);
-}; // Size: 0x61
+};
 
 #endif

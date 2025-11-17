@@ -3,15 +3,15 @@
 
 class UWBP_InventoryEquipment_TabList_C : public UWBP_PanelWidgetChildrenSelectorBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0460 (size: 0x8)
-    class UCanvasPanel* Canvas_InventoryTab;                                          // 0x0468 (size: 0x8)
-    class UCanvasPanel* Canvas_SortButton;                                            // 0x0470 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_1;                                            // 0x0478 (size: 0x8)
-    class UImage* TabIconBase;                                                        // 0x0480 (size: 0x8)
-    class UWBP_InventoryEquipment_InventoryTabButton_C* WBP_InventoryEquipment_InventoryTabButton_Essential; // 0x0488 (size: 0x8)
-    class UWBP_InventoryEquipment_InventoryTabButton_C* WBP_InventoryEquipment_InventoryTabButton_Inventory; // 0x0490 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Sort;                     // 0x0498 (size: 0x8)
-    FWBP_InventoryEquipment_TabList_COnClickedSortButton OnClickedSortButton;         // 0x04A0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCanvasPanel* Canvas_InventoryTab;
+    class UCanvasPanel* Canvas_SortButton;
+    class UHorizontalBox* HorizontalBox_1;
+    class UImage* TabIconBase;
+    class UWBP_InventoryEquipment_InventoryTabButton_C* WBP_InventoryEquipment_InventoryTabButton_Essential;
+    class UWBP_InventoryEquipment_InventoryTabButton_C* WBP_InventoryEquipment_InventoryTabButton_Inventory;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Sort;
+    FWBP_InventoryEquipment_TabList_COnClickedSortButton OnClickedSortButton;
     void OnClickedSortButton();
 
     void OnChangedIndex_Binded(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
@@ -24,6 +24,6 @@ class UWBP_InventoryEquipment_TabList_C : public UWBP_PanelWidgetChildrenSelecto
     void BndEvt__WBP_InventoryEquipment_TabList_WBP_InventoryEquipment_InventoryTabButton_Inventory_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature(class UWBP_InventoryEquipment_InventoryTabButton_C* Button);
     void ExecuteUbergraph_WBP_InventoryEquipment_TabList(int32 EntryPoint);
     void OnClickedSortButton__DelegateSignature();
-}; // Size: 0x4B0
+};
 
 #endif

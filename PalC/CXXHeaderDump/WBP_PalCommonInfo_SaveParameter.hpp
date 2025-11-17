@@ -3,7 +3,7 @@
 
 class UWBP_PalCommonInfo_SaveParameter_C : public UWBP_PalSaveParameterDisplayWidget_C
 {
-    class UWBP_IngameMenu_PalBox_PalDetail_C* WBP_IngameMenu_PalBox_PalDetail;        // 0x0738 (size: 0x8)
+    class UWBP_IngameMenu_PalBox_PalDetail_C* WBP_IngameMenu_PalBox_PalDetail;
 
     void SetFriendShip(int32 FriendshipRank, int32 FriendshipPoint);
     void SetImportedFlag(bool bImported);
@@ -23,6 +23,6 @@ class UWBP_PalCommonInfo_SaveParameter_C : public UWBP_PalSaveParameterDisplayWi
     void SetHunger(double nowHunger, double maxHunger);
     void SetBaseParameter(int32 MeleeAttack, int32 ShotAttack, int32 Defense, int32 Support, int32 Speed);
     void SetHP(int32 nowHP, int32 MaxHP);
-}; // Size: 0x740
+};
 
 #endif

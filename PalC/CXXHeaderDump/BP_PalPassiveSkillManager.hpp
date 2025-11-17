@@ -3,6 +3,6 @@
 
 class UBP_PalPassiveSkillManager_C : public UPalPassiveSkillManager
 {
-}; // Size: 0x318
+};
 
 #endif

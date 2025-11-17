@@ -3,13 +3,13 @@
 
 class ABP_NormalRifle_C : public ABP_AssaultRifleBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0628 (size: 0x8)
-    class USkeletalMeshComponent* Weapon;                                             // 0x0630 (size: 0x8)
-    FVector NewLocalVar_0;                                                            // 0x0638 (size: 0x18)
-    class UAnimSequence* EmptyAnim;                                                   // 0x0650 (size: 0x8)
-    class UAnimSequence* FireAnim;                                                    // 0x0658 (size: 0x8)
-    class UAnimSequence* ReloadAnim;                                                  // 0x0660 (size: 0x8)
-    class UAnimSequence* LoadedAnim;                                                  // 0x0668 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class USkeletalMeshComponent* Weapon;
+    FVector NewLocalVar_0;
+    class UAnimSequence* EmptyAnim;
+    class UAnimSequence* FireAnim;
+    class UAnimSequence* ReloadAnim;
+    class UAnimSequence* LoadedAnim;
 
     void GetMuzzleEffectAttached(class UNiagaraSystem*& Effect);
     void OnFireStart();
@@ -39,6 +39,6 @@ class ABP_NormalRifle_C : public ABP_AssaultRifleBase_C
     void OnShoot(class APalBullet* BulletActor);
     void ReceiveBeginPlay();
     void ExecuteUbergraph_BP_NormalRifle(int32 EntryPoint);
-}; // Size: 0x670
+};
 
 #endif

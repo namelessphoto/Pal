@@ -3,15 +3,15 @@
 
 class ABP_PlayerBase_C : public APalPlayerCharacter
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0F20 (size: 0x8)
-    class UPalPassiveSkillInvokerComponent* PalPassiveSkillInvoker;                   // 0x0F28 (size: 0x8)
-    class UCapsuleComponent* DeadColllision;                                          // 0x0F30 (size: 0x8)
-    class UBP_PalTimerPointLightComponent_C* PlayerLight;                             // 0x0F38 (size: 0x8)
-    class UPalRiderComponent* Rider Component;                                        // 0x0F40 (size: 0x8)
-    bool bIsInCapturedCage;                                                           // 0x0F48 (size: 0x1)
-    class ABP_LampBase_C* Lantern;                                                    // 0x0F50 (size: 0x8)
-    TSoftClassPtr<APalPlayerLampBase> WaitingLampClass;                               // 0x0F58 (size: 0x30)
-    bool bIsLoadingLamp;                                                              // 0x0F88 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalPassiveSkillInvokerComponent* PalPassiveSkillInvoker;
+    class UCapsuleComponent* DeadColllision;
+    class UBP_PalTimerPointLightComponent_C* PlayerLight;
+    class UPalRiderComponent* Rider Component;
+    bool bIsInCapturedCage;
+    class ABP_LampBase_C* Lantern;
+    TSoftClassPtr<APalPlayerLampBase> WaitingLampClass;
+    bool bIsLoadingLamp;
 
     void CreateLanternInternal(TSubclassOf<class ABP_LampBase_C> LampClass);
     void UpdateLanternSetting(EPalPlayerEquipLantern NewEquipType);
@@ -34,6 +34,6 @@ class ABP_PlayerBase_C : public APalPlayerCharacter
     void BndEvt__BP_PlayerBase_CharacterMovement_K2Node_ComponentBoundEvent_2_OnJumpDelegate__DelegateSignature(class UPalCharacterMovementComponent* Component);
     void LoadLampClassAsync(TSoftClassPtr<APalPlayerLampBase> LampClass);
     void ExecuteUbergraph_BP_PlayerBase(int32 EntryPoint);
-}; // Size: 0xF89
+};
 
 #endif

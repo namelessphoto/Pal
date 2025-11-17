@@ -3,22 +3,22 @@
 
 class UWBP_Ingame_QuestBoard_List_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UWidgetAnimation* Anm_Updated;                                              // 0x0410 (size: 0x8)
-    class UWidgetAnimation* Anm_Out;                                                  // 0x0418 (size: 0x8)
-    class UWidgetAnimation* Anm_Cleared;                                              // 0x0420 (size: 0x8)
-    class UWidgetAnimation* Anm_In;                                                   // 0x0428 (size: 0x8)
-    class UImage* Image_ClearEff;                                                     // 0x0430 (size: 0x8)
-    class UImage* Image_ClearEff_1;                                                   // 0x0438 (size: 0x8)
-    class UImage* Image_QuestIcon;                                                    // 0x0440 (size: 0x8)
-    class UBP_PalRichTextBlock_C* RichText_QuestDescription;                          // 0x0448 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_TaskDetail_Progress;                               // 0x0450 (size: 0x8)
-    FWBP_Ingame_QuestBoard_List_COnEndCloseAnim OnEndCloseAnim;                       // 0x0458 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_Updated;
+    class UWidgetAnimation* Anm_Out;
+    class UWidgetAnimation* Anm_Cleared;
+    class UWidgetAnimation* Anm_In;
+    class UImage* Image_ClearEff;
+    class UImage* Image_ClearEff_1;
+    class UImage* Image_QuestIcon;
+    class UBP_PalRichTextBlock_C* RichText_QuestDescription;
+    class UBP_PalTextBlock_C* Text_TaskDetail_Progress;
+    FWBP_Ingame_QuestBoard_List_COnEndCloseAnim OnEndCloseAnim;
     void OnEndCloseAnim(class UWBP_Ingame_QuestBoard_List_C* Widget);
-    class UPalQuestData* MyQuest;                                                     // 0x0468 (size: 0x8)
-    FName CachedQuestId;                                                              // 0x0470 (size: 0x8)
-    bool CompleteSound;                                                               // 0x0478 (size: 0x1)
-    FTimerHandle UpdateTextTimerHandle;                                               // 0x0480 (size: 0x8)
+    class UPalQuestData* MyQuest;
+    FName CachedQuestId;
+    bool CompleteSound;
+    FTimerHandle UpdateTextTimerHandle;
 
     void OnTimerEvent_UpdateText();
     void GetQuestId(FName& QuestId);
@@ -33,6 +33,6 @@ class UWBP_Ingame_QuestBoard_List_C : public UPalUserWidget
     void Destruct();
     void ExecuteUbergraph_WBP_Ingame_QuestBoard_List(int32 EntryPoint);
     void OnEndCloseAnim__DelegateSignature(class UWBP_Ingame_QuestBoard_List_C* Widget);
-}; // Size: 0x488
+};
 
 #endif

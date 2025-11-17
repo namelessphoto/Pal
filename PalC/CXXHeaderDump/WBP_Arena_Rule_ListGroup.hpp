@@ -3,27 +3,27 @@
 
 class UWBP_Arena_Rule_ListGroup_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWBP_Arena_RuleListContent_0_C* WBP_Arena_RuleListContent_Boss;             // 0x0280 (size: 0x8)
-    class UWBP_Arena_RuleListContent_0_C* WBP_Arena_RuleListContent_Duplicate;        // 0x0288 (size: 0x8)
-    class UWBP_Arena_RuleListContent_1_C* WBP_Arena_RuleListContent_Element;          // 0x0290 (size: 0x8)
-    class UWBP_Arena_RuleListContent_0_C* WBP_Arena_RuleListContent_Human;            // 0x0298 (size: 0x8)
-    class UWBP_Arena_RuleListContent_0_C* WBP_Arena_RuleListContent_Legend;           // 0x02A0 (size: 0x8)
-    class UWBP_Arena_RuleListContent_0_C* WBP_Arena_RuleListContent_LevelSync;        // 0x02A8 (size: 0x8)
-    class UWBP_Arena_RuleListContent_0_C* WBP_Arena_RuleListContent_PalDamage;        // 0x02B0 (size: 0x8)
-    class UWBP_Arena_RuleListContent_0_C* WBP_Arena_RuleListContent_PalRestrict;      // 0x02B8 (size: 0x8)
-    class UWBP_Arena_RuleListContent_0_C* WBP_Arena_RuleListContent_PlayerDamage;     // 0x02C0 (size: 0x8)
-    class UWBP_Arena_RuleListContent_0_C* WBP_Arena_RuleListContent_Ride;             // 0x02C8 (size: 0x8)
-    class UWBP_Arena_RuleListContent_0_C* WBP_Arena_RuleListContent_Time;             // 0x02D0 (size: 0x8)
-    bool SomethingChanged;                                                            // 0x02D8 (size: 0x1)
-    FPalArenaRule CurrentRule;                                                        // 0x02E0 (size: 0x38)
-    FWBP_Arena_Rule_ListGroup_COnRuleUpdated OnRuleUpdated;                           // 0x0318 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWBP_Arena_RuleListContent_0_C* WBP_Arena_RuleListContent_Boss;
+    class UWBP_Arena_RuleListContent_0_C* WBP_Arena_RuleListContent_Duplicate;
+    class UWBP_Arena_RuleListContent_1_C* WBP_Arena_RuleListContent_Element;
+    class UWBP_Arena_RuleListContent_0_C* WBP_Arena_RuleListContent_Human;
+    class UWBP_Arena_RuleListContent_0_C* WBP_Arena_RuleListContent_Legend;
+    class UWBP_Arena_RuleListContent_0_C* WBP_Arena_RuleListContent_LevelSync;
+    class UWBP_Arena_RuleListContent_0_C* WBP_Arena_RuleListContent_PalDamage;
+    class UWBP_Arena_RuleListContent_0_C* WBP_Arena_RuleListContent_PalRestrict;
+    class UWBP_Arena_RuleListContent_0_C* WBP_Arena_RuleListContent_PlayerDamage;
+    class UWBP_Arena_RuleListContent_0_C* WBP_Arena_RuleListContent_Ride;
+    class UWBP_Arena_RuleListContent_0_C* WBP_Arena_RuleListContent_Time;
+    bool SomethingChanged;
+    FPalArenaRule CurrentRule;
+    FWBP_Arena_Rule_ListGroup_COnRuleUpdated OnRuleUpdated;
     void OnRuleUpdated(FPalArenaRule NewRule);
-    FWBP_Arena_Rule_ListGroup_COnRestrictPalClicked OnRestrictPalClicked;             // 0x0328 (size: 0x10)
+    FWBP_Arena_Rule_ListGroup_COnRestrictPalClicked OnRestrictPalClicked;
     void OnRestrictPalClicked();
-    TArray<class UWBP_Arena_RuleListContent_0_C*> SettingContents;                    // 0x0338 (size: 0x10)
-    class UCommonButtonBase* LastHoveredConten;                                       // 0x0348 (size: 0x8)
-    FWBP_Arena_Rule_ListGroup_CToggleLevelSyncInfo ToggleLevelSyncInfo;               // 0x0350 (size: 0x10)
+    TArray<class UWBP_Arena_RuleListContent_0_C*> SettingContents;
+    class UCommonButtonBase* LastHoveredConten;
+    FWBP_Arena_Rule_ListGroup_CToggleLevelSyncInfo ToggleLevelSyncInfo;
     void ToggleLevelSyncInfo(bool Show);
 
     void OnTimeLimitDamageChanged(double Value);
@@ -46,6 +46,6 @@ class UWBP_Arena_Rule_ListGroup_C : public UUserWidget
     void ToggleLevelSyncInfo__DelegateSignature(bool Show);
     void OnRestrictPalClicked__DelegateSignature();
     void OnRuleUpdated__DelegateSignature(FPalArenaRule NewRule);
-}; // Size: 0x360
+};
 
 #endif

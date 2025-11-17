@@ -3,6 +3,6 @@
 
 class UBP_AIResponsePreset_Warlike_C : public UPalAIResponsePreset
 {
-}; // Size: 0x30
+};
 
 #endif

@@ -3,6 +3,6 @@
 
 class UBP_ArenaSequence_Enter_Spectate_C : public UBP_ArenaSequence_Enter_C
 {
-}; // Size: 0x58
+};
 
 #endif

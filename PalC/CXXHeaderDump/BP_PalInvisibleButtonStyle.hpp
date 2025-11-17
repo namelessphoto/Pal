@@ -3,6 +3,6 @@
 
 class UBP_PalInvisibleButtonStyle_C : public UCommonButtonStyle
 {
-}; // Size: 0x7B0
+};
 
 #endif

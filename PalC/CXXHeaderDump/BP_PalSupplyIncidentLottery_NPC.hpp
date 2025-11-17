@@ -3,6 +3,6 @@
 
 class UBP_PalSupplyIncidentLottery_NPC_C : public UPalRandomIncidentLotteryBase
 {
-}; // Size: 0x40
+};
 
 #endif

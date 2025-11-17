@@ -3,16 +3,16 @@
 
 class ABP_OverheatRifle_C : public ABP_NormalRifle_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0670 (size: 0x8)
-    class USpotLightComponent* SpotLight;                                             // 0x0678 (size: 0x8)
-    double HeatValue;                                                                 // 0x0680 (size: 0x8)
-    double Const_HeatUpOneShot;                                                       // 0x0688 (size: 0x8)
-    double Const_HeatDownSpeed;                                                       // 0x0690 (size: 0x8)
-    bool IsOverHeatMode;                                                              // 0x0698 (size: 0x1)
-    bool IsPull;                                                                      // 0x0699 (size: 0x1)
-    FBP_OverheatRifle_COnChangedHeatValue OnChangedHeatValue;                         // 0x06A0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class USpotLightComponent* SpotLight;
+    double HeatValue;
+    double Const_HeatUpOneShot;
+    double Const_HeatDownSpeed;
+    bool IsOverHeatMode;
+    bool IsPull;
+    FBP_OverheatRifle_COnChangedHeatValue OnChangedHeatValue;
     void OnChangedHeatValue(bool bOverHeated, double HeatValue);
-    double Heat Value;                                                                // 0x06B0 (size: 0x8)
+    double Heat Value;
 
     int32 GetRemainBulletCount();
     void GetAmmoClass(TSubclassOf<class AActor>& AmmoClass);
@@ -36,6 +36,6 @@ class ABP_OverheatRifle_C : public ABP_NormalRifle_C
     void DecreaseLightIntensify();
     void ExecuteUbergraph_BP_OverheatRifle(int32 EntryPoint);
     void OnChangedHeatValue__DelegateSignature(bool bOverHeated, double HeatValue);
-}; // Size: 0x6B8
+};
 
 #endif

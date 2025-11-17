@@ -3,29 +3,29 @@
 
 class UWBP_MainMenu_Pal_Skill_Active_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anim_Empty;                                               // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_NormalToFocus;                                        // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_Click;                                                // 0x0290 (size: 0x8)
-    class UWidgetAnimation* Anm_focus;                                                // 0x0298 (size: 0x8)
-    class UWidgetAnimation* Anm_normal;                                               // 0x02A0 (size: 0x8)
-    class UImage* Image_Element;                                                      // 0x02A8 (size: 0x8)
-    class UImage* Image_Selected;                                                     // 0x02B0 (size: 0x8)
-    class UImage* Image_Selected_1;                                                   // 0x02B8 (size: 0x8)
-    class UImage* SkillBase;                                                          // 0x02C0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_WazaName;                                          // 0x02C8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_WazaPower;                                         // 0x02D0 (size: 0x8)
-    class UWBP_MainMenu_Cursor_C* WBP_MainMenu_Cursor;                                // 0x02D8 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x02E0 (size: 0x8)
-    FWBP_MainMenu_Pal_Skill_Active_COnHovered OnHovered;                              // 0x02E8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anim_Empty;
+    class UWidgetAnimation* Anm_NormalToFocus;
+    class UWidgetAnimation* Anm_Click;
+    class UWidgetAnimation* Anm_Focus;
+    class UWidgetAnimation* Anm_Normal;
+    class UImage* Image_Element;
+    class UImage* Image_Selected;
+    class UImage* Image_Selected_1;
+    class UImage* SkillBase;
+    class UBP_PalTextBlock_C* Text_WazaName;
+    class UBP_PalTextBlock_C* Text_WazaPower;
+    class UWBP_MainMenu_Cursor_C* WBP_MainMenu_Cursor;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    FWBP_MainMenu_Pal_Skill_Active_COnHovered OnHovered;
     void OnHovered(class UWBP_MainMenu_Pal_Skill_Active_C* SelfWidget);
-    FWBP_MainMenu_Pal_Skill_Active_COnUnhovered OnUnhovered;                          // 0x02F8 (size: 0x10)
+    FWBP_MainMenu_Pal_Skill_Active_COnUnhovered OnUnhovered;
     void OnUnhovered(class UWBP_MainMenu_Pal_Skill_Active_C* SelfWidget);
-    EPalWazaID BindedWazaID;                                                          // 0x0308 (size: 0x2)
-    FWBP_MainMenu_Pal_Skill_Active_COnClicked OnClicked;                              // 0x0310 (size: 0x10)
+    EPalWazaID BindedWazaID;
+    FWBP_MainMenu_Pal_Skill_Active_COnClicked OnClicked;
     void OnClicked(class UWBP_MainMenu_Pal_Skill_Active_C* SelfWidget);
-    TMap<class EPalElementType, class TSoftObjectPtr<UTexture2D>> ElementTextureMap;  // 0x0320 (size: 0x50)
-    FDataTableRowHandle EmptySlotMsgID;                                               // 0x0370 (size: 0x10)
+    TMap<class EPalElementType, class TSoftObjectPtr<UTexture2D>> ElementTextureMap;
+    FDataTableRowHandle EmptySlotMsgID;
 
     void SetEmptyInfo();
     void GetBindedWazaID(EPalWazaID& WazaID);
@@ -41,6 +41,6 @@ class UWBP_MainMenu_Pal_Skill_Active_C : public UUserWidget
     void OnClicked__DelegateSignature(class UWBP_MainMenu_Pal_Skill_Active_C* SelfWidget);
     void OnUnhovered__DelegateSignature(class UWBP_MainMenu_Pal_Skill_Active_C* SelfWidget);
     void OnHovered__DelegateSignature(class UWBP_MainMenu_Pal_Skill_Active_C* SelfWidget);
-}; // Size: 0x380
+};
 
 #endif

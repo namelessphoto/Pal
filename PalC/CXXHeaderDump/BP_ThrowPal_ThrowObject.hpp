@@ -3,11 +3,11 @@
 
 class ABP_ThrowPal_ThrowObject_C : public ABP_ThrowObjectBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0418 (size: 0x8)
-    class UNiagaraComponent* Niagara;                                                 // 0x0420 (size: 0x8)
-    class USkeletalMeshComponent* SK_Weapon_PalSphere_001;                            // 0x0428 (size: 0x8)
-    bool IsBounce;                                                                    // 0x0430 (size: 0x1)
-    FRotator ThrowRotator;                                                            // 0x0438 (size: 0x18)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UNiagaraComponent* Niagara;
+    class USkeletalMeshComponent* SK_Weapon_PalSphere_001;
+    bool IsBounce;
+    FRotator ThrowRotator;
 
     void FindNearEnemy(class APalCharacter* OwnerCharacter, class APalCharacter*& OutputPin);
     void PostProcessSpawnOtomo(class AActor* HitActor);
@@ -17,6 +17,6 @@ class ABP_ThrowPal_ThrowObject_C : public ABP_ThrowObjectBase_C
     void OnHit(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const FHitResult& Hit);
     void ReceiveTick(float DeltaSeconds);
     void ExecuteUbergraph_BP_ThrowPal_ThrowObject(int32 EntryPoint);
-}; // Size: 0x450
+};
 
 #endif

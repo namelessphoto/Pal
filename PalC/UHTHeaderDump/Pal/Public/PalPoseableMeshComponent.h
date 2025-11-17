@@ -1,0 +1,47 @@
+#pragma once
+#include "CoreMinimal.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EBoneSpaces -FallbackName=EBoneSpaces
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SkeletalMeshComponent -FallbackName=SkeletalMeshComponent
+#include "PalPoseableMeshComponent.generated.h"
+
+UCLASS(EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
+class UPalPoseableMeshComponent : public USkeletalMeshComponent {
+    GENERATED_BODY()
+public:
+    UPalPoseableMeshComponent(const FObjectInitializer& ObjectInitializer);
+
+    UFUNCTION(BlueprintCallable)
+    void SetBoneTransformByName(FName BoneName, const FTransform& InTransform, TEnumAsByte<EBoneSpaces> BoneSpace);
+    
+    UFUNCTION(BlueprintCallable)
+    void SetBoneScaleByName(FName BoneName, FVector InScale3D, TEnumAsByte<EBoneSpaces> BoneSpace);
+    
+    UFUNCTION(BlueprintCallable)
+    void SetBoneRotationByName(FName BoneName, FRotator InRotation, TEnumAsByte<EBoneSpaces> BoneSpace);
+    
+    UFUNCTION(BlueprintCallable)
+    void SetBoneLocationByName(FName BoneName, FVector InLocation, TEnumAsByte<EBoneSpaces> BoneSpace);
+    
+    UFUNCTION(BlueprintCallable)
+    void ResetBoneTransformByName(FName BoneName);
+    
+    UFUNCTION(BlueprintCallable)
+    FTransform GetBoneTransformByName(FName BoneName, TEnumAsByte<EBoneSpaces> BoneSpace);
+    
+    UFUNCTION(BlueprintCallable)
+    FVector GetBoneScaleByName(FName BoneName, TEnumAsByte<EBoneSpaces> BoneSpace);
+    
+    UFUNCTION(BlueprintCallable)
+    FRotator GetBoneRotationByName(FName BoneName, TEnumAsByte<EBoneSpaces> BoneSpace);
+    
+    UFUNCTION(BlueprintCallable)
+    FVector GetBoneLocationByName(FName BoneName, TEnumAsByte<EBoneSpaces> BoneSpace);
+    
+    UFUNCTION(BlueprintCallable)
+    void CopyPoseFromSkeletalComponent(USkeletalMeshComponent* InComponentToCopy);
+    
+};
+

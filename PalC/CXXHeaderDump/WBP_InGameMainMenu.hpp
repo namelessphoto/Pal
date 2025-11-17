@@ -3,19 +3,19 @@
 
 class UWBP_InGameMainMenu_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_106;                                              // 0x0438 (size: 0x8)
-    class UWBP_MainMenu_C* WBP_MainMenu;                                              // 0x0440 (size: 0x8)
-    class UWBP_MainMenu_bg_C* WBP_MainMenu_bg;                                        // 0x0448 (size: 0x8)
-    class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x0450 (size: 0x8)
-    class UPalUserWidget* CurrentContentWidget;                                       // 0x0458 (size: 0x8)
-    FPalDataTableRowName_UIInputAction NextTabActionName;                             // 0x0460 (size: 0x8)
-    FPalDataTableRowName_UIInputAction PrevTabActionName;                             // 0x0468 (size: 0x8)
-    FPalDataTableRowName_UIInputAction CloseMenuActionName;                           // 0x0470 (size: 0x8)
-    TMap<TEnumAsByte<EPalUIInGameMainMenuTabType>, FDataTableRowHandle> TitleMsgIDMap; // 0x0478 (size: 0x50)
-    bool LockCurrentTab;                                                              // 0x04C8 (size: 0x1)
-    bool bDisableCancelOnce;                                                          // 0x04C9 (size: 0x1)
-    FWBP_InGameMainMenu_COnRequestOpenMap_ByQuest OnRequestOpenMap_ByQuest;           // 0x04D0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCanvasPanel* CanvasPanel_106;
+    class UWBP_MainMenu_C* WBP_MainMenu;
+    class UWBP_MainMenu_bg_C* WBP_MainMenu_bg;
+    class UWBP_Menu_btn_C* WBP_Menu_btn;
+    class UPalUserWidget* CurrentContentWidget;
+    FPalDataTableRowName_UIInputAction NextTabActionName;
+    FPalDataTableRowName_UIInputAction PrevTabActionName;
+    FPalDataTableRowName_UIInputAction CloseMenuActionName;
+    TMap<TEnumAsByte<EPalUIInGameMainMenuTabType>, FDataTableRowHandle> TitleMsgIDMap;
+    bool LockCurrentTab;
+    bool bDisableCancelOnce;
+    FWBP_InGameMainMenu_COnRequestOpenMap_ByQuest OnRequestOpenMap_ByQuest;
     void OnRequestOpenMap_ByQuest(FName QuestId);
 
     void OnRequestShowMap(FName QuestId);
@@ -48,6 +48,6 @@ class UWBP_InGameMainMenu_C : public UPalUserWidgetOverlayUI
     void Destruct();
     void ExecuteUbergraph_WBP_InGameMainMenu(int32 EntryPoint);
     void OnRequestOpenMap_ByQuest__DelegateSignature(FName QuestId);
-}; // Size: 0x4E0
+};
 
 #endif

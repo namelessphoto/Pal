@@ -3,6 +3,6 @@
 
 class UBP_CoopSkillSearchSystem_C : public UPalCoopSkillSearchSystem
 {
-}; // Size: 0x58
+};
 
 #endif

@@ -3,10 +3,10 @@
 
 class ABP_MapObject_PickupItem_SmallStone_C : public ABP_MapObject_PickupItem_Base_C
 {
-    class UStaticMeshComponent* StaticMesh1;                                          // 0x0428 (size: 0x8)
-    class USceneComponent* IndicatorOrigin;                                           // 0x0430 (size: 0x8)
-    class UPalMapObjectPickupItemParameterComponent* PalMapObjectPickupItemParameter; // 0x0438 (size: 0x8)
+    class UStaticMeshComponent* StaticMesh1;
+    class USceneComponent* IndicatorOrigin;
+    class UPalMapObjectPickupItemParameterComponent* PalMapObjectPickupItemParameter;
 
-}; // Size: 0x440
+};
 
 #endif

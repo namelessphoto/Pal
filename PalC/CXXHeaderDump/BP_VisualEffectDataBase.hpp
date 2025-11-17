@@ -3,6 +3,6 @@
 
 class UBP_VisualEffectDataBase_C : public UPalVisualEffectDataBase
 {
-}; // Size: 0xD8
+};
 
 #endif

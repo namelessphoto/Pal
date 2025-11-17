@@ -3,14 +3,14 @@
 
 class UWBP_PalPlayerDebuffNoticeBox_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_Debuff;                                       // 0x0410 (size: 0x8)
-    TMap<TEnumAsByte<E_PalUIPlayerDebuffNoticeType>, UWBP_DebuffNotice_C*> DisplayingDebuffWidget; // 0x0418 (size: 0x50)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UHorizontalBox* HorizontalBox_Debuff;
+    TMap<TEnumAsByte<E_PalUIPlayerDebuffNoticeType>, UWBP_DebuffNotice_C*> DisplayingDebuffWidget;
 
     void RemoveDebuffNotice(TEnumAsByte<E_PalUIPlayerDebuffNoticeType> DebuffType);
     void AddDebuffNotice(TEnumAsByte<E_PalUIPlayerDebuffNoticeType> DebuffType);
     void Destruct();
     void ExecuteUbergraph_WBP_PalPlayerDebuffNoticeBox(int32 EntryPoint);
-}; // Size: 0x468
+};
 
 #endif

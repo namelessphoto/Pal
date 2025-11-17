@@ -3,10 +3,10 @@
 
 class ABP_HomingSphereLauncher_C : public ABP_RocketLauncher_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0650 (size: 0x8)
-    TArray<class AActor*> targetList;                                                 // 0x0658 (size: 0x10)
-    TMap<class FName, class EPalCaptureSphereLevelType> ItemName_LevelTypeMap;        // 0x0668 (size: 0x50)
-    FBP_HomingSphereLauncher_COnLaunchPalSphere OnLaunchPalSphere;                    // 0x06B8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    TArray<class AActor*> targetList;
+    TMap<class FName, class EPalCaptureSphereLevelType> ItemName_LevelTypeMap;
+    FBP_HomingSphereLauncher_COnLaunchPalSphere OnLaunchPalSphere;
     void OnLaunchPalSphere(class AActor* Bullet);
 
     bool IsEnableAutoAim();
@@ -29,6 +29,6 @@ class ABP_HomingSphereLauncher_C : public ABP_RocketLauncher_C
     void OnReleaseTrigger();
     void ExecuteUbergraph_BP_HomingSphereLauncher(int32 EntryPoint);
     void OnLaunchPalSphere__DelegateSignature(class AActor* Bullet);
-}; // Size: 0x6C8
+};
 
 #endif

@@ -3,6 +3,6 @@
 
 class UPalGameEngine : public UGameEngine
 {
-}; // Size: 0x10A8
+};
 
 #endif

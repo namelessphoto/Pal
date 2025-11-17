@@ -3,6 +3,6 @@
 
 class UBP_PlayerGenderChanger_C : public UPalPlayerGenderChanger
 {
-}; // Size: 0x1D0
+};
 
 #endif

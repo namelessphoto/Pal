@@ -3,6 +3,6 @@
 
 class UBP_PalCharacterImportanceManager_C : public UPalCharacterImportanceManager
 {
-}; // Size: 0x150
+};
 
 #endif

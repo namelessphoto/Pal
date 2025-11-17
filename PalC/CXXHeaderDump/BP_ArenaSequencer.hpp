@@ -3,6 +3,6 @@
 
 class UBP_ArenaSequencer_C : public UPalArenaSequencer
 {
-}; // Size: 0x198
+};
 
 #endif

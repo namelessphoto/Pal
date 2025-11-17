@@ -3,35 +3,35 @@
 
 class ABP_LevelInstance_BossRoomBase_C : public APalBossBattleLevelInstance
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0338 (size: 0x8)
-    class UBoxComponent* TowerBox8;                                                   // 0x0340 (size: 0x8)
-    class UBoxComponent* TowerBox7;                                                   // 0x0348 (size: 0x8)
-    class UBoxComponent* TowerBox6;                                                   // 0x0350 (size: 0x8)
-    class UBoxComponent* TowerBox5;                                                   // 0x0358 (size: 0x8)
-    class UBoxComponent* TowerBox4;                                                   // 0x0360 (size: 0x8)
-    class UBoxComponent* TowerBox3;                                                   // 0x0368 (size: 0x8)
-    class UBoxComponent* TowerBox2;                                                   // 0x0370 (size: 0x8)
-    class UBoxComponent* TowerBox1;                                                   // 0x0378 (size: 0x8)
-    class UBoxComponent* ForNavMesh_Ground;                                           // 0x0380 (size: 0x8)
-    class UBoxComponent* EdgeBox3;                                                    // 0x0388 (size: 0x8)
-    class UBoxComponent* EdgeBox2;                                                    // 0x0390 (size: 0x8)
-    class UBoxComponent* EdgeBox1;                                                    // 0x0398 (size: 0x8)
-    class UBoxComponent* EdgeBox;                                                     // 0x03A0 (size: 0x8)
-    class USceneComponent* GroundCheckPoint;                                          // 0x03A8 (size: 0x8)
-    class UBoxComponent* WallBox4;                                                    // 0x03B0 (size: 0x8)
-    class UBoxComponent* WallBox3;                                                    // 0x03B8 (size: 0x8)
-    class UBoxComponent* WallBox2;                                                    // 0x03C0 (size: 0x8)
-    class UBoxComponent* WallBox1;                                                    // 0x03C8 (size: 0x8)
-    class UBoxComponent* CeilingBox;                                                  // 0x03D0 (size: 0x8)
-    class UStaticMeshComponent* SequencerTransform;                                   // 0x03D8 (size: 0x8)
-    class UStaticMeshComponent* SM_EnemyPoint;                                        // 0x03E0 (size: 0x8)
-    class UStaticMeshComponent* PlayerStartPoint;                                     // 0x03E8 (size: 0x8)
-    class ABP_BossBattle_BossCharacterSpawner_C* BossSpawner;                         // 0x03F0 (size: 0x8)
-    FBP_LevelInstance_BossRoomBase_COnSetBoss OnSetBoss;                              // 0x03F8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UBoxComponent* TowerBox8;
+    class UBoxComponent* TowerBox7;
+    class UBoxComponent* TowerBox6;
+    class UBoxComponent* TowerBox5;
+    class UBoxComponent* TowerBox4;
+    class UBoxComponent* TowerBox3;
+    class UBoxComponent* TowerBox2;
+    class UBoxComponent* TowerBox1;
+    class UBoxComponent* ForNavMesh_Ground;
+    class UBoxComponent* EdgeBox3;
+    class UBoxComponent* EdgeBox2;
+    class UBoxComponent* EdgeBox1;
+    class UBoxComponent* EdgeBox;
+    class USceneComponent* GroundCheckPoint;
+    class UBoxComponent* WallBox4;
+    class UBoxComponent* WallBox3;
+    class UBoxComponent* WallBox2;
+    class UBoxComponent* WallBox1;
+    class UBoxComponent* CeilingBox;
+    class UStaticMeshComponent* SequencerTransform;
+    class UStaticMeshComponent* SM_EnemyPoint;
+    class UStaticMeshComponent* PlayerStartPoint;
+    class ABP_BossBattle_BossCharacterSpawner_C* BossSpawner;
+    FBP_LevelInstance_BossRoomBase_COnSetBoss OnSetBoss;
     void OnSetBoss(class APalCharacter* Boss);
-    FBP_LevelInstance_BossRoomBase_COnLoadedLevel OnLoadedLevel;                      // 0x0408 (size: 0x10)
+    FBP_LevelInstance_BossRoomBase_COnLoadedLevel OnLoadedLevel;
     void OnLoadedLevel();
-    bool IsLoaded;                                                                    // 0x0418 (size: 0x1)
+    bool IsLoaded;
 
     void GetBossSpawner(class ABP_BossBattle_BossCharacterSpawner_C*& BossSpawner);
     FTransform GetSequencerTransform();
@@ -47,6 +47,6 @@ class ABP_LevelInstance_BossRoomBase_C : public APalBossBattleLevelInstance
     void ExecuteUbergraph_BP_LevelInstance_BossRoomBase(int32 EntryPoint);
     void OnLoadedLevel__DelegateSignature();
     void OnSetBoss__DelegateSignature(class APalCharacter* Boss);
-}; // Size: 0x419
+};
 
 #endif

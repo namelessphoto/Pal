@@ -3,23 +3,23 @@
 
 class UWBP_CommonSelectNum_C : public UPalUISelectNumWidgetBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UButton* Button_318;                                                        // 0x0438 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_58;                                               // 0x0440 (size: 0x8)
-    class UEditableTextBox* EditableTextBox_0;                                        // 0x0448 (size: 0x8)
-    class UImage* Image_454;                                                          // 0x0450 (size: 0x8)
-    class UButton* LeftButton;                                                        // 0x0458 (size: 0x8)
-    class UButton* rightButton;                                                       // 0x0460 (size: 0x8)
-    int32 NowCount;                                                                   // 0x0468 (size: 0x4)
-    int32 MaxCount;                                                                   // 0x046C (size: 0x4)
-    FWBP_CommonSelectNum_COnRightButtonClicked OnRightButtonClicked;                  // 0x0470 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UButton* Button_318;
+    class UCanvasPanel* CanvasPanel_58;
+    class UEditableTextBox* EditableTextBox_0;
+    class UImage* Image_454;
+    class UButton* LeftButton;
+    class UButton* rightButton;
+    int32 NowCount;
+    int32 MaxCount;
+    FWBP_CommonSelectNum_COnRightButtonClicked OnRightButtonClicked;
     void OnRightButtonClicked();
-    FWBP_CommonSelectNum_COnLeftButtonClicked OnLeftButtonClicked;                    // 0x0480 (size: 0x10)
+    FWBP_CommonSelectNum_COnLeftButtonClicked OnLeftButtonClicked;
     void OnLeftButtonClicked();
-    FWBP_CommonSelectNum_COnTextCommited OnTextCommited;                              // 0x0490 (size: 0x10)
+    FWBP_CommonSelectNum_COnTextCommited OnTextCommited;
     void OnTextCommited(FString NewString);
-    int32 MaxDigit;                                                                   // 0x04A0 (size: 0x4)
-    class UPalUISelectNumParameter* Parameter;                                        // 0x04A8 (size: 0x8)
+    int32 MaxDigit;
+    class UPalUISelectNumParameter* Parameter;
 
     void CheckMaxCount(FString InString, FString& OutString);
     void GetNowCount(int32& Count);
@@ -42,6 +42,6 @@ class UWBP_CommonSelectNum_C : public UPalUISelectNumWidgetBase
     void OnTextCommited__DelegateSignature(FString NewString);
     void OnLeftButtonClicked__DelegateSignature();
     void OnRightButtonClicked__DelegateSignature();
-}; // Size: 0x4B0
+};
 
 #endif

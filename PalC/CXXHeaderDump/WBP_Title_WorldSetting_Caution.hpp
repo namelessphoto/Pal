@@ -3,21 +3,21 @@
 
 class UWBP_Title_WorldSetting_Caution_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UHorizontalBox* Horizontal_BaseCampMaxNum;                                  // 0x0438 (size: 0x8)
-    class UHorizontalBox* Horizontal_BaseCampWorkerMaxNum;                            // 0x0440 (size: 0x8)
-    class UHorizontalBox* Horizontal_MaxBuildingNum;                                  // 0x0448 (size: 0x8)
-    class UImage* Image_2;                                                            // 0x0450 (size: 0x8)
-    class UImage* Image_3;                                                            // 0x0458 (size: 0x8)
-    class UImage* Image_4;                                                            // 0x0460 (size: 0x8)
-    class UImage* Image_5;                                                            // 0x0468 (size: 0x8)
-    class UImage* Image_6;                                                            // 0x0470 (size: 0x8)
-    class UImage* Image_96;                                                           // 0x0478 (size: 0x8)
-    class UBP_PalRichTextBlock_C* RichText_Title;                                     // 0x0480 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Bottom;                                            // 0x0488 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton_NO;                                   // 0x0490 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton_YES;                                  // 0x0498 (size: 0x8)
-    class UWBP_PalCommonWindow_C* WBP_PalCommonWindow;                                // 0x04A0 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UHorizontalBox* Horizontal_BaseCampMaxNum;
+    class UHorizontalBox* Horizontal_BaseCampWorkerMaxNum;
+    class UHorizontalBox* Horizontal_MaxBuildingNum;
+    class UImage* Image_2;
+    class UImage* Image_3;
+    class UImage* Image_4;
+    class UImage* Image_5;
+    class UImage* Image_6;
+    class UImage* Image_96;
+    class UBP_PalRichTextBlock_C* RichText_Title;
+    class UBP_PalTextBlock_C* Text_Bottom;
+    class UWBP_CommonButton_C* WBP_CommonButton_NO;
+    class UWBP_CommonButton_C* WBP_CommonButton_YES;
+    class UWBP_PalCommonWindow_C* WBP_PalCommonWindow;
 
     class UWidget* BP_GetDesiredFocusTarget();
     void Setup();
@@ -25,6 +25,6 @@ class UWBP_Title_WorldSetting_Caution_C : public UPalUserWidgetOverlayUI
     void BndEvt__WBP_Title_WorldSetting_Caution_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
     void OnSetup();
     void ExecuteUbergraph_WBP_Title_WorldSetting_Caution(int32 EntryPoint);
-}; // Size: 0x4A8
+};
 
 #endif

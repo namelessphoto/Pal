@@ -3,54 +3,54 @@
 
 class ABP_PPSkyCreator_Controller_C : public AActor
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0290 (size: 0x8)
-    class UAudioComponent* SoundRain;                                                 // 0x0298 (size: 0x8)
-    class UTextRenderComponent* TextRender;                                           // 0x02A0 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x02A8 (size: 0x8)
-    class APPSkyCreator* SkyCreatorTarget;                                            // 0x02B0 (size: 0x8)
-    bool bRealtimeWeatherChange;                                                      // 0x02B8 (size: 0x1)
-    double ChangeIntervalTimeMin;                                                     // 0x02C0 (size: 0x8)
-    double ChangeIntervalTimeMax;                                                     // 0x02C8 (size: 0x8)
-    class UPPSkyCreatorWeatherPreset* StartWeatherPreset;                             // 0x02D0 (size: 0x8)
-    double InterpolateDurationTimeMin;                                                // 0x02D8 (size: 0x8)
-    double InterpolateDurationTimeMax;                                                // 0x02E0 (size: 0x8)
-    TArray<class UPPSkyCreatorWeatherPreset*> RandomWeatherPresets;                   // 0x02E8 (size: 0x10)
-    bool DrawDebugMessages;                                                           // 0x02F8 (size: 0x1)
-    class USoundCue* Rain;                                                            // 0x0300 (size: 0x8)
-    class UPPSkyCreatorWeatherPreset* NextWeatherPreset;                              // 0x0308 (size: 0x8)
-    FPPSkyCreatorWeatherSettings CurrentWeatherSettings;                              // 0x0310 (size: 0x458)
-    FPPSkyCreatorWeatherSettings NextWeatherSettings;                                 // 0x0768 (size: 0x458)
-    double WeatherInterpolateDuration;                                                // 0x0BC0 (size: 0x8)
-    double InterpolateDurationAlpha;                                                  // 0x0BC8 (size: 0x8)
-    double CurrentChangeInterval;                                                     // 0x0BD0 (size: 0x8)
-    FTimerHandle Timer_WeatherInterpolateDuration;                                    // 0x0BD8 (size: 0x8)
-    FTimerHandle Timer_WeatherChangeInterval;                                         // 0x0BE0 (size: 0x8)
-    bool bEnableRandomWind;                                                           // 0x0BE8 (size: 0x1)
-    double CloudWindSpeedMin;                                                         // 0x0BF0 (size: 0x8)
-    double CloudWindSpeedMax;                                                         // 0x0BF8 (size: 0x8)
-    FPPSkyCreatorWindSettings CurrentWindSettings;                                    // 0x0C00 (size: 0x1C)
-    FPPSkyCreatorWindSettings NextWindSettings;                                       // 0x0C1C (size: 0x1C)
-    double CurrentWindDirection;                                                      // 0x0C38 (size: 0x8)
-    double CurrentWindSpeed;                                                          // 0x0C40 (size: 0x8)
-    double WetnessAccumulateDuration;                                                 // 0x0C48 (size: 0x8)
-    double WetnessDryDuration;                                                        // 0x0C50 (size: 0x8)
-    double PuddlesAccumulateDuration;                                                 // 0x0C58 (size: 0x8)
-    double PuddlesDryDuration;                                                        // 0x0C60 (size: 0x8)
-    double SnowAccumulateDuration;                                                    // 0x0C68 (size: 0x8)
-    double SnowMeltDuration;                                                          // 0x0C70 (size: 0x8)
-    FTimerHandle WetnessAccumulationTimer;                                            // 0x0C78 (size: 0x8)
-    FTimerHandle WetnessDryTimer;                                                     // 0x0C80 (size: 0x8)
-    FTimerHandle PuddlesAccumulationTimer;                                            // 0x0C88 (size: 0x8)
-    FTimerHandle PuddlesDryTimer;                                                     // 0x0C90 (size: 0x8)
-    FTimerHandle SnowAccumulationTimer;                                               // 0x0C98 (size: 0x8)
-    FTimerHandle SnowMeltTimer;                                                       // 0x0CA0 (size: 0x8)
-    double CurrentWetnessAmount;                                                      // 0x0CA8 (size: 0x8)
-    double NextWetnessAmount;                                                         // 0x0CB0 (size: 0x8)
-    double CurrentPuddlesAmount;                                                      // 0x0CB8 (size: 0x8)
-    double NextPuddlesAmount;                                                         // 0x0CC0 (size: 0x8)
-    double CurrentSnowAmount;                                                         // 0x0CC8 (size: 0x8)
-    double NextSnowAmount;                                                            // 0x0CD0 (size: 0x8)
-    class USoundBase* Lightnings;                                                     // 0x0CD8 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UAudioComponent* SoundRain;
+    class UTextRenderComponent* TextRender;
+    class USceneComponent* DefaultSceneRoot;
+    class APPSkyCreator* SkyCreatorTarget;
+    bool bRealtimeWeatherChange;
+    double ChangeIntervalTimeMin;
+    double ChangeIntervalTimeMax;
+    class UPPSkyCreatorWeatherPreset* StartWeatherPreset;
+    double InterpolateDurationTimeMin;
+    double InterpolateDurationTimeMax;
+    TArray<class UPPSkyCreatorWeatherPreset*> RandomWeatherPresets;
+    bool DrawDebugMessages;
+    class USoundCue* Rain;
+    class UPPSkyCreatorWeatherPreset* NextWeatherPreset;
+    FPPSkyCreatorWeatherSettings CurrentWeatherSettings;
+    FPPSkyCreatorWeatherSettings NextWeatherSettings;
+    double WeatherInterpolateDuration;
+    double InterpolateDurationAlpha;
+    double CurrentChangeInterval;
+    FTimerHandle Timer_WeatherInterpolateDuration;
+    FTimerHandle Timer_WeatherChangeInterval;
+    bool bEnableRandomWind;
+    double CloudWindSpeedMin;
+    double CloudWindSpeedMax;
+    FPPSkyCreatorWindSettings CurrentWindSettings;
+    FPPSkyCreatorWindSettings NextWindSettings;
+    double CurrentWindDirection;
+    double CurrentWindSpeed;
+    double WetnessAccumulateDuration;
+    double WetnessDryDuration;
+    double PuddlesAccumulateDuration;
+    double PuddlesDryDuration;
+    double SnowAccumulateDuration;
+    double SnowMeltDuration;
+    FTimerHandle WetnessAccumulationTimer;
+    FTimerHandle WetnessDryTimer;
+    FTimerHandle PuddlesAccumulationTimer;
+    FTimerHandle PuddlesDryTimer;
+    FTimerHandle SnowAccumulationTimer;
+    FTimerHandle SnowMeltTimer;
+    double CurrentWetnessAmount;
+    double NextWetnessAmount;
+    double CurrentPuddlesAmount;
+    double NextPuddlesAmount;
+    double CurrentSnowAmount;
+    double NextSnowAmount;
+    class USoundBase* Lightnings;
 
     void SetRainVolume();
     void WeatherMaterialFX_Interpolation();
@@ -75,6 +75,6 @@ class ABP_PPSkyCreator_Controller_C : public AActor
     void Finish_SnowDry();
     void LightningStrike(FVector LightningPosition);
     void ExecuteUbergraph_BP_PPSkyCreator_Controller(int32 EntryPoint);
-}; // Size: 0xCE0
+};
 
 #endif

@@ -3,15 +3,15 @@
 
 class UWBP_CommonCircularGauge_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UImage* Image_81;                                                           // 0x0280 (size: 0x8)
-    FPalGaugeInterpolationCalculator GaugeInterpolationCalculator;                    // 0x0288 (size: 0xC)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UImage* Image_81;
+    FPalGaugeInterpolationCalculator GaugeInterpolationCalculator;
 
     void SetTargetValue(double Value);
     void ReflectRateToImage();
     void Tick(FGeometry MyGeometry, float InDeltaTime);
     void Construct();
     void ExecuteUbergraph_WBP_CommonCircularGauge(int32 EntryPoint);
-}; // Size: 0x294
+};
 
 #endif

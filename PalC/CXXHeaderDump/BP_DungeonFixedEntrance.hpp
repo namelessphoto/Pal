@@ -3,15 +3,15 @@
 
 class ABP_DungeonFixedEntrance_C : public APalDungeonFixedEntrance
 {
-    class UArrowComponent* DeadItemDropPoint;                                         // 0x0338 (size: 0x8)
-    class USceneComponent* IndicatorOrigin;                                           // 0x0340 (size: 0x8)
-    class UPalInteractableSphereComponentNative* BP_InteractableSphere;               // 0x0348 (size: 0x8)
-    class UArrowComponent* WarpPoint;                                                 // 0x0350 (size: 0x8)
-    class USceneComponent* Scene;                                                     // 0x0358 (size: 0x8)
+    class UArrowComponent* DeadItemDropPoint;
+    class USceneComponent* IndicatorOrigin;
+    class UPalInteractableSphereComponentNative* BP_InteractableSphere;
+    class UArrowComponent* WarpPoint;
+    class USceneComponent* Scene;
 
     void GetInteractWidget(class UPalUserWidget*& createdWidget);
     FTransform GetDeadItemDropPoint();
     FTransform GetWarpPoint();
-}; // Size: 0x360
+};
 
 #endif

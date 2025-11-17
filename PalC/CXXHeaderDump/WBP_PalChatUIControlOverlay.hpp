@@ -3,13 +3,13 @@
 
 class UWBP_PalChatUIControlOverlay_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UWBP_Ingame_Chat_C* ControllChatUI;                                         // 0x0438 (size: 0x8)
-    FPalDataTableRowName_UIInputAction ChageCategoryChatActionName;                   // 0x0440 (size: 0x8)
-    FPalDataTableRowName_UIInputAction CancelActionHandle_Default;                    // 0x0448 (size: 0x8)
-    FPalDataTableRowName_UIInputAction CancelActionHandle_Escape;                     // 0x0450 (size: 0x8)
-    FPalDataTableRowName_UIInputAction SendChatActionhandle;                          // 0x0458 (size: 0x8)
-    FPalDataTableRowName_UIInputAction ResetFocusActionName;                          // 0x0460 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWBP_Ingame_Chat_C* ControllChatUI;
+    FPalDataTableRowName_UIInputAction ChageCategoryChatActionName;
+    FPalDataTableRowName_UIInputAction CancelActionHandle_Default;
+    FPalDataTableRowName_UIInputAction CancelActionHandle_Escape;
+    FPalDataTableRowName_UIInputAction SendChatActionhandle;
+    FPalDataTableRowName_UIInputAction ResetFocusActionName;
 
     void SendChat();
     void OnCancel_ForceClose();
@@ -22,6 +22,6 @@ class UWBP_PalChatUIControlOverlay_C : public UPalUserWidgetOverlayUI
     void OnClose();
     void OnResetFocus();
     void ExecuteUbergraph_WBP_PalChatUIControlOverlay(int32 EntryPoint);
-}; // Size: 0x468
+};
 
 #endif

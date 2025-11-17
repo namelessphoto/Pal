@@ -3,6 +3,6 @@
 
 class ABP_PalPlayerCaptureSet_CharacterMake_C : public ABP_PalPlayerCaptureSet_C
 {
-}; // Size: 0x340
+};
 
 #endif

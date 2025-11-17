@@ -16,10 +16,6 @@ struct FAnimBlueprintGeneratedConstantData : public FAnimBlueprintConstantData
 
 };
 
-struct FAnimBlueprintGeneratedMutableData : public FAnimBlueprintMutableData
-{
-};
-
 class UABP_ChickenPal_Implemantation_C : public UPalAnimInstance
 {
     FPointerToUberGraphFrame UberGraphFrame;

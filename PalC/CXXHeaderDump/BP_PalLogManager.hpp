@@ -3,6 +3,6 @@
 
 class UBP_PalLogManager_C : public UPalLogManager
 {
-}; // Size: 0x1C0
+};
 
 #endif

@@ -1,0 +1,25 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "PalItemSlotId.h"
+#include "PalUserWidget.h"
+#include "PalUIPlayerRadialMenuBase.generated.h"
+
+UCLASS(EditInlineNew)
+class PAL_API UPalUIPlayerRadialMenuBase : public UPalUserWidget {
+    GENERATED_BODY()
+public:
+    UPalUIPlayerRadialMenuBase();
+
+private:
+    UFUNCTION()
+    void SelectedFeed(const FPalItemSlotId& itemSlotId, const int32 itemNum);
+    
+protected:
+    UFUNCTION(BlueprintCallable)
+    void OpenOtomoFeedInventory();
+    
+    UFUNCTION(BlueprintCallable)
+    void LaunchPhotoMode();
+    
+};
+

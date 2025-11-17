@@ -3,13 +3,13 @@
 
 class ABP_Ammo_Rocket_C : public AActor
 {
-    class USkeletalMeshComponent* SkeletalMesh;                                       // 0x0290 (size: 0x8)
-    class UStaticMeshComponent* StaticMesh;                                           // 0x0298 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x02A0 (size: 0x8)
-    FTransform Ammo Reloading Transform;                                              // 0x02B0 (size: 0x60)
+    class USkeletalMeshComponent* SkeletalMesh;
+    class UStaticMeshComponent* StaticMesh;
+    class USceneComponent* DefaultSceneRoot;
+    FTransform Ammo Reloading Transform;
 
     void SetTranformForReload(FTransform& AmmoReloadingTransform);
     void UserConstructionScript();
-}; // Size: 0x310
+};
 
 #endif

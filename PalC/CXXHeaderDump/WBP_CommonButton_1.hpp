@@ -3,25 +3,25 @@
 
 class UWBP_CommonButton_1_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_NormalToFocus;                                        // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_OpenFocus;                                            // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_normal;                                               // 0x0290 (size: 0x8)
-    class UNamedSlot* IconSlot;                                                       // 0x0298 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Main;                                              // 0x02A0 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x02A8 (size: 0x8)
-    FWBP_CommonButton_1_COnClicked OnClicked;                                         // 0x02B0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_NormalToFocus;
+    class UWidgetAnimation* Anm_OpenFocus;
+    class UWidgetAnimation* Anm_Normal;
+    class UNamedSlot* IconSlot;
+    class UBP_PalTextBlock_C* Text_Main;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    FWBP_CommonButton_1_COnClicked OnClicked;
     void OnClicked();
-    bool Is First Focus Target;                                                       // 0x02C0 (size: 0x1)
-    FWBP_CommonButton_1_COnHovered OnHovered;                                         // 0x02C8 (size: 0x10)
+    bool Is First Focus Target;
+    FWBP_CommonButton_1_COnHovered OnHovered;
     void OnHovered();
-    FWBP_CommonButton_1_COnUnhovered OnUnhovered;                                     // 0x02D8 (size: 0x10)
+    FWBP_CommonButton_1_COnUnhovered OnUnhovered;
     void OnUnhovered();
-    FDataTableRowHandle InitializeMsgID;                                              // 0x02E8 (size: 0x10)
-    bool OverrideHover;                                                               // 0x02F8 (size: 0x1)
-    class UAkAudioEvent* WWiseHoverAudio;                                             // 0x0300 (size: 0x8)
-    class UAkAudioEvent* UnhoverAKAudioEvent;                                         // 0x0308 (size: 0x8)
-    class UAkAudioEvent* ClickAKAudioEvent;                                           // 0x0310 (size: 0x8)
+    FDataTableRowHandle InitializeMsgID;
+    bool OverrideHover;
+    class UAkAudioEvent* WWiseHoverAudio;
+    class UAkAudioEvent* UnhoverAKAudioEvent;
+    class UAkAudioEvent* ClickAKAudioEvent;
 
     void GetFocusTarget(class UWidget*& Widget);
     void Setup(bool isFirstFocusTarget);
@@ -37,6 +37,6 @@ class UWBP_CommonButton_1_C : public UUserWidget
     void OnUnhovered__DelegateSignature();
     void OnHovered__DelegateSignature();
     void OnClicked__DelegateSignature();
-}; // Size: 0x318
+};
 
 #endif

@@ -3,6 +3,6 @@
 
 class UBP_PalUIPolicy_C : public UGameUIPolicy
 {
-}; // Size: 0x70
+};
 
 #endif

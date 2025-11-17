@@ -3,6 +3,6 @@
 
 class UBP_StageWorldSubsystem_C : public UPalStageWorldSubsystem
 {
-}; // Size: 0x148
+};
 
 #endif

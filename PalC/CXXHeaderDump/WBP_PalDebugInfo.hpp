@@ -3,15 +3,15 @@
 
 class UWBP_PalDebugInfo_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UTextBlock* RevisionText;                                                   // 0x0410 (size: 0x8)
-    TMap<class FString, class FString> BuildConfigDisplayTextMap;                     // 0x0418 (size: 0x50)
-    TMap<class EPalSupportedPlatformType, class FString> PlatformDisplayTextMap;      // 0x0468 (size: 0x50)
-    TMap<class FString, class FString> NetModeDisplayTextMap;                         // 0x04B8 (size: 0x50)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UTextBlock* RevisionText;
+    TMap<class FString, class FString> BuildConfigDisplayTextMap;
+    TMap<class EPalSupportedPlatformType, class FString> PlatformDisplayTextMap;
+    TMap<class FString, class FString> NetModeDisplayTextMap;
 
     void Construct();
     void OnSetup();
     void ExecuteUbergraph_WBP_PalDebugInfo(int32 EntryPoint);
-}; // Size: 0x508
+};
 
 #endif

@@ -3,8 +3,8 @@
 
 struct FFPalTechnologyIconData
 {
-    TSoftObjectPtr<UTexture2D> Texture_2_CF1D1C1E44798A5D0F778DA8BEF5CE64;            // 0x0000 (size: 0x30)
+    TSoftObjectPtr<UTexture2D> Texture_2_CF1D1C1E44798A5D0F778DA8BEF5CE64;
 
-}; // Size: 0x30
+};
 
 #endif

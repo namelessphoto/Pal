@@ -8,6 +8,6 @@ class UBP_WorldSecurityLaw_AttackToPolice_C : public UPalWorldSecurityLawTrigger
     void IsValidCharacterActor(class AActor* Actor, bool& bValid, class UPalCharacterParameterComponent*& CharacterParameter);
     void IsPolice(EPalOrganizationType OrganizationType, bool& bCitizen);
     bool Condition(const FPalDamageResult& DamageResult, class UPalIndividualCharacterHandle*& CriminalHandle);
-}; // Size: 0x40
+};
 
 #endif

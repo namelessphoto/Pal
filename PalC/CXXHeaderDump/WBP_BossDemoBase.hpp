@@ -8,6 +8,6 @@ class UWBP_BossDemoBase_C : public UPalUserWidget
     void GetOpenWidgetAnimation(class UWidgetAnimation*& OpenWidgetAnimation);
     void OnStartEvent();
     void SetupText();
-}; // Size: 0x408
+};
 
 #endif

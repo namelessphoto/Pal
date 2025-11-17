@@ -3,17 +3,17 @@
 
 class UWBP_PalCraftInfo_Pal_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_Num_HP_5;                               // 0x0280 (size: 0x8)
-    class UCanvasPanel* FixedAssignCanvas;                                            // 0x0288 (size: 0x8)
-    class UProgressBar* Gauge_Hunger;                                                 // 0x0290 (size: 0x8)
-    class UImage* Image_80;                                                           // 0x0298 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_NowSanity;                                         // 0x02A0 (size: 0x8)
-    class UWBP_PalCommonCharacterSlot_C* WBP_PalCommonCharacterSlot;                  // 0x02A8 (size: 0x8)
-    class UMaterial* defaultFontMaterial;                                             // 0x02B0 (size: 0x8)
-    TSoftObjectPtr<UPalIndividualCharacterHandle> bindedHandle;                       // 0x02B8 (size: 0x30)
-    float savedMaxSanity;                                                             // 0x02E8 (size: 0x4)
-    float savedMaxHunger;                                                             // 0x02EC (size: 0x4)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_Num_HP_5;
+    class UCanvasPanel* FixedAssignCanvas;
+    class UProgressBar* Gauge_Hunger;
+    class UImage* Image_80;
+    class UBP_PalTextBlock_C* Text_NowSanity;
+    class UWBP_PalCommonCharacterSlot_C* WBP_PalCommonCharacterSlot;
+    class UMaterial* defaultFontMaterial;
+    TSoftObjectPtr<UPalIndividualCharacterHandle> bindedHandle;
+    float savedMaxSanity;
+    float savedMaxHunger;
 
     void Clear();
     void UpdateHunger(float Current, float Last);
@@ -23,6 +23,6 @@ class UWBP_PalCraftInfo_Pal_C : public UUserWidget
     void SetTargetPal(class UPalIndividualCharacterSlot* TargetSlot, bool IsFixedAssign);
     void OnInitialized();
     void ExecuteUbergraph_WBP_PalCraftInfo_Pal(int32 EntryPoint);
-}; // Size: 0x2F0
+};
 
 #endif

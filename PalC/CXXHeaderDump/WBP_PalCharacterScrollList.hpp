@@ -3,24 +3,24 @@
 
 class UWBP_PalCharacterScrollList_C : public UWBP_PalCommonScrollList_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0440 (size: 0x8)
-    TSubclassOf<class UWBP_PalCharacterSlotButtonBase_C> slotWidgetClass;             // 0x0448 (size: 0x8)
-    FWBP_PalCharacterScrollList_COnLeftClickedSlot OnLeftClickedSlot;                 // 0x0450 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    TSubclassOf<class UWBP_PalCharacterSlotButtonBase_C> slotWidgetClass;
+    FWBP_PalCharacterScrollList_COnLeftClickedSlot OnLeftClickedSlot;
     void OnLeftClickedSlot(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
-    FWBP_PalCharacterScrollList_COnRightClickedSlot OnRightClickedSlot;               // 0x0460 (size: 0x10)
+    FWBP_PalCharacterScrollList_COnRightClickedSlot OnRightClickedSlot;
     void OnRightClickedSlot(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-    FWBP_PalCharacterScrollList_COnHoveredSlot OnHoveredSlot;                         // 0x0470 (size: 0x10)
+    FWBP_PalCharacterScrollList_COnHoveredSlot OnHoveredSlot;
     void OnHoveredSlot(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-    FWBP_PalCharacterScrollList_COnUnhoveredSlot OnUnhoveredSlot;                     // 0x0480 (size: 0x10)
+    FWBP_PalCharacterScrollList_COnUnhoveredSlot OnUnhoveredSlot;
     void OnUnhoveredSlot(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-    FWBP_PalCharacterScrollList_COnFocusedSlot OnFocusedSlot;                         // 0x0490 (size: 0x10)
+    FWBP_PalCharacterScrollList_COnFocusedSlot OnFocusedSlot;
     void OnFocusedSlot(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-    FWBP_PalCharacterScrollList_COnUnfocusedSlot OnUnfocusedSlot;                     // 0x04A0 (size: 0x10)
+    FWBP_PalCharacterScrollList_COnUnfocusedSlot OnUnfocusedSlot;
     void OnUnfocusedSlot(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-    FWBP_PalCharacterScrollList_COnCreatedSlot OnCreatedSlot;                         // 0x04B0 (size: 0x10)
+    FWBP_PalCharacterScrollList_COnCreatedSlot OnCreatedSlot;
     void OnCreatedSlot(class UWBP_PalCharacterSlotButtonBase_C* createdSlot);
-    class UWBP_CharacterScrollListBlock_C* MyBlock;                                   // 0x04C0 (size: 0x8)
-    FWBP_PalCharacterScrollList_COnUpdateSlot OnUpdateSlot;                           // 0x04C8 (size: 0x10)
+    class UWBP_CharacterScrollListBlock_C* MyBlock;
+    FWBP_PalCharacterScrollList_COnUpdateSlot OnUpdateSlot;
     void OnUpdateSlot(class UWBP_PalCharacterSlotButtonBase_C* SlotButton);
 
     void OnUpdateSlot_Binded(class UWBP_PalCharacterSlotButtonBase_C* SlotButton);
@@ -55,6 +55,6 @@ class UWBP_PalCharacterScrollList_C : public UWBP_PalCommonScrollList_C
     void OnHoveredSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);
     void OnRightClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);
     void OnLeftClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
-}; // Size: 0x4D8
+};
 
 #endif

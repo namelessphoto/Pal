@@ -3,16 +3,16 @@
 
 class UBP_PalSupplyIncident_C : public UPalRandomIncidentBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0190 (size: 0x8)
-    class UPalIncidentDynamicParameterRandom* Parameter;                              // 0x0198 (size: 0x8)
-    class UDataTable* SettingDT;                                                      // 0x01A0 (size: 0x8)
-    class UPalRandomIncidentActionBase* action;                                       // 0x01A8 (size: 0x8)
-    TArray<FName> SpawnedNpcNames;                                                    // 0x01B0 (size: 0x10)
-    class ABP_PalRandomIncidentNPCSpawner_C* NPCSpawner;                              // 0x01C0 (size: 0x8)
-    bool ExcludedEvenOnce;                                                            // 0x01C8 (size: 0x1)
-    bool InsideActionAreaEvenOnce;                                                    // 0x01C9 (size: 0x1)
-    TArray<FPalRandomIncidentSpawnMonsterData> OutbreakMonsters;                      // 0x01D0 (size: 0x10)
-    TArray<FName> OutbreakMonsterNames;                                               // 0x01E0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalIncidentDynamicParameterRandom* Parameter;
+    class UDataTable* SettingDT;
+    class UPalRandomIncidentActionBase* action;
+    TArray<FName> SpawnedNpcNames;
+    class ABP_PalRandomIncidentNPCSpawner_C* NPCSpawner;
+    bool ExcludedEvenOnce;
+    bool InsideActionAreaEvenOnce;
+    TArray<FPalRandomIncidentSpawnMonsterData> OutbreakMonsters;
+    TArray<FName> OutbreakMonsterNames;
 
     void CheckLive(bool& IsLivePal);
     void ShowErrorNameDuplication(FName InName);
@@ -55,6 +55,6 @@ class UBP_PalSupplyIncident_C : public UPalRandomIncidentBase
     void Tick(float DeltaTime);
     void OnCanceled();
     void ExecuteUbergraph_BP_PalSupplyIncident(int32 EntryPoint);
-}; // Size: 0x1F0
+};
 
 #endif

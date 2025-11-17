@@ -3,16 +3,16 @@
 
 class UBP_PalBossNPCMarker_C : public USkeletalMeshComponent
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0F80 (size: 0x8)
-    FST_BossAnimations Anim List;                                                     // 0x0F88 (size: 0x40)
-    bool DoUniqueWazaSeparetedAnim?;                                                  // 0x0FC8 (size: 0x1)
-    bool DoCommonWazaSeparetedAnim?;                                                  // 0x0FC9 (size: 0x1)
-    TMap<class EPalWazaID, class UAnimMontage*> WazaMontage;                          // 0x0FD0 (size: 0x50)
-    TMap<class EPalActionType, class FST_RideBossAnimation> ActionMontageMap;         // 0x1020 (size: 0x50)
-    class UPalActionBase* action;                                                     // 0x1070 (size: 0x8)
-    EPalActionType Eaction;                                                           // 0x1078 (size: 0x1)
-    FST_RideBossAnimation STAnim;                                                     // 0x1080 (size: 0x18)
-    TSubclassOf<class UAnimInstance> AnimLayerClass;                                  // 0x1098 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    FST_BossAnimations Anim List;
+    bool DoUniqueWazaSeparetedAnim?;
+    bool DoCommonWazaSeparetedAnim?;
+    TMap<class EPalWazaID, class UAnimMontage*> WazaMontage;
+    TMap<class EPalActionType, class FST_RideBossAnimation> ActionMontageMap;
+    class UPalActionBase* action;
+    EPalActionType Eaction;
+    FST_RideBossAnimation STAnim;
+    TSubclassOf<class UAnimInstance> AnimLayerClass;
 
     void FindEActionFromAction(const class UObject* AnyAction, EPalActionType& Eaction);
     void OnWaza(const class UObject* Object);
@@ -45,6 +45,6 @@ class UBP_PalBossNPCMarker_C : public USkeletalMeshComponent
     void ForcePlayAnimWithEAction(const EPalActionType& Eaction);
     void ForceEndAnimWithEAction(const EPalActionType& Eaction);
     void ExecuteUbergraph_BP_PalBossNPCMarker(int32 EntryPoint);
-}; // Size: 0x10A0
+};
 
 #endif

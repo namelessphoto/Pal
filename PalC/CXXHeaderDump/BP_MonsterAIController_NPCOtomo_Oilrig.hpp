@@ -3,6 +3,6 @@
 
 class ABP_MonsterAIController_NPCOtomo_Oilrig_C : public ABP_MonsterAIController_NPCOtomo_C
 {
-}; // Size: 0x589
+};
 
 #endif

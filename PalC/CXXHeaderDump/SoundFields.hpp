@@ -3,8 +3,8 @@
 
 class UAmbisonicsEncodingSettings : public USoundfieldEncodingSettingsBase
 {
-    int32 AmbisonicsOrder;                                                            // 0x0028 (size: 0x4)
+    int32 AmbisonicsOrder;
 
-}; // Size: 0x30
+};
 
 #endif

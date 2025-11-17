@@ -3,6 +3,6 @@
 
 class UBP_PalTimerPointLightComponent_C : public UPalTimerPointLightComponent
 {
-}; // Size: 0x520
+};
 
 #endif

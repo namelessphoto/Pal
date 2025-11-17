@@ -3,131 +3,131 @@
 
 class UWBP_InventoryEquipment_C : public UWBP_IndividualParameterBindWidget_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0608 (size: 0x8)
-    class UWidgetAnimation* SameAccessoryNoticeAnim;                                  // 0x0610 (size: 0x8)
-    class UCanvasPanel* Canvas_EquipmentSlots;                                        // 0x0618 (size: 0x8)
-    class UCanvasPanel* Canvas_Inventory;                                             // 0x0620 (size: 0x8)
-    class UCanvasPanel* Canvas_QuickStack;                                            // 0x0628 (size: 0x8)
-    class UCanvasPanel* Canvas_StatusPoint;                                           // 0x0630 (size: 0x8)
-    class UCanvasPanel* CanvasPanelChara;                                             // 0x0638 (size: 0x8)
-    class UPalCheckBox* CheckBox_QuickStackPop;                                       // 0x0640 (size: 0x8)
-    class UCommonTileView* CommonTileView;                                            // 0x0648 (size: 0x8)
-    class UImage* DropActionBlocker;                                                  // 0x0650 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_CheckBox;                                     // 0x0658 (size: 0x8)
-    class UImage* Image_77;                                                           // 0x0660 (size: 0x8)
-    class UImage* Image_EditStatusPointInputBlocker;                                  // 0x0668 (size: 0x8)
-    class UImage* Image_Fabric_Layered;                                               // 0x0670 (size: 0x8)
-    class UImage* Image_Glider_Layered;                                               // 0x0678 (size: 0x8)
-    class UImage* Image_Head_Layered;                                                 // 0x0680 (size: 0x8)
-    class UOverlay* Overlay_CancelStatusPoint;                                        // 0x0688 (size: 0x8)
-    class UOverlay* Overlay_ConfirmStatusPoint;                                       // 0x0690 (size: 0x8)
-    class UOverlay* Overlay_Fabric_Layered;                                           // 0x0698 (size: 0x8)
-    class UOverlay* Overlay_Glider_Layered;                                           // 0x06A0 (size: 0x8)
-    class UOverlay* Overlay_Head_Layered;                                             // 0x06A8 (size: 0x8)
-    class USizeBox* SizeBox_NameEdit;                                                 // 0x06B0 (size: 0x8)
-    class USizeBox* SizeBox_Outside;                                                  // 0x06B8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_CharacterName;                                     // 0x06C0 (size: 0x8)
-    class UVerticalBox* VerticalBox_CaptureItemModifier;                              // 0x06C8 (size: 0x8)
-    class UVerticalBox* VerticalBox_Glider;                                           // 0x06D0 (size: 0x8)
-    class UVerticalBox* VerticalBox_StatusPointButton;                                // 0x06D8 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton_NameEdit;                             // 0x06E0 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton_QuickStack;                           // 0x06E8 (size: 0x8)
-    class UWBP_InventoryEquipment_TrashButton_C* WBP_InventoryEquipment_DropButton;   // 0x06F0 (size: 0x8)
-    class UWBP_InventoryEquipment_GrowsPointButton_C* WBP_InventoryEquipment_GrowsPoint; // 0x06F8 (size: 0x8)
-    class UWBP_InventoryEquipment_InvisibleActionButton_C* WBP_InventoryEquipment_InvisibleDropButton; // 0x0700 (size: 0x8)
-    class UWBP_InventoryEquipment_InvisibleActionButton_C* WBP_InventoryEquipment_InvisibleEatButton; // 0x0708 (size: 0x8)
-    class UWBP_InventoryEquipment_InvisibleActionButton_C* WBP_InventoryEquipment_InvisibleExeptButton; // 0x0710 (size: 0x8)
-    class UWBP_InventoryEquipment_StatusPointButton_C* WBP_InventoryEquipment_StatusPointButton; // 0x0718 (size: 0x8)
-    class UWBP_InventoryEquipment_StatusPointButton_C* WBP_InventoryEquipment_StatusPointButton_1; // 0x0720 (size: 0x8)
-    class UWBP_InventoryEquipment_StatusPointButton_C* WBP_InventoryEquipment_StatusPointButton_2; // 0x0728 (size: 0x8)
-    class UWBP_InventoryEquipment_StatusPointButton_C* WBP_InventoryEquipment_StatusPointButton_3; // 0x0730 (size: 0x8)
-    class UWBP_InventoryEquipment_StatusPointButton_C* WBP_InventoryEquipment_StatusPointButton_4; // 0x0738 (size: 0x8)
-    class UWBP_InventoryEquipment_StatusPointButton_C* WBP_InventoryEquipment_StatusPointButton_5; // 0x0740 (size: 0x8)
-    class UWBP_InventoryEquipment_StatusUpButton_C* WBP_InventoryEquipment_StatusUpButton; // 0x0748 (size: 0x8)
-    class UWBP_InventoryEquipment_TabList_C* WBP_InventoryEquipment_TabList;          // 0x0750 (size: 0x8)
-    class UWBP_InventoryEquipment_TrashButton_C* WBP_InventoryEquipment_TrashButton_1; // 0x0758 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Accessory_01;        // 0x0760 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Accessory_02;        // 0x0768 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Accessory_03;        // 0x0770 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Accessory_04;        // 0x0778 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Body;                // 0x0780 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Food_00;             // 0x0788 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Food_01;             // 0x0790 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Food_02;             // 0x0798 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Food_03;             // 0x07A0 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Food_04;             // 0x07A8 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Glider;              // 0x07B0 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Head;                // 0x07B8 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Modifier;            // 0x07C0 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Shield;              // 0x07C8 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Weapon_00;           // 0x07D0 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Weapon_01;           // 0x07D8 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Weapon_02;           // 0x07E0 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Weapon_03;           // 0x07E8 (size: 0x8)
-    class UWBP_MainMenu_Money_C* WBP_MainMenu_Money;                                  // 0x07F0 (size: 0x8)
-    class UWBP_MainMenu_PalSkillInfo_C* WBP_MainMenu_PalSkillInfo;                    // 0x07F8 (size: 0x8)
-    class UWBP_MainMenu_PalSkillInfo_C* WBP_MainMenu_PalSkillInfo_SameAccessoryNotice; // 0x0800 (size: 0x8)
-    class UWBP_Menu_PlayerEXP_C* WBP_Menu_PlayerEXP;                                  // 0x0808 (size: 0x8)
-    class UWBP_Menu_PlayerGauge_HP_C* WBP_Menu_PlayerGauge_HP;                        // 0x0810 (size: 0x8)
-    class UWBP_Menu_PlayerGauge_Hunger_C* WBP_Menu_PlayerGauge_Hunger;                // 0x0818 (size: 0x8)
-    class UWBP_Menu_PlayerGauge_Shield_C* WBP_Menu_PlayerGauge_Shield;                // 0x0820 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_1;                        // 0x0828 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_2;                        // 0x0830 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_3;                        // 0x0838 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_StatusPointCancel;        // 0x0840 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_StatusPointConfirm;       // 0x0848 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_ToggleQSPop;              // 0x0850 (size: 0x8)
-    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon_77;                             // 0x0858 (size: 0x8)
-    class UWBP_PalPlayerInframeRender_C* WBP_PalPlayerInframeRender;                  // 0x0860 (size: 0x8)
-    class UWBP_PalPlayerInventoryScrollList_C* WBP_PalPlayerInventoryScrollList;      // 0x0868 (size: 0x8)
-    class UWBP_PlayerInventoryWeightInfo_C* WBP_PlayerInventoryWeightInfo;            // 0x0870 (size: 0x8)
-    class UWBP_StatusBuffTimerContainer_C* WBP_StatusBuffTimerContainer;              // 0x0878 (size: 0x8)
-    TArray<class UWBP_PalInGameMenuItemSlotButton_C*> WeaponLoadoutSlotArray;         // 0x0880 (size: 0x10)
-    TArray<class UWBP_PalInGameMenuItemSlotButton_C*> FoodSlotArray;                  // 0x0890 (size: 0x10)
-    class UBP_InGameMenuInventoryModel_C* Model;                                      // 0x08A0 (size: 0x8)
-    TArray<class UWBP_PalInGameMenuItemSlotButton_C*> PlayerArmorSlotArray;           // 0x08A8 (size: 0x10)
-    TArray<class UWBP_PalInGameMenuItemSlotButton_C*> DropSlotArray;                  // 0x08B8 (size: 0x10)
-    FWBP_InventoryEquipment_COnClickedItemDrop OnClickedItemDrop;                     // 0x08C8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* SameAccessoryNoticeAnim;
+    class UCanvasPanel* Canvas_EquipmentSlots;
+    class UCanvasPanel* Canvas_Inventory;
+    class UCanvasPanel* Canvas_QuickStack;
+    class UCanvasPanel* Canvas_StatusPoint;
+    class UCanvasPanel* CanvasPanelChara;
+    class UPalCheckBox* CheckBox_QuickStackPop;
+    class UCommonTileView* CommonTileView;
+    class UImage* DropActionBlocker;
+    class UHorizontalBox* HorizontalBox_CheckBox;
+    class UImage* Image_77;
+    class UImage* Image_EditStatusPointInputBlocker;
+    class UImage* Image_Fabric_Layered;
+    class UImage* Image_Glider_Layered;
+    class UImage* Image_Head_Layered;
+    class UOverlay* Overlay_CancelStatusPoint;
+    class UOverlay* Overlay_ConfirmStatusPoint;
+    class UOverlay* Overlay_Fabric_Layered;
+    class UOverlay* Overlay_Glider_Layered;
+    class UOverlay* Overlay_Head_Layered;
+    class USizeBox* SizeBox_NameEdit;
+    class USizeBox* SizeBox_Outside;
+    class UBP_PalTextBlock_C* Text_CharacterName;
+    class UVerticalBox* VerticalBox_CaptureItemModifier;
+    class UVerticalBox* VerticalBox_Glider;
+    class UVerticalBox* VerticalBox_StatusPointButton;
+    class UWBP_CommonButton_C* WBP_CommonButton_NameEdit;
+    class UWBP_CommonButton_C* WBP_CommonButton_QuickStack;
+    class UWBP_InventoryEquipment_TrashButton_C* WBP_InventoryEquipment_DropButton;
+    class UWBP_InventoryEquipment_GrowsPointButton_C* WBP_InventoryEquipment_GrowsPoint;
+    class UWBP_InventoryEquipment_InvisibleActionButton_C* WBP_InventoryEquipment_InvisibleDropButton;
+    class UWBP_InventoryEquipment_InvisibleActionButton_C* WBP_InventoryEquipment_InvisibleEatButton;
+    class UWBP_InventoryEquipment_InvisibleActionButton_C* WBP_InventoryEquipment_InvisibleExeptButton;
+    class UWBP_InventoryEquipment_StatusPointButton_C* WBP_InventoryEquipment_StatusPointButton;
+    class UWBP_InventoryEquipment_StatusPointButton_C* WBP_InventoryEquipment_StatusPointButton_1;
+    class UWBP_InventoryEquipment_StatusPointButton_C* WBP_InventoryEquipment_StatusPointButton_2;
+    class UWBP_InventoryEquipment_StatusPointButton_C* WBP_InventoryEquipment_StatusPointButton_3;
+    class UWBP_InventoryEquipment_StatusPointButton_C* WBP_InventoryEquipment_StatusPointButton_4;
+    class UWBP_InventoryEquipment_StatusPointButton_C* WBP_InventoryEquipment_StatusPointButton_5;
+    class UWBP_InventoryEquipment_StatusUpButton_C* WBP_InventoryEquipment_StatusUpButton;
+    class UWBP_InventoryEquipment_TabList_C* WBP_InventoryEquipment_TabList;
+    class UWBP_InventoryEquipment_TrashButton_C* WBP_InventoryEquipment_TrashButton_1;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Accessory_01;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Accessory_02;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Accessory_03;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Accessory_04;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Body;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Food_00;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Food_01;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Food_02;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Food_03;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Food_04;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Glider;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Head;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Modifier;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Shield;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Weapon_00;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Weapon_01;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Weapon_02;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_ItemSlotButton_Weapon_03;
+    class UWBP_MainMenu_Money_C* WBP_MainMenu_Money;
+    class UWBP_MainMenu_PalSkillInfo_C* WBP_MainMenu_PalSkillInfo;
+    class UWBP_MainMenu_PalSkillInfo_C* WBP_MainMenu_PalSkillInfo_SameAccessoryNotice;
+    class UWBP_Menu_PlayerEXP_C* WBP_Menu_PlayerEXP;
+    class UWBP_Menu_PlayerGauge_HP_C* WBP_Menu_PlayerGauge_HP;
+    class UWBP_Menu_PlayerGauge_Hunger_C* WBP_Menu_PlayerGauge_Hunger;
+    class UWBP_Menu_PlayerGauge_Shield_C* WBP_Menu_PlayerGauge_Shield;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_1;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_2;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_3;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_StatusPointCancel;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_StatusPointConfirm;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_ToggleQSPop;
+    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon_77;
+    class UWBP_PalPlayerInframeRender_C* WBP_PalPlayerInframeRender;
+    class UWBP_PalPlayerInventoryScrollList_C* WBP_PalPlayerInventoryScrollList;
+    class UWBP_PlayerInventoryWeightInfo_C* WBP_PlayerInventoryWeightInfo;
+    class UWBP_StatusBuffTimerContainer_C* WBP_StatusBuffTimerContainer;
+    TArray<class UWBP_PalInGameMenuItemSlotButton_C*> WeaponLoadoutSlotArray;
+    TArray<class UWBP_PalInGameMenuItemSlotButton_C*> FoodSlotArray;
+    class UBP_InGameMenuInventoryModel_C* Model;
+    TArray<class UWBP_PalInGameMenuItemSlotButton_C*> PlayerArmorSlotArray;
+    TArray<class UWBP_PalInGameMenuItemSlotButton_C*> DropSlotArray;
+    FWBP_InventoryEquipment_COnClickedItemDrop OnClickedItemDrop;
     void OnClickedItemDrop();
-    FWBP_InventoryEquipment_COnClickedItemDestroy OnClickedItemDestroy;               // 0x08D8 (size: 0x10)
+    FWBP_InventoryEquipment_COnClickedItemDestroy OnClickedItemDestroy;
     void OnClickedItemDestroy();
-    int32 CachedUnusedStatusPoint;                                                    // 0x08E8 (size: 0x4)
-    TMap<FName, int32> SimulateUsePoint;                                              // 0x08F0 (size: 0x50)
-    int32 AllSimulateUsePoint;                                                        // 0x0940 (size: 0x4)
-    FWBP_InventoryEquipment_COnConfirmStatusPointEdit OnConfirmStatusPointEdit;       // 0x0948 (size: 0x10)
+    int32 CachedUnusedStatusPoint;
+    TMap<FName, int32> SimulateUsePoint;
+    int32 AllSimulateUsePoint;
+    FWBP_InventoryEquipment_COnConfirmStatusPointEdit OnConfirmStatusPointEdit;
     void OnConfirmStatusPointEdit(TMap<FName, int32> PointMap);
-    bool IsSimulatingStatusPoint;                                                     // 0x0958 (size: 0x1)
-    FWBP_InventoryEquipment_COnRequestSwapEquipment OnRequestSwapEquipment;           // 0x0960 (size: 0x10)
+    bool IsSimulatingStatusPoint;
+    FWBP_InventoryEquipment_COnRequestSwapEquipment OnRequestSwapEquipment;
     void OnRequestSwapEquipment(EPalPlayerEquipItemSlotType EquipType);
-    FWBP_InventoryEquipment_COnClickedSortButton OnClickedSortButton;                 // 0x0970 (size: 0x10)
+    FWBP_InventoryEquipment_COnClickedSortButton OnClickedSortButton;
     void OnClickedSortButton();
-    class UWBP_PalItemSlotButtonBase_C* CurrentSlot;                                  // 0x0980 (size: 0x8)
-    FDataTableRowHandle FoodSlotTitleMsgID;                                           // 0x0988 (size: 0x10)
-    FDataTableRowHandle FoodSlotInfoMsgID;                                            // 0x0998 (size: 0x10)
-    FDataTableRowHandle FoodSlotRequireMsgID;                                         // 0x09A8 (size: 0x10)
-    TMap<class FName, class UWBP_InventoryEquipment_StatusPointButton_C*> StatusPointButtonMap; // 0x09B8 (size: 0x50)
-    TMap<FName, TEnumAsByte<E_PalUIStatusDIsplayParameter>> StatusEnumMap;            // 0x0A08 (size: 0x50)
-    TMap<TEnumAsByte<E_PalUIStatusDIsplayParameter>, FDataTableRowHandle> DescMsgIdMap; // 0x0A58 (size: 0x50)
-    FWBP_InventoryEquipment_COnClickedChangePlayerNameButton OnClickedChangePlayerNameButton; // 0x0AA8 (size: 0x10)
+    class UWBP_PalItemSlotButtonBase_C* CurrentSlot;
+    FDataTableRowHandle FoodSlotTitleMsgID;
+    FDataTableRowHandle FoodSlotInfoMsgID;
+    FDataTableRowHandle FoodSlotRequireMsgID;
+    TMap<class FName, class UWBP_InventoryEquipment_StatusPointButton_C*> StatusPointButtonMap;
+    TMap<FName, TEnumAsByte<E_PalUIStatusDIsplayParameter>> StatusEnumMap;
+    TMap<TEnumAsByte<E_PalUIStatusDIsplayParameter>, FDataTableRowHandle> DescMsgIdMap;
+    FWBP_InventoryEquipment_COnClickedChangePlayerNameButton OnClickedChangePlayerNameButton;
     void OnClickedChangePlayerNameButton();
-    FWBP_InventoryEquipment_COnClickedToggleHeadDressing OnClickedToggleHeadDressing; // 0x0AB8 (size: 0x10)
+    FWBP_InventoryEquipment_COnClickedToggleHeadDressing OnClickedToggleHeadDressing;
     void OnClickedToggleHeadDressing();
-    TArray<class UWBP_PalInGameMenuItemSlotButton_C*> AccessorySlots;                 // 0x0AC8 (size: 0x10)
-    FDataTableRowHandle SameAccessoryNotice;                                          // 0x0AD8 (size: 0x10)
-    FTimerHandle SameAccessoryNoticeHideTimer;                                        // 0x0AE8 (size: 0x8)
-    FWBP_InventoryEquipment_COnClickedItemEat OnClickedItemEat;                       // 0x0AF0 (size: 0x10)
+    TArray<class UWBP_PalInGameMenuItemSlotButton_C*> AccessorySlots;
+    FDataTableRowHandle SameAccessoryNotice;
+    FTimerHandle SameAccessoryNoticeHideTimer;
+    FWBP_InventoryEquipment_COnClickedItemEat OnClickedItemEat;
     void OnClickedItemEat();
-    FWBP_InventoryEquipment_COnClickedToggleBodyDressing OnClickedToggleBodyDressing; // 0x0B00 (size: 0x10)
+    FWBP_InventoryEquipment_COnClickedToggleBodyDressing OnClickedToggleBodyDressing;
     void OnClickedToggleBodyDressing();
-    FWBP_InventoryEquipment_COnClickedToggleGliderDressing OnClickedToggleGliderDressing; // 0x0B10 (size: 0x10)
+    FWBP_InventoryEquipment_COnClickedToggleGliderDressing OnClickedToggleGliderDressing;
     void OnClickedToggleGliderDressing();
-    FWBP_InventoryEquipment_COnClickQuickStackButton OnClickQuickStackButton;         // 0x0B20 (size: 0x10)
+    FWBP_InventoryEquipment_COnClickQuickStackButton OnClickQuickStackButton;
     void OnClickQuickStackButton(TArray<FPalItemSlotId>& SlotIds);
-    TMap<class FPalItemSlotId, class UPalItemSlot*> CurrentStackableSlotIds;          // 0x0B30 (size: 0x50)
-    bool CurrentInBaseCamp;                                                           // 0x0B80 (size: 0x1)
-    bool ShouldQuickStackDialogPop;                                                   // 0x0B81 (size: 0x1)
-    TMap<class FName, class UBP_ItemSlotEntryData_C*> CurrentExceptItemIdMap;         // 0x0B88 (size: 0x50)
-    TMap<class UObject*, class UWBP_PalInGameMenuItemSlotButton_C*> ListViewDisplayWidgetMap; // 0x0BD8 (size: 0x50)
+    TMap<class FPalItemSlotId, class UPalItemSlot*> CurrentStackableSlotIds;
+    bool CurrentInBaseCamp;
+    bool ShouldQuickStackDialogPop;
+    TMap<class FName, class UBP_ItemSlotEntryData_C*> CurrentExceptItemIdMap;
+    TMap<class UObject*, class UWBP_PalInGameMenuItemSlotButton_C*> ListViewDisplayWidgetMap;
 
     void UpdateLanternEquipDetail();
     void OnClosedAnyUseItemWindow(class UPalHUDDispatchParameterBase* Param);
@@ -228,6 +228,6 @@ class UWBP_InventoryEquipment_C : public UWBP_IndividualParameterBindWidget_C
     void OnConfirmStatusPointEdit__DelegateSignature(TMap<FName, int32> PointMap);
     void OnClickedItemDestroy__DelegateSignature();
     void OnClickedItemDrop__DelegateSignature();
-}; // Size: 0xC28
+};
 
 #endif

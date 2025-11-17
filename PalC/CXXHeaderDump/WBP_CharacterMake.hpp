@@ -3,51 +3,51 @@
 
 class UWBP_CharacterMake_C : public UPalUICharacterMakeBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UWBP_CharaCre_C* WBP_CharaCre;                                              // 0x0438 (size: 0x8)
-    class UWBP_CharaCre_BG_C* WBP_CharaCre_BG;                                        // 0x0440 (size: 0x8)
-    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;                                // 0x0448 (size: 0x8)
-    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon_1;                              // 0x0450 (size: 0x8)
-    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon_2;                              // 0x0458 (size: 0x8)
-    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon_3;                              // 0x0460 (size: 0x8)
-    class UWBP_PalPlayerInframeRender_C* WBP_PalPlayerInframeRender;                  // 0x0468 (size: 0x8)
-    FPalDataTableRowName_UIInputAction MouseZoomInInputAction;                        // 0x0470 (size: 0x8)
-    FPalDataTableRowName_UIInputAction MouseZoomOutInputAction;                       // 0x0478 (size: 0x8)
-    FPalPlayerDataCharacterMakeInfo MakeInfo;                                         // 0x0480 (size: 0x208)
-    TEnumAsByte<E_UICharacterMakeCategory> NowDisplayCategory;                        // 0x0688 (size: 0x1)
-    FPalDataTableRowName_UIInputAction DecideInputAction;                             // 0x068C (size: 0x8)
-    FPalDataTableRowName_UIInputAction RandomizeInputAction;                          // 0x0694 (size: 0x8)
-    FPalDataTableRowName_UIInputAction PrevCategoryInputAction;                       // 0x069C (size: 0x8)
-    FPalDataTableRowName_UIInputAction NextCategoryInputAction;                       // 0x06A4 (size: 0x8)
-    TEnumAsByte<E_UICharacterMakeCategory> LastActivatedCategory;                     // 0x06AC (size: 0x1)
-    double SVMax;                                                                     // 0x06B0 (size: 0x8)
-    class UPalHUDDispatchParameter_CharacterMake* DispaltchParameter;                 // 0x06B8 (size: 0x8)
-    FText CachedPlayerName;                                                           // 0x06C0 (size: 0x18)
-    double RotationSpeed_Pad;                                                         // 0x06D8 (size: 0x8)
-    double RotationSpeed_MouseDrag;                                                   // 0x06E0 (size: 0x8)
-    double ZoomSpeed_Pad;                                                             // 0x06E8 (size: 0x8)
-    double ZoomRate_WheelTrigger;                                                     // 0x06F0 (size: 0x8)
-    double CachedAnalogValueX;                                                        // 0x06F8 (size: 0x8)
-    double CachedAnalogValueY;                                                        // 0x0700 (size: 0x8)
-    FVector CameraRelativeLocation;                                                   // 0x0708 (size: 0x18)
-    bool IsMLBDown;                                                                   // 0x0720 (size: 0x1)
-    double MaxZoomCameraOffset_BodySetting;                                           // 0x0728 (size: 0x8)
-    double MaxZoomCameraOffset_HeadSetting;                                           // 0x0730 (size: 0x8)
-    FDataTableRowHandle CompleteCheckMsgID;                                           // 0x0738 (size: 0x10)
-    bool IsRTriggerDown;                                                              // 0x0748 (size: 0x1)
-    bool IsLTriggerDown;                                                              // 0x0749 (size: 0x1)
-    double CameraUpDownSpeed_ForPad;                                                  // 0x0750 (size: 0x8)
-    class UPalHUDDispatchParameter_FadeWidget* FadeOutParameter;                      // 0x0758 (size: 0x8)
-    FVector DefaultHeadCameraLocation;                                                // 0x0760 (size: 0x18)
-    FVector DefaultBodyCameraLocation;                                                // 0x0778 (size: 0x18)
-    FPalDataTableRowName_UIInputAction ToggleEquipDisplayInputAction;                 // 0x0790 (size: 0x8)
-    FPalDataTableRowName_UIInputAction PlaySampleVoiceInInputAction;                  // 0x0798 (size: 0x8)
-    FPalUIActionBindData PlaySampleVoiceActionHandle;                                 // 0x07A0 (size: 0x4)
-    bool IsCachingMakeData;                                                           // 0x07A4 (size: 0x1)
-    class UBP_PalPlayerDataCharacterMake_C* CharacterMakeData;                        // 0x07A8 (size: 0x8)
-    FName flagName;                                                                   // 0x07B0 (size: 0x8)
-    bool NowDisplayEquip;                                                             // 0x07B8 (size: 0x1)
-    bool bCompletedMake;                                                              // 0x07B9 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWBP_CharaCre_C* WBP_CharaCre;
+    class UWBP_CharaCre_BG_C* WBP_CharaCre_BG;
+    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;
+    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon_1;
+    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon_2;
+    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon_3;
+    class UWBP_PalPlayerInframeRender_C* WBP_PalPlayerInframeRender;
+    FPalDataTableRowName_UIInputAction MouseZoomInInputAction;
+    FPalDataTableRowName_UIInputAction MouseZoomOutInputAction;
+    FPalPlayerDataCharacterMakeInfo MakeInfo;
+    TEnumAsByte<E_UICharacterMakeCategory> NowDisplayCategory;
+    FPalDataTableRowName_UIInputAction DecideInputAction;
+    FPalDataTableRowName_UIInputAction RandomizeInputAction;
+    FPalDataTableRowName_UIInputAction PrevCategoryInputAction;
+    FPalDataTableRowName_UIInputAction NextCategoryInputAction;
+    TEnumAsByte<E_UICharacterMakeCategory> LastActivatedCategory;
+    double SVMax;
+    class UPalHUDDispatchParameter_CharacterMake* DispaltchParameter;
+    FText CachedPlayerName;
+    double RotationSpeed_Pad;
+    double RotationSpeed_MouseDrag;
+    double ZoomSpeed_Pad;
+    double ZoomRate_WheelTrigger;
+    double CachedAnalogValueX;
+    double CachedAnalogValueY;
+    FVector CameraRelativeLocation;
+    bool IsMLBDown;
+    double MaxZoomCameraOffset_BodySetting;
+    double MaxZoomCameraOffset_HeadSetting;
+    FDataTableRowHandle CompleteCheckMsgID;
+    bool IsRTriggerDown;
+    bool IsLTriggerDown;
+    double CameraUpDownSpeed_ForPad;
+    class UPalHUDDispatchParameter_FadeWidget* FadeOutParameter;
+    FVector DefaultHeadCameraLocation;
+    FVector DefaultBodyCameraLocation;
+    FPalDataTableRowName_UIInputAction ToggleEquipDisplayInputAction;
+    FPalDataTableRowName_UIInputAction PlaySampleVoiceInInputAction;
+    FPalUIActionBindData PlaySampleVoiceActionHandle;
+    bool IsCachingMakeData;
+    class UBP_PalPlayerDataCharacterMake_C* CharacterMakeData;
+    FName flagName;
+    bool NowDisplayEquip;
+    bool bCompletedMake;
 
     void OnTriggerToggleEquipDisplay();
     void OnTriggerCompleteMake();
@@ -127,6 +127,6 @@ class UWBP_CharacterMake_C : public UPalUICharacterMakeBase
     void Destruct();
     void DelayDisplay();
     void ExecuteUbergraph_WBP_CharacterMake(int32 EntryPoint);
-}; // Size: 0x7BA
+};
 
 #endif

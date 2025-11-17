@@ -3,8 +3,8 @@
 
 class UBP_ArenaSequence_PreBattle_C : public UPalArenaSequenceBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0050 (size: 0x8)
-    FBP_ArenaSequence_PreBattle_CActivateReadyUI ActivateReadyUI;                     // 0x0058 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    FBP_ArenaSequence_PreBattle_CActivateReadyUI ActivateReadyUI;
     void ActivateReadyUI();
 
     void ToggleMutePals(bool DisableCrying);
@@ -21,6 +21,6 @@ class UBP_ArenaSequence_PreBattle_C : public UPalArenaSequenceBase
     void OnFinishCutscene(bool bIsSkipped);
     void ExecuteUbergraph_BP_ArenaSequence_PreBattle(int32 EntryPoint);
     void ActivateReadyUI__DelegateSignature();
-}; // Size: 0x68
+};
 
 #endif

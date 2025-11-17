@@ -3,37 +3,37 @@
 
 class UWBP_PalOverallUILayout_C : public UPalPrimaryGameLayoutBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0308 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_3;                                                // 0x0310 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_Fade;                                             // 0x0318 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_Root;                                             // 0x0320 (size: 0x8)
-    class UPalActivatableWidgetContainer* Layer_0;                                    // 0x0328 (size: 0x8)
-    class UPalActivatableWidgetContainer* Layer_1;                                    // 0x0330 (size: 0x8)
-    class UPalActivatableWidgetContainer* Layer_2;                                    // 0x0338 (size: 0x8)
-    class UPalActivatableWidgetContainer* Layer_3;                                    // 0x0340 (size: 0x8)
-    class UPalActivatableWidgetContainer* Layer_4;                                    // 0x0348 (size: 0x8)
-    class UPalActivatableWidgetContainer* Layer_5;                                    // 0x0350 (size: 0x8)
-    class UPalActivatableWidgetContainer* Layer_6;                                    // 0x0358 (size: 0x8)
-    class UPalActivatableWidgetContainer* Layer_7;                                    // 0x0360 (size: 0x8)
-    class UPalActivatableWidgetContainer* Menu;                                       // 0x0368 (size: 0x8)
-    class UPalActivatableWidgetContainer* Modal;                                      // 0x0370 (size: 0x8)
-    class USizeBox* SizeBox_0;                                                        // 0x0378 (size: 0x8)
-    class UVerticalBox* VerticalBox_CommonWarning;                                    // 0x0380 (size: 0x8)
-    class UWBP_AutoSave_C* WBP_AutoSave;                                              // 0x0388 (size: 0x8)
-    class UWBP_CommonReward_C* WBP_CommonReward;                                      // 0x0390 (size: 0x8)
-    class UWBP_InventoryEquipment_ItemInfo_C* WBP_InventoryEquipment_ItemInfo;        // 0x0398 (size: 0x8)
-    class UWBP_MainMenu_Cursor_C* WBP_MainMenu_Cursor;                                // 0x03A0 (size: 0x8)
-    class UWBP_PalActionBar_C* WBP_PalActionBar_C_8;                                  // 0x03A8 (size: 0x8)
-    class UWBP_PalLiftItem_C* WBP_PalLiftItem;                                        // 0x03B0 (size: 0x8)
-    TMap<class EPalFadeWidgetLayerType, class UCanvasPanel*> FadeWidgetCanvasMap;     // 0x03B8 (size: 0x50)
-    TMap<class EPalFadeWidgetType, class TSubclassOf<UWBP_PalFadeWidgetBase_C>> FadeWidgetMap; // 0x0408 (size: 0x50)
-    TArray<EPalFadeWidgetLayerType> WaitFadeInLayers;                                 // 0x0458 (size: 0x10)
-    class UPalUILiftSlotModel* LiftSlotModel;                                         // 0x0468 (size: 0x8)
-    TSoftObjectPtr<UWidget> CursorTargetWidget;                                       // 0x0470 (size: 0x30)
-    TMap<class FGuid, class UWBP_CommonWarning_C*> WarningWidgets;                    // 0x04A0 (size: 0x50)
-    FTimerHandle DelayDisplayTimer;                                                   // 0x04F0 (size: 0x8)
-    TMap<EPalUICommonWarningType, int32> SoundIDMap;                                  // 0x04F8 (size: 0x50)
-    TArray<EPalUICommonWarningType> RegistedWarningSound;                             // 0x0548 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCanvasPanel* CanvasPanel_3;
+    class UCanvasPanel* CanvasPanel_Fade;
+    class UCanvasPanel* CanvasPanel_Root;
+    class UPalActivatableWidgetContainer* Layer_0;
+    class UPalActivatableWidgetContainer* Layer_1;
+    class UPalActivatableWidgetContainer* Layer_2;
+    class UPalActivatableWidgetContainer* Layer_3;
+    class UPalActivatableWidgetContainer* Layer_4;
+    class UPalActivatableWidgetContainer* Layer_5;
+    class UPalActivatableWidgetContainer* Layer_6;
+    class UPalActivatableWidgetContainer* Layer_7;
+    class UPalActivatableWidgetContainer* Menu;
+    class UPalActivatableWidgetContainer* Modal;
+    class USizeBox* SizeBox_0;
+    class UVerticalBox* VerticalBox_CommonWarning;
+    class UWBP_AutoSave_C* WBP_AutoSave;
+    class UWBP_CommonReward_C* WBP_CommonReward;
+    class UWBP_InventoryEquipment_ItemInfo_C* WBP_InventoryEquipment_ItemInfo;
+    class UWBP_MainMenu_Cursor_C* WBP_MainMenu_Cursor;
+    class UWBP_PalActionBar_C* WBP_PalActionBar_C_8;
+    class UWBP_PalLiftItem_C* WBP_PalLiftItem;
+    TMap<class EPalFadeWidgetLayerType, class UCanvasPanel*> FadeWidgetCanvasMap;
+    TMap<class EPalFadeWidgetType, class TSubclassOf<UWBP_PalFadeWidgetBase_C>> FadeWidgetMap;
+    TArray<EPalFadeWidgetLayerType> WaitFadeInLayers;
+    class UPalUILiftSlotModel* LiftSlotModel;
+    TSoftObjectPtr<UWidget> CursorTargetWidget;
+    TMap<class FGuid, class UWBP_CommonWarning_C*> WarningWidgets;
+    FTimerHandle DelayDisplayTimer;
+    TMap<EPalUICommonWarningType, int32> SoundIDMap;
+    TArray<EPalUICommonWarningType> RegistedWarningSound;
 
     void CREATEDELEGATE_PROXYFUNCTION_0(EPalUICommonWarningType WarningType);
     void UpdateCursor();
@@ -57,6 +57,6 @@ class UWBP_PalOverallUILayout_C : public UPalPrimaryGameLayoutBase
     void HideOnEmpty();
     void SetVisibilityRootLayout(ESlateVisibility NewVisibility);
     void ExecuteUbergraph_WBP_PalOverallUILayout(int32 EntryPoint);
-}; // Size: 0x558
+};
 
 #endif

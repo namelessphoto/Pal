@@ -3,6 +3,6 @@
 
 class ABP_PalCapturedCage_Dungeon_C : public ABP_PalCapturedCage_C
 {
-}; // Size: 0x398
+};
 
 #endif

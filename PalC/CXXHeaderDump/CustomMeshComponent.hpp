@@ -3,11 +3,11 @@
 
 struct FCustomMeshTriangle
 {
-    FVector Vertex0;                                                                  // 0x0000 (size: 0x18)
-    FVector Vertex1;                                                                  // 0x0018 (size: 0x18)
-    FVector Vertex2;                                                                  // 0x0030 (size: 0x18)
+    FVector Vertex0;
+    FVector Vertex1;
+    FVector Vertex2;
 
-}; // Size: 0x48
+};
 
 class UCustomMeshComponent : public UMeshComponent
 {
@@ -15,6 +15,6 @@ class UCustomMeshComponent : public UMeshComponent
     bool SetCustomMeshTriangles(const TArray<FCustomMeshTriangle>& Triangles);
     void ClearCustomMeshTriangles();
     void AddCustomMeshTriangles(const TArray<FCustomMeshTriangle>& Triangles);
-}; // Size: 0x580
+};
 
 #endif

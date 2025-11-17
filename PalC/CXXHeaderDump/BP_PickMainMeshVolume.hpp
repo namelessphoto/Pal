@@ -3,10 +3,10 @@
 
 class ABP_PickMainMeshVolume_C : public AActor
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0290 (size: 0x8)
-    class UBoxComponent* Box;                                                         // 0x0298 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x02A0 (size: 0x8)
-    bool CollectPalCharacterOnly;                                                     // 0x02A8 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UBoxComponent* Box;
+    class USceneComponent* DefaultSceneRoot;
+    bool CollectPalCharacterOnly;
 
     void IsPalLit(class UMaterialInterface* Material, bool& IsPalLit);
     void EndOverlapPalLit(class UMaterialInstanceDynamic* Material);
@@ -21,6 +21,6 @@ class ABP_PickMainMeshVolume_C : public AActor
     void BndEvt__BP_PickMainMeshVolume_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
     void Applied Make Info(const class UPalSkeletalMeshComponent* SkeletalMeshComponent);
     void ExecuteUbergraph_BP_PickMainMeshVolume(int32 EntryPoint);
-}; // Size: 0x2A9
+};
 
 #endif

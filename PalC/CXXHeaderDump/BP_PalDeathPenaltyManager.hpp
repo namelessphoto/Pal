@@ -3,6 +3,6 @@
 
 class UBP_PalDeathPenaltyManager_C : public UPalDeathPenaltyManager
 {
-}; // Size: 0x88
+};
 
 #endif

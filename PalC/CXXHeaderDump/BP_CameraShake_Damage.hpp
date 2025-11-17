@@ -3,6 +3,6 @@
 
 class UBP_CameraShake_Damage_C : public ULegacyCameraShake
 {
-}; // Size: 0x210
+};
 
 #endif

@@ -3,6 +3,6 @@
 
 class ABP_CutsceneActorBase_C : public APalCutsceneActor
 {
-}; // Size: 0x320
+};
 
 #endif

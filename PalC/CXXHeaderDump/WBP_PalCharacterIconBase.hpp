@@ -3,14 +3,14 @@
 
 class UWBP_PalCharacterIconBase_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    FWBP_PalCharacterIconBase_COnLoadedTexture OnLoadedTexture;                       // 0x0410 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    FWBP_PalCharacterIconBase_COnLoadedTexture OnLoadedTexture;
     void OnLoadedTexture(class UTexture2D* loadedTexture);
-    FWBP_PalCharacterIconBase_COnStartLoadTexture OnStartLoadTexture;                 // 0x0420 (size: 0x10)
+    FWBP_PalCharacterIconBase_COnStartLoadTexture OnStartLoadTexture;
     void OnStartLoadTexture();
-    FWBP_PalCharacterIconBase_COnSetEmpty OnSetEmpty;                                 // 0x0430 (size: 0x10)
+    FWBP_PalCharacterIconBase_COnSetEmpty OnSetEmpty;
     void OnSetEmpty();
-    TSoftObjectPtr<UPalIndividualCharacterParameter> BindParameter;                   // 0x0440 (size: 0x30)
+    TSoftObjectPtr<UPalIndividualCharacterParameter> BindParameter;
 
     void SetupBySaveParameter(FPalIndividualCharacterSaveParameter SaveParam);
     void SetupBySoftTexture(TSoftObjectPtr<UTexture2D> Texture);
@@ -27,6 +27,6 @@ class UWBP_PalCharacterIconBase_C : public UPalUserWidget
     void OnSetEmpty__DelegateSignature();
     void OnStartLoadTexture__DelegateSignature();
     void OnLoadedTexture__DelegateSignature(class UTexture2D* loadedTexture);
-}; // Size: 0x470
+};
 
 #endif

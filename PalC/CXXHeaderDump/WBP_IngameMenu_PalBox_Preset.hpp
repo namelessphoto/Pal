@@ -3,20 +3,20 @@
 
 class UWBP_IngameMenu_PalBox_Preset_C : public UPalUIOtomoLoadoutBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0440 (size: 0x8)
-    class UCanvasPanel* Canvas_MenuGuide;                                             // 0x0448 (size: 0x8)
-    class UScrollBox* ScrollBox_0;                                                    // 0x0450 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_MenuGuide;                                         // 0x0458 (size: 0x8)
-    class UWBP_CommonSelectList_C* WBP_CommonSelectList;                              // 0x0460 (size: 0x8)
-    class UWBP_IngameMenu_PalBox_PalDetail_C* WBP_IngameMenu_PalBox_PalDetail;        // 0x0468 (size: 0x8)
-    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon_1;                              // 0x0470 (size: 0x8)
-    int32 LastHoveredIndex;                                                           // 0x0478 (size: 0x4)
-    int32 LastPinedIndex;                                                             // 0x047C (size: 0x4)
-    FPalUIActionBindData RightClickDisplayAction;                                     // 0x0480 (size: 0x4)
-    class UWBP_IngameMenu_PalBox_PresetList_C* LastViewDetailLoadoutGroup;            // 0x0488 (size: 0x8)
-    TArray<FPalInstanceID> ReplicatedInstanceIds;                                     // 0x0490 (size: 0x10)
-    TMap<class FPalInstanceID, class UPalIndividualCharacterHandle*> ReplicateCharacterParameterMap; // 0x04A0 (size: 0x50)
-    FPalInstanceID CurrentWaitSyncInstanceId;                                         // 0x04F0 (size: 0x30)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCanvasPanel* Canvas_MenuGuide;
+    class UScrollBox* ScrollBox_0;
+    class UBP_PalTextBlock_C* Text_MenuGuide;
+    class UWBP_CommonSelectList_C* WBP_CommonSelectList;
+    class UWBP_IngameMenu_PalBox_PalDetail_C* WBP_IngameMenu_PalBox_PalDetail;
+    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon_1;
+    int32 LastHoveredIndex;
+    int32 LastPinedIndex;
+    FPalUIActionBindData RightClickDisplayAction;
+    class UWBP_IngameMenu_PalBox_PresetList_C* LastViewDetailLoadoutGroup;
+    TArray<FPalInstanceID> ReplicatedInstanceIds;
+    TMap<class FPalInstanceID, class UPalIndividualCharacterHandle*> ReplicateCharacterParameterMap;
+    FPalInstanceID CurrentWaitSyncInstanceId;
 
     void HideCharacterDetail();
     void Show Character Detail(int32 LoadoutIndex, int32 CharaIndex);
@@ -45,6 +45,6 @@ class UWBP_IngameMenu_PalBox_Preset_C : public UPalUIOtomoLoadoutBase
     void BndEvt__WBP_IngameMenu_PalBox_Preset_ScrollBox_0_K2Node_ComponentBoundEvent_0_OnUserScrolledEvent__DelegateSignature(float CurrentOffset);
     void Destruct();
     void ExecuteUbergraph_WBP_IngameMenu_PalBox_Preset(int32 EntryPoint);
-}; // Size: 0x520
+};
 
 #endif

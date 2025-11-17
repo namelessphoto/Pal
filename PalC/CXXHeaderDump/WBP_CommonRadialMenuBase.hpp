@@ -3,40 +3,40 @@
 
 class UWBP_CommonRadialMenuBase_C : public UPalUIRadialMenuWidgetBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0450 (size: 0x8)
-    class UWidgetAnimation* CursorLoop;                                               // 0x0458 (size: 0x8)
-    class UWidgetAnimation* Default_In;                                               // 0x0460 (size: 0x8)
-    class UBackgroundBlur* BackgroundBlur;                                            // 0x0468 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_Inner;                                            // 0x0470 (size: 0x8)
-    class UImage* Image_Cursor;                                                       // 0x0478 (size: 0x8)
-    class UImage* Image_radialBase;                                                   // 0x0480 (size: 0x8)
-    class UWBP_RadialMenu_base_C* WBP_RadialMenu_base;                                // 0x0488 (size: 0x8)
-    class UImage* selectedMenuImage;                                                  // 0x0490 (size: 0x8)
-    class UImage* selectedMenuInnerImage;                                             // 0x0498 (size: 0x8)
-    FWBP_CommonRadialMenuBase_COnSelectedIndex_forBP OnSelectedIndex_forBP;           // 0x04A0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* CursorLoop;
+    class UWidgetAnimation* Default_In;
+    class UBackgroundBlur* BackgroundBlur;
+    class UCanvasPanel* CanvasPanel_Inner;
+    class UImage* Image_Cursor;
+    class UImage* Image_radialBase;
+    class UWBP_RadialMenu_base_C* WBP_RadialMenu_base;
+    class UImage* selectedMenuImage;
+    class UImage* selectedMenuInnerImage;
+    FWBP_CommonRadialMenuBase_COnSelectedIndex_forBP OnSelectedIndex_forBP;
     void OnSelectedIndex_forBP(int32 NewIndex, int32 LastIndex);
-    double menuOffSetLength;                                                          // 0x04B0 (size: 0x8)
-    FWBP_CommonRadialMenuBase_COnDecideIndex_forBP OnDecideIndex_forBP;               // 0x04B8 (size: 0x10)
+    double menuOffSetLength;
+    FWBP_CommonRadialMenuBase_COnDecideIndex_forBP OnDecideIndex_forBP;
     void OnDecideIndex_forBP(int32 Index);
-    double additionalWidgetOffsetLength;                                              // 0x04C8 (size: 0x8)
-    bool isEnableCheck;                                                               // 0x04D0 (size: 0x1)
-    class UImage* selectedMenuLeftBorderImage;                                        // 0x04D8 (size: 0x8)
-    class UImage* selectedMenuRightBorderImage;                                       // 0x04E0 (size: 0x8)
-    bool isDIsplayOnly;                                                               // 0x04E8 (size: 0x1)
-    class UMaterialInterface* SelectedPlateMaterial;                                  // 0x04F0 (size: 0x8)
-    class UMaterialInterface* SelectedBorderMaterial;                                 // 0x04F8 (size: 0x8)
-    class UMaterialInterface* BackGroundPlateMaterial;                                // 0x0500 (size: 0x8)
-    bool isUseLocalControllerInput;                                                   // 0x0508 (size: 0x1)
-    double mouseDetectDelta;                                                          // 0x0510 (size: 0x8)
-    class UWidget* CenterWidget;                                                      // 0x0518 (size: 0x8)
-    FPalUIActionBindData DecideActionHandle;                                          // 0x0520 (size: 0x4)
-    FPalUIActionBindData DummyPressedActionHandle;                                    // 0x0524 (size: 0x4)
-    class UPalUserWidget* InputParentWidget;                                          // 0x0528 (size: 0x8)
-    TMap<int32, UWidget*> AdditionalWidget;                                           // 0x0530 (size: 0x50)
-    FVector2D CenterOffset;                                                           // 0x0580 (size: 0x10)
-    double MenuScale;                                                                 // 0x0590 (size: 0x8)
-    class UAkAudioEvent* HoveredSound;                                                // 0x0598 (size: 0x8)
-    class UAkAudioEvent* ClickedSound;                                                // 0x05A0 (size: 0x8)
+    double additionalWidgetOffsetLength;
+    bool isEnableCheck;
+    class UImage* selectedMenuLeftBorderImage;
+    class UImage* selectedMenuRightBorderImage;
+    bool isDIsplayOnly;
+    class UMaterialInterface* SelectedPlateMaterial;
+    class UMaterialInterface* SelectedBorderMaterial;
+    class UMaterialInterface* BackGroundPlateMaterial;
+    bool isUseLocalControllerInput;
+    double mouseDetectDelta;
+    class UWidget* CenterWidget;
+    FPalUIActionBindData DecideActionHandle;
+    FPalUIActionBindData DummyPressedActionHandle;
+    class UPalUserWidget* InputParentWidget;
+    TMap<int32, UWidget*> AdditionalWidget;
+    FVector2D CenterOffset;
+    double MenuScale;
+    class UAkAudioEvent* HoveredSound;
+    class UAkAudioEvent* ClickedSound;
 
     void OnChangedInputMethod(ECommonInputType bNewInputType);
     void OnPressed_Dummy();
@@ -71,6 +71,6 @@ class UWBP_CommonRadialMenuBase_C : public UPalUIRadialMenuWidgetBase
     void ExecuteUbergraph_WBP_CommonRadialMenuBase(int32 EntryPoint);
     void OnDecideIndex_forBP__DelegateSignature(int32 Index);
     void OnSelectedIndex_forBP__DelegateSignature(int32 NewIndex, int32 LastIndex);
-}; // Size: 0x5A8
+};
 
 #endif

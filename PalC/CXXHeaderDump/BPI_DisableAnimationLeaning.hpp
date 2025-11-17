@@ -5,6 +5,6 @@ class IBPI_DisableAnimationLeaning_C : public IInterface
 {
 
     void DisableAnimationLeaning(bool Disable);
-}; // Size: 0x28
+};
 
 #endif

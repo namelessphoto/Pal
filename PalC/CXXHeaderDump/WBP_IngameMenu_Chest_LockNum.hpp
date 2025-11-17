@@ -3,14 +3,14 @@
 
 class UWBP_IngameMenu_Chest_LockNum_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_push;                                                 // 0x0280 (size: 0x8)
-    class UImage* FocusFrame;                                                         // 0x0288 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Num;                                               // 0x0290 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x0298 (size: 0x8)
-    FWBP_IngameMenu_Chest_LockNum_COnNumClicked OnNumClicked;                         // 0x02A0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_push;
+    class UImage* FocusFrame;
+    class UBP_PalTextBlock_C* Text_Num;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    FWBP_IngameMenu_Chest_LockNum_COnNumClicked OnNumClicked;
     void OnNumClicked(int32 ClickedNum);
-    int32 Num;                                                                        // 0x02B0 (size: 0x4)
+    int32 Num;
 
     void BndEvt__WBP_IngameMenu_Chest_LockNum_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
     void SetNum(int32 Num);
@@ -19,6 +19,6 @@ class UWBP_IngameMenu_Chest_LockNum_C : public UUserWidget
     void Destruct();
     void ExecuteUbergraph_WBP_IngameMenu_Chest_LockNum(int32 EntryPoint);
     void OnNumClicked__DelegateSignature(int32 ClickedNum);
-}; // Size: 0x2B4
+};
 
 #endif

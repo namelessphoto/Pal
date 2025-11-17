@@ -3,8 +3,8 @@
 
 class UBP_PalCollisionAssetUserData_C : public UPalAssetUserData
 {
-    bool bIgnoreFishingSpotArea;                                                      // 0x0028 (size: 0x1)
+    bool bIgnoreFishingSpotArea;
 
-}; // Size: 0x29
+};
 
 #endif

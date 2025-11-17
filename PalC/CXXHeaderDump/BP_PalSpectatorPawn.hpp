@@ -3,9 +3,9 @@
 
 class ABP_PalSpectatorPawn_C : public APalSpectatorPawn
 {
-    class UCameraComponent* FollowCamera;                                             // 0x03B0 (size: 0x8)
-    class USpringArmComponent* CameraBoom;                                            // 0x03B8 (size: 0x8)
+    class UCameraComponent* FollowCamera;
+    class USpringArmComponent* CameraBoom;
 
-}; // Size: 0x3C0
+};
 
 #endif

@@ -3,21 +3,21 @@
 
 class ABP_NPCCampSpawnerAntiAirBase_C : public APalNPCCampSpawnerBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x02B0 (size: 0x8)
-    class UPalLimitVolumeSphereComponent* PalLimitVolumeSphere;                       // 0x02B8 (size: 0x8)
-    class UStaticMeshComponent* DebugMesh;                                            // 0x02C0 (size: 0x8)
-    double Probability;                                                               // 0x02C8 (size: 0x8)
-    class ABP_NPCCampPresetBase_C* CampObject;                                        // 0x02D0 (size: 0x8)
-    FName RewardName;                                                                 // 0x02D8 (size: 0x8)
-    double RespawnTime_RealMinutes;                                                   // 0x02E0 (size: 0x8)
-    FTimerHandle TimerHand;                                                           // 0x02E8 (size: 0x8)
-    bool SpawnPossible;                                                               // 0x02F0 (size: 0x1)
-    double RespawnDistance_FromPlayer;                                                // 0x02F8 (size: 0x8)
-    double DisableDistance_FromBaseCamp;                                              // 0x0300 (size: 0x8)
-    FF_NPCCampPreset Preset;                                                          // 0x0308 (size: 0x10)
-    TArray<class UPalIndividualCharacterHandle*> CampEnemys;                          // 0x0318 (size: 0x10)
-    bool LoadCamp;                                                                    // 0x0328 (size: 0x1)
-    TSubclassOf<class ABP_NPCCampPresetBase_C> PresetClass;                           // 0x0330 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalLimitVolumeSphereComponent* PalLimitVolumeSphere;
+    class UStaticMeshComponent* DebugMesh;
+    double Probability;
+    class ABP_NPCCampPresetBase_C* CampObject;
+    FName RewardName;
+    double RespawnTime_RealMinutes;
+    FTimerHandle TimerHand;
+    bool SpawnPossible;
+    double RespawnDistance_FromPlayer;
+    double DisableDistance_FromBaseCamp;
+    FF_NPCCampPreset Preset;
+    TArray<class UPalIndividualCharacterHandle*> CampEnemys;
+    bool LoadCamp;
+    TSubclassOf<class ABP_NPCCampPresetBase_C> PresetClass;
 
     void CREATEDELEGATE_PROXYFUNCTION_0(class UPalIndividualCharacterHandle* NewParam);
     void OnReceivedReward();
@@ -34,6 +34,6 @@ class ABP_NPCCampSpawnerAntiAirBase_C : public APalNPCCampSpawnerBase
     void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);
     void ReceiveTick(float DeltaSeconds);
     void ExecuteUbergraph_BP_NPCCampSpawnerAntiAirBase(int32 EntryPoint);
-}; // Size: 0x338
+};
 
 #endif

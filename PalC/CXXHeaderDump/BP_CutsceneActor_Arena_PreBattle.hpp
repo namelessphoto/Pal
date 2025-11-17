@@ -3,12 +3,12 @@
 
 class ABP_CutsceneActor_Arena_PreBattle_C : public ABP_CutsceneActorBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0320 (size: 0x8)
-    class UPalCutsceneArenaPreBattleBindParameter* PreBattleBindParameter;            // 0x0328 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalCutsceneArenaPreBattleBindParameter* PreBattleBindParameter;
 
     void SetBindParameter(class UPalCutsceneBindParameter* BindParameter);
     void OnPrePlayCutscene();
     void ExecuteUbergraph_BP_CutsceneActor_Arena_PreBattle(int32 EntryPoint);
-}; // Size: 0x330
+};
 
 #endif

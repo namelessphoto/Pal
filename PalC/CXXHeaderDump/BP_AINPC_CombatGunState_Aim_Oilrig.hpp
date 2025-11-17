@@ -3,12 +3,12 @@
 
 class UBP_AINPC_CombatGunState_Aim_Oilrig_C : public UBP_AINPC_CombatState_Base_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0038 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
 
     void StateEnter();
     void StateExit();
     void StateTick(float DeltaTime);
     void ExecuteUbergraph_BP_AINPC_CombatGunState_Aim_Oilrig(int32 EntryPoint);
-}; // Size: 0x40
+};
 
 #endif

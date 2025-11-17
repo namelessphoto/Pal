@@ -3,26 +3,26 @@
 
 class UBP_PalIncidentNPCTalk_C : public UBP_PalIncidentBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0160 (size: 0x8)
-    class UDataTable* TalkData;                                                       // 0x0168 (size: 0x8)
-    FGuid ShopID;                                                                     // 0x0170 (size: 0x10)
-    class UPalNPCMultiTalkHandle* MultiTalkHandle;                                    // 0x0180 (size: 0x8)
-    bool IsTalking;                                                                   // 0x0188 (size: 0x1)
-    bool IsShopping;                                                                  // 0x0189 (size: 0x1)
-    bool IsRecruiting;                                                                // 0x018A (size: 0x1)
-    class ABP_PalIncidentCamera_C* Camera;                                            // 0x0190 (size: 0x8)
-    class AActor* PlayerViewTarget;                                                   // 0x0198 (size: 0x8)
-    FString TalkSequence;                                                             // 0x01A0 (size: 0x10)
-    bool IsDelayFinish;                                                               // 0x01B0 (size: 0x1)
-    double DelayFinishElapsedTime;                                                    // 0x01B8 (size: 0x8)
-    class UPalHUDDispatchParameter_ItemShop* ItemShopHUDParameter;                    // 0x01C0 (size: 0x8)
-    class UPalHUDDispatchParameterBase* PalShopHUDParameter;                          // 0x01C8 (size: 0x8)
-    TEnumAsByte<E_PalItemShopTabType> OpenItemShopTabType;                            // 0x01D0 (size: 0x1)
-    TEnumAsByte<E_PalItemShopTabType> OpenPalShopTabType;                             // 0x01D1 (size: 0x1)
-    FGuid TalkUIID;                                                                   // 0x01D4 (size: 0x10)
-    FGuid ItemShopUIID;                                                               // 0x01E4 (size: 0x10)
-    FGuid PalShopUIID;                                                                // 0x01F4 (size: 0x10)
-    TArray<FName> CustomFunctionNames;                                                // 0x0208 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UDataTable* TalkData;
+    FGuid ShopID;
+    class UPalNPCMultiTalkHandle* MultiTalkHandle;
+    bool IsTalking;
+    bool IsShopping;
+    bool IsRecruiting;
+    class ABP_PalIncidentCamera_C* Camera;
+    class AActor* PlayerViewTarget;
+    FString TalkSequence;
+    bool IsDelayFinish;
+    double DelayFinishElapsedTime;
+    class UPalHUDDispatchParameter_ItemShop* ItemShopHUDParameter;
+    class UPalHUDDispatchParameterBase* PalShopHUDParameter;
+    TEnumAsByte<E_PalItemShopTabType> OpenItemShopTabType;
+    TEnumAsByte<E_PalItemShopTabType> OpenPalShopTabType;
+    FGuid TalkUIID;
+    FGuid ItemShopUIID;
+    FGuid PalShopUIID;
+    TArray<FName> CustomFunctionNames;
 
     void CancelTalk();
     void UnregisterEndTalkEvent();
@@ -96,6 +96,6 @@ class UBP_PalIncidentNPCTalk_C : public UBP_PalIncidentBase_C
     void StopMouth();
     void StartTalk();
     void ExecuteUbergraph_BP_PalIncidentNPCTalk(int32 EntryPoint);
-}; // Size: 0x218
+};
 
 #endif

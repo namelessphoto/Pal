@@ -3,6 +3,6 @@
 
 class UBP_PalPlayerManager_C : public UPalPlayerManager
 {
-}; // Size: 0x1B0
+};
 
 #endif

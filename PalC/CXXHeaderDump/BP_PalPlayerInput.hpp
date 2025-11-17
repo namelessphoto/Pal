@@ -3,6 +3,6 @@
 
 class UBP_PalPlayerInput_C : public UPalPlayerInput
 {
-}; // Size: 0x548
+};
 
 #endif

@@ -17,6 +17,6 @@ class UTraceUtilLibrary : public UBlueprintFunctionLibrary
     bool IsChannelEnabled(FString ChannelName);
     TArray<FString> GetEnabledChannels();
     TArray<FString> GetAllChannels();
-}; // Size: 0x28
+};
 
 #endif

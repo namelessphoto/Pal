@@ -3,6 +3,6 @@
 
 class ABP_BackWeapon_GrapplingGun_C : public ABP_BackWeaponBase_C
 {
-}; // Size: 0x328
+};
 
 #endif

@@ -3,8 +3,8 @@
 
 struct FF_PalUITechnologyDataMapContent
 {
-    TArray<FName> TechnologyName_3_4692035C4ECBCEC661D78A9E037C9C35;                  // 0x0000 (size: 0x10)
+    TArray<FName> TechnologyName_3_4692035C4ECBCEC661D78A9E037C9C35;
 
-}; // Size: 0x10
+};
 
 #endif

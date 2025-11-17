@@ -3,6 +3,6 @@
 
 class ABP_PlayerBedCamera_C : public ACameraActor
 {
-}; // Size: 0x9A0
+};
 
 #endif

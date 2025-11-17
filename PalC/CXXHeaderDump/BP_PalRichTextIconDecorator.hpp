@@ -3,6 +3,6 @@
 
 class UBP_PalRichTextIconDecorator_C : public UPalRichTextIconDecorator
 {
-}; // Size: 0x38
+};
 
 #endif

@@ -3,8 +3,8 @@
 
 class ABP_NPCAIController_Invader_C : public ABP_NPCAIController_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x05A8 (size: 0x8)
-    FBP_NPCAIController_Invader_COnInvaderArrivedDelegate OnInvaderArrivedDelegate;   // 0x05B0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    FBP_NPCAIController_Invader_COnInvaderArrivedDelegate OnInvaderArrivedDelegate;
     void OnInvaderArrivedDelegate();
 
     void ReturnSpawnedPoint(FVector ReturnPos);
@@ -17,6 +17,6 @@ class ABP_NPCAIController_Invader_C : public ABP_NPCAIController_C
     void BindOnInvaderArrivedDelegate(FBindOnInvaderArrivedDelegateEvent Event);
     void ExecuteUbergraph_BP_NPCAIController_Invader(int32 EntryPoint);
     void OnInvaderArrivedDelegate__DelegateSignature();
-}; // Size: 0x5C0
+};
 
 #endif

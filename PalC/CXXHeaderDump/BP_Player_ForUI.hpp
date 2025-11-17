@@ -3,19 +3,19 @@
 
 class ABP_Player_ForUI_C : public APalUIDisplayCharacter
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x02A0 (size: 0x8)
-    class UPalSkeletalMeshComponent* HairAttachAccessory;                             // 0x02A8 (size: 0x8)
-    class UPalSkeletalMeshComponent* hair;                                            // 0x02B0 (size: 0x8)
-    class UPalSkeletalMeshComponent* Head;                                            // 0x02B8 (size: 0x8)
-    class USphereComponent* Sphere;                                                   // 0x02C0 (size: 0x8)
-    FBP_Player_ForUI_COnAppliedBodyMesh OnAppliedBodyMesh;                            // 0x02C8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalSkeletalMeshComponent* HairAttachAccessory;
+    class UPalSkeletalMeshComponent* hair;
+    class UPalSkeletalMeshComponent* Head;
+    class USphereComponent* Sphere;
+    FBP_Player_ForUI_COnAppliedBodyMesh OnAppliedBodyMesh;
     void OnAppliedBodyMesh(FLinearColor BodyMeshBasColor);
-    FBP_Player_ForUI_COnAppliedHeadMesh OnAppliedHeadMesh;                            // 0x02D8 (size: 0x10)
+    FBP_Player_ForUI_COnAppliedHeadMesh OnAppliedHeadMesh;
     void OnAppliedHeadMesh(FLinearColor BrowMeshBaseColor, FLinearColor EyeMeshBaseColor);
-    FBP_Player_ForUI_COnAppliedHairMesh OnAppliedHairMesh;                            // 0x02E8 (size: 0x10)
+    FBP_Player_ForUI_COnAppliedHairMesh OnAppliedHairMesh;
     void OnAppliedHairMesh(FLinearColor HairMeshBaseColor);
-    bool IsSpawnedGlider;                                                             // 0x02F8 (size: 0x1)
-    bool NeedRefreshAnimation;                                                        // 0x02F9 (size: 0x1)
+    bool IsSpawnedGlider;
+    bool NeedRefreshAnimation;
 
     void PlayAnimation(class UAnimSequence* AnimationSequence);
     void PlayCurrentWeaponIdleAnimation();
@@ -30,6 +30,6 @@ class ABP_Player_ForUI_C : public APalUIDisplayCharacter
     void OnAppliedHairMesh__DelegateSignature(FLinearColor HairMeshBaseColor);
     void OnAppliedHeadMesh__DelegateSignature(FLinearColor BrowMeshBaseColor, FLinearColor EyeMeshBaseColor);
     void OnAppliedBodyMesh__DelegateSignature(FLinearColor BodyMeshBasColor);
-}; // Size: 0x2FA
+};
 
 #endif

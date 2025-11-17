@@ -3,78 +3,78 @@
 
 class UWBP_IndividualParameterBindWidget_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    TSoftObjectPtr<UPalIndividualCharacterHandle> bindedHandle;                       // 0x0410 (size: 0x30)
-    bool IsBindHP;                                                                    // 0x0440 (size: 0x1)
-    bool IsBindSP;                                                                    // 0x0441 (size: 0x1)
-    bool IsBindHunger;                                                                // 0x0442 (size: 0x1)
-    bool IsBindFoodAmount;                                                            // 0x0443 (size: 0x1)
-    bool IsBindNickName;                                                              // 0x0444 (size: 0x1)
-    bool IsBindSanity;                                                                // 0x0445 (size: 0x1)
-    bool IsBindExp;                                                                   // 0x0446 (size: 0x1)
-    bool IgnoreCraftExp;                                                              // 0x0447 (size: 0x1)
-    bool IsBindLevel;                                                                 // 0x0448 (size: 0x1)
-    FWBP_IndividualParameterBindWidget_COnUpdateHP OnUpdateHP;                        // 0x0450 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    TSoftObjectPtr<UPalIndividualCharacterHandle> bindedHandle;
+    bool IsBindHP;
+    bool IsBindSP;
+    bool IsBindHunger;
+    bool IsBindFoodAmount;
+    bool IsBindNickName;
+    bool IsBindSanity;
+    bool IsBindExp;
+    bool IgnoreCraftExp;
+    bool IsBindLevel;
+    FWBP_IndividualParameterBindWidget_COnUpdateHP OnUpdateHP;
     void OnUpdateHP(FFixedPoint64 nowHP, FFixedPoint64 nowMaxHP);
-    FWBP_IndividualParameterBindWidget_COnUpdateSP OnUpdateSP;                        // 0x0460 (size: 0x10)
+    FWBP_IndividualParameterBindWidget_COnUpdateSP OnUpdateSP;
     void OnUpdateSP(FFixedPoint64 nowSP, FFixedPoint64 nowMaxSP, bool isOverHeated);
-    FWBP_IndividualParameterBindWidget_COnUpdateHunger OnUpdateHunger;                // 0x0470 (size: 0x10)
+    FWBP_IndividualParameterBindWidget_COnUpdateHunger OnUpdateHunger;
     void OnUpdateHunger(double nowHunger, double nowMaxHunger);
-    FWBP_IndividualParameterBindWidget_COnUpdateNickName OnUpdateNickName;            // 0x0480 (size: 0x10)
+    FWBP_IndividualParameterBindWidget_COnUpdateNickName OnUpdateNickName;
     void OnUpdateNickName(FString NewNickName);
-    FWBP_IndividualParameterBindWidget_COnUpdateSanity OnUpdateSanity;                // 0x0490 (size: 0x10)
+    FWBP_IndividualParameterBindWidget_COnUpdateSanity OnUpdateSanity;
     void OnUpdateSanity(double nowSanity, double nowMaxSanity);
-    FWBP_IndividualParameterBindWidget_COnUpdateExp OnUpdateExp;                      // 0x04A0 (size: 0x10)
+    FWBP_IndividualParameterBindWidget_COnUpdateExp OnUpdateExp;
     void OnUpdateExp(int64 addExp, int64 oldExp, double nowExpRate);
-    FWBP_IndividualParameterBindWidget_COnUpdateLevel OnUpdateLevel;                  // 0x04B0 (size: 0x10)
+    FWBP_IndividualParameterBindWidget_COnUpdateLevel OnUpdateLevel;
     void OnUpdateLevel(int32 NewLevel);
-    bool isBindActiveSkill;                                                           // 0x04C0 (size: 0x1)
-    bool isBindPassiveSkill;                                                          // 0x04C1 (size: 0x1)
-    bool isBindMasteredSkills;                                                        // 0x04C2 (size: 0x1)
-    bool isBindElement;                                                               // 0x04C3 (size: 0x1)
-    bool isBindRank;                                                                  // 0x04C4 (size: 0x1)
-    bool isBindSoul;                                                                  // 0x04C5 (size: 0x1)
-    bool isBindWorkSuitability;                                                       // 0x04C6 (size: 0x1)
-    bool isBindCondition;                                                             // 0x04C7 (size: 0x1)
-    bool isBindBuff;                                                                  // 0x04C8 (size: 0x1)
-    bool IsPlayerCharacter;                                                           // 0x04C9 (size: 0x1)
-    bool ignoreAfterBindInitialize;                                                   // 0x04CA (size: 0x1)
-    FWBP_IndividualParameterBindWidget_COnUpdateCondition OnUpdateCondition;          // 0x04D0 (size: 0x10)
+    bool isBindActiveSkill;
+    bool isBindPassiveSkill;
+    bool isBindMasteredSkills;
+    bool isBindElement;
+    bool isBindRank;
+    bool isBindSoul;
+    bool isBindWorkSuitability;
+    bool isBindCondition;
+    bool isBindBuff;
+    bool IsPlayerCharacter;
+    bool ignoreAfterBindInitialize;
+    FWBP_IndividualParameterBindWidget_COnUpdateCondition OnUpdateCondition;
     void OnUpdateCondition();
-    FWBP_IndividualParameterBindWidget_COnUpdateActiveSkill OnUpdateActiveSkill;      // 0x04E0 (size: 0x10)
+    FWBP_IndividualParameterBindWidget_COnUpdateActiveSkill OnUpdateActiveSkill;
     void OnUpdateActiveSkill(TArray<EPalWazaID>& ActiveSkills);
-    bool isBindGender;                                                                // 0x04F0 (size: 0x1)
-    bool isBindRarity;                                                                // 0x04F1 (size: 0x1)
-    bool ShowLevelPenalty;                                                            // 0x04F2 (size: 0x1)
-    bool GetLevelPenalty;                                                             // 0x04F3 (size: 0x1)
-    TArray<EPalWazaID> TmpWazaArray;                                                  // 0x04F8 (size: 0x10)
-    FWBP_IndividualParameterBindWidget_COnUpdateMasteredSkill OnUpdateMasteredSkill;  // 0x0508 (size: 0x10)
+    bool isBindGender;
+    bool isBindRarity;
+    bool ShowLevelPenalty;
+    bool GetLevelPenalty;
+    TArray<EPalWazaID> TmpWazaArray;
+    FWBP_IndividualParameterBindWidget_COnUpdateMasteredSkill OnUpdateMasteredSkill;
     void OnUpdateMasteredSkill(class UPalIndividualCharacterParameter* Individual Parameter, EPalWazaID WazaID);
-    FWBP_IndividualParameterBindWidget_COnUpdateBuff OnUpdateBuff;                    // 0x0518 (size: 0x10)
+    FWBP_IndividualParameterBindWidget_COnUpdateBuff OnUpdateBuff;
     void OnUpdateBuff();
-    FWBP_IndividualParameterBindWidget_COnUpdateSoulRank OnUpdateSoulRank;            // 0x0528 (size: 0x10)
+    FWBP_IndividualParameterBindWidget_COnUpdateSoulRank OnUpdateSoulRank;
     void OnUpdateSoulRank();
-    bool IsBindStatusPoint;                                                           // 0x0538 (size: 0x1)
-    FWBP_IndividualParameterBindWidget_COnUpdateStatusPoint OnUpdateStatusPoint;      // 0x0540 (size: 0x10)
+    bool IsBindStatusPoint;
+    FWBP_IndividualParameterBindWidget_COnUpdateStatusPoint OnUpdateStatusPoint;
     void OnUpdateStatusPoint();
-    FPalInstanceID SyncId;                                                            // 0x0550 (size: 0x30)
-    bool IsBindTalent;                                                                // 0x0580 (size: 0x1)
-    FWBP_IndividualParameterBindWidget_COnUpdateTalent OnUpdateTalent;                // 0x0588 (size: 0x10)
+    FPalInstanceID SyncId;
+    bool IsBindTalent;
+    FWBP_IndividualParameterBindWidget_COnUpdateTalent OnUpdateTalent;
     void OnUpdateTalent();
-    FWBP_IndividualParameterBindWidget_COnUpdateWorkSuitabilityOption OnUpdateWorkSuitabilityOption; // 0x0598 (size: 0x10)
+    FWBP_IndividualParameterBindWidget_COnUpdateWorkSuitabilityOption OnUpdateWorkSuitabilityOption;
     void OnUpdateWorkSuitabilityOption(FPalWorkSuitabilityPreferenceInfo Info);
-    bool isBindFavorite;                                                              // 0x05A8 (size: 0x1)
-    FWBP_IndividualParameterBindWidget_COnUpdateFavorite OnUpdateFavorite;            // 0x05B0 (size: 0x10)
+    bool isBindFavorite;
+    FWBP_IndividualParameterBindWidget_COnUpdateFavorite OnUpdateFavorite;
     void OnUpdateFavorite(int32 NewIndex);
-    bool isBindShield;                                                                // 0x05C0 (size: 0x1)
-    FWBP_IndividualParameterBindWidget_COnUpdateShield OnUpdateShield;                // 0x05C8 (size: 0x10)
+    bool isBindShield;
+    FWBP_IndividualParameterBindWidget_COnUpdateShield OnUpdateShield;
     void OnUpdateShield(FFixedPoint64 NowShield, FFixedPoint64 MaxShield);
-    bool isBindImportedFlag;                                                          // 0x05D8 (size: 0x1)
-    bool IsBindFriendShip;                                                            // 0x05D9 (size: 0x1)
-    FWBP_IndividualParameterBindWidget_COnChangedFriendshipRank OnChangedFriendshipRank; // 0x05E0 (size: 0x10)
+    bool isBindImportedFlag;
+    bool IsBindFriendShip;
+    FWBP_IndividualParameterBindWidget_COnChangedFriendshipRank OnChangedFriendshipRank;
     void OnChangedFriendshipRank(int32 NewRank, int32 OldRank, bool FavoriteChanged);
-    bool SkipOverrideLevel;                                                           // 0x05F0 (size: 0x1)
-    FWBP_IndividualParameterBindWidget_COnChangedFriendshipPoint OnChangedFriendshipPoint; // 0x05F8 (size: 0x10)
+    bool SkipOverrideLevel;
+    FWBP_IndividualParameterBindWidget_COnChangedFriendshipPoint OnChangedFriendshipPoint;
     void OnChangedFriendshipPoint(int32 NewPoint);
 
     void OnUpdateFriendshipPoint_Internal(class UPalIndividualCharacterParameter* IndividualParameter, const int32 NewPoint);
@@ -137,6 +137,6 @@ class UWBP_IndividualParameterBindWidget_C : public UPalUserWidget
     void OnUpdateHunger__DelegateSignature(double nowHunger, double nowMaxHunger);
     void OnUpdateSP__DelegateSignature(FFixedPoint64 nowSP, FFixedPoint64 nowMaxSP, bool isOverHeated);
     void OnUpdateHP__DelegateSignature(FFixedPoint64 nowHP, FFixedPoint64 nowMaxHP);
-}; // Size: 0x608
+};
 
 #endif

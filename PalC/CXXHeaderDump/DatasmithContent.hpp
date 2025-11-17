@@ -5,247 +5,247 @@
 
 struct FDatasmithAssetImportOptions
 {
-    FName PackagePath;                                                                // 0x0000 (size: 0x8)
+    FName PackagePath;
 
-}; // Size: 0x8
+};
 
 struct FDatasmithCameraFilmbackSettingsTemplate
 {
-    float SensorWidth;                                                                // 0x0000 (size: 0x4)
-    float SensorHeight;                                                               // 0x0004 (size: 0x4)
+    float SensorWidth;
+    float SensorHeight;
 
-}; // Size: 0x8
+};
 
 struct FDatasmithCameraFocusSettingsTemplate
 {
-    ECameraFocusMethod FocusMethod;                                                   // 0x0000 (size: 0x1)
-    float ManualFocusDistance;                                                        // 0x0004 (size: 0x4)
+    ECameraFocusMethod FocusMethod;
+    float ManualFocusDistance;
 
-}; // Size: 0x8
+};
 
 struct FDatasmithCameraLensSettingsTemplate
 {
-    float MaxFStop;                                                                   // 0x0000 (size: 0x4)
+    float MaxFStop;
 
-}; // Size: 0x4
+};
 
 struct FDatasmithCameraLookatTrackingSettingsTemplate
 {
-    uint8 bEnableLookAtTracking;                                                      // 0x0000 (size: 0x1)
-    uint8 bAllowRoll;                                                                 // 0x0000 (size: 0x1)
-    TSoftObjectPtr<AActor> ActorToTrack;                                              // 0x0008 (size: 0x30)
+    uint8 bEnableLookAtTracking;
+    uint8 bAllowRoll;
+    TSoftObjectPtr<AActor> ActorToTrack;
 
-}; // Size: 0x38
+};
 
 struct FDatasmithImportBaseOptions
 {
-    EDatasmithImportScene SceneHandling;                                              // 0x0000 (size: 0x1)
-    bool bIncludeGeometry;                                                            // 0x0001 (size: 0x1)
-    bool bIncludeMaterial;                                                            // 0x0002 (size: 0x1)
-    bool bIncludeLight;                                                               // 0x0003 (size: 0x1)
-    bool bIncludeCamera;                                                              // 0x0004 (size: 0x1)
-    bool bIncludeAnimation;                                                           // 0x0005 (size: 0x1)
-    FDatasmithAssetImportOptions AssetOptions;                                        // 0x0008 (size: 0x8)
-    FDatasmithStaticMeshImportOptions StaticMeshOptions;                              // 0x0010 (size: 0x4)
+    EDatasmithImportScene SceneHandling;
+    bool bIncludeGeometry;
+    bool bIncludeMaterial;
+    bool bIncludeLight;
+    bool bIncludeCamera;
+    bool bIncludeAnimation;
+    FDatasmithAssetImportOptions AssetOptions;
+    FDatasmithStaticMeshImportOptions StaticMeshOptions;
 
-}; // Size: 0x14
+};
 
 struct FDatasmithImportInfo
 {
-}; // Size: 0x1
+};
 
 struct FDatasmithMeshBuildSettingsTemplate
 {
-    uint8 bUseMikkTSpace;                                                             // 0x0000 (size: 0x1)
-    uint8 bRecomputeNormals;                                                          // 0x0000 (size: 0x1)
-    uint8 bRecomputeTangents;                                                         // 0x0000 (size: 0x1)
-    uint8 bRemoveDegenerates;                                                         // 0x0000 (size: 0x1)
-    uint8 bUseHighPrecisionTangentBasis;                                              // 0x0000 (size: 0x1)
-    uint8 bUseFullPrecisionUVs;                                                       // 0x0000 (size: 0x1)
-    uint8 bGenerateLightmapUVs;                                                       // 0x0000 (size: 0x1)
-    int32 MinLightmapResolution;                                                      // 0x0004 (size: 0x4)
-    int32 SrcLightmapIndex;                                                           // 0x0008 (size: 0x4)
-    int32 DstLightmapIndex;                                                           // 0x000C (size: 0x4)
+    uint8 bUseMikkTSpace;
+    uint8 bRecomputeNormals;
+    uint8 bRecomputeTangents;
+    uint8 bRemoveDegenerates;
+    uint8 bUseHighPrecisionTangentBasis;
+    uint8 bUseFullPrecisionUVs;
+    uint8 bGenerateLightmapUVs;
+    int32 MinLightmapResolution;
+    int32 SrcLightmapIndex;
+    int32 DstLightmapIndex;
 
-}; // Size: 0x10
+};
 
 struct FDatasmithMeshSectionInfoMapTemplate
 {
-    TMap<uint32, FDatasmithMeshSectionInfoTemplate> Map;                              // 0x0000 (size: 0x50)
+    TMap<uint32, FDatasmithMeshSectionInfoTemplate> Map;
 
-}; // Size: 0x50
+};
 
 struct FDatasmithMeshSectionInfoTemplate
 {
-    int32 MaterialIndex;                                                              // 0x0000 (size: 0x4)
+    int32 MaterialIndex;
 
-}; // Size: 0x4
+};
 
 struct FDatasmithPostProcessSettingsTemplate
 {
-    uint8 bOverride_WhiteTemp;                                                        // 0x0000 (size: 0x1)
-    uint8 bOverride_ColorSaturation;                                                  // 0x0000 (size: 0x1)
-    uint8 bOverride_VignetteIntensity;                                                // 0x0000 (size: 0x1)
-    uint8 bOverride_AutoExposureMethod;                                               // 0x0000 (size: 0x1)
-    uint8 bOverride_CameraISO;                                                        // 0x0000 (size: 0x1)
-    uint8 bOverride_CameraShutterSpeed;                                               // 0x0000 (size: 0x1)
-    uint8 bOverride_DepthOfFieldFstop;                                                // 0x0004 (size: 0x1)
-    float WhiteTemp;                                                                  // 0x0008 (size: 0x4)
-    float VignetteIntensity;                                                          // 0x000C (size: 0x4)
-    FVector4 ColorSaturation;                                                         // 0x0010 (size: 0x20)
-    TEnumAsByte<EAutoExposureMethod> AutoExposureMethod;                              // 0x0030 (size: 0x1)
-    float CameraISO;                                                                  // 0x0034 (size: 0x4)
-    float CameraShutterSpeed;                                                         // 0x0038 (size: 0x4)
-    float DepthOfFieldFstop;                                                          // 0x003C (size: 0x4)
+    uint8 bOverride_WhiteTemp;
+    uint8 bOverride_ColorSaturation;
+    uint8 bOverride_VignetteIntensity;
+    uint8 bOverride_AutoExposureMethod;
+    uint8 bOverride_CameraISO;
+    uint8 bOverride_CameraShutterSpeed;
+    uint8 bOverride_DepthOfFieldFstop;
+    float WhiteTemp;
+    float VignetteIntensity;
+    FVector4 ColorSaturation;
+    TEnumAsByte<EAutoExposureMethod> AutoExposureMethod;
+    float CameraISO;
+    float CameraShutterSpeed;
+    float DepthOfFieldFstop;
 
-}; // Size: 0x40
+};
 
 struct FDatasmithReimportOptions
 {
-    bool bUpdateActors;                                                               // 0x0000 (size: 0x1)
-    bool bRespawnDeletedActors;                                                       // 0x0001 (size: 0x1)
+    bool bUpdateActors;
+    bool bRespawnDeletedActors;
 
-}; // Size: 0x2
+};
 
 struct FDatasmithRetessellationOptions : public FDatasmithTessellationOptions
 {
-    EDatasmithCADRetessellationRule RetessellationRule;                               // 0x0010 (size: 0x1)
+    EDatasmithCADRetessellationRule RetessellationRule;
 
-}; // Size: 0x14
+};
 
 struct FDatasmithStaticMaterialTemplate
 {
-    FName MaterialSlotName;                                                           // 0x0000 (size: 0x8)
-    class UMaterialInterface* MaterialInterface;                                      // 0x0008 (size: 0x8)
+    FName MaterialSlotName;
+    class UMaterialInterface* MaterialInterface;
 
-}; // Size: 0x10
+};
 
 struct FDatasmithStaticMeshImportOptions
 {
-    EDatasmithImportLightmapMin MinLightmapResolution;                                // 0x0000 (size: 0x1)
-    EDatasmithImportLightmapMax MaxLightmapResolution;                                // 0x0001 (size: 0x1)
-    bool bGenerateLightmapUVs;                                                        // 0x0002 (size: 0x1)
-    bool bRemoveDegenerates;                                                          // 0x0003 (size: 0x1)
+    EDatasmithImportLightmapMin MinLightmapResolution;
+    EDatasmithImportLightmapMax MaxLightmapResolution;
+    bool bGenerateLightmapUVs;
+    bool bRemoveDegenerates;
 
-}; // Size: 0x4
+};
 
 struct FDatasmithStaticParameterSetTemplate
 {
-    TMap<class FName, class bool> StaticSwitchParameters;                             // 0x0000 (size: 0x50)
+    TMap<class FName, class bool> StaticSwitchParameters;
 
-}; // Size: 0x50
+};
 
 struct FDatasmithTessellationOptions
 {
-    float ChordTolerance;                                                             // 0x0000 (size: 0x4)
-    float MaxEdgeLength;                                                              // 0x0004 (size: 0x4)
-    float NormalTolerance;                                                            // 0x0008 (size: 0x4)
-    EDatasmithCADStitchingTechnique StitchingTechnique;                               // 0x000C (size: 0x1)
+    float ChordTolerance;
+    float MaxEdgeLength;
+    float NormalTolerance;
+    EDatasmithCADStitchingTechnique StitchingTechnique;
 
-}; // Size: 0x10
+};
 
 class ADatasmithAreaLightActor : public AActor
 {
-    TEnumAsByte<EComponentMobility> Mobility;                                         // 0x0290 (size: 0x1)
-    EDatasmithAreaLightActorType LightType;                                           // 0x0291 (size: 0x1)
-    EDatasmithAreaLightActorShape LightShape;                                         // 0x0292 (size: 0x1)
-    FVector2D Dimensions;                                                             // 0x0298 (size: 0x10)
-    float Intensity;                                                                  // 0x02A8 (size: 0x4)
-    ELightUnits IntensityUnits;                                                       // 0x02AC (size: 0x1)
-    FLinearColor Color;                                                               // 0x02B0 (size: 0x10)
-    float Temperature;                                                                // 0x02C0 (size: 0x4)
-    class UTextureLightProfile* IESTexture;                                           // 0x02C8 (size: 0x8)
-    bool bUseIESBrightness;                                                           // 0x02D0 (size: 0x1)
-    float IESBrightnessScale;                                                         // 0x02D4 (size: 0x4)
-    FRotator Rotation;                                                                // 0x02D8 (size: 0x18)
-    float SourceRadius;                                                               // 0x02F0 (size: 0x4)
-    float SourceLength;                                                               // 0x02F4 (size: 0x4)
-    float AttenuationRadius;                                                          // 0x02F8 (size: 0x4)
-    float SpotlightInnerAngle;                                                        // 0x02FC (size: 0x4)
-    float SpotlightOuterAngle;                                                        // 0x0300 (size: 0x4)
+    TEnumAsByte<EComponentMobility> Mobility;
+    EDatasmithAreaLightActorType LightType;
+    EDatasmithAreaLightActorShape LightShape;
+    FVector2D Dimensions;
+    float Intensity;
+    ELightUnits IntensityUnits;
+    FLinearColor Color;
+    float Temperature;
+    class UTextureLightProfile* IESTexture;
+    bool bUseIESBrightness;
+    float IESBrightnessScale;
+    FRotator Rotation;
+    float SourceRadius;
+    float SourceLength;
+    float AttenuationRadius;
+    float SpotlightInnerAngle;
+    float SpotlightOuterAngle;
 
-}; // Size: 0x308
+};
 
 class ADatasmithImportedSequencesActor : public AActor
 {
-    TArray<class ULevelSequence*> ImportedSequences;                                  // 0x0290 (size: 0x10)
+    TArray<class ULevelSequence*> ImportedSequences;
 
     void PlayLevelSequence(class ULevelSequence* SequenceToPlay);
-}; // Size: 0x2A0
+};
 
 class ADatasmithSceneActor : public AActor
 {
-    class UDatasmithScene* Scene;                                                     // 0x0290 (size: 0x8)
-    TMap<class FName, class TSoftObjectPtr<AActor>> RelatedActors;                    // 0x0298 (size: 0x50)
+    class UDatasmithScene* Scene;
+    TMap<class FName, class TSoftObjectPtr<AActor>> RelatedActors;
 
-}; // Size: 0x2E8
+};
 
 class UDatasmithActorTemplate : public UDatasmithObjectTemplate
 {
-    TSet<FName> Layers;                                                               // 0x0030 (size: 0x50)
-    TSet<FName> Tags;                                                                 // 0x0080 (size: 0x50)
+    TSet<FName> Layers;
+    TSet<FName> Tags;
 
-}; // Size: 0xD0
+};
 
 class UDatasmithAdditionalData : public UObject
 {
-}; // Size: 0x28
+};
 
 class UDatasmithAreaLightActorTemplate : public UDatasmithObjectTemplate
 {
-    EDatasmithAreaLightActorType LightType;                                           // 0x0030 (size: 0x1)
-    EDatasmithAreaLightActorShape LightShape;                                         // 0x0031 (size: 0x1)
-    FVector2D Dimensions;                                                             // 0x0038 (size: 0x10)
-    FLinearColor Color;                                                               // 0x0048 (size: 0x10)
-    float Intensity;                                                                  // 0x0058 (size: 0x4)
-    ELightUnits IntensityUnits;                                                       // 0x005C (size: 0x1)
-    float Temperature;                                                                // 0x0060 (size: 0x4)
-    TSoftObjectPtr<UTextureLightProfile> IESTexture;                                  // 0x0068 (size: 0x30)
-    bool bUseIESBrightness;                                                           // 0x0098 (size: 0x1)
-    float IESBrightnessScale;                                                         // 0x009C (size: 0x4)
-    FRotator Rotation;                                                                // 0x00A0 (size: 0x18)
-    float SourceRadius;                                                               // 0x00B8 (size: 0x4)
-    float SourceLength;                                                               // 0x00BC (size: 0x4)
-    float AttenuationRadius;                                                          // 0x00C0 (size: 0x4)
+    EDatasmithAreaLightActorType LightType;
+    EDatasmithAreaLightActorShape LightShape;
+    FVector2D Dimensions;
+    FLinearColor Color;
+    float Intensity;
+    ELightUnits IntensityUnits;
+    float Temperature;
+    TSoftObjectPtr<UTextureLightProfile> IESTexture;
+    bool bUseIESBrightness;
+    float IESBrightnessScale;
+    FRotator Rotation;
+    float SourceRadius;
+    float SourceLength;
+    float AttenuationRadius;
 
-}; // Size: 0xC8
+};
 
 class UDatasmithAssetImportData : public UAssetImportData
 {
-}; // Size: 0x28
+};
 
 class UDatasmithAssetUserData : public UAssetUserData
 {
-    TMap<class FName, class FString> MetaData;                                        // 0x0028 (size: 0x50)
+    TMap<class FName, class FString> MetaData;
 
-}; // Size: 0x78
+};
 
 class UDatasmithCADImportSceneData : public UDatasmithSceneImportData
 {
-}; // Size: 0x28
+};
 
 class UDatasmithCineCameraActorTemplate : public UDatasmithObjectTemplate
 {
-    FDatasmithCameraLookatTrackingSettingsTemplate LookatTrackingSettings;            // 0x0030 (size: 0x38)
+    FDatasmithCameraLookatTrackingSettingsTemplate LookatTrackingSettings;
 
-}; // Size: 0x68
+};
 
 class UDatasmithCineCameraComponentTemplate : public UDatasmithObjectTemplate
 {
-    FDatasmithCameraFilmbackSettingsTemplate FilmbackSettings;                        // 0x0030 (size: 0x8)
-    FDatasmithCameraLensSettingsTemplate LensSettings;                                // 0x0038 (size: 0x4)
-    FDatasmithCameraFocusSettingsTemplate FocusSettings;                              // 0x003C (size: 0x8)
-    float CurrentFocalLength;                                                         // 0x0044 (size: 0x4)
-    float CurrentAperture;                                                            // 0x0048 (size: 0x4)
-    FDatasmithPostProcessSettingsTemplate PostProcessSettings;                        // 0x0050 (size: 0x40)
+    FDatasmithCameraFilmbackSettingsTemplate FilmbackSettings;
+    FDatasmithCameraLensSettingsTemplate LensSettings;
+    FDatasmithCameraFocusSettingsTemplate FocusSettings;
+    float CurrentFocalLength;
+    float CurrentAperture;
+    FDatasmithPostProcessSettingsTemplate PostProcessSettings;
 
-}; // Size: 0x90
+};
 
 class UDatasmithCommonTessellationOptions : public UDatasmithOptionsBase
 {
-    FDatasmithTessellationOptions Options;                                            // 0x0028 (size: 0x10)
+    FDatasmithTessellationOptions Options;
 
-}; // Size: 0x38
+};
 
 class UDatasmithContentBlueprintLibrary : public UBlueprintFunctionLibrary
 {
@@ -254,234 +254,234 @@ class UDatasmithContentBlueprintLibrary : public UBlueprintFunctionLibrary
     FString GetDatasmithUserDataValueForKey(class UObject* Object, FName Key, bool bPartialMatchKey);
     void GetDatasmithUserDataKeysAndValuesForValue(class UObject* Object, FString StringToMatch, TArray<FName>& OutKeys, TArray<FString>& OutValues);
     class UDatasmithAssetUserData* GetDatasmithUserData(class UObject* Object);
-}; // Size: 0x28
+};
 
 class UDatasmithCustomActionBase : public UObject
 {
-}; // Size: 0x30
+};
 
 class UDatasmithDecalComponentTemplate : public UDatasmithObjectTemplate
 {
-    int32 SortOrder;                                                                  // 0x0030 (size: 0x4)
-    FVector DecalSize;                                                                // 0x0038 (size: 0x18)
-    class UMaterialInterface* Material;                                               // 0x0050 (size: 0x8)
+    int32 SortOrder;
+    FVector DecalSize;
+    class UMaterialInterface* Material;
 
-}; // Size: 0x58
+};
 
 class UDatasmithDeltaGenAssetImportData : public UDatasmithAssetImportData
 {
-}; // Size: 0x28
+};
 
 class UDatasmithDeltaGenSceneImportData : public UDatasmithFBXSceneImportData
 {
-    bool bMergeNodes;                                                                 // 0x0048 (size: 0x1)
-    bool bOptimizeDuplicatedNodes;                                                    // 0x0049 (size: 0x1)
-    bool bRemoveInvisibleNodes;                                                       // 0x004A (size: 0x1)
-    bool bSimplifyNodeHierarchy;                                                      // 0x004B (size: 0x1)
-    bool bImportVar;                                                                  // 0x004C (size: 0x1)
-    FString VarPath;                                                                  // 0x0050 (size: 0x10)
-    bool bImportPos;                                                                  // 0x0060 (size: 0x1)
-    FString PosPath;                                                                  // 0x0068 (size: 0x10)
-    bool bImportTml;                                                                  // 0x0078 (size: 0x1)
-    FString TmlPath;                                                                  // 0x0080 (size: 0x10)
+    bool bMergeNodes;
+    bool bOptimizeDuplicatedNodes;
+    bool bRemoveInvisibleNodes;
+    bool bSimplifyNodeHierarchy;
+    bool bImportVar;
+    FString VarPath;
+    bool bImportPos;
+    FString PosPath;
+    bool bImportTml;
+    FString TmlPath;
 
-}; // Size: 0x90
+};
 
 class UDatasmithFBXSceneImportData : public UDatasmithSceneImportData
 {
-    bool bGenerateLightmapUVs;                                                        // 0x0028 (size: 0x1)
-    FString TexturesDir;                                                              // 0x0030 (size: 0x10)
-    uint8 IntermediateSerialization;                                                  // 0x0040 (size: 0x1)
-    bool bColorizeMaterials;                                                          // 0x0041 (size: 0x1)
+    bool bGenerateLightmapUVs;
+    FString TexturesDir;
+    uint8 IntermediateSerialization;
+    bool bColorizeMaterials;
 
-}; // Size: 0x48
+};
 
 class UDatasmithGLTFSceneImportData : public UDatasmithSceneImportData
 {
-    FString Generator;                                                                // 0x0028 (size: 0x10)
-    float Version;                                                                    // 0x0038 (size: 0x4)
-    FString Author;                                                                   // 0x0040 (size: 0x10)
-    FString License;                                                                  // 0x0050 (size: 0x10)
-    FString Source;                                                                   // 0x0060 (size: 0x10)
+    FString Generator;
+    float Version;
+    FString Author;
+    FString License;
+    FString Source;
 
-}; // Size: 0x70
+};
 
 class UDatasmithIFCSceneImportData : public UDatasmithSceneImportData
 {
-}; // Size: 0x28
+};
 
 class UDatasmithImportOptions : public UDatasmithOptionsBase
 {
-    EDatasmithImportSearchPackagePolicy SearchPackagePolicy;                          // 0x0028 (size: 0x1)
-    EDatasmithImportAssetConflictPolicy MaterialConflictPolicy;                       // 0x0029 (size: 0x1)
-    EDatasmithImportAssetConflictPolicy TextureConflictPolicy;                        // 0x002A (size: 0x1)
-    EDatasmithImportActorPolicy StaticMeshActorImportPolicy;                          // 0x002B (size: 0x1)
-    EDatasmithImportActorPolicy LightImportPolicy;                                    // 0x002C (size: 0x1)
-    EDatasmithImportActorPolicy CameraImportPolicy;                                   // 0x002D (size: 0x1)
-    EDatasmithImportActorPolicy OtherActorImportPolicy;                               // 0x002E (size: 0x1)
-    EDatasmithImportMaterialQuality MaterialQuality;                                  // 0x002F (size: 0x1)
-    FDatasmithImportBaseOptions BaseOptions;                                          // 0x0030 (size: 0x14)
-    FDatasmithReimportOptions ReimportOptions;                                        // 0x0044 (size: 0x2)
-    FString Filename;                                                                 // 0x0048 (size: 0x10)
-    FString FilePath;                                                                 // 0x0058 (size: 0x10)
-    FString SourceUri;                                                                // 0x0068 (size: 0x10)
+    EDatasmithImportSearchPackagePolicy SearchPackagePolicy;
+    EDatasmithImportAssetConflictPolicy MaterialConflictPolicy;
+    EDatasmithImportAssetConflictPolicy TextureConflictPolicy;
+    EDatasmithImportActorPolicy StaticMeshActorImportPolicy;
+    EDatasmithImportActorPolicy LightImportPolicy;
+    EDatasmithImportActorPolicy CameraImportPolicy;
+    EDatasmithImportActorPolicy OtherActorImportPolicy;
+    EDatasmithImportMaterialQuality MaterialQuality;
+    FDatasmithImportBaseOptions BaseOptions;
+    FDatasmithReimportOptions ReimportOptions;
+    FString Filename;
+    FString FilePath;
+    FString SourceUri;
 
-}; // Size: 0x90
+};
 
 class UDatasmithLandscapeTemplate : public UDatasmithObjectTemplate
 {
-    class UMaterialInterface* LandscapeMaterial;                                      // 0x0030 (size: 0x8)
-    int32 StaticLightingLOD;                                                          // 0x0038 (size: 0x4)
+    class UMaterialInterface* LandscapeMaterial;
+    int32 StaticLightingLOD;
 
-}; // Size: 0x40
+};
 
 class UDatasmithLightComponentTemplate : public UDatasmithObjectTemplate
 {
-    uint8 bVisible;                                                                   // 0x0030 (size: 0x1)
-    uint8 CastShadows;                                                                // 0x0034 (size: 0x1)
-    uint8 bUseTemperature;                                                            // 0x0034 (size: 0x1)
-    uint8 bUseIESBrightness;                                                          // 0x0034 (size: 0x1)
-    float Intensity;                                                                  // 0x0038 (size: 0x4)
-    float Temperature;                                                                // 0x003C (size: 0x4)
-    float IESBrightnessScale;                                                         // 0x0040 (size: 0x4)
-    FLinearColor LightColor;                                                          // 0x0044 (size: 0x10)
-    class UMaterialInterface* LightFunctionMaterial;                                  // 0x0058 (size: 0x8)
-    class UTextureLightProfile* IESTexture;                                           // 0x0060 (size: 0x8)
+    uint8 bVisible;
+    uint8 CastShadows;
+    uint8 bUseTemperature;
+    uint8 bUseIESBrightness;
+    float Intensity;
+    float Temperature;
+    float IESBrightnessScale;
+    FLinearColor LightColor;
+    class UMaterialInterface* LightFunctionMaterial;
+    class UTextureLightProfile* IESTexture;
 
-}; // Size: 0x68
+};
 
 class UDatasmithMDLSceneImportData : public UDatasmithSceneImportData
 {
-}; // Size: 0x28
+};
 
 class UDatasmithMaterialInstanceTemplate : public UDatasmithObjectTemplate
 {
-    TSoftObjectPtr<UMaterialInterface> ParentMaterial;                                // 0x0030 (size: 0x30)
-    TMap<FName, float> ScalarParameterValues;                                         // 0x0060 (size: 0x50)
-    TMap<class FName, class FLinearColor> VectorParameterValues;                      // 0x00B0 (size: 0x50)
-    TMap<class FName, class TSoftObjectPtr<UTexture>> TextureParameterValues;         // 0x0100 (size: 0x50)
-    FDatasmithStaticParameterSetTemplate StaticParameters;                            // 0x0150 (size: 0x50)
+    TSoftObjectPtr<UMaterialInterface> ParentMaterial;
+    TMap<FName, float> ScalarParameterValues;
+    TMap<class FName, class FLinearColor> VectorParameterValues;
+    TMap<class FName, class TSoftObjectPtr<UTexture>> TextureParameterValues;
+    FDatasmithStaticParameterSetTemplate StaticParameters;
 
-}; // Size: 0x1A0
+};
 
 class UDatasmithObjectTemplate : public UObject
 {
-}; // Size: 0x30
+};
 
 class UDatasmithOptionsBase : public UObject
 {
-}; // Size: 0x28
+};
 
 class UDatasmithPointLightComponentTemplate : public UDatasmithObjectTemplate
 {
-    ELightUnits IntensityUnits;                                                       // 0x0030 (size: 0x1)
-    float SourceRadius;                                                               // 0x0034 (size: 0x4)
-    float SourceLength;                                                               // 0x0038 (size: 0x4)
-    float AttenuationRadius;                                                          // 0x003C (size: 0x4)
+    ELightUnits IntensityUnits;
+    float SourceRadius;
+    float SourceLength;
+    float AttenuationRadius;
 
-}; // Size: 0x40
+};
 
 class UDatasmithPostProcessVolumeTemplate : public UDatasmithObjectTemplate
 {
-    FDatasmithPostProcessSettingsTemplate Settings;                                   // 0x0030 (size: 0x40)
-    uint8 bEnabled;                                                                   // 0x0070 (size: 0x1)
-    uint8 bUnbound;                                                                   // 0x0070 (size: 0x1)
+    FDatasmithPostProcessSettingsTemplate Settings;
+    uint8 bEnabled;
+    uint8 bUnbound;
 
-}; // Size: 0x80
+};
 
 class UDatasmithScene : public UObject
 {
-}; // Size: 0x30
+};
 
 class UDatasmithSceneComponentTemplate : public UDatasmithObjectTemplate
 {
-    FTransform RelativeTransform;                                                     // 0x0030 (size: 0x60)
-    TEnumAsByte<EComponentMobility> Mobility;                                         // 0x0090 (size: 0x1)
-    TSoftObjectPtr<USceneComponent> AttachParent;                                     // 0x0098 (size: 0x30)
-    bool bVisible;                                                                    // 0x00C8 (size: 0x1)
-    bool bCastShadow;                                                                 // 0x00C9 (size: 0x1)
-    TSet<FName> Tags;                                                                 // 0x00D0 (size: 0x50)
+    FTransform RelativeTransform;
+    TEnumAsByte<EComponentMobility> Mobility;
+    TSoftObjectPtr<USceneComponent> AttachParent;
+    bool bVisible;
+    bool bCastShadow;
+    TSet<FName> Tags;
 
-}; // Size: 0x120
+};
 
 class UDatasmithSceneImportData : public UAssetImportData
 {
-}; // Size: 0x28
+};
 
 class UDatasmithSkyLightComponentTemplate : public UDatasmithObjectTemplate
 {
-    TEnumAsByte<ESkyLightSourceType> SourceType;                                      // 0x0030 (size: 0x1)
-    int32 CubemapResolution;                                                          // 0x0034 (size: 0x4)
-    class UTextureCube* Cubemap;                                                      // 0x0038 (size: 0x8)
+    TEnumAsByte<ESkyLightSourceType> SourceType;
+    int32 CubemapResolution;
+    class UTextureCube* Cubemap;
 
-}; // Size: 0x40
+};
 
 class UDatasmithSpotLightComponentTemplate : public UDatasmithObjectTemplate
 {
-    float InnerConeAngle;                                                             // 0x0030 (size: 0x4)
-    float OuterConeAngle;                                                             // 0x0034 (size: 0x4)
+    float InnerConeAngle;
+    float OuterConeAngle;
 
-}; // Size: 0x38
+};
 
 class UDatasmithStaticMeshCADImportData : public UDatasmithStaticMeshImportData
 {
-}; // Size: 0x28
+};
 
 class UDatasmithStaticMeshComponentTemplate : public UDatasmithObjectTemplate
 {
-    class UStaticMesh* StaticMesh;                                                    // 0x0030 (size: 0x8)
-    TArray<class UMaterialInterface*> OverrideMaterials;                              // 0x0038 (size: 0x10)
+    class UStaticMesh* StaticMesh;
+    TArray<class UMaterialInterface*> OverrideMaterials;
 
-}; // Size: 0x48
+};
 
 class UDatasmithStaticMeshGLTFImportData : public UDatasmithStaticMeshImportData
 {
-    FString SourceMeshName;                                                           // 0x0028 (size: 0x10)
+    FString SourceMeshName;
 
-}; // Size: 0x38
+};
 
 class UDatasmithStaticMeshIFCImportData : public UDatasmithStaticMeshImportData
 {
-    FString SourceGlobalId;                                                           // 0x0028 (size: 0x10)
+    FString SourceGlobalId;
 
-}; // Size: 0x38
+};
 
 class UDatasmithStaticMeshImportData : public UDatasmithAssetImportData
 {
-}; // Size: 0x28
+};
 
 class UDatasmithStaticMeshTemplate : public UDatasmithObjectTemplate
 {
-    FDatasmithMeshSectionInfoMapTemplate SectionInfoMap;                              // 0x0030 (size: 0x50)
-    int32 LightMapCoordinateIndex;                                                    // 0x0080 (size: 0x4)
-    int32 LightMapResolution;                                                         // 0x0084 (size: 0x4)
-    TArray<FDatasmithMeshBuildSettingsTemplate> BuildSettings;                        // 0x0088 (size: 0x10)
-    TArray<FDatasmithStaticMaterialTemplate> StaticMaterials;                         // 0x0098 (size: 0x10)
+    FDatasmithMeshSectionInfoMapTemplate SectionInfoMap;
+    int32 LightMapCoordinateIndex;
+    int32 LightMapResolution;
+    TArray<FDatasmithMeshBuildSettingsTemplate> BuildSettings;
+    TArray<FDatasmithStaticMaterialTemplate> StaticMaterials;
 
-}; // Size: 0xA8
+};
 
 class UDatasmithTranslatedSceneImportData : public UDatasmithSceneImportData
 {
-}; // Size: 0x28
+};
 
 class UDatasmithVREDAssetImportData : public UDatasmithAssetImportData
 {
-}; // Size: 0x28
+};
 
 class UDatasmithVREDSceneImportData : public UDatasmithFBXSceneImportData
 {
-    bool bMergeNodes;                                                                 // 0x0048 (size: 0x1)
-    bool bOptimizeDuplicatedNodes;                                                    // 0x0049 (size: 0x1)
-    bool bImportMats;                                                                 // 0x004A (size: 0x1)
-    FString MatsPath;                                                                 // 0x0050 (size: 0x10)
-    bool bImportVar;                                                                  // 0x0060 (size: 0x1)
-    bool bCleanVar;                                                                   // 0x0061 (size: 0x1)
-    FString VarPath;                                                                  // 0x0068 (size: 0x10)
-    bool bImportLightInfo;                                                            // 0x0078 (size: 0x1)
-    FString LightInfoPath;                                                            // 0x0080 (size: 0x10)
-    bool bImportClipInfo;                                                             // 0x0090 (size: 0x1)
-    FString ClipInfoPath;                                                             // 0x0098 (size: 0x10)
+    bool bMergeNodes;
+    bool bOptimizeDuplicatedNodes;
+    bool bImportMats;
+    FString MatsPath;
+    bool bImportVar;
+    bool bCleanVar;
+    FString VarPath;
+    bool bImportLightInfo;
+    FString LightInfoPath;
+    bool bImportClipInfo;
+    FString ClipInfoPath;
 
-}; // Size: 0xA8
+};
 
 #endif

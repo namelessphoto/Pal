@@ -3,9 +3,9 @@
 
 class UWBP_PalGenderIcon_C : public UUserWidget
 {
-    class UImage* Image_Gender;                                                       // 0x0278 (size: 0x8)
+    class UImage* Image_Gender;
 
     void Setup(EPalGenderType GenderType);
-}; // Size: 0x280
+};
 
 #endif

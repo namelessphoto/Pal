@@ -3,6 +3,6 @@
 
 class UBP_PalRandomIncidentPlacementDropItemDataComponent_C : public UPalRandomIncidentPlacementDropItemDataComponent
 {
-}; // Size: 0x600
+};
 
 #endif

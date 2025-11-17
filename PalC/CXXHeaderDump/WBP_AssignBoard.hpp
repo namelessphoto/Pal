@@ -3,45 +3,45 @@
 
 class UWBP_AssignBoard_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UCanvasPanel* Canvas_RemoveGuide;                                           // 0x0410 (size: 0x8)
-    class UCanvasPanel* Canvas_SortButton;                                            // 0x0418 (size: 0x8)
-    class UImage* Image_860;                                                          // 0x0420 (size: 0x8)
-    class UImage* Image_Base_Pal_Select;                                              // 0x0428 (size: 0x8)
-    class UImage* Image_Base_WorkList_Select;                                         // 0x0430 (size: 0x8)
-    class UImage* Image_Frame_Pal;                                                    // 0x0438 (size: 0x8)
-    class UImage* Image_Frame_Pal_Select;                                             // 0x0440 (size: 0x8)
-    class UImage* Image_Frame_WorkList;                                               // 0x0448 (size: 0x8)
-    class UImage* Image_Frame_WorkList_Select;                                        // 0x0450 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_SortType;                                          // 0x0458 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_WorkerNum;                                         // 0x0460 (size: 0x8)
-    class UWBP_IngameMenu_PalBox_PalDetail_C* WBP_IngameMenu_PalBox_PalDetail;        // 0x0468 (size: 0x8)
-    class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x0470 (size: 0x8)
-    class UWBP_NoData_C* WBP_NoData;                                                  // 0x0478 (size: 0x8)
-    class UWBP_PalCharacterScrollList_C* WBP_PalCharacterScrollList_Worker;           // 0x0480 (size: 0x8)
-    class UWBP_PalCommonScrollList_C* WBP_PalCommonScrollList_WorkList;               // 0x0488 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Sort;                     // 0x0490 (size: 0x8)
-    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;                                // 0x0498 (size: 0x8)
-    TSoftObjectPtr<UPalIndividualCharacterContainer> SoftWorkerCharacterContainer;    // 0x04A0 (size: 0x30)
-    FWBP_AssignBoard_COnClickedWorkerSlot OnClickedWorkerSlot;                        // 0x04D0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCanvasPanel* Canvas_RemoveGuide;
+    class UCanvasPanel* Canvas_SortButton;
+    class UImage* Image_860;
+    class UImage* Image_Base_Pal_Select;
+    class UImage* Image_Base_WorkList_Select;
+    class UImage* Image_Frame_Pal;
+    class UImage* Image_Frame_Pal_Select;
+    class UImage* Image_Frame_WorkList;
+    class UImage* Image_Frame_WorkList_Select;
+    class UBP_PalTextBlock_C* Text_SortType;
+    class UBP_PalTextBlock_C* Text_WorkerNum;
+    class UWBP_IngameMenu_PalBox_PalDetail_C* WBP_IngameMenu_PalBox_PalDetail;
+    class UWBP_Menu_btn_C* WBP_Menu_btn;
+    class UWBP_NoData_C* WBP_NoData;
+    class UWBP_PalCharacterScrollList_C* WBP_PalCharacterScrollList_Worker;
+    class UWBP_PalCommonScrollList_C* WBP_PalCommonScrollList_WorkList;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Sort;
+    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;
+    TSoftObjectPtr<UPalIndividualCharacterContainer> SoftWorkerCharacterContainer;
+    FWBP_AssignBoard_COnClickedWorkerSlot OnClickedWorkerSlot;
     void OnClickedWorkerSlot(class UWBP_PalCharacterSlotButtonBase_C* SlotButtonBase);
-    bool IsSelectingWorker;                                                           // 0x04E0 (size: 0x1)
-    FWBP_AssignBoard_COnClickedWork OnClickedWork;                                    // 0x04E8 (size: 0x10)
+    bool IsSelectingWorker;
+    FWBP_AssignBoard_COnClickedWork OnClickedWork;
     void OnClickedWork(class UWBP_AssignBoard_WorkListBase_C* Widget);
-    TMap<class EPalWorkType, class TSubclassOf<UUserWidget>> WorkTypeWidgetMap;       // 0x04F8 (size: 0x50)
-    class UWBP_AssignBoard_WorkListBase_C* SelectedWorkWidget;                        // 0x0548 (size: 0x8)
-    FPalUIActionBindData RemoveAssignActionHandle;                                    // 0x0550 (size: 0x4)
-    FWBP_AssignBoard_COnTriggerRemoveAssignShortcut OnTriggerRemoveAssignShortcut;    // 0x0558 (size: 0x10)
+    TMap<class EPalWorkType, class TSubclassOf<UUserWidget>> WorkTypeWidgetMap;
+    class UWBP_AssignBoard_WorkListBase_C* SelectedWorkWidget;
+    FPalUIActionBindData RemoveAssignActionHandle;
+    FWBP_AssignBoard_COnTriggerRemoveAssignShortcut OnTriggerRemoveAssignShortcut;
     void OnTriggerRemoveAssignShortcut();
-    FPalDataTableRowName_UIInputAction RemoveAssignInputAction;                       // 0x0568 (size: 0x8)
-    FWBP_AssignBoard_COnHoveredWork OnHoveredWork;                                    // 0x0570 (size: 0x10)
+    FPalDataTableRowName_UIInputAction RemoveAssignInputAction;
+    FWBP_AssignBoard_COnHoveredWork OnHoveredWork;
     void OnHoveredWork(class UWBP_AssignBoard_WorkListBase_C* Widget);
-    FWBP_AssignBoard_COnUnhoveredWork OnUnhoveredWork;                                // 0x0580 (size: 0x10)
+    FWBP_AssignBoard_COnUnhoveredWork OnUnhoveredWork;
     void OnUnhoveredWork(class UWBP_AssignBoard_WorkListBase_C* Widget);
-    TMap<class FGuid, class UWBP_AssignBoard_WorkListBase_C*> WorkListWidgetMap;      // 0x0590 (size: 0x50)
-    FWBP_AssignBoard_COnClickedSortButton OnClickedSortButton;                        // 0x05E0 (size: 0x10)
+    TMap<class FGuid, class UWBP_AssignBoard_WorkListBase_C*> WorkListWidgetMap;
+    FWBP_AssignBoard_COnClickedSortButton OnClickedSortButton;
     void OnClickedSortButton();
-    FWBP_AssignBoard_COnClickedCloseButton OnClickedCloseButton;                      // 0x05F0 (size: 0x10)
+    FWBP_AssignBoard_COnClickedCloseButton OnClickedCloseButton;
     void OnClickedCloseButton();
 
     void CreateWorkListWidget(FPalUIBaseCampWorkFixedAssignInfo AssignInfo, class UWBP_AssignBoard_WorkListBase_C*& createdWidget);
@@ -85,6 +85,6 @@ class UWBP_AssignBoard_C : public UPalUserWidget
     void OnTriggerRemoveAssignShortcut__DelegateSignature();
     void OnClickedWork__DelegateSignature(class UWBP_AssignBoard_WorkListBase_C* Widget);
     void OnClickedWorkerSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* SlotButtonBase);
-}; // Size: 0x600
+};
 
 #endif

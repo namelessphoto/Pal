@@ -3,11 +3,11 @@
 
 class ABP_FunnelCharacterAIController_C : public APalAIController
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0538 (size: 0x8)
-    TSubclassOf<class UPalAIActionCompositeBase> DefaultRootCompositeActionClass;     // 0x0540 (size: 0x8)
-    FVector FollowInterpolatedPos;                                                    // 0x0548 (size: 0x18)
-    double FollowSpeed;                                                               // 0x0560 (size: 0x8)
-    FName flagName;                                                                   // 0x0568 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    TSubclassOf<class UPalAIActionCompositeBase> DefaultRootCompositeActionClass;
+    FVector FollowInterpolatedPos;
+    double FollowSpeed;
+    FName flagName;
 
     void SetEnableReticleTargetFlag(bool Enable);
     void OnInactive();
@@ -16,6 +16,6 @@ class ABP_FunnelCharacterAIController_C : public APalAIController
     void PlayDefaultAction();
     void ReceiveBeginPlay();
     void ExecuteUbergraph_BP_FunnelCharacterAIController(int32 EntryPoint);
-}; // Size: 0x570
+};
 
 #endif

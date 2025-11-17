@@ -3,6 +3,6 @@
 
 class UBP_PalCharacterManager_C : public UPalCharacterManager
 {
-}; // Size: 0x300
+};
 
 #endif

@@ -3,8 +3,8 @@
 
 class UWBP_WarningUI_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UWBP_Warning_C* WBP_Warning;                                                // 0x0410 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWBP_Warning_C* WBP_Warning;
 
     void WBP_WarningUI_AutoGenFunc();
     void DisplayServerNotice(FString NoticeMessage);
@@ -17,6 +17,6 @@ class UWBP_WarningUI_C : public UPalUserWidget
     void RegisterEvents();
     void OnInitialized();
     void ExecuteUbergraph_WBP_WarningUI(int32 EntryPoint);
-}; // Size: 0x418
+};
 
 #endif

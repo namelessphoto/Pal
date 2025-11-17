@@ -3,17 +3,17 @@
 
 class UBP_PalIncidentInvaderBase_C : public UPalInvaderIncidentBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x02C0 (size: 0x8)
-    TArray<class UPalIndividualCharacterHandle*> IndividualHandleList;                // 0x02C8 (size: 0x10)
-    FVector MarchStartPoint;                                                          // 0x02D8 (size: 0x18)
-    int32 MemberCount;                                                                // 0x02F0 (size: 0x4)
-    int32 SpawnedCount;                                                               // 0x02F4 (size: 0x4)
-    class ABP_DummyNavigationInvoker_C* DummyNav_Start;                               // 0x02F8 (size: 0x8)
-    class ABP_DummyNavigationInvoker_C* DummyNav_Goal;                                // 0x0300 (size: 0x8)
-    FVector CashedBaseCampLocation;                                                   // 0x0308 (size: 0x18)
-    bool IsBaseCampLocationCashed;                                                    // 0x0320 (size: 0x1)
-    TArray<FName> OtomoNames;                                                         // 0x0328 (size: 0x10)
-    TArray<class UPalIndividualCharacterHandle*> OtomoHandleList;                     // 0x0338 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    TArray<class UPalIndividualCharacterHandle*> IndividualHandleList;
+    FVector MarchStartPoint;
+    int32 MemberCount;
+    int32 SpawnedCount;
+    class ABP_DummyNavigationInvoker_C* DummyNav_Start;
+    class ABP_DummyNavigationInvoker_C* DummyNav_Goal;
+    FVector CashedBaseCampLocation;
+    bool IsBaseCampLocationCashed;
+    TArray<FName> OtomoNames;
+    TArray<class UPalIndividualCharacterHandle*> OtomoHandleList;
 
     void GetIndividualHandleIndex(class UPalIndividualCharacterHandle* IndividualHandle, int32& Index);
     void IsUniqueNPCID(FName CharacterID, bool& IsUnique);
@@ -45,6 +45,6 @@ class UBP_PalIncidentInvaderBase_C : public UPalInvaderIncidentBase
     void OnInitialized();
     void OnStartInvade();
     void ExecuteUbergraph_BP_PalIncidentInvaderBase(int32 EntryPoint);
-}; // Size: 0x348
+};
 
 #endif

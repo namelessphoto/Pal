@@ -3,35 +3,35 @@
 
 class UBP_VisualEffect_Swimming_C : public UPalVisualEffectBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0070 (size: 0x8)
-    class UNiagaraComponent* NS_SplashBody;                                           // 0x0078 (size: 0x8)
-    class UNiagaraComponent* NS_Swim;                                                 // 0x0080 (size: 0x8)
-    class UNiagaraComponent* NS_InWater;                                              // 0x0088 (size: 0x8)
-    class UPalCharacterMovementComponent* Movement;                                   // 0x0090 (size: 0x8)
-    double InWaterRate_Feet;                                                          // 0x0098 (size: 0x8)
-    double InWaterRate_Body;                                                          // 0x00A0 (size: 0x8)
-    double FeetEffectWaitTimeSec;                                                     // 0x00A8 (size: 0x8)
-    bool IsMoving;                                                                    // 0x00B0 (size: 0x1)
-    double FallingVelocityMin;                                                        // 0x00B8 (size: 0x8)
-    double Effect_Offset_Z_Feet;                                                      // 0x00C0 (size: 0x8)
-    double Effect_Offset_Z_Body;                                                      // 0x00C8 (size: 0x8)
-    double Effect_Offset_Z_Swim;                                                      // 0x00D0 (size: 0x8)
-    double Effect_Offset_Z_InWater;                                                   // 0x00D8 (size: 0x8)
-    double Effect_Offset_Z_Dive;                                                      // 0x00E0 (size: 0x8)
-    bool CreateDiveEffectDelay;                                                       // 0x00E8 (size: 0x1)
-    double RadiusScaleForDive;                                                        // 0x00F0 (size: 0x8)
-    bool HasRayCastCash;                                                              // 0x00F8 (size: 0x1)
-    double LengthToBottomCash;                                                        // 0x0100 (size: 0x8)
-    bool IsNsSplashBodyActive;                                                        // 0x0108 (size: 0x1)
-    bool IsNsSwimActive;                                                              // 0x0109 (size: 0x1)
-    double RadiusScaleForSwim;                                                        // 0x0110 (size: 0x8)
-    bool IsNsInWaterActive;                                                           // 0x0118 (size: 0x1)
-    double RadiusScaleForInWater;                                                     // 0x0120 (size: 0x8)
-    double RadiusForJump;                                                             // 0x0128 (size: 0x8)
-    double EffectOffset_Z_Jump;                                                       // 0x0130 (size: 0x8)
-    double MovimgVelocityThreshold;                                                   // 0x0138 (size: 0x8)
-    double RadiusScaleForSplashFeet;                                                  // 0x0140 (size: 0x8)
-    double RadiusScaleForSplashBody;                                                  // 0x0148 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UNiagaraComponent* NS_SplashBody;
+    class UNiagaraComponent* NS_Swim;
+    class UNiagaraComponent* NS_InWater;
+    class UPalCharacterMovementComponent* Movement;
+    double InWaterRate_Feet;
+    double InWaterRate_Body;
+    double FeetEffectWaitTimeSec;
+    bool IsMoving;
+    double FallingVelocityMin;
+    double Effect_Offset_Z_Feet;
+    double Effect_Offset_Z_Body;
+    double Effect_Offset_Z_Swim;
+    double Effect_Offset_Z_InWater;
+    double Effect_Offset_Z_Dive;
+    bool CreateDiveEffectDelay;
+    double RadiusScaleForDive;
+    bool HasRayCastCash;
+    double LengthToBottomCash;
+    bool IsNsSplashBodyActive;
+    bool IsNsSwimActive;
+    double RadiusScaleForSwim;
+    bool IsNsInWaterActive;
+    double RadiusScaleForInWater;
+    double RadiusForJump;
+    double EffectOffset_Z_Jump;
+    double MovimgVelocityThreshold;
+    double RadiusScaleForSplashFeet;
+    double RadiusScaleForSplashBody;
 
     void Transform Character Relative Offset(class AActor* Character, FVector RelativeOffset, FVector& Offset);
     void OnJump(class UPalCharacterMovementComponent* Component);
@@ -59,6 +59,6 @@ class UBP_VisualEffect_Swimming_C : public UPalVisualEffectBase
     void TickVisualEffect(float DeltaTime);
     void OnEndVisualEffect();
     void ExecuteUbergraph_BP_VisualEffect_Swimming(int32 EntryPoint);
-}; // Size: 0x150
+};
 
 #endif

@@ -3,9 +3,9 @@
 
 class ABP_PalSpawnerInfoReporter_C : public APalDebug_SpawnInfoReporter
 {
-    class USceneComponent* DefaultSceneRoot;                                          // 0x02A0 (size: 0x8)
+    class USceneComponent* DefaultSceneRoot;
 
     FString GetDebugInfoString(class APalNPCSpawnerBase* Spawner);
-}; // Size: 0x2A8
+};
 
 #endif

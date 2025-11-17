@@ -3,6 +3,6 @@
 
 class UBP_CameraShake_GrassMammoth_Earthquake_C : public UPalCameraShakeBase
 {
-}; // Size: 0x1D0
+};
 
 #endif

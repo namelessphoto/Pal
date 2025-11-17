@@ -3,15 +3,15 @@
 
 class ABP_SphereLauncher_C : public ABP_RocketLauncher_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0650 (size: 0x8)
-    double ScatteredAngle;                                                            // 0x0658 (size: 0x8)
-    TArray<FName> ItemNameList;                                                       // 0x0660 (size: 0x10)
-    TArray<class TSubclassOf<ABP_PalSphere_ThrowObject_C>> BulletClass;               // 0x0670 (size: 0x10)
-    int32 CurrentBallIndex;                                                           // 0x0680 (size: 0x4)
-    TMap<class FName, class EPalCaptureSphereLevelType> ItemName_LevelTypeMap;        // 0x0688 (size: 0x50)
-    FBP_SphereLauncher_COnLaunchPalSphere OnLaunchPalSphere;                          // 0x06D8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    double ScatteredAngle;
+    TArray<FName> ItemNameList;
+    TArray<class TSubclassOf<ABP_PalSphere_ThrowObject_C>> BulletClass;
+    int32 CurrentBallIndex;
+    TMap<class FName, class EPalCaptureSphereLevelType> ItemName_LevelTypeMap;
+    FBP_SphereLauncher_COnLaunchPalSphere OnLaunchPalSphere;
     void OnLaunchPalSphere(class AActor* Bullet);
-    double Const_BulletSpeed;                                                         // 0x06E8 (size: 0x8)
+    double Const_BulletSpeed;
 
     bool IsEnableAutoAim();
     void GetMuzzleTransform(FTransform& Transform);
@@ -30,6 +30,6 @@ class ABP_SphereLauncher_C : public ABP_RocketLauncher_C
     void CustomEvent(int32 bulletsNum);
     void ExecuteUbergraph_BP_SphereLauncher(int32 EntryPoint);
     void OnLaunchPalSphere__DelegateSignature(class AActor* Bullet);
-}; // Size: 0x6F0
+};
 
 #endif

@@ -5,6 +5,6 @@ class UBP_PalQuestBlock_TutorialBuildWorkBench_C : public UBP_PalQuestBlock_Coun
 {
 
     void GetDescriptionText(FText& OutText);
-}; // Size: 0xF0
+};
 
 #endif

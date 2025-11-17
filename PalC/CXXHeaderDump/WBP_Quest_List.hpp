@@ -3,18 +3,18 @@
 
 class UWBP_Quest_List_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UVerticalBox* Vertical_CompletedQuest;                                      // 0x0280 (size: 0x8)
-    class UVerticalBox* Vertical_OrderedQuest;                                        // 0x0288 (size: 0x8)
-    class UWBP_Quest_ListButton_C* WBP_Dummy1;                                        // 0x0290 (size: 0x8)
-    class UWBP_Quest_ListButton_C* WBP_Dummy2;                                        // 0x0298 (size: 0x8)
-    FWBP_Quest_List_COnClickedQuestButton OnClickedQuestButton;                       // 0x02A0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UVerticalBox* Vertical_CompletedQuest;
+    class UVerticalBox* Vertical_OrderedQuest;
+    class UWBP_Quest_ListButton_C* WBP_Dummy1;
+    class UWBP_Quest_ListButton_C* WBP_Dummy2;
+    FWBP_Quest_List_COnClickedQuestButton OnClickedQuestButton;
     void OnClickedQuestButton(class UWBP_Quest_ListButton_C* Widget);
-    FWBP_Quest_List_COnHoveredQuestButton OnHoveredQuestButton;                       // 0x02B0 (size: 0x10)
+    FWBP_Quest_List_COnHoveredQuestButton OnHoveredQuestButton;
     void OnHoveredQuestButton(class UWBP_Quest_ListButton_C* Widget);
-    FWBP_Quest_List_COnUnhoveredQuestButton OnUnhoveredQuestButton;                   // 0x02C0 (size: 0x10)
+    FWBP_Quest_List_COnUnhoveredQuestButton OnUnhoveredQuestButton;
     void OnUnhoveredQuestButton(class UWBP_Quest_ListButton_C* Widget);
-    TArray<class UPalQuestData*> CompletedQuestDataArray;                             // 0x02D0 (size: 0x10)
+    TArray<class UPalQuestData*> CompletedQuestDataArray;
 
     void GetAllQuestWidget(TArray<class UWBP_Quest_ListButton_C*>& NewParam);
     void GetTopQuestWidget(class UWBP_Quest_ListButton_C*& Widget);
@@ -41,6 +41,6 @@ class UWBP_Quest_List_C : public UUserWidget
     void OnUnhoveredQuestButton__DelegateSignature(class UWBP_Quest_ListButton_C* Widget);
     void OnHoveredQuestButton__DelegateSignature(class UWBP_Quest_ListButton_C* Widget);
     void OnClickedQuestButton__DelegateSignature(class UWBP_Quest_ListButton_C* Widget);
-}; // Size: 0x2E0
+};
 
 #endif

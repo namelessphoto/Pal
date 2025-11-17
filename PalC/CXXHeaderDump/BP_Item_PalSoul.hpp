@@ -3,6 +3,6 @@
 
 class ABP_Item_PalSoul_C : public ABP_ItemBase_C
 {
-}; // Size: 0x2B0
+};
 
 #endif

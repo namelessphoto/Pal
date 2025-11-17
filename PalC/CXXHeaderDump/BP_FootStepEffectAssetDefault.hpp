@@ -3,6 +3,6 @@
 
 class UBP_FootStepEffectAssetDefault_C : public UPalFootStepEffectAssetBase
 {
-}; // Size: 0x78
+};
 
 #endif

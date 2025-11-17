@@ -3,6 +3,6 @@
 
 class UBP_InteractableBox_C : public UPalInteractiveObjectBoxComponent
 {
-}; // Size: 0x660
+};
 
 #endif

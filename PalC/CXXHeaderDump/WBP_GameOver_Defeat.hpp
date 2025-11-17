@@ -3,32 +3,32 @@
 
 class UWBP_GameOver_Defeat_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_Close;                                                // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_Open;                                                 // 0x0288 (size: 0x8)
-    class UImage* BGBlack;                                                            // 0x0290 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_DropPal;                                      // 0x0298 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_RespawnTimer;                                 // 0x02A0 (size: 0x8)
-    class UImage* Image_Scroll;                                                       // 0x02A8 (size: 0x8)
-    class UImage* Image_Scroll_0;                                                     // 0x02B0 (size: 0x8)
-    class UImage* Image_Scroll_1;                                                     // 0x02B8 (size: 0x8)
-    class UImage* Image_Scroll_2;                                                     // 0x02C0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_DropItemInfo;                                      // 0x02C8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_HardcoreInfo;                                      // 0x02D0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Second;                                            // 0x02D8 (size: 0x8)
-    class UVerticalBox* VerticalBox_DropInfo;                                         // 0x02E0 (size: 0x8)
-    class UVerticalBox* VerticalBox_DropPalIcon;                                      // 0x02E8 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton;                                      // 0x02F0 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton_ResetCharacter;                       // 0x02F8 (size: 0x8)
-    FWBP_GameOver_Defeat_COnFinishedOpen OnFinishedOpen;                              // 0x0300 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_Close;
+    class UWidgetAnimation* Anm_Open;
+    class UImage* BGBlack;
+    class UHorizontalBox* HorizontalBox_DropPal;
+    class UHorizontalBox* HorizontalBox_RespawnTimer;
+    class UImage* Image_Scroll;
+    class UImage* Image_Scroll_0;
+    class UImage* Image_Scroll_1;
+    class UImage* Image_Scroll_2;
+    class UBP_PalTextBlock_C* Text_DropItemInfo;
+    class UBP_PalTextBlock_C* Text_HardcoreInfo;
+    class UBP_PalTextBlock_C* Text_Second;
+    class UVerticalBox* VerticalBox_DropInfo;
+    class UVerticalBox* VerticalBox_DropPalIcon;
+    class UWBP_CommonButton_C* WBP_CommonButton;
+    class UWBP_CommonButton_C* WBP_CommonButton_ResetCharacter;
+    FWBP_GameOver_Defeat_COnFinishedOpen OnFinishedOpen;
     void OnFinishedOpen();
-    FWBP_GameOver_Defeat_COnFinishedClose OnFinishedClose;                            // 0x0310 (size: 0x10)
+    FWBP_GameOver_Defeat_COnFinishedClose OnFinishedClose;
     void OnFinishedClose();
-    FWBP_GameOver_Defeat_COnClickedRespawn OnClickedRespawn;                          // 0x0320 (size: 0x10)
+    FWBP_GameOver_Defeat_COnClickedRespawn OnClickedRespawn;
     void OnClickedRespawn();
-    FDataTableRowHandle DropInventoryMsgID;                                           // 0x0330 (size: 0x10)
-    FDataTableRowHandle DropAllItemMsgID;                                             // 0x0340 (size: 0x10)
-    FWBP_GameOver_Defeat_COnClickResetCharacter OnClickResetCharacter;                // 0x0350 (size: 0x10)
+    FDataTableRowHandle DropInventoryMsgID;
+    FDataTableRowHandle DropAllItemMsgID;
+    FWBP_GameOver_Defeat_COnClickResetCharacter OnClickResetCharacter;
     void OnClickResetCharacter();
 
     void SetFocusToResetCharacterButton();
@@ -51,6 +51,6 @@ class UWBP_GameOver_Defeat_C : public UUserWidget
     void OnClickedRespawn__DelegateSignature();
     void OnFinishedClose__DelegateSignature();
     void OnFinishedOpen__DelegateSignature();
-}; // Size: 0x360
+};
 
 #endif

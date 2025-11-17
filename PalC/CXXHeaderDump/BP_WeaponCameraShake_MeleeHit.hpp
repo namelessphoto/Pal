@@ -3,6 +3,6 @@
 
 class UBP_WeaponCameraShake_MeleeHit_C : public ULegacyCameraShake
 {
-}; // Size: 0x210
+};
 
 #endif

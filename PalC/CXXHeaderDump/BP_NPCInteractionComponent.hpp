@@ -3,6 +3,6 @@
 
 class UBP_NPCInteractionComponent_C : public UPalNPCInteractionComponent
 {
-}; // Size: 0xB0
+};
 
 #endif

@@ -3,10 +3,10 @@
 
 struct FAnimBlueprintGeneratedConstantData : public FAnimBlueprintGeneratedConstantData
 {
-}; // Size: 0x1A8
+};
 
 class UABP_ChickenPal_C : public UABP_MonsterBase_C
 {
-}; // Size: 0x2BF8
+};
 
 #endif

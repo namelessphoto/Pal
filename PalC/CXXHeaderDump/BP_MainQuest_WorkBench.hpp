@@ -3,6 +3,6 @@
 
 class UBP_MainQuest_WorkBench_C : public UBP_PalQuestDataBase_C
 {
-}; // Size: 0x210
+};
 
 #endif

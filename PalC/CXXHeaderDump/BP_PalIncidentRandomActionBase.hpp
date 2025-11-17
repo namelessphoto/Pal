@@ -3,7 +3,7 @@
 
 class UBP_PalIncidentRandomActionBase_C : public UPalRandomIncidentActionBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0048 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
 
     void GetSpawner(class APalRandomIncidentNPCSpawner*& Spawmer);
     void GetSettingTableRow(bool& Result, FPalRandomIncidentSettings& Data);
@@ -11,6 +11,6 @@ class UBP_PalIncidentRandomActionBase_C : public UPalRandomIncidentActionBase
     void GetOwnerIncident(class UBP_PalIncidentRandom_C*& Incident);
     void OnTerminate();
     void ExecuteUbergraph_BP_PalIncidentRandomActionBase(int32 EntryPoint);
-}; // Size: 0x50
+};
 
 #endif

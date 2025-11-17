@@ -3,6 +3,6 @@
 
 class UBP_PalDimensionLockerControlSubsystem_C : public UPalDimensionLockerControlSubsystem
 {
-}; // Size: 0x88
+};
 
 #endif

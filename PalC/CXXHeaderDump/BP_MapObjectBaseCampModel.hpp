@@ -3,6 +3,6 @@
 
 class UBP_MapObjectBaseCampModel_C : public UPalMapObjectBaseCampPoint
 {
-}; // Size: 0x238
+};
 
 #endif

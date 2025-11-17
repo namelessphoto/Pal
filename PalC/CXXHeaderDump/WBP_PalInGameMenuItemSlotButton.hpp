@@ -3,38 +3,38 @@
 
 class UWBP_PalInGameMenuItemSlotButton_C : public UWBP_PalItemSlotButtonBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x05A8 (size: 0x8)
-    class UWidgetAnimation* Anm_UnselectToSelect;                                     // 0x05B0 (size: 0x8)
-    class UWidgetAnimation* Anm_Bg_Lock;                                              // 0x05B8 (size: 0x8)
-    class UWidgetAnimation* Anm_focus;                                                // 0x05C0 (size: 0x8)
-    class UWidgetAnimation* Anm_Rarity_0To4;                                          // 0x05C8 (size: 0x8)
-    class UImage* Base;                                                               // 0x05D0 (size: 0x8)
-    class UImage* Base_Empty;                                                         // 0x05D8 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_NumRange;                               // 0x05E0 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_BaseShadow;                                       // 0x05E8 (size: 0x8)
-    class UCanvasPanel* CanvasPanelCorrution;                                         // 0x05F0 (size: 0x8)
-    class UCanvasPanel* CanvasPanelLineLock;                                          // 0x05F8 (size: 0x8)
-    class UPalProgressBar* CorruptionProgressBar;                                     // 0x0600 (size: 0x8)
-    class UBP_PalTextBlock_C* CorruptionRemainTime;                                   // 0x0608 (size: 0x8)
-    class UImage* FocusBase;                                                          // 0x0610 (size: 0x8)
-    class UImage* FocusFrame;                                                         // 0x0618 (size: 0x8)
-    class UImage* Frame_Empty;                                                        // 0x0620 (size: 0x8)
-    class UImage* Frame_Total;                                                        // 0x0628 (size: 0x8)
-    class UImage* Image_Off;                                                          // 0x0630 (size: 0x8)
-    class UImage* Image_On;                                                           // 0x0638 (size: 0x8)
-    class UOverlay* Overlay_Off;                                                      // 0x0640 (size: 0x8)
-    class UOverlay* Overlay_On;                                                       // 0x0648 (size: 0x8)
-    class UOverlay* Overlay_OnOff;                                                    // 0x0650 (size: 0x8)
-    class UOverlay* OverlayRepair;                                                    // 0x0658 (size: 0x8)
-    class UProgressBar* ProgressBar_Durable;                                          // 0x0660 (size: 0x8)
-    class USizeBox* SizeBox_Auto;                                                     // 0x0668 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_ItemWeight;                                        // 0x0670 (size: 0x8)
-    class UWBP_InventoryEquipment_PalIcon_C* WBP_InventoryEquipment_PalIcon;          // 0x0678 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlot_C* WBP_PalInGameMenuItemSlot;                    // 0x0680 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x0688 (size: 0x8)
-    class UImage* WeightnumBase;                                                      // 0x0690 (size: 0x8)
-    bool HasLiftting;                                                                 // 0x0698 (size: 0x1)
-    FPalItemAndNum Item Info;                                                         // 0x069C (size: 0x2C)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_UnselectToSelect;
+    class UWidgetAnimation* Anm_Bg_Lock;
+    class UWidgetAnimation* Anm_Focus;
+    class UWidgetAnimation* Anm_Rarity_0To4;
+    class UImage* Base;
+    class UImage* Base_Empty;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_NumRange;
+    class UCanvasPanel* CanvasPanel_BaseShadow;
+    class UCanvasPanel* CanvasPanelCorrution;
+    class UCanvasPanel* CanvasPanelLineLock;
+    class UPalProgressBar* CorruptionProgressBar;
+    class UBP_PalTextBlock_C* CorruptionRemainTime;
+    class UImage* FocusBase;
+    class UImage* FocusFrame;
+    class UImage* Frame_Empty;
+    class UImage* Frame_Total;
+    class UImage* Image_Off;
+    class UImage* Image_On;
+    class UOverlay* Overlay_Off;
+    class UOverlay* Overlay_On;
+    class UOverlay* Overlay_OnOff;
+    class UOverlay* OverlayRepair;
+    class UProgressBar* ProgressBar_Durable;
+    class USizeBox* SizeBox_Auto;
+    class UBP_PalTextBlock_C* Text_ItemWeight;
+    class UWBP_InventoryEquipment_PalIcon_C* WBP_InventoryEquipment_PalIcon;
+    class UWBP_PalInGameMenuItemSlot_C* WBP_PalInGameMenuItemSlot;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    class UImage* WeightnumBase;
+    bool HasLiftting;
+    FPalItemAndNum Item Info;
 
     void SetLanternEquipMode(EPalPlayerEquipLantern EquipType);
     void SetupByItemAndNumRange(FName StaticItemId, int32 Min, int32 Max);
@@ -70,6 +70,6 @@ class UWBP_PalInGameMenuItemSlotButton_C : public UWBP_PalItemSlotButtonBase_C
     void OnListItemObjectSet(class UObject* ListItemObject);
     void Initialize();
     void ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton(int32 EntryPoint);
-}; // Size: 0x6C8
+};
 
 #endif

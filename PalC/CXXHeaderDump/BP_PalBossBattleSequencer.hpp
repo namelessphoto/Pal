@@ -3,10 +3,10 @@
 
 class UBP_PalBossBattleSequencer_C : public UPalBossBattleSequencer
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0150 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
 
     void Tick_ForBP(float DeltaTime);
     void ExecuteUbergraph_BP_PalBossBattleSequencer(int32 EntryPoint);
-}; // Size: 0x158
+};
 
 #endif

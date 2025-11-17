@@ -20,10 +20,6 @@ struct FAnimBlueprintGeneratedConstantData : public FAnimBlueprintConstantData
 
 };
 
-struct FAnimBlueprintGeneratedMutableData : public FAnimBlueprintMutableData
-{
-};
-
 class UABP_PV_GliderManta_C : public UAnimInstance
 {
     FPointerToUberGraphFrame UberGraphFrame;

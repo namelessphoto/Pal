@@ -5,14 +5,14 @@
 
 struct FLocationServicesData
 {
-    float Timestamp;                                                                  // 0x0000 (size: 0x4)
-    float Longitude;                                                                  // 0x0004 (size: 0x4)
-    float Latitude;                                                                   // 0x0008 (size: 0x4)
-    float HorizontalAccuracy;                                                         // 0x000C (size: 0x4)
-    float VerticalAccuracy;                                                           // 0x0010 (size: 0x4)
-    float Altitude;                                                                   // 0x0014 (size: 0x4)
+    float Timestamp;
+    float Longitude;
+    float Latitude;
+    float HorizontalAccuracy;
+    float VerticalAccuracy;
+    float Altitude;
 
-}; // Size: 0x18
+};
 
 class ULocationServices : public UBlueprintFunctionLibrary
 {
@@ -24,13 +24,13 @@ class ULocationServices : public UBlueprintFunctionLibrary
     class ULocationServicesImpl* GetLocationServicesImpl();
     FLocationServicesData GetLastKnownLocation();
     bool AreLocationServicesEnabled();
-}; // Size: 0x28
+};
 
 class ULocationServicesImpl : public UObject
 {
-    FLocationServicesImplOnLocationChanged OnLocationChanged;                         // 0x0028 (size: 0x10)
+    FLocationServicesImplOnLocationChanged OnLocationChanged;
     void LocationServicesData_OnLocationChanged(FLocationServicesData LocationData);
 
-}; // Size: 0x38
+};
 
 #endif

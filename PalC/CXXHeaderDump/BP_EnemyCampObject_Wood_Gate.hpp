@@ -3,23 +3,23 @@
 
 class ABP_EnemyCampObject_Wood_Gate_C : public APalBuildObject
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0688 (size: 0x8)
-    class UPalEnemyCampObjectSpawnMapObjectComponent* PalEnemyCampObjectSpawnMapObject; // 0x0690 (size: 0x8)
-    class UPalMapObjectDoorParameterComponent* DoorParameter;                         // 0x0698 (size: 0x8)
-    class UBoxComponent* PillarAffectNavigationBox1;                                  // 0x06A0 (size: 0x8)
-    class UBoxComponent* PillarAffectNavigationBox;                                   // 0x06A8 (size: 0x8)
-    class UBoxComponent* AffectNavigationBox;                                         // 0x06B0 (size: 0x8)
-    class UStaticMeshComponent* SM_Gate_Base_Wood;                                    // 0x06B8 (size: 0x8)
-    class UStaticMeshComponent* SM_Wall_Door1;                                        // 0x06C0 (size: 0x8)
-    class UBoxComponent* VirtualMeshCollision;                                        // 0x06C8 (size: 0x8)
-    class UBP_InteractableBox_C* BP_InteractableBox;                                  // 0x06D0 (size: 0x8)
-    class UBoxComponent* BuildWorkableBounds;                                         // 0x06D8 (size: 0x8)
-    class UStaticMeshComponent* SM_Wall_Door;                                         // 0x06E0 (size: 0x8)
-    class USceneComponent* Root;                                                      // 0x06E8 (size: 0x8)
-    class UBoxComponent* CheckOverlapCollision;                                       // 0x06F0 (size: 0x8)
-    float _______RotateDoor_B5B5645F48BC85AE7D1625928A094A77;                         // 0x06F8 (size: 0x4)
-    TEnumAsByte<ETimelineDirection> ________Direction_B5B5645F48BC85AE7D1625928A094A77; // 0x06FC (size: 0x1)
-    class UTimelineComponent* タイムライン;                                                 // 0x0700 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalEnemyCampObjectSpawnMapObjectComponent* PalEnemyCampObjectSpawnMapObject;
+    class UPalMapObjectDoorParameterComponent* DoorParameter;
+    class UBoxComponent* PillarAffectNavigationBox1;
+    class UBoxComponent* PillarAffectNavigationBox;
+    class UBoxComponent* AffectNavigationBox;
+    class UStaticMeshComponent* SM_Gate_Base_Wood;
+    class UStaticMeshComponent* SM_Wall_Door1;
+    class UBoxComponent* VirtualMeshCollision;
+    class UBP_InteractableBox_C* BP_InteractableBox;
+    class UBoxComponent* BuildWorkableBounds;
+    class UStaticMeshComponent* SM_Wall_Door;
+    class USceneComponent* Root;
+    class UBoxComponent* CheckOverlapCollision;
+    float _______RotateDoor_B5B5645F48BC85AE7D1625928A094A77;
+    TEnumAsByte<ETimelineDirection> ________Direction_B5B5645F48BC85AE7D1625928A094A77;
+    class UTimelineComponent* タイムライン;
 
     void SetRotateDoor(class UStaticMeshComponent* Mesh, double RotateAngle);
     void OnUpdateSwitchState(class UPalMapObjectSwitchModule* Module);
@@ -31,6 +31,6 @@ class ABP_EnemyCampObject_Wood_Gate_C : public APalBuildObject
     void CloseDoorAnimation();
     void OnAvailable_BlueprintImpl();
     void ExecuteUbergraph_BP_EnemyCampObject_Wood_Gate(int32 EntryPoint);
-}; // Size: 0x708
+};
 
 #endif

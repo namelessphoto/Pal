@@ -3,30 +3,30 @@
 
 class UWBP_PalItemScrollList_C : public UWBP_PalCommonScrollList_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0440 (size: 0x8)
-    FWBP_PalItemScrollList_COnLeftClickedSlot OnLeftClickedSlot;                      // 0x0448 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    FWBP_PalItemScrollList_COnLeftClickedSlot OnLeftClickedSlot;
     void OnLeftClickedSlot(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
-    FWBP_PalItemScrollList_COnMiddleClickedSlot OnMiddleClickedSlot;                  // 0x0458 (size: 0x10)
+    FWBP_PalItemScrollList_COnMiddleClickedSlot OnMiddleClickedSlot;
     void OnMiddleClickedSlot(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-    FWBP_PalItemScrollList_COnRightClickedSlot OnRightClickedSlot;                    // 0x0468 (size: 0x10)
+    FWBP_PalItemScrollList_COnRightClickedSlot OnRightClickedSlot;
     void OnRightClickedSlot(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
-    FWBP_PalItemScrollList_COnHoveredSlot OnHoveredSlot;                              // 0x0478 (size: 0x10)
+    FWBP_PalItemScrollList_COnHoveredSlot OnHoveredSlot;
     void OnHoveredSlot(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-    FWBP_PalItemScrollList_COnEndHoveredSlot OnEndHoveredSlot;                        // 0x0488 (size: 0x10)
+    FWBP_PalItemScrollList_COnEndHoveredSlot OnEndHoveredSlot;
     void OnEndHoveredSlot(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-    FWBP_PalItemScrollList_COnFocusedSlot OnFocusedSlot;                              // 0x0498 (size: 0x10)
+    FWBP_PalItemScrollList_COnFocusedSlot OnFocusedSlot;
     void OnFocusedSlot(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-    FWBP_PalItemScrollList_COnUnfocusedSlot OnUnfocusedSlot;                          // 0x04A8 (size: 0x10)
+    FWBP_PalItemScrollList_COnUnfocusedSlot OnUnfocusedSlot;
     void OnUnfocusedSlot(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-    TSubclassOf<class UWBP_PalItemListBlock_C> BlockClass;                            // 0x04B8 (size: 0x8)
-    FWBP_PalItemScrollList_COnDragDetectedSlot OnDragDetectedSlot;                    // 0x04C0 (size: 0x10)
+    TSubclassOf<class UWBP_PalItemListBlock_C> BlockClass;
+    FWBP_PalItemScrollList_COnDragDetectedSlot OnDragDetectedSlot;
     void OnDragDetectedSlot(class UWBP_PalItemSlotButtonBase_C* Widget);
-    bool IsDisplayItemInfo;                                                           // 0x04D0 (size: 0x1)
-    bool IsEnableQuickMoveSlot;                                                       // 0x04D1 (size: 0x1)
-    class UWBP_PalItemSlotButtonBase_C* CachedLastHoveredSlotButton;                  // 0x04D8 (size: 0x8)
-    class UWBP_PalItemSlotButtonBase_C* CachedNowHoveringSlotButton;                  // 0x04E0 (size: 0x8)
-    class UPalItemContainer* QuickMoveTargetContainer;                                // 0x04E8 (size: 0x8)
-    FWBP_PalItemScrollList_COnRequestUseItem OnRequestUseItem;                        // 0x04F0 (size: 0x10)
+    bool IsDisplayItemInfo;
+    bool IsEnableQuickMoveSlot;
+    class UWBP_PalItemSlotButtonBase_C* CachedLastHoveredSlotButton;
+    class UWBP_PalItemSlotButtonBase_C* CachedNowHoveringSlotButton;
+    class UPalItemContainer* QuickMoveTargetContainer;
+    FWBP_PalItemScrollList_COnRequestUseItem OnRequestUseItem;
     void OnRequestUseItem(class UWBP_PalItemSlotButtonBase_C* Button);
 
     void CreateBlockByItemSlotArray(TArray<class UPalItemSlot*>& ItemSlotArray, FText DisplayName, bool IgnoreEmptySlot, class UWBP_PalItemListBlock_C*& createdBlock);
@@ -65,6 +65,6 @@ class UWBP_PalItemScrollList_C : public UWBP_PalCommonScrollList_C
     void OnHoveredSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
     void OnRightClickedSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
     void OnLeftClickedSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
-}; // Size: 0x500
+};
 
 #endif

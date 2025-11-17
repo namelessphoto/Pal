@@ -3,23 +3,23 @@
 
 class UWBP_ItemChest_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UWidgetAnimation* Default_In;                                               // 0x0438 (size: 0x8)
-    class UCircularThrobber* CircularThrobber_69;                                     // 0x0440 (size: 0x8)
-    class UOverlay* Overlay_WaitRep;                                                  // 0x0448 (size: 0x8)
-    class UWBP_IngameMenu_Chest_C* WBP_IngameMenu_Chest;                              // 0x0450 (size: 0x8)
-    class UWBP_PalCommonWindow_C* WBP_PalCommonWindow;                                // 0x0458 (size: 0x8)
-    class UBP_PalInventoryModel_C* InventoryModel;                                    // 0x0460 (size: 0x8)
-    FPalDataTableRowName_UIInputAction LeftFocusInput;                                // 0x0468 (size: 0x8)
-    FPalDataTableRowName_UIInputAction RightFocusInput;                               // 0x0470 (size: 0x8)
-    FPalDataTableRowName_UIInputAction FastGetInput;                                  // 0x0478 (size: 0x8)
-    class UPalItemSlot* CachedLastFocusedInventorySlot;                               // 0x0480 (size: 0x8)
-    class UPalItemSlot* CachedLastFocusedTargetContainerSlot;                         // 0x0488 (size: 0x8)
-    FPalDataTableRowName_UIInputAction AllGetInput;                                   // 0x0490 (size: 0x8)
-    TArray<EPalPlayerInventoryType> DisplayInventoryType;                             // 0x0498 (size: 0x10)
-    FPalDataTableRowName_UIInputAction RefillInput;                                   // 0x04A8 (size: 0x8)
-    FPalContainerId TargetContainerId;                                                // 0x04B0 (size: 0x10)
-    FPalDataTableRowName_UIInputAction SortInput;                                     // 0x04C0 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Default_In;
+    class UCircularThrobber* CircularThrobber_69;
+    class UOverlay* Overlay_WaitRep;
+    class UWBP_IngameMenu_Chest_C* WBP_IngameMenu_Chest;
+    class UWBP_PalCommonWindow_C* WBP_PalCommonWindow;
+    class UBP_PalInventoryModel_C* InventoryModel;
+    FPalDataTableRowName_UIInputAction LeftFocusInput;
+    FPalDataTableRowName_UIInputAction RightFocusInput;
+    FPalDataTableRowName_UIInputAction FastGetInput;
+    class UPalItemSlot* CachedLastFocusedInventorySlot;
+    class UPalItemSlot* CachedLastFocusedTargetContainerSlot;
+    FPalDataTableRowName_UIInputAction AllGetInput;
+    TArray<EPalPlayerInventoryType> DisplayInventoryType;
+    FPalDataTableRowName_UIInputAction RefillInput;
+    FPalContainerId TargetContainerId;
+    FPalDataTableRowName_UIInputAction SortInput;
 
     void RequestStopReplication();
     void RequestStartReplication();
@@ -46,6 +46,6 @@ class UWBP_ItemChest_C : public UPalUserWidgetOverlayUI
     void OnReadyItemContainer(TScriptInterface<class IPalMapObjectItemContainerAccessInterface> AccessInterface);
     void Destruct();
     void ExecuteUbergraph_WBP_ItemChest(int32 EntryPoint);
-}; // Size: 0x4C8
+};
 
 #endif

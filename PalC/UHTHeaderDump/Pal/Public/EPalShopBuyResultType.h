@@ -1,0 +1,25 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "EPalShopBuyResultType.generated.h"
+
+UENUM()
+    Successed,
+    Failed_InvalidBuyNum,
+    Failed_NotEnoughStock,
+    Failed_NotEnoughMoney,
+    Failed_NotEnoughItemSlot,
+    Failed_NotEnoughCharacterSlot,
+    Failed_ExistReservedProcess,
+    Failed_NotFoundItemContainer,
+    Failed_NotFoundPlayerInventoryData,
+    Failed_NotFoundPlayerMoneyData,
+    Failed_NotFoundProduct,
+    Failed_NotFoundShop,
+    Failed_NotFoundStoredPal,
+    Failed_NotFoundProductGiver,
+    Failed_NotFoundCostTaker,
+    Failed_NotSupportedCost,
+    Failed_AlreadyHasItem,
+    Unknown,
+};
+

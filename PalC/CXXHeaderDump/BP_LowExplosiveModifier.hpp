@@ -3,6 +3,6 @@
 
 class UBP_LowExplosiveModifier_C : public UBP_ExplosiveModifierBase_C
 {
-}; // Size: 0xB8
+};
 
 #endif

@@ -3,6 +3,6 @@
 
 class UBP_AICombatModule_NPCOtomoOilrig_C : public UPalAICombatModule_NPCOtomoOilrig
 {
-}; // Size: 0x58
+};
 
 #endif

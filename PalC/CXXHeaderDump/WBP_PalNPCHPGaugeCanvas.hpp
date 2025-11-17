@@ -3,29 +3,29 @@
 
 class UWBP_PalNPCHPGaugeCanvas_C : public UPalUINPCHPGaugeCanvasBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UWidgetAnimation* Default_In;                                               // 0x0410 (size: 0x8)
-    class UCanvasPanel* Canvas_Root;                                                  // 0x0418 (size: 0x8)
-    class UWrapBox* WrapBox;                                                          // 0x0420 (size: 0x8)
-    TMap<class APalCharacter*, class UWBP_PalNPCHPGauge_C*> DisplayedPalGaugeMap;     // 0x0428 (size: 0x50)
-    TMap<class APalCharacter*, class UPalUICharacterHPGaugeBase*> DisplayedBossUGaugeMap; // 0x0478 (size: 0x50)
-    TMap<class APalCharacter*, class UWBP_PlayerHPGauge_C*> DisplayedPlayerGaugeMap;  // 0x04C8 (size: 0x50)
-    double DisplayGaugeDistance;                                                      // 0x0518 (size: 0x8)
-    double HideTimer;                                                                 // 0x0520 (size: 0x8)
-    double HideTime;                                                                  // 0x0528 (size: 0x8)
-    double DisplayGaugeRange_Sight;                                                   // 0x0530 (size: 0x8)
-    bool IsOverHideTime;                                                              // 0x0538 (size: 0x1)
-    bool IsConflicted;                                                                // 0x0539 (size: 0x1)
-    TArray<class UBP_UIIndividualParameterInitializeWaiter_C*> InitializeWaiters;     // 0x0540 (size: 0x10)
-    FTimerHandle UpdateTimerHandle;                                                   // 0x0550 (size: 0x8)
-    TArray<class UWidget*> DelayCloseGauges;                                          // 0x0558 (size: 0x10)
-    float DisplayGaugeDistance_SameGuildPlayer;                                       // 0x0568 (size: 0x4)
-    bool CachedEnableTalentCheck;                                                     // 0x056C (size: 0x1)
-    float OtherOtomoPVPDisplayDistance_Sight;                                         // 0x0570 (size: 0x4)
-    float OtherOtomoPVPDisplayDistance;                                               // 0x0574 (size: 0x4)
-    double GaugeInSightDistance;                                                      // 0x0578 (size: 0x8)
-    bool IsPvPMode;                                                                   // 0x0580 (size: 0x1)
-    int32 LastVisibleBossGaugeCount;                                                  // 0x0584 (size: 0x4)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Default_In;
+    class UCanvasPanel* Canvas_Root;
+    class UWrapBox* WrapBox;
+    TMap<class APalCharacter*, class UWBP_PalNPCHPGauge_C*> DisplayedPalGaugeMap;
+    TMap<class APalCharacter*, class UPalUICharacterHPGaugeBase*> DisplayedBossUGaugeMap;
+    TMap<class APalCharacter*, class UWBP_PlayerHPGauge_C*> DisplayedPlayerGaugeMap;
+    double DisplayGaugeDistance;
+    double HideTimer;
+    double HideTime;
+    double DisplayGaugeRange_Sight;
+    bool IsOverHideTime;
+    bool IsConflicted;
+    TArray<class UBP_UIIndividualParameterInitializeWaiter_C*> InitializeWaiters;
+    FTimerHandle UpdateTimerHandle;
+    TArray<class UWidget*> DelayCloseGauges;
+    float DisplayGaugeDistance_SameGuildPlayer;
+    bool CachedEnableTalentCheck;
+    float OtherOtomoPVPDisplayDistance_Sight;
+    float OtherOtomoPVPDisplayDistance;
+    double GaugeInSightDistance;
+    bool IsPvPMode;
+    int32 LastVisibleBossGaugeCount;
 
     void CREATEDELEGATE_PROXYFUNCTION_0(const FPalDamageInfo& DamageInfo, class AActor* Defender);
     void Get Sight Display Require Distance(class APalCharacter* TargetCharacter, double& Distance);
@@ -66,6 +66,6 @@ class UWBP_PalNPCHPGaugeCanvas_C : public UPalUINPCHPGaugeCanvasBase
     void Tick(FGeometry MyGeometry, float InDeltaTime);
     void Destruct();
     void ExecuteUbergraph_WBP_PalNPCHPGaugeCanvas(int32 EntryPoint);
-}; // Size: 0x588
+};
 
 #endif

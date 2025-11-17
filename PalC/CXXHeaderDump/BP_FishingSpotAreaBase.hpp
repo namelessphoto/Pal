@@ -3,23 +3,23 @@
 
 class ABP_FishingSpotAreaBase_C : public APalFishingSpotArea
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x03C0 (size: 0x8)
-    class UBoxComponent* SpawnLocation_9;                                             // 0x03C8 (size: 0x8)
-    class UBoxComponent* SpawnLocation_8;                                             // 0x03D0 (size: 0x8)
-    class UBoxComponent* SpawnLocation_7;                                             // 0x03D8 (size: 0x8)
-    class UBoxComponent* SpawnLocation_6;                                             // 0x03E0 (size: 0x8)
-    class UChildActorComponent* Spawner;                                              // 0x03E8 (size: 0x8)
-    class UBoxComponent* FishingSpotAttackBlock;                                      // 0x03F0 (size: 0x8)
-    class UStaticMeshComponent* LocationBenchmark;                                    // 0x03F8 (size: 0x8)
-    class UBoxComponent* SpawnLocation_5;                                             // 0x0400 (size: 0x8)
-    class UBoxComponent* SpawnLocation_4;                                             // 0x0408 (size: 0x8)
-    class UBoxComponent* SpawnLocation_3;                                             // 0x0410 (size: 0x8)
-    class UBoxComponent* SpawnLocation_2;                                             // 0x0418 (size: 0x8)
-    class UBoxComponent* SpawnLocation_1;                                             // 0x0420 (size: 0x8)
-    class UBoxComponent* SpotAreaVolume;                                              // 0x0428 (size: 0x8)
-    class UStaticMeshComponent* DebugMesh;                                            // 0x0430 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x0438 (size: 0x8)
-    TEnumAsByte<ECollisionEnabled> AttackBlockCollisionType;                          // 0x0440 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UBoxComponent* SpawnLocation_9;
+    class UBoxComponent* SpawnLocation_8;
+    class UBoxComponent* SpawnLocation_7;
+    class UBoxComponent* SpawnLocation_6;
+    class UChildActorComponent* Spawner;
+    class UBoxComponent* FishingSpotAttackBlock;
+    class UStaticMeshComponent* LocationBenchmark;
+    class UBoxComponent* SpawnLocation_5;
+    class UBoxComponent* SpawnLocation_4;
+    class UBoxComponent* SpawnLocation_3;
+    class UBoxComponent* SpawnLocation_2;
+    class UBoxComponent* SpawnLocation_1;
+    class UBoxComponent* SpotAreaVolume;
+    class UStaticMeshComponent* DebugMesh;
+    class USceneComponent* DefaultSceneRoot;
+    TEnumAsByte<ECollisionEnabled> AttackBlockCollisionType;
 
     void AdjustActorToWater();
     void ReceiveBeginPlay();
@@ -27,6 +27,6 @@ class ABP_FishingSpotAreaBase_C : public APalFishingSpotArea
     void OnSpawnFish();
     void OnEmptySpot();
     void ExecuteUbergraph_BP_FishingSpotAreaBase(int32 EntryPoint);
-}; // Size: 0x441
+};
 
 #endif

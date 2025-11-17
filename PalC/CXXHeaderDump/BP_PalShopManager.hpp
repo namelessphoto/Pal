@@ -3,6 +3,6 @@
 
 class UBP_PalShopManager_C : public UPalShopManager
 {
-}; // Size: 0x1B0
+};
 
 #endif

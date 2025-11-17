@@ -3,35 +3,35 @@
 
 class UWBP_IngameMenu_Chest_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UCanvasPanel* Canvas_TargetContainer;                                       // 0x0280 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_TargetContainerName;                               // 0x0288 (size: 0x8)
-    class UWBP_Common_Inventory_C* WBP_Common_Inventory;                              // 0x0290 (size: 0x8)
-    class UWBP_InventoryEquipment_InvisibleActionButton_C* WBP_InventoryEquipment_ChestBack; // 0x0298 (size: 0x8)
-    class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x02A0 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_QuickMove;                // 0x02A8 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Sort_TargetContainer;     // 0x02B0 (size: 0x8)
-    class UWBP_PalItemScrollList_C* WBP_PalItemScrollList;                            // 0x02B8 (size: 0x8)
-    class UBP_PalInventoryModel_C* Model;                                             // 0x02C0 (size: 0x8)
-    FWBP_IngameMenu_Chest_COnClickedInventorySortButton OnClickedInventorySortButton; // 0x02C8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCanvasPanel* Canvas_TargetContainer;
+    class UBP_PalTextBlock_C* Text_TargetContainerName;
+    class UWBP_Common_Inventory_C* WBP_Common_Inventory;
+    class UWBP_InventoryEquipment_InvisibleActionButton_C* WBP_InventoryEquipment_ChestBack;
+    class UWBP_Menu_btn_C* WBP_Menu_btn;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_QuickMove;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Sort_TargetContainer;
+    class UWBP_PalItemScrollList_C* WBP_PalItemScrollList;
+    class UBP_PalInventoryModel_C* Model;
+    FWBP_IngameMenu_Chest_COnClickedInventorySortButton OnClickedInventorySortButton;
     void OnClickedInventorySortButton();
-    FWBP_IngameMenu_Chest_COnClickedQuickMoveButton OnClickedQuickMoveButton;         // 0x02D8 (size: 0x10)
+    FWBP_IngameMenu_Chest_COnClickedQuickMoveButton OnClickedQuickMoveButton;
     void OnClickedQuickMoveButton();
-    FWBP_IngameMenu_Chest_COnClickedTargetContainerSortButton OnClickedTargetContainerSortButton; // 0x02E8 (size: 0x10)
+    FWBP_IngameMenu_Chest_COnClickedTargetContainerSortButton OnClickedTargetContainerSortButton;
     void OnClickedTargetContainerSortButton();
-    FWBP_IngameMenu_Chest_COnHoveredInventorySlot OnHoveredInventorySlot;             // 0x02F8 (size: 0x10)
+    FWBP_IngameMenu_Chest_COnHoveredInventorySlot OnHoveredInventorySlot;
     void OnHoveredInventorySlot(class UWBP_PalItemSlotButtonBase_C* SlotButton);
-    FWBP_IngameMenu_Chest_COnUnhoveredInventorySlot OnUnhoveredInventorySlot;         // 0x0308 (size: 0x10)
+    FWBP_IngameMenu_Chest_COnUnhoveredInventorySlot OnUnhoveredInventorySlot;
     void OnUnhoveredInventorySlot();
-    FWBP_IngameMenu_Chest_COnHoveredTargetContainerSlot OnHoveredTargetContainerSlot; // 0x0318 (size: 0x10)
+    FWBP_IngameMenu_Chest_COnHoveredTargetContainerSlot OnHoveredTargetContainerSlot;
     void OnHoveredTargetContainerSlot(class UWBP_PalItemSlotButtonBase_C* SlotButton);
-    FWBP_IngameMenu_Chest_COnUnhoveredTargetContainerSlot OnUnhoveredTargetContainerSlot; // 0x0328 (size: 0x10)
+    FWBP_IngameMenu_Chest_COnUnhoveredTargetContainerSlot OnUnhoveredTargetContainerSlot;
     void OnUnhoveredTargetContainerSlot();
-    FWBP_IngameMenu_Chest_COnClickedCloseButton OnClickedCloseButton;                 // 0x0338 (size: 0x10)
+    FWBP_IngameMenu_Chest_COnClickedCloseButton OnClickedCloseButton;
     void OnClickedCloseButton();
-    FWBP_IngameMenu_Chest_COnClickedPreferenceButton OnClickedPreferenceButton;       // 0x0348 (size: 0x10)
+    FWBP_IngameMenu_Chest_COnClickedPreferenceButton OnClickedPreferenceButton;
     void OnClickedPreferenceButton();
-    FWBP_IngameMenu_Chest_COnChestBackClicked OnChestBackClicked;                     // 0x0358 (size: 0x10)
+    FWBP_IngameMenu_Chest_COnChestBackClicked OnChestBackClicked;
     void OnChestBackClicked();
 
     class UWidget* CustomNavi_ToPreferenceOrCloseButton(EUINavigation Navigation);
@@ -67,6 +67,6 @@ class UWBP_IngameMenu_Chest_C : public UUserWidget
     void OnClickedTargetContainerSortButton__DelegateSignature();
     void OnClickedQuickMoveButton__DelegateSignature();
     void OnClickedInventorySortButton__DelegateSignature();
-}; // Size: 0x368
+};
 
 #endif

@@ -3,8 +3,8 @@
 
 class UWBP_Map_IconDeath_C : public UWBP_WorldMap_IconBase_NoDesign_C
 {
-    class UImage* Icon;                                                               // 0x0458 (size: 0x8)
+    class UImage* Icon;
 
-}; // Size: 0x460
+};
 
 #endif

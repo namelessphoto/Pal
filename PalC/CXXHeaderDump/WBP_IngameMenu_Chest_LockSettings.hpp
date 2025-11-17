@@ -3,16 +3,16 @@
 
 class UWBP_IngameMenu_Chest_LockSettings_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* ButtonPrivateLockToggle;                         // 0x0438 (size: 0x8)
-    class UCheckBox* CheckBox_80;                                                     // 0x0440 (size: 0x8)
-    class UCheckBox* CheckBoxPrivateLock;                                             // 0x0448 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_PrivateLock;                                  // 0x0450 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton;                                      // 0x0458 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton_1;                                    // 0x0460 (size: 0x8)
-    class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x0468 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x0470 (size: 0x8)
-    class UPalMapObjectPasswordLockModule* PasswordLockModule;                        // 0x0478 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWBP_PalInvisibleButton_C* ButtonPrivateLockToggle;
+    class UCheckBox* CheckBox_80;
+    class UCheckBox* CheckBoxPrivateLock;
+    class UHorizontalBox* HorizontalBox_PrivateLock;
+    class UWBP_CommonButton_C* WBP_CommonButton;
+    class UWBP_CommonButton_C* WBP_CommonButton_1;
+    class UWBP_Menu_btn_C* WBP_Menu_btn;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    class UPalMapObjectPasswordLockModule* PasswordLockModule;
 
     class UWidget* CustomNavigation_ToCloseButton(EUINavigation Navigation);
     void OnUpdateItemChestPrivateLock(class UPalMapObjectItemChestModel* ConcreteModel);
@@ -26,6 +26,6 @@ class UWBP_IngameMenu_Chest_LockSettings_C : public UPalUserWidgetOverlayUI
     void BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
     void BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_1_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
     void ExecuteUbergraph_WBP_IngameMenu_Chest_LockSettings(int32 EntryPoint);
-}; // Size: 0x480
+};
 
 #endif

@@ -3,10 +3,10 @@
 
 class UWBP_WorkerSimpleDetail_C : public UPalUIWorkerSimpleDetailCanvas
 {
-    class UWBP_PalWorkerInfo_C* WBP_PalWorkerInfo;                                    // 0x0408 (size: 0x8)
+    class UWBP_PalWorkerInfo_C* WBP_PalWorkerInfo;
 
     void CloseSetup();
     void OpenSetup(class UPalIndividualCharacterHandle* targetHandle);
-}; // Size: 0x410
+};
 
 #endif

@@ -3,10 +3,10 @@
 
 class USteamSocketsNetConnection : public UNetConnection
 {
-}; // Size: 0x3320
+};
 
 class USteamSocketsNetDriver : public UNetDriver
 {
-}; // Size: 0x7A0
+};
 
 #endif

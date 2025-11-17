@@ -3,19 +3,19 @@
 
 class ABP_MapObject_SupplyDrop_C : public APalMapObject
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x03F8 (size: 0x8)
-    class UStaticMeshComponent* StaticMesh7;                                          // 0x0400 (size: 0x8)
-    class UStaticMeshComponent* StaticMesh8;                                          // 0x0408 (size: 0x8)
-    class UNiagaraComponent* NS_MapObject_DroppedCharacter;                           // 0x0410 (size: 0x8)
-    class UPalMapObjectItemChestParameterComponent* PalMapObjectItemChestParameter;   // 0x0418 (size: 0x8)
-    class UBoxComponent* CheckOverlapCollision;                                       // 0x0420 (size: 0x8)
-    class UBP_InteractableBox_C* BP_InteractableBox;                                  // 0x0428 (size: 0x8)
-    class UStaticMeshComponent* Mesh;                                                 // 0x0430 (size: 0x8)
-    class USceneComponent* Root;                                                      // 0x0438 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UStaticMeshComponent* StaticMesh7;
+    class UStaticMeshComponent* StaticMesh8;
+    class UNiagaraComponent* NS_MapObject_DroppedCharacter;
+    class UPalMapObjectItemChestParameterComponent* PalMapObjectItemChestParameter;
+    class UBoxComponent* CheckOverlapCollision;
+    class UBP_InteractableBox_C* BP_InteractableBox;
+    class UStaticMeshComponent* Mesh;
+    class USceneComponent* Root;
 
     void SetActiveFXInLocal(class UPalMapObjectConcreteModelBase* ConcreteModel);
     void BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel);
     void ExecuteUbergraph_BP_MapObject_SupplyDrop(int32 EntryPoint);
-}; // Size: 0x440
+};
 
 #endif

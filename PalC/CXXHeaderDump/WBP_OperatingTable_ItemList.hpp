@@ -3,19 +3,19 @@
 
 class UWBP_OperatingTable_ItemList_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_NormalToFocus;                                        // 0x0280 (size: 0x8)
-    class UBP_PalRichTextBlock_C* BP_PalRichTextBlock_Info;                           // 0x0288 (size: 0x8)
-    class UImage* Image_NoItem;                                                       // 0x0290 (size: 0x8)
-    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive;          // 0x0298 (size: 0x8)
-    class UWBP_PalInGameMenuItemIcon_C* WBP_PalInGameMenuItemIcon;                    // 0x02A0 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x02A8 (size: 0x8)
-    FWBP_OperatingTable_ItemList_COnSelectItem OnSelectItem;                          // 0x02B0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_NormalToFocus;
+    class UBP_PalRichTextBlock_C* BP_PalRichTextBlock_Info;
+    class UImage* Image_NoItem;
+    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive;
+    class UWBP_PalInGameMenuItemIcon_C* WBP_PalInGameMenuItemIcon;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    FWBP_OperatingTable_ItemList_COnSelectItem OnSelectItem;
     void OnSelectItem(FName PassiveId);
-    FName PassiveId;                                                                  // 0x02C0 (size: 0x8)
-    FWBP_OperatingTable_ItemList_COnHovered OnHovered;                                // 0x02C8 (size: 0x10)
+    FName PassiveId;
+    FWBP_OperatingTable_ItemList_COnHovered OnHovered;
     void OnHovered(class UWBP_OperatingTable_ItemList_C* SelfWidget);
-    FWBP_OperatingTable_ItemList_COnUnhovered OnUnhovered;                            // 0x02D8 (size: 0x10)
+    FWBP_OperatingTable_ItemList_COnUnhovered OnUnhovered;
     void OnUnhovered();
 
     void Setup(FName PassiveId, bool& IsValid);
@@ -26,6 +26,6 @@ class UWBP_OperatingTable_ItemList_C : public UUserWidget
     void OnUnhovered__DelegateSignature();
     void OnHovered__DelegateSignature(class UWBP_OperatingTable_ItemList_C* SelfWidget);
     void OnSelectItem__DelegateSignature(FName PassiveId);
-}; // Size: 0x2E8
+};
 
 #endif

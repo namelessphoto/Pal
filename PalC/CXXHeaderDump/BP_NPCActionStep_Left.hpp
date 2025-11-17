@@ -3,6 +3,6 @@
 
 class UBP_NPCActionStep_Left_C : public UBP_NPCActionStepBase_C
 {
-}; // Size: 0x1C9
+};
 
 #endif

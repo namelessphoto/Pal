@@ -3,9 +3,9 @@
 
 class ABP_MonsterAIController_YakushimaBoss002_Hand_C : public ABP_MonsterAIController_RaidBoss_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0590 (size: 0x8)
-    class ABP_MonsterAIController_YakushimaBoss002_C* ParentController;               // 0x0598 (size: 0x8)
-    bool bIsLeftHand;                                                                 // 0x05A0 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class ABP_MonsterAIController_YakushimaBoss002_C* ParentController;
+    bool bIsLeftHand;
 
     void GetTargetCampID(FGuid& CampID);
     void IsLeftHand(bool& IsLeftHand);
@@ -13,6 +13,6 @@ class ABP_MonsterAIController_YakushimaBoss002_Hand_C : public ABP_MonsterAICont
     void SetParentController(class ABP_MonsterAIController_YakushimaBoss002_C* ParentController);
     void SetHandSide(bool IsLeftHand);
     void ExecuteUbergraph_BP_MonsterAIController_YakushimaBoss002_Hand(int32 EntryPoint);
-}; // Size: 0x5A1
+};
 
 #endif

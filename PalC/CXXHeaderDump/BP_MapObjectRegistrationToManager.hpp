@@ -3,8 +3,8 @@
 
 class ABP_MapObjectRegistrationToManager_C : public APalTestMapObjectRegistrationToManager
 {
-    class USceneComponent* DefaultSceneRoot;                                          // 0x0298 (size: 0x8)
+    class USceneComponent* DefaultSceneRoot;
 
-}; // Size: 0x2A0
+};
 
 #endif

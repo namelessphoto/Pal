@@ -3,6 +3,6 @@
 
 class UBP_TutorialManager_C : public UPalTutorialManager
 {
-}; // Size: 0x100
+};
 
 #endif

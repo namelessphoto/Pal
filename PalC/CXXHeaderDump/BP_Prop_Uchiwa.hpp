@@ -3,8 +3,8 @@
 
 class ABP_Prop_Uchiwa_C : public ABP_Prop_Base_C
 {
-    class USkeletalMeshComponent* SkeletalMesh;                                       // 0x02D8 (size: 0x8)
+    class USkeletalMeshComponent* SkeletalMesh;
 
-}; // Size: 0x2E0
+};
 
 #endif

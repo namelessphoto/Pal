@@ -3,40 +3,40 @@
 
 class UWBP_PlayerRadialMenu_C : public UPalUIPlayerRadialMenuBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UWidgetAnimation* Default_In;                                               // 0x0410 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_0;                                                // 0x0418 (size: 0x8)
-    class UWBP_CommonRadialMenuBase_C* WBP_CommonRadialMenuBase;                      // 0x0420 (size: 0x8)
-    bool isAnyRadialMenuOpened;                                                       // 0x0428 (size: 0x1)
-    FName cameraModifierName;                                                         // 0x042C (size: 0x8)
-    TEnumAsByte<EPlayerRadialMenuOpenType> OpenedRadialType;                          // 0x0434 (size: 0x1)
-    int32 OtomoIndex;                                                                 // 0x0438 (size: 0x4)
-    FPalDataTableRowName_UIInputAction DecideMenuAction;                              // 0x043C (size: 0x8)
-    FPalUIActionBindData Action Handle;                                               // 0x0444 (size: 0x4)
-    FDataTableRowHandle FeedMsgID;                                                    // 0x0448 (size: 0x10)
-    FDataTableRowHandle FeedWithNameMsgID;                                            // 0x0458 (size: 0x10)
-    FDataTableRowHandle CareMsgID;                                                    // 0x0468 (size: 0x10)
-    FDataTableRowHandle CareWithNameMsgID;                                            // 0x0478 (size: 0x10)
-    FDataTableRowHandle EmoteTitleMsgID;                                              // 0x0488 (size: 0x10)
-    class UWBP_IngameMenuConstruction_Radial_C* ConstructionMenu;                     // 0x0498 (size: 0x8)
-    FName InteractDIsableFlagName;                                                    // 0x04A0 (size: 0x8)
-    FDataTableRowHandle InstructionAttackMsgID;                                       // 0x04A8 (size: 0x10)
-    FDataTableRowHandle InstructionAssistMsgID;                                       // 0x04B8 (size: 0x10)
-    FDataTableRowHandle InstructionEscapetMsgID;                                      // 0x04C8 (size: 0x10)
-    FDataTableRowHandle EmoteMsgID_0;                                                 // 0x04D8 (size: 0x10)
-    FDataTableRowHandle EmoteMsgID_1;                                                 // 0x04E8 (size: 0x10)
-    FDataTableRowHandle EmoteMsgID_2;                                                 // 0x04F8 (size: 0x10)
-    FDataTableRowHandle EmoteMsgID_3;                                                 // 0x0508 (size: 0x10)
-    FDataTableRowHandle EmoteMsgID_4;                                                 // 0x0518 (size: 0x10)
-    FDataTableRowHandle EmoteMsgID_5;                                                 // 0x0528 (size: 0x10)
-    FDataTableRowHandle EmoteMsgID_6;                                                 // 0x0538 (size: 0x10)
-    FDataTableRowHandle EmoteMsgID_7;                                                 // 0x0548 (size: 0x10)
-    FDataTableRowHandle EmoteMsgID_8;                                                 // 0x0558 (size: 0x10)
-    FDataTableRowHandle SlaughterMsgID;                                               // 0x0568 (size: 0x10)
-    FWBP_PlayerRadialMenu_COnRequestOpenChat OnRequestOpenChat;                       // 0x0578 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Default_In;
+    class UCanvasPanel* CanvasPanel_0;
+    class UWBP_CommonRadialMenuBase_C* WBP_CommonRadialMenuBase;
+    bool isAnyRadialMenuOpened;
+    FName cameraModifierName;
+    TEnumAsByte<EPlayerRadialMenuOpenType> OpenedRadialType;
+    int32 OtomoIndex;
+    FPalDataTableRowName_UIInputAction DecideMenuAction;
+    FPalUIActionBindData Action Handle;
+    FDataTableRowHandle FeedMsgID;
+    FDataTableRowHandle FeedWithNameMsgID;
+    FDataTableRowHandle CareMsgID;
+    FDataTableRowHandle CareWithNameMsgID;
+    FDataTableRowHandle EmoteTitleMsgID;
+    class UWBP_IngameMenuConstruction_Radial_C* ConstructionMenu;
+    FName InteractDIsableFlagName;
+    FDataTableRowHandle InstructionAttackMsgID;
+    FDataTableRowHandle InstructionAssistMsgID;
+    FDataTableRowHandle InstructionEscapetMsgID;
+    FDataTableRowHandle EmoteMsgID_0;
+    FDataTableRowHandle EmoteMsgID_1;
+    FDataTableRowHandle EmoteMsgID_2;
+    FDataTableRowHandle EmoteMsgID_3;
+    FDataTableRowHandle EmoteMsgID_4;
+    FDataTableRowHandle EmoteMsgID_5;
+    FDataTableRowHandle EmoteMsgID_6;
+    FDataTableRowHandle EmoteMsgID_7;
+    FDataTableRowHandle EmoteMsgID_8;
+    FDataTableRowHandle SlaughterMsgID;
+    FWBP_PlayerRadialMenu_COnRequestOpenChat OnRequestOpenChat;
     void OnRequestOpenChat();
-    FDataTableRowHandle OpenChatMsgID;                                                // 0x0588 (size: 0x10)
-    TArray<FName> RadialIgnoreTribeList;                                              // 0x0598 (size: 0x10)
+    FDataTableRowHandle OpenChatMsgID;
+    TArray<FName> RadialIgnoreTribeList;
 
     void ShouldDisplayOpenChatPanel(bool& bShouldDisplay);
     void IsPlayerDying(bool& IsDying);
@@ -75,6 +75,6 @@ class UWBP_PlayerRadialMenu_C : public UPalUIPlayerRadialMenuBase
     void SetupEvent();
     void ExecuteUbergraph_WBP_PlayerRadialMenu(int32 EntryPoint);
     void OnRequestOpenChat__DelegateSignature();
-}; // Size: 0x5A8
+};
 
 #endif

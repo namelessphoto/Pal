@@ -3,10 +3,10 @@
 
 class ABP_MonsterAIController_Invader_C : public ABP_MonsterAIControllerBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0560 (size: 0x8)
-    class UPalAISensorComponent* PalAISensor;                                         // 0x0568 (size: 0x8)
-    FVector TargetBaseCampPosition;                                                   // 0x0570 (size: 0x18)
-    FBP_MonsterAIController_Invader_COnInvaderArrivedDelegate OnInvaderArrivedDelegate; // 0x0588 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalAISensorComponent* PalAISensor;
+    FVector TargetBaseCampPosition;
+    FBP_MonsterAIController_Invader_COnInvaderArrivedDelegate OnInvaderArrivedDelegate;
     void OnInvaderArrivedDelegate();
 
     void GetMyBB(class UBP_PalAIBlackboard_Common_C*& PalBrackboard);
@@ -21,6 +21,6 @@ class ABP_MonsterAIController_Invader_C : public ABP_MonsterAIControllerBase_C
     void BindOnInvaderArrivedDelegate(FBindOnInvaderArrivedDelegateEvent Event);
     void ExecuteUbergraph_BP_MonsterAIController_Invader(int32 EntryPoint);
     void OnInvaderArrivedDelegate__DelegateSignature();
-}; // Size: 0x598
+};
 
 #endif

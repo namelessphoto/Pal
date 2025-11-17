@@ -5,6 +5,6 @@ class ABP_OverHeatRifleBullet_C : public ABP_NormalBullet_C
 {
 
     void GetHitEffect(class UNiagaraSystem*& NiagaraEffect);
-}; // Size: 0x420
+};
 
 #endif

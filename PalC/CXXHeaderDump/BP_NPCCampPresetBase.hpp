@@ -3,14 +3,14 @@
 
 class ABP_NPCCampPresetBase_C : public AActor
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0290 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x0298 (size: 0x8)
-    FBP_NPCCampPresetBase_COnSpawnedCharacter OnSpawnedCharacter;                     // 0x02A0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class USceneComponent* DefaultSceneRoot;
+    FBP_NPCCampPresetBase_COnSpawnedCharacter OnSpawnedCharacter;
     void OnSpawnedCharacter(class UPalIndividualCharacterHandle* NewParam);
-    bool IsAllEnemyDead;                                                              // 0x02B0 (size: 0x1)
-    class APalNPCCampSpawnerBase* OwnerCampSpawner;                                   // 0x02B8 (size: 0x8)
-    bool Debug_DisableRayAdjust;                                                      // 0x02C0 (size: 0x1)
-    FBP_NPCCampPresetBase_COnOpenMainTreasureBox OnOpenMainTreasureBox;               // 0x02C8 (size: 0x10)
+    bool IsAllEnemyDead;
+    class APalNPCCampSpawnerBase* OwnerCampSpawner;
+    bool Debug_DisableRayAdjust;
+    FBP_NPCCampPresetBase_COnOpenMainTreasureBox OnOpenMainTreasureBox;
     void OnOpenMainTreasureBox();
 
     void ResetCampForAntiAirCamp();
@@ -26,6 +26,6 @@ class ABP_NPCCampPresetBase_C : public AActor
     void ExecuteUbergraph_BP_NPCCampPresetBase(int32 EntryPoint);
     void OnOpenMainTreasureBox__DelegateSignature();
     void OnSpawnedCharacter__DelegateSignature(class UPalIndividualCharacterHandle* NewParam);
-}; // Size: 0x2D8
+};
 
 #endif

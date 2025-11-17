@@ -3,12 +3,12 @@
 
 class UWBP_BattleEntry_MemberList_C : public UWBP_IndividualParameterBindWidget_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0608 (size: 0x8)
-    class UWidgetAnimation* Listup;                                                   // 0x0610 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PlayerName;                                          // 0x0618 (size: 0x8)
-    class UImage* Image_HostIcon;                                                     // 0x0620 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_LvNum;                                             // 0x0628 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_LvTitle;                                           // 0x0630 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Listup;
+    class UBP_PalTextBlock_C* BP_PlayerName;
+    class UImage* Image_HostIcon;
+    class UBP_PalTextBlock_C* Text_LvNum;
+    class UBP_PalTextBlock_C* Text_LvTitle;
 
     void OnUpdateLevel_Binded(int32 NewLevel);
     void UpdatePlayerName();
@@ -18,6 +18,6 @@ class UWBP_BattleEntry_MemberList_C : public UWBP_IndividualParameterBindWidget_
     void SetValidation(bool IsValid);
     void OnInitialized();
     void ExecuteUbergraph_WBP_BattleEntry_MemberList(int32 EntryPoint);
-}; // Size: 0x638
+};
 
 #endif

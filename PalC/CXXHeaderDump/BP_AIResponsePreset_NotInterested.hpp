@@ -3,6 +3,6 @@
 
 class UBP_AIResponsePreset_NotInterested_C : public UPalAIResponsePreset
 {
-}; // Size: 0x30
+};
 
 #endif

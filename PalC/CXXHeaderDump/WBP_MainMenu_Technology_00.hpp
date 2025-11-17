@@ -3,34 +3,34 @@
 
 class UWBP_MainMenu_Technology_00_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UCommonListView* CommonListView;                                            // 0x0280 (size: 0x8)
-    class UImage* FrameFlare;                                                         // 0x0288 (size: 0x8)
-    class UCanvasPanel* HorizontalBox_SearchName;                                     // 0x0290 (size: 0x8)
-    class UPalEditableTextBox* PalEditableTextBox_Search;                             // 0x0298 (size: 0x8)
-    class UWBP_CommonButton_1_C* WBP_CommonButton_Filter;                             // 0x02A0 (size: 0x8)
-    class UWBP_MainMenu_Technology_Point_C* WBP_MainMenu_Technology_Point;            // 0x02A8 (size: 0x8)
-    class UWBP_MainMenu_Technology_Point_C* WBP_MainMenu_Technology_Point_Boss;       // 0x02B0 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_SerchName;                // 0x02B8 (size: 0x8)
-    TMap<int32, FF_PalUITechnologyDataMapContent> TechnologyMap;                      // 0x02C0 (size: 0x50)
-    FWBP_MainMenu_Technology_00_COnClickedTchnology OnClickedTchnology;               // 0x0310 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCommonListView* CommonListView;
+    class UImage* FrameFlare;
+    class UCanvasPanel* HorizontalBox_SearchName;
+    class UPalEditableTextBox* PalEditableTextBox_Search;
+    class UWBP_CommonButton_1_C* WBP_CommonButton_Filter;
+    class UWBP_MainMenu_Technology_Point_C* WBP_MainMenu_Technology_Point;
+    class UWBP_MainMenu_Technology_Point_C* WBP_MainMenu_Technology_Point_Boss;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_SerchName;
+    TMap<int32, FF_PalUITechnologyDataMapContent> TechnologyMap;
+    FWBP_MainMenu_Technology_00_COnClickedTchnology OnClickedTchnology;
     void OnClickedTchnology(class UWBP_MainMenu_Technology_Content_C* Widget);
-    FWBP_MainMenu_Technology_00_COnHoveredTechnology OnHoveredTechnology;             // 0x0320 (size: 0x10)
+    FWBP_MainMenu_Technology_00_COnHoveredTechnology OnHoveredTechnology;
     void OnHoveredTechnology(class UWBP_MainMenu_Technology_Content_C* Widget);
-    FWBP_MainMenu_Technology_00_COnUnhoveredTechnology OnUnhoveredTechnology;         // 0x0330 (size: 0x10)
+    FWBP_MainMenu_Technology_00_COnUnhoveredTechnology OnUnhoveredTechnology;
     void OnUnhoveredTechnology(class UWBP_MainMenu_Technology_Content_C* Widget);
-    int32 MaxTechnologyLevel;                                                         // 0x0340 (size: 0x4)
-    int32 MinTechnologyLevel;                                                         // 0x0344 (size: 0x4)
-    class UWBP_MainMenu_Technology_List_C* LastHoveredListWidget;                     // 0x0348 (size: 0x8)
-    class UWBP_MainMenu_Technology_Content_C* LastHoveredButtonWidget;                // 0x0350 (size: 0x8)
-    TMap<class UObject*, class UWBP_MainMenu_Technology_List_C*> ListViewDisplayWidgetMap; // 0x0358 (size: 0x50)
-    int32 LastFocusHorizontalIndex;                                                   // 0x03A8 (size: 0x4)
-    class UObject* DesiredFocusEntry;                                                 // 0x03B0 (size: 0x8)
-    FWBP_MainMenu_Technology_00_COnNameFilterApplied OnNameFilterApplied;             // 0x03B8 (size: 0x10)
+    int32 MaxTechnologyLevel;
+    int32 MinTechnologyLevel;
+    class UWBP_MainMenu_Technology_List_C* LastHoveredListWidget;
+    class UWBP_MainMenu_Technology_Content_C* LastHoveredButtonWidget;
+    TMap<class UObject*, class UWBP_MainMenu_Technology_List_C*> ListViewDisplayWidgetMap;
+    int32 LastFocusHorizontalIndex;
+    class UObject* DesiredFocusEntry;
+    FWBP_MainMenu_Technology_00_COnNameFilterApplied OnNameFilterApplied;
     void OnNameFilterApplied(FText newText);
-    FWBP_MainMenu_Technology_00_COnFilterButtonClicked OnFilterButtonClicked;         // 0x03C8 (size: 0x10)
+    FWBP_MainMenu_Technology_00_COnFilterButtonClicked OnFilterButtonClicked;
     void OnFilterButtonClicked();
-    bool FocusToggle;                                                                 // 0x03D8 (size: 0x1)
+    bool FocusToggle;
 
     void IsSkillUnlockMask(TArray<FName>& ItemIds, bool& Masked);
     void GetUnlockFilter(bool ShowUnlocked, const FName& technologyName, bool& Return);
@@ -67,6 +67,6 @@ class UWBP_MainMenu_Technology_00_C : public UUserWidget
     void OnUnhoveredTechnology__DelegateSignature(class UWBP_MainMenu_Technology_Content_C* Widget);
     void OnHoveredTechnology__DelegateSignature(class UWBP_MainMenu_Technology_Content_C* Widget);
     void OnClickedTchnology__DelegateSignature(class UWBP_MainMenu_Technology_Content_C* Widget);
-}; // Size: 0x3D9
+};
 
 #endif

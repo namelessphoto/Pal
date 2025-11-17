@@ -3,24 +3,24 @@
 
 class ABP_SkillEffectBase_C : public APalSkillEffectBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0330 (size: 0x8)
-    class USphereComponent* HomingLimit;                                              // 0x0338 (size: 0x8)
-    class USphereComponent* MovementSphereRoot;                                       // 0x0340 (size: 0x8)
-    bool SpanwHitGroundEffect;                                                        // 0x0348 (size: 0x1)
-    EPalWazaID Waza;                                                                  // 0x034A (size: 0x2)
-    TArray<class UNiagaraSystem*> Load Cache;                                         // 0x0350 (size: 0x10)
-    TArray<int32> Foliage Index;                                                      // 0x0360 (size: 0x10)
-    bool Is Poison;                                                                   // 0x0370 (size: 0x1)
-    bool DoDestroyOnHitGround;                                                        // 0x0371 (size: 0x1)
-    bool StartEffectFadeOut;                                                          // 0x0372 (size: 0x1)
-    double FadeOutTimer;                                                              // 0x0378 (size: 0x8)
-    double FadeOutTime;                                                               // 0x0380 (size: 0x8)
-    class UCurveFloat* FadeOutCurve;                                                  // 0x0388 (size: 0x8)
-    TSubclassOf<class UPalHitEffectSlot> HitEffectSlot;                               // 0x0390 (size: 0x8)
-    TArray<FTimerHandle> TimerHandles;                                                // 0x0398 (size: 0x10)
-    class ABP_PredictedTarget_C* PredictedTarget;                                     // 0x03A8 (size: 0x8)
-    bool EnableDisplayHitNum;                                                         // 0x03B0 (size: 0x1)
-    class UPrimitiveComponent* Other Hit Component;                                   // 0x03B8 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class USphereComponent* HomingLimit;
+    class USphereComponent* MovementSphereRoot;
+    bool SpanwHitGroundEffect;
+    EPalWazaID Waza;
+    TArray<class UNiagaraSystem*> Load Cache;
+    TArray<int32> Foliage Index;
+    bool Is Poison;
+    bool DoDestroyOnHitGround;
+    bool StartEffectFadeOut;
+    double FadeOutTimer;
+    double FadeOutTime;
+    class UCurveFloat* FadeOutCurve;
+    TSubclassOf<class UPalHitEffectSlot> HitEffectSlot;
+    TArray<FTimerHandle> TimerHandles;
+    class ABP_PredictedTarget_C* PredictedTarget;
+    bool EnableDisplayHitNum;
+    class UPrimitiveComponent* Other Hit Component;
 
     void GetAttackLocationByTargetActor(class AActor* TargetActor, FVector& AttackLocation);
     void FindTargetLocationConsiderRide(FVector& TargetPos);
@@ -47,6 +47,6 @@ class ABP_SkillEffectBase_C : public APalSkillEffectBase
     void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);
     void BndEvt__BP_SkillEffectBase_AttackFilter_K2Node_ComponentBoundEvent_1_OnAttackDelegate__DelegateSignature(class AActor* Defencer, FPalDamageInfo DamageInfo, int32 HitCount, class UPrimitiveComponent* AttackerComponent);
     void ExecuteUbergraph_BP_SkillEffectBase(int32 EntryPoint);
-}; // Size: 0x3C0
+};
 
 #endif

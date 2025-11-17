@@ -3,6 +3,6 @@
 
 class UBP_SupplyManager_C : public UPalSupplyManager
 {
-}; // Size: 0x1E8
+};
 
 #endif

@@ -3,15 +3,15 @@
 
 class ABP_NPCAIController_Visitor_C : public ABP_NPCAIController_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x05A8 (size: 0x8)
-    FVector GoalLocation;                                                             // 0x05B0 (size: 0x18)
-    int32 ReturnTimeMinutes;                                                          // 0x05C8 (size: 0x4)
-    int32 WalkAreaSplitNum;                                                           // 0x05CC (size: 0x4)
-    EPalIVisitorNPCAction ActionTimeLimit;                                            // 0x05D0 (size: 0x1)
-    FBP_NPCAIController_Visitor_COnReturnSpawnedPoint OnReturnSpawnedPoint;           // 0x05D8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    FVector GoalLocation;
+    int32 ReturnTimeMinutes;
+    int32 WalkAreaSplitNum;
+    EPalIVisitorNPCAction ActionTimeLimit;
+    FBP_NPCAIController_Visitor_COnReturnSpawnedPoint OnReturnSpawnedPoint;
     void OnReturnSpawnedPoint();
-    FVector Formation Offset;                                                         // 0x05E8 (size: 0x18)
-    FBP_NPCAIController_Visitor_COnBaseCampArrived OnBaseCampArrived;                 // 0x0600 (size: 0x10)
+    FVector Formation Offset;
+    FBP_NPCAIController_Visitor_COnBaseCampArrived OnBaseCampArrived;
     void OnBaseCampArrived();
 
     void StartTravelToBaseCamp();
@@ -33,6 +33,6 @@ class ABP_NPCAIController_Visitor_C : public ABP_NPCAIController_C
     void ExecuteUbergraph_BP_NPCAIController_Visitor(int32 EntryPoint);
     void OnBaseCampArrived__DelegateSignature();
     void OnReturnSpawnedPoint__DelegateSignature();
-}; // Size: 0x610
+};
 
 #endif

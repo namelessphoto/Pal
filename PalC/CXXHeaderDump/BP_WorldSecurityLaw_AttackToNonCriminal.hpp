@@ -8,6 +8,6 @@ class UBP_WorldSecurityLaw_AttackToNonCriminal_C : public UPalWorldSecurityLawTr
     void IsValidCharacterActor(class AActor* Actor, bool& bValid, class UPalCharacterParameterComponent*& CharacterParameter);
     void IsOrganizationCitizen(EPalOrganizationType OrganizationType, bool& bCitizen);
     bool Condition(const FPalDamageResult& DamageResult, class UPalIndividualCharacterHandle*& CriminalHandle);
-}; // Size: 0x40
+};
 
 #endif

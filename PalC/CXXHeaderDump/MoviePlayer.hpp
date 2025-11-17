@@ -5,10 +5,10 @@
 
 class UMoviePlayerSettings : public UObject
 {
-    bool bWaitForMoviesToComplete;                                                    // 0x0028 (size: 0x1)
-    bool bMoviesAreSkippable;                                                         // 0x0029 (size: 0x1)
-    TArray<FString> StartupMovies;                                                    // 0x0030 (size: 0x10)
+    bool bWaitForMoviesToComplete;
+    bool bMoviesAreSkippable;
+    TArray<FString> StartupMovies;
 
-}; // Size: 0x40
+};
 
 #endif

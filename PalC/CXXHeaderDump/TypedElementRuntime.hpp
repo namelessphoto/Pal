@@ -5,53 +5,53 @@
 
 struct FTypedElementIsSelectedOptions
 {
-    bool bAllowIndirect;                                                              // 0x0000 (size: 0x1)
+    bool bAllowIndirect;
 
-}; // Size: 0x1
+};
 
 struct FTypedElementSelectionNormalizationOptions
 {
-    bool bExpandGroups;                                                               // 0x0000 (size: 0x1)
-    bool bFollowAttachment;                                                           // 0x0001 (size: 0x1)
+    bool bExpandGroups;
+    bool bFollowAttachment;
 
-}; // Size: 0x2
+};
 
 struct FTypedElementSelectionOptions
 {
-    bool bAllowHidden;                                                                // 0x0000 (size: 0x1)
-    bool bAllowGroups;                                                                // 0x0001 (size: 0x1)
-    bool bAllowLegacyNotifications;                                                   // 0x0002 (size: 0x1)
-    bool bWarnIfLocked;                                                               // 0x0003 (size: 0x1)
-    ETypedElementChildInclusionMethod ChildElementInclusionMethod;                    // 0x0004 (size: 0x1)
+    bool bAllowHidden;
+    bool bAllowGroups;
+    bool bAllowLegacyNotifications;
+    bool bWarnIfLocked;
+    ETypedElementChildInclusionMethod ChildElementInclusionMethod;
 
-}; // Size: 0x5
+};
 
 struct FTypedElementSelectionSetState
 {
-    TWeakObjectPtr<class UTypedElementSelectionSet> CreatedFromSelectionSet;          // 0x0000 (size: 0x8)
+    TWeakObjectPtr<class UTypedElementSelectionSet> CreatedFromSelectionSet;
 
-}; // Size: 0x18
+};
 
 class ITypedElementAssetDataInterface : public IInterface
 {
 
     FAssetData GetAssetData(const FScriptTypedElementHandle& InElementHandle);
     TArray<FAssetData> GetAllReferencedAssetDatas(const FScriptTypedElementHandle& InElementHandle);
-}; // Size: 0x28
+};
 
 class ITypedElementHierarchyInterface : public IInterface
 {
 
     FScriptTypedElementHandle GetParentElement(const FScriptTypedElementHandle& InElementHandle, const bool bAllowCreate);
     void GetChildElements(const FScriptTypedElementHandle& InElementHandle, TArray<FScriptTypedElementHandle>& OutElementHandles, const bool bAllowCreate);
-}; // Size: 0x28
+};
 
 class ITypedElementObjectInterface : public IInterface
 {
 
     UClass* GetObjectClass(const FScriptTypedElementHandle& InElementHandle);
     class UObject* GetObject(const FScriptTypedElementHandle& InElementHandle);
-}; // Size: 0x28
+};
 
 class ITypedElementSelectionInterface : public IInterface
 {
@@ -63,13 +63,13 @@ class ITypedElementSelectionInterface : public IInterface
     bool CanSelectElement(const FScriptTypedElementHandle& InElementHandle, const FTypedElementSelectionOptions& InSelectionOptions);
     bool CanDeselectElement(const FScriptTypedElementHandle& InElementHandle, const FTypedElementSelectionOptions& InSelectionOptions);
     bool AllowSelectionModifiers(const FScriptTypedElementHandle& InElementHandle, const FScriptTypedElementListProxy InSelectionSet);
-}; // Size: 0x28
+};
 
 class UTypedElementSelectionSet : public UObject
 {
-    FTypedElementSelectionSetOnPreSelectionChange OnPreSelectionChange;               // 0x0828 (size: 0x10)
+    FTypedElementSelectionSetOnPreSelectionChange OnPreSelectionChange;
     void OnPreChangeDynamic(const class UTypedElementSelectionSet* SelectionSet);
-    FTypedElementSelectionSetOnSelectionChange OnSelectionChange;                     // 0x0838 (size: 0x10)
+    FTypedElementSelectionSetOnSelectionChange OnSelectionChange;
     void OnChangeDynamic(const class UTypedElementSelectionSet* SelectionSet);
 
     bool SetSelection(const TArray<FScriptTypedElementHandle>& InElementHandles, const FTypedElementSelectionOptions InSelectionOptions);
@@ -96,7 +96,7 @@ class UTypedElementSelectionSet : public UObject
     bool CanSelectElement(const FScriptTypedElementHandle& InElementHandle, const FTypedElementSelectionOptions InSelectionOptions);
     bool CanDeselectElement(const FScriptTypedElementHandle& InElementHandle, const FTypedElementSelectionOptions InSelectionOptions);
     bool AllowSelectionModifiers(const FScriptTypedElementHandle& InElementHandle);
-}; // Size: 0x898
+};
 
 class UTypedElementSelectionSetLibrary : public UObject
 {
@@ -106,6 +106,6 @@ class UTypedElementSelectionSetLibrary : public UObject
     FScriptTypedElementListProxy GetNormalizedSelection(class UTypedElementSelectionSet* SelectionSet, const FTypedElementSelectionNormalizationOptions NormalizationOptions);
     FScriptTypedElementListProxy GetNormalizedElementList(class UTypedElementSelectionSet* SelectionSet, const FScriptTypedElementListProxy ElementList, const FTypedElementSelectionNormalizationOptions NormalizationOptions);
     bool DeselectElementsFromList(class UTypedElementSelectionSet* SelectionSet, const FScriptTypedElementListProxy ElementList, const FTypedElementSelectionOptions SelectionOptions);
-}; // Size: 0x28
+};
 
 #endif

@@ -5,6 +5,6 @@ class UBP_WorldSecurityLaw_TheftItem_C : public UPalWorldSecurityLawTrigger_Item
 {
 
     bool Condition(const FPalItemOperationInfo_Move& EventInfo);
-}; // Size: 0x40
+};
 
 #endif

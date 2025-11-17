@@ -3,14 +3,14 @@
 
 class ABP_SquadNPCSpawner_ForCampBase_C : public ABP_SquadNPCSpawner_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x04E8 (size: 0x8)
-    bool IgnoreRayAdjustFloor;                                                        // 0x04F0 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    bool IgnoreRayAdjustFloor;
 
     void AdjustFloor(class AActor* SpaenedChara);
     void RayAdjustFloor();
     void DeleteOnePoint(class AActor* Point);
     void ReceiveBeginPlay();
     void ExecuteUbergraph_BP_SquadNPCSpawner_ForCampBase(int32 EntryPoint);
-}; // Size: 0x4F1
+};
 
 #endif

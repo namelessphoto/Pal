@@ -3,16 +3,16 @@
 
 class UWBP_IngameMenu_WorkSpace_Slider_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_0;                                            // 0x0280 (size: 0x8)
-    class UProgressBar* ProgressBar_305;                                              // 0x0288 (size: 0x8)
-    class USlider* Slider;                                                            // 0x0290 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Num_Max;                                           // 0x0298 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Num_Min;                                           // 0x02A0 (size: 0x8)
-    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;                                // 0x02A8 (size: 0x8)
-    FWBP_IngameMenu_WorkSpace_Slider_COnValueChanged OnValueChanged;                  // 0x02B0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UHorizontalBox* HorizontalBox_0;
+    class UProgressBar* ProgressBar_305;
+    class USlider* Slider;
+    class UBP_PalTextBlock_C* Text_Num_Max;
+    class UBP_PalTextBlock_C* Text_Num_Min;
+    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;
+    FWBP_IngameMenu_WorkSpace_Slider_COnValueChanged OnValueChanged;
     void OnValueChanged(int64 NewCount);
-    int64 Current;                                                                    // 0x02C0 (size: 0x8)
+    int64 Current;
 
     void On Input Method Changed(ECommonInputType Selection);
     float GetPercent();
@@ -22,6 +22,6 @@ class UWBP_IngameMenu_WorkSpace_Slider_C : public UUserWidget
     void Construct();
     void ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Slider(int32 EntryPoint);
     void OnValueChanged__DelegateSignature(int64 NewCount);
-}; // Size: 0x2C8
+};
 
 #endif

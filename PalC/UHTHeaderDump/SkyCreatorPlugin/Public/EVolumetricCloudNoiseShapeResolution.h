@@ -1,0 +1,10 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "EVolumetricCloudNoiseShapeResolution.generated.h"
+
+UENUM()
+    VolumetricCloudNoiseShapeResolution_64,
+    VolumetricCloudNoiseShapeResolution_128,
+    VolumetricCloudNoiseShapeResolution_256,
+};
+

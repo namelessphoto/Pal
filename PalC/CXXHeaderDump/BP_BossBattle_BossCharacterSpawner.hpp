@@ -3,13 +3,13 @@
 
 class ABP_BossBattle_BossCharacterSpawner_C : public AActor
 {
-    class UStaticMeshComponent* StaticMesh;                                           // 0x0290 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x0298 (size: 0x8)
-    class UPalIndividualCharacterHandle* BossCharacterHandle;                         // 0x02A0 (size: 0x8)
-    int32 StartPlayerNum;                                                             // 0x02A8 (size: 0x4)
-    FBP_BossBattle_BossCharacterSpawner_COnOtherSpawned OnOtherSpawned;               // 0x02B0 (size: 0x10)
+    class UStaticMeshComponent* StaticMesh;
+    class USceneComponent* DefaultSceneRoot;
+    class UPalIndividualCharacterHandle* BossCharacterHandle;
+    int32 StartPlayerNum;
+    FBP_BossBattle_BossCharacterSpawner_COnOtherSpawned OnOtherSpawned;
     void OnOtherSpawned(class UPalIndividualCharacterHandle* SpawnCharacterHandle);
-    TArray<class UPalIndividualCharacterHandle*> OtherCharacterHandles;               // 0x02C0 (size: 0x10)
+    TArray<class UPalIndividualCharacterHandle*> OtherCharacterHandles;
 
     void GetDebugNo(int32 BitFlag, bool& Result);
     void SetCharacterStartLocation(class UPalIndividualCharacterHandle* targetHandle, FVector Offset);
@@ -22,6 +22,6 @@ class ABP_BossBattle_BossCharacterSpawner_C : public AActor
     void RequestDespawn();
     void RequestBossSpawn(FName CharacterID, int32 Level);
     void OnOtherSpawned__DelegateSignature(class UPalIndividualCharacterHandle* SpawnCharacterHandle);
-}; // Size: 0x2D0
+};
 
 #endif

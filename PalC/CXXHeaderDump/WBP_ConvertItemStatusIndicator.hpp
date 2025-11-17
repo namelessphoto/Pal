@@ -3,14 +3,14 @@
 
 class UWBP_ConvertItemStatusIndicator_C : public UPalUIMapObjectStatusIndicatorBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UWBP_PalCraftInfo_C* WBP_PalCraftInfo;                                      // 0x0410 (size: 0x8)
-    bool isDisplayedDetail;                                                           // 0x0418 (size: 0x1)
-    bool isValidRecipe;                                                               // 0x0419 (size: 0x1)
-    double displayDetailRange;                                                        // 0x0420 (size: 0x8)
-    FTimerHandle LocationCheckTimerHandle;                                            // 0x0428 (size: 0x8)
-    bool IsFirstSetup;                                                                // 0x0430 (size: 0x1)
-    class UPalMapObjectConvertItemModel* Model;                                       // 0x0438 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWBP_PalCraftInfo_C* WBP_PalCraftInfo;
+    bool isDisplayedDetail;
+    bool isValidRecipe;
+    double displayDetailRange;
+    FTimerHandle LocationCheckTimerHandle;
+    bool IsFirstSetup;
+    class UPalMapObjectConvertItemModel* Model;
 
     void OnUpdatedWorkerPal(class UPalWorkBase* Work);
     void CloseDetail();
@@ -25,6 +25,6 @@ class UWBP_ConvertItemStatusIndicator_C : public UPalUIMapObjectStatusIndicatorB
     void CheckLocationEvent();
     void Destruct();
     void ExecuteUbergraph_WBP_ConvertItemStatusIndicator(int32 EntryPoint);
-}; // Size: 0x440
+};
 
 #endif

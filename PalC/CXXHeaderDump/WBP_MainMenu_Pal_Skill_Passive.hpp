@@ -3,28 +3,28 @@
 
 class UWBP_MainMenu_Pal_Skill_Passive_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_EmptySlot_HideToShow;                                 // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_SkillUpdate;                                          // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_Default;                                              // 0x0290 (size: 0x8)
-    class UWidgetAnimation* Anm_Selected;                                             // 0x0298 (size: 0x8)
-    class UWidgetAnimation* Anm_CommonFocus;                                          // 0x02A0 (size: 0x8)
-    class UWidgetAnimation* Anm_ChangeFrame;                                          // 0x02A8 (size: 0x8)
-    class UWidgetAnimation* AnmDebuff_Normal;                                         // 0x02B0 (size: 0x8)
-    class UWidgetAnimation* Anm_Buff_Normal;                                          // 0x02B8 (size: 0x8)
-    class UWidgetAnimation* Anm_Rare2_Normal;                                         // 0x02C0 (size: 0x8)
-    class UWidgetAnimation* Anm_Rare_Normal;                                          // 0x02C8 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_Info;                                             // 0x02D0 (size: 0x8)
-    class UImage* IconRankArrow;                                                      // 0x02D8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_SkillName;                                         // 0x02E0 (size: 0x8)
-    class UWBP_MainMenu_Cursor_C* WBP_MainMenu_Cursor;                                // 0x02E8 (size: 0x8)
-    class UWBP_PalCommonButton_C* WBP_PalCommonButton;                                // 0x02F0 (size: 0x8)
-    FWBP_MainMenu_Pal_Skill_Passive_COnHovered OnHovered;                             // 0x02F8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_EmptySlot_HideToShow;
+    class UWidgetAnimation* Anm_SkillUpdate;
+    class UWidgetAnimation* Anm_Default;
+    class UWidgetAnimation* Anm_Selected;
+    class UWidgetAnimation* Anm_CommonFocus;
+    class UWidgetAnimation* Anm_ChangeFrame;
+    class UWidgetAnimation* AnmDebuff_Normal;
+    class UWidgetAnimation* Anm_Buff_Normal;
+    class UWidgetAnimation* Anm_Rare2_Normal;
+    class UWidgetAnimation* Anm_Rare_Normal;
+    class UCanvasPanel* CanvasPanel_Info;
+    class UImage* IconRankArrow;
+    class UBP_PalTextBlock_C* Text_SkillName;
+    class UWBP_MainMenu_Cursor_C* WBP_MainMenu_Cursor;
+    class UWBP_PalCommonButton_C* WBP_PalCommonButton;
+    FWBP_MainMenu_Pal_Skill_Passive_COnHovered OnHovered;
     void OnHovered(class UWBP_MainMenu_Pal_Skill_Passive_C* SelfWidget);
-    FWBP_MainMenu_Pal_Skill_Passive_COnUnhovered OnUnhovered;                         // 0x0308 (size: 0x10)
+    FWBP_MainMenu_Pal_Skill_Passive_COnUnhovered OnUnhovered;
     void OnUnhovered(class UWBP_MainMenu_Pal_Skill_Passive_C* SelfWidget);
-    FName BindedPassiveSkillName;                                                     // 0x0318 (size: 0x8)
-    FWBP_MainMenu_Pal_Skill_Passive_COnClicked OnClicked;                             // 0x0320 (size: 0x10)
+    FName BindedPassiveSkillName;
+    FWBP_MainMenu_Pal_Skill_Passive_COnClicked OnClicked;
     void OnClicked(class UWBP_MainMenu_Pal_Skill_Passive_C* SelfWidget);
 
     void GetBindedPassiveSkillName(FName& PassiveSkillName);
@@ -47,6 +47,6 @@ class UWBP_MainMenu_Pal_Skill_Passive_C : public UUserWidget
     void OnClicked__DelegateSignature(class UWBP_MainMenu_Pal_Skill_Passive_C* SelfWidget);
     void OnUnhovered__DelegateSignature(class UWBP_MainMenu_Pal_Skill_Passive_C* SelfWidget);
     void OnHovered__DelegateSignature(class UWBP_MainMenu_Pal_Skill_Passive_C* SelfWidget);
-}; // Size: 0x330
+};
 
 #endif

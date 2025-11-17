@@ -3,9 +3,9 @@
 
 class UBP_PalIncidentRandomActionHunterVsPal_C : public UBP_PalIncidentRandomActionBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0050 (size: 0x8)
-    int32 WinnerGroup;                                                                // 0x0058 (size: 0x4)
-    bool IsAllNpcSpawned;                                                             // 0x005C (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    int32 WinnerGroup;
+    bool IsAllNpcSpawned;
 
     void ExistsAliveCharacter(TArray<class APalCharacter*>& Array, bool& NewParam);
     void GetSpawnedLocation(class APalAIController* Controller, bool& Found, FVector& Location);
@@ -25,6 +25,6 @@ class UBP_PalIncidentRandomActionHunterVsPal_C : public UBP_PalIncidentRandomAct
     void OnTerminate();
     void OnTick(float DeltaTime);
     void ExecuteUbergraph_BP_PalIncidentRandomActionHunterVsPal(int32 EntryPoint);
-}; // Size: 0x5D
+};
 
 #endif

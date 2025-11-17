@@ -3,8 +3,8 @@
 
 class UBP_PalUIDispatchParameter_ItemShop_C : public UPalHUDDispatchParameter_ItemShop
 {
-    TEnumAsByte<E_PalItemShopTabType> OpenTabType;                                    // 0x0040 (size: 0x1)
+    TEnumAsByte<E_PalItemShopTabType> OpenTabType;
 
-}; // Size: 0x41
+};
 
 #endif

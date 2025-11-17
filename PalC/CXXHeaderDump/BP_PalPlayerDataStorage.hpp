@@ -3,6 +3,6 @@
 
 class UBP_PalPlayerDataStorage_C : public UPalPlayerDataStorage
 {
-}; // Size: 0x28
+};
 
 #endif

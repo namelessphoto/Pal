@@ -3,8 +3,8 @@
 
 class ABP_ThrowWeapon_GrenadeBase_C : public ABP_ThrowWeaponBase_C
 {
-    class UStaticMeshComponent* StaticMesh;                                           // 0x0608 (size: 0x8)
-    FName ItemName;                                                                   // 0x0610 (size: 0x8)
+    class UStaticMeshComponent* StaticMesh;
+    FName ItemName;
 
     bool IsEnableAutoAim();
     int32 GetRemainBulletCount();
@@ -14,6 +14,6 @@ class ABP_ThrowWeapon_GrenadeBase_C : public ABP_ThrowWeaponBase_C
     void GetBulletShootRotation(FRotator& BulletRotate);
     void GetThrowObjectClass(TSubclassOf<class AActor>& ThrowObject);
     FName GetEquipSocketName();
-}; // Size: 0x618
+};
 
 #endif

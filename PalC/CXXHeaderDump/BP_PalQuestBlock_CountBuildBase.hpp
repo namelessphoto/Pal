@@ -6,6 +6,6 @@ class UBP_PalQuestBlock_CountBuildBase_C : public UPalQuestBlock_CountBuild
 
     void GetProgressText(FText& OutText);
     void GetDescriptionText(FText& OutText);
-}; // Size: 0xF0
+};
 
 #endif

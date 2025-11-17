@@ -3,29 +3,29 @@
 
 class ABP_Fishing_Lure_C : public AActor
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0290 (size: 0x8)
-    class UNiagaraComponent* NS_Fishing_Swim;                                         // 0x0298 (size: 0x8)
-    class UNiagaraComponent* NS_Splash_Sink;                                          // 0x02A0 (size: 0x8)
-    class UNiagaraComponent* NS_LandingPoint_NG;                                      // 0x02A8 (size: 0x8)
-    class UNiagaraComponent* NS_LandingPoint_OK;                                      // 0x02B0 (size: 0x8)
-    class UNiagaraComponent* NS_InWaterPal;                                           // 0x02B8 (size: 0x8)
-    class UNiagaraComponent* NS_Splash_Success;                                       // 0x02C0 (size: 0x8)
-    class UNiagaraComponent* NS_Splash_OnWater;                                       // 0x02C8 (size: 0x8)
-    class USkeletalMeshComponent* SK_FishingFloat001;                                 // 0x02D0 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x02D8 (size: 0x8)
-    bool IsPickMode;                                                                  // 0x02E0 (size: 0x1)
-    bool IsHit;                                                                       // 0x02E1 (size: 0x1)
-    double BaseLocationZ;                                                             // 0x02E8 (size: 0x8)
-    double Amplitude;                                                                 // 0x02F0 (size: 0x8)
-    double Frequency;                                                                 // 0x02F8 (size: 0x8)
-    double CurrentTime;                                                               // 0x0300 (size: 0x8)
-    FVector NextLocation;                                                             // 0x0308 (size: 0x18)
-    double HitSinkDepth;                                                              // 0x0320 (size: 0x8)
-    FVector DefaultWaterLocation;                                                     // 0x0328 (size: 0x18)
-    EPalFishingRodState RodState;                                                     // 0x0340 (size: 0x1)
-    class UNiagaraSystem* NS_Battle;                                                  // 0x0348 (size: 0x8)
-    class UNiagaraComponent* BattleEffect;                                            // 0x0350 (size: 0x8)
-    class ABP_Fishing_FishShadowBase_C* TargetFish;                                   // 0x0358 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UNiagaraComponent* NS_Fishing_Swim;
+    class UNiagaraComponent* NS_Splash_Sink;
+    class UNiagaraComponent* NS_LandingPoint_NG;
+    class UNiagaraComponent* NS_LandingPoint_OK;
+    class UNiagaraComponent* NS_InWaterPal;
+    class UNiagaraComponent* NS_Splash_Success;
+    class UNiagaraComponent* NS_Splash_OnWater;
+    class USkeletalMeshComponent* SK_FishingFloat001;
+    class USceneComponent* DefaultSceneRoot;
+    bool IsPickMode;
+    bool IsHit;
+    double BaseLocationZ;
+    double Amplitude;
+    double Frequency;
+    double CurrentTime;
+    FVector NextLocation;
+    double HitSinkDepth;
+    FVector DefaultWaterLocation;
+    EPalFishingRodState RodState;
+    class UNiagaraSystem* NS_Battle;
+    class UNiagaraComponent* BattleEffect;
+    class ABP_Fishing_FishShadowBase_C* TargetFish;
 
     void SetTargetFishShadow(class ABP_Fishing_FishShadowBase_C* TargetFish);
     void DisableAll();
@@ -49,6 +49,6 @@ class ABP_Fishing_Lure_C : public AActor
     void ReceiveBeginPlay();
     void OnChangeFloatMoveState(bool IsMove);
     void ExecuteUbergraph_BP_Fishing_Lure(int32 EntryPoint);
-}; // Size: 0x360
+};
 
 #endif

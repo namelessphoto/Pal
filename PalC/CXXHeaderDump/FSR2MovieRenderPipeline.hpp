@@ -5,8 +5,8 @@
 
 class UFSR2MoviePipelineSettings : public UMoviePipelineViewFamilySetting
 {
-    EFSR2MoviePipelineQuality FSR2Quality;                                            // 0x0048 (size: 0x1)
+    EFSR2MoviePipelineQuality FSR2Quality;
 
-}; // Size: 0x50
+};
 
 #endif

@@ -3,23 +3,23 @@
 
 class UWBP_CaptureReticle_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UCanvasPanel* Canvas_Root;                                                  // 0x0410 (size: 0x8)
-    class UWBP_PalGetReticle_C* WBP_PalGetReticle;                                    // 0x0418 (size: 0x8)
-    class UWBP_Reticle_KeyGuide_C* WBP_Reticle_Cancel;                                // 0x0420 (size: 0x8)
-    class APalPlayerController* localController;                                      // 0x0428 (size: 0x8)
-    TArray<TEnumAsByte<EObjectTypeQuery>> traceObjectTypeQueryArray;                  // 0x0430 (size: 0x10)
-    TEnumAsByte<EPalCaptureReticleSeqence> reticleSeqence;                            // 0x0440 (size: 0x1)
-    TSoftObjectPtr<APalMonsterCharacter> NowTargetMonster;                            // 0x0448 (size: 0x30)
-    class UPalLoadoutSelectorComponent* LoadoutSelector;                              // 0x0478 (size: 0x8)
-    bool isCaptureItemEquiped;                                                        // 0x0480 (size: 0x1)
-    TSoftObjectPtr<APalWeaponBase> lastEquipedWeapon;                                 // 0x0488 (size: 0x30)
-    TMap<class TSoftObjectPtr<ABP_PalCaptureBodyBase_C>, class UWBP_PalGetReticle_C*> secondStepWidgetMap; // 0x04B8 (size: 0x50)
-    bool isBonusEnabledWhenLastCheck;                                                 // 0x0508 (size: 0x1)
-    bool IsStopReticleUpdate;                                                         // 0x0509 (size: 0x1)
-    double ReticleStopTimer;                                                          // 0x0510 (size: 0x8)
-    TMap<class TSoftObjectPtr<APalCharacter>, class UWBP_CaptureFailedPercent_C*> FailedCaptureRateWidgetMap; // 0x0518 (size: 0x50)
-    TMap<TEnumAsByte<E_PalCaptureSphereBouncedReason>, EPalLogType> BouncedBallLogTypeMap; // 0x0568 (size: 0x50)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCanvasPanel* Canvas_Root;
+    class UWBP_PalGetReticle_C* WBP_PalGetReticle;
+    class UWBP_Reticle_KeyGuide_C* WBP_Reticle_Cancel;
+    class APalPlayerController* localController;
+    TArray<TEnumAsByte<EObjectTypeQuery>> traceObjectTypeQueryArray;
+    TEnumAsByte<EPalCaptureReticleSeqence> reticleSeqence;
+    TSoftObjectPtr<APalMonsterCharacter> NowTargetMonster;
+    class UPalLoadoutSelectorComponent* LoadoutSelector;
+    bool isCaptureItemEquiped;
+    TSoftObjectPtr<APalWeaponBase> lastEquipedWeapon;
+    TMap<class TSoftObjectPtr<ABP_PalCaptureBodyBase_C>, class UWBP_PalGetReticle_C*> secondStepWidgetMap;
+    bool isBonusEnabledWhenLastCheck;
+    bool IsStopReticleUpdate;
+    double ReticleStopTimer;
+    TMap<class TSoftObjectPtr<APalCharacter>, class UWBP_CaptureFailedPercent_C*> FailedCaptureRateWidgetMap;
+    TMap<TEnumAsByte<E_PalCaptureSphereBouncedReason>, EPalLogType> BouncedBallLogTypeMap;
 
     void Set Display Capture Rate(class APalMonsterCharacter* TargetMonster, class APalWeaponBase* WeaponBase);
     void ShouldReticleDIsplay(bool& ShouldDisplay);
@@ -47,6 +47,6 @@ class UWBP_CaptureReticle_C : public UPalUserWidget
     void OnInitialized();
     void OnSetup_AfterCreatedPlayer();
     void ExecuteUbergraph_WBP_CaptureReticle(int32 EntryPoint);
-}; // Size: 0x5B8
+};
 
 #endif

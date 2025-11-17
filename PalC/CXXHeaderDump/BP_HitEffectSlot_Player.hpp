@@ -3,8 +3,8 @@
 
 class UBP_HitEffectSlot_Player_C : public UPalHitEffectSlot
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0028 (size: 0x8)
-    TArray<class UNiagaraSystem*> LoadCache;                                          // 0x0030 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    TArray<class UNiagaraSystem*> LoadCache;
 
     void SpawnElementalHitEffectBullet(EPalElementType Element, FVector Location, double EffectScale);
     void SpawnElementalHitEffectNear(EPalElementType Element, FVector Location, double EffectScale);
@@ -14,6 +14,6 @@ class UBP_HitEffectSlot_Player_C : public UPalHitEffectSlot
     void PlayHitEffect(const FPalDamageInfo& Info);
     void LoadAndPlayEffect(TSoftObjectPtr<UNiagaraSystem> EffectPath, FTransform Transform);
     void ExecuteUbergraph_BP_HitEffectSlot_Player(int32 EntryPoint);
-}; // Size: 0x40
+};
 
 #endif

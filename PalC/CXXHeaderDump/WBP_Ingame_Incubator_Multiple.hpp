@@ -3,32 +3,32 @@
 
 class UWBP_Ingame_Incubator_Multiple_C : public UPalUIMapObjectStatusIndicatorBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UWidgetAnimation* Anm_DetailToSimple;                                       // 0x0410 (size: 0x8)
-    class UBP_PalRichTextBlock_C* BP_PalRichTextBlock_NoSet;                          // 0x0418 (size: 0x8)
-    class UImage* LineCenter;                                                         // 0x0420 (size: 0x8)
-    class UOverlay* OverlayStatus;                                                    // 0x0428 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Status;                                            // 0x0430 (size: 0x8)
-    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot;    // 0x0438 (size: 0x8)
-    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_1;  // 0x0440 (size: 0x8)
-    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_2;  // 0x0448 (size: 0x8)
-    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_3;  // 0x0450 (size: 0x8)
-    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_4;  // 0x0458 (size: 0x8)
-    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_5;  // 0x0460 (size: 0x8)
-    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_6;  // 0x0468 (size: 0x8)
-    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_7;  // 0x0470 (size: 0x8)
-    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_8;  // 0x0478 (size: 0x8)
-    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_9;  // 0x0480 (size: 0x8)
-    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_Simple; // 0x0488 (size: 0x8)
-    class UWBP_RequirePalInfo_C* WBP_RequirePalInfo;                                  // 0x0490 (size: 0x8)
-    class UPalMapObjectMultiHatchingEggModel* Model;                                  // 0x0498 (size: 0x8)
-    bool isDisplayedDetail;                                                           // 0x04A0 (size: 0x1)
-    FTimerHandle DisplayCheckTimer;                                                   // 0x04A8 (size: 0x8)
-    TArray<class UWBP_Ingame_Incubator_MultipleSlot_C*> Slots;                        // 0x04B0 (size: 0x10)
-    int32 LastSimpleSlotIndex;                                                        // 0x04C0 (size: 0x4)
-    FTimerHandle SimpleSlotUpdateTimer;                                               // 0x04C8 (size: 0x8)
-    bool NoEgg;                                                                       // 0x04D0 (size: 0x1)
-    bool HasPower;                                                                    // 0x04D1 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_DetailToSimple;
+    class UBP_PalRichTextBlock_C* BP_PalRichTextBlock_NoSet;
+    class UImage* LineCenter;
+    class UOverlay* OverlayStatus;
+    class UBP_PalTextBlock_C* Text_Status;
+    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot;
+    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_1;
+    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_2;
+    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_3;
+    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_4;
+    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_5;
+    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_6;
+    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_7;
+    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_8;
+    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_9;
+    class UWBP_Ingame_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_Simple;
+    class UWBP_RequirePalInfo_C* WBP_RequirePalInfo;
+    class UPalMapObjectMultiHatchingEggModel* Model;
+    bool isDisplayedDetail;
+    FTimerHandle DisplayCheckTimer;
+    TArray<class UWBP_Ingame_Incubator_MultipleSlot_C*> Slots;
+    int32 LastSimpleSlotIndex;
+    FTimerHandle SimpleSlotUpdateTimer;
+    bool NoEgg;
+    bool HasPower;
 
     void OnEggArrayUpdated();
     void UpdateSimpleSlot();
@@ -41,6 +41,6 @@ class UWBP_Ingame_Incubator_Multiple_C : public UPalUIMapObjectStatusIndicatorBa
     void DisplayCheck();
     void OnInitialized();
     void ExecuteUbergraph_WBP_Ingame_Incubator_Multiple(int32 EntryPoint);
-}; // Size: 0x4D2
+};
 
 #endif

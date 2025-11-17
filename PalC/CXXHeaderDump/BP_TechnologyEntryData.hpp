@@ -3,9 +3,9 @@
 
 class UBP_TechnologyEntryData_C : public UObject
 {
-    FF_PalUITechnologyDataMapContent TechData;                                        // 0x0028 (size: 0x10)
-    int32 Level;                                                                      // 0x0038 (size: 0x4)
+    FF_PalUITechnologyDataMapContent TechData;
+    int32 Level;
 
-}; // Size: 0x3C
+};
 
 #endif

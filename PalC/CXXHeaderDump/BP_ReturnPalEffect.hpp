@@ -3,22 +3,22 @@
 
 class ABP_ReturnPalEffect_C : public AActor
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0290 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x0298 (size: 0x8)
-    class UNiagaraComponent* Effect;                                                  // 0x02A0 (size: 0x8)
-    FVector StartLocation;                                                            // 0x02A8 (size: 0x18)
-    class APalCharacter* ForPlayer;                                                   // 0x02C0 (size: 0x8)
-    double MaxLengthPerSec;                                                           // 0x02C8 (size: 0x8)
-    bool DestoryNextFrame;                                                            // 0x02D0 (size: 0x1)
-    class UNiagaraSystem* CacheDisappearBurstEffect;                                  // 0x02D8 (size: 0x8)
-    class UNiagaraSystem* CacheDisappearEffect;                                       // 0x02E0 (size: 0x8)
-    bool IsStartReturn;                                                               // 0x02E8 (size: 0x1)
-    FVector LerpStartPos;                                                             // 0x02F0 (size: 0x18)
-    double LerpTimer;                                                                 // 0x0308 (size: 0x8)
-    double Progress;                                                                  // 0x0310 (size: 0x8)
-    class UCurveFloat* CurveForLerp;                                                  // 0x0318 (size: 0x8)
-    class UCurveFloat* CurveForUpOffset;                                              // 0x0320 (size: 0x8)
-    bool IsMeatCutPal;                                                                // 0x0328 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class USceneComponent* DefaultSceneRoot;
+    class UNiagaraComponent* Effect;
+    FVector StartLocation;
+    class APalCharacter* ForPlayer;
+    double MaxLengthPerSec;
+    bool DestoryNextFrame;
+    class UNiagaraSystem* CacheDisappearBurstEffect;
+    class UNiagaraSystem* CacheDisappearEffect;
+    bool IsStartReturn;
+    FVector LerpStartPos;
+    double LerpTimer;
+    double Progress;
+    class UCurveFloat* CurveForLerp;
+    class UCurveFloat* CurveForUpOffset;
+    bool IsMeatCutPal;
 
     void StopTrail();
     void TickEffectPosition(double DeltaTime);
@@ -33,6 +33,6 @@ class ABP_ReturnPalEffect_C : public AActor
     void LoadAndSpawnEffect(TSoftObjectPtr<UNiagaraSystem> EffectPath, FTransform SpawnTransform);
     void StartReturn_ForNetwork(class APalCharacter* OtomoPal, class APalCharacter* Player);
     void ExecuteUbergraph_BP_ReturnPalEffect(int32 EntryPoint);
-}; // Size: 0x329
+};
 
 #endif

@@ -3,33 +3,33 @@
 
 class UWBP_MenuESCPlayerBlockListItem_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_NormalToFocus;                                        // 0x0280 (size: 0x8)
-    class UImage* Base;                                                               // 0x0288 (size: 0x8)
-    class UHorizontalBox* Horizontal_KeyGuide_Equip;                                  // 0x0290 (size: 0x8)
-    class UHorizontalBox* Horizontal_KeyGuide_Move;                                   // 0x0298 (size: 0x8)
-    class UImage* Image_Icon;                                                         // 0x02A0 (size: 0x8)
-    class UImage* Image_Icon_MuteBlock;                                               // 0x02A8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Equip;                                             // 0x02B0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_PlayerName;                                        // 0x02B8 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x02C0 (size: 0x8)
-    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;                                // 0x02C8 (size: 0x8)
-    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon_1;                              // 0x02D0 (size: 0x8)
-    FDataTableRowHandle OnlineMsgID;                                                  // 0x02D8 (size: 0x10)
-    FDataTableRowHandle OfflineMsgID;                                                 // 0x02E8 (size: 0x10)
-    FWBP_MenuESCPlayerBlockListItem_COnClicked OnClicked;                             // 0x02F8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_NormalToFocus;
+    class UImage* Base;
+    class UHorizontalBox* Horizontal_KeyGuide_Equip;
+    class UHorizontalBox* Horizontal_KeyGuide_Move;
+    class UImage* Image_Icon;
+    class UImage* Image_Icon_MuteBlock;
+    class UBP_PalTextBlock_C* Text_Equip;
+    class UBP_PalTextBlock_C* Text_PlayerName;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;
+    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon_1;
+    FDataTableRowHandle OnlineMsgID;
+    FDataTableRowHandle OfflineMsgID;
+    FWBP_MenuESCPlayerBlockListItem_COnClicked OnClicked;
     void OnClicked(class UWBP_Guild_MemberList_C* Widget);
-    FPalUIGuildMemberDisplayInfo MyDisplayInfo;                                       // 0x0308 (size: 0x18)
-    FWBP_MenuESCPlayerBlockListItem_COnHovered OnHovered;                             // 0x0320 (size: 0x10)
+    FPalUIGuildMemberDisplayInfo MyDisplayInfo;
+    FWBP_MenuESCPlayerBlockListItem_COnHovered OnHovered;
     void OnHovered(class UWBP_Guild_MemberList_C* Widget);
-    FString Player UId;                                                               // 0x0330 (size: 0x10)
-    FString Player Name;                                                              // 0x0340 (size: 0x10)
-    FString User Id;                                                                  // 0x0350 (size: 0x10)
-    class UTexture2D* Texture;                                                        // 0x0360 (size: 0x8)
-    FWBP_MenuESCPlayerBlockListItem_COnRightClicked OnRightClicked;                   // 0x0368 (size: 0x10)
+    FString Player UId;
+    FString Player Name;
+    FString User Id;
+    class UTexture2D* Texture;
+    FWBP_MenuESCPlayerBlockListItem_COnRightClicked OnRightClicked;
     void OnRightClicked(class UWBP_MenuESCPlayerListItem_C* ButtonBase);
-    FString Display Player Name;                                                      // 0x0378 (size: 0x10)
-    FDataTableRowHandle UnBlockPlayerDialogMsgID;                                     // 0x0388 (size: 0x10)
+    FString Display Player Name;
+    FDataTableRowHandle UnBlockPlayerDialogMsgID;
 
     void OnClosePlayerUnBlockDialog(bool bResult);
     void OpenPlayerBlockDialog();
@@ -47,6 +47,6 @@ class UWBP_MenuESCPlayerBlockListItem_C : public UUserWidget
     void OnRightClicked__DelegateSignature(class UWBP_MenuESCPlayerListItem_C* ButtonBase);
     void OnHovered__DelegateSignature(class UWBP_Guild_MemberList_C* Widget);
     void OnClicked__DelegateSignature(class UWBP_Guild_MemberList_C* Widget);
-}; // Size: 0x398
+};
 
 #endif

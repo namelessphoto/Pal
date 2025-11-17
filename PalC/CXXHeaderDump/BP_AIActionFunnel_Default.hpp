@@ -3,8 +3,8 @@
 
 class UBP_AIActionFunnel_Default_C : public UPalAIActionFunnelCharacterDefault
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0050 (size: 0x8)
-    class UPalFunnelSkillModule* SkillModule;                                         // 0x0058 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalFunnelSkillModule* SkillModule;
 
     void CreateSkillActionModule(TSubclassOf<class UPalFunnelSkillModule> FunnelSkillModuleClass);
     bool ShouldSetSkillAction();
@@ -15,6 +15,6 @@ class UBP_AIActionFunnel_Default_C : public UPalAIActionFunnelCharacterDefault
     void SetSkillAction();
     void OnTick_BP(float DeltaTime);
     void ExecuteUbergraph_BP_AIActionFunnel_Default(int32 EntryPoint);
-}; // Size: 0x60
+};
 
 #endif

@@ -3,16 +3,16 @@
 
 class UWBP_WorkerRadialMenu_C : public UWBP_CommonRadialMenuBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x05A8 (size: 0x8)
-    FName CameraModName;                                                              // 0x05B0 (size: 0x8)
-    FWBP_WorkerRadialMenu_COnSelectedMenu OnSelectedMenu;                             // 0x05B8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    FName CameraModName;
+    FWBP_WorkerRadialMenu_COnSelectedMenu OnSelectedMenu;
     void OnSelectedMenu(EPalWorkerRadialMenuResult Result);
-    FDataTableRowHandle MsgID_ShowStatus;                                             // 0x05C8 (size: 0x10)
-    FDataTableRowHandle MsgID_MoveToOtomo;                                            // 0x05D8 (size: 0x10)
-    FDataTableRowHandle MsgID_MoveToBox;                                              // 0x05E8 (size: 0x10)
-    FDataTableRowHandle MsgID_Feed;                                                   // 0x05F8 (size: 0x10)
-    FDataTableRowHandle MsgID_Pet;                                                    // 0x0608 (size: 0x10)
-    bool IsPalDead;                                                                   // 0x0618 (size: 0x1)
+    FDataTableRowHandle MsgID_ShowStatus;
+    FDataTableRowHandle MsgID_MoveToOtomo;
+    FDataTableRowHandle MsgID_MoveToBox;
+    FDataTableRowHandle MsgID_Feed;
+    FDataTableRowHandle MsgID_Pet;
+    bool IsPalDead;
 
     void OnSelectedMenu_Internal(int32 Index);
     void CreateContent(FText Text, class UWBP_WorkerRadialMenuContent_C*& createdWidget);
@@ -23,6 +23,6 @@ class UWBP_WorkerRadialMenu_C : public UWBP_CommonRadialMenuBase_C
     void OnClosed();
     void ExecuteUbergraph_WBP_WorkerRadialMenu(int32 EntryPoint);
     void OnSelectedMenu__DelegateSignature(EPalWorkerRadialMenuResult Result);
-}; // Size: 0x619
+};
 
 #endif

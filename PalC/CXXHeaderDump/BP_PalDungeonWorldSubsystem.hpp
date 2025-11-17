@@ -3,6 +3,6 @@
 
 class UBP_PalDungeonWorldSubsystem_C : public UPalDungeonWorldSubsystem
 {
-}; // Size: 0x1C8
+};
 
 #endif

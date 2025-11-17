@@ -3,18 +3,18 @@
 
 class UBP_PalIncidentRandom_C : public UPalRandomIncidentBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0190 (size: 0x8)
-    class UPalIncidentDynamicParameterRandom* Parameter;                              // 0x0198 (size: 0x8)
-    class UDataTable* SettingDT;                                                      // 0x01A0 (size: 0x8)
-    class UPalRandomIncidentActionBase* action;                                       // 0x01A8 (size: 0x8)
-    TArray<FName> SpawnedNpcNames;                                                    // 0x01B0 (size: 0x10)
-    class ABP_PalRandomIncidentNPCSpawner_C* NPCSpawner;                              // 0x01C0 (size: 0x8)
-    bool ExcludedEvenOnce;                                                            // 0x01C8 (size: 0x1)
-    bool InsideActionAreaEvenOnce;                                                    // 0x01C9 (size: 0x1)
-    TArray<FPalRandomIncidentSpawnMonsterData> OutbreakMonsters;                      // 0x01D0 (size: 0x10)
-    TArray<FName> OutbreakMonsterNames;                                               // 0x01E0 (size: 0x10)
-    class APalRandomIncidentMapObjectSpawner* MapObjectSpawner;                       // 0x01F0 (size: 0x8)
-    class APalRandomIncidentObjectPlacement* ObjectgPlacement;                        // 0x01F8 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalIncidentDynamicParameterRandom* Parameter;
+    class UDataTable* SettingDT;
+    class UPalRandomIncidentActionBase* action;
+    TArray<FName> SpawnedNpcNames;
+    class ABP_PalRandomIncidentNPCSpawner_C* NPCSpawner;
+    bool ExcludedEvenOnce;
+    bool InsideActionAreaEvenOnce;
+    TArray<FPalRandomIncidentSpawnMonsterData> OutbreakMonsters;
+    TArray<FName> OutbreakMonsterNames;
+    class APalRandomIncidentMapObjectSpawner* MapObjectSpawner;
+    class APalRandomIncidentObjectPlacement* ObjectgPlacement;
 
     void SpawnDropItems();
     void SpawnEggs();
@@ -59,6 +59,6 @@ class UBP_PalIncidentRandom_C : public UPalRandomIncidentBase
     void UnbindDelegate_Action();
     void OnCanceled();
     void ExecuteUbergraph_BP_PalIncidentRandom(int32 EntryPoint);
-}; // Size: 0x200
+};
 
 #endif

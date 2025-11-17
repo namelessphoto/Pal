@@ -3,29 +3,29 @@
 
 class UWBP_Arena_RuleSetting_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_RestrictOtomo;                          // 0x0438 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_Matching;                                         // 0x0440 (size: 0x8)
-    class UImage* Image_RankIcon;                                                     // 0x0448 (size: 0x8)
-    class UScrollBox* ScrollBox;                                                      // 0x0450 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_PlayerName_Lv;                                     // 0x0458 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_PlayerName_P1;                                     // 0x0460 (size: 0x8)
-    class UWBP_Arena_PalIcon_C* WBP_Arena_PalIcon;                                    // 0x0468 (size: 0x8)
-    class UWBP_Arena_PalIcon_C* WBP_Arena_PalIcon_1;                                  // 0x0470 (size: 0x8)
-    class UWBP_Arena_PalIcon_C* WBP_Arena_PalIcon_2;                                  // 0x0478 (size: 0x8)
-    class UWBP_Arena_PalIcon_C* WBP_Arena_PalIcon_3;                                  // 0x0480 (size: 0x8)
-    class UWBP_Arena_PalIcon_C* WBP_Arena_PalIcon_4;                                  // 0x0488 (size: 0x8)
-    class UWBP_Arena_Rule_ListGroup_C* WBP_Arena_Rule_ListGroup;                      // 0x0490 (size: 0x8)
-    class UWBP_Arena_RuleSetting_Pal_C* WBP_Arena_RuleSetting_Pal;                    // 0x0498 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton;                                      // 0x04A0 (size: 0x8)
-    class UWBP_IngameMenu_PalBox_PalDetail_C* WBP_IngameMenu_PalBox_PalDetail;        // 0x04A8 (size: 0x8)
-    class UWBP_MainMenu_PalSkillInfo_C* WBP_MainMenu_PalSkillInfo;                    // 0x04B0 (size: 0x8)
-    class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x04B8 (size: 0x8)
-    class UPalHUDDispatchParameter_ArenaRule* ArenaRuleParamter;                      // 0x04C0 (size: 0x8)
-    FPalArenaRule CurrentRule;                                                        // 0x04C8 (size: 0x38)
-    TArray<class UWBP_Arena_PalIcon_C*> OtomoPalIcons;                                // 0x0500 (size: 0x10)
-    FPalUIActionBindData SaveRuleAction;                                              // 0x0510 (size: 0x4)
-    FPalUIActionBindData DefaultRuleAction;                                           // 0x0514 (size: 0x4)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_RestrictOtomo;
+    class UCanvasPanel* CanvasPanel_Matching;
+    class UImage* Image_RankIcon;
+    class UScrollBox* ScrollBox;
+    class UBP_PalTextBlock_C* Text_PlayerName_Lv;
+    class UBP_PalTextBlock_C* Text_PlayerName_P1;
+    class UWBP_Arena_PalIcon_C* WBP_Arena_PalIcon;
+    class UWBP_Arena_PalIcon_C* WBP_Arena_PalIcon_1;
+    class UWBP_Arena_PalIcon_C* WBP_Arena_PalIcon_2;
+    class UWBP_Arena_PalIcon_C* WBP_Arena_PalIcon_3;
+    class UWBP_Arena_PalIcon_C* WBP_Arena_PalIcon_4;
+    class UWBP_Arena_Rule_ListGroup_C* WBP_Arena_Rule_ListGroup;
+    class UWBP_Arena_RuleSetting_Pal_C* WBP_Arena_RuleSetting_Pal;
+    class UWBP_CommonButton_C* WBP_CommonButton;
+    class UWBP_IngameMenu_PalBox_PalDetail_C* WBP_IngameMenu_PalBox_PalDetail;
+    class UWBP_MainMenu_PalSkillInfo_C* WBP_MainMenu_PalSkillInfo;
+    class UWBP_Menu_btn_C* WBP_Menu_btn;
+    class UPalHUDDispatchParameter_ArenaRule* ArenaRuleParamter;
+    FPalArenaRule CurrentRule;
+    TArray<class UWBP_Arena_PalIcon_C*> OtomoPalIcons;
+    FPalUIActionBindData SaveRuleAction;
+    FPalUIActionBindData DefaultRuleAction;
 
     void SaveRule();
     void SetDefaultRule();
@@ -47,6 +47,6 @@ class UWBP_Arena_RuleSetting_C : public UPalUserWidgetOverlayUI
     void BndEvt__WBP_Arena_RuleSetting_WBP_Arena_RuleSetting_Pal_K2Node_ComponentBoundEvent_4_OnChangeAll__DelegateSignature(bool IsBan);
     void BndEvt__WBP_Arena_RuleSetting_WBP_Arena_Rule_ListGroup_K2Node_ComponentBoundEvent_5_ToggleLevelSyncInfo__DelegateSignature(bool Show);
     void ExecuteUbergraph_WBP_Arena_RuleSetting(int32 EntryPoint);
-}; // Size: 0x518
+};
 
 #endif

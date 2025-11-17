@@ -3,23 +3,23 @@
 
 class UWBP_CommonPopupWindow_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_Close;                                                // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_Open;                                                 // 0x0288 (size: 0x8)
-    class UBP_PalRichTextBlock_C* BP_PalRichTextBlock_Message;                        // 0x0290 (size: 0x8)
-    class UScrollBox* ScrollBox_Text;                                                 // 0x0298 (size: 0x8)
-    class USizeBox* SizeBox_RButton;                                                  // 0x02A0 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton_L;                                    // 0x02A8 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton_R;                                    // 0x02B0 (size: 0x8)
-    class UWBP_PalCommonWindow_C* WBP_PalCommonWindow;                                // 0x02B8 (size: 0x8)
-    FDataTableRowHandle LeftButtonMsgID;                                              // 0x02C0 (size: 0x10)
-    FDataTableRowHandle RightButtonMsgID;                                             // 0x02D0 (size: 0x10)
-    FWBP_CommonPopupWindow_COnClickedLeftButton OnClickedLeftButton;                  // 0x02E0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_Close;
+    class UWidgetAnimation* Anm_Open;
+    class UBP_PalRichTextBlock_C* BP_PalRichTextBlock_Message;
+    class UScrollBox* ScrollBox_Text;
+    class USizeBox* SizeBox_RButton;
+    class UWBP_CommonButton_C* WBP_CommonButton_L;
+    class UWBP_CommonButton_C* WBP_CommonButton_R;
+    class UWBP_PalCommonWindow_C* WBP_PalCommonWindow;
+    FDataTableRowHandle LeftButtonMsgID;
+    FDataTableRowHandle RightButtonMsgID;
+    FWBP_CommonPopupWindow_COnClickedLeftButton OnClickedLeftButton;
     void OnClickedLeftButton();
-    FWBP_CommonPopupWindow_COnClickedRightButton OnClickedRightButton;                // 0x02F0 (size: 0x10)
+    FWBP_CommonPopupWindow_COnClickedRightButton OnClickedRightButton;
     void OnClickedRightButton();
-    double RightStickAxisY;                                                           // 0x0300 (size: 0x8)
-    double ScrollPerSecond;                                                           // 0x0308 (size: 0x8)
+    double RightStickAxisY;
+    double ScrollPerSecond;
 
     FEventReply OnAnalogValueChanged(FGeometry MyGeometry, FAnalogInputEvent InAnalogInputEvent);
     void SetOneButton(bool IsOneButton);
@@ -37,6 +37,6 @@ class UWBP_CommonPopupWindow_C : public UUserWidget
     void ExecuteUbergraph_WBP_CommonPopupWindow(int32 EntryPoint);
     void OnClickedRightButton__DelegateSignature();
     void OnClickedLeftButton__DelegateSignature();
-}; // Size: 0x310
+};
 
 #endif

@@ -5,6 +5,6 @@ class ABP_AxeBase_C : public ABP_MeleeWeaponBase_C
 {
 
     FTransform GetLeftHandTransform();
-}; // Size: 0x5F8
+};
 
 #endif

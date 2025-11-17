@@ -3,30 +3,30 @@
 
 class ABP_PalSphere_ThrowObject_C : public ABP_ThrowCaptureObjectBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UNiagaraComponent* Trail;                                                   // 0x0438 (size: 0x8)
-    class USkeletalMeshComponent* SK_Weapon_PalSphere_001;                            // 0x0440 (size: 0x8)
-    class USphereComponent* Sphere;                                                   // 0x0448 (size: 0x8)
-    class APalCharacter* TargetPal;                                                   // 0x0450 (size: 0x8)
-    FVector preLocation;                                                              // 0x0458 (size: 0x18)
-    bool IsBounce;                                                                    // 0x0470 (size: 0x1)
-    FRotator ThrowRotator;                                                            // 0x0478 (size: 0x18)
-    FRotator CurrentBallRotator;                                                      // 0x0490 (size: 0x18)
-    class UNiagaraSystem* sneakEffect;                                                // 0x04A8 (size: 0x8)
-    bool tempCaptureAble;                                                             // 0x04B0 (size: 0x1)
-    FPalDataTableRowName_SoundID SoundId_Bounce;                                      // 0x04B4 (size: 0x8)
-    FPalDataTableRowName_SoundID SoundId_HitPal;                                      // 0x04BC (size: 0x8)
-    bool IsLocalControlled;                                                           // 0x04C4 (size: 0x1)
-    bool IsInServer;                                                                  // 0x04C5 (size: 0x1)
-    bool IsSneakHit;                                                                  // 0x04C6 (size: 0x1)
-    FVector2D CurveVelocity;                                                          // 0x04C8 (size: 0x10)
-    FRotator StartVelocityRotation;                                                   // 0x04D8 (size: 0x18)
-    double CurveInterval;                                                             // 0x04F0 (size: 0x8)
-    double CurveIntervalTimer;                                                        // 0x04F8 (size: 0x8)
-    EPalCurveBall CurveID;                                                            // 0x0500 (size: 0x1)
-    double Forward Velocity;                                                          // 0x0508 (size: 0x8)
-    FVector2D InitCurveVelocity;                                                      // 0x0510 (size: 0x10)
-    bool bIsCriticalCapture;                                                          // 0x0520 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UNiagaraComponent* Trail;
+    class USkeletalMeshComponent* SK_Weapon_PalSphere_001;
+    class USphereComponent* Sphere;
+    class APalCharacter* TargetPal;
+    FVector preLocation;
+    bool IsBounce;
+    FRotator ThrowRotator;
+    FRotator CurrentBallRotator;
+    class UNiagaraSystem* sneakEffect;
+    bool tempCaptureAble;
+    FPalDataTableRowName_SoundID SoundId_Bounce;
+    FPalDataTableRowName_SoundID SoundId_HitPal;
+    bool IsLocalControlled;
+    bool IsInServer;
+    bool IsSneakHit;
+    FVector2D CurveVelocity;
+    FRotator StartVelocityRotation;
+    double CurveInterval;
+    double CurveIntervalTimer;
+    EPalCurveBall CurveID;
+    double Forward Velocity;
+    FVector2D InitCurveVelocity;
+    bool bIsCriticalCapture;
 
     void FillOverlap();
     void IsCritical(class UPrimitiveComponent* OverlappedComponent, bool& bCritical);
@@ -55,6 +55,6 @@ class ABP_PalSphere_ThrowObject_C : public ABP_ThrowCaptureObjectBase_C
     void OnOverlap(class AActor* Actor, class UPrimitiveComponent* PrimitiveComponent);
     void UpdateHoming();
     void ExecuteUbergraph_BP_PalSphere_ThrowObject(int32 EntryPoint);
-}; // Size: 0x521
+};
 
 #endif

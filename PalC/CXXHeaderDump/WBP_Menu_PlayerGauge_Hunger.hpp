@@ -3,10 +3,10 @@
 
 class UWBP_Menu_PlayerGauge_Hunger_C : public UWBP_Menu_CharacterHungerGauge_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0638 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
 
     void Construct();
     void ExecuteUbergraph_WBP_Menu_PlayerGauge_Hunger(int32 EntryPoint);
-}; // Size: 0x640
+};
 
 #endif

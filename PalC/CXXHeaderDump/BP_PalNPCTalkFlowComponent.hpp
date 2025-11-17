@@ -3,6 +3,6 @@
 
 class UBP_PalNPCTalkFlowComponent_C : public UPalNPCTalkFlowComponent
 {
-}; // Size: 0x280
+};
 
 #endif

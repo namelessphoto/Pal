@@ -3,7 +3,7 @@
 
 class UBP_AINPC_CombatState_Base_C : public UPalStateMachineStateBase_BlueprintBase
 {
-    bool IsEndSelf;                                                                   // 0x0030 (size: 0x1)
+    bool IsEndSelf;
 
     void IsEndSelfState(bool& IsEnd);
     void ShootAbleSlefForwardDot(bool& ShootAble);
@@ -13,6 +13,6 @@ class UBP_AINPC_CombatState_Base_C : public UPalStateMachineStateBase_BlueprintB
     void GetSelfActor(class APalCharacter*& SelfActor);
     void GetTargetActor(class AActor*& TargetActor);
     void GetCombatAIActionRef(class UBP_AIAction_NPC_CombatBase_C*& BPAIActionNPCCombat);
-}; // Size: 0x31
+};
 
 #endif

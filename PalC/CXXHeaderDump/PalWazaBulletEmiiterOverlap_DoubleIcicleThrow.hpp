@@ -5,6 +5,6 @@ class UPalWazaBulletEmiiterOverlap_DoubleIcicleThrow_C : public UPalWazaBulletEm
 {
 
     void GetBulletEmiiterOverlapSphere(TArray<FPalWazaBulletEmiiterOverlapSphere>& Spheres);
-}; // Size: 0x28
+};
 
 #endif

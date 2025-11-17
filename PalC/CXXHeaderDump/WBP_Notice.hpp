@@ -3,23 +3,23 @@
 
 class UWBP_Notice_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_Visit_Close;                                          // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_Visit_Open;                                           // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_Raid_Close;                                           // 0x0290 (size: 0x8)
-    class UWidgetAnimation* Anm_Raid_Open;                                            // 0x0298 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_C_84;                                   // 0x02A0 (size: 0x8)
-    class UImage* Icon_notice;                                                        // 0x02A8 (size: 0x8)
-    class UImage* Icon_notice_Shadow;                                                 // 0x02B0 (size: 0x8)
-    class UImage* Notice_base_C;                                                      // 0x02B8 (size: 0x8)
-    class UImage* Notice_base_C_1;                                                    // 0x02C0 (size: 0x8)
-    class UImage* Notice_base_L;                                                      // 0x02C8 (size: 0x8)
-    class UImage* Notice_base_L_1;                                                    // 0x02D0 (size: 0x8)
-    class UImage* Notice_base_R;                                                      // 0x02D8 (size: 0x8)
-    class UImage* Notice_base_R_1;                                                    // 0x02E0 (size: 0x8)
-    FWBP_Notice_COnOpened OnOpened;                                                   // 0x02E8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_Visit_Close;
+    class UWidgetAnimation* Anm_Visit_Open;
+    class UWidgetAnimation* Anm_Raid_Close;
+    class UWidgetAnimation* Anm_Raid_Open;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_C_84;
+    class UImage* Icon_notice;
+    class UImage* Icon_notice_Shadow;
+    class UImage* Notice_base_C;
+    class UImage* Notice_base_C_1;
+    class UImage* Notice_base_L;
+    class UImage* Notice_base_L_1;
+    class UImage* Notice_base_R;
+    class UImage* Notice_base_R_1;
+    FWBP_Notice_COnOpened OnOpened;
     void OnOpened();
-    FWBP_Notice_COnClosed OnClosed;                                                   // 0x02F8 (size: 0x10)
+    FWBP_Notice_COnClosed OnClosed;
     void OnClosed();
 
     void SetText(FText Text);
@@ -36,6 +36,6 @@ class UWBP_Notice_C : public UUserWidget
     void ExecuteUbergraph_WBP_Notice(int32 EntryPoint);
     void OnClosed__DelegateSignature();
     void OnOpened__DelegateSignature();
-}; // Size: 0x308
+};
 
 #endif

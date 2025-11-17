@@ -3,6 +3,6 @@
 
 class UDmgTypeBP_Environmental_C : public UDamageType
 {
-}; // Size: 0x40
+};
 
 #endif

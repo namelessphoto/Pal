@@ -3,17 +3,17 @@
 
 class UWBP_PalPlayerInventoryScrollList_C : public UWBP_PalItemScrollList_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0500 (size: 0x8)
-    class UPalUIInventoryModel* Model;                                                // 0x0508 (size: 0x8)
-    TMap<class EPalPlayerInventoryType, class UWBP_PalItemListBlock_C*> CategoryBlockMap; // 0x0510 (size: 0x50)
-    TArray<EPalPlayerInventoryType> InventoryTypeArray;                               // 0x0560 (size: 0x10)
-    FWBP_PalPlayerInventoryScrollList_COnRequestOpenUseItemPanel OnRequestOpenUseItemPanel; // 0x0570 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalUIInventoryModel* Model;
+    TMap<class EPalPlayerInventoryType, class UWBP_PalItemListBlock_C*> CategoryBlockMap;
+    TArray<EPalPlayerInventoryType> InventoryTypeArray;
+    FWBP_PalPlayerInventoryScrollList_COnRequestOpenUseItemPanel OnRequestOpenUseItemPanel;
     void OnRequestOpenUseItemPanel(class UPalItemSlot* SelectedSlot);
-    bool CanUseSlot;                                                                  // 0x0580 (size: 0x1)
-    FPalDataTableRowName_UIInputAction Handle;                                        // 0x0584 (size: 0x8)
-    bool CanQuickEquip;                                                               // 0x058C (size: 0x1)
-    bool ShowPrice;                                                                   // 0x058D (size: 0x1)
-    FWBP_PalPlayerInventoryScrollList_COnTriedEquipSlot OnTriedEquipSlot;             // 0x0590 (size: 0x10)
+    bool CanUseSlot;
+    FPalDataTableRowName_UIInputAction Handle;
+    bool CanQuickEquip;
+    bool ShowPrice;
+    FWBP_PalPlayerInventoryScrollList_COnTriedEquipSlot OnTriedEquipSlot;
     void OnTriedEquipSlot(class UWBP_PalItemSlotButtonBase_C* SlotButton);
 
     void GetItemSlotButtons(EPalPlayerInventoryType inventoryType, TArray<class UWBP_PalItemSlotButtonBase_C*>& OutSlotButtonArray);
@@ -31,6 +31,6 @@ class UWBP_PalPlayerInventoryScrollList_C : public UWBP_PalItemScrollList_C
     void ExecuteUbergraph_WBP_PalPlayerInventoryScrollList(int32 EntryPoint);
     void OnTriedEquipSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* SlotButton);
     void OnRequestOpenUseItemPanel__DelegateSignature(class UPalItemSlot* SelectedSlot);
-}; // Size: 0x5A0
+};
 
 #endif

@@ -3,11 +3,11 @@
 
 class ABP_Explosion_Low_C : public ABP_ExplosionAttackBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0300 (size: 0x8)
-    class UNiagaraComponent* Explosive;                                               // 0x0308 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UNiagaraComponent* Explosive;
 
     void BndEvt__BP_Explosion_PenguinLauncher_Explosive_K2Node_ComponentBoundEvent_0_OnNiagaraSystemFinished__DelegateSignature(class UNiagaraComponent* PSystem);
     void ExecuteUbergraph_BP_Explosion_Low(int32 EntryPoint);
-}; // Size: 0x310
+};
 
 #endif

@@ -3,11 +3,11 @@
 
 class UBP_PalRaidBossComponent_C : public UPalRaidBossComponent
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0170 (size: 0x8)
-    class AActor* VolumeActor;                                                        // 0x0178 (size: 0x8)
-    TArray<class UPalIndividualCharacterHandle*> ServantActors;                       // 0x0180 (size: 0x10)
-    TSubclassOf<class UPalAIActionBase> EnterAIActionClass;                           // 0x0190 (size: 0x8)
-    TSubclassOf<class AActor> VolumeClass;                                            // 0x0198 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class AActor* VolumeActor;
+    TArray<class UPalIndividualCharacterHandle*> ServantActors;
+    TSubclassOf<class UPalAIActionBase> EnterAIActionClass;
+    TSubclassOf<class AActor> VolumeClass;
 
     void ShouldUseCustomSequenceOnRaidBossFinish(EPalRaidBossBattleFinishType RiadBossFinishType, bool& UseCustomSequence);
     void On Despawn Pal(FPalInstanceID ID);
@@ -24,6 +24,6 @@ class UBP_PalRaidBossComponent_C : public UPalRaidBossComponent
     void OnEndBattle_Server_BP();
     void PlayCustomRaidSequence(EPalRaidBossBattleFinishType RiadBossFinishType, class UWBP_BossBattle_BattleInfo_C* Widget);
     void ExecuteUbergraph_BP_PalRaidBossComponent(int32 EntryPoint);
-}; // Size: 0x1A0
+};
 
 #endif

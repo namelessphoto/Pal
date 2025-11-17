@@ -3,12 +3,12 @@
 
 class UBP_HUDDispatchParameter_ItemFilter_C : public UPalHUDDispatchParameterBase
 {
-    FBP_HUDDispatchParameter_ItemFilter_COnFilterApply OnFilterApply;                 // 0x0038 (size: 0x10)
+    FBP_HUDDispatchParameter_ItemFilter_COnFilterApply OnFilterApply;
     void OnFilterApply(TArray<FName>& Types);
-    TArray<FName> CurrentFilter;                                                      // 0x0048 (size: 0x10)
-    bool RemoveEssential;                                                             // 0x0058 (size: 0x1)
+    TArray<FName> CurrentFilter;
+    bool RemoveEssential;
 
     void OnFilterApply__DelegateSignature(TArray<FName>& Types);
-}; // Size: 0x59
+};
 
 #endif

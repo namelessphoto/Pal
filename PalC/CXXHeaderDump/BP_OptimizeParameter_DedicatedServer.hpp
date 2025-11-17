@@ -3,6 +3,6 @@
 
 class UBP_OptimizeParameter_DedicatedServer_C : public UPalOptimizeParameterSetting
 {
-}; // Size: 0x558
+};
 
 #endif

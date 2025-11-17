@@ -3,10 +3,10 @@
 
 class UBP_AIActionPairCall_FeedItem_C : public UBP_AIActionPairCallBase_C
 {
-    FPalItemSlotId FeedItemSlotId;                                                    // 0x0150 (size: 0x14)
-    int32 FeedItemNum;                                                                // 0x0164 (size: 0x4)
+    FPalItemSlotId FeedItemSlotId;
+    int32 FeedItemNum;
 
     void CreatePairBehaviorActionDynamicParameter(FActionDynamicParameter& DynamicParameter);
-}; // Size: 0x168
+};
 
 #endif

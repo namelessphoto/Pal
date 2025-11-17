@@ -3,16 +3,16 @@
 
 class USteamAuthComponentModuleInterface : public UHandlerComponentFactory
 {
-}; // Size: 0x28
+};
 
 class USteamNetConnection : public UIpConnection
 {
-    bool bIsPassthrough;                                                              // 0x33A0 (size: 0x1)
+    bool bIsPassthrough;
 
-}; // Size: 0x33B0
+};
 
 class USteamNetDriver : public UIpNetDriver
 {
-}; // Size: 0x848
+};
 
 #endif

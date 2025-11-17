@@ -3,6 +3,6 @@
 
 class ABP_MonsterAIController_YakushimaBoss002_2_C : public ABP_MonsterAIController_YakushimaBoss002_C
 {
-}; // Size: 0x5B0
+};
 
 #endif

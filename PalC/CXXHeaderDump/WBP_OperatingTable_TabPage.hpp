@@ -3,56 +3,56 @@
 
 class UWBP_OperatingTable_TabPage_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_GenderChange;                                         // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_GenderDefault;                                        // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_ON;                                                   // 0x0290 (size: 0x8)
-    class UWidgetAnimation* Anm_Empty;                                                // 0x0298 (size: 0x8)
-    class UCanvasPanel* Canvas_Gender;                                                // 0x02A0 (size: 0x8)
-    class UCanvasPanel* Canvas_PassiveSkill;                                          // 0x02A8 (size: 0x8)
-    class UCanvasPanel* Canvas_ResetInfo;                                             // 0x02B0 (size: 0x8)
-    class UCanvasPanel* Canvas_Skill;                                                 // 0x02B8 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_Overall;                                          // 0x02C0 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_Money;                                        // 0x02C8 (size: 0x8)
-    class UImage* Image_Item_Selectframe;                                             // 0x02D0 (size: 0x8)
-    class UImage* Image_NoItem;                                                       // 0x02D8 (size: 0x8)
-    class UImage* Image_Skill_Selectframe;                                            // 0x02E0 (size: 0x8)
-    class UImage* Image_Symbol_After;                                                 // 0x02E8 (size: 0x8)
-    class UImage* Image_Symbol_Before;                                                // 0x02F0 (size: 0x8)
-    class UImage* Image_Symbol_Result;                                                // 0x02F8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_PassiveName;                                       // 0x0300 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_RequireMoney_Num;                                  // 0x0308 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_SkillSelectGuide;                                  // 0x0310 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Warning;                                           // 0x0318 (size: 0x8)
-    class UVerticalBox* VerticalBox_87;                                               // 0x0320 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton;                                      // 0x0328 (size: 0x8)
-    class UWBP_IngameMenu_WorkSpace_Item_C* WBP_IngameMenu_WorkSpace_Item;            // 0x0330 (size: 0x8)
-    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive;          // 0x0338 (size: 0x8)
-    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive_1;        // 0x0340 (size: 0x8)
-    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive_2;        // 0x0348 (size: 0x8)
-    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive_3;        // 0x0350 (size: 0x8)
-    class UWBP_NoData_C* WBP_NoData;                                                  // 0x0358 (size: 0x8)
-    class UWBP_PalInGameMenuItemIcon_C* WBP_PalInGameMenuItemIcon;                    // 0x0360 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x0368 (size: 0x8)
-    FWBP_OperatingTable_TabPage_COnRequireChangeSelectItem OnRequireChangeSelectItem; // 0x0370 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_GenderChange;
+    class UWidgetAnimation* Anm_GenderDefault;
+    class UWidgetAnimation* Anm_ON;
+    class UWidgetAnimation* Anm_Empty;
+    class UCanvasPanel* Canvas_Gender;
+    class UCanvasPanel* Canvas_PassiveSkill;
+    class UCanvasPanel* Canvas_ResetInfo;
+    class UCanvasPanel* Canvas_Skill;
+    class UCanvasPanel* CanvasPanel_Overall;
+    class UHorizontalBox* HorizontalBox_Money;
+    class UImage* Image_Item_Selectframe;
+    class UImage* Image_NoItem;
+    class UImage* Image_Skill_Selectframe;
+    class UImage* Image_Symbol_After;
+    class UImage* Image_Symbol_Before;
+    class UImage* Image_Symbol_Result;
+    class UBP_PalTextBlock_C* Text_PassiveName;
+    class UBP_PalTextBlock_C* Text_RequireMoney_Num;
+    class UBP_PalTextBlock_C* Text_SkillSelectGuide;
+    class UBP_PalTextBlock_C* Text_Warning;
+    class UVerticalBox* VerticalBox_87;
+    class UWBP_CommonButton_C* WBP_CommonButton;
+    class UWBP_IngameMenu_WorkSpace_Item_C* WBP_IngameMenu_WorkSpace_Item;
+    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive;
+    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive_1;
+    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive_2;
+    class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive_3;
+    class UWBP_NoData_C* WBP_NoData;
+    class UWBP_PalInGameMenuItemIcon_C* WBP_PalInGameMenuItemIcon;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    FWBP_OperatingTable_TabPage_COnRequireChangeSelectItem OnRequireChangeSelectItem;
     void OnRequireChangeSelectItem();
-    TArray<class UWBP_MainMenu_Pal_Skill_Passive_C*> Passives;                        // 0x0380 (size: 0x10)
-    class UPalIndividualCharacterParameter* CachedCharacter;                          // 0x0390 (size: 0x8)
-    FWBP_OperatingTable_TabPage_COnSelectedPassiveIndex OnSelectedPassiveIndex;       // 0x0398 (size: 0x10)
+    TArray<class UWBP_MainMenu_Pal_Skill_Passive_C*> Passives;
+    class UPalIndividualCharacterParameter* CachedCharacter;
+    FWBP_OperatingTable_TabPage_COnSelectedPassiveIndex OnSelectedPassiveIndex;
     void OnSelectedPassiveIndex(int32 Index);
-    FWBP_OperatingTable_TabPage_COnHoveredOtomoPassiveSlot OnHoveredOtomoPassiveSlot; // 0x03A8 (size: 0x10)
+    FWBP_OperatingTable_TabPage_COnHoveredOtomoPassiveSlot OnHoveredOtomoPassiveSlot;
     void OnHoveredOtomoPassiveSlot(class UWBP_MainMenu_Pal_Skill_Passive_C* Widget);
-    FWBP_OperatingTable_TabPage_COnUnhoveredOtomoPassiveSlot OnUnhoveredOtomoPassiveSlot; // 0x03B8 (size: 0x10)
+    FWBP_OperatingTable_TabPage_COnUnhoveredOtomoPassiveSlot OnUnhoveredOtomoPassiveSlot;
     void OnUnhoveredOtomoPassiveSlot();
-    int32 CachedPassiveSlotIndex;                                                     // 0x03C8 (size: 0x4)
-    bool EnabledButton;                                                               // 0x03CC (size: 0x1)
-    FWBP_OperatingTable_TabPage_CRequestChangePassiveSkill RequestChangePassiveSkill; // 0x03D0 (size: 0x10)
+    int32 CachedPassiveSlotIndex;
+    bool EnabledButton;
+    FWBP_OperatingTable_TabPage_CRequestChangePassiveSkill RequestChangePassiveSkill;
     void RequestChangePassiveSkill(FName PassiveId, int32 SlotIndex);
-    TArray<FName> CurrentPassiveList;                                                 // 0x03E0 (size: 0x10)
-    FWBP_OperatingTable_TabPage_CRequestChangeGender RequestChangeGender;             // 0x03F0 (size: 0x10)
+    TArray<FName> CurrentPassiveList;
+    FWBP_OperatingTable_TabPage_CRequestChangeGender RequestChangeGender;
     void RequestChangeGender(class UPalIndividualCharacterParameter* CharacterParam);
-    FName CurrentPassiveId;                                                           // 0x0400 (size: 0x8)
-    int32 CurrentRequireMoney;                                                        // 0x0408 (size: 0x4)
+    FName CurrentPassiveId;
+    int32 CurrentRequireMoney;
 
     void ReflectGenderChange();
     void ReflectPassiveChange();
@@ -81,6 +81,6 @@ class UWBP_OperatingTable_TabPage_C : public UUserWidget
     void OnHoveredOtomoPassiveSlot__DelegateSignature(class UWBP_MainMenu_Pal_Skill_Passive_C* Widget);
     void OnSelectedPassiveIndex__DelegateSignature(int32 Index);
     void OnRequireChangeSelectItem__DelegateSignature();
-}; // Size: 0x40C
+};
 
 #endif

@@ -3,6 +3,6 @@
 
 class UBP_PettingPreset_C : public UPalPettingPresset
 {
-}; // Size: 0x58
+};
 
 #endif

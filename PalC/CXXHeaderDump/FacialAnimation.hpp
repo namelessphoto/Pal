@@ -3,9 +3,9 @@
 
 class UAudioCurveSourceComponent : public UAudioComponent
 {
-    FName CurveSourceBindingName;                                                     // 0x0C68 (size: 0x8)
-    float CurveSyncOffset;                                                            // 0x0C70 (size: 0x4)
+    FName CurveSourceBindingName;
+    float CurveSyncOffset;
 
-}; // Size: 0xCA0
+};
 
 #endif

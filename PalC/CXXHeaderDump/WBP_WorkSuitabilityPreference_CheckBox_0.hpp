@@ -3,16 +3,16 @@
 
 class UWBP_WorkSuitabilityPreference_CheckBox_0_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UImage* Image_None;                                                         // 0x0280 (size: 0x8)
-    class UPalCheckBox* PalCheckBox;                                                  // 0x0288 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_0;                        // 0x0290 (size: 0x8)
-    bool IsEnableCheckBox;                                                            // 0x0298 (size: 0x1)
-    FWBP_WorkSuitabilityPreference_CheckBox_0_COnCheckStateChanged OnCheckStateChanged; // 0x02A0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UImage* Image_None;
+    class UPalCheckBox* PalCheckBox;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_0;
+    bool IsEnableCheckBox;
+    FWBP_WorkSuitabilityPreference_CheckBox_0_COnCheckStateChanged OnCheckStateChanged;
     void OnCheckStateChanged(bool IsChecked, EPalWorkSuitability Suitability);
-    EPalWorkSuitability BindedSuitability;                                            // 0x02B0 (size: 0x1)
-    bool IsBattleSettingMode;                                                         // 0x02B1 (size: 0x1)
-    FWBP_WorkSuitabilityPreference_CheckBox_0_COnHoveredCheckBox OnHoveredCheckBox;   // 0x02B8 (size: 0x10)
+    EPalWorkSuitability BindedSuitability;
+    bool IsBattleSettingMode;
+    FWBP_WorkSuitabilityPreference_CheckBox_0_COnHoveredCheckBox OnHoveredCheckBox;
     void OnHoveredCheckBox(class UWBP_WorkSuitabilityPreference_CheckBox_0_C* SelfWidget);
 
     void IsBattleSettingCheckBox(bool& IsBattleSetting);
@@ -27,6 +27,6 @@ class UWBP_WorkSuitabilityPreference_CheckBox_0_C : public UUserWidget
     void ExecuteUbergraph_WBP_WorkSuitabilityPreference_CheckBox_0(int32 EntryPoint);
     void OnHoveredCheckBox__DelegateSignature(class UWBP_WorkSuitabilityPreference_CheckBox_0_C* SelfWidget);
     void OnCheckStateChanged__DelegateSignature(bool IsChecked, EPalWorkSuitability Suitability);
-}; // Size: 0x2C8
+};
 
 #endif

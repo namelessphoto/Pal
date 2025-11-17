@@ -3,14 +3,14 @@
 
 class ABP_SupplyDropActor_Capsule_C : public APalSupplyDropActor
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0308 (size: 0x8)
-    class UStaticMeshComponent* Cylinder;                                             // 0x0310 (size: 0x8)
-    class USceneComponent* DefaultSceneRoot;                                          // 0x0318 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UStaticMeshComponent* Cylinder;
+    class USceneComponent* DefaultSceneRoot;
 
     void ReceiveBeginPlay();
     void OnLanded_BP();
     void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);
     void ExecuteUbergraph_BP_SupplyDropActor_Capsule(int32 EntryPoint);
-}; // Size: 0x320
+};
 
 #endif

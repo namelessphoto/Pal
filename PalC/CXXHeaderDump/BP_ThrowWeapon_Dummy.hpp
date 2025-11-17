@@ -3,9 +3,9 @@
 
 class ABP_ThrowWeapon_Dummy_C : public ABP_ThrowWeaponBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0608 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
 
     void ExecuteUbergraph_BP_ThrowWeapon_Dummy(int32 EntryPoint);
-}; // Size: 0x610
+};
 
 #endif

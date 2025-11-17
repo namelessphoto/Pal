@@ -5,6 +5,6 @@ class UBP_PalBaseCampWorkerEvent_EatTooMuch_C : public UPalBaseCampWorkerEvent_E
 {
 
     FText CreateNotifyMessageText(const FText& LocalizedFormatText, class APalCharacter* Character);
-}; // Size: 0x98
+};
 
 #endif

@@ -3,8 +3,8 @@
 
 class UWBP_PalCommonWindow_C : public UPalUserWidget
 {
-    class UNamedSlot* NamedSlot_91;                                                   // 0x0408 (size: 0x8)
+    class UNamedSlot* NamedSlot_91;
 
-}; // Size: 0x410
+};
 
 #endif

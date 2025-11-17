@@ -3,6 +3,6 @@
 
 class UBP_PalBattleManager_C : public UPalBattleManager
 {
-}; // Size: 0x120
+};
 
 #endif

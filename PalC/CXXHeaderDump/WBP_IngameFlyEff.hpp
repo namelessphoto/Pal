@@ -3,19 +3,19 @@
 
 class UWBP_IngameFlyEff_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_Fade;                                                 // 0x0280 (size: 0x8)
-    class UImage* Image;                                                              // 0x0288 (size: 0x8)
-    class UImage* Image_38;                                                           // 0x0290 (size: 0x8)
-    bool Enabled;                                                                     // 0x0298 (size: 0x1)
-    class APalCharacter* Character;                                                   // 0x02A0 (size: 0x8)
-    FTimerHandle UpdateEffTimer;                                                      // 0x02A8 (size: 0x8)
-    bool Visible;                                                                     // 0x02B0 (size: 0x1)
-    double CachedVelocity;                                                            // 0x02B8 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_Fade;
+    class UImage* Image;
+    class UImage* Image_38;
+    bool Enabled;
+    class APalCharacter* Character;
+    FTimerHandle UpdateEffTimer;
+    bool Visible;
+    double CachedVelocity;
 
     void EnableEff(bool IsEnable, class APalCharacter* Character);
     void UpdateEff();
     void ExecuteUbergraph_WBP_IngameFlyEff(int32 EntryPoint);
-}; // Size: 0x2C0
+};
 
 #endif

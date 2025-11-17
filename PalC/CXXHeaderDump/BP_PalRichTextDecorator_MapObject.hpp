@@ -6,6 +6,6 @@ class UBP_PalRichTextDecorator_MapObject_C : public UPalRichTextDecorator_TagTex
 
     FString GetTextStringInternal(const class UObject* WorldContextObject, FName ID);
     FString GetTagName();
-}; // Size: 0x28
+};
 
 #endif

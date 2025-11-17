@@ -3,6 +3,6 @@
 
 class UBP_UICommonInputData_C : public UCommonUIInputData
 {
-}; // Size: 0x48
+};
 
 #endif

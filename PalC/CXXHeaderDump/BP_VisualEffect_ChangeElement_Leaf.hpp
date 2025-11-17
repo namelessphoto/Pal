@@ -5,6 +5,6 @@ class UBP_VisualEffect_ChangeElement_Leaf_C : public UBP_VisualEffect_ChangeElem
 {
 
     void 新規関数_0();
-}; // Size: 0x90
+};
 
 #endif

@@ -3,31 +3,31 @@
 
 class UWBP_Trading_Item_List_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_NormalToSoldout;                                      // 0x0280 (size: 0x8)
-    class UCanvasPanel* Canvas_Empty;                                                 // 0x0288 (size: 0x8)
-    class UCanvasPanel* Canvas_Select;                                                // 0x0290 (size: 0x8)
-    class UCanvasPanel* CanvasPanel_TradeInfo;                                        // 0x0298 (size: 0x8)
-    class UImage* Frame_Focus_Flare;                                                  // 0x02A0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Stock;                                             // 0x02A8 (size: 0x8)
-    class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x02B0 (size: 0x8)
-    class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton;      // 0x02B8 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_PalInGameMenuItemSlotButton_Cost;   // 0x02C0 (size: 0x8)
-    class UWBP_PalInGameMenuItemSlotButton_C* WBP_PalInGameMenuItemSlotButton_Product; // 0x02C8 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x02D0 (size: 0x8)
-    FWBP_Trading_Item_List_COnEmptySlotClicked OnEmptySlotClicked;                    // 0x02D8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_NormalToSoldout;
+    class UCanvasPanel* Canvas_Empty;
+    class UCanvasPanel* Canvas_Select;
+    class UCanvasPanel* CanvasPanel_TradeInfo;
+    class UImage* Frame_Focus_Flare;
+    class UBP_PalTextBlock_C* Text_Stock;
+    class UWBP_Menu_btn_C* WBP_Menu_btn;
+    class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_PalInGameMenuItemSlotButton_Cost;
+    class UWBP_PalInGameMenuItemSlotButton_C* WBP_PalInGameMenuItemSlotButton_Product;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    FWBP_Trading_Item_List_COnEmptySlotClicked OnEmptySlotClicked;
     void OnEmptySlotClicked();
-    int32 Index;                                                                      // 0x02E8 (size: 0x4)
-    FWBP_Trading_Item_List_COnClickedRemoveButton OnClickedRemoveButton;              // 0x02F0 (size: 0x10)
+    int32 Index;
+    FWBP_Trading_Item_List_COnClickedRemoveButton OnClickedRemoveButton;
     void OnClickedRemoveButton(int32 TradeIndex);
-    bool IsEmpty;                                                                     // 0x0300 (size: 0x1)
-    FWBP_Trading_Item_List_COnTradeSelect OnTradeSelect;                              // 0x0308 (size: 0x10)
+    bool IsEmpty;
+    FWBP_Trading_Item_List_COnTradeSelect OnTradeSelect;
     void OnTradeSelect(int32 Index);
-    FWBP_Trading_Item_List_COnTradeInfoHovered OnTradeInfoHovered;                    // 0x0318 (size: 0x10)
+    FWBP_Trading_Item_List_COnTradeInfoHovered OnTradeInfoHovered;
     void OnTradeInfoHovered(int32 Index);
-    FWBP_Trading_Item_List_COnTradeInfoUnhovered OnTradeInfoUnhovered;                // 0x0328 (size: 0x10)
+    FWBP_Trading_Item_List_COnTradeInfoUnhovered OnTradeInfoUnhovered;
     void OnTradeInfoUnhovered(int32 Index);
-    bool NowSoldOut;                                                                  // 0x0338 (size: 0x1)
+    bool NowSoldOut;
 
     void UpdateStock(int32 StockCount);
     void SetEmpty();
@@ -47,6 +47,6 @@ class UWBP_Trading_Item_List_C : public UUserWidget
     void OnTradeSelect__DelegateSignature(int32 Index);
     void OnClickedRemoveButton__DelegateSignature(int32 TradeIndex);
     void OnEmptySlotClicked__DelegateSignature();
-}; // Size: 0x339
+};
 
 #endif

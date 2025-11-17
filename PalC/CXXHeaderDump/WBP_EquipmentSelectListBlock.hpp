@@ -7,6 +7,6 @@ class UWBP_EquipmentSelectListBlock_C : public UWBP_PalItemListBlock_C
     void GetAllItemSlotButtons(TArray<class UWBP_PalItemSlotButtonBase_C*>& slotButtons);
     void GetFocusTarget(class UWidget*& NewParam);
     void EditCreatedSlotWidget(class UWBP_PalItemSlotButtonBase_C* createdSlotWidget, class UWidget*& editedWidget);
-}; // Size: 0x540
+};
 
 #endif

@@ -3,19 +3,19 @@
 
 class UWBP_Common_NumArrow_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UWidgetAnimation* Anm_SelectArrow;                                          // 0x0410 (size: 0x8)
-    class UImage* ArrowHover;                                                         // 0x0418 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x0420 (size: 0x8)
-    class UWidgetSwitcher* WidgetSwitcher;                                            // 0x0428 (size: 0x8)
-    FWBP_Common_NumArrow_COnClicked OnClicked;                                        // 0x0430 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_SelectArrow;
+    class UImage* ArrowHover;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    class UWidgetSwitcher* WidgetSwitcher;
+    FWBP_Common_NumArrow_COnClicked OnClicked;
     void OnClicked(int32 Progress);
-    FName InputActionName;                                                            // 0x0440 (size: 0x8)
-    bool DoubleArrow;                                                                 // 0x0448 (size: 0x1)
-    int32 ProgressValue;                                                              // 0x044C (size: 0x4)
-    FTimerHandle PressedTimer;                                                        // 0x0450 (size: 0x8)
-    double ProgressMultiplier;                                                        // 0x0458 (size: 0x8)
-    int32 HoldCount;                                                                  // 0x0460 (size: 0x4)
+    FName InputActionName;
+    bool DoubleArrow;
+    int32 ProgressValue;
+    FTimerHandle PressedTimer;
+    double ProgressMultiplier;
+    int32 HoldCount;
 
     void AnmEvent_Trigger();
     void OnArrowClicked();
@@ -28,6 +28,6 @@ class UWBP_Common_NumArrow_C : public UPalUserWidget
     void ArrowClicked_Progressive();
     void ExecuteUbergraph_WBP_Common_NumArrow(int32 EntryPoint);
     void OnClicked__DelegateSignature(int32 Progress);
-}; // Size: 0x464
+};
 
 #endif

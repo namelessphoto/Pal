@@ -3,19 +3,19 @@
 
 class ABP_ExplosionAttackBase_C : public AActor
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0290 (size: 0x8)
-    class USphereComponent* Sphere;                                                   // 0x0298 (size: 0x8)
-    double HitCollisionTime;                                                          // 0x02A0 (size: 0x8)
-    class UPalHitFilter* HitFilter;                                                   // 0x02A8 (size: 0x8)
-    int32 AttackPower;                                                                // 0x02B0 (size: 0x4)
-    double BlowPower;                                                                 // 0x02B8 (size: 0x8)
-    double SneakAttackRate;                                                           // 0x02C0 (size: 0x8)
-    TSubclassOf<class UPalCameraShakeBase> CameraShakeClass;                          // 0x02C8 (size: 0x8)
-    bool IsBlow;                                                                      // 0x02D0 (size: 0x1)
-    TArray<FPalSpecialAttackRateInfo> Special Attack Rate Infos;                      // 0x02D8 (size: 0x10)
-    double PvPRate;                                                                   // 0x02E8 (size: 0x8)
-    bool MuteSoundForAI;                                                              // 0x02F0 (size: 0x1)
-    FName OwnerStaticItemId;                                                          // 0x02F4 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class USphereComponent* Sphere;
+    double HitCollisionTime;
+    class UPalHitFilter* HitFilter;
+    int32 AttackPower;
+    double BlowPower;
+    double SneakAttackRate;
+    TSubclassOf<class UPalCameraShakeBase> CameraShakeClass;
+    bool IsBlow;
+    TArray<FPalSpecialAttackRateInfo> Special Attack Rate Infos;
+    double PvPRate;
+    bool MuteSoundForAI;
+    FName OwnerStaticItemId;
 
     void SetSpecialAttackInfos(TArray<FPalSpecialAttackRateInfo>& NewParam);
     void Can Damage by Ray Check(class UPrimitiveComponent* OtherHitCollision, bool& CanDamage);
@@ -35,6 +35,6 @@ class ABP_ExplosionAttackBase_C : public AActor
     void SetupHitFilter();
     void SetOwnerStaticItemId(FName OwnerStaticItemId);
     void ExecuteUbergraph_BP_ExplosionAttackBase(int32 EntryPoint);
-}; // Size: 0x2FC
+};
 
 #endif

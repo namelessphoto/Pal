@@ -3,6 +3,6 @@
 
 class ABP_NPC_Female_Soldier_C : public ABP_NPC_StandardHumanDataSet_C
 {
-}; // Size: 0xA98
+};
 
 #endif

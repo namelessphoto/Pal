@@ -3,6 +3,6 @@
 
 class UBP_PalEventNotifySystem_C : public UPalEventNotifySystem
 {
-}; // Size: 0xD8
+};
 
 #endif

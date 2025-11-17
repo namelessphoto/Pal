@@ -3,21 +3,21 @@
 
 class UWBP_CharaCre_BodyTypeButton_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_UnselectToSelect;                                     // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_NormalToFocus;                                        // 0x0288 (size: 0x8)
-    class UImage* Base;                                                               // 0x0290 (size: 0x8)
-    class UImage* Frame;                                                              // 0x0298 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_BodyType;                                          // 0x02A0 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x02A8 (size: 0x8)
-    FDataTableRowHandle MsgID;                                                        // 0x02B0 (size: 0x10)
-    FName Bind Preset Name;                                                           // 0x02C0 (size: 0x8)
-    FWBP_CharaCre_BodyTypeButton_COnClicked OnClicked;                                // 0x02C8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_UnselectToSelect;
+    class UWidgetAnimation* Anm_NormalToFocus;
+    class UImage* Base;
+    class UImage* Frame;
+    class UBP_PalTextBlock_C* Text_BodyType;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    FDataTableRowHandle MsgID;
+    FName Bind Preset Name;
+    FWBP_CharaCre_BodyTypeButton_COnClicked OnClicked;
     void OnClicked(class UWBP_CharaCre_BodyTypeButton_C* Widget);
-    FDataTableRowHandle VoiceMsgID;                                                   // 0x02D8 (size: 0x10)
-    FWBP_CharaCre_BodyTypeButton_COnHovered OnHovered;                                // 0x02E8 (size: 0x10)
+    FDataTableRowHandle VoiceMsgID;
+    FWBP_CharaCre_BodyTypeButton_COnHovered OnHovered;
     void OnHovered(class UWBP_CharaCre_BodyTypeButton_C* Widget);
-    FWBP_CharaCre_BodyTypeButton_COnUnhovered OnUnhovered;                            // 0x02F8 (size: 0x10)
+    FWBP_CharaCre_BodyTypeButton_COnUnhovered OnUnhovered;
     void OnUnhovered();
 
     void SetupAsVoice(int32 ButtonIndex);
@@ -34,6 +34,6 @@ class UWBP_CharaCre_BodyTypeButton_C : public UUserWidget
     void OnUnhovered__DelegateSignature();
     void OnHovered__DelegateSignature(class UWBP_CharaCre_BodyTypeButton_C* Widget);
     void OnClicked__DelegateSignature(class UWBP_CharaCre_BodyTypeButton_C* Widget);
-}; // Size: 0x308
+};
 
 #endif

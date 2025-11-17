@@ -3,10 +3,10 @@
 
 class ABP_MapObject_TreasureBox_VisibleContent_AdjustFloor_C : public ABP_MapObject_TreasureBox_VisibleContent_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0420 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
 
     void ReceiveBeginPlay();
     void ExecuteUbergraph_BP_MapObject_TreasureBox_VisibleContent_AdjustFloor(int32 EntryPoint);
-}; // Size: 0x428
+};
 
 #endif

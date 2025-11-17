@@ -3,6 +3,6 @@
 
 class UWBP_PalInvisibleButton_C : public UWBP_PalCommonButtonBase_C
 {
-}; // Size: 0x1538
+};
 
 #endif

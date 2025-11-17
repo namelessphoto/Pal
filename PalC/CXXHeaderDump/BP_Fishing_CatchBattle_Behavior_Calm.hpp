@@ -5,6 +5,6 @@ class UBP_Fishing_CatchBattle_Behavior_Calm_C : public UBP_Fishing_CatchBattle_B
 {
 
     void OverRideArrivalTime_Calm(double arrivetime, double& mod_arrivetime);
-}; // Size: 0x110
+};
 
 #endif

@@ -3,13 +3,13 @@
 
 class ABP_MonsterAIControllerBase_C : public APalAIController
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0538 (size: 0x8)
-    class UBP_AIADamageReaction_C* BP_AIADamageReaction;                              // 0x0540 (size: 0x8)
-    TSubclassOf<class UPalAIActionBase> DefaultActionClass;                           // 0x0548 (size: 0x8)
-    TSubclassOf<class UPalAIActionCompositeBase> DefaultRootCompositeActionClass;     // 0x0550 (size: 0x8)
-    bool bPlayDefaultCompositeAction;                                                 // 0x0558 (size: 0x1)
-    bool IsSetupEnd;                                                                  // 0x0559 (size: 0x1)
-    bool IsAutoPlayDefaultAction;                                                     // 0x055A (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UBP_AIADamageReaction_C* BP_AIADamageReaction;
+    TSubclassOf<class UPalAIActionBase> DefaultActionClass;
+    TSubclassOf<class UPalAIActionCompositeBase> DefaultRootCompositeActionClass;
+    bool bPlayDefaultCompositeAction;
+    bool IsSetupEnd;
+    bool IsAutoPlayDefaultAction;
 
     void ToLogFontStyleName(EPalMonsterControllerBaseCampLogType LogType, FName& StyleName);
     void ShowBaseCampLog_Internal(FPalMonsterControllerBaseCampLogContent& Content);
@@ -21,6 +21,6 @@ class ABP_MonsterAIControllerBase_C : public APalAIController
     void カスタムイベント_0(class APalCharacter* InCharacter);
     void SetupBySpawner();
     void ExecuteUbergraph_BP_MonsterAIControllerBase(int32 EntryPoint);
-}; // Size: 0x55B
+};
 
 #endif

@@ -5,6 +5,6 @@ class UBP_PalBaseCampWorkerEvent_DodgeWork_Sleep_C : public UPalBaseCampWorkerEv
 {
 
     FText CreateNotifyMessageText(const FText& LocalizedFormatText, class APalCharacter* Character);
-}; // Size: 0xB0
+};
 
 #endif

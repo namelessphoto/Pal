@@ -5,6 +5,6 @@ class UBP_ReturnOtomoSphereComponent_C : public USkeletalMeshComponent
 {
 
     void DeleteSelf();
-}; // Size: 0xF80
+};
 
 #endif

@@ -6,6 +6,6 @@ class UBP_CombatHeliRpidWeaponComponent_Bomber_C : public UBP_CombatHeliRpidWeap
 
     void GetMuzzleFlashEffect(class UNiagaraSystem*& Effect);
     void GetMuzzleTransform(FTransform& MzlTF);
-}; // Size: 0xF8
+};
 
 #endif

@@ -3,10 +3,10 @@
 
 class UWBP_CrimeList_RankGauge_C : public UUserWidget
 {
-    class UWidgetAnimation* Anm_OFFToON;                                              // 0x0278 (size: 0x8)
-    class UImage* IconRank;                                                           // 0x0280 (size: 0x8)
-    class UProgressBar* ProgressBar_109;                                              // 0x0288 (size: 0x8)
+    class UWidgetAnimation* Anm_OFFToON;
+    class UImage* IconRank;
+    class UProgressBar* ProgressBar_109;
 
-}; // Size: 0x290
+};
 
 #endif

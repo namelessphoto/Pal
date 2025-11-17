@@ -3,6 +3,6 @@
 
 class ABP_BoxPlacementToolBase_C : public ABoxPlacement
 {
-}; // Size: 0x420
+};
 
 #endif

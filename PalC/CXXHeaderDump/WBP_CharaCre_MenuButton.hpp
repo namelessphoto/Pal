@@ -3,16 +3,16 @@
 
 class UWBP_CharaCre_MenuButton_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_NormalToFocus;                                        // 0x0280 (size: 0x8)
-    class UImage* FocusFrame;                                                         // 0x0288 (size: 0x8)
-    class UImage* Frame;                                                              // 0x0290 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Main;                                              // 0x0298 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x02A0 (size: 0x8)
-    FWBP_CharaCre_MenuButton_COnClicked OnClicked;                                    // 0x02A8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_NormalToFocus;
+    class UImage* FocusFrame;
+    class UImage* Frame;
+    class UBP_PalTextBlock_C* Text_Main;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    FWBP_CharaCre_MenuButton_COnClicked OnClicked;
     void OnClicked(class UWBP_CharaCre_MenuButton_C* Button);
-    TEnumAsByte<E_UICharacterMakeCategory> BindCategory;                              // 0x02B8 (size: 0x1)
-    TMap<TEnumAsByte<E_UICharacterMakeCategory>, FDataTableRowHandle> MsgIDMap;       // 0x02C0 (size: 0x50)
+    TEnumAsByte<E_UICharacterMakeCategory> BindCategory;
+    TMap<TEnumAsByte<E_UICharacterMakeCategory>, FDataTableRowHandle> MsgIDMap;
 
     void GetBindedCategory(TEnumAsByte<E_UICharacterMakeCategory>& CategoryType);
     void AnmEvent_Select();
@@ -24,6 +24,6 @@ class UWBP_CharaCre_MenuButton_C : public UUserWidget
     void Destruct();
     void ExecuteUbergraph_WBP_CharaCre_MenuButton(int32 EntryPoint);
     void OnClicked__DelegateSignature(class UWBP_CharaCre_MenuButton_C* Button);
-}; // Size: 0x310
+};
 
 #endif

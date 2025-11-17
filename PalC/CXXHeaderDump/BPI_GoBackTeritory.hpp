@@ -5,6 +5,6 @@ class IBPI_GoBackTeritory_C : public IInterface
 {
 
     void GoBack_Teritory();
-}; // Size: 0x28
+};
 
 #endif

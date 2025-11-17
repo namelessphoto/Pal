@@ -3,10 +3,10 @@
 
 class UWBP_PlayerSideInfo_Separated_C : public UWBP_IndividualParameterBindWidget_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0608 (size: 0x8)
-    class UWBP_Ingame_PlayerGauge_Separated_C* WBP_Ingame_PlayerGauge_Separated;      // 0x0610 (size: 0x8)
-    FTimerHandle CheckCaptureCountTimerHandle;                                        // 0x0618 (size: 0x8)
-    FTimerHandle CheckFirstActivationPalTimerHandle;                                  // 0x0620 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWBP_Ingame_PlayerGauge_Separated_C* WBP_Ingame_PlayerGauge_Separated;
+    FTimerHandle CheckCaptureCountTimerHandle;
+    FTimerHandle CheckFirstActivationPalTimerHandle;
 
     void OnTimer_CheckActivationOtomo();
     void DisableFirstSummonPalGuide();
@@ -32,6 +32,6 @@ class UWBP_PlayerSideInfo_Separated_C : public UWBP_IndividualParameterBindWidge
     void UpdateHunger_Binded(double nowHunger, double nowMaxHunger);
     void UpdatePlayerBuff();
     void ExecuteUbergraph_WBP_PlayerSideInfo_Separated(int32 EntryPoint);
-}; // Size: 0x628
+};
 
 #endif

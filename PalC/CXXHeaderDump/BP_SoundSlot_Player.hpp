@@ -3,6 +3,6 @@
 
 class UBP_SoundSlot_Player_C : public UPalSoundSlot
 {
-}; // Size: 0xD0
+};
 
 #endif

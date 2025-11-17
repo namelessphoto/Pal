@@ -3,6 +3,6 @@
 
 class ABP_DarkMutant_BOSS_C : public ABP_DarkMutant_C
 {
-}; // Size: 0xB98
+};
 
 #endif

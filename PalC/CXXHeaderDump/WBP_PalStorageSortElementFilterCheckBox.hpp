@@ -3,13 +3,13 @@
 
 class UWBP_PalStorageSortElementFilterCheckBox_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UPalCheckBox* PalCheckBox_43;                                               // 0x0280 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Title;                                             // 0x0288 (size: 0x8)
-    class UWBP_PalElementIcon_C* WBP_PalElementIcon;                                  // 0x0290 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x0298 (size: 0x8)
-    EPalElementType BindElementType;                                                  // 0x02A0 (size: 0x1)
-    FWBP_PalStorageSortElementFilterCheckBox_COnClicked OnClicked;                    // 0x02A8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UPalCheckBox* PalCheckBox_43;
+    class UBP_PalTextBlock_C* Text_Title;
+    class UWBP_PalElementIcon_C* WBP_PalElementIcon;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;
+    EPalElementType BindElementType;
+    FWBP_PalStorageSortElementFilterCheckBox_COnClicked OnClicked;
     void OnClicked(bool bChecked, EPalElementType ElementType);
 
     void SetCheckedState(bool bChecked);
@@ -18,6 +18,6 @@ class UWBP_PalStorageSortElementFilterCheckBox_C : public UUserWidget
     void BndEvt__WBP_PalStorageSortElementFilterCheckBox_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
     void ExecuteUbergraph_WBP_PalStorageSortElementFilterCheckBox(int32 EntryPoint);
     void OnClicked__DelegateSignature(bool bChecked, EPalElementType ElementType);
-}; // Size: 0x2B8
+};
 
 #endif

@@ -3,10 +3,10 @@
 
 class UWBP_PalHungerHud_C : public UPalUserWidgetWorldHUD
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UWBP_PalHungerIcon_C* WBP_PalHungerIcon;                                    // 0x0410 (size: 0x8)
-    FGuid Belong Group Id;                                                            // 0x0418 (size: 0x10)
-    FTimerHandle CheckGroupTimer;                                                     // 0x0428 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWBP_PalHungerIcon_C* WBP_PalHungerIcon;
+    FGuid Belong Group Id;
+    FTimerHandle CheckGroupTimer;
 
     void GetLocalPlayerGroupID(FGuid& GroupId);
     void RemoveSelf_In();
@@ -16,6 +16,6 @@ class UWBP_PalHungerHud_C : public UPalUserWidgetWorldHUD
     void CheckGroup();
     void Destruct();
     void ExecuteUbergraph_WBP_PalHungerHud(int32 EntryPoint);
-}; // Size: 0x430
+};
 
 #endif

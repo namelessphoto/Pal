@@ -5,22 +5,22 @@
 
 struct FLobbyPlayerStateActorInfo : public FFastArraySerializerItem
 {
-    class ALobbyBeaconPlayerState* LobbyPlayerState;                                  // 0x0010 (size: 0x8)
+    class ALobbyBeaconPlayerState* LobbyPlayerState;
 
-}; // Size: 0x18
+};
 
 struct FLobbyPlayerStateInfoArray : public FFastArraySerializer
 {
-    TArray<FLobbyPlayerStateActorInfo> Players;                                       // 0x0108 (size: 0x10)
-    class ALobbyBeaconState* ParentState;                                             // 0x0118 (size: 0x8)
+    TArray<FLobbyPlayerStateActorInfo> Players;
+    class ALobbyBeaconState* ParentState;
 
-}; // Size: 0x120
+};
 
 class ALobbyBeaconClient : public AOnlineBeaconClient
 {
-    class ALobbyBeaconState* LobbyState;                                              // 0x0320 (size: 0x8)
-    class ALobbyBeaconPlayerState* PlayerState;                                       // 0x0328 (size: 0x8)
-    ELobbyBeaconJoinState LobbyJoinServerState;                                       // 0x0331 (size: 0x1)
+    class ALobbyBeaconState* LobbyState;
+    class ALobbyBeaconPlayerState* PlayerState;
+    ELobbyBeaconJoinState LobbyJoinServerState;
 
     void ServerSetPartyOwner(const FUniqueNetIdRepl& InUniqueId, const FUniqueNetIdRepl& InPartyOwnerId);
     void ServerNotifyJoiningServer();
@@ -35,38 +35,38 @@ class ALobbyBeaconClient : public AOnlineBeaconClient
     void ClientLoginComplete(const FUniqueNetIdRepl& InUniqueId, bool bWasSuccessful);
     void ClientJoinGame();
     void ClientAckJoiningServer();
-}; // Size: 0x3A8
+};
 
 class ALobbyBeaconHost : public AOnlineBeaconHostObject
 {
-    TSoftClassPtr<ALobbyBeaconState> LobbyStateClass;                                 // 0x02C0 (size: 0x30)
-    class ALobbyBeaconState* LobbyState;                                              // 0x02F0 (size: 0x8)
+    TSoftClassPtr<ALobbyBeaconState> LobbyStateClass;
+    class ALobbyBeaconState* LobbyState;
 
-}; // Size: 0x2F8
+};
 
 class ALobbyBeaconPlayerState : public AInfo
 {
-    FText DisplayName;                                                                // 0x0290 (size: 0x18)
-    FUniqueNetIdRepl UniqueId;                                                        // 0x02A8 (size: 0x30)
-    FUniqueNetIdRepl PartyOwnerUniqueId;                                              // 0x02D8 (size: 0x30)
-    bool bInLobby;                                                                    // 0x0308 (size: 0x1)
-    class AOnlineBeaconClient* ClientActor;                                           // 0x0310 (size: 0x8)
+    FText DisplayName;
+    FUniqueNetIdRepl UniqueId;
+    FUniqueNetIdRepl PartyOwnerUniqueId;
+    bool bInLobby;
+    class AOnlineBeaconClient* ClientActor;
 
     void OnRep_UniqueId();
     void OnRep_PartyOwner();
     void OnRep_InLobby();
-}; // Size: 0x360
+};
 
 class ALobbyBeaconState : public AInfo
 {
-    int32 MaxPlayers;                                                                 // 0x0290 (size: 0x4)
-    TSubclassOf<class ALobbyBeaconPlayerState> LobbyBeaconPlayerStateClass;           // 0x0298 (size: 0x8)
-    bool bLobbyStarted;                                                               // 0x02A8 (size: 0x1)
-    float WaitForPlayersTimeRemaining;                                                // 0x02AC (size: 0x4)
-    FLobbyPlayerStateInfoArray Players;                                               // 0x02B0 (size: 0x120)
+    int32 MaxPlayers;
+    TSubclassOf<class ALobbyBeaconPlayerState> LobbyBeaconPlayerStateClass;
+    bool bLobbyStarted;
+    float WaitForPlayersTimeRemaining;
+    FLobbyPlayerStateInfoArray Players;
 
     void OnRep_WaitForPlayersTimeRemaining();
     void OnRep_LobbyStarted();
-}; // Size: 0x438
+};
 
 #endif

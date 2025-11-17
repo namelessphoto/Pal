@@ -3,6 +3,6 @@
 
 class UBP_OptimizeParameter_High_C : public UPalOptimizeParameterSetting
 {
-}; // Size: 0x558
+};
 
 #endif

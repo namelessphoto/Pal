@@ -27,6 +27,6 @@ class UDLSSLibrary : public UBlueprintFunctionLibrary
     void EnableDLSSRR(bool bEnabled);
     void EnableDLSS(bool bEnabled);
     void EnableDLAA(bool bEnabled);
-}; // Size: 0x28
+};
 
 #endif

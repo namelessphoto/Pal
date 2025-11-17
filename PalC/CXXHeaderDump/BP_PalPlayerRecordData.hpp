@@ -3,6 +3,6 @@
 
 class UBP_PalPlayerRecordData_C : public UPalPlayerRecordData
 {
-}; // Size: 0x28C8
+};
 
 #endif

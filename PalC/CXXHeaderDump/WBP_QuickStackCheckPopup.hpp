@@ -3,19 +3,19 @@
 
 class UWBP_QuickStackCheckPopup_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UWidgetAnimation* Anm_Close;                                                // 0x0438 (size: 0x8)
-    class UWidgetAnimation* Anm_Open;                                                 // 0x0440 (size: 0x8)
-    class UScrollBox* ScrollBox;                                                      // 0x0448 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton_NO;                                   // 0x0450 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton_YES;                                  // 0x0458 (size: 0x8)
-    class UWBP_PalCommonWindow_C* WBP_PalCommonWindow;                                // 0x0460 (size: 0x8)
-    class UWrapBox* WrapBox_ItemSlot;                                                 // 0x0468 (size: 0x8)
-    FWBP_QuickStackCheckPopup_COnClickedLeftButton OnClickedLeftButton;               // 0x0470 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_Close;
+    class UWidgetAnimation* Anm_Open;
+    class UScrollBox* ScrollBox;
+    class UWBP_CommonButton_C* WBP_CommonButton_NO;
+    class UWBP_CommonButton_C* WBP_CommonButton_YES;
+    class UWBP_PalCommonWindow_C* WBP_PalCommonWindow;
+    class UWrapBox* WrapBox_ItemSlot;
+    FWBP_QuickStackCheckPopup_COnClickedLeftButton OnClickedLeftButton;
     void OnClickedLeftButton();
-    FWBP_QuickStackCheckPopup_COnClickedRightButton OnClickedRightButton;             // 0x0480 (size: 0x10)
+    FWBP_QuickStackCheckPopup_COnClickedRightButton OnClickedRightButton;
     void OnClickedRightButton();
-    class UBP_HUDDispatchParameter_QuickStackConfirm_C* HUDDispatchParam;             // 0x0490 (size: 0x8)
+    class UBP_HUDDispatchParameter_QuickStackConfirm_C* HUDDispatchParam;
 
     class UWidget* BP_GetDesiredFocusTarget();
     void Setup();
@@ -29,6 +29,6 @@ class UWBP_QuickStackCheckPopup_C : public UPalUserWidgetOverlayUI
     void ExecuteUbergraph_WBP_QuickStackCheckPopup(int32 EntryPoint);
     void OnClickedRightButton__DelegateSignature();
     void OnClickedLeftButton__DelegateSignature();
-}; // Size: 0x498
+};
 
 #endif

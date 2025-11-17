@@ -3,26 +3,26 @@
 
 class UWBP_Paldex_Map_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_TimeZone_Night;                                       // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_TimeZone_Daytime;                                     // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_TimeZone_All;                                         // 0x0290 (size: 0x8)
-    class UCanvasPanel* Canvas_Distribution;                                          // 0x0298 (size: 0x8)
-    class UCanvasPanel* Canvas_MapRoot;                                               // 0x02A0 (size: 0x8)
-    class UImage* Image_Map;                                                          // 0x02A8 (size: 0x8)
-    class UImage* Image_Mask;                                                         // 0x02B0 (size: 0x8)
-    class URetainerBox* RetainerBox_DistributionCircle;                               // 0x02B8 (size: 0x8)
-    class URetainerBox* RetainerBox_Map;                                              // 0x02C0 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Day;                      // 0x02C8 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Night;                    // 0x02D0 (size: 0x8)
-    FVector2D MinLandscapePosXY;                                                      // 0x02D8 (size: 0x10)
-    FVector2D MaxLandscapePosXY;                                                      // 0x02E8 (size: 0x10)
-    FVector2D LandScapeSize;                                                          // 0x02F8 (size: 0x10)
-    double maxZoomRate;                                                               // 0x0308 (size: 0x8)
-    FWBP_Paldex_Map_COnSwitchDayNight OnSwitchDayNight;                               // 0x0310 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWidgetAnimation* Anm_TimeZone_Night;
+    class UWidgetAnimation* Anm_TimeZone_Daytime;
+    class UWidgetAnimation* Anm_TimeZone_All;
+    class UCanvasPanel* Canvas_Distribution;
+    class UCanvasPanel* Canvas_MapRoot;
+    class UImage* Image_Map;
+    class UImage* Image_Mask;
+    class URetainerBox* RetainerBox_DistributionCircle;
+    class URetainerBox* RetainerBox_Map;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Day;
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Night;
+    FVector2D MinLandscapePosXY;
+    FVector2D MaxLandscapePosXY;
+    FVector2D LandScapeSize;
+    double maxZoomRate;
+    FWBP_Paldex_Map_COnSwitchDayNight OnSwitchDayNight;
     void OnSwitchDayNight(TEnumAsByte<E_PaldexDistributionTimeType> Time);
-    double OffsetRistrict;                                                            // 0x0320 (size: 0x8)
-    class UWBP_Map_IconPlayer_C* PlayerIcon;                                          // 0x0328 (size: 0x8)
+    double OffsetRistrict;
+    class UWBP_Map_IconPlayer_C* PlayerIcon;
 
     void SetVisibilityMap(bool IsVisible);
     void IsZoomMax(bool& IsMax);
@@ -44,6 +44,6 @@ class UWBP_Paldex_Map_C : public UUserWidget
     void LoadAndApplyDefaultMaskTexture(class UMaterialInstanceDynamic* TargetMaterial);
     void ExecuteUbergraph_WBP_Paldex_Map(int32 EntryPoint);
     void OnSwitchDayNight__DelegateSignature(TEnumAsByte<E_PaldexDistributionTimeType> Time);
-}; // Size: 0x330
+};
 
 #endif

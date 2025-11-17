@@ -3,18 +3,18 @@
 
 class UWBP_IngameMenu_ChestManage_TakeOut_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UBP_PalTextBlock_C* BP_PalTextBlock_ItemName;                               // 0x0410 (size: 0x8)
-    class UWBP_CommonButton_2_C* WBP_CommonButton_Confirm;                            // 0x0418 (size: 0x8)
-    class UWBP_IngameCommonSelectNum_C* WBP_IngameCommonSelectNum;                    // 0x0420 (size: 0x8)
-    class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x0428 (size: 0x8)
-    int32 CurrentProductAmount;                                                       // 0x0430 (size: 0x4)
-    FPalItemAndNum CurrentItemInfo;                                                   // 0x0434 (size: 0x2C)
-    FWBP_IngameMenu_ChestManage_TakeOut_COnTakeOutClosed OnTakeOutClosed;             // 0x0460 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UBP_PalTextBlock_C* BP_PalTextBlock_ItemName;
+    class UWBP_CommonButton_2_C* WBP_CommonButton_Confirm;
+    class UWBP_IngameCommonSelectNum_C* WBP_IngameCommonSelectNum;
+    class UWBP_Menu_btn_C* WBP_Menu_btn;
+    int32 CurrentProductAmount;
+    FPalItemAndNum CurrentItemInfo;
+    FWBP_IngameMenu_ChestManage_TakeOut_COnTakeOutClosed OnTakeOutClosed;
     void OnTakeOutClosed();
-    FWBP_IngameMenu_ChestManage_TakeOut_COnTakeOutConfirmed OnTakeOutConfirmed;       // 0x0470 (size: 0x10)
+    FWBP_IngameMenu_ChestManage_TakeOut_COnTakeOutConfirmed OnTakeOutConfirmed;
     void OnTakeOutConfirmed(FPalItemId TakeOutId, int32 TakeOutCount);
-    int32 MaxCount;                                                                   // 0x0480 (size: 0x4)
+    int32 MaxCount;
 
     void Setup(FPalItemAndNum ItemAndNum);
     void BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_Menu_btn_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature();
@@ -23,6 +23,6 @@ class UWBP_IngameMenu_ChestManage_TakeOut_C : public UPalUserWidget
     void ExecuteUbergraph_WBP_IngameMenu_ChestManage_TakeOut(int32 EntryPoint);
     void OnTakeOutConfirmed__DelegateSignature(FPalItemId TakeOutId, int32 TakeOutCount);
     void OnTakeOutClosed__DelegateSignature();
-}; // Size: 0x484
+};
 
 #endif

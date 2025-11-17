@@ -3,6 +3,6 @@
 
 class UBP_PalExpDatabase_C : public UPalExpDatabase
 {
-}; // Size: 0x40
+};
 
 #endif

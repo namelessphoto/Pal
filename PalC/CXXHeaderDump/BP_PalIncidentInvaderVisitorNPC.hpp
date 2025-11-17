@@ -3,10 +3,10 @@
 
 class UBP_PalIncidentInvaderVisitorNPC_C : public UBP_PalIncidentInvaderBase_C
 {
-    TSubclassOf<class APalAIController> GuardmanNPCAIControllerClass;                 // 0x0348 (size: 0x8)
-    double Formation_Width;                                                           // 0x0350 (size: 0x8)
-    double FormationSpace_X;                                                          // 0x0358 (size: 0x8)
-    double FormationSpace_Y;                                                          // 0x0360 (size: 0x8)
+    TSubclassOf<class APalAIController> GuardmanNPCAIControllerClass;
+    double Formation_Width;
+    double FormationSpace_X;
+    double FormationSpace_Y;
 
     void OnLeaderBaseCampArrived();
     void CalcFormationOffset(int32 Index, int32 Row, FVector& Offset);
@@ -18,6 +18,6 @@ class UBP_PalIncidentInvaderVisitorNPC_C : public UBP_PalIncidentInvaderBase_C
     bool GetInvaderStartPoint(FVector& Result);
     void EndProc();
     void StartProc();
-}; // Size: 0x368
+};
 
 #endif

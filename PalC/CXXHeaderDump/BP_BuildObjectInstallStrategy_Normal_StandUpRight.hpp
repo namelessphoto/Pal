@@ -5,6 +5,6 @@ class UBP_BuildObjectInstallStrategy_Normal_StandUpRight_C : public UPalBuildObj
 {
 
     bool IsStandAlongSurface();
-}; // Size: 0x50
+};
 
 #endif

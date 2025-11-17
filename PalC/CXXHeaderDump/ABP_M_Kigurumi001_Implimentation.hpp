@@ -12,10 +12,6 @@ struct FAnimBlueprintGeneratedConstantData : public FAnimBlueprintConstantData
 
 };
 
-struct FAnimBlueprintGeneratedMutableData : public FAnimBlueprintMutableData
-{
-};
-
 class UABP_M_Kigurumi001_Implimentation_C : public UAnimInstance
 {
     FPointerToUberGraphFrame UberGraphFrame;

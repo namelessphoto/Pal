@@ -3,6 +3,6 @@
 
 class UBP_PalRandomIncidentLottery_DarkIsland_DarkArea_C : public UPalRandomIncidentLotteryBase
 {
-}; // Size: 0x40
+};
 
 #endif

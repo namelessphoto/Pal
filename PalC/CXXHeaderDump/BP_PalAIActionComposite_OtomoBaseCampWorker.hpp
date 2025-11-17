@@ -3,6 +3,6 @@
 
 class UBP_PalAIActionComposite_OtomoBaseCampWorker_C : public UBP_PalAIActionComposite_OtomoWorkerBase_C
 {
-}; // Size: 0x88
+};
 
 #endif

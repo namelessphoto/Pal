@@ -3,8 +3,8 @@
 
 class UBP_PalTreasureMapWorldSubsystem_C : public UPalTreasureMapWorldSubsystem
 {
-    TMap<int32, UTexture2D*> TreasureMapPointIconMap;                                 // 0x0148 (size: 0x50)
+    TMap<int32, UTexture2D*> TreasureMapPointIconMap;
 
-}; // Size: 0x198
+};
 
 #endif

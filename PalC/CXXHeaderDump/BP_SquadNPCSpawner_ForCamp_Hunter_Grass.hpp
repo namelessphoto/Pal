@@ -3,17 +3,17 @@
 
 class ABP_SquadNPCSpawner_ForCamp_Hunter_Grass_C : public ABP_SquadNPCSpawner_ForCampBase_C
 {
-    class UBP_NPCPathWalkPointComponent_1_C* BP_NPCPathWalkPointComponent_1;          // 0x04F8 (size: 0x8)
-    class UBP_NPCPathWalkPointComponent_1_C* BP_NPCPathWalkPointComponent_6;          // 0x0500 (size: 0x8)
-    class UBP_NPCPathWalkPointComponent_1_C* BP_NPCPathWalkPointComponent_5;          // 0x0508 (size: 0x8)
-    class UBP_NPCPathWalkPointComponent_1_C* BP_NPCPathWalkPointComponent_4;          // 0x0510 (size: 0x8)
-    class UBP_NPCPathWalkPointComponent_1_C* BP_NPCPathWalkPointComponent_3;          // 0x0518 (size: 0x8)
-    class UBP_NPCPathWalkPointComponent_1_C* BP_NPCPathWalkPointComponent_2;          // 0x0520 (size: 0x8)
-    class UBP_NPCSpawnPointComponent_C* BP_NPCSpawnPointComponent3;                   // 0x0528 (size: 0x8)
-    class UBP_NPCSpawnPointComponent_C* BP_NPCSpawnPointComponent2;                   // 0x0530 (size: 0x8)
-    class UBP_NPCSpawnPointComponent_C* BP_NPCSpawnPointComponent1;                   // 0x0538 (size: 0x8)
-    class UBP_NPCSpawnPointComponent_C* BP_NPCSpawnPointComponent;                    // 0x0540 (size: 0x8)
+    class UBP_NPCPathWalkPointComponent_1_C* BP_NPCPathWalkPointComponent_1;
+    class UBP_NPCPathWalkPointComponent_1_C* BP_NPCPathWalkPointComponent_6;
+    class UBP_NPCPathWalkPointComponent_1_C* BP_NPCPathWalkPointComponent_5;
+    class UBP_NPCPathWalkPointComponent_1_C* BP_NPCPathWalkPointComponent_4;
+    class UBP_NPCPathWalkPointComponent_1_C* BP_NPCPathWalkPointComponent_3;
+    class UBP_NPCPathWalkPointComponent_1_C* BP_NPCPathWalkPointComponent_2;
+    class UBP_NPCSpawnPointComponent_C* BP_NPCSpawnPointComponent3;
+    class UBP_NPCSpawnPointComponent_C* BP_NPCSpawnPointComponent2;
+    class UBP_NPCSpawnPointComponent_C* BP_NPCSpawnPointComponent1;
+    class UBP_NPCSpawnPointComponent_C* BP_NPCSpawnPointComponent;
 
-}; // Size: 0x548
+};
 
 #endif

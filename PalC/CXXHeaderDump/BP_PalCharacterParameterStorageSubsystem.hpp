@@ -3,6 +3,6 @@
 
 class UBP_PalCharacterParameterStorageSubsystem_C : public UPalCharacterParameterStorageSubsystem
 {
-}; // Size: 0xF8
+};
 
 #endif

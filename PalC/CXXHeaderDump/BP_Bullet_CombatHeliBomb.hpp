@@ -5,6 +5,6 @@ class ABP_Bullet_CombatHeliBomb_C : public ABP_RocketBullet_C
 {
 
     void GetExplosionClass(TSubclassOf<class ABP_ExplosionAttackBase_C>& ExplosionClass);
-}; // Size: 0x431
+};
 
 #endif

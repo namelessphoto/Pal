@@ -3,6 +3,6 @@
 
 class UBP_PalSkinManager_C : public UPalSkinManager
 {
-}; // Size: 0x30
+};
 
 #endif

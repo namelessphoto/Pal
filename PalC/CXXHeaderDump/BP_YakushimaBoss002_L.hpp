@@ -3,11 +3,11 @@
 
 class ABP_YakushimaBoss002_L_C : public ABP_YakushimaBoss002_PartBase_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0B58 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;
 
     void GetPartsType(FString& PartsType);
     void PlayDeathAnimation();
     void ExecuteUbergraph_BP_YakushimaBoss002_L(int32 EntryPoint);
-}; // Size: 0xB60
+};
 
 #endif

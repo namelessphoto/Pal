@@ -3,6 +3,6 @@
 
 class UBP_PalWorkProgressManager_C : public UPalWorkProgressManager
 {
-}; // Size: 0x3C8
+};
 
 #endif

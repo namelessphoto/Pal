@@ -3,21 +3,21 @@
 
 class UBP_OtomoPalHolderComponent_C : public UPalOtomoHolderComponentBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0130 (size: 0x8)
-    int32 ActivatedOtomoSlotID;                                                       // 0x0138 (size: 0x4)
-    int32 SelectedOtomoSlotID;                                                        // 0x013C (size: 0x4)
-    FBP_OtomoPalHolderComponent_COnChangedSelectOtomoIndexEvent OnChangedSelectOtomoIndexEvent; // 0x0140 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    int32 ActivatedOtomoSlotID;
+    int32 SelectedOtomoSlotID;
+    FBP_OtomoPalHolderComponent_COnChangedSelectOtomoIndexEvent OnChangedSelectOtomoIndexEvent;
     void OnChangedSelectOtomoIndexEvent();
-    FBP_OtomoPalHolderComponent_COnActivateOtomo OnActivateOtomo;                     // 0x0150 (size: 0x10)
+    FBP_OtomoPalHolderComponent_COnActivateOtomo OnActivateOtomo;
     void OnActivateOtomo();
-    FBP_OtomoPalHolderComponent_COnUsedActiveSkill OnUsedActiveSkill;                 // 0x0160 (size: 0x10)
+    FBP_OtomoPalHolderComponent_COnUsedActiveSkill OnUsedActiveSkill;
     void OnUsedActiveSkill();
-    FBP_OtomoPalHolderComponent_COnInactiveOtomoEvent OnInactiveOtomoEvent;           // 0x0170 (size: 0x10)
+    FBP_OtomoPalHolderComponent_COnInactiveOtomoEvent OnInactiveOtomoEvent;
     void OnInactiveOtomoEvent();
-    class UPalIndividualCharacterHandle* ActivatedHandle;                             // 0x0180 (size: 0x8)
-    TArray<class APalCharacter*> ReservePalLocationList;                              // 0x0188 (size: 0x10)
-    bool OtomoDespawnable;                                                            // 0x0198 (size: 0x1)
-    bool DisableOtomoCollision;                                                       // 0x0199 (size: 0x1)
+    class UPalIndividualCharacterHandle* ActivatedHandle;
+    TArray<class APalCharacter*> ReservePalLocationList;
+    bool OtomoDespawnable;
+    bool DisableOtomoCollision;
 
     void ActivatePalByHandle(const class UPalIndividualCharacterHandle* OtomoHandle, const FVector& Location, const FRotator& Rotation, bool bKeepActigvateOtomoId);
     void GetAIClass(TSubclassOf<class AAIController>& Class);
@@ -87,6 +87,6 @@ class UBP_OtomoPalHolderComponent_C : public UPalOtomoHolderComponentBase
     void OnUsedActiveSkill__DelegateSignature();
     void OnActivateOtomo__DelegateSignature();
     void OnChangedSelectOtomoIndexEvent__DelegateSignature();
-}; // Size: 0x19A
+};
 
 #endif

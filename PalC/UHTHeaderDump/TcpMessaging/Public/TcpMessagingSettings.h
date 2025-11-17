@@ -1,0 +1,33 @@
+#pragma once
+#include "CoreMinimal.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+#include "TcpMessagingSettings.generated.h"
+
+UCLASS()
+class UTcpMessagingSettings : public UObject {
+    GENERATED_BODY()
+public:
+private:
+    UPROPERTY(Config, EditAnywhere)
+    bool EnableTransport;
+    
+    UPROPERTY(Config, EditAnywhere)
+    FString ListenEndpoint;
+    
+    UPROPERTY(Config, EditAnywhere)
+    TArray<FString> ConnectToEndpoints;
+    
+    UPROPERTY(Config, EditAnywhere)
+    int32 ConnectionRetryDelay;
+    
+    UPROPERTY(Config, EditAnywhere)
+    int32 ConnectionRetryPeriod;
+    
+    UPROPERTY(Config)
+    bool bStopServiceWhenAppDeactivates;
+    
+public:
+    UTcpMessagingSettings();
+
+};
+

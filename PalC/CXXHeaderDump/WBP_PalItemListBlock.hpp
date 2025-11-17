@@ -3,33 +3,33 @@
 
 class UWBP_PalItemListBlock_C : public UPalUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0408 (size: 0x8)
-    class UWBP_InventoryListContent_C* WBP_InventoryListContent;                      // 0x0410 (size: 0x8)
-    TSubclassOf<class UWBP_PalItemSlotButtonBase_C> ItemSlotButtonClass;              // 0x0418 (size: 0x8)
-    FWBP_PalItemListBlock_COnLeftClickedAnyContent OnLeftClickedAnyContent;           // 0x0420 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UWBP_InventoryListContent_C* WBP_InventoryListContent;
+    TSubclassOf<class UWBP_PalItemSlotButtonBase_C> ItemSlotButtonClass;
+    FWBP_PalItemListBlock_COnLeftClickedAnyContent OnLeftClickedAnyContent;
     void OnLeftClickedAnyContent(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
-    FWBP_PalItemListBlock_COnMiddleClickedAnyContent OnMiddleClickedAnyContent;       // 0x0430 (size: 0x10)
+    FWBP_PalItemListBlock_COnMiddleClickedAnyContent OnMiddleClickedAnyContent;
     void OnMiddleClickedAnyContent(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-    FWBP_PalItemListBlock_COnRightClickedAnyContent OnRightClickedAnyContent;         // 0x0440 (size: 0x10)
+    FWBP_PalItemListBlock_COnRightClickedAnyContent OnRightClickedAnyContent;
     void OnRightClickedAnyContent(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
-    FWBP_PalItemListBlock_COnHoverdAnyContent OnHoverdAnyContent;                     // 0x0450 (size: 0x10)
+    FWBP_PalItemListBlock_COnHoverdAnyContent OnHoverdAnyContent;
     void OnHoverdAnyContent(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-    FWBP_PalItemListBlock_COnEndHoveredAnyContent OnEndHoveredAnyContent;             // 0x0460 (size: 0x10)
+    FWBP_PalItemListBlock_COnEndHoveredAnyContent OnEndHoveredAnyContent;
     void OnEndHoveredAnyContent(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-    FWBP_PalItemListBlock_COnFocusedAnyContent OnFocusedAnyContent;                   // 0x0470 (size: 0x10)
+    FWBP_PalItemListBlock_COnFocusedAnyContent OnFocusedAnyContent;
     void OnFocusedAnyContent(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-    FWBP_PalItemListBlock_COnUnfocusedAnyContent OnUnfocusedAnyContent;               // 0x0480 (size: 0x10)
+    FWBP_PalItemListBlock_COnUnfocusedAnyContent OnUnfocusedAnyContent;
     void OnUnfocusedAnyContent(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-    FWBP_PalItemListBlock_COnCreatedSlotButton OnCreatedSlotButton;                   // 0x0490 (size: 0x10)
+    FWBP_PalItemListBlock_COnCreatedSlotButton OnCreatedSlotButton;
     void OnCreatedSlotButton(class UWBP_PalItemSlotButtonBase_C* createdWidget);
-    FVector2D ChildrenPadding;                                                        // 0x04A0 (size: 0x10)
-    FWBP_PalItemListBlock_COnDragDetectedAnyContent OnDragDetectedAnyContent;         // 0x04B0 (size: 0x10)
+    FVector2D ChildrenPadding;
+    FWBP_PalItemListBlock_COnDragDetectedAnyContent OnDragDetectedAnyContent;
     void OnDragDetectedAnyContent(class UWBP_PalItemSlotButtonBase_C* Widget);
-    FWBP_PalItemListBlock_COnRequestUseItem OnRequestUseItem;                         // 0x04C0 (size: 0x10)
+    FWBP_PalItemListBlock_COnRequestUseItem OnRequestUseItem;
     void OnRequestUseItem(class UWBP_PalItemSlotButtonBase_C* Button);
-    TArray<EPalItemTypeA> FilterTypeA;                                                // 0x04D0 (size: 0x10)
-    TArray<EPalItemTypeB> FilterTypeB;                                                // 0x04E0 (size: 0x10)
-    TMap<UPalItemSlot*, int32> SlotMap;                                               // 0x04F0 (size: 0x50)
+    TArray<EPalItemTypeA> FilterTypeA;
+    TArray<EPalItemTypeB> FilterTypeB;
+    TMap<UPalItemSlot*, int32> SlotMap;
 
     void On Update Slot Internal(class UPalItemSlot* Slot);
     void On Drag Detected Internal(class UWBP_PalItemSlotButtonBase_C* Widget);
@@ -67,6 +67,6 @@ class UWBP_PalItemListBlock_C : public UPalUserWidget
     void OnEndHoveredAnyContent__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
     void OnHoverdAnyContent__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
     void OnLeftClickedAnyContent__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
-}; // Size: 0x540
+};
 
 #endif

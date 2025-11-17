@@ -5,152 +5,152 @@
 
 struct FPocketpairInventory
 {
-    TArray<FPocketpairInventoryItem> Items;                                           // 0x0000 (size: 0x10)
-    FPocketpairPlatformID PlatformID;                                                 // 0x0010 (size: 0x10)
+    TArray<FPocketpairInventoryItem> Items;
+    FPocketpairPlatformID PlatformID;
 
-}; // Size: 0x28
+};
 
 struct FPocketpairInventoryItem
 {
-    int32 ItemId;                                                                     // 0x0008 (size: 0x4)
-    int32 Num;                                                                        // 0x000C (size: 0x4)
-    TArray<uint8> Token;                                                              // 0x0010 (size: 0x10)
+    int32 ItemId;
+    int32 Num;
+    TArray<uint8> Token;
 
-}; // Size: 0x20
+};
 
 struct FPocketpairPlatformID
 {
-    uint32 AccountID;                                                                 // 0x0000 (size: 0x4)
-    uint32 AccountInstance;                                                           // 0x0004 (size: 0x4)
-    int32 Universe;                                                                   // 0x0008 (size: 0x4)
-    int32 AccountType;                                                                // 0x000C (size: 0x4)
+    uint32 AccountID;
+    uint32 AccountInstance;
+    int32 Universe;
+    int32 AccountType;
 
-}; // Size: 0x10
+};
 
 struct FPocketpairTelemetry
 {
-}; // Size: 0x40
+};
 
 struct FPocketpairTelemetry_Stat
 {
-}; // Size: 0xC
+};
 
 struct FSocialId
 {
-}; // Size: 0x4
+};
 
 class UCreateSessionAsyncFunction : public UBlueprintAsyncActionBase
 {
-    FCreateSessionAsyncFunctionCompleted Completed;                                   // 0x0030 (size: 0x10)
+    FCreateSessionAsyncFunctionCompleted Completed;
     void AsyncCompletedCreateSessionFunction(bool IsSuccess, FString ErrorStr);
 
     class UCreateSessionAsyncFunction* CreateSessionAsyncFunction(class UPocketpairUserSubsystem* Target, bool IsDedicatedServer, int32 PublicConnections, FString InviteCode, FString ServerName, FString Desc, FString ServerAddress, int32 ServerPort, bool IsPassword, FString Version, FString ServerType, FString Region, FString Namespace, bool IsCrossPlay);
-}; // Size: 0xE8
+};
 
 class UFindSessionsAsyncFunction : public UBlueprintAsyncActionBase
 {
-    FFindSessionsAsyncFunctionCompleted Completed;                                    // 0x0030 (size: 0x10)
+    FFindSessionsAsyncFunctionCompleted Completed;
     void AsyncCompletedFindSessionsFunction(bool IsSuccess, const TArray<FBlueprintSessionResult>& Results, FString ErrorStr);
 
     class UFindSessionsAsyncFunction* FindSessionsAsyncFunction(class UPocketpairUserSubsystem* Target, bool IsDedicatedServer, const FString InviteCode, const FString ServerType, const FString Region, const int32 LessThanTime, const FString WorldGUID, const FString Namespace);
-}; // Size: 0xD0
+};
 
 class UGDKActivityAsyncFunction : public UBlueprintAsyncActionBase
 {
-    FGDKActivityAsyncFunctionCompleted Completed;                                     // 0x0030 (size: 0x10)
+    FGDKActivityAsyncFunctionCompleted Completed;
     void GDKActivityAsyncFunction(const FString ResponseBody, bool bResponseOK, int32 ResponseCode);
 
     class UGDKActivityAsyncFunction* GDKActivityAsyncFunction(class UPocketpairUserSubsystem* Target, FString ConnectionString, int32 MaxPlayerNum, int32 CurrentPlayerNum, bool bPublicSession);
-}; // Size: 0x70
+};
 
 class UGDKInviteAsyncFunction : public UBlueprintAsyncActionBase
 {
-    FGDKInviteAsyncFunctionCompleted Completed;                                       // 0x0030 (size: 0x10)
+    FGDKInviteAsyncFunctionCompleted Completed;
     void GDKInviteAsyncFunction(const FString InviteCode);
 
     class UGDKInviteAsyncFunction* GDKInviteAsyncFunction(class UPocketpairUserSubsystem* Target);
-}; // Size: 0x48
+};
 
 class UGDKPrivacyPermissionAsyncFunction : public UBlueprintAsyncActionBase
 {
-    FGDKPrivacyPermissionAsyncFunctionCompleted Completed;                            // 0x0030 (size: 0x10)
+    FGDKPrivacyPermissionAsyncFunctionCompleted Completed;
     void GDKPrivacyPermissionAsyncFunction(class UGDKPrivacyPermissionAsyncFunction* PrivacyPermission);
 
-}; // Size: 0x70
+};
 
 class UGDKPrivacyPermissionForAnonymousUserAsyncFunction : public UBlueprintAsyncActionBase
 {
-    FGDKPrivacyPermissionForAnonymousUserAsyncFunctionCompleted Completed;            // 0x0030 (size: 0x10)
+    FGDKPrivacyPermissionForAnonymousUserAsyncFunctionCompleted Completed;
     void GDKPrivacyPermissionForAnonymousUserAsyncFunction(class UGDKPrivacyPermissionForAnonymousUserAsyncFunction* PrivacyPermission);
 
-}; // Size: 0x70
+};
 
 class UGDKPrivilegeAsyncFunction : public UBlueprintAsyncActionBase
 {
-    FGDKPrivilegeAsyncFunctionCompleted Completed;                                    // 0x0030 (size: 0x10)
+    FGDKPrivilegeAsyncFunctionCompleted Completed;
     void GDKPrivilegeAsyncFunction(class UGDKPrivilegeAsyncFunction* Privilege);
 
-}; // Size: 0x60
+};
 
 class UHTTPRequestAsyncFunction : public UBlueprintAsyncActionBase
 {
-    FHTTPRequestAsyncFunctionCompleted Completed;                                     // 0x0030 (size: 0x10)
+    FHTTPRequestAsyncFunctionCompleted Completed;
     void AsyncHTTPRequestFunction(const FString ResponseBody, bool bResponseOK, int32 ResponseCode);
 
     class UHTTPRequestAsyncFunction* HTTPRequestAsyncFunction(class UPocketpairUserSubsystem* Target, FString URL, FString Verb);
-}; // Size: 0xE0
+};
 
 class UJoinSessionAsyncFunction : public UBlueprintAsyncActionBase
 {
-    FJoinSessionAsyncFunctionCompleted Completed;                                     // 0x0030 (size: 0x10)
+    FJoinSessionAsyncFunctionCompleted Completed;
     void AsyncCompletedJoinSessionFunction(bool IsSuccess, JoinSessionResultType Type);
-    class APlayerController* Controller;                                              // 0x0178 (size: 0x8)
+    class APlayerController* Controller;
 
-}; // Size: 0x180
+};
 
 class ULoginDefaultOnlineSubsystemAsyncFunction : public UBlueprintAsyncActionBase
 {
-    FLoginDefaultOnlineSubsystemAsyncFunctionCompleted Completed;                     // 0x0030 (size: 0x10)
+    FLoginDefaultOnlineSubsystemAsyncFunctionCompleted Completed;
     void AsyncCompletedLoginFunction(const class UPocketpairUserInfo* UserInfo, bool bSuccess, FString ErrorStr);
 
     class ULoginDefaultOnlineSubsystemAsyncFunction* LoginDefaultAsyncFunction(class UPocketpairUserSubsystem* Target);
-}; // Size: 0x50
+};
 
 class ULoginEOSAsyncFunction : public UBlueprintAsyncActionBase
 {
-    FLoginEOSAsyncFunctionCompleted Completed;                                        // 0x0030 (size: 0x10)
+    FLoginEOSAsyncFunctionCompleted Completed;
     void AsyncCompletedLoginEOSFunction(const class UPocketpairUserInfo* UserInfo, bool bSuccess, FString ErrorStr);
 
     class ULoginEOSAsyncFunction* LoginEOSAsyncFunction(class UPocketpairUserSubsystem* Target);
-}; // Size: 0x50
+};
 
 class UPingIP : public UObject
 {
-    FPingIPOnPingComplete OnPingComplete;                                             // 0x0050 (size: 0x10)
+    FPingIPOnPingComplete OnPingComplete;
     void OnPingComplete(class UPingIP* PingOperation, FString HostName, int32 TimeMS);
-    FPingIPOnPingFailure OnPingFailure;                                               // 0x0060 (size: 0x10)
+    FPingIPOnPingFailure OnPingFailure;
     void OnPingFailure(class UPingIP* PingOperation, FString HostName);
 
     void SendPing(FString ipAddress);
     void PollThread();
     class UPingIP* ConstructPingObject();
-}; // Size: 0x70
+};
 
 class UPocketpairConnectServerFunction : public UBlueprintAsyncActionBase
 {
-    FPocketpairConnectServerFunctionCompleted Completed;                              // 0x0030 (size: 0x10)
+    FPocketpairConnectServerFunctionCompleted Completed;
     void PocketpairConnectServerFunction(bool bResponseOK);
-    class UPocketpairUserSubsystem* Subsystem;                                        // 0x0040 (size: 0x8)
+    class UPocketpairUserSubsystem* Subsystem;
 
     class UPocketpairConnectServerFunction* ConnectServer(class UPocketpairUserSubsystem* Target, FString Address, int32 Port, FString AdminPassword, FString ServerPassword, FString WorldGUID);
-}; // Size: 0xA0
+};
 
 class UPocketpairFriend : public UObject
 {
-    FString DisplayName;                                                              // 0x0028 (size: 0x10)
+    FString DisplayName;
 
     FUniqueNetIdRepl GetNetId();
-}; // Size: 0x68
+};
 
 class UPocketpairUserInfo : public UObject
 {
@@ -159,11 +159,11 @@ class UPocketpairUserInfo : public UObject
     FString GetNickname();
     FUniqueNetIdRepl GetNetId();
     FString GetDebugString();
-}; // Size: 0x38
+};
 
 class UPocketpairUserSubsystem : public UGameInstanceSubsystem
 {
-    class UPocketpairUserInfo* LocalUserInfo;                                         // 0x0068 (size: 0x8)
+    class UPocketpairUserInfo* LocalUserInfo;
 
     void UnlockAchievement(FString ID, float Percent);
     void OnSessionInviteReceived(FString InviteCode);
@@ -177,22 +177,22 @@ class UPocketpairUserSubsystem : public UGameInstanceSubsystem
     FString GetInviteCode();
     FName GetDefaultOnlineSubsystemName();
     void AddPingResultCache(FString Address, int32 Ping);
-}; // Size: 0x348
+};
 
 class USanitizeDisplayNameAsyncFunction : public UBlueprintAsyncActionBase
 {
-    FSanitizeDisplayNameAsyncFunctionCompleted Completed;                             // 0x0030 (size: 0x10)
+    FSanitizeDisplayNameAsyncFunctionCompleted Completed;
     void SanitizeDisplayNameAsyncFunction(bool IsSuccess, FString OutString);
 
     class USanitizeDisplayNameAsyncFunction* SanitizeDisplayNameAsyncFunction(class UPocketpairUserSubsystem* Target, FString InString);
-}; // Size: 0x58
+};
 
 class USwitchUserUIDefaultOnlineSubsystemAsyncFunction : public UBlueprintAsyncActionBase
 {
-    FSwitchUserUIDefaultOnlineSubsystemAsyncFunctionCompleted Completed;              // 0x0030 (size: 0x10)
+    FSwitchUserUIDefaultOnlineSubsystemAsyncFunctionCompleted Completed;
     void AsyncCompletedSwitchUserUIFunction(const class UPocketpairUserInfo* UserInfo, bool bSuccess, FString ErrorStr);
 
     class USwitchUserUIDefaultOnlineSubsystemAsyncFunction* SwitchUserUIAsyncFunction(class UPocketpairUserSubsystem* Target);
-}; // Size: 0x50
+};
 
 #endif

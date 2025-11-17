@@ -5,92 +5,92 @@
 
 struct FDataRegistryCachePolicy
 {
-    bool bCacheIsAlwaysVolatile;                                                      // 0x0000 (size: 0x1)
-    bool bUseCurveTableCacheVersion;                                                  // 0x0001 (size: 0x1)
-    int32 MinNumberKept;                                                              // 0x0004 (size: 0x4)
-    int32 MaxNumberKept;                                                              // 0x0008 (size: 0x4)
-    float ForceKeepSeconds;                                                           // 0x000C (size: 0x4)
-    float ForceReleaseSeconds;                                                        // 0x0010 (size: 0x4)
+    bool bCacheIsAlwaysVolatile;
+    bool bUseCurveTableCacheVersion;
+    int32 MinNumberKept;
+    int32 MaxNumberKept;
+    float ForceKeepSeconds;
+    float ForceReleaseSeconds;
 
-}; // Size: 0x14
+};
 
 struct FDataRegistryId
 {
-    FDataRegistryType RegistryType;                                                   // 0x0000 (size: 0x8)
-    FName ItemName;                                                                   // 0x0008 (size: 0x8)
+    FDataRegistryType RegistryType;
+    FName ItemName;
 
-}; // Size: 0x10
+};
 
 struct FDataRegistryIdFormat
 {
-    FGameplayTag BaseGameplayTag;                                                     // 0x0000 (size: 0x8)
+    FGameplayTag BaseGameplayTag;
 
-}; // Size: 0x8
+};
 
 struct FDataRegistryLookup
 {
-}; // Size: 0x20
+};
 
 struct FDataRegistrySourceItemId
 {
-}; // Size: 0x40
+};
 
 struct FDataRegistrySource_DataTableRules
 {
-    bool bPrecacheTable;                                                              // 0x0000 (size: 0x1)
-    float CachedTableKeepSeconds;                                                     // 0x0004 (size: 0x4)
+    bool bPrecacheTable;
+    float CachedTableKeepSeconds;
 
-}; // Size: 0x8
+};
 
 struct FDataRegistryType
 {
-    FName Name;                                                                       // 0x0000 (size: 0x8)
+    FName Name;
 
-}; // Size: 0x8
+};
 
 class UDataRegistry : public UObject
 {
-    FName RegistryType;                                                               // 0x0028 (size: 0x8)
-    FDataRegistryIdFormat IdFormat;                                                   // 0x0030 (size: 0x8)
-    class UScriptStruct* ItemStruct;                                                  // 0x0038 (size: 0x8)
-    TArray<class UDataRegistrySource*> DataSources;                                   // 0x0040 (size: 0x10)
-    TArray<class UDataRegistrySource*> RuntimeSources;                                // 0x0050 (size: 0x10)
-    float TimerUpdateFrequency;                                                       // 0x0060 (size: 0x4)
-    FDataRegistryCachePolicy DefaultCachePolicy;                                      // 0x0064 (size: 0x14)
+    FName RegistryType;
+    FDataRegistryIdFormat IdFormat;
+    class UScriptStruct* ItemStruct;
+    TArray<class UDataRegistrySource*> DataSources;
+    TArray<class UDataRegistrySource*> RuntimeSources;
+    float TimerUpdateFrequency;
+    FDataRegistryCachePolicy DefaultCachePolicy;
 
-}; // Size: 0xC0
+};
 
 class UDataRegistrySettings : public UDeveloperSettings
 {
-    TArray<FDirectoryPath> DirectoriesToScan;                                         // 0x0038 (size: 0x10)
-    bool bInitializeAllLoadedRegistries;                                              // 0x0048 (size: 0x1)
-    bool bIgnoreMissingCookedAssetRegistryData;                                       // 0x0049 (size: 0x1)
+    TArray<FDirectoryPath> DirectoriesToScan;
+    bool bInitializeAllLoadedRegistries;
+    bool bIgnoreMissingCookedAssetRegistryData;
 
-}; // Size: 0x50
+};
 
 class UDataRegistrySource : public UObject
 {
-    class UDataRegistrySource* ParentSource;                                          // 0x0030 (size: 0x8)
+    class UDataRegistrySource* ParentSource;
 
-}; // Size: 0x38
+};
 
 class UDataRegistrySource_CurveTable : public UDataRegistrySource
 {
-    TSoftObjectPtr<UCurveTable> SourceTable;                                          // 0x0038 (size: 0x30)
-    FDataRegistrySource_DataTableRules TableRules;                                    // 0x0068 (size: 0x8)
-    class UCurveTable* CachedTable;                                                   // 0x0070 (size: 0x8)
-    class UCurveTable* PreloadTable;                                                  // 0x0078 (size: 0x8)
+    TSoftObjectPtr<UCurveTable> SourceTable;
+    FDataRegistrySource_DataTableRules TableRules;
+    class UCurveTable* CachedTable;
+    class UCurveTable* PreloadTable;
 
-}; // Size: 0xA8
+};
 
 class UDataRegistrySource_DataTable : public UDataRegistrySource
 {
-    TSoftObjectPtr<UDataTable> SourceTable;                                           // 0x0038 (size: 0x30)
-    FDataRegistrySource_DataTableRules TableRules;                                    // 0x0068 (size: 0x8)
-    class UDataTable* CachedTable;                                                    // 0x0070 (size: 0x8)
-    class UDataTable* PreloadTable;                                                   // 0x0078 (size: 0x8)
+    TSoftObjectPtr<UDataTable> SourceTable;
+    FDataRegistrySource_DataTableRules TableRules;
+    class UDataTable* CachedTable;
+    class UDataTable* PreloadTable;
 
-}; // Size: 0xA8
+};
 
 class UDataRegistrySubsystem : public UEngineSubsystem
 {
@@ -108,28 +108,28 @@ class UDataRegistrySubsystem : public UEngineSubsystem
     FString Conv_DataRegistryTypeToString(FDataRegistryType DataRegistryType);
     FString Conv_DataRegistryIdToString(FDataRegistryId DataRegistryId);
     bool AcquireItemBP(FDataRegistryId ItemId, FAcquireItemBPAcquireCallback AcquireCallback);
-}; // Size: 0xC8
+};
 
 class UMetaDataRegistrySource : public UDataRegistrySource
 {
-    EMetaDataRegistrySourceAssetUsage AssetUsage;                                     // 0x0038 (size: 0x1)
-    FAssetManagerSearchRules SearchRules;                                             // 0x0040 (size: 0x50)
-    TMap<class FName, class UDataRegistrySource*> RuntimeChildren;                    // 0x0090 (size: 0x50)
+    EMetaDataRegistrySourceAssetUsage AssetUsage;
+    FAssetManagerSearchRules SearchRules;
+    TMap<class FName, class UDataRegistrySource*> RuntimeChildren;
 
-}; // Size: 0x108
+};
 
 class UMetaDataRegistrySource_CurveTable : public UMetaDataRegistrySource
 {
-    TSubclassOf<class UDataRegistrySource_CurveTable> CreatedSource;                  // 0x0108 (size: 0x8)
-    FDataRegistrySource_DataTableRules TableRules;                                    // 0x0110 (size: 0x8)
+    TSubclassOf<class UDataRegistrySource_CurveTable> CreatedSource;
+    FDataRegistrySource_DataTableRules TableRules;
 
-}; // Size: 0x118
+};
 
 class UMetaDataRegistrySource_DataTable : public UMetaDataRegistrySource
 {
-    TSubclassOf<class UDataRegistrySource_DataTable> CreatedSource;                   // 0x0108 (size: 0x8)
-    FDataRegistrySource_DataTableRules TableRules;                                    // 0x0110 (size: 0x8)
+    TSubclassOf<class UDataRegistrySource_DataTable> CreatedSource;
+    FDataRegistrySource_DataTableRules TableRules;
 
-}; // Size: 0x118
+};
 
 #endif

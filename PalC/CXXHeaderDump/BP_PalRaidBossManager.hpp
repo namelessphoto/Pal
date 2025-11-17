@@ -3,6 +3,6 @@
 
 class UBP_PalRaidBossManager_C : public UPalRaidBossManager
 {
-}; // Size: 0x130
+};
 
 #endif

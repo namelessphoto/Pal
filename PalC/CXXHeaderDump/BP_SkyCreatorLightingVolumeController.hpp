@@ -3,8 +3,8 @@
 
 class ABP_SkyCreatorLightingVolumeController_C : public APalLightingVolumeController
 {
-    class USceneComponent* DefaultSceneRoot;                                          // 0x0360 (size: 0x8)
+    class USceneComponent* DefaultSceneRoot;
 
-}; // Size: 0x368
+};
 
 #endif

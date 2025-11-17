@@ -3,6 +3,6 @@
 
 class UBP_InteractableCapsule_C : public UPalInteractiveObjectCapsuleComponent
 {
-}; // Size: 0x650
+};
 
 #endif

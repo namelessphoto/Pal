@@ -5,6 +5,6 @@ class IBPI_SpawnPointInfo_C : public IInterface
 {
 
     void GetOneSpawnInfo(FF_NPCOnePointSpawnInfo& Info);
-}; // Size: 0x28
+};
 
 #endif

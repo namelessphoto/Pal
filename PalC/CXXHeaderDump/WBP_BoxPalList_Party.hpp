@@ -3,29 +3,29 @@
 
 class UWBP_BoxPalList_Party_C : public UUserWidget
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UCanvasPanel* Canvas_PalBox;                                                // 0x0280 (size: 0x8)
-    class UWBP_BoxPalList_C* WBP_BoxPalList;                                          // 0x0288 (size: 0x8)
-    class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton;      // 0x0290 (size: 0x8)
-    class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton_1;    // 0x0298 (size: 0x8)
-    class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton_2;    // 0x02A0 (size: 0x8)
-    class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton_3;    // 0x02A8 (size: 0x8)
-    class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton_4;    // 0x02B0 (size: 0x8)
-    TArray<class UWBP_PalCommonCharacterSlotButton_C*> PartySlots;                    // 0x02B8 (size: 0x10)
-    FWBP_BoxPalList_Party_COnLeftClickedSlot OnLeftClickedSlot;                       // 0x02C8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UCanvasPanel* Canvas_PalBox;
+    class UWBP_BoxPalList_C* WBP_BoxPalList;
+    class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton;
+    class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton_1;
+    class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton_2;
+    class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton_3;
+    class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton_4;
+    TArray<class UWBP_PalCommonCharacterSlotButton_C*> PartySlots;
+    FWBP_BoxPalList_Party_COnLeftClickedSlot OnLeftClickedSlot;
     void OnLeftClickedSlot(class UWBP_PalCharacterSlotButtonBase_C* Slot, EPalItemSlotPressType PressType);
-    FWBP_BoxPalList_Party_COnRightClickedSlot OnRightClickedSlot;                     // 0x02D8 (size: 0x10)
+    FWBP_BoxPalList_Party_COnRightClickedSlot OnRightClickedSlot;
     void OnRightClickedSlot(class UWBP_PalCharacterSlotButtonBase_C* Slot);
-    FWBP_BoxPalList_Party_COnHoverSlot OnHoverSlot;                                   // 0x02E8 (size: 0x10)
+    FWBP_BoxPalList_Party_COnHoverSlot OnHoverSlot;
     void OnHoverSlot(class UWBP_PalCharacterSlotButtonBase_C* Slot);
-    FWBP_BoxPalList_Party_COnUnhoverSlot OnUnhoverSlot;                               // 0x02F8 (size: 0x10)
+    FWBP_BoxPalList_Party_COnUnhoverSlot OnUnhoverSlot;
     void OnUnhoverSlot(class UWBP_PalCharacterSlotButtonBase_C* Slot);
-    FWBP_BoxPalList_Party_COnCreatedNewSlot OnCreatedNewSlot;                         // 0x0308 (size: 0x10)
+    FWBP_BoxPalList_Party_COnCreatedNewSlot OnCreatedNewSlot;
     void OnCreatedNewSlot(class UWBP_PalCharacterSlotButtonBase_C* Slot);
-    FWBP_BoxPalList_Party_COnPageUpdated OnPageUpdated;                               // 0x0318 (size: 0x10)
+    FWBP_BoxPalList_Party_COnPageUpdated OnPageUpdated;
     void OnPageUpdated(int32 Page);
-    FPalDataTableRowName_UIInputAction OverrideLeftPageInputAction;                   // 0x0328 (size: 0x8)
-    FPalDataTableRowName_UIInputAction OverrideRightPageInputAction;                  // 0x0330 (size: 0x8)
+    FPalDataTableRowName_UIInputAction OverrideLeftPageInputAction;
+    FPalDataTableRowName_UIInputAction OverrideRightPageInputAction;
 
     void Setup Party Slot();
     void GetLastFocusBoxSlot(class UWidget*& TargetWidget);
@@ -48,6 +48,6 @@ class UWBP_BoxPalList_Party_C : public UUserWidget
     void OnUnhoverSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot);
     void OnHoverSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot);
     void OnLeftClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot, EPalItemSlotPressType PressType);
-}; // Size: 0x338
+};
 
 #endif

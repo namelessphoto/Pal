@@ -3,6 +3,6 @@
 
 class UBP_PalCharacterContainerManager_C : public UPalCharacterContainerManager
 {
-}; // Size: 0x1D0
+};
 
 #endif

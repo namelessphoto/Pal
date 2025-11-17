@@ -3,19 +3,19 @@
 
 class ABP_NPCCampSpawnerBase_C : public APalNPCCampSpawnerBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x02B0 (size: 0x8)
-    class UStaticMeshComponent* DebugMesh;                                            // 0x02B8 (size: 0x8)
-    double Probability;                                                               // 0x02C0 (size: 0x8)
-    class ABP_NPCCampPresetBase_C* CampObject;                                        // 0x02C8 (size: 0x8)
-    FName RewardName;                                                                 // 0x02D0 (size: 0x8)
-    double RespawnTime_RealMinutes;                                                   // 0x02D8 (size: 0x8)
-    FTimerHandle TimerHand;                                                           // 0x02E0 (size: 0x8)
-    bool RespawnPossible;                                                             // 0x02E8 (size: 0x1)
-    double RespawnDistance_FromPlayer;                                                // 0x02F0 (size: 0x8)
-    double DisableDistance_FromBaseCamp;                                              // 0x02F8 (size: 0x8)
-    TArray<FF_NPCCampPreset> PresetList;                                              // 0x0300 (size: 0x10)
-    TArray<class UPalIndividualCharacterHandle*> CampEnemys;                          // 0x0310 (size: 0x10)
-    bool LoadCamp;                                                                    // 0x0320 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UStaticMeshComponent* DebugMesh;
+    double Probability;
+    class ABP_NPCCampPresetBase_C* CampObject;
+    FName RewardName;
+    double RespawnTime_RealMinutes;
+    FTimerHandle TimerHand;
+    bool RespawnPossible;
+    double RespawnDistance_FromPlayer;
+    double DisableDistance_FromBaseCamp;
+    TArray<FF_NPCCampPreset> PresetList;
+    TArray<class UPalIndividualCharacterHandle*> CampEnemys;
+    bool LoadCamp;
 
     void CREATEDELEGATE_PROXYFUNCTION_0(class UPalIndividualCharacterHandle* NewParam);
     void EnemyCampClearSetting(FPalEnemyCampStatus EnemyCampStatus);
@@ -39,6 +39,6 @@ class ABP_NPCCampSpawnerBase_C : public APalNPCCampSpawnerBase
     void ReceiveBeginPlay();
     void ReceiveTick(float DeltaSeconds);
     void ExecuteUbergraph_BP_NPCCampSpawnerBase(int32 EntryPoint);
-}; // Size: 0x321
+};
 
 #endif

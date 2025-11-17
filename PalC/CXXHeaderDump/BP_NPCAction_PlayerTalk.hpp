@@ -3,6 +3,6 @@
 
 class UBP_NPCAction_PlayerTalk_C : public UBP_ActionSimpleRandomMonoMontage_C
 {
-}; // Size: 0x1BA
+};
 
 #endif

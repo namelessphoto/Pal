@@ -3,9 +3,9 @@
 
 class UWBP_MainMenu_NewDot_C : public UUserWidget
 {
-    class UImage* Dot;                                                                // 0x0278 (size: 0x8)
-    class UImage* Flare_1;                                                            // 0x0280 (size: 0x8)
+    class UImage* Dot;
+    class UImage* Flare_1;
 
-}; // Size: 0x288
+};
 
 #endif

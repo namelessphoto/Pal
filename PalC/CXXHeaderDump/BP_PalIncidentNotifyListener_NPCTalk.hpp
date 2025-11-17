@@ -3,6 +3,6 @@
 
 class UBP_PalIncidentNotifyListener_NPCTalk_C : public UBP_PalIncidentNotifyListener_C
 {
-}; // Size: 0x68
+};
 
 #endif
